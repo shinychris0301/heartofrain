@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Demo_9x9_Bomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4155908377745ce28be0cf6122127395, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  columns: 9
+  rows: 9
+  cellPitch: 1
+  cellsPerSecond: 20
+  effect: 0
+  origin: {x: -1, y: -1}
+  bombRadius: 2
+  doubleBombRadius: 3
+  rocketBandHalfWidth: 1
+  comboBombAtlas: {fileID: 2800000, guid: 1c0f450d1d465f67b22504788783743a, type: 3}
+  comboBombManifest: {fileID: 4900000, guid: fc973c7413475a948ae919594a66650a, type: 3}
+  comboRocketAtlas: {fileID: 2800000, guid: 3d7de34c98b758748c38e9dbce266d90, type: 3}
+  comboRocketManifest: {fileID: 4900000, guid: 178d24ed5d4658e2a1a90c5132faa64e, type: 3}
+  bombAtlas: {fileID: 2800000, guid: d12ae954dcc25f4c8479f650080d7efe, type: 3}
+  bombManifest: {fileID: 4900000, guid: ee484a313a935bbf9a029c552c879832, type: 3}
+  detailAtlas: {fileID: 2800000, guid: 297fa037e27e538a8d239b51ad801552, type: 3}
+  detailManifest: {fileID: 4900000, guid: 4ea81f8132435778a664038bf9d6dfbf, type: 3}
+  blockerAtlas: {fileID: 2800000, guid: 01bd18731e7b500c814b5c72aa7d0f6d, type: 3}
+  blockerManifest: {fileID: 4900000, guid: a29f4a311adc5f9c9cb78080be65785b, type: 3}
+  showBlockers: 0
+  enableBoardRecoil: 1
+  fxAtlas: {fileID: 2800000, guid: 44d2730dbc435d818c42c87951bfd5c5, type: 3}
+  fxManifest: {fileID: 4900000, guid: 42b66662bb225a73815efb49d4b87733, type: 3}
+  verticalAtlas: {fileID: 2800000, guid: 52f8e7ab97045ba2aeb0f90bf4f7d0d3, type: 3}
+  horizontalAtlas: {fileID: 2800000, guid: 9089da0404f4518e8e5821eb7bdbc776, type: 3}
+  verticalManifest: {fileID: 4900000, guid: 25739cb09f215b1e8ed922ac193ee146, type: 3}
+  horizontalManifest: {fileID: 4900000, guid: 83ad39c36ac85f2a99d9df69b847592c, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: aef43b58c56b5a6d9c93eb85b9a32aa5, type: 3}
+  glowMaterial: {fileID: 2100000, guid: 887b141413025b2cbe83e9eea8daba5d, type: 3}
+  referenceTiles:
+  - {fileID: 21300000, guid: 0e34bc8e4cd05093b57a7a7a0618217b, type: 3}
+  - {fileID: 21300000, guid: 1b787612f812579ca7ad3996ac288d1e, type: 3}
+  - {fileID: 21300000, guid: f0c588cf06175c71a20f39ff1f22d4f6, type: 3}
+  - {fileID: 21300000, guid: 8fd51d17611957ef940a567d16edd9ef, type: 3}
+  - {fileID: 21300000, guid: 07cef8e94434588b9e51e8472a1e34c9, type: 3}
+  - {fileID: 21300000, guid: 4b84ce9abddd566589ce57778861b0fb, type: 3}
+  createPreviewCamera: 1

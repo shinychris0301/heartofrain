@@ -1,0 +1,602 @@
+[
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Clear.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Clear.json",
+    "sha256": "b55c6115b87bc9a54d091bbc3f94d9d0c2d46d3cd5e00a162d39a375e1f7d090"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Clear_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Clear_00.png",
+    "sha256": "d518e60762ca079b7a61f496c7f45bf08d1832b19b95fe618ad402cb0b28aafe"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Clear_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Clear_01.png",
+    "sha256": "404703aaa9d92555c647f9eeebd5f64d84059064bc3e5e72686df8e970550680"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Open.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Open.json",
+    "sha256": "892b3ed8624a986c3699a008aaf8120e16451392ecfdb806425659f6314b99a9"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Open_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Open_00.png",
+    "sha256": "d687a85d88a3fc85c67cfefcd336e628c515efad65a04d24b7ad9ceacdf7f8e5"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Cabinet_Open_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Open_01.png",
+    "sha256": "25fe6840e4dd29e45ca6bc57f21690e25f8e34842cbf593ac84280ab7ef9fe43"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Star_Accent.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Star_Accent.json",
+    "sha256": "6f9f44eb4a4f6d3e0d94940be341d28ec7c151d8627409715d38119ec8cc0337"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Star_Accent_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Star_Accent_00.png",
+    "sha256": "70a09751db83419bcc9c96c072e9874feed7de0f9d1ab9cfcec81583cfaf2945"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Atlases/Star_Accent_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Star_Accent_01.png",
+    "sha256": "59141e9a74fea7b8e5ccee9078846a0efaaab2e3628f0fd0f6c472b4c1ca8322"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Data/Rainlight_Cabinet_Rules.json",
+    "path": "Assets/HeartOfTheRain/M48/Data/ApprovedObstacleRules/Rainlight_Cabinet_Rules.json",
+    "sha256": "564ef7537f3c241a2722f424f1339d53182f9113f1d16926b6771f0b62ba8625"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Art/States/Cabinet_Open_1.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_1.png",
+    "sha256": "da9d238e6e011f604053d00ebeba7e9effa02e5f63e1216db6fa6cdd1a2424c7"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Art/States/Cabinet_Open_2.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_2.png",
+    "sha256": "a27d37a1b06a4507ec4ddd5991b3753013f05076d13d86e5adad23e8881ca2b3"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Art/States/Cabinet_Open_3.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_3.png",
+    "sha256": "93cc6097dc5bce926f2f4f2af796fabd555efa84a2e2db9656f315e1b2ec87e6"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Art/States/Cabinet_Open_4.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_4.png",
+    "sha256": "7f71cff681ee4a271fe67ac500dd2b3ef3ae85d53993ecbf84f0f22b939f6cb6"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Art/States/Cabinet_Closed.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_5.png",
+    "sha256": "52be4949517a0f2dc25e0e5be888447d160cf59e5573116604436e88f72826ea"
+  },
+  {
+    "source": "M37_Obstacle_Animation_R1/Unity/Assets/HeartOfTheRain/M37/Textures/Rainlight.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/rainlight.png",
+    "sha256": "80862ff567633d8bb7e907f3fbd1d9c73c795d7c9d38ec3727f5aa58ac65d8a3"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Final_Burst.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Final_Burst.json",
+    "sha256": "9a6b3c2ecc53d2d47465e2c5fa376a9bbee7af8a7af737371347e5da09481bcd"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Final_Burst_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Final_Burst_00.png",
+    "sha256": "987bceee4bf13e1f6664c6fadc64271d98d6c8fc0caafcfce6bf858490ee64f1"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Final_Burst_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Final_Burst_01.png",
+    "sha256": "474ec460ee5f704bd379f67889b007d211b1e07a72a98475151db8f12b3079e1"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Impact_Burst.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Impact_Burst.json",
+    "sha256": "3ed13d65ae48c8620b1d2ae53e5f50c27210efc12f8ffd03afcc2ab4dd9dfe76"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Impact_Burst_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Impact_Burst_00.png",
+    "sha256": "1ec6ebe033f3750c3422830c2f84d66608bd9574c91ffdacb81a9cf9508d4d10"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Impact_Burst_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Impact_Burst_01.png",
+    "sha256": "474ec460ee5f704bd379f67889b007d211b1e07a72a98475151db8f12b3079e1"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Base.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Base.json",
+    "sha256": "dcde8d59750752a373baa52b7ca3a3c64b23e00a4d0d7cbfea7651e1f4b9d5f8"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Base_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Base_00.png",
+    "sha256": "8efb6a06b8850cdce40c9ebc2ec433a5403bc69f6aebe92caeaa95a932cc7f06"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Base_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Base_01.png",
+    "sha256": "a7fe49f8cebe90066ea1abe4f204d3153c507765c2a2b2bbd99e685daf9ab287"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Middle.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Middle.json",
+    "sha256": "f4d131db62a2d93d24ade29c125215e59cc9d27b6fc7396300daf40bab292e73"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Middle_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Middle_00.png",
+    "sha256": "92c8689b90a72c2acf4b63733026bd3f2bfeaa86abe0307b15ff1f3e2277391b"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Middle_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Middle_01.png",
+    "sha256": "d1a72bcdb4f859a20a2b6c7b130301c27bf2dd4d82a8e469b3b675f2f964ccae"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Top.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Top.json",
+    "sha256": "219b7ddfdd3f42bfe1d5231887b7841789ce08db1489495afdfc7c731c9e06e2"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Top_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Top_00.png",
+    "sha256": "d900a7ff13b095a6df9b795959e52ae086de300556b9f3344e89a3bfe0bb553a"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Pulse_Top_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Top_01.png",
+    "sha256": "31d6dbaa27338c0a2bf1f2edfbaffe7d0966628cbc5292e83042d9c824aba056"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_0.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_0.json",
+    "sha256": "3278399b96e786c126830cfb6935b06a6fc7207def4d749fec26992239b26332"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_0_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_0_00.png",
+    "sha256": "78d1b1a66571810240bb9f9d59c8b4b93e1af72fefab590c5ec58031aba457e4"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_1.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_1.json",
+    "sha256": "0f57f8ccb69fe477d557a37b8c19abcb524f1d12c214077cc8ab8f619a91385c"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_1_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_1_00.png",
+    "sha256": "a2e676f927c36eb7751cafd125e57b13f241adf5e66629c003c61ef35c97faeb"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_2.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_2.json",
+    "sha256": "56acec9fa6acbfcb1443e47ccf7d085d8b020f5b05d6ed8b672589c55615fa7e"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_2_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_2_00.png",
+    "sha256": "775785d2fb1871c7c59d8e4178d4eb9e381e9e787d0b77e611583b2fab910543"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_3.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_3.json",
+    "sha256": "09b6f9cefbbe11d198d6b05ac6da33eaf4d2c84a6fb621fa21af3b57c86e5cbe"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_3_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_3_00.png",
+    "sha256": "e40954abb27f54a387ad5a0aa72e2f03e46fa801d7e269583e7e25d51b9dbd6d"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_4.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_4.json",
+    "sha256": "1f0078b03aba2c143598f047f202c106e77cad2fa269e1e5edcc488081b780ba"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_4_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_4_00.png",
+    "sha256": "1802553ec6290eadda348f26a8e38da8b4b3c8da3ba7390b2c403f7a2f330595"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_5.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_5.json",
+    "sha256": "3702d5877f4b5216d80669ec7916e9794f2979cdb2a7189bed139ebcce404d0a"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_5_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_5_00.png",
+    "sha256": "32427e2870e9bd94a404fea0e936150f3dcdd94d247b976f49fb9a90bbdf2215"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_6.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_6.json",
+    "sha256": "2052d19db49b2f55013faa7613c6de4af58ce9b95fa91ec6a91cb5e351f34d7e"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_6_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_6_00.png",
+    "sha256": "4a96fa183b6edb685cd5de1bf7e5be0d9e5b1f09036361e119fde068326ee425"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_7.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_7.json",
+    "sha256": "368ee430407f2343488812eb8ef250975a36ce02be00271e086ffc1f47297c16"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Base_7_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_7_00.png",
+    "sha256": "72ff330defe5b579c0c25848de70a1f1b80f7c264892cc5bb38d99677d637974"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_0.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_0.json",
+    "sha256": "8377558a1d5931b7d7b1e2d4f93d52e8c31aa47230187d485630c6f46de3b5a2"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_0_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_0_00.png",
+    "sha256": "d599c1282dfccb4a359a10033705c47d1115c972d624dcfc6ebef517f6c2ca55"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_1.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_1.json",
+    "sha256": "8871b59f5fd037de506df2fd428781a542b76125a26e16cf5d48092faf53f56c"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_1_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_1_00.png",
+    "sha256": "b5866d41e759e42de85f03438864125339370b8e37f6086aea44ed93d07ce4a2"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_2.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_2.json",
+    "sha256": "5361a258dce48728f6711bdcf9753bb94eaf0f6d63a743aff141917a6f4aedcb"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_2_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_2_00.png",
+    "sha256": "f0afe4f6726cd2ec562384ffb0490395b6ace84b69be8da15c54bc8b16bdd8e9"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_3.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_3.json",
+    "sha256": "00f7080ff8ed3e1b230e89e058724b1ddafe57f41dd720e5c60f4915bcc25360"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_3_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_3_00.png",
+    "sha256": "8a10b4d5fead0c6c3974b820b9f2b1623054876d35b6a641fe09009871d1fbf4"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_4.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_4.json",
+    "sha256": "e4f7a9f8318b239e9566da0a15e72e44fb535afb7152e012a2688c982a577101"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_4_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_4_00.png",
+    "sha256": "7e187eedaf8d67b78323bf78ca2cfb798e11fc3feaef1df5a3347f3a3979d7cf"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_5.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_5.json",
+    "sha256": "13a5653c18daa00c541b37b7530a14fa58e5d9094cf14245d3627f1ae93ca06c"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_5_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_5_00.png",
+    "sha256": "08cd88730d2c25a3437094087fccfcfdd248a6ca249ee08d7d330e55b2135f17"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_6.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_6.json",
+    "sha256": "678596bbc69f8ca946c0a61df146d8f7d6745c60dd393b98d2b9437b1de2c4df"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_6_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_6_00.png",
+    "sha256": "d133f9fcea1ec785070b6193da1e9c32b41e7cfcfee7e3948ef0ec0c4e8a21b8"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_7.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_7.json",
+    "sha256": "29f2b7b744c348949d8061ab270c95c5fd2ceb0120b520b7cc283a226e62a7b2"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Middle_7_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_7_00.png",
+    "sha256": "4b824568c9827fa9ea62d28c74e40146265b58bf6b5fcd41e2550e442264e313"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_0.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_0.json",
+    "sha256": "7a233477bc774b483037e57b74f5ab4a538dc3bcc05daea97d7bfde86b75f3c4"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_0_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_0_00.png",
+    "sha256": "9536b386244bd792cfc1ec7e4cb7e160e708d804a166c134c314ae6030ede89a"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_1.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_1.json",
+    "sha256": "12092fc861750cff3a0ebfe645b8c6634ada86afcf5ae0002be505e10f819518"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_1_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_1_00.png",
+    "sha256": "1968f4b41bc46d5a7655fd1b68e015e79a37f536bb50b8d04b195e3e5a6ea7bb"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_2.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_2.json",
+    "sha256": "5183649e594f54104d12dd062504b2d7603c7107cc25f2bc5f0a17e4482ad788"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_2_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_2_00.png",
+    "sha256": "63bf668d2bed8054a15f01b4bf8c968dfc719548e85686b659c2230b864ec1fd"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_3.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_3.json",
+    "sha256": "f54290af565277046c9fbd31540e869244911c5f8c40eddd16d30beab7ddce97"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_3_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_3_00.png",
+    "sha256": "4e23a57497a5dbbb04f3594eff7114ca8112d3dd3d009c89dbcb36805a9245d4"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_4.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_4.json",
+    "sha256": "061a2dc680b44aae9eafe3d90ad65f842880b3441504e40c6b36266f87403b35"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_4_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_4_00.png",
+    "sha256": "960b4d5d51fe284b0206f0662bab50133dfdd611428f429768b4c6fe0874e633"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_5.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_5.json",
+    "sha256": "839de82a33ec8591eb447d9b5d59ed466e0f252d837801a2db6c76507555159a"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_5_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_5_00.png",
+    "sha256": "879044c9cc1849790e68c21664d07dd5ce58c81134a5cda04507386fabc85364"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_6.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_6.json",
+    "sha256": "d2af400a068b5b0e859171a4f1eff115d55ec68471a447e4fadfab430c715476"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_6_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_6_00.png",
+    "sha256": "12d92f1a2e5682454854fd67b553c16c87a352b77c501c4ec9bc1b28af88179e"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_7.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_7.json",
+    "sha256": "e785de07e5085d6a4b95e40367cb49f05e237a4d943f356512dba7ad6cb9b18e"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Unity/Assets/HeartOfTheRain/M38/Atlases/Crystal_Tumble_Top_7_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_7_00.png",
+    "sha256": "92e98b4a0d02380b135f091d8bc9495ecacba2f218247bc9c08bff1229439075"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Data/Storm_Crystal_Rules.json",
+    "path": "Assets/HeartOfTheRain/M48/Data/ApprovedObstacleRules/Storm_Crystal_Rules.json",
+    "sha256": "6cc9ecca692066c8c968c3478529acad270615dfbf6a608854858a02fc45a173"
+  },
+  {
+    "source": "M38_Storm_Crystal_Column_R1/Art/Textures/Crystal_Top.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/crystalIcon.png",
+    "sha256": "357da3926cb19fc33e9cc5faeb185682019d926e986a0de3f06cd4efda108571"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_1.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_1.json",
+    "sha256": "04d59ca94f1fedec88674b037779adc849e6d6e615e1c837209f8bde016a0b45"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_1_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_1_00.png",
+    "sha256": "e193adde56ceaa5c5dfaac318949f01d4ad8142a33e50da4fe5b5ffcd5327ec4"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_1_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_1_01.png",
+    "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_2.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_2.json",
+    "sha256": "22cd7bc4f7d5fbb3947c9a325493e1c30528c139ea3bf2f7fd27ba47017fc695"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_2_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_2_00.png",
+    "sha256": "3cd158357824ad413a7f803763f735475f5c0ce6a0320be1e43b655f2ad2378a"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_2_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_2_01.png",
+    "sha256": "32bce3ea75ed96cfc2ae83f807c189a4576658f12652095ee3deeae1ba5f67ac"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_3.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_3.json",
+    "sha256": "acf0a76e233d633fe3e079f4c927e44c9fe54117f2dba6b47add8dcd27da40c4"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_3_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_3_00.png",
+    "sha256": "9d3f2cec29253b7fec2ba0f4918f8023c9609d8c5a80568b7801d7c8db504a13"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_3_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_3_01.png",
+    "sha256": "e4ee3576e79c5fc09a915ecb6d605eaaf5d78680481f43a7ef246891d104a0ab"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_Accent.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_Accent.json",
+    "sha256": "38b2d0769f7ad2563f3dd4aada39fe6e51ed1faccc8c2b4733ed34a0dd269979"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_Accent_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_Accent_00.png",
+    "sha256": "81cba55f04465e862091e3c770ae97ce03784aaea0977b0256b04915de23f288"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Hit_Accent_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_Accent_01.png",
+    "sha256": "aacdb2b3aaf8c9577c48f009fb641997dc96fe3780a6ddede2e9205b6633823c"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Release_Burst.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Release_Burst.json",
+    "sha256": "d5f41143a6a5bc9cf7225a817dd4a082f67f1e49e23aac1a6dada701b3bea768"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Release_Burst_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Release_Burst_00.png",
+    "sha256": "8a26864b2ddb2e07e966b352d64d99af8a1053c9b7deb4817ac714f0044fa9c7"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Release_Burst_01.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Release_Burst_01.png",
+    "sha256": "aacdb2b3aaf8c9577c48f009fb641997dc96fe3780a6ddede2e9205b6633823c"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_0.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_0.json",
+    "sha256": "e1dc7f19e5e3e92f50199991b34ecf36e03bd83a1a66b31f008cf8bfe17f6768"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_0_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_0_00.png",
+    "sha256": "784d558a429d305d5429a72d2cd4b673618d62fa5b4bb70af18496734c7446d9"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_1.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_1.json",
+    "sha256": "673f903a4a0f1a5efbb211eb2a35a15d7f4b46c417c20e5ae3deee00a0e2aa7c"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_1_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_1_00.png",
+    "sha256": "469a300d7de1a11dde036be3fc693fa078cdb0e5847dda0c865d5e3534068ace"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_2.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_2.json",
+    "sha256": "189beebb782bfd0e3bbb598e69d1302c4a1714e11fff2b938a4a49dc3deae888"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_2_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_2_00.png",
+    "sha256": "373cbd1db0f39adc1f99fd3bcf829b082c584c8ac1d1787972e42a64f9d26d3d"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_3.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_3.json",
+    "sha256": "36f3d66dbce5e2587052b5718d7ff7a612799aa6df958a3e274b93c2ab2697ce"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_3_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_3_00.png",
+    "sha256": "8b31c9b239575d5a3e8e6662cf108b51146b4f59be08d24270b50d49588bdd6e"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_4.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_4.json",
+    "sha256": "be2f728ef30a1ccd139ecd9fb4716d585d0b94274054a3a5cefef310d2d1f075"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_4_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_4_00.png",
+    "sha256": "f3f470a3aea36d3c01f281e45a9aa1a52befcf23194a3c81f93b557679cecef5"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_5.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_5.json",
+    "sha256": "c62eb2138c539fe550702849fbaa411f8f9448064a8e0749fd74a0ae51e473a0"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_5_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_5_00.png",
+    "sha256": "5cb2f18015b579b20cabc4dcd9a5adfa2806ad0e91cc7a64b3aa7b8e3f95af7e"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_6.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_6.json",
+    "sha256": "3ef6306f4da4e2399c5042c95b504fd5d2f8225e4961089c46a425b3638a943c"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_6_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_6_00.png",
+    "sha256": "e257bef658be4fbce5160aeada1a03dfab7b68e4f2178e4ecd9ecd34ce211366"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_7.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_7.json",
+    "sha256": "e2d12ec3ff579376458f366215862e9ff1373931037748864808a6e18ab08e97"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Pod_Tumble_7_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_7_00.png",
+    "sha256": "6a9eea4625f7ac3b0230e2e6a2628ef9daa9a87fd77d07fd786f4f5200f58f1c"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Spirit_Idle.json",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Spirit_Idle.json",
+    "sha256": "4982e7687e09da0d1968898a5ae31c0b3b3ecd6b8a5de38c72154caf01db94e0"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Atlases/Spirit_Idle_00.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/FX/pod/Spirit_Idle_00.png",
+    "sha256": "8b79597b0c3a199232bc0dd95bd1fed20f629077fbf54c13c07053c9d611c7fa"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Data/Pod_Rules.json",
+    "path": "Assets/HeartOfTheRain/M48/Data/ApprovedObstacleRules/Pod_Rules.json",
+    "sha256": "3fc7b5a4482748627150565425748b622caf517f75959ef21ce266ebb674d6f3"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Art/States/Pod_HP1.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_1.png",
+    "sha256": "66ad59c1ddc104326d80f08f9fa96f4c8e84452b3ba25db8078994c52d479624"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Art/States/Pod_HP2.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_2.png",
+    "sha256": "8dadfee73bc7ab19ba5a6d9e62af6f035e9cf535843660526cc8bdff069e9872"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Art/States/Pod_HP3.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_3.png",
+    "sha256": "6e3e6bd6897b0e203ff74fd3ea411479ee01a07a9a098f06b87219f32222e3e4"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Textures/Water_Spirit.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/waterSpirit.png",
+    "sha256": "ec6bae428740d27ff24d052b83b7285f8d13557e09471fbc6f2acfb3406703f4"
+  },
+  {
+    "source": "M39_Water_Spirit_Pod_R1/Unity/Assets/HeartOfTheRain/M39/Textures/Glint_Tight.png",
+    "path": "Assets/HeartOfTheRain/M46/Art/Obstacles/collectionGlint.png",
+    "sha256": "df3a646c9f9fa689672532105ce560d9e46411fc3f523d1ba325c3e9a300fc67"
+  }
+]

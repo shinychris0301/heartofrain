@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b435713fe9c5e86b3f565ee741c282e, type: 3}
+  m_Name: M67_CelebrationAssets
+  m_EditorClassIdentifier:
+  dariaAtlas: {fileID: 2800000, guid: e029f35770a75f7e8a9ba349acf0501a, type: 3}
+  dariaBlend: {fileID: 4800000, guid: a5e65e8b7bc5502ea120221567e464ee, type: 3}
+  ui: {fileID: 11400000, guid: f7a33712cdeb5629bde2f1ee2e6cdef1, type: 2}
+  music: {fileID: 8300000, guid: 1919912ba26b552eb4849956b50783e7, type: 3}
+  chapters:
+  - chapter: 1
+    restoration: {fileID: 21300000, guid: c5014d90c8fd5efd94e149569816b70a, type: 3}
+    hook: {fileID: 21300000, guid: 21b3afdafefd536d9ae08ad641a47795, type: 3}
+    title: The Village Well
+    captions:
+    - The village well is restored.
+    - You did it! The well is working again.
+    - 'A messenger arrives: the Heart of Ancient Moscow is faltering.'

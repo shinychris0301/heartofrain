@@ -1,0 +1,1600 @@
+{
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "entries": {
+    "Settings": [
+      "Settings",
+      "Ajustes",
+      "Paramètres",
+      "Einstellungen",
+      "Настройки"
+    ],
+    "Inventory": [
+      "Inventory",
+      "Inventario",
+      "Inventaire",
+      "Inventar",
+      "Инвентарь"
+    ],
+    "Language": [
+      "Language",
+      "Idioma",
+      "Langue",
+      "Sprache",
+      "Язык"
+    ],
+    "Help & Support": [
+      "Help & Support",
+      "Ayuda",
+      "Aide",
+      "Hilfe",
+      "Помощь"
+    ],
+    "Follow Us": [
+      "Follow Us",
+      "Síguenos",
+      "Suivez-nous",
+      "Folge uns",
+      "Наши соцсети"
+    ],
+    "Music": [
+      "Music",
+      "Música",
+      "Musique",
+      "Musik",
+      "Музыка"
+    ],
+    "Sound": [
+      "Sound",
+      "Sonido",
+      "Son",
+      "Ton",
+      "Звук"
+    ],
+    "Hints": [
+      "Hints",
+      "Pistas",
+      "Indices",
+      "Hinweise",
+      "Подсказки"
+    ],
+    "On": [
+      "On",
+      "Sí",
+      "Oui",
+      "An",
+      "Вкл."
+    ],
+    "Off": [
+      "Off",
+      "No",
+      "Non",
+      "Aus",
+      "Выкл."
+    ],
+    "Boosters & tools": [
+      "Boosters & tools",
+      "Potenciadores y herramientas",
+      "Bonus et outils",
+      "Booster und Werkzeuge",
+      "Усилители и инструменты"
+    ],
+    "Tips and answers": [
+      "Tips and answers",
+      "Consejos y respuestas",
+      "Conseils et réponses",
+      "Tipps und Antworten",
+      "Советы и ответы"
+    ],
+    "News from the village": [
+      "News from the village",
+      "Noticias de la aldea",
+      "Les nouvelles du village",
+      "Neuigkeiten aus dem Dorf",
+      "Новости деревни"
+    ],
+    "Terms of Service": [
+      "Terms of Service",
+      "Condiciones de uso",
+      "Conditions d’utilisation",
+      "Nutzungsbedingungen",
+      "Условия использования"
+    ],
+    "Privacy Policy": [
+      "Privacy Policy",
+      "Privacidad",
+      "Confidentialité",
+      "Datenschutz",
+      "Конфиденциальность"
+    ],
+    "Starting boosters": [
+      "Starting boosters",
+      "Potenciadores iniciales",
+      "Bonus de départ",
+      "Startbooster",
+      "Стартовые усилители"
+    ],
+    "Level tools": [
+      "Level tools",
+      "Herramientas del nivel",
+      "Outils du niveau",
+      "Level-Werkzeuge",
+      "Инструменты уровня"
+    ],
+    "Choose before a level": [
+      "Choose before a level",
+      "Elige antes de jugar",
+      "À choisir avant de jouer",
+      "Vor dem Start auswählen",
+      "Выберите перед началом"
+    ],
+    "Provided at the start of each level": [
+      "Provided at the start of each level",
+      "Se entregan al iniciar cada nivel",
+      "Fournis au début de chaque niveau",
+      "Zu Beginn jedes Levels verfügbar",
+      "Выдаются в начале каждого уровня"
+    ],
+    "Rocket": [
+      "Rocket",
+      "Cohete",
+      "Fusée",
+      "Rakete",
+      "Ракета"
+    ],
+    "Bomb": [
+      "Bomb",
+      "Bomba",
+      "Bombe",
+      "Bombe",
+      "Бомба"
+    ],
+    "Rainbow Orb": [
+      "Rainbow Orb",
+      "Orbe\narcoíris",
+      "Orbe\narc-en-ciel",
+      "Regenbogen-\nkugel",
+      "Радужная\nсфера"
+    ],
+    "Golden Seeker": [
+      "Golden Seeker",
+      "Buscador\ndorado",
+      "Éclaireur\ndoré",
+      "Goldener\nSucher",
+      "Золотой\nискатель"
+    ],
+    "Hammer": [
+      "Hammer",
+      "Martillo",
+      "Marteau",
+      "Hammer",
+      "Молоток"
+    ],
+    "Axe": [
+      "Axe",
+      "Hacha",
+      "Hache",
+      "Axt",
+      "Топор"
+    ],
+    "Ram": [
+      "Ram",
+      "Ariete",
+      "Bélier",
+      "Ramme",
+      "Таран"
+    ],
+    "Atlas": [
+      "Atlas",
+      "Atlas",
+      "Atlas",
+      "Atlas",
+      "Атлас"
+    ],
+    "View Shop": [
+      "View Shop",
+      "Ver tienda",
+      "Voir la boutique",
+      "Zum Shop",
+      "В магазин"
+    ],
+    "Back to Settings": [
+      "Back to Settings",
+      "Volver a ajustes",
+      "Retour aux paramètres",
+      "Zu den Einstellungen",
+      "К настройкам"
+    ],
+    "Back": [
+      "Back",
+      "Volver",
+      "Retour",
+      "Zurück",
+      "Назад"
+    ],
+    "Choose your game language": [
+      "Choose your game language",
+      "Elige el idioma del juego",
+      "Choisissez la langue du jeu",
+      "Wähle deine Spielsprache",
+      "Выберите язык игры"
+    ],
+    "Selected": [
+      "Selected",
+      "Seleccionado",
+      "Sélectionné",
+      "Ausgewählt",
+      "Выбрано"
+    ],
+    "How do I play?": [
+      "How do I play?",
+      "¿Cómo se juega?",
+      "Comment jouer ?",
+      "Wie spiele ich?",
+      "Как играть?"
+    ],
+    "How do boosters work?": [
+      "How do boosters work?",
+      "¿Cómo funcionan los potenciadores?",
+      "Comment utiliser les bonus ?",
+      "Wie funktionieren Booster?",
+      "Как работают усилители?"
+    ],
+    "What happens when I exit?": [
+      "What happens when I exit?",
+      "¿Qué pasa si salgo?",
+      "Que se passe-t-il si je quitte ?",
+      "Was passiert beim Verlassen?",
+      "Что будет при выходе?"
+    ],
+    "Swap neighboring tiles to match three. Clear the targets before your moves run out.": [
+      "Swap neighboring tiles to match three. Clear the targets before your moves run out.",
+      "Intercambia fichas vecinas y une tres.\nCompleta los objetivos antes\nde agotar los movimientos.",
+      "Échangez des pièces voisines.\nAlignez-en trois et atteignez les\nobjectifs avant d’épuiser vos coups.",
+      "Tausche benachbarte Steine.\nVerbinde drei gleiche und erfülle\ndie Ziele, bevor die Züge ausgehen.",
+      "Меняйте соседние фишки местами.\nСобирайте по три одинаковых.\nВыполните цели за доступные ходы."
+    ],
+    "Choose starting boosters before a level. Use tools from the gameplay toolbar. Combine power-ups for bigger effects.": [
+      "Choose starting boosters before a level. Use tools from the gameplay toolbar. Combine power-ups for bigger effects.",
+      "Elige potenciadores antes de jugar.\nUsa las herramientas de la barra.\nCombina poderes para lograr más.",
+      "Choisissez vos bonus avant de jouer.\nUtilisez les outils de la barre.\nCombinez les bonus pour plus d’effet.",
+      "Wähle Booster vor dem Level.\nNutze die Werkzeuge in der Leiste.\nKombiniere Extras für mehr Wirkung.",
+      "Выберите усилители перед игрой.\nИнструменты доступны на панели.\nКомбинируйте бонусы для мощных эффектов."
+    ],
+    "Leaving an unfinished level costs a life. Cancel the exit to continue playing. Try Again starts the level afresh.": [
+      "Leaving an unfinished level costs a life. Cancel the exit to continue playing. Try Again starts the level afresh.",
+      "Salir del nivel cuesta una vida.\nCancela la salida para seguir.\n«Reintentar» reinicia el nivel.",
+      "Quitter un niveau coûte une vie.\nAnnulez pour continuer à jouer.\n« Réessayer » recommence le niveau.",
+      "Beim Verlassen verlierst du ein Leben.\nBrich den Vorgang ab, um weiterzuspielen.\n„Erneut“ startet das Level neu.",
+      "При выходе вы потеряете жизнь.\nОтмените выход, чтобы продолжить.\n«Ещё раз» начнёт уровень заново."
+    ],
+    "Contact Support": [
+      "Contact Support",
+      "Contactar con soporte",
+      "Contacter l’assistance",
+      "Support kontaktieren",
+      "Служба поддержки"
+    ],
+    "Available soon": [
+      "Available soon",
+      "Próximamente",
+      "Bientôt disponible",
+      "Bald verfügbar",
+      "Скоро"
+    ],
+    "Coming soon": [
+      "Coming soon",
+      "Próximamente",
+      "Bientôt",
+      "Demnächst",
+      "Скоро"
+    ],
+    "Open the support center": [
+      "Open the support center",
+      "Abrir centro de ayuda",
+      "Ouvrir le centre d’aide",
+      "Hilfe-Center öffnen",
+      "Открыть центр поддержки"
+    ],
+    "Stay close to the village": [
+      "Stay close to the village",
+      "Sigue cerca de la aldea",
+      "Gardez le lien avec le village",
+      "Bleib mit dem Dorf verbunden",
+      "Будьте на связи с деревней"
+    ],
+    "Open official channel": [
+      "Open official channel",
+      "Abrir canal oficial",
+      "Ouvrir le compte officiel",
+      "Offiziellen Kanal öffnen",
+      "Открыть официальный канал"
+    ],
+    "This document is not available yet. Please check back later.": [
+      "This document is not available yet. Please check back later.",
+      "Este documento aún no está disponible.\nVuelve más tarde.",
+      "Ce document n’est pas encore disponible.\nRevenez plus tard.",
+      "Dieses Dokument ist noch nicht verfügbar.\nSchau später wieder vorbei.",
+      "Документ пока недоступен.\nЗагляните позже."
+    ],
+    "This channel is not available yet. Please check back later.": [
+      "This channel is not available yet. Please check back later.",
+      "Este canal aún no está disponible.\nVuelve más tarde.",
+      "Ce compte n’est pas encore disponible.\nRevenez plus tard.",
+      "Dieser Kanal ist noch nicht verfügbar.\nSchau später wieder vorbei.",
+      "Канал пока недоступен.\nЗагляните позже."
+    ],
+    "Close settings": [
+      "Close settings",
+      "Cerrar ajustes",
+      "Fermer les paramètres",
+      "Einstellungen schließen",
+      "Закрыть настройки"
+    ],
+    "Close": [
+      "Close",
+      "Cerrar",
+      "Fermer",
+      "Schließen",
+      "Закрыть"
+    ],
+    "Home": [
+      "Home",
+      "Inicio",
+      "Accueil",
+      "Start",
+      "Главная"
+    ],
+    "Journey": [
+      "Journey",
+      "Viaje",
+      "Voyage",
+      "Reise",
+      "История"
+    ],
+    "Leaderboard": [
+      "Leaderboard",
+      "Clasificación",
+      "Classement",
+      "Rangliste",
+      "Рейтинг"
+    ],
+    "Rankings": [
+      "Rankings",
+      "Ranking",
+      "Classement",
+      "Rangliste",
+      "Рейтинг"
+    ],
+    "Ranks": [
+      "Ranks",
+      "Rangos",
+      "Rangs",
+      "Ränge",
+      "Рейтинг"
+    ],
+    "Teams": [
+      "Teams",
+      "Equipos",
+      "Équipes",
+      "Teams",
+      "Команды"
+    ],
+    "Shop": [
+      "Shop",
+      "Tienda",
+      "Boutique",
+      "Shop",
+      "Магазин"
+    ],
+    "Start Level": [
+      "Start Level",
+      "Jugar",
+      "Jouer",
+      "Level starten",
+      "Начать"
+    ],
+    "The Village Well": [
+      "The Village Well",
+      "El pozo de la aldea",
+      "Le puits du village",
+      "Der Dorfbrunnen",
+      "Сельский колодец"
+    ],
+    "The Chamber Beneath the Square": [
+      "The Chamber Beneath the Square",
+      "La cámara bajo la plaza",
+      "La salle sous la place",
+      "Die Kammer unter dem Platz",
+      "Зал под площадью"
+    ],
+    "Events": [
+      "Events",
+      "Eventos",
+      "Événements",
+      "Events",
+      "События"
+    ],
+    "Daily Gift": [
+      "Daily Gift",
+      "Regalo diario",
+      "Cadeau",
+      "Geschenk",
+      "Подарок"
+    ],
+    "Rain Cup": [
+      "Rain Cup",
+      "Copa",
+      "Coupe",
+      "Regenpokal",
+      "Кубок"
+    ],
+    "Wellworks": [
+      "Wellworks",
+      "El pozo",
+      "Au puits",
+      "Brunnenbau",
+      "Ремонт"
+    ],
+    "Team Quest": [
+      "Team Quest",
+      "Misión",
+      "Quête",
+      "Teamquest",
+      "Задание"
+    ],
+    "Ready": [
+      "Ready",
+      "Listo",
+      "Prêt",
+      "Bereit",
+      "Готово"
+    ],
+    "Chapter {0}": [
+      "Chapter {0}",
+      "Capítulo {0}",
+      "Chapitre {0}",
+      "Kapitel {0}",
+      "Глава {0}"
+    ],
+    "CHAPTER {0}": [
+      "CHAPTER {0}",
+      "CAPÍTULO {0}",
+      "CHAPITRE {0}",
+      "KAPITEL {0}",
+      "ГЛАВА {0}"
+    ],
+    "Level {0}": [
+      "Level {0}",
+      "Nivel {0}",
+      "Niveau {0}",
+      "Level {0}",
+      "Уровень {0}"
+    ],
+    "LEVEL": [
+      "LEVEL",
+      "NIVEL",
+      "NIVEAU",
+      "LEVEL",
+      "УРОВЕНЬ"
+    ],
+    "{0}d {1}h": [
+      "{0}d {1}h",
+      "{0}d {1}h",
+      "{0}j {1}h",
+      "{0}T {1}Std",
+      "{0}д {1}ч"
+    ],
+    "Targets": [
+      "Targets",
+      "Objetivos",
+      "Objectifs",
+      "Ziele",
+      "Цели"
+    ],
+    "Moves": [
+      "Moves",
+      "Movimientos",
+      "Coups",
+      "Züge",
+      "Ходы"
+    ],
+    "Rewards": [
+      "Rewards",
+      "Premios",
+      "Récompenses",
+      "Belohnungen",
+      "Награды"
+    ],
+    "Choose boosters": [
+      "Choose boosters",
+      "Elige potenciadores",
+      "Choisissez vos bonus",
+      "Booster wählen",
+      "Выберите усилители"
+    ],
+    "Starting…": [
+      "Starting…",
+      "Iniciando…",
+      "Chargement…",
+      "Startet…",
+      "Запуск…"
+    ],
+    "Try Again": [
+      "Try Again",
+      "Reintentar",
+      "Réessayer",
+      "Erneut",
+      "Ещё раз"
+    ],
+    "Try again": [
+      "Try again",
+      "Reintentar",
+      "Réessayer",
+      "Erneut",
+      "Ещё раз"
+    ],
+    "Play": [
+      "Play",
+      "Jugar",
+      "Jouer",
+      "Spielen",
+      "Играть"
+    ],
+    "No lives": [
+      "No lives",
+      "Sin vidas",
+      "Plus de vies",
+      "Keine Leben",
+      "Нет жизней"
+    ],
+    "No lives remaining": [
+      "No lives remaining",
+      "No quedan vidas",
+      "Vous n’avez plus de vies",
+      "Keine Leben mehr",
+      "Жизни закончились"
+    ],
+    "No lives remaining.": [
+      "No lives remaining.",
+      "No quedan vidas.",
+      "Vous n’avez plus de vies.",
+      "Keine Leben mehr.",
+      "Жизни закончились."
+    ],
+    "Continue": [
+      "Continue",
+      "Continuar",
+      "Continuer",
+      "Weiter",
+      "Продолжить"
+    ],
+    "Exit Level": [
+      "Exit Level",
+      "Salir del nivel",
+      "Quitter le niveau",
+      "Level verlassen",
+      "Выйти"
+    ],
+    "End Level?": [
+      "End Level?",
+      "¿Terminar nivel?",
+      "Quitter le niveau ?",
+      "Level beenden?",
+      "Завершить уровень?"
+    ],
+    "You’ll lose": [
+      "You’ll lose",
+      "Perderás",
+      "Vous perdrez",
+      "Du verlierst",
+      "Вы потеряете"
+    ],
+    "your last life.": [
+      "your last life.",
+      "tu última vida.",
+      "votre dernière vie.",
+      "dein letztes Leben.",
+      "последнюю жизнь."
+    ],
+    "1 life.": [
+      "1 life.",
+      "1 vida.",
+      "1 vie.",
+      "1 Leben.",
+      "1 жизнь."
+    ],
+    "remaining.": [
+      "remaining.",
+      "restantes.",
+      "restantes.",
+      "übrig.",
+      "не осталось."
+    ],
+    "You’ll lose your last life.": [
+      "You’ll lose your last life.",
+      "Perderás tu última vida.",
+      "Vous perdrez votre dernière vie.",
+      "Du verlierst dein letztes Leben.",
+      "Вы потеряете последнюю жизнь."
+    ],
+    "You’ll lose 1 life.": [
+      "You’ll lose 1 life.",
+      "Perderás 1 vida.",
+      "Vous perdrez 1 vie.",
+      "Du verlierst 1 Leben.",
+      "Вы потеряете 1 жизнь."
+    ],
+    "Level progress will be lost.": [
+      "Level progress will be lost.",
+      "Se perderá el progreso del nivel.",
+      "La progression du niveau sera perdue.",
+      "Der Levelfortschritt geht verloren.",
+      "Прогресс уровня будет потерян."
+    ],
+    "Keep Playing": [
+      "Keep Playing",
+      "Seguir jugando",
+      "Continuer à jouer",
+      "Weiterspielen",
+      "Продолжить"
+    ],
+    "Keep playing": [
+      "Keep playing",
+      "Seguir jugando",
+      "Continuer à jouer",
+      "Weiterspielen",
+      "Продолжить"
+    ],
+    "Cancel": [
+      "Cancel",
+      "Cancelar",
+      "Annuler",
+      "Abbrechen",
+      "Отмена"
+    ],
+    "Story": [
+      "Story",
+      "Historia",
+      "Histoire",
+      "Geschichte",
+      "История"
+    ],
+    "Chapter complete": [
+      "Chapter complete",
+      "Capítulo completado",
+      "Chapitre terminé",
+      "Kapitel abgeschlossen",
+      "Глава завершена"
+    ],
+    "View Story": [
+      "View Story",
+      "Ver historia",
+      "Lire l’histoire",
+      "Geschichte lesen",
+      "Читать"
+    ],
+    "Locked": [
+      "Locked",
+      "Bloqueado",
+      "Verrouillé",
+      "Gesperrt",
+      "Закрыто"
+    ],
+    "Opens at Level {0}": [
+      "Opens at Level {0}",
+      "Se abre en el nivel {0}",
+      "Disponible au niveau {0}",
+      "Ab Level {0}",
+      "Откроется на уровне {0}"
+    ],
+    "Levels {0}–{1}": [
+      "Levels {0}–{1}",
+      "Niveles {0}–{1}",
+      "Niveaux {0}–{1}",
+      "Level {0}–{1}",
+      "Уровни {0}–{1}"
+    ],
+    "{0} / 50 levels": [
+      "{0} / 50 levels",
+      "{0} / 50 niveles",
+      "{0} / 50 niveaux",
+      "{0} / 50 Level",
+      "{0} / 50 уровней"
+    ],
+    "OPENING": [
+      "OPENING",
+      "INICIO",
+      "DÉBUT",
+      "ANFANG",
+      "НАЧАЛО"
+    ],
+    "ENDING": [
+      "ENDING",
+      "FINAL",
+      "FIN",
+      "ENDE",
+      "ФИНАЛ"
+    ],
+    "Ending unlocks after Level {0}": [
+      "Ending unlocks after Level {0}",
+      "Final disponible tras el nivel {0}",
+      "Fin disponible après le niveau {0}",
+      "Ende nach Level {0} verfügbar",
+      "Финал откроется после уровня {0}"
+    ],
+    "Done": [
+      "Done",
+      "Listo",
+      "Terminé",
+      "Fertig",
+      "Готово"
+    ],
+    "Next": [
+      "Next",
+      "Siguiente",
+      "Suivant",
+      "Weiter",
+      "Далее"
+    ],
+    "Friends": [
+      "Friends",
+      "Amigos",
+      "Amis",
+      "Freunde",
+      "Друзья"
+    ],
+    "Players": [
+      "Players",
+      "Jugadores",
+      "Joueurs",
+      "Spieler",
+      "Игроки"
+    ],
+    "Friends List": [
+      "Friends List",
+      "Mis amigos",
+      "Liste d’amis",
+      "Freundesliste",
+      "Список друзей"
+    ],
+    "Add Friends": [
+      "Add Friends",
+      "Añadir amigos",
+      "Ajouter des amis",
+      "Freunde finden",
+      "Найти друзей"
+    ],
+    "World": [
+      "World",
+      "Mundo",
+      "Monde",
+      "Welt",
+      "Мир"
+    ],
+    "Local": [
+      "Local",
+      "Local",
+      "Local",
+      "Region",
+      "Регион"
+    ],
+    "United States": [
+      "United States",
+      "Estados Unidos",
+      "États-Unis",
+      "USA",
+      "США"
+    ],
+    "United Kingdom": [
+      "United Kingdom",
+      "Reino Unido",
+      "Royaume-Uni",
+      "Großbritannien",
+      "Великобритания"
+    ],
+    "Search results": [
+      "Search results",
+      "Resultados",
+      "Résultats",
+      "Suchergebnisse",
+      "Результаты поиска"
+    ],
+    "Suggested friends": [
+      "Suggested friends",
+      "Amigos sugeridos",
+      "Amis suggérés",
+      "Vorschläge",
+      "Рекомендации"
+    ],
+    "Your friends": [
+      "Your friends",
+      "Tus amigos",
+      "Vos amis",
+      "Deine Freunde",
+      "Ваши друзья"
+    ],
+    "Player rankings": [
+      "Player rankings",
+      "Clasificación de jugadores",
+      "Classement des joueurs",
+      "Spielerrangliste",
+      "Рейтинг игроков"
+    ],
+    "Team rankings": [
+      "Team rankings",
+      "Clasificación de equipos",
+      "Classement des équipes",
+      "Teamrangliste",
+      "Рейтинг команд"
+    ],
+    "Sample data": [
+      "Sample data",
+      "Datos de ejemplo",
+      "Données d’exemple",
+      "Beispieldaten",
+      "Пример данных"
+    ],
+    "You": [
+      "You",
+      "Tú",
+      "Vous",
+      "Du",
+      "Вы"
+    ],
+    "Your rank": [
+      "Your rank",
+      "Tu puesto",
+      "Votre rang",
+      "Dein Rang",
+      "Ваше место"
+    ],
+    "Independent": [
+      "Independent",
+      "Sin equipo",
+      "Sans équipe",
+      "Ohne Team",
+      "Без команды"
+    ],
+    "SCORE": [
+      "SCORE",
+      "PUNTOS",
+      "SCORE",
+      "PUNKTE",
+      "ОЧКИ"
+    ],
+    "Request pending": [
+      "Request pending",
+      "Solicitud pendiente",
+      "Demande en attente",
+      "Anfrage offen",
+      "Заявка отправлена"
+    ],
+    "Name or player ID": [
+      "Name or player ID",
+      "Nombre o ID de jugador",
+      "Nom ou identifiant",
+      "Name oder Spieler-ID",
+      "Имя или ID игрока"
+    ],
+    "Ranked by total team score": [
+      "Ranked by total team score",
+      "Por puntos totales del equipo",
+      "Selon le score total de l’équipe",
+      "Nach Gesamtpunkten des Teams",
+      "По общим очкам команды"
+    ],
+    "Local preview · no requests are sent": [
+      "Local preview · no requests are sent",
+      "Vista local · sin enviar solicitudes",
+      "Aperçu local · aucun envoi",
+      "Lokale Vorschau · kein Versand",
+      "Локальный просмотр · без отправки"
+    ],
+    "No players found": [
+      "No players found",
+      "No se encontraron jugadores",
+      "Aucun joueur trouvé",
+      "Keine Spieler gefunden",
+      "Игроки не найдены"
+    ],
+    "Your friends will appear here": [
+      "Your friends will appear here",
+      "Tus amigos aparecerán aquí",
+      "Vos amis apparaîtront ici",
+      "Hier erscheinen deine Freunde",
+      "Здесь будут ваши друзья"
+    ],
+    "No rankings yet": [
+      "No rankings yet",
+      "Aún no hay clasificación",
+      "Aucun classement",
+      "Noch keine Rangliste",
+      "Рейтинг пока пуст"
+    ],
+    "Try a name or player ID.": [
+      "Try a name or player ID.",
+      "Prueba un nombre o ID.",
+      "Essayez un nom ou un identifiant.",
+      "Versuche einen Namen oder eine ID.",
+      "Введите имя или ID игрока."
+    ],
+    "Open Add Friends to find players.": [
+      "Open Add Friends to find players.",
+      "Busca jugadores en «Añadir amigos».",
+      "Cherchez dans « Ajouter des amis ».",
+      "Suche unter „Freunde finden“.",
+      "Найдите игроков через «Найти друзей»."
+    ],
+    "Check back when rankings are available.": [
+      "Check back when rankings are available.",
+      "Vuelve cuando haya clasificación.",
+      "Revenez quand le classement sera prêt.",
+      "Schau später wieder vorbei.",
+      "Загляните позже: рейтинг появится."
+    ],
+    "Remove friend?": [
+      "Remove friend?",
+      "¿Eliminar amigo?",
+      "Supprimer cet ami ?",
+      "Freund entfernen?",
+      "Удалить друга?"
+    ],
+    "You can find them again later.": [
+      "You can find them again later.",
+      "Podrás volver a encontrarlo.",
+      "Vous pourrez le retrouver plus tard.",
+      "Du kannst ihn später wiederfinden.",
+      "Вы сможете найти его снова."
+    ],
+    "Remove": [
+      "Remove",
+      "Eliminar",
+      "Supprimer",
+      "Entfernen",
+      "Удалить"
+    ],
+    "Request saved in this preview": [
+      "Request saved in this preview",
+      "Solicitud guardada en esta vista",
+      "Demande enregistrée dans l’aperçu",
+      "Anfrage in der Vorschau gespeichert",
+      "Заявка сохранена в просмотре"
+    ],
+    "Preview request cancelled": [
+      "Preview request cancelled",
+      "Solicitud de vista cancelada",
+      "Demande de l’aperçu annulée",
+      "Vorschau-Anfrage zurückgezogen",
+      "Заявка отменена в просмотре"
+    ],
+    "Removed from preview friends": [
+      "Removed from preview friends",
+      "Eliminado de amigos de la vista",
+      "Retiré des amis de l’aperçu",
+      "Aus Vorschau-Freunden entfernt",
+      "Удалён из друзей в просмотре"
+    ],
+    "Chat": [
+      "Chat",
+      "Chat",
+      "Chat",
+      "Chat",
+      "Чат"
+    ],
+    "Team info": [
+      "Team info",
+      "Información",
+      "Infos équipe",
+      "Teaminfo",
+      "О команде"
+    ],
+    "Mail": [
+      "Mail",
+      "Correo",
+      "Courrier",
+      "Post",
+      "Почта"
+    ],
+    "TEAM EVENT": [
+      "TEAM EVENT",
+      "EVENTO DE EQUIPO",
+      "ÉVÉNEMENT D’ÉQUIPE",
+      "TEAM-EVENT",
+      "СОБЫТИЕ КОМАНДЫ"
+    ],
+    "Wellkeeper Rally": [
+      "Wellkeeper Rally",
+      "Reto del pozo",
+      "Rassemblement du puits",
+      "Brunnen-Rallye",
+      "Сбор хранителей"
+    ],
+    "Restore the well together": [
+      "Restore the well together",
+      "Restaurad el pozo juntos",
+      "Restaurez le puits ensemble",
+      "Stellt den Brunnen gemeinsam her",
+      "Восстановим колодец вместе"
+    ],
+    "Life request": [
+      "Life request",
+      "Petición de vida",
+      "Demande de vie",
+      "Lebensanfrage",
+      "Просьба о жизни"
+    ],
+    "Helped": [
+      "Helped",
+      "Ayudado",
+      "Aide envoyée",
+      "Geholfen",
+      "Помощь оказана"
+    ],
+    "Full": [
+      "Full",
+      "Completo",
+      "Complet",
+      "Voll",
+      "Полно"
+    ],
+    "Help": [
+      "Help",
+      "Ayudar",
+      "Aider",
+      "Helfen",
+      "Помочь"
+    ],
+    "Waiting": [
+      "Waiting",
+      "Esperando",
+      "En attente",
+      "Warten",
+      "Ожидание"
+    ],
+    "HELPS": [
+      "HELPS",
+      "AYUDAS",
+      "AIDES",
+      "HILFEN",
+      "ПОМОЩЬ"
+    ],
+    "Requested": [
+      "Requested",
+      "Solicitado",
+      "Demandé",
+      "Angefragt",
+      "Запрошено"
+    ],
+    "Request lives": [
+      "Request lives",
+      "Pedir vidas",
+      "Demander des vies",
+      "Leben anfragen",
+      "Попросить жизни"
+    ],
+    "Message": [
+      "Message",
+      "Mensaje",
+      "Message",
+      "Nachricht",
+      "Сообщение"
+    ],
+    "Every drop brings us together": [
+      "Every drop brings us together",
+      "Cada gota nos une",
+      "Chaque goutte nous rapproche",
+      "Jeder Tropfen verbindet uns",
+      "Каждая капля объединяет нас"
+    ],
+    "Members": [
+      "Members",
+      "Miembros",
+      "Membres",
+      "Mitglieder",
+      "Участники"
+    ],
+    "Team mail": [
+      "Team mail",
+      "Correo del equipo",
+      "Courrier d’équipe",
+      "Teampost",
+      "Почта команды"
+    ],
+    "Your mailbox is clear": [
+      "Your mailbox is clear",
+      "No tienes correo",
+      "Votre boîte est vide",
+      "Dein Postfach ist leer",
+      "Почта пуста"
+    ],
+    "Back to mail": [
+      "Back to mail",
+      "Volver al correo",
+      "Retour au courrier",
+      "Zur Post",
+      "К почте"
+    ],
+    "Local preview · sample team activity": [
+      "Local preview · sample team activity",
+      "Vista local · actividad de ejemplo",
+      "Aperçu local · activité d’exemple",
+      "Lokale Vorschau · Beispielaktivität",
+      "Локальный пример команды"
+    ],
+    "Team message": [
+      "Team message",
+      "Mensaje al equipo",
+      "Message d’équipe",
+      "Teamnachricht",
+      "Сообщение команде"
+    ],
+    "Only visible in this local preview.": [
+      "Only visible in this local preview.",
+      "Solo visible en esta vista local.",
+      "Visible uniquement dans cet aperçu.",
+      "Nur in dieser lokalen Vorschau sichtbar.",
+      "Видно только в этом просмотре."
+    ],
+    "Write a message...": [
+      "Write a message...",
+      "Escribe un mensaje...",
+      "Écrivez un message…",
+      "Schreibe eine Nachricht…",
+      "Напишите сообщение..."
+    ],
+    "Up to 120 characters": [
+      "Up to 120 characters",
+      "Hasta 120 caracteres",
+      "120 caractères maximum",
+      "Bis zu 120 Zeichen",
+      "До 120 символов"
+    ],
+    "Post preview": [
+      "Post preview",
+      "Publicar en vista",
+      "Publier dans l’aperçu",
+      "In Vorschau posten",
+      "Опубликовать в просмотре"
+    ],
+    "Say hello to your team": [
+      "Say hello to your team",
+      "Saluda a tu equipo",
+      "Saluez votre équipe",
+      "Begrüße dein Team",
+      "Поздоровайтесь с командой"
+    ],
+    "Help recorded in this preview": [
+      "Help recorded in this preview",
+      "Ayuda registrada en esta vista",
+      "Aide enregistrée dans l’aperçu",
+      "Hilfe in Vorschau erfasst",
+      "Помощь учтена в просмотре"
+    ],
+    "Life request added to this preview": [
+      "Life request added to this preview",
+      "Petición añadida a esta vista",
+      "Demande de vie ajoutée à l’aperçu",
+      "Lebensanfrage zur Vorschau hinzugefügt",
+      "Просьба о жизни добавлена"
+    ],
+    "Added to this preview only": [
+      "Added to this preview only",
+      "Solo añadido a esta vista",
+      "Ajouté uniquement à cet aperçu",
+      "Nur zur Vorschau hinzugefügt",
+      "Добавлено только в просмотр"
+    ],
+    "Leader": [
+      "Leader",
+      "Líder",
+      "Chef",
+      "Leiter",
+      "Лидер"
+    ],
+    "Co-leader": [
+      "Co-leader",
+      "Colíder",
+      "Adjoint",
+      "Co-Leiter",
+      "Солидер"
+    ],
+    "Member": [
+      "Member",
+      "Miembro",
+      "Membre",
+      "Mitglied",
+      "Участник"
+    ],
+    "{0} / {1} members": [
+      "{0} / {1} members",
+      "Miembros: {0} / {1}",
+      "Membres : {0} / {1}",
+      "Mitglieder: {0} / {1}",
+      "Участники: {0} / {1}"
+    ],
+    "{0} online": [
+      "{0} online",
+      "En línea: {0}",
+      "En ligne : {0}",
+      "Online: {0}",
+      "В сети: {0}"
+    ],
+    "{0} unread": [
+      "{0} unread",
+      "Sin leer: {0}",
+      "Non lus : {0}",
+      "Ungelesen: {0}",
+      "Непрочитано: {0}"
+    ],
+    "Special Offers": [
+      "Special Offers",
+      "Ofertas especiales",
+      "Offres spéciales",
+      "Sonderangebote",
+      "Спецпредложения"
+    ],
+    "Mega Offers": [
+      "Mega Offers",
+      "Megaofertas",
+      "Méga offres",
+      "Mega-Angebote",
+      "Мегапредложения"
+    ],
+    "Coins": [
+      "Coins",
+      "Monedas",
+      "Pièces",
+      "Münzen",
+      "Монеты"
+    ],
+    "Bundle contents": [
+      "Bundle contents",
+      "Contenido del lote",
+      "Contenu du lot",
+      "Paketinhalt",
+      "Состав набора"
+    ],
+    "Offer contents": [
+      "Offer contents",
+      "Contenido de la oferta",
+      "Contenu de l’offre",
+      "Angebotsinhalt",
+      "Состав предложения"
+    ],
+    "Sample price": [
+      "Sample price",
+      "Precio de ejemplo",
+      "Prix d’exemple",
+      "Beispielpreis",
+      "Пример цены"
+    ],
+    "Store unavailable": [
+      "Store unavailable",
+      "Tienda no disponible",
+      "Boutique indisponible",
+      "Shop nicht verfügbar",
+      "Магазин недоступен"
+    ],
+    "Purchases are not available": [
+      "Purchases are not available",
+      "Las compras no están disponibles",
+      "Les achats sont indisponibles",
+      "Käufe sind nicht verfügbar",
+      "Покупки недоступны"
+    ],
+    "in this preview.": [
+      "in this preview.",
+      "en esta vista.",
+      "dans cet aperçu.",
+      "in dieser Vorschau.",
+      "в этом просмотре."
+    ],
+    "Please try again later.": [
+      "Please try again later.",
+      "Inténtalo más tarde.",
+      "Réessayez plus tard.",
+      "Versuche es später erneut.",
+      "Попробуйте позже."
+    ],
+    "Shop preview · sample prices": [
+      "Shop preview · sample prices",
+      "Vista de tienda · precios de ejemplo",
+      "Aperçu boutique · prix d’exemple",
+      "Shop-Vorschau · Beispielpreise",
+      "Просмотр магазина · пример цен"
+    ],
+    "Purchases currently unavailable": [
+      "Purchases currently unavailable",
+      "Compras no disponibles ahora",
+      "Achats actuellement indisponibles",
+      "Käufe derzeit nicht verfügbar",
+      "Покупки сейчас недоступны"
+    ],
+    "The market is resting": [
+      "The market is resting",
+      "El mercado está descansando",
+      "Le marché se repose",
+      "Der Markt macht Pause",
+      "Рынок отдыхает"
+    ],
+    "Please check back later.": [
+      "Please check back later.",
+      "Vuelve más tarde.",
+      "Revenez plus tard.",
+      "Schau später wieder vorbei.",
+      "Загляните позже."
+    ],
+    "Unavailable": [
+      "Unavailable",
+      "No disponible",
+      "Indisponible",
+      "Nicht verfügbar",
+      "Недоступно"
+    ],
+    "Wellkeeper Kit": [
+      "Wellkeeper Kit",
+      "Kit del guardián",
+      "Kit du gardien",
+      "Brunnenwart-Set",
+      "Набор хранителя"
+    ],
+    "Rainy Day Bundle": [
+      "Rainy Day Bundle",
+      "Lote de lluvia",
+      "Lot des jours de pluie",
+      "Regentag-Paket",
+      "Дождливый день"
+    ],
+    "Rainlight Reserve": [
+      "Rainlight Reserve",
+      "Reserva de luz",
+      "Réserve de lumière",
+      "Regenlicht-Vorrat",
+      "Запас света дождя"
+    ],
+    "Village Treasury": [
+      "Village Treasury",
+      "Tesoro de la aldea",
+      "Trésor du village",
+      "Dorfschatz",
+      "Казна деревни"
+    ],
+    "Festival Chest": [
+      "Festival Chest",
+      "Cofre de fiesta",
+      "Coffre de fête",
+      "Festtruhe",
+      "Праздничный сундук"
+    ],
+    "Keeper's Collection": [
+      "Keeper's Collection",
+      "Colección del guardián",
+      "Collection du gardien",
+      "Sammlung des Hüters",
+      "Коллекция хранителя"
+    ],
+    "{0} coins": [
+      "{0} coins",
+      "{0} monedas",
+      "{0} pièces",
+      "{0} Münzen",
+      "Монеты: {0}"
+    ],
+    "{0} Coins": [
+      "{0} Coins",
+      "{0} monedas",
+      "{0} pièces",
+      "{0} Münzen",
+      "Монеты: {0}"
+    ],
+    "Back to Shop": [
+      "Back to Shop",
+      "Volver a tienda",
+      "Retour à la boutique",
+      "Zurück zum Shop",
+      "К магазину"
+    ],
+    "Level complete!": [
+      "Level complete!",
+      "¡Nivel completado!",
+      "Niveau terminé !",
+      "Level geschafft!",
+      "Уровень пройден!"
+    ],
+    "The village is one step closer to flowing again.": [
+      "The village is one step closer to flowing again.",
+      "El agua está más cerca de volver a la aldea.",
+      "L’eau reviendra bientôt au village.",
+      "Das Wasser kehrt bald ins Dorf zurück.",
+      "Вода скоро вернётся в деревню."
+    ],
+    "Out of moves": [
+      "Out of moves",
+      "Sin movimientos",
+      "Plus de coups",
+      "Keine Züge mehr",
+      "Ходы закончились"
+    ],
+    "Try a new route through the obstacles.": [
+      "Try a new route through the obstacles.",
+      "Prueba otro camino entre los obstáculos.",
+      "Essayez un autre chemin parmi les obstacles.",
+      "Versuche einen anderen Weg durch die Hindernisse.",
+      "Попробуйте другой путь через препятствия."
+    ],
+    "Clear these targets": [
+      "Clear these targets",
+      "Completa estos objetivos",
+      "Atteignez ces objectifs",
+      "Erfülle diese Ziele",
+      "Выполните эти цели"
+    ],
+    "Clear the targets to restore the village.": [
+      "Clear the targets to restore the village.",
+      "Completa los objetivos y restaura la aldea.",
+      "Atteignez les objectifs pour restaurer le village.",
+      "Erfülle die Ziele und stelle das Dorf wieder her.",
+      "Выполните цели и восстановите деревню."
+    ],
+    "Your first match": [
+      "Your first match",
+      "Tu primera combinación",
+      "Votre première combinaison",
+      "Deine erste Kombination",
+      "Первое совпадение"
+    ],
+    "Swap two neighboring tiles to line up three of the same kind.": [
+      "Swap two neighboring tiles to line up three of the same kind.",
+      "Intercambia dos fichas vecinas para unir tres iguales.",
+      "Échangez deux pièces voisines pour en aligner trois identiques.",
+      "Tausche zwei benachbarte Steine, um drei gleiche zu verbinden.",
+      "Поменяйте две соседние фишки, чтобы собрать три одинаковых."
+    ],
+    "Got it": [
+      "Got it",
+      "Entendido",
+      "Compris",
+      "Verstanden",
+      "Понятно"
+    ],
+    "Take a breath": [
+      "Take a breath",
+      "Toma un respiro",
+      "Faites une pause",
+      "Mach eine Pause",
+      "Передохните"
+    ],
+    "Your board will be right here.": [
+      "Your board will be right here.",
+      "Tu tablero seguirá aquí.",
+      "Votre plateau vous attendra.",
+      "Dein Spielfeld wartet auf dich.",
+      "Поле будет ждать вас."
+    ],
+    "Resume": [
+      "Resume",
+      "Continuar",
+      "Reprendre",
+      "Fortsetzen",
+      "Продолжить"
+    ],
+    "Restart level": [
+      "Restart level",
+      "Reiniciar nivel",
+      "Recommencer",
+      "Level neu starten",
+      "Начать заново"
+    ],
+    "Replay level": [
+      "Replay level",
+      "Repetir nivel",
+      "Rejouer le niveau",
+      "Level wiederholen",
+      "Повторить уровень"
+    ],
+    "Exit level?": [
+      "Exit level?",
+      "¿Salir del nivel?",
+      "Quitter le niveau ?",
+      "Level verlassen?",
+      "Выйти из уровня?"
+    ],
+    "If you exit now, you will lose a life.": [
+      "If you exit now, you will lose a life.",
+      "Si sales ahora, perderás una vida.",
+      "En quittant maintenant, vous perdrez une vie.",
+      "Wenn du jetzt gehst, verlierst du ein Leben.",
+      "При выходе вы потеряете жизнь."
+    ],
+    "Exit": [
+      "Exit",
+      "Salir",
+      "Quitter",
+      "Verlassen",
+      "Выйти"
+    ],
+    "No boosters remaining": [
+      "No boosters remaining",
+      "No quedan potenciadores",
+      "Plus de bonus",
+      "Keine Booster mehr",
+      "Усилители закончились"
+    ],
+    "A selected booster is unavailable": [
+      "A selected booster is unavailable",
+      "Un potenciador elegido no está disponible",
+      "Un bonus sélectionné est indisponible",
+      "Ein gewählter Booster ist nicht verfügbar",
+      "Выбранный усилитель недоступен"
+    ],
+    "A level is already launching.": [
+      "A level is already launching.",
+      "Ya se está iniciando un nivel.",
+      "Un niveau est déjà en cours de lancement.",
+      "Ein Level wird bereits gestartet.",
+      "Уровень уже запускается."
+    ],
+    "Sound On": [
+      "Sound On",
+      "Sonido\nSí",
+      "Son\nOui",
+      "Ton\nAn",
+      "Звук\nВкл."
+    ],
+    "Sound Off": [
+      "Sound Off",
+      "Sonido\nNo",
+      "Son\nNon",
+      "Ton\nAus",
+      "Звук\nВыкл."
+    ],
+    "Haptics On": [
+      "Haptics On",
+      "Vibración\nSí",
+      "Vibrations\nOui",
+      "Vibration\nAn",
+      "Вибрация\nВкл."
+    ],
+    "Haptics Off": [
+      "Haptics Off",
+      "Vibración\nNo",
+      "Vibrations\nNon",
+      "Vibration\nAus",
+      "Вибрация\nВыкл."
+    ],
+    "Now": [
+      "Now",
+      "Ahora",
+      "Maintenant",
+      "Jetzt",
+      "Сейчас"
+    ],
+    "{0} min ago": [
+      "{0} min ago",
+      "Hace {0} min",
+      "Il y a {0} min",
+      "Vor {0} Min",
+      "{0} мин назад"
+    ],
+    "Today": [
+      "Today",
+      "Hoy",
+      "Aujourd’hui",
+      "Heute",
+      "Сегодня"
+    ],
+    "Yesterday": [
+      "Yesterday",
+      "Ayer",
+      "Hier",
+      "Gestern",
+      "Вчера"
+    ]
+  }
+}

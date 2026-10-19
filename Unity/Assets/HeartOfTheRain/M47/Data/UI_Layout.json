@@ -1,0 +1,186 @@
+{
+  "revision": "M47 UI R11",
+  "referenceResolution": [
+    720,
+    1280
+  ],
+  "origin": "top_left",
+  "safeArea": true,
+  "persistentText": "Moves and Targets labels with counters; no chapter, level or booster labels",
+  "header": {
+    "container": [
+      30,
+      38,
+      660,
+      192
+    ],
+    "enclosureSprite": [
+      30,
+      38,
+      660,
+      192
+    ],
+    "containerShape": "one closed continuous outer border and shared filled background; curved around avatar; visible internal gaps between separate panels",
+    "moves": [
+      42,
+      82,
+      112,
+      120
+    ],
+    "movesLabelTab": [
+      50,
+      66,
+      96,
+      34
+    ],
+    "moveCount": [
+      48,
+      105,
+      100,
+      84
+    ],
+    "goals": [
+      166,
+      82,
+      324,
+      120
+    ],
+    "targetLabelTab": [
+      264,
+      66,
+      128,
+      34
+    ],
+    "goalGroup": "centered at x328, span=min(296,104*goalCount), icons56px at y105, counts28px at y158",
+    "avatar": [
+      502,
+      44,
+      180,
+      180
+    ],
+    "avatarSource": "Avatar_Ivan.png",
+    "avatarSourceCrop": [
+      400,
+      0,
+      360,
+      360
+    ],
+    "avatarTechnique": "unchanged source sprite displayed through a circular Unity UI Mask",
+    "parenting": "all panels, tabs, goals, shared enclosure and avatar are children of Header container",
+    "labelTabBorder": 12,
+    "internalPanelGaps": [
+      12,
+      12
+    ],
+    "previousInternalPanelGaps": [
+      24,
+      24
+    ]
+  },
+  "board": {
+    "left": 22,
+    "right": 22,
+    "top": 250,
+    "bottom": 210,
+    "cellScale": "min((width-44)/columns,(height-460)/rows)",
+    "geometryUnchanged": true,
+    "palette": "Direction A from UI_Palette.json"
+  },
+  "boosterBar": {
+    "visibleContainer": false,
+    "individualContainers": {
+      "count": 4,
+      "sprite": "Booster_Outline",
+      "offsetFromButton": [
+        -7,
+        -7
+      ],
+      "size": [
+        144,
+        148
+      ],
+      "fill": "same slate-navy gradient as Panel_Header",
+      "outline": "one closed 3-unit pale border per button and badge silhouette",
+      "sharedBacking": false,
+      "raycastTarget": false
+    },
+    "x": [
+      26,
+      166,
+      306,
+      446
+    ],
+    "buttonYFromBottom": 162,
+    "size": [
+      126,
+      126
+    ],
+    "settings": [
+      590,
+      149,
+      98,
+      98
+    ],
+    "countBadge": [
+      88,
+      90,
+      44,
+      44
+    ],
+    "icons": [
+      11,
+      7,
+      104,
+      104
+    ]
+  },
+  "modal": {
+    "size": [
+      560,
+      584
+    ],
+    "title": [
+      34,
+      30,
+      492,
+      75
+    ],
+    "body": [
+      48,
+      125,
+      464,
+      88
+    ],
+    "primaryButton": [
+      64,
+      446,
+      432,
+      94
+    ]
+  },
+  "targetingInstruction": "brief contextual instruction at (34,6,652,28), above container; hidden in normal gameplay",
+  "states": [
+    "Playing",
+    "BoosterTargeting",
+    "Tutorial",
+    "Paused",
+    "Won",
+    "Lost",
+    "LevelIntro"
+  ],
+  "goalsSupported": [
+    2,
+    3,
+    4
+  ],
+  "palette": {
+    "direction": "A - Ivory & Slate",
+    "container": "#26394D",
+    "ivory": "#F3EDE1",
+    "champagne": "#AE9F86",
+    "ink": "#203044",
+    "cellDark": "#394B63",
+    "cellLight": "#4A6078"
+  },
+  "reference": "User images image(20261018-072730).png, image(20261018-070120).png and image(20261018-070611).png: compact inset panels, overlapping label tabs, larger right-side avatar inside a shared container. Original UI skins; no competitor artwork copied."
+}

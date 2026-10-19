@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 8,
+  "pixelsPerUnit": 32.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "RB_Gather",
+      "start": 0,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.8
+    },
+    {
+      "name": "RB_Pulse",
+      "start": 24,
+      "count": 8,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    },
+    {
+      "name": "RB_Flash",
+      "start": 32,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RB_CrossBurst",
+      "start": 44,
+      "count": 20,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.6666666666666666
+    }
+  ],
+  "frames": [
+    {
+      "name": "RB_Gather_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_000.png"
+    },
+    {
+      "name": "RB_Gather_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_001.png"
+    },
+    {
+      "name": "RB_Gather_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_002.png"
+    },
+    {
+      "name": "RB_Gather_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_003.png"
+    },
+    {
+      "name": "RB_Gather_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_004.png"
+    },
+    {
+      "name": "RB_Gather_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_005.png"
+    },
+    {
+      "name": "RB_Gather_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_006.png"
+    },
+    {
+      "name": "RB_Gather_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_007.png"
+    },
+    {
+      "name": "RB_Gather_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_008.png"
+    },
+    {
+      "name": "RB_Gather_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_009.png"
+    },
+    {
+      "name": "RB_Gather_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_010.png"
+    },
+    {
+      "name": "RB_Gather_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_011.png"
+    },
+    {
+      "name": "RB_Gather_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_012.png"
+    },
+    {
+      "name": "RB_Gather_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_013.png"
+    },
+    {
+      "name": "RB_Gather_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_014.png"
+    },
+    {
+      "name": "RB_Gather_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_015.png"
+    },
+    {
+      "name": "RB_Gather_016",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_016.png"
+    },
+    {
+      "name": "RB_Gather_017",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_017.png"
+    },
+    {
+      "name": "RB_Gather_018",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_018.png"
+    },
+    {
+      "name": "RB_Gather_019",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_019.png"
+    },
+    {
+      "name": "RB_Gather_020",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_020.png"
+    },
+    {
+      "name": "RB_Gather_021",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_021.png"
+    },
+    {
+      "name": "RB_Gather_022",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_022.png"
+    },
+    {
+      "name": "RB_Gather_023",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Gather_023.png"
+    },
+    {
+      "name": "RB_Pulse_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_000.png"
+    },
+    {
+      "name": "RB_Pulse_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_001.png"
+    },
+    {
+      "name": "RB_Pulse_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_002.png"
+    },
+    {
+      "name": "RB_Pulse_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_003.png"
+    },
+    {
+      "name": "RB_Pulse_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_004.png"
+    },
+    {
+      "name": "RB_Pulse_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_005.png"
+    },
+    {
+      "name": "RB_Pulse_006",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_006.png"
+    },
+    {
+      "name": "RB_Pulse_007",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Pulse_007.png"
+    },
+    {
+      "name": "RB_Flash_000",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_000.png"
+    },
+    {
+      "name": "RB_Flash_001",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_001.png"
+    },
+    {
+      "name": "RB_Flash_002",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_002.png"
+    },
+    {
+      "name": "RB_Flash_003",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_003.png"
+    },
+    {
+      "name": "RB_Flash_004",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_004.png"
+    },
+    {
+      "name": "RB_Flash_005",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_005.png"
+    },
+    {
+      "name": "RB_Flash_006",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_006.png"
+    },
+    {
+      "name": "RB_Flash_007",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_007.png"
+    },
+    {
+      "name": "RB_Flash_008",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_008.png"
+    },
+    {
+      "name": "RB_Flash_009",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_009.png"
+    },
+    {
+      "name": "RB_Flash_010",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_010.png"
+    },
+    {
+      "name": "RB_Flash_011",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_Flash_011.png"
+    },
+    {
+      "name": "RB_CrossBurst_000",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_000.png"
+    },
+    {
+      "name": "RB_CrossBurst_001",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_001.png"
+    },
+    {
+      "name": "RB_CrossBurst_002",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_002.png"
+    },
+    {
+      "name": "RB_CrossBurst_003",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_003.png"
+    },
+    {
+      "name": "RB_CrossBurst_004",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_004.png"
+    },
+    {
+      "name": "RB_CrossBurst_005",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_005.png"
+    },
+    {
+      "name": "RB_CrossBurst_006",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_006.png"
+    },
+    {
+      "name": "RB_CrossBurst_007",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_007.png"
+    },
+    {
+      "name": "RB_CrossBurst_008",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_008.png"
+    },
+    {
+      "name": "RB_CrossBurst_009",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_009.png"
+    },
+    {
+      "name": "RB_CrossBurst_010",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_010.png"
+    },
+    {
+      "name": "RB_CrossBurst_011",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_011.png"
+    },
+    {
+      "name": "RB_CrossBurst_012",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_012.png"
+    },
+    {
+      "name": "RB_CrossBurst_013",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_013.png"
+    },
+    {
+      "name": "RB_CrossBurst_014",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_014.png"
+    },
+    {
+      "name": "RB_CrossBurst_015",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_015.png"
+    },
+    {
+      "name": "RB_CrossBurst_016",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_016.png"
+    },
+    {
+      "name": "RB_CrossBurst_017",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_017.png"
+    },
+    {
+      "name": "RB_CrossBurst_018",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_018.png"
+    },
+    {
+      "name": "RB_CrossBurst_019",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketBomb14/RB_CrossBurst_019.png"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+using System.Collections.Generic;using HeartOfTheRain.App.Localization;
+namespace HeartOfTheRain.App.FirstStart { public static class FirstStartText {
+static readonly Dictionary<string,string[]> Entries=new Dictionary<string,string[]> {
+{"A light worth protecting",new string[]{"A light worth protecting","Una luz que proteger","Une lumière à protéger","Ein Licht, das es zu schützen gilt","Свет, который стоит защитить"}},
+{"Beneath Ancient Moscow, a sacred Heart sends light through the wells, gardens, and protective wards. Far from the city, Ivan returns to the village where his journey began.",new string[]{"Beneath Ancient Moscow, a sacred Heart sends light through the wells, gardens, and protective wards. Far from the city, Ivan returns to the village where his journey began.","Bajo la Antigua Moscú, un Corazón sagrado envía luz a los pozos, jardines y defensas mágicas. Lejos de la ciudad, Ivan regresa a la aldea donde comenzó su viaje.","Sous Moscou l'Ancienne, un Cœur sacré envoie sa lumière vers les puits, les jardins et les protections magiques. Loin de la ville, Ivan revient au village où son voyage a commencé.","Unter dem Alten Moskau sendet ein heiliges Herz Licht zu Brunnen, Gärten und Schutzzaubern. Fern der Stadt kehrt Ivan in das Dorf zurück, in dem seine Reise begann.","Под Древней Москвой священное Сердце посылает свет колодцам, садам и защитным чарам. Вдали от города Иван возвращается в деревню, где начался его путь."}},
+{"PROLOGUE",new string[]{"PROLOGUE","PRÓLOGO","PROLOGUE","PROLOG","ПРОЛОГ"}},
+{"Continue",new string[]{"Continue","Continuar","Continuer","Weiter","Продолжить"}},
+{"Skip intro",new string[]{"Skip intro","Omitir intro","Passer l'intro","Intro überspringen","Пропустить вступление"}},
+{"Skip tutorial",new string[]{"Skip tutorial","Omitir tutorial","Passer le tutoriel","Anleitung überspringen","Пропустить обучение"}},
+{"Match three",new string[]{"Match three","Combina tres","Alignez-en trois","Kombiniere drei","Соберите три"}},
+{"Swap the highlighted tiles to match three of the same color.",new string[]{"Swap the highlighted tiles to match three of the same color.","Intercambia las fichas resaltadas para combinar tres del mismo color.","Échangez les pièces indiquées pour en aligner trois de la même couleur.","Tausche die markierten Steine, um drei gleichfarbige zu verbinden.","Поменяйте выделенные фишки местами, чтобы собрать три одного цвета."}},
+{"Make a Rocket",new string[]{"Make a Rocket","Crea un Cohete","Créez une Fusée","Erzeuge eine Rakete","Создайте Ракету"}},
+{"Match four in a line to create a Rocket. Try the highlighted swap.",new string[]{"Match four in a line to create a Rocket. Try the highlighted swap.","Combina cuatro en línea para crear un Cohete. Prueba el intercambio indicado.","Alignez quatre pièces pour créer une Fusée. Essayez l'échange indiqué.","Vier in einer Reihe ergeben eine Rakete. Probiere den markierten Tausch.","Четыре фишки в ряд создают Ракету. Попробуйте выделенный обмен."}},
+{"Clear the target",new string[]{"Clear the target","Elimina el objetivo","Éliminez la cible","Räume das Ziel ab","Уберите цель"}},
+{"Tap the Rocket to clear its row and break the crate. Clear all targets before your moves run out.",new string[]{"Tap the Rocket to clear its row and break the crate. Clear all targets before your moves run out.","Toca el Cohete para despejar su fila y romper la caja. Elimina todos los objetivos antes de agotar los movimientos.","Touchez la Fusée pour dégager sa ligne et briser la caisse. Éliminez les cibles avant de manquer de coups.","Tippe die Rakete an, um ihre Reihe und die Kiste abzuräumen. Erreiche alle Ziele, bevor dir die Züge ausgehen.","Нажмите на Ракету, чтобы очистить ряд и разбить ящик. Уберите все цели, пока не закончились ходы."}},
+{"Nice match!",new string[]{"Nice match!","¡Buena combinación!","Bien joué !","Gut kombiniert!","Отличная комбинация!"}},
+{"Rocket created!",new string[]{"Rocket created!","¡Cohete creado!","Fusée créée !","Rakete erzeugt!","Ракета создана!"}},
+{"Target cleared!",new string[]{"Target cleared!","¡Objetivo eliminado!","Cible éliminée !","Ziel erreicht!","Цель убрана!"}},
+{"Your journey begins",new string[]{"Your journey begins","Tu viaje comienza","Votre voyage commence","Deine Reise beginnt","Ваше путешествие начинается"}},
+{"Help Ivan restore the village well. Your first level is ready.",new string[]{"Help Ivan restore the village well. Your first level is ready.","Ayuda a Ivan a restaurar el pozo de la aldea. Tu primer nivel está listo.","Aidez Ivan à restaurer le puits du village. Votre premier niveau est prêt.","Hilf Ivan, den Dorfbrunnen wiederherzustellen. Dein erstes Level ist bereit.","Помогите Ивану восстановить деревенский колодец. Первый уровень готов."}},
+{"Start Level 1",new string[]{"Start Level 1","Empezar nivel 1","Jouer au niveau 1","Level 1 starten","Начать уровень 1"}},
+{"Try the move",new string[]{"Try the move","Prueba el movimiento","Essayez le déplacement","Probiere den Zug","Сделайте ход"}},
+{"LESSON {0} / 3",new string[]{"LESSON {0} / 3","LECCIÓN {0} / 3","LEÇON {0} / 3","LEKTION {0} / 3","УРОК {0} / 3"}},
+{"Practice board",new string[]{"Practice board","Tablero de práctica","Plateau d'entraînement","Übungsfeld","Учебное поле"}},
+{"No lives or boosters are used here.",new string[]{"No lives or boosters are used here.","Aquí no se gastan vidas ni potenciadores.","Aucune vie ni aucun booster n'est utilisé ici.","Hier werden keine Leben oder Booster verbraucht.","Здесь не тратятся жизни и бустеры."}},
+{"Follow the highlighted move",new string[]{"Follow the highlighted move","Sigue el movimiento indicado","Suivez le déplacement indiqué","Folge dem markierten Zug","Сделайте выделенный ход"}},
+{"Loading effects…",new string[]{"Loading effects…","Cargando efectos…","Chargement des effets…","Effekte werden geladen…","Загрузка эффектов…"}},
+{"Could not load. Retry or skip.",new string[]{"Could not load. Retry or skip.","Error de carga. Reintenta u omite.","Échec du chargement. Réessayez ou passez.","Laden fehlgeschlagen. Erneut versuchen oder überspringen.","Не удалось загрузить. Повторите или пропустите."}},
+{"Retry",new string[]{"Retry","Reintentar","Réessayer","Erneut versuchen","Повторить"}},
+{"Ready for Level 1",new string[]{"Ready for Level 1","Listo para el nivel 1","Prêt pour le niveau 1","Bereit für Level 1","Всё готово к уровню 1"}},
+{"Music on",new string[]{"Music on","Música activada","Musique activée","Musik an","Музыка включена"}},
+{"Music off",new string[]{"Music off","Música desactivada","Musique coupée","Musik aus","Музыка выключена"}},
+{"Skip",new string[]{"Skip","Omitir","Passer","Überspr.","Пропустить"}},
+{"Tile {0}, {1}",new string[]{"Tile {0}, {1}","Ficha {0}, {1}","Tuile {0}, {1}","Stein {0}, {1}","Фишка {0}, {1}"}},
+{"Scroll for more",new string[]{"Scroll for more","Desliza para ver más","Faites défiler la suite","Für mehr scrollen","Прокрутите дальше"}},
+};
+public static string T(string source){string[] values;return Entries.TryGetValue(source,out values)?values[GameLocale.Current]:GameLocale.T(source);}
+} }

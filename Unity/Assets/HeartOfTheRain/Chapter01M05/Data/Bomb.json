@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 1.5,
+  "pixelsPerUnit": 170.66666666666666,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "fps": 30,
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Idle",
+      "start": 0,
+      "count": 1,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.03333333333333333
+    },
+    {
+      "name": "Create",
+      "start": 1,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "idle",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "Charge",
+      "start": 19,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "idle",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DepthTurn",
+      "start": 31,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "idle",
+      "durationSeconds": 0.8
+    },
+    {
+      "name": "Detonate",
+      "start": 55,
+      "count": 8,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    }
+  ],
+  "frames": [
+    {
+      "name": "Bomb_Idle_000",
+      "x": 0,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Idle_000.png"
+    },
+    {
+      "name": "Bomb_Create_000",
+      "x": 256,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_000.png"
+    },
+    {
+      "name": "Bomb_Create_001",
+      "x": 512,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_001.png"
+    },
+    {
+      "name": "Bomb_Create_002",
+      "x": 768,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_002.png"
+    },
+    {
+      "name": "Bomb_Create_003",
+      "x": 1024,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_003.png"
+    },
+    {
+      "name": "Bomb_Create_004",
+      "x": 1280,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_004.png"
+    },
+    {
+      "name": "Bomb_Create_005",
+      "x": 1536,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_005.png"
+    },
+    {
+      "name": "Bomb_Create_006",
+      "x": 1792,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Bomb/Create_006.png"
+    },
+    {
+      "name": "Bomb_Create_007",
+      "x": 0,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_007.png"
+    },
+    {
+      "name": "Bomb_Create_008",
+      "x": 256,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_008.png"
+    },
+    {
+      "name": "Bomb_Create_009",
+      "x": 512,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_009.png"
+    },
+    {
+      "name": "Bomb_Create_010",
+      "x": 768,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_010.png"
+    },
+    {
+      "name": "Bomb_Create_011",
+      "x": 1024,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_011.png"
+    },
+    {
+      "name": "Bomb_Create_012",
+      "x": 1280,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_012.png"
+    },
+    {
+      "name": "Bomb_Create_013",
+      "x": 1536,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_013.png"
+    },
+    {
+      "name": "Bomb_Create_014",
+      "x": 1792,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Bomb/Create_014.png"
+    },
+    {
+      "name": "Bomb_Create_015",
+      "x": 0,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Create_015.png"
+    },
+    {
+      "name": "Bomb_Create_016",
+      "x": 256,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Create_016.png"
+    },
+    {
+      "name": "Bomb_Create_017",
+      "x": 512,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Create_017.png"
+    },
+    {
+      "name": "Bomb_Charge_000",
+      "x": 768,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Charge_000.png"
+    },
+    {
+      "name": "Bomb_Charge_001",
+      "x": 1024,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Charge_001.png"
+    },
+    {
+      "name": "Bomb_Charge_002",
+      "x": 1280,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Charge_002.png"
+    },
+    {
+      "name": "Bomb_Charge_003",
+      "x": 1536,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Charge_003.png"
+    },
+    {
+      "name": "Bomb_Charge_004",
+      "x": 1792,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Bomb/Charge_004.png"
+    },
+    {
+      "name": "Bomb_Charge_005",
+      "x": 0,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_005.png"
+    },
+    {
+      "name": "Bomb_Charge_006",
+      "x": 256,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_006.png"
+    },
+    {
+      "name": "Bomb_Charge_007",
+      "x": 512,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_007.png"
+    },
+    {
+      "name": "Bomb_Charge_008",
+      "x": 768,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_008.png"
+    },
+    {
+      "name": "Bomb_Charge_009",
+      "x": 1024,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_009.png"
+    },
+    {
+      "name": "Bomb_Charge_010",
+      "x": 1280,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_010.png"
+    },
+    {
+      "name": "Bomb_Charge_011",
+      "x": 1536,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/Charge_011.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_000",
+      "x": 1792,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Bomb/DepthTurn_000.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_001",
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_001.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_002",
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_002.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_003",
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_003.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_004",
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_004.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_005",
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_005.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_006",
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_006.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_007",
+      "x": 1536,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_007.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_008",
+      "x": 1792,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Bomb/DepthTurn_008.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_009",
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_009.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_010",
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_010.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_011",
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_011.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_012",
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_012.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_013",
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_013.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_014",
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_014.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_015",
+      "x": 1536,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_015.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_016",
+      "x": 1792,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Bomb/DepthTurn_016.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_017",
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_017.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_018",
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_018.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_019",
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_019.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_020",
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_020.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_021",
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_021.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_022",
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_022.png"
+    },
+    {
+      "name": "Bomb_DepthTurn_023",
+      "x": 1536,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/DepthTurn_023.png"
+    },
+    {
+      "name": "Bomb_Detonate_000",
+      "x": 1792,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Bomb/Detonate_000.png"
+    },
+    {
+      "name": "Bomb_Detonate_001",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_001.png"
+    },
+    {
+      "name": "Bomb_Detonate_002",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_002.png"
+    },
+    {
+      "name": "Bomb_Detonate_003",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_003.png"
+    },
+    {
+      "name": "Bomb_Detonate_004",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_004.png"
+    },
+    {
+      "name": "Bomb_Detonate_005",
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_005.png"
+    },
+    {
+      "name": "Bomb_Detonate_006",
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_006.png"
+    },
+    {
+      "name": "Bomb_Detonate_007",
+      "x": 1536,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Bomb/Detonate_007.png"
+    }
+  ]
+}

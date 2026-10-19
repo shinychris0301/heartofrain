@@ -1,0 +1,1620 @@
+{
+  "schemaVersion": 5,
+  "revision": "M50 R1 / first measured balance pass",
+  "id": "C01_L043",
+  "chapter": 1,
+  "levelInChapter": 43,
+  "globalLevel": 43,
+  "name": "Eastern Retaining Wall",
+  "storyBeat": "Restore the well",
+  "columns": 11,
+  "rows": 11,
+  "coordinateSystem": "bottom_left_y_up",
+  "activeCells": [
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 1
+    },
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "x": 1,
+      "y": 3
+    },
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 1,
+      "y": 5
+    },
+    {
+      "x": 1,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 7
+    },
+    {
+      "x": 1,
+      "y": 8
+    },
+    {
+      "x": 1,
+      "y": 9
+    },
+    {
+      "x": 1,
+      "y": 10
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 1
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 3
+    },
+    {
+      "x": 2,
+      "y": 4
+    },
+    {
+      "x": 2,
+      "y": 5
+    },
+    {
+      "x": 2,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 2,
+      "y": 8
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 1
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 5
+    },
+    {
+      "x": 3,
+      "y": 6
+    },
+    {
+      "x": 3,
+      "y": 7
+    },
+    {
+      "x": 3,
+      "y": 8
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 1
+    },
+    {
+      "x": 4,
+      "y": 2
+    },
+    {
+      "x": 4,
+      "y": 3
+    },
+    {
+      "x": 4,
+      "y": 4
+    },
+    {
+      "x": 4,
+      "y": 5
+    },
+    {
+      "x": 4,
+      "y": 6
+    },
+    {
+      "x": 4,
+      "y": 7
+    },
+    {
+      "x": 4,
+      "y": 8
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 1
+    },
+    {
+      "x": 5,
+      "y": 2
+    },
+    {
+      "x": 5,
+      "y": 3
+    },
+    {
+      "x": 5,
+      "y": 4
+    },
+    {
+      "x": 5,
+      "y": 5
+    },
+    {
+      "x": 5,
+      "y": 6
+    },
+    {
+      "x": 5,
+      "y": 7
+    },
+    {
+      "x": 5,
+      "y": 8
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 1
+    },
+    {
+      "x": 6,
+      "y": 2
+    },
+    {
+      "x": 6,
+      "y": 3
+    },
+    {
+      "x": 6,
+      "y": 4
+    },
+    {
+      "x": 6,
+      "y": 5
+    },
+    {
+      "x": 6,
+      "y": 6
+    },
+    {
+      "x": 6,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 9
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "y": 1
+    },
+    {
+      "x": 7,
+      "y": 2
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 4
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 7,
+      "y": 7
+    },
+    {
+      "x": 7,
+      "y": 8
+    },
+    {
+      "x": 7,
+      "y": 9
+    },
+    {
+      "x": 7,
+      "y": 10
+    },
+    {
+      "x": 8,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "y": 1
+    },
+    {
+      "x": 8,
+      "y": 2
+    },
+    {
+      "x": 8,
+      "y": 3
+    },
+    {
+      "x": 8,
+      "y": 4
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 8,
+      "y": 6
+    },
+    {
+      "x": 8,
+      "y": 7
+    },
+    {
+      "x": 8,
+      "y": 8
+    },
+    {
+      "x": 8,
+      "y": 9
+    },
+    {
+      "x": 8,
+      "y": 10
+    },
+    {
+      "x": 9,
+      "y": 0
+    },
+    {
+      "x": 9,
+      "y": 1
+    },
+    {
+      "x": 9,
+      "y": 2
+    },
+    {
+      "x": 9,
+      "y": 3
+    },
+    {
+      "x": 9,
+      "y": 4
+    },
+    {
+      "x": 9,
+      "y": 5
+    },
+    {
+      "x": 9,
+      "y": 6
+    },
+    {
+      "x": 9,
+      "y": 7
+    },
+    {
+      "x": 9,
+      "y": 8
+    },
+    {
+      "x": 9,
+      "y": 9
+    },
+    {
+      "x": 9,
+      "y": 10
+    },
+    {
+      "x": 10,
+      "y": 2
+    },
+    {
+      "x": 10,
+      "y": 3
+    },
+    {
+      "x": 10,
+      "y": 4
+    },
+    {
+      "x": 10,
+      "y": 5
+    },
+    {
+      "x": 10,
+      "y": 6
+    }
+  ],
+  "initialTiles": [
+    {
+      "x": 1,
+      "y": 0,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": 0
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": 0
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": 3
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "color": 0
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "color": 3
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "color": 3
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": 1
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": 5
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": 2
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": 5
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": 4
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": 5
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": 4
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": 4
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": 4
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": 4
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": 0
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": 4
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": 0
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": 0
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": 2
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": 0
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "color": 1
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "color": 1
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "color": 2
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "color": 3
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "color": 2
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "color": 4
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "color": 4
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "color": 1
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "color": 2
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "color": 1
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "color": 1
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "color": 0
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "color": 1
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "color": 3
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "color": 0
+    }
+  ],
+  "obstacles": [
+    {
+      "instanceId": "C01_L043_crystal_0_2",
+      "family": "crystal",
+      "x": 0,
+      "y": 2,
+      "hp": 5,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 5
+      }
+    },
+    {
+      "instanceId": "C01_L043_crystal_10_2",
+      "family": "crystal",
+      "x": 10,
+      "y": 2,
+      "hp": 5,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 5
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_2_5",
+      "family": "pod",
+      "x": 2,
+      "y": 5,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_3_5",
+      "family": "pod",
+      "x": 3,
+      "y": 5,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_2_6",
+      "family": "pod",
+      "x": 2,
+      "y": 6,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_3_6",
+      "family": "pod",
+      "x": 3,
+      "y": 6,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_2_7",
+      "family": "pod",
+      "x": 2,
+      "y": 7,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_3_7",
+      "family": "pod",
+      "x": 3,
+      "y": 7,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_7_5",
+      "family": "pod",
+      "x": 7,
+      "y": 5,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_8_5",
+      "family": "pod",
+      "x": 8,
+      "y": 5,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_7_6",
+      "family": "pod",
+      "x": 7,
+      "y": 6,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_8_6",
+      "family": "pod",
+      "x": 8,
+      "y": 6,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_7_7",
+      "family": "pod",
+      "x": 7,
+      "y": 7,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_pod_8_7",
+      "family": "pod",
+      "x": 8,
+      "y": 7,
+      "hp": 3,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_2_8",
+      "family": "crate",
+      "x": 2,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_3_8",
+      "family": "crate",
+      "x": 3,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_4_8",
+      "family": "crate",
+      "x": 4,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_5_8",
+      "family": "crate",
+      "x": 5,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_6_8",
+      "family": "crate",
+      "x": 6,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_7_8",
+      "family": "crate",
+      "x": 7,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_8_8",
+      "family": "crate",
+      "x": 8,
+      "y": 8,
+      "hp": 1,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_2_9",
+      "family": "crate",
+      "x": 2,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_3_9",
+      "family": "crate",
+      "x": 3,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_4_9",
+      "family": "crate",
+      "x": 4,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_5_9",
+      "family": "crate",
+      "x": 5,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_6_9",
+      "family": "crate",
+      "x": 6,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_7_9",
+      "family": "crate",
+      "x": 7,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_8_9",
+      "family": "crate",
+      "x": 8,
+      "y": 9,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_2_10",
+      "family": "crate",
+      "x": 2,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_3_10",
+      "family": "crate",
+      "x": 3,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_4_10",
+      "family": "crate",
+      "x": 4,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_5_10",
+      "family": "crate",
+      "x": 5,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_6_10",
+      "family": "crate",
+      "x": 6,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_7_10",
+      "family": "crate",
+      "x": 7,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_crate_8_10",
+      "family": "crate",
+      "x": 8,
+      "y": 10,
+      "hp": 2,
+      "motion": "falling",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_3_2",
+      "family": "gate",
+      "x": 3,
+      "y": 2,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_4_2",
+      "family": "gate",
+      "x": 4,
+      "y": 2,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_5_2",
+      "family": "gate",
+      "x": 5,
+      "y": 2,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_6_2",
+      "family": "gate",
+      "x": 6,
+      "y": 2,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_7_2",
+      "family": "gate",
+      "x": 7,
+      "y": 2,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_3_3",
+      "family": "gate",
+      "x": 3,
+      "y": 3,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_4_3",
+      "family": "gate",
+      "x": 4,
+      "y": 3,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_5_3",
+      "family": "gate",
+      "x": 5,
+      "y": 3,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_6_3",
+      "family": "gate",
+      "x": 6,
+      "y": 3,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "instanceId": "C01_L043_gate_7_3",
+      "family": "gate",
+      "x": 7,
+      "y": 3,
+      "hp": 1,
+      "motion": "anchored",
+      "footprint": {
+        "width": 1,
+        "height": 1
+      }
+    }
+  ],
+  "initialPowerUps": [],
+  "activeColors": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "tileSeed": 533008,
+  "spawnPoints": [
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 10
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 10
+    },
+    {
+      "x": 8,
+      "y": 10
+    },
+    {
+      "x": 9,
+      "y": 10
+    },
+    {
+      "x": 10,
+      "y": 6
+    }
+  ],
+  "gravity": "down_per_vertical_active_segment; fixed bodies block fall",
+  "obstaclePlacement": "Authored contiguous banks and reserved multi-cell anchors; no randomized obstacle positions.",
+  "cellOccupancy": "One gem or one reserved obstacle cell; no overlays or underlays.",
+  "deliveryExits": [],
+  "deliveryRoutes": [],
+  "introducesVariant": null,
+  "mossRegrowth": {
+    "enabled": false,
+    "undamagedMoves": 2,
+    "maxNewClumps": 3
+  },
+  "movesProposal": 44,
+  "difficultyIntent": "Hard",
+  "introduces": null,
+  "introducedFamilies": [],
+  "familiesPresent": [
+    "crate",
+    "crystal",
+    "pod",
+    "gate"
+  ],
+  "targetTypeCount": 4,
+  "targetTypeLimit": 4,
+  "objectivePolicy": "2 introductory/easy/relief; 3 standard; 4 hard/super-hard/finale. Obstacle and delivery goals only; no extra color goal.",
+  "lesson": "Work through the clustered obstacle banks; use power-up combinations to reach protected targets.",
+  "goals": [
+    {
+      "type": "clear_obstacle",
+      "family": "crate",
+      "count": 21
+    },
+    {
+      "type": "clear_column",
+      "family": "crystal",
+      "count": 2
+    },
+    {
+      "type": "release_spirit",
+      "family": "pod",
+      "count": 12
+    },
+    {
+      "type": "clear_obstacle",
+      "family": "gate",
+      "count": 10
+    }
+  ],
+  "formations": [
+    {
+      "family": "crate",
+      "anchors": [
+        {
+          "x": 2,
+          "y": 8
+        },
+        {
+          "x": 3,
+          "y": 8
+        },
+        {
+          "x": 4,
+          "y": 8
+        },
+        {
+          "x": 5,
+          "y": 8
+        },
+        {
+          "x": 6,
+          "y": 8
+        },
+        {
+          "x": 7,
+          "y": 8
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 9
+        },
+        {
+          "x": 3,
+          "y": 9
+        },
+        {
+          "x": 4,
+          "y": 9
+        },
+        {
+          "x": 5,
+          "y": 9
+        },
+        {
+          "x": 6,
+          "y": 9
+        },
+        {
+          "x": 7,
+          "y": 9
+        },
+        {
+          "x": 8,
+          "y": 9
+        },
+        {
+          "x": 2,
+          "y": 10
+        },
+        {
+          "x": 3,
+          "y": 10
+        },
+        {
+          "x": 4,
+          "y": 10
+        },
+        {
+          "x": 5,
+          "y": 10
+        },
+        {
+          "x": 6,
+          "y": 10
+        },
+        {
+          "x": 7,
+          "y": 10
+        },
+        {
+          "x": 8,
+          "y": 10
+        }
+      ]
+    },
+    {
+      "family": "crystal",
+      "anchors": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 10,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "family": "pod",
+      "anchors": [
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 7
+        },
+        {
+          "x": 3,
+          "y": 7
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 6
+        },
+        {
+          "x": 8,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 7
+        }
+      ]
+    },
+    {
+      "family": "gate",
+      "anchors": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 3
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "activeCells": 109,
+    "occupiedObstacleCells": 53,
+    "logicalObstacles": 45,
+    "coveragePercent": 48.6,
+    "targetTypes": 4,
+    "damageUnits": 91,
+    "goalUnits": 45,
+    "minimumDamageUnitsPerMove": 2.07
+  },
+  "validation": {
+    "noInitialMatches": true,
+    "legalOpeningSwaps": 8,
+    "frontierSwaps": 8,
+    "exampleFrontierSwap": [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "introductionOpeningSwap": null,
+    "fullSolvability": "NOT_YET_PLAYTESTED",
+    "difficultyParity": "NOT_VERIFIED"
+  },
+  "introductionTitle": "",
+  "introductionInstruction": "",
+  "integrationNotes": [
+    "Board mask, dimensions, approved sprite art and palette are preserved.",
+    "Move budgets are proposals; natural-play balance requires playtesting."
+  ],
+  "balancePass": {
+    "baselineRuns": 5,
+    "scope": "Agent diagnostic tuning, not production balance",
+    "preserved": "Board mask, obstacle positions/families/counts, goal types and art",
+    "reason": "Reduce repeated layer bottleneck / allow more planning moves"
+  }
+}

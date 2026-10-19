@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "DS_Gather",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DS_SplitLight",
+      "start": 12,
+      "count": 16,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    }
+  ],
+  "frames": [
+    {
+      "name": "DS_Gather_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_000.png"
+    },
+    {
+      "name": "DS_Gather_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_001.png"
+    },
+    {
+      "name": "DS_Gather_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_002.png"
+    },
+    {
+      "name": "DS_Gather_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_003.png"
+    },
+    {
+      "name": "DS_Gather_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_004.png"
+    },
+    {
+      "name": "DS_Gather_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_005.png"
+    },
+    {
+      "name": "DS_Gather_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_006.png"
+    },
+    {
+      "name": "DS_Gather_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_007.png"
+    },
+    {
+      "name": "DS_Gather_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_008.png"
+    },
+    {
+      "name": "DS_Gather_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_009.png"
+    },
+    {
+      "name": "DS_Gather_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_010.png"
+    },
+    {
+      "name": "DS_Gather_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Gather_011.png"
+    },
+    {
+      "name": "DS_SplitLight_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_000.png"
+    },
+    {
+      "name": "DS_SplitLight_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_001.png"
+    },
+    {
+      "name": "DS_SplitLight_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_002.png"
+    },
+    {
+      "name": "DS_SplitLight_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_003.png"
+    },
+    {
+      "name": "DS_SplitLight_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_004.png"
+    },
+    {
+      "name": "DS_SplitLight_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_005.png"
+    },
+    {
+      "name": "DS_SplitLight_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_006.png"
+    },
+    {
+      "name": "DS_SplitLight_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_007.png"
+    },
+    {
+      "name": "DS_SplitLight_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_008.png"
+    },
+    {
+      "name": "DS_SplitLight_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_009.png"
+    },
+    {
+      "name": "DS_SplitLight_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_010.png"
+    },
+    {
+      "name": "DS_SplitLight_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_011.png"
+    },
+    {
+      "name": "DS_SplitLight_012",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_012.png"
+    },
+    {
+      "name": "DS_SplitLight_013",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_013.png"
+    },
+    {
+      "name": "DS_SplitLight_014",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_014.png"
+    },
+    {
+      "name": "DS_SplitLight_015",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_SplitLight_015.png"
+    }
+  ]
+}

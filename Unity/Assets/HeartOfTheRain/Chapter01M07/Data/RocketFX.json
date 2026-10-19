@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Jet",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "Wake0",
+      "start": 12,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "Wake1",
+      "start": 24,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "Contact",
+      "start": 36,
+      "count": 8,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.13333333333333333
+    },
+    {
+      "name": "Ignition",
+      "start": 44,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    }
+  ],
+  "frames": [
+    {
+      "name": "Jet_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_000.png"
+    },
+    {
+      "name": "Jet_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_001.png"
+    },
+    {
+      "name": "Jet_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_002.png"
+    },
+    {
+      "name": "Jet_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_003.png"
+    },
+    {
+      "name": "Jet_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_004.png"
+    },
+    {
+      "name": "Jet_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_005.png"
+    },
+    {
+      "name": "Jet_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_006.png"
+    },
+    {
+      "name": "Jet_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_007.png"
+    },
+    {
+      "name": "Jet_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_008.png"
+    },
+    {
+      "name": "Jet_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_009.png"
+    },
+    {
+      "name": "Jet_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_010.png"
+    },
+    {
+      "name": "Jet_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Jet_011.png"
+    },
+    {
+      "name": "Wake0_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_000.png"
+    },
+    {
+      "name": "Wake0_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_001.png"
+    },
+    {
+      "name": "Wake0_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_002.png"
+    },
+    {
+      "name": "Wake0_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_003.png"
+    },
+    {
+      "name": "Wake0_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_004.png"
+    },
+    {
+      "name": "Wake0_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_005.png"
+    },
+    {
+      "name": "Wake0_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_006.png"
+    },
+    {
+      "name": "Wake0_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_007.png"
+    },
+    {
+      "name": "Wake0_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_008.png"
+    },
+    {
+      "name": "Wake0_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_009.png"
+    },
+    {
+      "name": "Wake0_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_010.png"
+    },
+    {
+      "name": "Wake0_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake0_011.png"
+    },
+    {
+      "name": "Wake1_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_000.png"
+    },
+    {
+      "name": "Wake1_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_001.png"
+    },
+    {
+      "name": "Wake1_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_002.png"
+    },
+    {
+      "name": "Wake1_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_003.png"
+    },
+    {
+      "name": "Wake1_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_004.png"
+    },
+    {
+      "name": "Wake1_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_005.png"
+    },
+    {
+      "name": "Wake1_006",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_006.png"
+    },
+    {
+      "name": "Wake1_007",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_007.png"
+    },
+    {
+      "name": "Wake1_008",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_008.png"
+    },
+    {
+      "name": "Wake1_009",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_009.png"
+    },
+    {
+      "name": "Wake1_010",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_010.png"
+    },
+    {
+      "name": "Wake1_011",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Wake1_011.png"
+    },
+    {
+      "name": "Contact_000",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_000.png"
+    },
+    {
+      "name": "Contact_001",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_001.png"
+    },
+    {
+      "name": "Contact_002",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_002.png"
+    },
+    {
+      "name": "Contact_003",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_003.png"
+    },
+    {
+      "name": "Contact_004",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_004.png"
+    },
+    {
+      "name": "Contact_005",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_005.png"
+    },
+    {
+      "name": "Contact_006",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_006.png"
+    },
+    {
+      "name": "Contact_007",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Contact_007.png"
+    },
+    {
+      "name": "Ignition_000",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_000.png"
+    },
+    {
+      "name": "Ignition_001",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_001.png"
+    },
+    {
+      "name": "Ignition_002",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_002.png"
+    },
+    {
+      "name": "Ignition_003",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_003.png"
+    },
+    {
+      "name": "Ignition_004",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_004.png"
+    },
+    {
+      "name": "Ignition_005",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_005.png"
+    },
+    {
+      "name": "Ignition_006",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_006.png"
+    },
+    {
+      "name": "Ignition_007",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_007.png"
+    },
+    {
+      "name": "Ignition_008",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_008.png"
+    },
+    {
+      "name": "Ignition_009",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_009.png"
+    },
+    {
+      "name": "Ignition_010",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_010.png"
+    },
+    {
+      "name": "Ignition_011",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RocketRevision13/Ignition_011.png"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "columns": 9,
+  "rows": 9,
+  "cellPitch": 1,
+  "rowZero": "bottom",
+  "worldPosition": "((column-(columns-1)/2)*pitch,(row-(rows-1)/2)*pitch,0)",
+  "rocketFrameScale": "1.5 cells; constant pixels per unit; never stretch tiles",
+  "flightSpeedCellsPerSecond": 10
+}

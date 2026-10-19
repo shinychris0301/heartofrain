@@ -1,0 +1,57 @@
+{
+  "units": "seconds, normalized intensity",
+  "defaultEnabled": false,
+  "adapter": "GameplayFeedback.HapticRequested; host maps to native iOS/Android feedback. No generic long vibration fallback.",
+  "patterns": [
+    {
+      "id": "select",
+      "pulses": [
+        {
+          "time": 0,
+          "duration": 0.018,
+          "intensity": 0.2
+        }
+      ]
+    },
+    {
+      "id": "impact",
+      "pulses": [
+        {
+          "time": 0,
+          "duration": 0.04,
+          "intensity": 0.7
+        }
+      ]
+    },
+    {
+      "id": "combo",
+      "pulses": [
+        {
+          "time": 0,
+          "duration": 0.025,
+          "intensity": 0.4
+        },
+        {
+          "time": 0.075,
+          "duration": 0.055,
+          "intensity": 1
+        }
+      ]
+    },
+    {
+      "id": "success",
+      "pulses": [
+        {
+          "time": 0,
+          "duration": 0.025,
+          "intensity": 0.35
+        },
+        {
+          "time": 0.12,
+          "duration": 0.035,
+          "intensity": 0.6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/FirstStart/Scenes/M65_First_Start.unity
+    guid: 314b2223ef7b54d38209fcd6385a6f27
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/FirstStart/Scenes/M65_First_Start_Review.unity
+    guid: 2b5208d6a2a55622a02304d1ccfbe2f2
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/AppSettings/Scenes/M64_App_Settings_Review.unity
+    guid: ebcc89c5b2f65ec4890bb6cd7710dd1d
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Shop/Scenes/M63_Shop_Review.unity
+    guid: 29462392c0365dcca6f402b344b776e3
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Teams/Scenes/M62_Teams_Review.unity
+    guid: 94207b718249502bbc2f92f58c1f3a21
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Leaderboard/Scenes/M61_Leaderboard_Review.unity
+    guid: 64359709805558aaa2efb45a91f79bd0
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Journey/Scenes/M60_Journey_Review.unity
+    guid: bf8df6bd17c25891bc2b5ddfb0b097bc
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Retry/Scenes/M59_TryAgain_Review.unity
+    guid: c09b678e30215c9eb10e4b71a3973a5d
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/EndLevel/Scenes/M58_EndLevel_Review.unity
+    guid: f796d6c0178b54f4840090460a89a22d
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Settings/Scenes/M57_Settings_Review.unity
+    guid: 5fb5cc1c24b65ebb8db75012d58d3459
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/PreLevel/Scenes/M56_Home_PreLevel.unity
+    guid: 2ea87944c4be5ea299e975b7d3f3a182
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Home/Scenes/M55_Home_Review.unity
+    guid: 38a576775c3e50a59b9cd0d73cc3be4f
+  - enabled: 1
+    path: Assets/HeartOfTheRain/M48/Scenes/M48_Chapter01_Review.unity
+    guid: 41c58091317359618431f742dbc4a77f
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/LevelComplete/Scenes/M66_Level_Complete_Review.unity
+    guid: edbdd9895f3f5cf9aa613720e5847a23
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/LevelComplete/Scenes/M66_Chapter_Finale_Review.unity
+    guid: 34ef2e2db30c5bfbac69c3bf5bc7519f
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Celebrations/Scenes/M67_Daria_Celebration.unity
+    guid: 4878fa88b4bd5968b75c234adb7869dd
+  - enabled: 1
+    path: Assets/HeartOfTheRain/App/Celebrations/Scenes/M67_Chapter01_Finale.unity
+    guid: 670dbd6c302851b5960bb02a3d3f2f79
+  m_configObjects: {}

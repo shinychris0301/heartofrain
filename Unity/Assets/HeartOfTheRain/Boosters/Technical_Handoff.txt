@@ -1,0 +1,105 @@
+TECHNICAL HANDOFF — BOOSTER ANIMATIONS R1 / HAMMER CONTACT REVISION 3
+
+INTEGRATION AND COMPATIBILITY
+The package includes the M46 dependency set with original GUIDs, plus Boosters/.
+When imported into an existing M46 project, the following integration files are
+updated in place: BoardModel.cs, BoardPresentation.cs, M46Playground.cs,
+Data/Visual_Catalog.json and M46Assets.asset. Review your local edits before import.
+The earlier delivered M46 source/archive was not modified while preparing this pack.
+Existing M33 power-up art, obstacle art and canonical board data remain unchanged.
+
+BoardModel is now partial. BoardStep gains a BoosterPlan reference. Settle takes an
+optional advanceThreatClock flag (default true); manual boosters pass false.
+BoardPresentation samples the booster timeline and Atlas tile transforms.
+DrawSprite gains RGB tint fields, default white; the Unity review honors them.
+The new standalone BoosterReview component supplies manual selection and playback.
+
+PUBLIC SURFACE
+BoardModel.UseBooster(BoosterKind kind, int x, int y, BoosterInventory inventory)
+returns the same TurnResult/BoardStep sequence used by the existing view queue.
+Only call it on a stable board; the supplied review blocks input while Busy.
+The rules produce snapshots immediately; present their steps in order, and use
+DisplayGoals to update goals at the visual removal time. Do not resolve a second
+action until the current queue finishes. Retain or persist inventory in the host app;
+the supplied review intentionally resets stock to three on each board load.
+
+BoosterTimeline.Body transforms eligible moving sprites during the active step.
+BoosterTimeline.Effects emits the tool, contact flashes, wakes and stars.
+Both methods use seconds and board-cell coordinates, independent of frame rate.
+BoosterPlan.HitTime is shared by game-rule contacts and the visual sampler.
+History effects are allowed to continue through gravity/refill. Bound or prune old
+presentation history in a long-running production session after effects expire.
+
+TIMING
+Hammer: arrive .05–.25 s; anticipation until .58; strike .58–.80; contact .80;
+rebound/recovery until 1.42; step completes at 1.55.
+Axe: first top-row contact .64; each subsequent row .065 later.
+Ram: first left-column contact .64; each subsequent column .065 later.
+Axe/Ram step length is 1.3 + max(columns, rows) × .065 seconds.
+Atlas: lift 0–.80; tile flight .78 + (pieceId % 5) × .035;
+each curved flight lasts 1.18; land by 2.10; finish 2.75.
+See Boosters/Data/Booster_Timelines.json for machine-readable timing descriptions.
+
+VISUALS
+The four source PNGs are 1254 × 1254, straight RGBA, unchanged from approval.
+Sprites use a square unit canvas; visual tool size is set by sampled transforms.
+Keep native resolution, sRGB, clamp, alpha transparency, no mipmaps for this review.
+The shared FX use existing native manifests, frame rates and bottom-left rectangles.
+This package does not bake board-size-specific clear paths into a single flipbook;
+cell-space poses and reusable alpha atlases support variable layouts.
+
+Atlas changes positions, not colors; all fixed items remain in place.
+It tries up to 800 deterministic permutations, requiring no immediate matches and
+at least one legal swap. If none works, positions and RNG state are restored.
+Axe/Ram keep a constant .065 s cell interval so visual contact and damage agree.
+Power-up chains resolve through the existing queued M46 activation pipeline after
+the initial booster stroke; the review does not bypass obstacle rules.
+
+REPRODUCING THE REVIEW
+1. Install .NET 8 SDK and Python with Pillow and NumPy; install ffmpeg.
+2. Set M46_DOTNET_ROOT to the SDK directory if dotnet is not discoverable.
+3. python3 Source/compile_headless.py BoosterChecks
+4. python3 Source/prepare_boosters.py
+5. python3 Source/render_playback.py
+6. python3 Source/finish_package.py
+The compiler directly invokes Roslyn and requires no NuGet restore.
+Tests/UnityMathShim.cs provides only Unity math types for the headless run;
+it is outside Unity/Assets and must not be imported as a runtime script.
+
+GATES STILL REQUIRED
+Unity Editor compile/import, actual Unity shader/render comparison, touch testing,
+and profiling on intended phones. Runtime atlas caches are lazy but the dependency
+set has not been memory-budgeted for production. No audio or haptic files are included.
+
+INTENSITY REVISION 2
+Stronger front-layer contact flashes, expanding rings, brighter directional
+wakes, larger hero poses, and more pronounced hammer rebound/compression.
+Atlas adds a larger clockwise light orbit, curved star wakes and landing glints.
+A damped board recoil is capped at 0.12 board cells and ends within 0.24 seconds.
+The HUD remains stable. Set BoosterReview.boardRecoil=false to disable recoil.
+Existing booster designs, level layouts, rules, target scope, contact timestamps,
+fragment counts and falling obstacle trajectories remain unchanged.
+All four gameplay traces and sampled debris poses match the approved baseline.
+The existing package filenames are retained for integration continuity.
+
+HAMMER CONTACT REVISION 3
+The hammer now rotates clockwise around a fixed grip pivot. Its steel striking
+face lands on the target at 0.80 s, holds until 0.875 s, then rebounds upward.
+The rigid sprite uses uniform scale; the handle does not cross the target cell.
+The source is unchanged. Grip anchor: (330,875) pixels, top-left origin.
+Face-edge anchor: (1031.614286,785.157143) pixels on the 1254x1254 source.
+Impact rotation: -45 degrees. Hero scale: 2.95 cells.
+The hammer silhouette renders above the contact light so the head remains visible.
+Tests independently project the actual PNG silhouette at 120 samples/second;
+face alignment, fixed grip, handle clearance and upward rebound all pass.
+Axe, Ram and Atlas draw streams and all gameplay traces are unchanged.
+
+Watch Previews/Hammer_Contact_Review.mp4: normal playback, then quarter speed.
+The slow segment is sampled at 120 Hz and played at 30 fps, without interpolation.
+To regenerate it, run after BoosterChecks:
+python3 Source/compile_headless.py HammerGeometry
+python3 Source/check_hammer_geometry.py
+python3 Source/render_playback.py Hammer
+python3 Source/render_playback.py HammerSlow
+python3 Source/finish_package.py
+Unity Editor import and playback remain untested in this environment.

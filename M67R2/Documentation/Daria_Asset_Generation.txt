@@ -1,0 +1,14 @@
+ASSET GENERATION — M67 R2
+Method: built-in image generation, transparent-background edit using two local
+references. The generated RGBA source is used without repainting/recoloring.
+Authoritative identity/palette: Daria’s muted olive toolmaker sprite.png.
+Previous animation: M67 Daria_Celebration_Atlas.png.
+New source: exec-cab58a82-0699-49ce-bcc1-29aaae58a01a.png.
+Unity asset: Assets/HeartOfTheRain/App/Celebrations/Art/Daria_Celebration_Atlas.png.
+
+Final generation prompt:
+Use case: identity-preserve. Production animation sprite atlas for Daria, a Unity 2D mobile game. First image is the AUTHORITATIVE character identity, material, and palette reference; second is the existing animation to replace. Create a new seamless 4-column by 4-row grid of SIXTEEN waist-up sprites, read left to right then top to bottom. Square overall image, preferably 2048x2048. TRUE TRANSPARENT background, no text, no borders, no glow or scenery. Every square cell has identical camera distance, lighting, torso placement, and enough transparent padding (6% all sides). Character framed head through belt, hands fully inside each cell. Strong invariants: SAME adult woman, curly dark-brown hair, warm natural skin, muted olive green cloak (NOT bright green or teal), cream linen sleeves, brown leather bodice/diagonal strap and gold diamond clasp; closely match the reference colors in neutral warm soft lighting, avoid exaggerated orange highlights. Make her head and eyes face directly toward the viewer in EVERY frame, with a clearly joyful, open, teeth-visible smile and warm raised cheeks. Beautiful polished storybook game rendering matching original texture. This is a continuous chronological celebration with real small pose inbetweens, not sixteen unrelated poses: frames 1-3 anticipate a clap, hands at chest height closing progressively, elbows open; frames 4-5 palms meet gently; frames 6-8 hands separate progressively, shoulders rebound slightly and curls follow; frames 9-10 second clap closes and meets; frames 11-13 hands reopen smoothly; frames 14-16 settle into a welcoming congratulatory pose with both palms open, facing up, elbows comfortably bent, joyful direct eye contact. Small lively head nod and shoulder movement, anatomically correct five-finger hands, stable identity and silhouette. Keep pelvis fixed at same bottom-center baseline and head at almost identical height so it plays smoothly. Do not rotate her gaze to the side. Do not add objects, UI panels, sparkles, speech bubbles, crowns, logos, or a grid.
+
+Actual output: 1254 x 1254 RGBA. Row boundaries are 0, 320, 633, 947, 1254
+pixels, with four equal-width columns. Runtime UVs account for these authored
+row offsets and inset two pixels; do not substitute uniform row UVs.

@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 3,
+  "pixelsPerUnit": 85.33333333333333,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "fps": 30,
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Merge_Right",
+      "start": 0,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "Merge_Left",
+      "start": 18,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "Armed",
+      "start": 36,
+      "count": 1,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.03333333333333333
+    },
+    {
+      "name": "Release",
+      "start": 37,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "Combo_RocketBomb_Merge_Right_000",
+      "x": 0,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_000.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_001",
+      "x": 256,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_001.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_002",
+      "x": 512,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_002.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_003",
+      "x": 768,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_003.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_004",
+      "x": 1024,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_004.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_005",
+      "x": 1280,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_005.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_006",
+      "x": 1536,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_006.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_007",
+      "x": 1792,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_007.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_008",
+      "x": 0,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_008.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_009",
+      "x": 256,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_009.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_010",
+      "x": 512,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_010.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_011",
+      "x": 768,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_011.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_012",
+      "x": 1024,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_012.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_013",
+      "x": 1280,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_013.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_014",
+      "x": 1536,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_014.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_015",
+      "x": 1792,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_015.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_016",
+      "x": 0,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_016.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Right_017",
+      "x": 256,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Right_017.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_000",
+      "x": 512,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_000.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_001",
+      "x": 768,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_001.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_002",
+      "x": 1024,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_002.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_003",
+      "x": 1280,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_003.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_004",
+      "x": 1536,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_004.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_005",
+      "x": 1792,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_005.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_006",
+      "x": 0,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_006.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_007",
+      "x": 256,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_007.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_008",
+      "x": 512,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_008.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_009",
+      "x": 768,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_009.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_010",
+      "x": 1024,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_010.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_011",
+      "x": 1280,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_011.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_012",
+      "x": 1536,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_012.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_013",
+      "x": 1792,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_013.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_014",
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_014.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_015",
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_015.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_016",
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_016.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Merge_Left_017",
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Merge_Left_017.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Armed_000",
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Armed_000.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_000",
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Release_000.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_001",
+      "x": 1536,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Release_001.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_002",
+      "x": 1792,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Combo_RocketBomb/Release_002.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_003",
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_003.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_004",
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_004.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_005",
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_005.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_006",
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_006.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_007",
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_007.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_008",
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_008.png"
+    },
+    {
+      "name": "Combo_RocketBomb_Release_009",
+      "x": 1536,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Combo_RocketBomb/Release_009.png"
+    }
+  ]
+}

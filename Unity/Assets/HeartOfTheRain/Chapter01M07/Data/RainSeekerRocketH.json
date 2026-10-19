@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 3,
+  "pixelsPerUnit": 85.33333333333333,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "RX_H_Merge_Right",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "RX_H_Merge_Left",
+      "start": 12,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "RX_H_Charge",
+      "start": 24,
+      "count": 6,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RX_H_Lift",
+      "start": 30,
+      "count": 10,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.16666666666666666
+    },
+    {
+      "name": "RX_H_Flight",
+      "start": 40,
+      "count": 12,
+      "fps": 60,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RX_H_Deploy",
+      "start": 52,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    }
+  ],
+  "frames": [
+    {
+      "name": "RX_H_Merge_Right_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_000.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_001.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_002.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_003.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_004.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_005.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_006.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_007.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_008.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_009.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_010.png"
+    },
+    {
+      "name": "RX_H_Merge_Right_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Right_011.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_000.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_001.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_002.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_003.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_004.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_005.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_006.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_007.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_008.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_009.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_010.png"
+    },
+    {
+      "name": "RX_H_Merge_Left_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Merge_Left_011.png"
+    },
+    {
+      "name": "RX_H_Charge_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_000.png"
+    },
+    {
+      "name": "RX_H_Charge_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_001.png"
+    },
+    {
+      "name": "RX_H_Charge_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_002.png"
+    },
+    {
+      "name": "RX_H_Charge_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_003.png"
+    },
+    {
+      "name": "RX_H_Charge_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_004.png"
+    },
+    {
+      "name": "RX_H_Charge_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Charge_005.png"
+    },
+    {
+      "name": "RX_H_Lift_000",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_000.png"
+    },
+    {
+      "name": "RX_H_Lift_001",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_001.png"
+    },
+    {
+      "name": "RX_H_Lift_002",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_002.png"
+    },
+    {
+      "name": "RX_H_Lift_003",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_003.png"
+    },
+    {
+      "name": "RX_H_Lift_004",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_004.png"
+    },
+    {
+      "name": "RX_H_Lift_005",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_005.png"
+    },
+    {
+      "name": "RX_H_Lift_006",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_006.png"
+    },
+    {
+      "name": "RX_H_Lift_007",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_007.png"
+    },
+    {
+      "name": "RX_H_Lift_008",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_008.png"
+    },
+    {
+      "name": "RX_H_Lift_009",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Lift_009.png"
+    },
+    {
+      "name": "RX_H_Flight_000",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_000.png"
+    },
+    {
+      "name": "RX_H_Flight_001",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_001.png"
+    },
+    {
+      "name": "RX_H_Flight_002",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_002.png"
+    },
+    {
+      "name": "RX_H_Flight_003",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_003.png"
+    },
+    {
+      "name": "RX_H_Flight_004",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_004.png"
+    },
+    {
+      "name": "RX_H_Flight_005",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_005.png"
+    },
+    {
+      "name": "RX_H_Flight_006",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_006.png"
+    },
+    {
+      "name": "RX_H_Flight_007",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_007.png"
+    },
+    {
+      "name": "RX_H_Flight_008",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_008.png"
+    },
+    {
+      "name": "RX_H_Flight_009",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_009.png"
+    },
+    {
+      "name": "RX_H_Flight_010",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_010.png"
+    },
+    {
+      "name": "RX_H_Flight_011",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Flight_011.png"
+    },
+    {
+      "name": "RX_H_Deploy_000",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_000.png"
+    },
+    {
+      "name": "RX_H_Deploy_001",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_001.png"
+    },
+    {
+      "name": "RX_H_Deploy_002",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_002.png"
+    },
+    {
+      "name": "RX_H_Deploy_003",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_003.png"
+    },
+    {
+      "name": "RX_H_Deploy_004",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_004.png"
+    },
+    {
+      "name": "RX_H_Deploy_005",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_005.png"
+    },
+    {
+      "name": "RX_H_Deploy_006",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_006.png"
+    },
+    {
+      "name": "RX_H_Deploy_007",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_007.png"
+    },
+    {
+      "name": "RX_H_Deploy_008",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_008.png"
+    },
+    {
+      "name": "RX_H_Deploy_009",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_009.png"
+    },
+    {
+      "name": "RX_H_Deploy_010",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_010.png"
+    },
+    {
+      "name": "RX_H_Deploy_011",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeekerRocket26/RX_H_Deploy_011.png"
+    }
+  ]
+}

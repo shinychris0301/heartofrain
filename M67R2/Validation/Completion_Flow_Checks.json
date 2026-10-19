@@ -1,0 +1,16 @@
+{
+  "status": "PASS_REAL_WIN_ROUTING_WITH_FAKE_UI_HOST",
+  "checks": 404,
+  "legalReplayActions": 246,
+  "realWinLevels": [
+    21,
+    28,
+    36,
+    49,
+    50
+  ],
+  "productionCode": "Full HomeLevelFlow, LevelCompleteSession, BoardModel, starting stock and exit session",
+  "faked": "Unity lifecycle, input, rendering, audio, Journey view, pre-level and animation presentation",
+  "UnityAPICompilation": "NOT_RUN",
+  "UnityPlayMode": "NOT_RUN"
+}

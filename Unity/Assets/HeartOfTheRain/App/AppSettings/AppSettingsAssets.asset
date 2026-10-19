@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e030d78299a54eb831dbdbdc18c8258, type: 3}
+  m_Name: M64 Main Settings Assets
+  m_EditorClassIdentifier:
+  shop: {fileID: 11400000, guid: e44fd453dc0f59e79aff3a4f16f7865a, type: 3}
+  gameplaySettings: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 3}
+  destinations: {fileID: 4900000, guid: a77b2408014757b2b2aa0a34eaab5bb7, type: 3}
+  sprites:
+  - id: AS_Back
+    sprite: {fileID: 21300000, guid: d8b9d01ad5365e64972775867dd209f4, type: 3}
+  - id: AS_Chevron
+    sprite: {fileID: 21300000, guid: c40971ecd4625457ac94ae8bb0463f23, type: 3}
+  - id: AS_Document
+    sprite: {fileID: 21300000, guid: 37be4f9535b95c8c97cc32c2a3fb612e, type: 3}
+  - id: AS_Follow
+    sprite: {fileID: 21300000, guid: 2b29d37c6fc25433a9c2522012f86a51, type: 3}
+  - id: AS_Globe
+    sprite: {fileID: 21300000, guid: 3c677f5ffd2857efb662af573482c4ff, type: 3}
+  - id: AS_Primary
+    sprite: {fileID: 21300000, guid: 1d5fe5e1841351ce9b9644077e033cf4, type: 3}
+  - id: AS_Row
+    sprite: {fileID: 21300000, guid: b5c1ae750c6a5f54a7b4c6bac18167f0, type: 3}
+  - id: AS_Support
+    sprite: {fileID: 21300000, guid: 4d94d87c84a85cd4a711025bd4fd507e, type: 3}
+  - id: AS_Well
+    sprite: {fileID: 21300000, guid: 46e2d747ffc6511d864a49130f346428, type: 3}
+  - id: ModalShell_R2
+    sprite: {fileID: 21300000, guid: b3f5403a60fa5929bbd7a1a112ab6cdb, type: 3}
+  - id: SelectionTick_R2
+    sprite: {fileID: 21300000, guid: dcde921f6a05592b98a7815b6c7c7162, type: 3}

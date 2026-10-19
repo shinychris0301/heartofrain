@@ -1,0 +1,56 @@
+{
+  "status": "PASS_COMPLETION_POLICY_LAYOUT_AND_MOTION",
+  "checks": 17074,
+  "layouts": 160,
+  "motionSamples": 146,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "priorLifeAndBoosterBehavior": "Lives untouched by win settlement; booster stock remains in existing launch session",
+  "UnityAPICompilation": "NOT_RUN",
+  "UnityPlayMode": "NOT_RUN",
+  "DeviceInput": "NOT_RUN"
+}
+{
+  "status": "PASS_PURE_CSHARP_CELEBRATION_POLICY_MOTION_AND_LAYOUT",
+  "checks": 18171,
+  "poseSamples": 1446,
+  "layouts": 7,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "UnityAPICompilation": "NOT_RUN",
+  "ShaderCompilation": "NOT_RUN",
+  "DeviceTesting": "NOT_RUN"
+}
+{
+  "status": "PASS_OVERLAY_GEOMETRY_PARTICLES_PLAYBACK_GATES",
+  "checks": 77249,
+  "layouts": 7,
+  "UnityAPICompilation": "NOT_RUN"
+}
+{
+  "status": "PASS_REAL_WIN_ROUTING_WITH_FAKE_UI_HOST",
+  "checks": 404,
+  "legalReplayActions": 246,
+  "realWinLevels": [
+    21,
+    28,
+    36,
+    49,
+    50
+  ],
+  "productionCode": "Full HomeLevelFlow, LevelCompleteSession, BoardModel, starting stock and exit session",
+  "faked": "Unity lifecycle, input, rendering, audio, Journey view, pre-level and animation presentation",
+  "UnityAPICompilation": "NOT_RUN",
+  "UnityPlayMode": "NOT_RUN"
+}
+{"status": "PASS", "csharp_files": 143, "syntax_errors": [], "unity_api_compilation": "NOT_RUN", "shader_compilation": "NOT_RUN"}

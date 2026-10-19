@@ -1,0 +1,23 @@
+{
+  "kind": "RocketBomb",
+  "previewColumns": 9,
+  "previewRows": 11,
+  "bombRadius": 2,
+  "doubleBombRadius": 3,
+  "rocketBandHalfWidth": 1,
+  "cellsPerSecond": 20,
+  "mergeStart": 1.0,
+  "mergeDuration": 0.6,
+  "chargedHold": 0.1333333333,
+  "detonationTime": 1.7333333333,
+  "secondRingDelay": 0,
+  "chargedCoreScale": 1.38,
+  "effectRevision": 5,
+  "singleBombPrechargeSeconds": 0.2,
+  "blastVisualScale": 1.1,
+  "boardRecoilCells": 0.065,
+  "tilePopSeconds": 0.0666666667,
+  "effectFootprint": "union of three rows and three columns",
+  "edgePolicy": "clip affected cells to board bounds; skip rocket lanes outside board",
+  "gameRulesStatus": "proposed review presets, configurable; not a claim about reference-game internals"
+}

@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 5.6,
+  "pixelsPerUnit": 45.714285714285715,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Wood_V0",
+      "start": 0,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.8
+    },
+    {
+      "name": "Wood_V1",
+      "start": 24,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.8
+    }
+  ],
+  "frames": [
+    {
+      "name": "Wood_V0_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_000.png"
+    },
+    {
+      "name": "Wood_V0_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_001.png"
+    },
+    {
+      "name": "Wood_V0_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_002.png"
+    },
+    {
+      "name": "Wood_V0_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_003.png"
+    },
+    {
+      "name": "Wood_V0_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_004.png"
+    },
+    {
+      "name": "Wood_V0_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_005.png"
+    },
+    {
+      "name": "Wood_V0_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_006.png"
+    },
+    {
+      "name": "Wood_V0_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_007.png"
+    },
+    {
+      "name": "Wood_V0_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_008.png"
+    },
+    {
+      "name": "Wood_V0_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_009.png"
+    },
+    {
+      "name": "Wood_V0_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_010.png"
+    },
+    {
+      "name": "Wood_V0_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_011.png"
+    },
+    {
+      "name": "Wood_V0_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_012.png"
+    },
+    {
+      "name": "Wood_V0_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_013.png"
+    },
+    {
+      "name": "Wood_V0_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_014.png"
+    },
+    {
+      "name": "Wood_V0_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_015.png"
+    },
+    {
+      "name": "Wood_V0_016",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_016.png"
+    },
+    {
+      "name": "Wood_V0_017",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_017.png"
+    },
+    {
+      "name": "Wood_V0_018",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_018.png"
+    },
+    {
+      "name": "Wood_V0_019",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_019.png"
+    },
+    {
+      "name": "Wood_V0_020",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_020.png"
+    },
+    {
+      "name": "Wood_V0_021",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_021.png"
+    },
+    {
+      "name": "Wood_V0_022",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_022.png"
+    },
+    {
+      "name": "Wood_V0_023",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V0_023.png"
+    },
+    {
+      "name": "Wood_V1_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_000.png"
+    },
+    {
+      "name": "Wood_V1_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_001.png"
+    },
+    {
+      "name": "Wood_V1_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_002.png"
+    },
+    {
+      "name": "Wood_V1_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_003.png"
+    },
+    {
+      "name": "Wood_V1_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_004.png"
+    },
+    {
+      "name": "Wood_V1_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_005.png"
+    },
+    {
+      "name": "Wood_V1_006",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_006.png"
+    },
+    {
+      "name": "Wood_V1_007",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_007.png"
+    },
+    {
+      "name": "Wood_V1_008",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_008.png"
+    },
+    {
+      "name": "Wood_V1_009",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_009.png"
+    },
+    {
+      "name": "Wood_V1_010",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_010.png"
+    },
+    {
+      "name": "Wood_V1_011",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_011.png"
+    },
+    {
+      "name": "Wood_V1_012",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_012.png"
+    },
+    {
+      "name": "Wood_V1_013",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_013.png"
+    },
+    {
+      "name": "Wood_V1_014",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_014.png"
+    },
+    {
+      "name": "Wood_V1_015",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_015.png"
+    },
+    {
+      "name": "Wood_V1_016",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_016.png"
+    },
+    {
+      "name": "Wood_V1_017",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_017.png"
+    },
+    {
+      "name": "Wood_V1_018",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_018.png"
+    },
+    {
+      "name": "Wood_V1_019",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_019.png"
+    },
+    {
+      "name": "Wood_V1_020",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_020.png"
+    },
+    {
+      "name": "Wood_V1_021",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_021.png"
+    },
+    {
+      "name": "Wood_V1_022",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_022.png"
+    },
+    {
+      "name": "Wood_V1_023",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Wood_V1_023.png"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+M47 TECHNICAL HANDOFF / UI REVISION 11
+
+Layout
+The safe-area width is normalized to 720 UI units. Height derives from the actual
+safe-area aspect ratio; screen coordinates grow downward for authored rectangles.
+The board fits a rectangle with 22 units on each side, 250 above and 210 below.
+Cell pitch = min(676/columns, (safeHeight-460)/rows). The camera center follows the
+same 20-unit vertical offset. Active masks and authored cell occupancy are not
+changed. 9x9, 9x11 and 11x11 use the same interface and controller.
+The Canvas uses a constant pixel scale determined by safe-area width; gameplay
+and overlays do not inherit board recoil. Text remains separate from PNG art.
+
+Art and imports
+UI skins have36-pixel nine-slice borders; Label_Tab has12-pixel borders.
+Panel_Header is a fixed 660x192 enclosure sprite with zero borders
+and Image.Type.Simple, uniformly scaled with the720-unit safe-area canvas.
+All use Full Rect meshes and 100 pixels/unit.
+Icon and approved object sprites have zero borders. PNG color is sRGB; alpha is
+straight RGBA, bilinear/clamp, no mipmaps. Board textures remain ordinary textures
+for the existing dynamic Sprite.Create path. UI binding copies retain the exact
+approved source pixels and have their own sprite import identities.
+The approved item images are unchanged. The M47 background is a built-in image
+edit of the original courtyard, using quieter slate-blue lighting. Editable SVG
+UI skins use the approved Direction A ivory/slate/champagne palette. Circular
+settings sprites use Image.Type.Simple and preserve aspect ratio, even when
+called through the shared button factory. DejaVu font licenses are included.
+
+UI revision 11 geometry
+All rectangles below are absolute within the 720-unit safe-area canvas.
+Header container group (30,38,660,192), centered at x360.
+Panel sizes are unchanged; the enclosing width shrinks by 24 units. All panels, labels, goals, avatar
+and the shared background are children; child coordinates subtract (30,38).
+Panel_Header uses exactly this rectangle, without nine-slicing. It contains
+one filled, closed SVG path and a continuous 3-unit pale outer border.
+The outer counter area spans y74..206, curves around the left corners and
+joins the circular avatar area (center592,134; radius94). The boundary stays
+below the avatar's top and above the board without a tall rectangular fill
+around the counters. The Moves and Targets label tabs overlap the top edge.
+The interior is continuous slate navy. The 12-unit gaps (previously 24 units) between panel rectangles
+are visible as shared background; individual panel rims are separate from
+the outer container outline. No transparent slots divide the container.
+Pixel validation checks one connected filled component, no interior holes,
+and opaque pixels at both inter-panel gap centers.
+Moves panel (42,82,112,120), ivory; count (48,105,100,84), 58px dark ink.
+Moves tab (50,66,96,34), with 22px white live text at (52,65,92,34).
+Targets panel (166,82,324,120), ivory; tab (264,66,128,34), with 22px white
+live text at (266,65,124,34). Both tabs overlap their panel top edge by 18 units.
+Goal group center x328; span min(296,104*goalCount). Icons 56x56 at y105;
+counts 28px in rectangles at y158, height32. Supports two to four targets.
+The panel heights shrink from156 to120 units (23%); their widths also shrink.
+Avatar viewport (502,44,180,180), 25% larger in diameter than R4.
+Ivan's unchanged 1024x1536 PNG is shown through Avatar_Mask with
+showMaskGraphic=false. Its child image is (-200,0,512,768), corresponding
+to original source pixels (400,0,360,360). Avatar_Frame is unchanged.
+The avatar and header are noninteractive with raycastTarget=false.
+No individual target slot frames, chapter line or level title are displayed.
+The bottom controls have four separate contour backings and no shared dock.
+Booster_Outline is a 144x148 fixed-aspect PNG with zero slice borders, matching
+the header slate-navy gradient and 3-unit pale stroke. Its single closed path follows
+the rounded button and the projecting stock badge. Four Image.Type.Simple
+instances sit at (buttonX-7,buttonY-7), behind the four existing buttons.
+They are noninteractive and do not connect across gaps. The settings control
+is separate and unchanged. The entire assembly remains in the safe-area canvas.
+Four buttons are 126x126,
+x=26/166/306/446, y=safeHeight-162. Each original booster fits 104x104 and has
+a 44px stock badge at its lower-right. The settings circle is 98x98 at
+(590,safeHeight-149). No booster names or settings caption appear.
+Only contextual target instructions appear at (34,6,652,28), and only while
+selecting a booster target. Normal play shows only Moves and Targets as persistent headings.
+Dialogs remain 560x584, center vertically, and use plain titles without ribbons.
+The intro title is Clear these targets; level numbering is not displayed.
+Unused Dock/GoalSlot/Move icon sprites remain as uninstantiated compatibility assets.
+PNG skins carry no text. Existing pressed tint, selected skin, goal pulse and
+modal entrance remain. Board position, viewport and gameplay timing are unchanged.
+
+Runtime
+GameplayScreen uses the existing BoardModel, BoardPresentation and corrected
+BoosterTimeline. GameplayHUD binds visible goals to DisplayGoals rather than the
+already-resolved model state, so a goal changes when its body releases.
+Goal numbers pulse for .24 seconds on change. Modal panels ease from .96 to 1
+over .18 seconds. Booster selection swaps to a pale yellow face. Touch focus uses the
+shared Focus_Cell sprite. Moves <=5 use dark amber text on the light panel and a one-time warning cue.
+Buttons remain unavailable while an action is resolving; settings can pause it.
+Pause freezes the presentation clock and pauses active voices. Restart clears
+timelines and voices and reloads the level. This review intentionally resets stock.
+Result panels appear only after the visual queue settles. The last level offers
+Replay level; the host game owns transition to the next chapter.
+
+Audio and haptics
+FeedbackPlanPure builds timestamped cue lists from actual BoardStep data. Hammer
+swing begins at .58 seconds and its impact at .80 seconds. Axe/Ram first contact
+is .64; Atlas shuffle begins .78. Material cues use each Damage.time. Jar audio
+uses the existing .70-second collection time. Seeker contact uses flight arrival.
+GameplayFeedback uses eight replaceable AudioSources, master gain .75 and a
+.045-second same-cue cooldown. Longer audio tails continue across board steps.
+Audio_Catalog.json specifies files and waveform format. Offline review mixes
+apply the same voice count, replacement policy, cooldown and master gain.
+Haptic_Patterns.json describes timing/intensity. Subscribe a platform adapter to
+GameplayFeedback.HapticRequested. Profiles are optional and disabled by default;
+no generic long vibrate call substitutes for the authored short patterns.
+Music and native device haptics are not part of this asset pass.
+
+Reproduction
+Requirements: Python/Pillow/NumPy/SciPy, Node + sharp, ffmpeg, .NET 8 SDK.
+1. python3 Source/build_ui_assets.py
+2. node Source/render_vectors.cjs
+   python3 Source/build_board_palette.py
+   node Source/render_boards.cjs
+3. python3 Source/build_audio.py
+4. python3 Source/compile_headless.py M47Checks
+5. python3 Source/render_ui.py
+6. python3 Source/render_ui.py Hammer  (repeat Axe, Ram, Atlas)
+7. python3 Source/mix_preview_audio.py
+8. python3 Source/prepare_package.py
+9. python3 Source/validate_and_package.py
+M46_DOTNET_ROOT can point to an installed .NET 8 SDK. The headless math shim is
+outside Unity/Assets and must not be imported into Unity.
+Canonical Unity C# sources are edited directly. The baked previous booster pose
+streams are included for reproducible previews; gameplay recalculates poses live.
+
+Acceptance gates
+Import in Unity, run the validation menu, then inspect typography, nine-slices,
+transparent edges, mask clipping, audio balance, touch and pause/restart behavior.
+Confirm UI render parity at phone safe areas and on 9x9/9x11/11x11 boards.
+All 50 load/opening checks are lightweight coverage, not campaign balancing.
+Use the supplied M46 mobile texture preset only after checking target GPU format
+support; the full atlas library remains approximately 1 GiB RGBA32 base texels.
+Reference-art source projects remain separately available in the earlier packages.
+
+Official API references used for the interface implementation
+https://docs.unity3d.com/2022.3/Documentation/Manual/script-CanvasScaler.html
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.InputSystem.UI.InputSystemUIInputModule.html
+
+DIRECTION A / R11 ASSET CONVERSION
+UI_Palette.json defines ivory #F3EDE1..#E3D8C5, slate #26394D..#1D2E40,
+champagne #AE9F86, ink #203044 and checker cells #394B63/#4A6078.
+The native HUD uses ink RGB(32,48,68)/255 and a neutral warm pressed tint.
+Source/Board_SVG contains 50 editable surfaces. The generator uses unchanged
+canonical activeCells with 64-pixel cell pitch and 15-pixel canvas padding.
+The original AlphaMask PNG is embedded only as exact silhouette geometry.
+SVG alpha morphology builds a shallow frame around that geometry; alternating
+cell rectangles use the approved colors. Neither mask nor level data is edited.
+M47 board surfaces retain original pixel dimensions and sprite alignment.
+Legacy M46 review scenes keep their original assets; open the M47 gameplay scene
+to review the new palette. The built-in background edit is documented in
+Direction_A_Background_Edit.txt. Background generation is not rerun by the
+reproduction scripts. The delivered backdrop PNG is the reproducible input.

@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "DO_Merge_Right",
+      "start": 0,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "DO_Merge_Left",
+      "start": 18,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "DO_Charge",
+      "start": 36,
+      "count": 8,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.26666666666666666
+    },
+    {
+      "name": "DO_Channel",
+      "start": 44,
+      "count": 12,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DO_Release",
+      "start": 56,
+      "count": 8,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.13333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "DO_Merge_Right_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_000.png"
+    },
+    {
+      "name": "DO_Merge_Right_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_001.png"
+    },
+    {
+      "name": "DO_Merge_Right_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_002.png"
+    },
+    {
+      "name": "DO_Merge_Right_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_003.png"
+    },
+    {
+      "name": "DO_Merge_Right_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_004.png"
+    },
+    {
+      "name": "DO_Merge_Right_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_005.png"
+    },
+    {
+      "name": "DO_Merge_Right_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_006.png"
+    },
+    {
+      "name": "DO_Merge_Right_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_007.png"
+    },
+    {
+      "name": "DO_Merge_Right_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_008.png"
+    },
+    {
+      "name": "DO_Merge_Right_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_009.png"
+    },
+    {
+      "name": "DO_Merge_Right_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_010.png"
+    },
+    {
+      "name": "DO_Merge_Right_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_011.png"
+    },
+    {
+      "name": "DO_Merge_Right_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_012.png"
+    },
+    {
+      "name": "DO_Merge_Right_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_013.png"
+    },
+    {
+      "name": "DO_Merge_Right_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_014.png"
+    },
+    {
+      "name": "DO_Merge_Right_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_015.png"
+    },
+    {
+      "name": "DO_Merge_Right_016",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_016.png"
+    },
+    {
+      "name": "DO_Merge_Right_017",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Right_017.png"
+    },
+    {
+      "name": "DO_Merge_Left_000",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_000.png"
+    },
+    {
+      "name": "DO_Merge_Left_001",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_001.png"
+    },
+    {
+      "name": "DO_Merge_Left_002",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_002.png"
+    },
+    {
+      "name": "DO_Merge_Left_003",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_003.png"
+    },
+    {
+      "name": "DO_Merge_Left_004",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_004.png"
+    },
+    {
+      "name": "DO_Merge_Left_005",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_005.png"
+    },
+    {
+      "name": "DO_Merge_Left_006",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_006.png"
+    },
+    {
+      "name": "DO_Merge_Left_007",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_007.png"
+    },
+    {
+      "name": "DO_Merge_Left_008",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_008.png"
+    },
+    {
+      "name": "DO_Merge_Left_009",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_009.png"
+    },
+    {
+      "name": "DO_Merge_Left_010",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_010.png"
+    },
+    {
+      "name": "DO_Merge_Left_011",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_011.png"
+    },
+    {
+      "name": "DO_Merge_Left_012",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_012.png"
+    },
+    {
+      "name": "DO_Merge_Left_013",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_013.png"
+    },
+    {
+      "name": "DO_Merge_Left_014",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_014.png"
+    },
+    {
+      "name": "DO_Merge_Left_015",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_015.png"
+    },
+    {
+      "name": "DO_Merge_Left_016",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_016.png"
+    },
+    {
+      "name": "DO_Merge_Left_017",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Merge_Left_017.png"
+    },
+    {
+      "name": "DO_Charge_000",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_000.png"
+    },
+    {
+      "name": "DO_Charge_001",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_001.png"
+    },
+    {
+      "name": "DO_Charge_002",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_002.png"
+    },
+    {
+      "name": "DO_Charge_003",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_003.png"
+    },
+    {
+      "name": "DO_Charge_004",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_004.png"
+    },
+    {
+      "name": "DO_Charge_005",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_005.png"
+    },
+    {
+      "name": "DO_Charge_006",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_006.png"
+    },
+    {
+      "name": "DO_Charge_007",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Charge_007.png"
+    },
+    {
+      "name": "DO_Channel_000",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_000.png"
+    },
+    {
+      "name": "DO_Channel_001",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_001.png"
+    },
+    {
+      "name": "DO_Channel_002",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_002.png"
+    },
+    {
+      "name": "DO_Channel_003",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_003.png"
+    },
+    {
+      "name": "DO_Channel_004",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_004.png"
+    },
+    {
+      "name": "DO_Channel_005",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_005.png"
+    },
+    {
+      "name": "DO_Channel_006",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_006.png"
+    },
+    {
+      "name": "DO_Channel_007",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_007.png"
+    },
+    {
+      "name": "DO_Channel_008",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_008.png"
+    },
+    {
+      "name": "DO_Channel_009",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_009.png"
+    },
+    {
+      "name": "DO_Channel_010",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_010.png"
+    },
+    {
+      "name": "DO_Channel_011",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Channel_011.png"
+    },
+    {
+      "name": "DO_Release_000",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_000.png"
+    },
+    {
+      "name": "DO_Release_001",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_001.png"
+    },
+    {
+      "name": "DO_Release_002",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_002.png"
+    },
+    {
+      "name": "DO_Release_003",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_003.png"
+    },
+    {
+      "name": "DO_Release_004",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_004.png"
+    },
+    {
+      "name": "DO_Release_005",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_005.png"
+    },
+    {
+      "name": "DO_Release_006",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_006.png"
+    },
+    {
+      "name": "DO_Release_007",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrbSuper31/DO_Release_007.png"
+    }
+  ]
+}

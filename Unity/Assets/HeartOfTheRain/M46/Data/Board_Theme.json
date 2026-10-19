@@ -1,0 +1,23 @@
+{
+  "id": "RainSlate_R2",
+  "even": "#5f768e",
+  "odd": "#8195aa",
+  "surfaceTopLift": 5,
+  "cellBevelCells": 0.015625,
+  "cellTopHighlight": 7,
+  "cellLeftHighlight": 3,
+  "cellBottomShade": 8,
+  "cellRightShade": 5,
+  "cellFaceGradient": 2,
+  "cellGapCells": 0,
+  "rimOuter": "#112330",
+  "rimBody": "#365168",
+  "rimLip": "#a9a08b",
+  "rimInner": "#263d51",
+  "cornerRadiusCells": 0.09,
+  "outsideFrameCells": 0.11,
+  "innerShadowCells": 0.035,
+  "gemCanvasCells": 0.88,
+  "viewportBottomSafetyCells": 0.32,
+  "rule": "Active-cell union; stronger alternating faces and shallow painted edges inside each full-size cell; zero gutters; empty cutouts remain empty"
+}

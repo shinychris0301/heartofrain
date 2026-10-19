@@ -1,0 +1,17 @@
+{
+  "status": "PASS_COMPLETION_POLICY_LAYOUT_AND_MOTION",
+  "checks": 17074,
+  "layouts": 160,
+  "motionSamples": 146,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "priorLifeAndBoosterBehavior": "Lives untouched by win settlement; booster stock remains in existing launch session",
+  "UnityAPICompilation": "NOT_RUN",
+  "UnityPlayMode": "NOT_RUN",
+  "DeviceInput": "NOT_RUN"
+}

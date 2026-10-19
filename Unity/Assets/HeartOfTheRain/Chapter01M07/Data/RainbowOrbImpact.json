@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "OR_Orbit",
+      "start": 0,
+      "count": 16,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "OR_Hit",
+      "start": 16,
+      "count": 16,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    },
+    {
+      "name": "OR_Stars",
+      "start": 32,
+      "count": 14,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4666666666666667
+    },
+    {
+      "name": "OR_SpinStars",
+      "start": 46,
+      "count": 16,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.5333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "OR_Orbit_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_000.png"
+    },
+    {
+      "name": "OR_Orbit_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_001.png"
+    },
+    {
+      "name": "OR_Orbit_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_002.png"
+    },
+    {
+      "name": "OR_Orbit_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_003.png"
+    },
+    {
+      "name": "OR_Orbit_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_004.png"
+    },
+    {
+      "name": "OR_Orbit_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_005.png"
+    },
+    {
+      "name": "OR_Orbit_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_006.png"
+    },
+    {
+      "name": "OR_Orbit_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_007.png"
+    },
+    {
+      "name": "OR_Orbit_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_008.png"
+    },
+    {
+      "name": "OR_Orbit_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_009.png"
+    },
+    {
+      "name": "OR_Orbit_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_010.png"
+    },
+    {
+      "name": "OR_Orbit_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_011.png"
+    },
+    {
+      "name": "OR_Orbit_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_012.png"
+    },
+    {
+      "name": "OR_Orbit_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_013.png"
+    },
+    {
+      "name": "OR_Orbit_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_014.png"
+    },
+    {
+      "name": "OR_Orbit_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Orbit_015.png"
+    },
+    {
+      "name": "OR_Hit_000",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_000.png"
+    },
+    {
+      "name": "OR_Hit_001",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_001.png"
+    },
+    {
+      "name": "OR_Hit_002",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_002.png"
+    },
+    {
+      "name": "OR_Hit_003",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_003.png"
+    },
+    {
+      "name": "OR_Hit_004",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_004.png"
+    },
+    {
+      "name": "OR_Hit_005",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_005.png"
+    },
+    {
+      "name": "OR_Hit_006",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_006.png"
+    },
+    {
+      "name": "OR_Hit_007",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_007.png"
+    },
+    {
+      "name": "OR_Hit_008",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_008.png"
+    },
+    {
+      "name": "OR_Hit_009",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_009.png"
+    },
+    {
+      "name": "OR_Hit_010",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_010.png"
+    },
+    {
+      "name": "OR_Hit_011",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_011.png"
+    },
+    {
+      "name": "OR_Hit_012",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_012.png"
+    },
+    {
+      "name": "OR_Hit_013",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_013.png"
+    },
+    {
+      "name": "OR_Hit_014",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_014.png"
+    },
+    {
+      "name": "OR_Hit_015",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Hit_015.png"
+    },
+    {
+      "name": "OR_Stars_000",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_000.png"
+    },
+    {
+      "name": "OR_Stars_001",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_001.png"
+    },
+    {
+      "name": "OR_Stars_002",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_002.png"
+    },
+    {
+      "name": "OR_Stars_003",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_003.png"
+    },
+    {
+      "name": "OR_Stars_004",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_004.png"
+    },
+    {
+      "name": "OR_Stars_005",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_005.png"
+    },
+    {
+      "name": "OR_Stars_006",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_006.png"
+    },
+    {
+      "name": "OR_Stars_007",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_007.png"
+    },
+    {
+      "name": "OR_Stars_008",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_008.png"
+    },
+    {
+      "name": "OR_Stars_009",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_009.png"
+    },
+    {
+      "name": "OR_Stars_010",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_010.png"
+    },
+    {
+      "name": "OR_Stars_011",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_011.png"
+    },
+    {
+      "name": "OR_Stars_012",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_012.png"
+    },
+    {
+      "name": "OR_Stars_013",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Stars_013.png"
+    },
+    {
+      "name": "OR_SpinStars_000",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_000.png"
+    },
+    {
+      "name": "OR_SpinStars_001",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_001.png"
+    },
+    {
+      "name": "OR_SpinStars_002",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_002.png"
+    },
+    {
+      "name": "OR_SpinStars_003",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_003.png"
+    },
+    {
+      "name": "OR_SpinStars_004",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_004.png"
+    },
+    {
+      "name": "OR_SpinStars_005",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_005.png"
+    },
+    {
+      "name": "OR_SpinStars_006",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_006.png"
+    },
+    {
+      "name": "OR_SpinStars_007",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_007.png"
+    },
+    {
+      "name": "OR_SpinStars_008",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_008.png"
+    },
+    {
+      "name": "OR_SpinStars_009",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_009.png"
+    },
+    {
+      "name": "OR_SpinStars_010",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_010.png"
+    },
+    {
+      "name": "OR_SpinStars_011",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_011.png"
+    },
+    {
+      "name": "OR_SpinStars_012",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_012.png"
+    },
+    {
+      "name": "OR_SpinStars_013",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_013.png"
+    },
+    {
+      "name": "OR_SpinStars_014",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_014.png"
+    },
+    {
+      "name": "OR_SpinStars_015",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_SpinStars_015.png"
+    }
+  ]
+}

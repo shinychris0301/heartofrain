@@ -1,0 +1,214 @@
+{
+  "isDemo": true,
+  "localRegion": "US",
+  "players": [
+    {
+      "id": "RAIN1001",
+      "name": "Aurora",
+      "team": "Rainkeepers",
+      "level": 50,
+      "region": "US",
+      "portrait": "Portrait_Weaver_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1002",
+      "name": "Old Oak",
+      "team": "Lantern Guild",
+      "level": 49,
+      "region": "US",
+      "portrait": "Portrait_Scholar_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1003",
+      "name": "Riverlight",
+      "team": "Silver Wells",
+      "level": 47,
+      "region": "GB",
+      "portrait": "Portrait_Ivan_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1004",
+      "name": "Ember",
+      "team": "Rainkeepers",
+      "level": 45,
+      "region": "US",
+      "portrait": "Portrait_Weaver_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1005",
+      "name": "Dawn Weaver",
+      "team": "Lantern Guild",
+      "level": 43,
+      "region": "US",
+      "portrait": "Portrait_Scholar_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1006",
+      "name": "Willow",
+      "team": "Silver Wells",
+      "level": 41,
+      "region": "GB",
+      "portrait": "Portrait_Ivan_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1007",
+      "name": "Stonekeeper",
+      "team": "Rainkeepers",
+      "level": 37,
+      "region": "US",
+      "portrait": "Portrait_Weaver_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1008",
+      "name": "Bluebell",
+      "team": "Lantern Guild",
+      "level": 34,
+      "region": "US",
+      "portrait": "Portrait_Scholar_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1009",
+      "name": "Cedarlight",
+      "team": "Silver Wells",
+      "level": 31,
+      "region": "GB",
+      "portrait": "Portrait_Ivan_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1010",
+      "name": "Silver Thread",
+      "team": "Rainkeepers",
+      "level": 28,
+      "region": "US",
+      "portrait": "Portrait_Weaver_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": false
+    },
+    {
+      "id": "RAIN1011",
+      "name": "Moss",
+      "team": "Lantern Guild",
+      "level": 23,
+      "region": "US",
+      "portrait": "Portrait_Scholar_R2",
+      "banner": "Chapter01_VillageWell",
+      "isSelf": false
+    },
+    {
+      "id": "you",
+      "name": "You",
+      "team": "Rainkeepers",
+      "level": 18,
+      "region": "GB",
+      "portrait": "Portrait_Ivan_R2",
+      "banner": "Chapter02_Chamber",
+      "isSelf": true
+    }
+  ],
+  "teams": [
+    {
+      "id": "team1",
+      "name": "Rainkeepers",
+      "region": "US",
+      "members": 50,
+      "capacity": 50,
+      "score": 2200,
+      "crest": "LB_CrestWell_R2"
+    },
+    {
+      "id": "team2",
+      "name": "Lantern Guild",
+      "region": "GB",
+      "members": 47,
+      "capacity": 50,
+      "score": 2060,
+      "crest": "LB_CrestLantern_R2"
+    },
+    {
+      "id": "team3",
+      "name": "Silver Wells",
+      "region": "US",
+      "members": 44,
+      "capacity": 50,
+      "score": 1920,
+      "crest": "LB_CrestCrystal_R2"
+    },
+    {
+      "id": "team4",
+      "name": "Dawn Wardens",
+      "region": "GB",
+      "members": 41,
+      "capacity": 50,
+      "score": 1780,
+      "crest": "LB_CrestWell_R2"
+    },
+    {
+      "id": "team5",
+      "name": "River Assembly",
+      "region": "US",
+      "members": 38,
+      "capacity": 50,
+      "score": 1640,
+      "crest": "LB_CrestLantern_R2"
+    },
+    {
+      "id": "team6",
+      "name": "Crystal Circle",
+      "region": "GB",
+      "members": 35,
+      "capacity": 50,
+      "score": 1500,
+      "crest": "LB_CrestCrystal_R2"
+    },
+    {
+      "id": "team7",
+      "name": "Valley Keepers",
+      "region": "US",
+      "members": 32,
+      "capacity": 50,
+      "score": 1360,
+      "crest": "LB_CrestWell_R2"
+    },
+    {
+      "id": "team8",
+      "name": "The Hearth",
+      "region": "GB",
+      "members": 29,
+      "capacity": 50,
+      "score": 1220,
+      "crest": "LB_CrestLantern_R2"
+    },
+    {
+      "id": "team9",
+      "name": "Amber Court",
+      "region": "US",
+      "members": 26,
+      "capacity": 50,
+      "score": 1080,
+      "crest": "LB_CrestCrystal_R2"
+    }
+  ],
+  "friendIds": [
+    "RAIN1003",
+    "RAIN1005",
+    "RAIN1007"
+  ]
+}

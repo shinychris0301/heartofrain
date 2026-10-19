@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e53944ce775524ab9abdf82be28958, type: 3}
+  m_Name: M63 Shop Assets
+  m_EditorClassIdentifier:
+  teams: {fileID: 11400000, guid: 362a4ad1acb6564c8e67cc45efe97c01, type: 3}
+  catalog: {fileID: 4900000, guid: 95b56501fa345850b98f96904f23e60e, type: 3}
+  sprites:
+  - id: SP_CoinPouch
+    sprite: {fileID: 21300000, guid: b466971019c350be9169b51d97ab8553, type: 3}
+  - id: SP_Header
+    sprite: {fileID: 21300000, guid: c907fd3362645a0196cb6691bcc4c377, type: 3}
+  - id: SP_Mega
+    sprite: {fileID: 21300000, guid: 5c960c14f07452458ac8a46a47a2ea8f, type: 3}
+  - id: SP_Next
+    sprite: {fileID: 21300000, guid: 668d3cf83b6459edbdeb9ce25f5754b2, type: 3}
+  - id: SP_Previous
+    sprite: {fileID: 21300000, guid: 5c6442d850985a36a14874ec059f9058, type: 3}
+  - id: SP_Reward
+    sprite: {fileID: 21300000, guid: a04c8b8fb05b5f3180e3b901a57c6221, type: 3}
+  - id: SP_Separator
+    sprite: {fileID: 21300000, guid: 08e1aeec59185075a65bfe7193bf7506, type: 3}
+  - id: SP_Special
+    sprite: {fileID: 21300000, guid: 46a3a55ccfc95f0f80f4a45f552ad964, type: 3}
+  - id: SP_Treasury
+    sprite: {fileID: 21300000, guid: ed68ccac3639506e970fc326c59d593d, type: 3}
+  - id: ShopHammer
+    sprite: {fileID: 21300000, guid: 3b83193b2e2153809f45f5ebf57ee9ff, type: 3}
+  - id: ShopAxe
+    sprite: {fileID: 21300000, guid: 261e8f30056654fab60e04fef6bde457, type: 3}
+  - id: ShopRam
+    sprite: {fileID: 21300000, guid: e0d1655f7f4c57448f9fdec274867a0a, type: 3}
+  - id: ShopAtlas
+    sprite: {fileID: 21300000, guid: 0dcacbe2fc475380a4766bd1153863b5, type: 3}

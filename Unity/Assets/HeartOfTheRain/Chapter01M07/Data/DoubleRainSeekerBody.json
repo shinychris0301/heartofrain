@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "DS_Merge",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DS_Charge",
+      "start": 12,
+      "count": 6,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "DS_Lift",
+      "start": 18,
+      "count": 10,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.16666666666666666
+    },
+    {
+      "name": "DS_Split",
+      "start": 28,
+      "count": 18,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.3
+    }
+  ],
+  "frames": [
+    {
+      "name": "DS_Merge_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_000.png"
+    },
+    {
+      "name": "DS_Merge_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_001.png"
+    },
+    {
+      "name": "DS_Merge_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_002.png"
+    },
+    {
+      "name": "DS_Merge_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_003.png"
+    },
+    {
+      "name": "DS_Merge_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_004.png"
+    },
+    {
+      "name": "DS_Merge_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_005.png"
+    },
+    {
+      "name": "DS_Merge_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_006.png"
+    },
+    {
+      "name": "DS_Merge_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_007.png"
+    },
+    {
+      "name": "DS_Merge_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_008.png"
+    },
+    {
+      "name": "DS_Merge_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_009.png"
+    },
+    {
+      "name": "DS_Merge_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_010.png"
+    },
+    {
+      "name": "DS_Merge_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Merge_011.png"
+    },
+    {
+      "name": "DS_Charge_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_000.png"
+    },
+    {
+      "name": "DS_Charge_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_001.png"
+    },
+    {
+      "name": "DS_Charge_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_002.png"
+    },
+    {
+      "name": "DS_Charge_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_003.png"
+    },
+    {
+      "name": "DS_Charge_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_004.png"
+    },
+    {
+      "name": "DS_Charge_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Charge_005.png"
+    },
+    {
+      "name": "DS_Lift_000",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_000.png"
+    },
+    {
+      "name": "DS_Lift_001",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_001.png"
+    },
+    {
+      "name": "DS_Lift_002",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_002.png"
+    },
+    {
+      "name": "DS_Lift_003",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_003.png"
+    },
+    {
+      "name": "DS_Lift_004",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_004.png"
+    },
+    {
+      "name": "DS_Lift_005",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_005.png"
+    },
+    {
+      "name": "DS_Lift_006",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_006.png"
+    },
+    {
+      "name": "DS_Lift_007",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_007.png"
+    },
+    {
+      "name": "DS_Lift_008",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_008.png"
+    },
+    {
+      "name": "DS_Lift_009",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Lift_009.png"
+    },
+    {
+      "name": "DS_Split_000",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_000.png"
+    },
+    {
+      "name": "DS_Split_001",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_001.png"
+    },
+    {
+      "name": "DS_Split_002",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_002.png"
+    },
+    {
+      "name": "DS_Split_003",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_003.png"
+    },
+    {
+      "name": "DS_Split_004",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_004.png"
+    },
+    {
+      "name": "DS_Split_005",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_005.png"
+    },
+    {
+      "name": "DS_Split_006",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_006.png"
+    },
+    {
+      "name": "DS_Split_007",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_007.png"
+    },
+    {
+      "name": "DS_Split_008",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_008.png"
+    },
+    {
+      "name": "DS_Split_009",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_009.png"
+    },
+    {
+      "name": "DS_Split_010",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_010.png"
+    },
+    {
+      "name": "DS_Split_011",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_011.png"
+    },
+    {
+      "name": "DS_Split_012",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_012.png"
+    },
+    {
+      "name": "DS_Split_013",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_013.png"
+    },
+    {
+      "name": "DS_Split_014",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_014.png"
+    },
+    {
+      "name": "DS_Split_015",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_015.png"
+    },
+    {
+      "name": "DS_Split_016",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_016.png"
+    },
+    {
+      "name": "DS_Split_017",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleRainSeeker28/DS_Split_017.png"
+    }
+  ]
+}

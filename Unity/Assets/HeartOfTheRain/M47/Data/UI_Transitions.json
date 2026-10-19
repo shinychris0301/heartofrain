@@ -1,0 +1,16 @@
+{
+  "goalPulse": {
+    "duration": 0.24,
+    "maximumScale": 1.16
+  },
+  "modalEntrance": {
+    "duration": 0.18,
+    "scaleFrom": 0.96,
+    "scaleTo": 1
+  },
+  "lowMovesThreshold": 5,
+  "boosterSelection": "pale yellow face; toggle selected booster again to cancel",
+  "targeting": "focus cell while touching a candidate target; cancel uses no stock or move",
+  "phaseCoupling": "visible goal updates use BoardPresentation.DisplayGoals",
+  "targetingInstruction": "contextual line above counters; absent during normal play"
+}

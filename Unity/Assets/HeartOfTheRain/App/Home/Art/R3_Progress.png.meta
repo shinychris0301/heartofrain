@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 519806256546524e878a9f073444706a
+TextureImporter:
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  isReadable: 0
+  textureType: 8
+  spriteMode: 1
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 77, y: 51, z: 77, w: 51}
+  alphaIsTransparency: 1
+  alphaSource: 1
+  nPOTScale: 0
+  maxTextureSize: 4096
+  textureCompression: 0
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

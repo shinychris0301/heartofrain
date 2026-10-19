@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "OS_Merge_Right",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "OS_Merge_Left",
+      "start": 12,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "OS_Form",
+      "start": 24,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "OS_Dissolve",
+      "start": 36,
+      "count": 8,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.13333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "OS_Merge_Right_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_000.png"
+    },
+    {
+      "name": "OS_Merge_Right_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_001.png"
+    },
+    {
+      "name": "OS_Merge_Right_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_002.png"
+    },
+    {
+      "name": "OS_Merge_Right_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_003.png"
+    },
+    {
+      "name": "OS_Merge_Right_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_004.png"
+    },
+    {
+      "name": "OS_Merge_Right_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_005.png"
+    },
+    {
+      "name": "OS_Merge_Right_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_006.png"
+    },
+    {
+      "name": "OS_Merge_Right_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_007.png"
+    },
+    {
+      "name": "OS_Merge_Right_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_008.png"
+    },
+    {
+      "name": "OS_Merge_Right_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_009.png"
+    },
+    {
+      "name": "OS_Merge_Right_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_010.png"
+    },
+    {
+      "name": "OS_Merge_Right_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Right_011.png"
+    },
+    {
+      "name": "OS_Merge_Left_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_000.png"
+    },
+    {
+      "name": "OS_Merge_Left_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_001.png"
+    },
+    {
+      "name": "OS_Merge_Left_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_002.png"
+    },
+    {
+      "name": "OS_Merge_Left_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_003.png"
+    },
+    {
+      "name": "OS_Merge_Left_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_004.png"
+    },
+    {
+      "name": "OS_Merge_Left_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_005.png"
+    },
+    {
+      "name": "OS_Merge_Left_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_006.png"
+    },
+    {
+      "name": "OS_Merge_Left_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_007.png"
+    },
+    {
+      "name": "OS_Merge_Left_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_008.png"
+    },
+    {
+      "name": "OS_Merge_Left_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_009.png"
+    },
+    {
+      "name": "OS_Merge_Left_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_010.png"
+    },
+    {
+      "name": "OS_Merge_Left_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Merge_Left_011.png"
+    },
+    {
+      "name": "OS_Form_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_000.png"
+    },
+    {
+      "name": "OS_Form_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_001.png"
+    },
+    {
+      "name": "OS_Form_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_002.png"
+    },
+    {
+      "name": "OS_Form_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_003.png"
+    },
+    {
+      "name": "OS_Form_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_004.png"
+    },
+    {
+      "name": "OS_Form_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_005.png"
+    },
+    {
+      "name": "OS_Form_006",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_006.png"
+    },
+    {
+      "name": "OS_Form_007",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_007.png"
+    },
+    {
+      "name": "OS_Form_008",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_008.png"
+    },
+    {
+      "name": "OS_Form_009",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_009.png"
+    },
+    {
+      "name": "OS_Form_010",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_010.png"
+    },
+    {
+      "name": "OS_Form_011",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Form_011.png"
+    },
+    {
+      "name": "OS_Dissolve_000",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_000.png"
+    },
+    {
+      "name": "OS_Dissolve_001",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_001.png"
+    },
+    {
+      "name": "OS_Dissolve_002",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_002.png"
+    },
+    {
+      "name": "OS_Dissolve_003",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_003.png"
+    },
+    {
+      "name": "OS_Dissolve_004",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_004.png"
+    },
+    {
+      "name": "OS_Dissolve_005",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_005.png"
+    },
+    {
+      "name": "OS_Dissolve_006",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_006.png"
+    },
+    {
+      "name": "OS_Dissolve_007",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/OrbRainSeeker29/OS_Dissolve_007.png"
+    }
+  ]
+}

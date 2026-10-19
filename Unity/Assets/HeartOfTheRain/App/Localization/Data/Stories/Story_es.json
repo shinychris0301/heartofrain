@@ -1,0 +1,607 @@
+{
+  "locale": "es",
+  "source": "JourneyCatalog.json; chapter IDs and narrative beats preserved",
+  "translationStatus": "Bundled draft localization; all 100 titles reviewed, terminology normalized, chapters 1/58/84/86/97/100 revised against source. Native editorial review pending for the full catalogue.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "El pozo de la aldea",
+      "opening": "En la aldea de Zarech, donde crecían margaritas de ciervo blancas sobre un río plateado, Ivan había aprendido a reparar un tejado antes de aprender a llevar una espada. Años después, regresó como general de la guardia de la Antigua Moscú.",
+      "ending": "Los aldeanos recibieron al comandante, pero su vieja amiga Daria le preguntó si aún recordaba sus nombres. Ivan respondió ayudando a reparar el pozo de la aldea. Esa tarde llegó un mensajero: el Corazón sagrado de la ciudad había empezado a latir de forma irregular. Ivan dejó atrás su estandarte ceremonial y tomó su capa de viaje.\n\nIvan: «Una ciudad son las personas que han de vivir con nuestras decisiones»."
+    },
+    {
+      "number": 2,
+      "title": "La cámara bajo la plaza",
+      "opening": "En la plaza central, Ivan entró en una cámara construida alrededor de un piedra luminosa: el corazón del antiguo Moscú. Su luz viajaba a través de canales enterrados hasta los pozos, jardines y pabellones protectores.",
+      "ending": "El guardián de Orel le mostró un crack en la línea del cabello. Alguien había estado alimentando a los susurros del corazón de desconfianza, convirtiendo el temor que tiene la ciudad contra sus defensas. Ivan ordenó la cámara sellada mientras los guardias de ciudad buscaban en el canal. Por encima de ellos, las linternas del festival brillaban aunque ningún viento se movía por la calle.\n\nOrel: «Nos guarda sólo mientras que su luz puede llegar a nosotros»"
+    },
+    {
+      "number": 3,
+      "title": "Una puerta de humo",
+      "opening": "Los susurros robados abrieron un estrecho paso a través de la pared. Una figura de piedra negra pisó a través, llevando una linterna del hierro llena con humo rojo.",
+      "ending": "Era Malrec, enviado de Varkul. Ivan golpeó la linterna, pero su humo se dividió en tres sombras y resbaló alrededor de él. Orel tiró del general a medida que se rompió un anillo exterior. Malrec levantó el corazón sin tocarlo. Por un terrible instante, cada linterna de la antigua Moscú lanzó una sombra hacia el cielo.\n\nMalrec: «Tu miedo nos ha abierto la puerta»"
+    },
+    {
+      "number": 4,
+      "title": "La noche de las brasas",
+      "opening": "Cuando el Corazón desapareció, los canales enterrados se revirtieron. Los embers reventaron de fuentes vacías; la oscuridad se reunió entre casas, y las llamas escaló los techos madereros.",
+      "ending": "Ivan no podía perseguir a Malrec mientras la gente estaba atrapada bajo un pasarela colapsado. Ordenó a los guardias de la ciudad que cortaran un tiroteo y llevaron al niño hasta el cuadrado. Desde la cresta occidental se produjo el sonido de tres campanas, aunque ninguna torre estaba allí. Orel reconoció la señal de Horno Hueco. El corazón estaba siendo llevado más allá de los límites del pueblo vivo.\n\nIvan: «Abre las carriles. Nadie queda atrás»"
+    },
+    {
+      "number": 5,
+      "title": "Tres que no se quedarían",
+      "opening": "Yaroslav, el capitán más antiguo de Ivan... organizó un reloj restante. Boris, un mason de pueblo y herrero reforzó los refugios.",
+      "ending": "Daria mapeó el movimiento del fuego y encontró un rastro donde la oscuridad fluía al oeste. Los tres se ofrecieron a unirse con Ivan. Se negó al principio: un general no debería vaciar las defensas de su ciudad para una búsqueda privada. Yaroslav colocó el mando en manos del capitán Vera, que ya había asegurado los refugios. Juntos, acordaron una misión de rescate con cuatro viajeros y un pueblo que aún podía protegerse.\n\nDaria: «Llévanos porque podemos ayudar, no por ser tus amigos»"
+    },
+    {
+      "number": 6,
+      "title": "La última luz del guardián",
+      "opening": "Orel sobrevivió a la cámara destrozada, pero su salida había dilatado las mágicas piedras protectoras que llevaba. Le dio a Ivan su chispa restante dentro de una brújula cristal.",
+      "ending": "La brújula apuntaba al Corazón cada vez que su portador recordaba a alguien de quien deseaban proteger. No podía distinguir un camino de una pared, y no ofrecía ninguna promesa a la victoria. Orel advirtió que Varkul quería más de una ciudad quemada: él quiso a sus sobrevivientes creer, cada rescate requería un nuevo víctima. Ivan aceptó la brújulas y rechazó ese trato.\n\nIvan: «Entonces debemos traer más que una piedra»"
+    },
+    {
+      "number": 7,
+      "title": "La puerta que aún resistía",
+      "opening": "En la puerta occidental, los guardias de ciudad le rogaron a Ivan que tomara una fuerza más grande. Sin embargo, más allá de las paredes un ejército amplio llamaría la atención del Horno y dejaría a los refugios expuestos.",
+      "ending": "Ivan eligió el camino estrecho. Antes de partir, dio órdenes Vera para proteger a las familias juntos. Mantener los pozos cubiertos y registrar cada persona desaparecida Los cuatro viajeros pisaron bajo el arco que sobrevivió. Detrás de ellos, los ciudadanos comunes levantaron una barrera contra las chispas. Ivan miró atrás una vez, entendiendo que la resistencia de esta ciudad ya había comenzado.\n\nVera: «Trae el amanecer. Vamos a tener un lugar para él»"
+    },
+    {
+      "number": 8,
+      "title": "El camino de ceniza",
+      "opening": "Ash borró las marcas de carretera fuera del antiguo Moscú. Daria recuperó su dirección de los cortes del drenaje bajo el polvo; Boris puso piedras planas a través al suelo caliente.",
+      "ending": "Al atardecer descubrieron a los refugiados enredados en una capilla descubierta. La brújula se ha ido al oeste, lejos de las familias encadenadas pero Ivan paró. Yaroslav distribuyó sus alimentos de repuesto, mientras que los otros despejaron un camino a las viviendas. El retraso les costó luz del día. También demostró que no se permitiría a la misión del general convertir al pueblo en obstáculos.\n\nYaroslav: «Un corazón rescatado significa poco a una ciudad vacía»"
+    },
+    {
+      "number": 9,
+      "title": "Una cinta intacta",
+      "opening": "En el borde del campo de ceniza, una cinta índigo estrecha colgó desde un puesto ennegrecido. A diferencia de todo lo que está a su alrededor, la tela se mantuvo fresca.",
+      "ending": "Daria encontró marcas de juego en piedras cercanas: alguien había estado guiando a los refugiados por pasajes seguros. Ivan siguió los signos a un resorte sellado bajo una escoria. Cuando Boris lo cambió, agua limpia se levantó a través de la ceniza. Un mensaje arañado en la piedra no llamada autor, sólo una advertencia: el puente occidental escuchaba un temor hablado. Ivan tiró la cinta al lado de su brújulas.\n\nDaria: «Alguien caminó por este camino ante nosotros, y se preocupaba de quién vino después»"
+    },
+    {
+      "number": 10,
+      "title": "El puente de las tres campanas",
+      "opening": "El puente occidental estaba sobre un barranco lleno de oscuridad no natural. Tres campanas vacías colgaron sobre su centro.",
+      "ending": "Cuando Boris admitió que temía la caída, el primer campanario sonó y un banquete desapareció. Ivan pidió a cada compañero que declarara un peligro práctico y una respuesta práctica. Yaroslav aseguró una cuerda, Daria identificó los soportes de piedra y Boris probó las tablas restantes. Su honestidad retuvo el puente; sólo un pánico había alimentado su hechizo. En el lado lejano, la linterna de una mujer apareció entre los arcos arruinados.\n\nIvan: «Nombrar el peligro. Entonces, nombre lo que podamos hacer»"
+    },
+    {
+      "number": 11,
+      "title": "La linterna tras el barranco",
+      "opening": "La mujer más allá del puente no esperó a ser rescatada. Estaba bajando una cuerda a dos extraños atrapados en un candelabro.",
+      "ending": "Ivan se unió a ella, y juntos atracaron los viajeros hasta la seguridad. Se presentó como Mila, aprendiz de los Guardianes de la Lluvia desaparecidos y preguntó si el general tenía intención para ayudar a las personas o simplemente derrotar un enemigo. Ivan respondió dando a los extraños las últimas coáguelas secas. Mila se dio cuenta de que había una cinta indigo en su cinturón. Era de ella, dejado para marcar un camino que las llamas no podían tragar.\n\nMila: «Guárdate el lazo. Todavía hay gente que necesita el camino»"
+    },
+    {
+      "number": 12,
+      "title": "Un manantial bajo la piedra",
+      "opening": "Mila llevó a los compañeros al aspersores cubiertos, donde no podía entrar el calor del Horno. Ella podía guiar agua a lo largo de los viejos canales mágicos protectores, pero no podría convocar lluvia ni restaurar el corazón robado.",
+      "ending": "Boris reparó el lavabo roto mientras Mila limpiaba su mano quemada. El general le agradeció demasiado formalmente, y se rió a la distancia que tenía detrás de su título. Fuera, Yaroslav estaba de guardia; dentro Daria comparó las marcas del camino a Mila con su propio mapa. Sus viajes separados comenzaron a convertirse en una sola ruta.\n\nMila: «Puedes fijar tu rango lo suficiente como para beber»"
+    },
+    {
+      "number": 13,
+      "title": "El mapa que necesitaba dos manos",
+      "opening": "El mapa de Daria terminó en el barranco. La memoria de Mila comenzó más allá, donde niebla en movimiento ocultó el camino a Horno Hueco.",
+      "ending": "Solo, ninguno de los guías podía llegar a la guarida del demonio. Juntos dibujaron un recorrido a través del Bosque de Cristal, el Barrio Sunken y la Ciudadela de los Clavadores. Mila insistió en unirse a esta expedición porque los Guardianes de la Lluvia desaparecidos habían dejado registros por ese camino. Ivan aceptó su experiencia sin prometerle obediencia. Al amanecer, cinco viajeros dejaron el aspersores con un propósito común más que una orden.\n\nDaria: «Tu memoria es un camino. Mi mapa puede darle bordes»"
+    },
+    {
+      "number": 14,
+      "title": "El huerto sin sombras",
+      "opening": "Entraron en un huerto de árboles salados, cuyas raíces habían sido endurecidas por la magia Horno. No había fruto, y cada tronco arrojaba la misma sombra independientemente de su luz.",
+      "ending": "Mila descubrió que las sombras estaban alejando agua bajo tierra. Ivan quería cortar un camino recto, pero Boris advirtió que las raíces mantenían la pendiente juntos. Ellos aflojaron el hechizo un árbol a la vez. Cuando el agua fluía, las hojas vivas aparecieron bajo la corteza de plata. Ivan comenzó a ver la restauración como una especie de victoria que nunca le habían enseñado.\n\nBoris: «Una carretera que colapsa detrás de nosotros no es un camino a casa»"
+    },
+    {
+      "number": 15,
+      "title": "La promesa del general",
+      "opening": "Una patrulla de soot rodeó el huerto: guardias humanoides silenciosos tallados a partir del crack block stone. Yaroslav formó una línea de escudo, mientras que Ivan luchó un camino a tierra más alta.",
+      "ending": "Mila reorientó un resorte bajo los guardias, enfriando sus articulaciones hasta que se encerró en su lugar. Después, Ivan prometió mantener el peligro lejos de ella. Mila rechazó una promesa que no podía cumplir. Ella pidió la verdad sobre cada riesgo y voz en todas las decisiones. Ivan está de acuerdo, incomoda con lo que la simple honestidad le exigía.\n\nMila: «No prometas que nunca tendré miedo. Prométeme que escucharás»"
+    },
+    {
+      "number": 16,
+      "title": "Cartas en una torre en ruinas",
+      "opening": "En una torre de señal arruinada, Mila encontró un Guardián de la Lluvia sellado en vidrio. Describió el robo de Varkul a piedras protectoras mágicas menores y su intento por construir una corona desde la luz prestada.",
+      "ending": "Se había eliminado la página final. Ivan buscó en el piso superior y descubrió que la señal de esta torre aún podía llegar a su ciudad. Él dictó un mensaje para Vera: el Corazón sobrevivió, y la misión había encontrado una guía. Mila ha añadido en silencio las instrucciones al resorte restaurado. Hope, están de acuerdo. Debería viajar con algo que la gente pueda usar\n\nIvan: «Diles dónde está el agua. Entonces diles que vamos a volver»"
+    },
+    {
+      "number": 17,
+      "title": "Una mesa para cinco",
+      "opening": "La lluvia no cayó, pero una niebla fría permitió a los compañeros descansar bajo la torre. Boris cocinó una cena delgada en un pote reparado.",
+      "ending": "Yaroslav le dijo a Mila cómo Ivan una vez trató de controlar un techo filtrante y perdió el argumento. Por primera vez desde el robo, Ivan se rió. Mila habló de las colinas que esperaba construir, con una ventana lo suficientemente amplia como para ver a su primera tormenta. Ivan describió bien el agua del pueblo. Sus deseos sonaban normales, y por esa razón más preciosos que cualquier tesoro encantado.\n\nMila: «Cuando esto termine, me gustaría un cuarto que no pertenece a ninguna profecía»"
+    },
+    {
+      "number": 18,
+      "title": "El precio de un atajo",
+      "opening": "Una nueva carretera apareció durante la noche, pavimentada con piedra blanca intocable. En su entrada, un mensajero sin rostro ofreció paso directo al corazón a cambio de la brújulas cristal.",
+      "ending": "Mila sospechó que había un acuerdo de Horno, pero las piedras del camino eran reales. Daria descubrió que cada paso desplazó más lejos la salida. Ivan rechazó el comercio y llevó a todos de vuelta al difícil camino. Antes de desaparecer, el mensajero reveló que Varkul sabía su nombre. Ella había esperado que su viaje pudiera permanecer oculto de él.\n\nIvan: «Una promesa que se mueve cuando está probado es sólo otra trampa»"
+    },
+    {
+      "number": 19,
+      "title": "La verdad incompleta de Mila",
+      "opening": "Mila admitió que su profesor había entrado en el Horno y nunca volvió. Ella había pasado meses tras fragmentos de los registros del Guardianes de la Lluvia, esperando aprender lo que pasó.",
+      "ending": "Su linterna era el último instrumento de trabajo del orden, y Varkul había intentado incautarlo antes. Ivan estaba herido de que ella había esperado para decirle, pero reconoció lo poco confianza un uniforme solo mereció. Preguntó qué más podía hacer la linterna. Mila respondió de verdad: Ella aún no lo sabía. Convinieron en que se hablaría de incertidumbre, no oculta.\n\nMila: «Puedo darte lo que sé. No puedo darte certeza»"
+    },
+    {
+      "number": 20,
+      "title": "La puerta al Bosque de Cristal",
+      "opening": "En la entrada a Bosque de Cristal, los troncos translúcidos formaron un muro alrededor de una puerta antigua. Su cerradura respondió a la brújulas y al encierro juntos.",
+      "ending": "Cuando Ivan y Mila los criaron, se abrió una puerta a un bosque que reflejaba el cielo ni había visto. Daria marcó el umbral con tiza común para que ningún hechizo pudiera borrar la vuelta. Yaroslav apretó sus correas de escudo; Boris llevaba cuñas adicionales para tierra inestable. Los compañeros entraron como un equipo. Detrás de ellos, las nuevas hojas en el huerto se reventaron por primera vez.\n\nYaroslav: «Marque el regreso antes de dar un próximo paso»"
+    },
+    {
+      "number": 21,
+      "title": "Árboles de luz prestada",
+      "opening": "Los troncos de Bosque de Cristal almacenaron luz del día robada. Cada rama mostró un recuerdo diferente de la antigua Moscú, algunos verdaderos y otros inventados.",
+      "ending": "Ivan vio la aldea sin tocar por el fuego y casi se alejó del rastro. Mila probó su visión con el linterna; no reflejaba agua ni derramaba un aliento humano al vidrio. Rompían la imagen falsa sin dañar su raíz viva. Daria comenzó a marcar árboles confiables con cordón. El bosque se cruzaría a través de la observación, no mediante confianza en el lugar más brillante.\n\nMila: «Una respuesta hermosa puede ser aún el camino equivocado»"
+    },
+    {
+      "number": 22,
+      "title": "La segunda oportunidad del capitán",
+      "opening": "Yaroslav encontró un reflejo de soldados que no había podido salvar años antes. El cristal le ofreció una batalla que podía ganar esta vez si abandonaba a los otros.",
+      "ending": "Bajó su escudo y confesaba la vieja derrota a Ivan. El general no ofreció una absolución fácil. Recordó a su amigo de la gente que estaba esperando en el camino actual. Juntos se alejaron del reflejo. Yaroslav dejó una tira de tela azul en el tronco, un pequeño reconocimiento que recordar la pérdida no necesita convertirse a ella.\n\nYaroslav: «Los recuerdo. No abandonaré a los vivos para seguirlos»"
+    },
+    {
+      "number": 23,
+      "title": "La medida del albañil",
+      "opening": "Una escalera resplandeciente cruzó un abismo, pero Boris no vio articulaciones de carga. La piedra mágica exigió que los viajeros creen en su fuerza.",
+      "ending": "Boris en su lugar construyó un simple brace de vigas caídas y mostró a los otros donde cada pie debería aterrizar. La escalera se rompió exactamente donde había predicho, dejando intacta su sección. Mila ayudó a enfriar las superficies cortadas mientras Daria midió el intervalo restante. Ivan dio las gracias a Boris por no estar de acuerdo con él antes del cruce. La autoridad de un general, que estaba aprendiendo... debe dejar espacio para una mejor respuesta.\n\nBoris: «La confianza es bienvenida. Una articulación sonora sigue siendo necesaria»"
+    },
+    {
+      "number": 24,
+      "title": "Un mapa de lo que queda",
+      "opening": "Daria descubrió que Bosque de Cristal había cambiado por los deseos en lugar de pasos. Cada vez que alguien imaginaba llegar al Horno, el destino se movió.",
+      "ending": "Ella mapeó lo que podía ser tocado: un pozo de piedra, el arco caído y una piscina olía a lluvia. La ruta resultante parecía torcida, pero se mantuvo estable. Mila añadió marcas del viaje de su profesor, incluyendo una espiral al lado. Ivan reconoció esa espiral de la cámara del corazón. Por primera vez, la desaparición de los Guardianes de la Lluvia y su luz robada parecían pertenecer al mismo diseño.\n\nDaria: «Vamos a mapear lo que queda, no qué promete el bosque»"
+    },
+    {
+      "number": 25,
+      "title": "El estanque de las palabras calladas",
+      "opening": "La piscina espiral tenía voces en lugar de reflexiones. Ivan escuchó la esperanza de Milo para un hogar, y ella oyó su temor que volvería como héroe a una ciudad con tumbas.",
+      "ending": "Se fueron, pero el agua se levantó a través de su camino. Mila sugirió hablar directamente para que el grupo ya no los poseyera. Ivan admitió que estaba empezando a cuidarla más allá de la misión. Ella dijo que el sentimiento era mutuo, entonces le pidió a él para permitir su crecimiento sin hacer un voto hecho bajo asedio.\n\nMila: «Vamos a elegir el uno al otro también de día»"
+    },
+    {
+      "number": 26,
+      "title": "El recolector de fragmentos",
+      "opening": "Un teniente de Horno enmascarado llamado Serev vigiló el centro del bosque. Él cosechó chorros de luz del día y ofreció venderlos a la gente que había sido robada.",
+      "ending": "Cuando Ivan se negó, Serev selló el rastro con vidrio quemado. Daria identificó su línea de suministro; Boris rompió sus soportes mientras Yaroslav protegía a los otros. Mila enfrió el muro, e Ivan rompió las máscaras del teniente. Serev escapó a través de un fumo, dejando su tienda del día detrás. Los compañeros lo liberaron a los árboles en lugar de tomarla como un botín.\n\nIvan: «La luz tomada de un hogar no es tuya para vender»"
+    },
+    {
+      "number": 27,
+      "title": "El claro de las estrellas verdaderas",
+      "opening": "El día libre abrió un claro donde se podía ver el verdadero cielo nocturno. Los compañeros descansaron sin un vigilante tratando de negociar con ellos.",
+      "ending": "Mila le enseñó a Ivan cómo su linterna midió humedad en el aire. Le mostró el parche de tela planas bajo su armadura, cosida por la madre antes del primer mando. Hablaron de la gente que había hecho posible su trabajo. Cuando sus manos se reunieron sobre el mango de la linterna, no te retiraste. El momento era lo suficientemente pequeño como para pertenecer solo a ellos.\n\nIvan: «Me gustaría conocerte cuando nadie necesita salvarte»"
+    },
+    {
+      "number": 28,
+      "title": "La carta sin sello",
+      "opening": "Cerca del claro, Mila encontró una carta de su profesor Lada. Explicó que el Corazón sólo podía ser devuelto a través de una secuencia inquebrantable del canal mágico protector.",
+      "ending": "Un violento escape podría recuperar la piedra, pero destruir el camino que llevaba su luz a casa. Lada había entrado al Horno para descubrir una ruta más segura. La carta terminó con una advertencia sobre un dispositivo llamado el bloqueo de Ash. Su propósito no estaba, pero su esquema se parecía a la espiral que Ivan había visto bajo esta ciudad. Los compañeros copiaron cada línea antes de seguir adelante.\n\nMila: «Ella estaba buscando una forma de traer a todo el mundo»"
+    },
+    {
+      "number": 29,
+      "title": "Un beso ante el umbral",
+      "opening": "En la puerta de Bosque de Cristal, el amanecer apareció como una banda delgada a distancia. Ivan le ofreció a Mila el derecho de volver al refugio con los registros recuperados.",
+      "ending": "Ella eligió continuar, entonces le hizo la misma pregunta. Sonrió a que le ofrecieran una salida de su propia leyenda. Antes de reunirse con los otros, compartieron un primer beso tranquilo. Ni lo llamó destino. Prometieron seguir pidiendo, escuchando y hacer espacio para un futuro más grande que este camino. La puerta se abrió hacia las afueras ahogadas.\n\nMila: «Estoy aquí porque elijo estar»"
+    },
+    {
+      "number": 30,
+      "title": "El bosque devuelve lo perdido",
+      "opening": "A medida que los cinco viajeros se fueron, la corteza de vidrio cayó del árbol más cercano. Las ramas verdes emergieron sin tragar los viejos caminos.",
+      "ending": "Daria envió una segunda señal hacia la antigua Moscú, marcando el bosque como un posible refugio. Yaroslav grabó la máscara del teniente y su dirección de escape. Boris mantuvo un chorro inofensivo para el marco roto de la brújulas. Ivan miró de nuevo a la limpieza restaurada y entendió el patrón del viaje: cada lugar reparado podría convertirse en parte al hogar. Por debajo de la cresta, las torres arruinadas se levantaron del agua oscura.\n\nBoris: «No sólo encontramos el camino. Lo estamos haciendo utilizable»"
+    },
+    {
+      "number": 31,
+      "title": "Calles bajo aguas quietas",
+      "opening": "El Barrio Sunken había pertenecido a un pequeño asentamiento en la antigua carretera comercial. La magia de Horno lo había inundado sin lluvia, sosteniendo el agua aún por encima del techo.",
+      "ending": "Mila podría hacer un estrecho carril seco, pero no podía sostenerlo durante mucho tiempo. Daria ubicó un calabozo elevado en su mapa; Boris puso a prueba los pasos sumergidos con el polo. Ivan ordenó cruces cortos y repeticiones de descanso más que un ataque heroico. En la superficie, las luces pálidas de ventana se movieron desde casa a vivienda invitándoles al salir del camino seguro.\n\nIvan: «Cruzamos al ritmo que nuestra guía puede sostener»"
+    },
+    {
+      "number": 32,
+      "title": "La casa de la ventana seca",
+      "opening": "Una habitación superior se mantuvo seca. Un anciano alfarero llamado Anya había sellado su ventana con ward-clay y protegido a varios vecinos dentro.",
+      "ending": "Habían sobrevivido recogiendo condensación e compartiendo grano. Ivan ayudó a bajar los residentes hasta la causa mientras Boris estudiaba el sello de arcilla. Mila reconoció una receta Guardián de la Lluvia escondida en el trabajo común del alfarero. Anya les dio una bolsa de arcilla y pidió que su propósito fuera recordado. Ningún título había protegido la habitación; habilidad, paciencia y vecinos que confiaban unos a otros lo habían hecho.\n\nAnya: «Toma la arcilla. Deja el conocimiento con alguien que lo necesita»"
+    },
+    {
+      "number": 33,
+      "title": "El mercado de las tazas vacías",
+      "opening": "En el mercado ahogado, las tazas sobrevivieron los puestos abandonados. Cada taza se ofreció a quitar un recuerdo doloroso, dejando al viajero más ligero y menos seguro de por qué habían venido.",
+      "ending": "Yaroslav casi aceptó uno después de escuchar las voces del soldado perdido. Mila derramó agua corriente en ella. La taza se rompió, revelando el humo escondido dentro. Juntos, los compañeros rompieron el hechizo del mercado y recuperaron buques útiles para sus refugiados. Ivan mantuvo su dolor y temor. No entregaría a la gente dentro de ellos para que el camino fuera más fácil.\n\nYaroslav: «El dolor me puede cargar sin tener mis decisiones»"
+    },
+    {
+      "number": 34,
+      "title": "El registro bajo la campana",
+      "opening": "Una campana de la capilla está bajo el agua, descansando en una puerta sellada. Boris y Yaroslav lo levantaron con una palanca de madera mientras Mila retenía el agua a un lado.",
+      "ending": "En el interior, Daria encontró evidencia de que los sirvientes del Varkul habían redirigido las mágicas cadenas protectoras al Horno. Las inundaciones fueron un depósito de energía robada. Un segundo disco llamado Lada como un prisionero transferido a la ciudadela de Callers. La esperanza de Mila se levantó demasiado rápido, e Ivan preguntó suavemente qué edad tenía el récord. Llevaron la evidencia sin fingir que prometió sobrevivir.\n\nIvan: «Seguiremos el récord. No vamos a hacerlo decir más de lo que hace»"
+    },
+    {
+      "number": 35,
+      "title": "Un baile en la calzada",
+      "opening": "Con los residentes a salvo más allá de la inundación, Anya se humilló con una vieja melodía del pueblo. Daria aprovechó su ritmo en una taza vacía, y Boris añadió un latido desigual.",
+      "ending": "Mila tomó las manos de Ivan y le enseñó unos pasos en el amplio camino. Se movió como un comandante tratando de marchar a través del baile, lo que la hizo reír hasta casi olvidar el frío. El momento no borró el peligro. Les recordó lo que el peligro amenazaba: placeres ordinarios, compartidos libremente y sin un enemigo decidiendo su precio.\n\nMila: «Puedes dirigir un ejército. Yo voy a dirigir este baile»"
+    },
+    {
+      "number": 36,
+      "title": "El agua que ascendía",
+      "opening": "Malrec volvió a medianoche e invirtió la corriente del trimestre. El agua subió a las paredes de la torre y presionó contra el calabozo.",
+      "ending": "Ivan quería perseguirlo, pero Mila sólo podía mantener un carril de escape abierto. El general eligió proteger a los residentes de nuevo. Daria abrió una puerta de drenaje mientras Boris rompió los dientes que la sujetaban. Yaroslav bloqueó la linterna de humo Malrec lo suficiente para que todos se retiraran. El enviado escapó, furioso de que su cebo había fallado. El barrio drenado reveló una escalera de piedra que conduce por debajo del antiguo depósito.\n\nIvan: «Déjalo correr. Mantén el carril abierto»"
+    },
+    {
+      "number": 37,
+      "title": "El depósito de los nombres",
+      "opening": "Por debajo del trimestre, las paredes de los embalses llevaban nombres a personas cuyas piedras mágicas protectoras habían sido robadas. La escritura brilló cada vez que alguien se acordó de la persona a quien llamó.",
+      "ending": "Daria encontró pueblos omitidos de cada mapa que tenía. Mila encontró el nombre de Lada, que aún está débil. Ivan pidió una copia completa, negándose a tratar vidas desconocidas como menos dignas de rescate. La brújula se fortaleció cuando leyó los nombres en voz alta. La luz del corazón no fue atraída sólo hacia su propia casa, sino que reconoció el cuidado dirigido más allá de las calles familiares.\n\nDaria: «Un lugar que falta sigue siendo un sitio. Lo pondremos de nuevo en el mapa»"
+    },
+    {
+      "number": 38,
+      "title": "Lo que la linterna no puede reparar",
+      "opening": "Mila encontró el alojamiento roto de una linterna Guardián de la Lluvia. Intentó repararlo hasta que sus manos se sacudieron, pero su cristal interior había sido consumido.",
+      "ending": "Ivan se sentó a su lado sin ordenarle que descansara o le dijera la pérdida tenía un propósito. Eventualmente, ella puso los fragmentos. Admitió que salvar al corazón no podía salvarle a su profesor. Ivan admitió que temía perder a Mila ahora de haber empezado un futuro con ella. Dejaron que ambas verdades permanecieran, y compartieron el silencio sin tratar de convertirlo en valor.\n\nIvan: «No tienes que hacer este daño útil»"
+    },
+    {
+      "number": 39,
+      "title": "La escalera de la luz que regresa",
+      "opening": "Con la arcilla de Anya, Boris selló las articulaciones dañadas del embalse. Mila reorientó su poder restante a los canales vacíos hacia el antiguo Moscú.",
+      "ending": "Por un momento, la brújulas mostró una carretera completa de oro y luego se desplomó a través del Citadel. Daria marcó la brecha como su próximo objetivo. Por encima de ellos, los residentes rescatados comenzaron a abrir habitaciones secas otra vez. Los compañeros dejaron herramientas e instrucciones, convirtiendo el refugio en un arreglo de trabajo. Restaurar el corazón requeriría este mismo trabajo a una mayor escala.\n\nBoris: «La magia abre el canal. Alguien aún debe reparar sus paredes»"
+    },
+    {
+      "number": 40,
+      "title": "La ciudadela en el horizonte rojo",
+      "opening": "Desde la escalera superior, los viajeros vieron que el Citadelde Cinders se suspendió sobre un llano cicatrizado. Sus torres estaban en grandes cadenas conectadas al Horno Hueco más allá.",
+      "ending": "Beneat la ciudadela, los aldeanos llevaban piedras para reparar las paredes que sus captores seguían rompiendo. Ivan estudió a los guardias en lugar de dibujar su espada. Mila reconoció su marca de linterna en una ventana. La ruta se había convertido en una misión de rescate, así como un robo deshecho. Juntos planearon una entrada que dejaría salir a más de cinco personas.\n\nIvan: «No entramos hasta que sabemos cómo se van los prisioneros»"
+    },
+    {
+      "number": 41,
+      "title": "Una puerta para los obreros cautivos",
+      "opening": "Daria descubrió una puerta de suministro bajo la cadena occidental del Citadel. Los trabajadores captivos se desplazaron a través de ella en intervalos fijos, vigilados por guardias que siguieron sonidos más bien no caras.",
+      "ending": "Yaroslav creó un desvío con placas de escudo sueltas, mientras que Boris atornilló el haz del bloqueo. Ivan y Mila guiaron al primer grupo a través de un pasaje del drenaje. Los trabajadores eligieron representantes para organizar su propia fuga. El general les dio su mapa y preguntó qué peligros había perdido. Su conocimiento cambió el plan antes de que los guardias notaran la apertura.\n\nIvan: «Conoces esta prisión. Enséñanos dónde está mal nuestro plan»"
+    },
+    {
+      "number": 42,
+      "title": "El taller de los veranos robados",
+      "opening": "En el interior de la ciudadela, las jarras del calor se colgaron sobre un taller. Cada uno tuvo un verano robado de una piedra mágica protectora, dejando su hogar frío y estéril.",
+      "ending": "Boris encontró la marca de su pueblo en un conducto desmantelado y entendió lo ampliamente que había llegado el Horno. Mila abrió los jares cuidadosamente, devolviendo su luz a las cadenas intactas más cercanas. Ivan quería destruir el taller, pero los prisioneros podían usar sus herramientas. Rompían los sifones, guardaban las cercas e hicieron de la habitación el primer servicio.\n\nBoris: «Rompe lo que esclaviza. Mantenga lo que puede ayudar a alguien vivir»"
+    },
+    {
+      "number": 43,
+      "title": "La prisionera que esperaba la lluvia",
+      "opening": "Mila encontró a Lada viva en una célula marcada, debilitada pero todavía estudiando las paredes. Su reunión comenzó con lágrimas y se convirtió en un argumento cuando Lada le pidió a su aprendiz que saliera.",
+      "ending": "Mila se negó a dejar que el miedo decidiera por cualquiera de ellos. Lada reveló que el Corazón estaba intacto dentro del motor corona de Varkul. El bloqueo Ash lo conectó a la Horno: quitar el corazón activaría un aumento de retorno por cada canal mágico robado. Lada había encontrado una forma de desviar ese aumento, pero el ancla exterior necesario permanecía más allá del citadela.\n\nLada: «Quería una solución. Encontré la forma del peligro»"
+    },
+    {
+      "number": 44,
+      "title": "El comandante de las cenizas",
+      "opening": "El comandante de la Citadel, Ruzhen... bloqueó las escaleras con un cuchillo forjado a partir del rayo. Se burló de Ivan por desacelerar su misión para liberar a extraños.",
+      "ending": "Ivan respondió a través de la batalla: Yaroslav protegía los prisioneros, mientras que el general alejó al Ruzhen. Daria lanzó un contrapeso, separando al comandante de su fuente eléctrica. Boris rompió el conducto expuesto. El arma de Ruzhen se convirtió en hierro común, y Ivan lo derrotó sin colapsar las escaleras. Los prisioneros pasaron por el espacio que su captor había reclamado.\n\nIvan: «Tus prisioneros no son el precio de mi victoria»"
+    },
+    {
+      "number": 45,
+      "title": "El motor de la corona",
+      "opening": "Desde una galería de mantenimiento, los compañeros vieron la visión del motor Horno. El corazón dorado se cercó dentro de un marco crownforma, alimentando luz roja en el trono distante del Varkul.",
+      "ending": "Cuatro anclajes mantuvieron el sistema estable: la cadena de CitadEl, las raíces Bosque de Cristal. Ya habían restaurado dos. Boris podría liberar el ancla de CitadEl sin matar a los trabajadores más abajo, si alguien reemplazara su carga por un soporte para piedra. Ivan volvió a demorar la persecución. Un corazón recuperado que reposa por encima de los prisioneros aplastados sería una derrota.\n\nDaria: «El motor tiene cuatro anclajes. Podemos cambiar cómo falla»"
+    },
+    {
+      "number": 46,
+      "title": "La discusión en el parapeto",
+      "opening": "Ivan le pidió a Mila que acompañara al Lada y los prisioneros liberados para su seguridad. Oía que le importaba, pero también el regreso de un comando disfrazado como protección.",
+      "ending": "Mila le recordó su promesa de huerto. Admitió que el amor había hecho al peligro sentirse lo suficientemente personal para nublar su juicio. Admite que a veces escondió el agotamiento para parecer indispensable. Convinieron en límites compartidos: no hay síntomas ocultos, ni barajas privadas y ninguna decisión sobre la vida de otra persona sin su voz. Su amor se volvió más fuerte porque el desacuerdo había sido permitido existir.\n\nMila: «Pídeme que me quede a salvo. No decidas mi lugar por mí»"
+    },
+    {
+      "number": 47,
+      "title": "Una promesa sin profecía",
+      "opening": "Esa noche, Ivan talló un pequeño marco de madera desde una caja rota. Se lo dio a Mila como una promesa de su casa.",
+      "ending": "Mila ató su cinta de indigo a través, entonces rompió el marco en dos piezas que coinciden para cada uno podría llevar mitad. Acordaron que los restos no garantizaban nada; eran recordatorios para buscar una vida después de la misión. Ella lo besó bajo el parapeto incompleto. Por encima de ellos, no aparecieron estrellas pero ni esperaron a que el cielo aprobara su elección.\n\nIvan: «Una ventana para la primera tormenta de primavera. Si ambos lo elegimos todavía»"
+    },
+    {
+      "number": 48,
+      "title": "La cadena bajo la ciudad",
+      "opening": "Boris y los trabajadores liberados construyeron juntos el soporte. Daria verificó las cargas mientras Yaroslav guardaba a los guardias del lugar de trabajo.",
+      "ending": "Ivan llegó al cerrojo de la cadena principal y encontró a Malrec esperando con una nueva linterna. En lugar de luchar solo, llamó a sus compañeros y mantuvo el pasaje hasta que llegaron. Mila enfrió el linterna; Yaroslav lo rompió con su escudo. Malrec huyó hacia el Horno, despojado de su arma más fácil. Los trabajadores liberaron la cadena, y el Ciudadela se instaló a salvo en los cimientos que habían hecho.\n\nIvan: «Te necesito aquí. Esa es una orden que debería haber aprendido antes»"
+    },
+    {
+      "number": 49,
+      "title": "La salida de Lada",
+      "opening": "Lada se negó a gastar su rescate esperando en silencio. Ella organizó a los trabajadores liberados en equipos de reparación y dio Daria la fórmula para el portón exterior.",
+      "ending": "Ella regresaría con los evacuados hacia el Barrio Sunken, reforzando las mágicas cadenas de protección tras la expedición. Antes de partir, le dijo a Mila que el valor no se midió por cuánto dolor podía soportar inesperado. Mila prometió mantener esa lección. Su despedida tenía incertidumbre, pero también un plan práctico: señales y puntos de encuentro.\n\nLada: «Traed a toda vuestra casa, no sólo la parte que puede ser útil»"
+    },
+    {
+      "number": 50,
+      "title": "La puerta tras la ciudadela",
+      "opening": "La carretera Horno comenzó en un arco hecho de ceniza refrigerada. Cuando el ancla de CitadEl desconectó, un arco se agrietó y reveló una senda a través del monte con vidrio rojo.",
+      "ending": "La linterna de Mila se desplomó cuando abrió el primer sello. Se lo dijo a Ivan inmediatamente, cumpliendo su acuerdo. Dividían las tareas de la linterna entre lámparas comunes y el brújulo para conservar su fuerza. Yaroslav dejó un marcador para los equipos de Lada. Los cinco viajeros continuaron, llevando un camino más seguro por todos los que habían decidido repararlo detrás de ellos.\n\nMila: «La linterna es más débil. Te lo estoy diciendo antes de que falle»"
+    },
+    {
+      "number": 51,
+      "title": "La montaña que respiraba calor",
+      "opening": "Los pasajes de la montaña se expandieron con el aliento del Horno. El aire caliente empujó hacia fuera en largos intervalos; entre ellos, los túneles dibujaron todo al centro.",
+      "ending": "Daria midió el ritmo con hilos colgantes mientras Boris fijaba plataformas de descanso en las paredes. Ivan movió a los compañeros sólo durante el aliento exterior. En la primera cámara segura, Milo encontró gotas de agua clara bajo el vidrio rojo. La puerta de lluvia exterior aún estaba viva en algún lugar dentro del monte, escondida bajo capas que robaban calor.\n\nDaria: «Nos movemos al ritmo que medimos, no a quien esperamos»"
+    },
+    {
+      "number": 52,
+      "title": "La sala de las espadas inconclusas",
+      "opening": "Una forja abandonada tenía filas de espadas sin mangos. El Horno había hecho armas sin que nadie se fuera a llevarlas.",
+      "ending": "Boris reconoció que las cuchillas eran coleccionistas de luz, sacando energía a cada persona quien entró. Él cubría sus bordes de corte con ward-arcilla, mientras que Mila basaba el semáforo almacenado a través del drenaje. Ivan encontró una simple espada inacabada y la dejó donde estaba. Su propia arma, mantenida por las manos humanas fue suficiente. En la pared más lejana, el patrón enfriado de las forjas reveló su primera llave.\n\nBoris: «Un arma que toma de su alfiler es otra cadena»"
+    },
+    {
+      "number": 53,
+      "title": "Un trato con la voz de Ivan",
+      "opening": "Varkul habló a través de la forja usando su propia voz. Se ofreció a devolver el corazón si la general se rindió de su linterna.",
+      "ending": "Incluso prometió su seguridad, pero se negó a nombrar al pueblo cuyos canales de protección mágicos permanecerían esclavizados. Ivan pidió una respuesta completa; la voz de imitación sólo repitió el ofrecimiento. Mila levantó su linterna y reveló el conducto de habla. Juntos lo sellaron. El arma más peligrosa del demonio no era la llama. Fue un trato que se hizo sonar como una decisión de Ivan ya había elegido.\n\nIvan: «Si tu misericordia no puede nombrar su precio, No es piedad»"
+    },
+    {
+      "number": 54,
+      "title": "La primera Puerta de la Lluvia",
+      "opening": "La puerta está bajo un piso de vidrio, mecanismo circular diseñado para llamar a los asaltos dormados. Su obra de piedra había sido fusionada por el calor.",
+      "ending": "Boris lo enfrió gradualmente mientras Daria alineaba las marcas de la fórmula Lada. Mila utiliza sólo un poco de luz, permitiendo que el agua del mecanismo pueda llevar al resto. La puerta se abrió, pero su cámara inferior estaba vacía. Se había extraído un ancla central que se llevaba más profundo a la montaña. Reiniciar la puerta requeriría encontrar ese ancla antes de tocar el corazón.\n\nMila: «Hemos abierto una puerta. Aún no hemos resuelto lo que está detrás de ella»"
+    },
+    {
+      "number": 55,
+      "title": "El general deja su estandarte",
+      "opening": "Una cámara de guardia exigió un banner del comandante como precio para entrar. Ivan se dio cuenta que el Horno reconocía los símbolos de autoridad más fácilmente, como la gente bajo ellos.",
+      "ending": "Retiró su cierre de hombro decorativo y envolvió la armadura en el manto del trabajador. Daria condujo a los compañeros por el pasaje de mantenimiento que la cámara del guardia ignoró. Mila lo vio dejar el emblema atrás sin resentimiento. Seguía siendo un general debido a sus responsabilidades, no porque una puerta encantada reconociera su rango. Más allá, la segunda forja esperó.\n\nIvan: «El deber viene conmigo. El adorno puede quedarse»"
+    },
+    {
+      "number": 56,
+      "title": "Una sala sin eco",
+      "opening": "La segunda forja contenía una cámara que se tragó cada sonido. No es posible llamar a las instrucciones, los viajeros trabajaron de señales que habían acordado antes.",
+      "ending": "Yaroslav mantuvo al grupo junto a las grietas en su escudo; Daria marcó peligros de tiza. Mila tomó las manos de Ivan cuando se profundizó, y siguió su linterna sin intentar conducir cada paso. En la puerta más baja, Boris restauró un resonador crack. El sonido volvió en un solo apuro, y la primera palabra audible de Milo fue el nombre del Ivan.\n\nMila: «Ivan. Aquí estás»"
+    },
+    {
+      "number": 57,
+      "title": "El ancla perdida",
+      "opening": "El ancla de lluvia se paró en la tercera forja, convertido a un pedestal para que Serev robara luz del día. El teniente volvió con una máscara de vidrio milagroso e intentó atrapar a los compañeros en visiones del futuro deseado.",
+      "ending": "Ivan vio la colina de casa; Milo vió a Lada salvo y sonriendo. Reconocían que precisamente la trampa utilizaba lo de su amor. Daria cubría los espejos mientras Yaroslav colgaba la capa de Serev. Boris liberó el ancla, y Mila drenaba las falsas visiones. Serev huyó sin su máscara, incapaz de llevar la verdad que había expuesto.\n\nMila: «La búsqueda de un futuro no hace que esta visión sea real»"
+    },
+    {
+      "number": 58,
+      "title": "El secreto del Cierre de Ceniza",
+      "opening": "El último esquema de Lada llegó por la línea de señales reparada. Confirmaba un mecanismo terrible: cuando el Corazón saliera del motor de la corona, el Cierre de Ceniza devolvería el calor acumulado hacia la ciudad.",
+      "ending": "El ancla de lluvia podía desviar la mayor parte de la oleada hacia la puerta exterior. Había que mantener sujeto a mano un segundo pestillo dentro de la cámara del motor hasta que el Corazón cruzara el umbral. Quien lo sujetara podría escapar si la puerta permanecía estable; nadie tenía que morir. Ivan dejó clara esa diferencia y preparó una liberación mediante cuerdas, un soporte de repuesto y una salida alternativa.\n\nIvan: «El plan es que salgamos todos. No se designará a nadie como sacrificio»."
+    },
+    {
+      "number": 59,
+      "title": "El hogar que pensaban construir",
+      "opening": "Antes de llevar el ancla, los compañeros descansaron en un alcoba fresco. Mila le preguntó a Ivan qué haría cuando ya no necesitara tener una espada.",
+      "ending": "Respondió que quería aprender a construir lo suficientemente bien como para merecer la aprobación de Boris. Ella imaginó enseñar a la nave de linterna y plantar flores margaritas fuera su ventana. Presionaron las dos mitades de su madera. Su futuro es concreto ahora, hecho de tareas y errores que esperan compartir. Su ternura les dio razón para seguir un plan más seguro, no es motivo de abandono.\n\nIvan: «Enséñame la linterna. Aprenderé la ventana»"
+    },
+    {
+      "number": 60,
+      "title": "La puerta aprende la lluvia",
+      "opening": "Boris reinicia el ancla mientras Daria sincronizó un mecanismo. Mila guió un hilo de agua a través del canal restaurado.",
+      "ending": "Lejos de aquí, la brújulas mostró a los antiguos Moscú que contestaban con un pulso dorado débil. La puerta funcionó, aunque una fractura roja bajo su fundación permanecía más allá de sus herramientas. Ellos documentaron la debilidad y prepararon soportes de repuesto. Yaroslav envió los resultados a Lada y Vera. Luego, los compañeros abrieron la puerta interior de montaña. Más allá de ella se encontraba el Horno Hueco, donde un corazón golpeó al trono vacío del Varkul.\n\nDaria: «La ruta responde. Seguimos viendo la fractura»"
+    },
+    {
+      "number": 61,
+      "title": "La guarida del Rey Hueco",
+      "opening": "El Horno Hueco era una fortaleza construida dentro, sus torres colgando sobre un eje de luz roja. Los sirvientes de Varkul habían creado cada corredor para dirigir a los visitantes hacia el trono.",
+      "ending": "Daria buscó las rutas de los trabajadores. Encontró pies a mano y estantes de herramientas escondidos detrás del muro ceremonial. Ivan la siguió a través de los pasajes estrechos mientras Milo escuchaba el pulso del corazón. Entraron a la guarida sin anunciarse. Bajo la galería del trono, una cadena de células ocupadas esperó al calor.\n\nDaria: «Alguien tuvo que mantener este lugar. Su ruta será nuestra»"
+    },
+    {
+      "number": 62,
+      "title": "Quienes siguen tras los muros",
+      "opening": "Las células retuvieron a los cangrejos cuyo conocimiento mantuvo vivo al Horno. Entre ellos estaba un estonemason que había cortado la puerta de lluvia original.",
+      "ending": "Advirtió que su fundación había sido deliberadamente debilitada para colapsar después de la eliminación del Corazón. Boris le pidió que marcara el borde oculto de la fractura. Mila pasó una señal a Lada, que podía organizar reparaciones desde el lado exterior. Ivan abrió las celdas y dio a los prisioneros herramientas más que órdenes. Ellos eligieron si salir inmediatamente o ayudar a desmantelar la máquina que los había retenido.\n\nIvan: «Tu libertad no está condicionada a ayudarnos»"
+    },
+    {
+      "number": 63,
+      "title": "La resistencia del capitán",
+      "opening": "Una patrulla descubrió las celdas abiertas. Yaroslav tuvo un estrecho aterrizaje mientras los prisioneros cruzaban detrás de él.",
+      "ending": "Su escudo se rompió bajo las cuchillas calentadas de los guardias, y una piedra que cayó le hirió la pierna. Ivan volvió para ayudar a pesar de que la brújulas lo empujó hacia el corazón. Juntos se retiraron tras la barrera temporal de Boris. Yaroslav se negó a llamar al perjuicio un pago noble; era problema tratar. Mila se enfrió, Daria adaptó su ruta y el capitán continuó con un personal en lugar de fingir que nada había cambiado.\n\nYaroslav: «No alabes la herida. Ayúdame a caminar»"
+    },
+    {
+      "number": 64,
+      "title": "La puerta del albañil",
+      "opening": "Boris selló el pasaje de patrulla con un muro que la Horno no pudo derretir rápidamente. Detrás talló un estrecho bloque extraíble, dejando una ruta de regreso deliberada.",
+      "ending": "El general preguntó si se mantendría. Boris respondió con un límite, no una garantía: el tiempo suficiente para uno de los pasajes quizás dos si nadie golpeó la base. Daria escribió la condición al lado del mapa. Enviaron a los prisioneros restantes mientras se encontraba la barrera. Cada límite honesto hizo que su plan fuera menos glorioso y más probable de mantener a alguien vivo.\n\nBoris: «Se mantiene bajo estas condiciones. Recuerda las condiciones»"
+    },
+    {
+      "number": 65,
+      "title": "La brújula robada",
+      "opening": "Malrec emergió de un suelo del humo y tomó la brújulas. Su aguja dorada se inclinó hacia el trono, sacándolo de su camino.",
+      "ending": "Ivan casi lo persigue solo, pero Mila le detuvo en el estafado roto. Daria reconoció un puente de servicio a continuación y guió al grupo alrededor. Recuperaron la brújulas de Malrec. El enviado había aprendido que la brújulas no servía a un portador, quien sólo buscaban posesión. Furioso, rompió la jaula y huyó hacia su amo por otro arma.\n\nMila: «Podemos recuperarlo juntos. No convierta la urgencia en soledad»"
+    },
+    {
+      "number": 66,
+      "title": "La propia batalla de la doncella",
+      "opening": "Mila encontró una bóveda de linterna del Horno, donde cristales Guardián de la Lluvia rotos alimentaron un muro con fuego rojo. Ivan se ofreció a vigilar la entrada mientras ella eligió cómo liberarlos.",
+      "ending": "Con la ayuda de Daria, Mila cambió el alineamiento del cristal en lugar que derramara su propia fuerza a un muro. El fuego se ablandó en luz azul. Ella recuperó el viejo lente de su profesor y se lo puso a la linterna. La mejora no la hizo invencible, pero le dio más control. Ivan admiró más la habilidad detrás del milagro que el espectáculo mismo.\n\nMila: «¡Alto! Esta parte es mía para resolver»"
+    },
+    {
+      "number": 67,
+      "title": "La sala de los rostros prestados",
+      "opening": "Varkul llenó el próximo salón con copias de gente del pasado, Ivan. Cada uno exigía un rescate diferente, descuartizando su atención hasta que apenas podía moverse.",
+      "ending": "Mila se negó a identificar el verdadero camino adivinando que voz sonaba más sincera. Ella y Daria rastrearon los canales de protección mágicos del suelo, mientras que Boris probó cada puerta. Ivan siguió el trabajo que podían verificar. Las caras copiadas se desvanecieron cuando el motor oculto estaba desconectado. Una señal verdadera seguía siendo: el informe de Vera que la antigua Moscú todavía tenía, y los pozos reparados habían comenzado a brillar.\n\nIvan: «La ciudad sigue allí. Respondemos al verdadero mensaje»"
+    },
+    {
+      "number": 68,
+      "title": "La última linterna de Malrec",
+      "opening": "El enviado esperó a la puerta interior con una linterna tallada de su cadena citadela. Dibujó cada chispa en el corredor hacia la armadura de Ivan.",
+      "ending": "El general dejó a un lado su espada y usó el gancho de los trabajadores para engrasar la cadena. Yaroslav golpeó la bisagra de las linterna; Milo enfrió su núcleo. Malrec trató de escapar a través del humo, pero la cadena cercada selló su pasaje. Su forma de piedra negra se desmoronó en cenizas inofensivas cuando Boris rompió la linterna vacía. Dejaron el corredor intacto para su regreso en lugar de quemar la victoria a sus paredes.\n\nYaroslav: «The bise, Ivan. Deja en paz al centro brillante»"
+    },
+    {
+      "number": 69,
+      "title": "El umbral del Corazón",
+      "opening": "Más allá de la puerta interior, el corazón flotó dentro del motor corona. Su luz dorada brilló alrededor de cadenas rojas, e Ivan reconoció el ritmo desde la cámara.",
+      "ending": "Los cinco viajeros revisaron su plan una vez más: puerta de lluvia contestando, cuerda asegurada y paso alternativo marcado. Mila operaría el cierre de agua porque su lente restaurada podía controlarlo; Boris lo movería, Daria coordinaba las puertas y Yaroslav protegía a los que salían. Ivan se enfrentaría a Varkul. Mila le pidió que mirara a ella antes de mirar al trono, y él lo hizo.\n\nMila: «Recuerda el camino de salida, incluso cuando ves lo que viniste a buscar»"
+    },
+    {
+      "number": 70,
+      "title": "El señor que se llamaba Aurora",
+      "opening": "Varkul descendió del trono vacío, una figura humanoide de obsidiana envuelta en vestiduras rojas. Dijo que la luz robada le hizo el amanecer legítimo de esta ciudad.",
+      "ending": "Ivan preguntó por qué un amanecer necesitaba prisioneros, pozos rotos y oscuridad para sobrevivir. El demonio respondió levantando las cadenas del motor de la corona. Mila tenía el agua abierta; Daria llamó a los intervalos de pulso. Ivan avanzó con su hoja de acero común. La batalla comenzó alrededor de una máquina que podía ser entendida, interrumpida y desmantelada.\n\nIvan: «La luz que necesita nuestra oscuridad no tiene derecho a gobernarnos»"
+    },
+    {
+      "number": 71,
+      "title": "Una corona hecha de otras vidas",
+      "opening": "La corona de Varkul sacó fuerza a partir del nombre tallado en los canales mágicos robados. Cada golpe que Ivan golpeó volvió como calor a través del suelo.",
+      "ending": "Daria reconoció los símbolos del embalse y le dijo que dejara de atacar directamente la corona. Mila abrió un canal azul a los comprimidos de nombre liberados; Boris cortó el conducto más cercano. La corona perdió una de sus luces. Ivan cambió su enfoque, luchando para exponer las conexiones en lugar de sobrecargar al demonio. Varkul recoiled at the first thing he could not substitute: a cautive source become free.\n\nDaria: «Cortar la conexión. No le des otro golpe a la corona»"
+    },
+    {
+      "number": 72,
+      "title": "El plan de cuatro partes",
+      "opening": "La batalla se extendió a través de cuatro galerías. Yaroslav mantuvo la salida contra los guardias de hollín; Boris reforzó el cierre, Daria señaló a Lada en su puerta exterior. Milo controlaba las presiones del agua",
+      "ending": "Ivan no podía ver a ninguno de ellos claramente por medio del calor creciente, así que confió en las señales acordadas. Cuando una galería se rompió, Daria llamó a la pausa en lugar de ocultar el retraso. Ivan sacó a Varkul lo suficiente para que Boris la estabilizara. El plan funcionaba porque a todos se les permitía denunciar un fracaso mientras todavía había tiempo para responder.\n\nDaria: «Pausa la liberación. El apoyo oeste se está moviendo»"
+    },
+    {
+      "number": 73,
+      "title": "La oferta de una ciudad viva",
+      "opening": "Varkul mostró a Ivan una visión del antiguo Moscú restaurada, con Mila al lado de él bajo un cielo claro. Él lo ofreció a cambio de los nombres del embalse: extraños cuyas casas permanecerían oscuras para siempre.",
+      "ending": "Ivan sintió la crueldad de una elección en forma exactamente como su deseo. Se negó a hablar por la gente que se comerciaba. Mila cerró su visión con un flujo de luz. La oferta del demonio falló porque su amor había hecho espacio para un futuro, pero nunca les habían dado propiedad de nadie más.\n\nIvan: «No puedo comprar nuestra casa con otra persona»"
+    },
+    {
+      "number": 74,
+      "title": "La hoja de hierro común",
+      "opening": "Varkul rompió la espada de Ivan al guardia. Boris le tiró la hoja inacabada que se recuperaba de su forja, ahora está equipada con un agarre a madera.",
+      "ending": "No tenía luz robada. Ivan lo usó para abrir la placa de mantenimiento del motor corona mientras Yaroslav cubría su aproximación. Daria llamó a las cerraduras expuestas en secuencia. El demonio chocó de forma salvaje a medida que su fuerza se convirtió en un conjunto más vulnerable. El arma final de Ivan importaba porque podía hacer una tarea simple, no debido a que la profecía había nombrado su portador.\n\nBoris: «Es hierro sonoro. Haz que haga el trabajo»"
+    },
+    {
+      "number": 75,
+      "title": "El cierre se resiste",
+      "opening": "Las tres primeras cerraduras de corona se abrieron. El cuarto permaneció fusionado a un canal mágico de protección dañado bajo el trono del Varkul.",
+      "ending": "Mila advirtió que forzarlo enviaría un aumento a los cimientos fracturados de esta puerta. Boris y Daria propusieron enfriarlo en etapas, mientras que Lada fortaleció el lado exterior. Ivan mantuvo a Varkul lejos de la cerradura y contó las señales. Ganaron tiempo a costa del agotamiento, pero evitaron una liberación ciega. En el trono, una vena roja no vista comenzó a calentarse más rápido que sus diagramas predicho.\n\nMila: «No está lista. Dad tiempo a la puerta para responder»"
+    },
+    {
+      "number": 76,
+      "title": "Una voz de la Antigua Moscú",
+      "opening": "La señal de Vera llegó a la cámara por los canales mágicos casi restaurados. Informó de que los ciudadanos habían despejado el enchufe del corazón y había conectado las viviendas a sus canales.",
+      "ending": "La ciudad se estaba preparando para recibir lo que los compañeros esperaban volver. Ivan oyó voces familiares bajo la cresta: el alfarero Anya, los trabajadores liberados y las personas del camino. Varkul trató de ahogarlos en el trueno del motor, pero Mila amplificó su señal. Su trabajo se había convertido en un círculo de gente ayudándose unos a otros, sin que ningún héroe tuviera toda su fuerza.\n\nVera: «La cámara está lista. La ciudad está trabajando contigo»"
+    },
+    {
+      "number": 77,
+      "title": "La corona cae",
+      "opening": "La señal de Lada confirmó el primer refuerzo del portón. Daria lanzó la cerradura de corona final, y Boris cortó el conducto del trono.",
+      "ending": "La corona de Varkul entró en segmentos aburridos. El corazón se descolgó del marco, todavía retenido por el cerrojo interior de Ash. Ivan conoció al demonio en la escalera baja y lo alejó de las fuentes restantes. Por primera vez, Varkul lanzó una sombra común. Él era peligroso todavía, pero ya no es grande con la luz extraída de otros.\n\nIvan: «No queda nada en esa corona que te pertenece»"
+    },
+    {
+      "number": 78,
+      "title": "La derrota de Varkul",
+      "opening": "Varkul trató de reconectarse al Corazón a través del trono roto. Ivan lo obligó al puente de mantenimiento, mientras que Mila selló el último conducto vivo.",
+      "ending": "Yaroslav cortó la cadena del puente a las señales de Daria, dejando caer su sección vacía lejos y separando el retiro al demonio. Ivan golpeó el núcleo expuesto de noviembre en un pecho con la hoja del hierro. La llama robada salió. Varkul colapsó en fragmentos fríos, y el Horno se quedó callado. Ivan había derrotado al líder del demonio, pero el Corazón aún no ha cruzado la umbral.\n\nIvan: «La luz de la ciudad se va a casa»"
+    },
+    {
+      "number": 79,
+      "title": "El Corazón en manos humanas",
+      "opening": "El bloqueo interior de Ash se abrió cuando Mila equilibró su último canal agua. Ivan levantó el corazón de su cuna.",
+      "ending": "Su calor era suave, a diferencia del fuego de la Horno y su luz mostraba claramente cada cara agotada. Boris revisó el rejilla; Yaroslav comenzó a moverse hacia la salida marcada. Daria esperó la confirmación de liberación del portón exterior. Ivan le dijo a Mila que el Corazón era libre y llegó por su mano. La liberación prevista asistida debería haber seguido. En cambio, la vena roja bajo el trono muerto estalló a través del suelo.\n\nIvan: «Lo tenemos. Ahora nos sacamos a todos»"
+    },
+    {
+      "number": 80,
+      "title": "La última orden del Horno",
+      "opening": "La muerte de Varkul desencadenó un mecanismo encubierto más allá del bloqueo Ash. La puerta exterior de lluvia perdió su segundo soporte; la cuerda que se había quemado antes, Mela podía dejar ir el cerrojo.",
+      "ending": "Ella reportó el fracaso inmediatamente. Boris trató de reemplazar la cuerda mientras Daria buscara otro control. Ivan puso el corazón en un borde estable y volvió a Mila. El motor comenzó a tirar de calor hacia la ciudad, y una onda roja cruzó el distante galerío. Su enemigo se había ido. Su máquina aún exigía una respuesta.\n\nMila: «La cuerda se ha ido. El cierre está reteniendo el resorte»"
+    },
+    {
+      "number": 81,
+      "title": "La decisión ante el pestillo roto",
+      "opening": "Ivan y Boris intentaron enredar la cerradura con el spread brace. La vena de calor oculta suavizó el hierro antes que pudiera sentarse.",
+      "ending": "Daria encontró un paso estrecho al umbral, pero no hay segundo control. Mila entendió el momento: si un corazón cruzaba al umbral mientras que su cerradura permanecía, este aumento se desviaría a las montañas en lugar de ir más allá. Le pidió a los otros que siguieran buscando un permiso mientras Ivan realizaba el Corazón. Ivan se negó a dejarla sin probar primero el pasaje restante. Todavía estaban trabajando para cinco sobrevivientes.\n\nMila: «Sigue buscando. Cógelo sólo cuando dé la señal»"
+    },
+    {
+      "number": 82,
+      "title": "El camino que se cerró",
+      "opening": "Yaroslav cruzó el estrecho paso para asegurar su extremo largo. Una escoria que caía selló el lado de regreso y aplastaba la mano bajo los pies del Ivan.",
+      "ending": "Mila reorientó el canal de agua, atrapando a las losas lo suficiente para que Boris le dejara claro. El esfuerzo rompió su lente de linterna. Daria trató de señalar a Lada, pero la puerta colapsante respondió sólo en pulsos rotos. Ivan ahora podía alcanzar el Corazón y su umbral; no pudo llegar a la cerradura desde fuera. Mila le pidió que escuchara los hechos antes de decidir qué esperanza aún había permitido.\n\nMila: «Escucha lo que ha cambiado. Entonces elige conmigo»"
+    },
+    {
+      "number": 83,
+      "title": "El último intento de rescate",
+      "opening": "Boris construyó una cuña de piedra a partir del paso; Daria lo sincronizó con los pulsos restantes. Por un momento, el cerrojo se mantuvo sin las manos de Mila.",
+      "ending": "Ivan llegó a ella, y dieron un paso juntos. Entonces la vena oculta dividió el cuña, enviando una lanza roja hacia su pecho. Mila lo tiró detrás del escudo de piedra. Ella fue golpeada por el reverso a través de su linterna, no con la elección que había elegido para abandonarla. El daño ya no podía ser revertido. Se mantuvo consciente y le pidió que se moviera mientras el escudo todavía estaba.\n\nIvan: «Una forma más. Debe haber una forma más»"
+    },
+    {
+      "number": 84,
+      "title": "La doncella contiene la lluvia",
+      "opening": "Mila colocó su linterna rota en el pestillo y creó un último canal estable. Sabía que duraría más que sus fuerzas, pero solo lo suficiente para que Ivan cruzara con el Corazón.",
+      "ending": "Le dijo que el hogar que habían soñado era real porque lo habían elegido, aunque no fueran a compartir sus habitaciones. Ivan se arrodilló a su lado y juntó las dos mitades de su recuerdo. Ella le pidió que mantuviera la ventana amplia, que enseñara a alguien el oficio de las linternas y que siguiera viviendo. Él lo prometió entre lágrimas y después levantó el Corazón.\n\nMila: «Lleva la luz. Sigue viviendo donde pueda alcanzarte»."
+    },
+    {
+      "number": 85,
+      "title": "Más allá del umbral",
+      "opening": "Ivan cruzó el umbral a medida que Mila liberó un salto final hacia las montañas. Yaroslav y Boris lo tiraron detrás del muro de protección; Daria selló el pasaje antes que la onda roja pudiera seguir.",
+      "ending": "La luz del corazón está firme. A través de una abertura estrecha, Ivan vio a Mila más allá del polvo que caía. El calor pasó, y el motor volvió a ser piedra. Los compañeros reabrieron el camino más pequeño de seguridad inmediatamente. Ivan volvió sin el corazón, dejándolo en las manos vigiladas de sus amigos.\n\nIvan: «Guard the Heart. Voy a volver por ella»"
+    },
+    {
+      "number": 86,
+      "title": "El silencio después de su nombre",
+      "opening": "Encontraron a Mila en la cámara ya fría. Ivan la sostuvo mientras la última luz azul abandonaba la linterna rota.",
+      "ending": "Ella lo oyó pronunciar su nombre y respondió con el de él. Sus últimas palabras fueron sencillas: se alegraba de que se hubieran encontrado en el camino. Entonces murió. Ningún pacto oculto la devolvió a la vida; ningún beso cambió la pérdida. Boris la envolvió con cuidado en una tela limpia, y los compañeros la sacaron juntos. Habían salvado el Corazón y derrotado a Varkul. Aquel precio no era una prueba de amor, y no lo llamaron justo.\n\nMila: «Me alegro de que fueras tú a quien encontré en el camino»."
+    },
+    {
+      "number": 87,
+      "title": "La carga compartida por cuatro",
+      "opening": "Fuera del Horno, Ivan no podía levantar el corazón y Mila está envuelto solo. Yaroslav tomó el corazón; Boris y Daria hicieron un marco de carga para su amigo.",
+      "ending": "Cuando Ivan trató de dar órdenes, su voz falló. Daria le dijo claramente los pasos siguientes: descanso, agua y luego la puerta exterior. Los otros aceptaron el trabajo sin pedirle que se convirtiera en un símbolo de resistencia. Detrás de ellos se desvaneció el resplandor rojo del Horno. En dirección, el camino que habían reparado se quedó preparado para llevar a la luz rescatada y al hombre perdido.\n\nDaria: «No tienes que llevar cada parte de esto»"
+    },
+    {
+      "number": 88,
+      "title": "Lada en la Puerta de la Lluvia",
+      "opening": "Lada conoció a los compañeros junto al portón exterior dañado. Ha reparado sus canales sobrevivientes con los artesanos liberados, pero no ha podido restaurar el apoyo colapsado a tiempo.",
+      "ending": "Cuando vio la linterna rota, entendió antes de que Ivan pudiera hablar. No culpó al aprendiz que los había salvado, ni excusaba a la máquina de su elección. Juntos grabaron lo que había fallado, así ninguna sala futura dependería de una persona con un cierre letal. Luego Lada colocó el círculo de plata a Mila junto al encierro envuelto.\n\nLada: «Nos acordaremos de ella, y vamos a cambiar lo que le falló»"
+    },
+    {
+      "number": 89,
+      "title": "El regreso por lugares vivos",
+      "opening": "Los trabajadores de la Ciudadela abrieron sus puertas a los viajeros. En el Barrio Sunken, Anya ofreció mantas limpias; en Bosque de Cristal los árboles restaurados protegían la estructura de transporte.",
+      "ending": "Ivan reconoció cada lugar que habían parado para ayudar, ahora ayudándoles a cambio. Le dijo a los que le preguntaron: \"Mila había sido una mujer de cangrejo, guía y aprendiz del profesor. Se negó a que se convirtiera en el momento de su muerte. Su historia pertenecía a la vida que había vivido en el camino.\n\nIvan: «Recuerda lo que hizo posible mientras estaba aquí»"
+    },
+    {
+      "number": 90,
+      "title": "Las colinas ante la ciudad",
+      "opening": "En las colinas de Moscú antigua, Ivan eligió un lugar protegido cerca del resorte para poner a Mila al descanso. Lada y los tres amigos estaban con él.",
+      "ending": "No plantó ninguna semilla mágica y no esperaba volver de la tierra. Dejó la mitad de las ventanas a su lado, manteniendo al otro bajo el coágulo. Por debajo de ellos, la ciudad aún se quemó a lo largo del exterior. La señal de Vera llamó desde la puerta. Ivan se levantó cuando pudo, y los compañeros continuaron con el corazón hacia la cámara esperando debajo del cuadrado.\n\nIvan: «Te recordaré en la vida que aún tengo»"
+    },
+    {
+      "number": 91,
+      "title": "La puerta vuelve a abrirse",
+      "opening": "La antigua puerta occidental de Moscú se abrió antes que el general la alcanzara. Vera había mantenido los refugios intactos, y sus pozos reparados suministraban las cortafuegos finales.",
+      "ending": "Los ciudadanos alinearon la carretera despejada sin que se animara. Vieron el agotamiento de los cuatro amigos, la linterna rota y un corazón dorado que se llevaba cuidadosamente entre ellos. Ivan le dio al reloj de la ciudad una cuenta completa: el demonio fue derrotado, El Corazón se recuperó y Milo estaba muerto. Vera escuchaba, luego le asignaba nuevas manos al trabajo de la cámara. El regreso no significa que la tarea haya terminado.\n\nVera: «Hemos tomado el camino. Llevemos la siguiente parte»"
+    },
+    {
+      "number": 92,
+      "title": "La ciudad hace sitio a la luz",
+      "opening": "La plaza seguía llena de refugios y madera salvada. Antes de restaurar el corazón, Ivan ayudó a Vera al alejar las familias del techo inestable.",
+      "ending": "Boris revisó las reparaciones; Daria coincidió con los nuevos canales a su mapa de regreso. Lada colocó el lente que sobrevivió a Mila en un nicho de señal, donde podía distribuir luz sin llevar calor peligroso. Orel, frágil pero vivo ha reconocido las rutas reparadas que llegan más allá de la ciudad. El Corazón regresaría a una red más amplia que la de donde había sido robado.\n\nOrel: «Has traído de vuelta los caminos, así como la luz»"
+    },
+    {
+      "number": 93,
+      "title": "El Corazón encuentra su lugar",
+      "opening": "Ivan descendió con el Corazón en sus manos. El enchufe bajo la plaza había sido reconstruido con el ward-clay, braces de madera del pueblo y piedra forma por trabajadores liberados.",
+      "ending": "No había nada que no se tocara; todo estaba listo. La linterna rota de Mila descansó cerca como una memoria, no un mecanismo que requiere otra vida. Ivan colocó el Corazón en su centro original. Por un largo aliento, la cámara se mantuvo oscura. Luego, la luz de oro llenó el anillo reparado y se trasladó hacia fuera por cada canal que habían hecho entero.\n\nIvan: «Para la gente de aquí, y para los que están en el camino»"
+    },
+    {
+      "number": 94,
+      "title": "Relámpagos sobre las torres",
+      "opening": "El pulso restaurado del corazón llegó a la puerta de lluvia por los canales protectores mágicos conectados. Un rayo blanco cruzó el cielo negro por encima de la antigua Moscú, iluminando cada techo quemado y reconstruido arco.",
+      "ending": "Los ciudadanos se revolotearon, entonces escucharon la profunda respuesta de los truenos. Ivan subió a la plaza cuando las primeras gotas de frío golpearon los cálculos. Daria revisó los drenajes; Vera movieron a la gente bajo cubierta estable. El milagro más esperado llegó con trabajo que hacer, y la ciudad estaba lista para recibirlo sin tratar a maravilla como un sustituto de cuidado.\n\nDaria: «Abre los drenajes. La tormenta es real»"
+    },
+    {
+      "number": 95,
+      "title": "La lluvia que apagó el fuego",
+      "opening": "La lluvia cayó en los torrentes. Las llamas sonreían a lo largo de los techos, luego se doblaban en vapor.",
+      "ending": "El resplandor rojo de los pozos desapareció, dejando agua lo suficientemente clara como para reflejar las linternas. Ivan estaba bajo el agua hasta que Yaroslav colocó un coágulo sobre sus hombros. A su alrededor, los ciudadanos abrazaron y llevaron agua a brasas escondidas. La ciudad había sido salvada del fuego. No se había ahorrado cada pérdida. Ambas verdades pertenecían al mismo cielo que regresaba.\n\nYaroslav: «Ven bajo la capa. Se te permite tener frío»"
+    },
+    {
+      "number": 96,
+      "title": "La primera mañana",
+      "opening": "Por la mañana, las lluvias pensaron en hilos de plata. La luz solar llegó al cuadrado central a través de nubes desgarradas, tocando piedra mojada y paredes apretadas.",
+      "ending": "Orel anunció que su ritmo era constante. Ivan vio a la ciudad despertar sin esperar alegría para reemplazar su dolor. La ausencia de Mila se mantuvo al lado del belleza que había ayudado a restaurar. Se sacó la mitad del marco de madera y lo mantuvo en el semáforo. Luego se unió a Boris en una casa dañada, donde todavía había que hacer un verdadero escaparate.\n\nIvan: «La mañana está aquí. Hagamos lugar para eso»"
+    },
+    {
+      "number": 97,
+      "title": "Margaritas de ciervo en las colinas",
+      "opening": "A los pocos días, las margaritas de ciervo blancas se abrieron por las colinas sobre la Antigua Moscú. Eran las flores que los aldeanos siempre habían llamado así: pétalos blancos, centros dorados y hojas finas de un verde plateado.",
+      "ending": "Las gotas de lluvia aún brillaban en sus tallos. Ivan fue al lugar donde descansaba Mila con Lada y los tres amigos. Llevó un pequeño ramo y habló de la ventana reparada, de los niños que aprendían el oficio de las linternas y de la lluvia que por fin había llegado. Le habló de la vida, porque esa era la promesa que aún podía cumplir.\n\nIvan: «Han florecido. Ojalá pudieras verlas»."
+    },
+    {
+      "number": 98,
+      "title": "La escuela de las linternas abiertas",
+      "opening": "Lada abrió un taller de linterna en una casa reparado cerca del cuadrado. Su primera regla fue escrita sobre el banco: ninguna sala debe requerir una mano cautiva.",
+      "ending": "Daria ayudó a documentar las liberaciones seguras y señales de fracaso. Boris le enseñó a los estudiantes que construyeran viviendas sonoras antes de confiar en cristales brillantes. Ivan asistió a la primera lección como principiante, luchando con un delicado cierre. Cuando los estudiantes se rieron, él reía con ellos. La nave de Mila continuó a través del aprendizaje, más que mediante una denuncia por haber regresado. Su nombre pertenecía a la obra, no por encima de una demanda para el sacrificio.\n\nLada: «Construye el lanzamiento antes de que construya la luz»"
+    },
+    {
+      "number": 99,
+      "title": "El general y la ciudad inconclusa",
+      "opening": "Ivan mantuvo su mando, pero cambió de trabajo. El reloj reparó caminos, entrenaba equipos de rescate y protegía los asentamientos conectados al Corazón.",
+      "ending": "La pierna de Yaroslav se sanó lentamente; enseñaba a los capitanes más jóvenes que denunciaran heridas sin vergüenza. Boris supervisó los nuevos cimientos, y Daria publicó un mapa que incluía a las aldeas una vez omitida. Ivan construyó la ventana de colina que había prometido, dejando a su disposición el cuarto para los viajeros. Él no lo llamó el hogar que él y Mila habrían compartido. Fue un lugar de vida hecho posible al recordarla.\n\nIvan: «La ciudad está lo suficientemente segura como para reconstruirla. Ese es nuestro próximo deber»"
+    },
+    {
+      "number": 100,
+      "title": "La leyenda de la lluvia que regresa",
+      "opening": "Años después, la gente contaba cómo un general nacido en una aldea y sus tres amigos habían seguido al Corazón robado hasta la oscuridad. Hablaban de Mila, que había hecho transitable el camino, amado libremente y salvado a Ivan cuando el Horno frustró su huida.",
+      "ending": "Ivan siempre añadía los nombres de los maestros, obreros, refugiados y vecinos que habían hecho posible aquel viaje. Cuando la primera tormenta de primavera llegó a las colinas, abrió la gran ventana. Tras la lluvia llegó el sol, y las margaritas de ciervo brillaron sobre la Antigua Moscú. La leyenda terminaba con una ciudad que seguía viviendo y con un amor recordado sin deshacer la pérdida.\n\nIvan: «Contad también su vida. Hablad de todas las manos que trajeron la luz a casa»."
+    }
+  ]
+}

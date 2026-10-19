@@ -1,0 +1,3495 @@
+{
+  "count": 349,
+  "textures": [
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L001_Surface.png",
+      "resource": "M48Textures/2acfa2621a5c587ab1372d9065e07d39",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2acfa2621a5c587ab1372d9065e07d39.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "c389f6ce4b4f6831462afdece5f380854a2e8cd76ebc8b2b4f22db2cd933d540"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L002_Surface.png",
+      "resource": "M48Textures/4b6c8fd0624b57258241aac1b9a726fc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4b6c8fd0624b57258241aac1b9a726fc.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "2cb491218f93b5b3a3178ce739fe69416a44c3557e9f1968297f4673a985c096"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L003_Surface.png",
+      "resource": "M48Textures/f301a4570e1f5bf5bad449bdc5ffe206",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f301a4570e1f5bf5bad449bdc5ffe206.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "0e08ca7249785a29541200690a1b44f59e0fc9f0a9a75195b8b4522070d11e39"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L004_Surface.png",
+      "resource": "M48Textures/bf14b162719d56f89983fbb8952440dd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bf14b162719d56f89983fbb8952440dd.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "6d78f21907d767cba2102d3c952db6cf8b531336c067671741c15ab8312619a3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L005_Surface.png",
+      "resource": "M48Textures/385592f4cdd753a894328ba2fcf8f34b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/385592f4cdd753a894328ba2fcf8f34b.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "9b53c0ea074dc04b1e9bb09d0c208afa898d18c5cc67c99ddaea197f4a7eb985"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L006_Surface.png",
+      "resource": "M48Textures/bc69bf0865cf588a8c1ac9e973eb91d1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bc69bf0865cf588a8c1ac9e973eb91d1.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "c85d40dfa65b94528508e7523bee1bcd822de4d8b65ed781747f1aef230fc3eb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L007_Surface.png",
+      "resource": "M48Textures/48cfc1a4f188567cb9885794f5231079",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/48cfc1a4f188567cb9885794f5231079.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "8f7389f96754fde91eae6c5250140076183c36ec1d14096be28116d075d6cf71"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L008_Surface.png",
+      "resource": "M48Textures/dfb5e85923065e26a1ccf049d6f20025",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dfb5e85923065e26a1ccf049d6f20025.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "170b176227c671f1c93638a14551c0dd36fae7a371d93957e24d9a9d3eeea47a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L009_Surface.png",
+      "resource": "M48Textures/4442324f755355b6ac9539691a8ded87",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4442324f755355b6ac9539691a8ded87.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "7aace93e190aa68d78b35a876d8df9c06f052dafbd34f47c75c34fa6f72eef46"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L010_Surface.png",
+      "resource": "M48Textures/5c0c1eca7e935bd99926d09da07cb6c2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5c0c1eca7e935bd99926d09da07cb6c2.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "e9170bf83484a0f08fe3405580bdf252e2b6b7a0c49af5bbd093c26963300455"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L011_Surface.png",
+      "resource": "M48Textures/b0b938c40bb0504195039a68ac5e34b4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b0b938c40bb0504195039a68ac5e34b4.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "ddbfc3160647d0857fb8cba0050eee3e3a8ac8cef32b92f57eddf38ca524fa9e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L012_Surface.png",
+      "resource": "M48Textures/a46a52b61e6f579b9b56a6f3e7bcb0fe",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a46a52b61e6f579b9b56a6f3e7bcb0fe.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "0e5278764fa45d6bc5d5f68371a49a643c9b411b2bcccab7c379d32de59b9225"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L013_Surface.png",
+      "resource": "M48Textures/613f407e264559eda92cf048da797db3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/613f407e264559eda92cf048da797db3.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "6efe2f1113c1522ed2c22e2a3cf99bb10cea4993846307a325b6d70f8bc9629e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L014_Surface.png",
+      "resource": "M48Textures/6eb6580afd9f589d90046087d9008afe",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6eb6580afd9f589d90046087d9008afe.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "74d85d2f78b119569c3d63d2a276d8b919d10dc6bed27836152aa5aed0cd0417"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L015_Surface.png",
+      "resource": "M48Textures/8e5282fd5caa586e91edb5750adbb32f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8e5282fd5caa586e91edb5750adbb32f.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "042d05f1ea34664ac036d0f0c8afca2ccbc0ce0c92bfb28723290ff4c8dd1e5f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L016_Surface.png",
+      "resource": "M48Textures/8cb25fcd37f65b03b5b1ca97c705b475",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8cb25fcd37f65b03b5b1ca97c705b475.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "c420a7f8cfb73140d2718feb119e7ba151146051bdf188ec81cc1f923034d26b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L017_Surface.png",
+      "resource": "M48Textures/dd596a05a6de5123828e7da1afa287c7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dd596a05a6de5123828e7da1afa287c7.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "99dfc9a789d5421466ab0785a9c1ae650b33ebbcddaeab83a0b2a1cc4bf5e0f7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L018_Surface.png",
+      "resource": "M48Textures/b72af46078b8529280c8cd288a69b12e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b72af46078b8529280c8cd288a69b12e.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "0c6d29adcbbe77214a5b14d06205109dfb9e2d8ba648d2c03af6372a67230e2c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L019_Surface.png",
+      "resource": "M48Textures/b00c971a32b45d4a86d323679c61abe1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b00c971a32b45d4a86d323679c61abe1.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "ba40ce840e8905dda15cd00752a22296410a8c367341d3bcdc9fba99966ebefb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L020_Surface.png",
+      "resource": "M48Textures/9351814511775e2aa6912a3cae2fcc8d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9351814511775e2aa6912a3cae2fcc8d.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "10bfd28c2298eedc5f22e91e857499fb2f691accc2a80c1b61881489ccea921f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L021_Surface.png",
+      "resource": "M48Textures/de3a63ca97125b6083f969745b4e86b1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/de3a63ca97125b6083f969745b4e86b1.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "f5c026080728e00cc4ff9a1e2cea22bd1e5ddbf9eaddacb2c6f2ce7a8019ab1c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L022_Surface.png",
+      "resource": "M48Textures/3f77783871d152daba8bb8b7f861f48e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3f77783871d152daba8bb8b7f861f48e.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "60c396d5168090687f2330e3be240818ed3b3c8014d1f3cc15b43b2ceea958a6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L023_Surface.png",
+      "resource": "M48Textures/a706784583425969a7253112464325a3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a706784583425969a7253112464325a3.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "152db4da01c1de062435fc26df8cb6156204b7b92b89d322da93d3ad19ed619c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L024_Surface.png",
+      "resource": "M48Textures/66666c961b0a5adbb97e71a395636ba4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/66666c961b0a5adbb97e71a395636ba4.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "bcc887aa31bcff9e1b6417bb8a01d0c10e70211e587f5dadff127cd6d60e8fc2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L025_Surface.png",
+      "resource": "M48Textures/1f26894f0e625bfcb1fcd0026ba907b0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1f26894f0e625bfcb1fcd0026ba907b0.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "f99dbfb5299b16f61becbbe0ada48feba94854ee8444b49a1646037b1977750b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L026_Surface.png",
+      "resource": "M48Textures/8f675c82e89d58d2839eaaf10336056c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8f675c82e89d58d2839eaaf10336056c.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "a9acf890954236c2202d14cea85b641f19ebd0e34916441233791567e8e5b190"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L027_Surface.png",
+      "resource": "M48Textures/3ba7efee008a576dbfc248c5f8dae4d4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3ba7efee008a576dbfc248c5f8dae4d4.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "0d6c4e58eac0db2e698432a2b7131d9d4e98fdd212d568621cc4221a9e640ec2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L028_Surface.png",
+      "resource": "M48Textures/4be6566551c2598bb2bd0865acf88805",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4be6566551c2598bb2bd0865acf88805.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "e723a20b87f2d1cff89551e333fc7df5e182f669a7a0199e2027208e1453aad2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L029_Surface.png",
+      "resource": "M48Textures/ffacf1faaaf5540c8081c0f8e36dc93c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ffacf1faaaf5540c8081c0f8e36dc93c.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "fa55129f7cd4b61165c0e4c237bb57e2b8198afc84e36c006f2576fa21cff7e3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L030_Surface.png",
+      "resource": "M48Textures/51cc4d67add756bcbea723c384d038be",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/51cc4d67add756bcbea723c384d038be.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "d9681c16c98adca66c8ea9dc0f3d7eaa8261abc8bbe6d312064c0dd5b13bd551"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L031_Surface.png",
+      "resource": "M48Textures/428893d91b375fe0b5f46bde0767e91f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/428893d91b375fe0b5f46bde0767e91f.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "f981fdbb65a6bf23a3119be92294d6beb387b76faaa57e07fd09fb0919d0f238"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L032_Surface.png",
+      "resource": "M48Textures/0210148e5851593baf17fd93ff21f2cd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0210148e5851593baf17fd93ff21f2cd.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "0a7109709530c7f3286e7410e3ba9ebf22ad5c0fcae8d6938c7ca94a86468992"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L033_Surface.png",
+      "resource": "M48Textures/6e23b9b3d51d5eadbc68b388871afcd9",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6e23b9b3d51d5eadbc68b388871afcd9.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "c6511dda81ef9083f3d7976d5e7327e0511dea5661648c8080523f91dfdde898"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L034_Surface.png",
+      "resource": "M48Textures/e312be5d3226525aa46046a23f92d1d0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e312be5d3226525aa46046a23f92d1d0.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "d04a59c78267df935cfc8ebda4957200531dcef4528ae93bad683d3eb664e570"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L035_Surface.png",
+      "resource": "M48Textures/737953340fc55363adb2e35c50f86b55",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/737953340fc55363adb2e35c50f86b55.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "547818e6bf2e8e89dea2332c35ef6a282c23d6bc697f41bb443d38134995a4d2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L036_Surface.png",
+      "resource": "M48Textures/eda2a76158b7578ab1b21e1934b7e0b4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/eda2a76158b7578ab1b21e1934b7e0b4.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "1257b4238973cf3bf450a0e783d89f47e39aa1959dcf5d9726e2ecea1d48556b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L037_Surface.png",
+      "resource": "M48Textures/cd59435b57ef51c8959faa4406d575b3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cd59435b57ef51c8959faa4406d575b3.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "c73fe253541a28d8312d578b364df7c3983447ad986176a0d5d24e2e68d98f33"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L038_Surface.png",
+      "resource": "M48Textures/a28350ca500e54bea95bde414637e67b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a28350ca500e54bea95bde414637e67b.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "f5612b05c95bed403b1dea49d160258deb1a80f5b8e51a4251f129d9dcbfc965"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L039_Surface.png",
+      "resource": "M48Textures/064248d6842855dbbbd10789b59aad57",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/064248d6842855dbbbd10789b59aad57.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "da144be059b427c18eb2fe01be888fb9f788d3a9bd9939081aa505ccbe61be70"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L040_Surface.png",
+      "resource": "M48Textures/b23b293f2044536e93ec212e47e88376",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b23b293f2044536e93ec212e47e88376.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "723d639eb0d8ebe50b656dd3d20668057759ace4636738e3ac7474657179822c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L041_Surface.png",
+      "resource": "M48Textures/a8aae9ea9dea541c938167c91bb4566e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a8aae9ea9dea541c938167c91bb4566e.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "648c7160f3c91c7e933c788b626a76086f53ce784b62bc8ae71aaaa5a3709049"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L042_Surface.png",
+      "resource": "M48Textures/e7c01b6a1b5b5ae9bd92b46ee2c881b2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e7c01b6a1b5b5ae9bd92b46ee2c881b2.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "368a623ba51e08b590511544f9ec9973372bb501d98de3d2554e50e1a465e08f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L043_Surface.png",
+      "resource": "M48Textures/d06e2551d5ee53e78f55cd96471a069e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d06e2551d5ee53e78f55cd96471a069e.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "e8a2cfc7b6223d97c87babb07601feaabb26bb841bfae79140c42ccd1f3017ad"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L044_Surface.png",
+      "resource": "M48Textures/50ffd3556a89556bada62c9455c5c2ce",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/50ffd3556a89556bada62c9455c5c2ce.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "f2a2d1ec643ed39f6d9945d566b3512846431b6b34e68eab7f16ad1987b2edf9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L045_Surface.png",
+      "resource": "M48Textures/a274a343407850b283f9490cacbd6221",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a274a343407850b283f9490cacbd6221.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "ce2f32029fbdcf73336c9f1183328feb0214fd970bd308f981029c25a655a8ed"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L046_Surface.png",
+      "resource": "M48Textures/dc058af66c145731b097e2de0fbcbe2a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dc058af66c145731b097e2de0fbcbe2a.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "6eb6de66b586305bd1cc9a122fdfcf53d52fd8732bd563bc827b44c1170acdbe"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L047_Surface.png",
+      "resource": "M48Textures/9c96f8f165f85da4a5d0e7e57c3b647c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9c96f8f165f85da4a5d0e7e57c3b647c.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "9008ef33a5d0cd5055ec1df7cad04178bd9caa983468988f7845363d63c667fa"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L048_Surface.png",
+      "resource": "M48Textures/1d84871b18e153ecbb165fe4095f6664",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1d84871b18e153ecbb165fe4095f6664.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "fdffbf35bc399faf108a75afcf0d61cee8e77faa723939645cc7ae4583983e55"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L049_Surface.png",
+      "resource": "M48Textures/5070fa2293d85dacba466c62aae491dc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5070fa2293d85dacba466c62aae491dc.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "b883e8141aa4d4d082c29b83be591ad2d75750052eadf716d96a67c5caf91901"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L050_Surface.png",
+      "resource": "M48Textures/f342448b0fc450c883b62d3f847d07b4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f342448b0fc450c883b62d3f847d07b4.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "8d52f14161735586d16327390f88b29ec0cca7ee1008f5d9dcf33a13fbf83f08"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L001_AlphaMask.png",
+      "resource": "M48Textures/a2ae0b77af045d4ba96ddf5896986224",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a2ae0b77af045d4ba96ddf5896986224.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "3f31f52a0bcd099d1a5a8ad6b28256950ab4e2aeffd4a70cdf497a7b004897e8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L002_AlphaMask.png",
+      "resource": "M48Textures/aac06b90b76e555ab25d7f4feb1b0246",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/aac06b90b76e555ab25d7f4feb1b0246.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "8fd62af423c48174b6d26e18adc8424dc3b89062af7dc1df22c70f0cea4a686d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L003_AlphaMask.png",
+      "resource": "M48Textures/fc88f66fb4ed5af6958e2e0b9ab5ce14",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fc88f66fb4ed5af6958e2e0b9ab5ce14.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "6902be3c1373f9690722948e8a7ffbb5b41e4cc76257be70b834af881f0f3e35"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L004_AlphaMask.png",
+      "resource": "M48Textures/12373dfaae9956c1a47691f3c9516e03",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/12373dfaae9956c1a47691f3c9516e03.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "506c69e811b6e552d47e5625a931e9f59338353c085c781413c9934a12d4b7a5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L005_AlphaMask.png",
+      "resource": "M48Textures/e68dd31b337f57379053a3d79fd1afda",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e68dd31b337f57379053a3d79fd1afda.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "fc3eca293fca11e73a87e99466780523ce5f358d62b797c24a322453982645f4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L006_AlphaMask.png",
+      "resource": "M48Textures/a39d0b687adc52cebab7b749b00968cf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a39d0b687adc52cebab7b749b00968cf.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "a35c92be5388f7e073d2b83e100ecf985236a14dedc4c60823ba7192a840738c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L007_AlphaMask.png",
+      "resource": "M48Textures/08e6a040bfd35bdf8c7e72f04ed78128",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/08e6a040bfd35bdf8c7e72f04ed78128.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "2361c52f016542d5a47d2fdd0fdb9571e8dc378a7a3b04cdf3251b48a9105cb1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L008_AlphaMask.png",
+      "resource": "M48Textures/70f7ac1e898a5a52a573a00ee825eec6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/70f7ac1e898a5a52a573a00ee825eec6.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "83d68a6f8c6ddfc14ec91ed1e0285e1e1d4df33c77b2d0b9cda50f904aff2c55"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L009_AlphaMask.png",
+      "resource": "M48Textures/13fbbf119e185a5fad7e104d5519d82b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/13fbbf119e185a5fad7e104d5519d82b.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "50353cf7b989497700319f0d76bdd2b219a3777888b88870bdd503c2ec057e44"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L010_AlphaMask.png",
+      "resource": "M48Textures/e93e95c190625b6dae53cba3a8cecfb8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e93e95c190625b6dae53cba3a8cecfb8.png",
+      "width": 606,
+      "height": 606,
+      "rgbaBytes": 1468944,
+      "astc6x6Bytes": 163216,
+      "sha256": "03be98faa95c7c64954e3228bb4b9ec3bfd9ef26e9626bc47fe7cc4b40237a70"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L011_AlphaMask.png",
+      "resource": "M48Textures/5053ab4d6474512dbe29b1181428e000",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5053ab4d6474512dbe29b1181428e000.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "6f741fe5bd3b4e8eb177426ef237fdef53086015e9135d020a52b8b01a66fe78"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L012_AlphaMask.png",
+      "resource": "M48Textures/b6499cad75c154bcbb50f16d383b4189",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b6499cad75c154bcbb50f16d383b4189.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "2c52da31770cc02fd9947f8904f245e0d731dcbd938f3f19508ef6b1b2ab3290"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L013_AlphaMask.png",
+      "resource": "M48Textures/e66b749d8c195d8992471e1bcc4b4ecd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e66b749d8c195d8992471e1bcc4b4ecd.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "26fdb96b5ca9915860f8b0cb900a8bdc8adbda1998a014e0a6b9bc47daa54071"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L014_AlphaMask.png",
+      "resource": "M48Textures/e7d411ce0ed8517dbc93049ff560105f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e7d411ce0ed8517dbc93049ff560105f.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "678c927ce278b8e069641814cea59eab58620a2880205bef74ae8ff5f7b2f51a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L015_AlphaMask.png",
+      "resource": "M48Textures/afca686b16545eca9d0a5257ce0f6c56",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/afca686b16545eca9d0a5257ce0f6c56.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "bd60984ff76f2493d5fb73b24c475b9e50178c2ff0f04968a5bed6c12f3be9dc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L016_AlphaMask.png",
+      "resource": "M48Textures/9d7443ebe02e5f95afa2a6e296f4fedd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9d7443ebe02e5f95afa2a6e296f4fedd.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "1d0c445b9dad48174cc6b1feb31fef7b58a13d8b192daa9828c9ad17986026bc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L017_AlphaMask.png",
+      "resource": "M48Textures/f56403e04d0251479a57f541126f4837",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f56403e04d0251479a57f541126f4837.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "bb3ee42b0d596279d66dbf9b260c508c71f128b41b88a3ebcf98fcd0c0eb8d25"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L018_AlphaMask.png",
+      "resource": "M48Textures/db985d6d6af1566986c628ad58ce82dc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/db985d6d6af1566986c628ad58ce82dc.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "fa8b2b321bee0314233ee7efdb6aa373f72a137c56f3fe7436388204808069bc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L019_AlphaMask.png",
+      "resource": "M48Textures/9e4a39cdc2a956b28c7cf8df5ef2ea1f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9e4a39cdc2a956b28c7cf8df5ef2ea1f.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "9ac32cfbdab4c21bfcd73e89f40df40f258f2ec4cc4449680c838cdccaf49435"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L020_AlphaMask.png",
+      "resource": "M48Textures/3967a494e7fc5cd2aa6486a600daa425",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3967a494e7fc5cd2aa6486a600daa425.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "329278e3a19a7ec9ccc88c1703c43892a521343b5d3822d46087de0168133015"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L021_AlphaMask.png",
+      "resource": "M48Textures/9834718a8a2a5f53887ece4d022fcf4f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9834718a8a2a5f53887ece4d022fcf4f.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "da720cc6422152193971644ea6e960a662ae1ba489adbc3d1680aefa769af45d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L022_AlphaMask.png",
+      "resource": "M48Textures/1a09751eb9435d37a5c260b0570de991",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1a09751eb9435d37a5c260b0570de991.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "c0ed486a03268b6efd40992f8087d5946841a20f45be2d3e6189db57c95cc7cf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L023_AlphaMask.png",
+      "resource": "M48Textures/97043b5a00705e139be463ee0fb991a0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/97043b5a00705e139be463ee0fb991a0.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "55ed8c89cb8ed20b8477b31495dbe1dc3406d5e38fd260ccbee9d4c34faffbd2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L024_AlphaMask.png",
+      "resource": "M48Textures/819262daa8915a74adfbecf136a3f419",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/819262daa8915a74adfbecf136a3f419.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "7c4a4f0cf715620f32d64d10e10f0013ab3d2cdf1f09c0d8b301c8dc4a9f2911"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L025_AlphaMask.png",
+      "resource": "M48Textures/b1f0b81f0f1c5203b2dd5651a7ddd1db",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b1f0b81f0f1c5203b2dd5651a7ddd1db.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "e8d09ec5fac5d9ee774b0f73c8e59d1723a9ccf6197e3c20d7646758071c0b3c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L026_AlphaMask.png",
+      "resource": "M48Textures/f636b36624b354e7a042c1bd9984ce6b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f636b36624b354e7a042c1bd9984ce6b.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "6d7e7e31276ff7d4fd7667602de8fb55d35521bc7d326c08934ad70058ca92c4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L027_AlphaMask.png",
+      "resource": "M48Textures/1b6f4dabc3d35deca23becba6645d9bb",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1b6f4dabc3d35deca23becba6645d9bb.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "c60742f867ff7b0638c01af38cbab065b9b3ef1862057d99ad1b2a86f96d52e5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L028_AlphaMask.png",
+      "resource": "M48Textures/e423da70d9c85e54a01a00f31554c023",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e423da70d9c85e54a01a00f31554c023.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "eba75271bce420c14156a64bd3dae3cbeb60e7d642ba6309bc45ef81f44c969e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L029_AlphaMask.png",
+      "resource": "M48Textures/874c4a864d225b77b81242ee4c408fa1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/874c4a864d225b77b81242ee4c408fa1.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "d09009ffe3e10d934e338677d9e8d21c44a24ea6711a892eba73c64f01a54111"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L030_AlphaMask.png",
+      "resource": "M48Textures/f734e0efd6b451b2bd6cc78fbd781072",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f734e0efd6b451b2bd6cc78fbd781072.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "0cfb1fbb9952887cf6a00c4a452117800c379f6a46294a027e085bf03a6dcbd1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L031_AlphaMask.png",
+      "resource": "M48Textures/d6ca5ae91b4656dda34c1c72751a9e4f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d6ca5ae91b4656dda34c1c72751a9e4f.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "7473d82028e3519dc6f5b626e670782d914c626eb6772720e03fbe1e7cb1c033"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L032_AlphaMask.png",
+      "resource": "M48Textures/28214c1dbbdb507d9568467e5cdc055e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/28214c1dbbdb507d9568467e5cdc055e.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "ec5e4f70836aaf5a9620cb0c0e1220664c81736c98042c0bf41b325b97f3eeb3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L033_AlphaMask.png",
+      "resource": "M48Textures/e6a19b6caf8157fc8400c7bf5fcfbb27",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e6a19b6caf8157fc8400c7bf5fcfbb27.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "e0ead4f5b07142a4f4b67b66537fb0eee9dd3bc3647a735aa6e963922ee3c0ad"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L034_AlphaMask.png",
+      "resource": "M48Textures/8f63b7f9eca85a5f8da2265ed2b5c93e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8f63b7f9eca85a5f8da2265ed2b5c93e.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "bc5294ad215068b2b948ac584859f2f4579f730fbd75abfb2a99db1a863d0e1c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L035_AlphaMask.png",
+      "resource": "M48Textures/9c96fef293815a9ba9a1e817a55e638e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9c96fef293815a9ba9a1e817a55e638e.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "6993a3a933be002daee33760a11bb65d9fc365795b03dad9a5bcd8cfe4288552"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L036_AlphaMask.png",
+      "resource": "M48Textures/f1328ba88c425811b2ce6a6ca76d4e13",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f1328ba88c425811b2ce6a6ca76d4e13.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "f4e73681930ce1ec648a3a5ec91a70ad95163bb597c15569c201da3db44c2fae"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L037_AlphaMask.png",
+      "resource": "M48Textures/01f1f42d545d565ba7c1fd1c3e836b76",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/01f1f42d545d565ba7c1fd1c3e836b76.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "c7c82af719d7426d7bae591e1f812577bc74df4ce3c3d2adda86bcb45f9c09d1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L038_AlphaMask.png",
+      "resource": "M48Textures/423ed473eead53f6a8d9ad256350a348",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/423ed473eead53f6a8d9ad256350a348.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "14ebb840b7b49759f4e5818de2e99496d3f0f62338bfa2079646466b2d5dbbbb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L039_AlphaMask.png",
+      "resource": "M48Textures/4a433784d65d558f805371e02dcf6b11",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4a433784d65d558f805371e02dcf6b11.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "a3c496b940eb9bc50289d8d7da56dd689e20bff30b7f861490517b6ae015b586"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L040_AlphaMask.png",
+      "resource": "M48Textures/cda3c302bb595f65b80a6ca719f7df0e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cda3c302bb595f65b80a6ca719f7df0e.png",
+      "width": 606,
+      "height": 734,
+      "rgbaBytes": 1779216,
+      "astc6x6Bytes": 198768,
+      "sha256": "d6721b578d2b66209b2da111aec7d4fb177e213a05879a4d17590c1f5852fdfd"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L041_AlphaMask.png",
+      "resource": "M48Textures/92f64df30a7850f1ba3b964280cd6e2e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/92f64df30a7850f1ba3b964280cd6e2e.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "a27d0049cf3a56ee46f58ee6776d71fd378ef63e0d68005167052c9837bd9bf8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L042_AlphaMask.png",
+      "resource": "M48Textures/ce456d38cc47582e9bffbc4d48b6937e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ce456d38cc47582e9bffbc4d48b6937e.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "de4ddaba54e9881e6a67f534f221bf7d2e18cc3ca84a0abfd640c6d8b4bc98c2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L043_AlphaMask.png",
+      "resource": "M48Textures/ba65cc55858556ea91ee6219332e8fab",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ba65cc55858556ea91ee6219332e8fab.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "26e2fc7a719c1d2fd4add41954a0d74554236faae55375e5044a3ccc74451116"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L044_AlphaMask.png",
+      "resource": "M48Textures/f6cda5567018590588165eb70678e34f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f6cda5567018590588165eb70678e34f.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "09476f87e648e5ebaa33f9d9b4d9610e3c023279097e4ce124a130c60406f668"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L045_AlphaMask.png",
+      "resource": "M48Textures/bacbc60789765121a233789d77fb9cc0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bacbc60789765121a233789d77fb9cc0.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "bfdff16fc8f5fcc200bf60c9d05342a87c755c610d86ca0a23625e4adce5f621"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L046_AlphaMask.png",
+      "resource": "M48Textures/8330cd99dcb85341a353f749bf70685b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8330cd99dcb85341a353f749bf70685b.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "0c692abdf7cb53e042b928c04249f2be5f1b45b2c464df16b5ca8b626166bafc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L047_AlphaMask.png",
+      "resource": "M48Textures/05f332971c44580c8ceae53addd25730",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/05f332971c44580c8ceae53addd25730.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "45f303c7fed413e5d50a4a40681c05240f022775933999d5e0728f5f512e676f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L048_AlphaMask.png",
+      "resource": "M48Textures/a999c66ecfc757e897c08e3edfa537d2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a999c66ecfc757e897c08e3edfa537d2.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "0f1cc8d41f40ad8224ceda98e372be3bda45656ebeea65bbd5d445bbff0a289c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L049_AlphaMask.png",
+      "resource": "M48Textures/31acec01ede05eeba426f1f976381bda",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/31acec01ede05eeba426f1f976381bda.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "837a79ea776907ecc7bc9db380bcd9c4f745921c882378f424a566b306f51770"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M47/Art/Boards/C01_L050_AlphaMask.png",
+      "resource": "M48Textures/088fdb883d5b5bd4b43e509a93741f50",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/088fdb883d5b5bd4b43e509a93741f50.png",
+      "width": 734,
+      "height": 734,
+      "rgbaBytes": 2155024,
+      "astc6x6Bytes": 242064,
+      "sha256": "424c03d9843772cd0937d39540fda87732b406e4bedbd035ead2831489c288ed"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/BombFX_Atlas.png",
+      "resource": "M48Textures/5ae03df1c1c85ac0be387251ff6e989e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5ae03df1c1c85ac0be387251ff6e989e.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "23d9e99f1dd5c6f66a381e506a139e64e41aae9188983c3af4d80183ce3df441"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RocketFX_Atlas.png",
+      "resource": "M48Textures/b25cc182b1555b46979522c2f2665181",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b25cc182b1555b46979522c2f2665181.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "a3a4b4d6ee171c1afbe120c637b22b166cd14d4939ee30c2cb52778d2be9210d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/FragmentsV0_Atlas.png",
+      "resource": "M48Textures/f4ce374da888522e9288484b5dae5dba",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f4ce374da888522e9288484b5dae5dba.png",
+      "width": 4096,
+      "height": 2048,
+      "rgbaBytes": 33554432,
+      "astc6x6Bytes": 3737376,
+      "sha256": "3049a10b95d2e48fcc253b5b31d01fc18d4182849a021a839af762bc03691ffa"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/FragmentsV1_Atlas.png",
+      "resource": "M48Textures/f44c77824d335b809727a40c1f959328",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f44c77824d335b809727a40c1f959328.png",
+      "width": 4096,
+      "height": 2048,
+      "rgbaBytes": 33554432,
+      "astc6x6Bytes": 3737376,
+      "sha256": "2d22c522bf4103e0895bf8952a14ab01a95a00d410abd41684b1c1c3e4edbfb5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/FragmentsV2_Atlas.png",
+      "resource": "M48Textures/3480806884cb56aa933ca17ce9b45445",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3480806884cb56aa933ca17ce9b45445.png",
+      "width": 4096,
+      "height": 2048,
+      "rgbaBytes": 33554432,
+      "astc6x6Bytes": 3737376,
+      "sha256": "1434e902865ca2649a73b3658bf5f6b8c6c092cb244d17b9e2b7a394510afc9e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/WoodFX_Atlas.png",
+      "resource": "M48Textures/8e359695c95c5823b95f5574b20ba250",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8e359695c95c5823b95f5574b20ba250.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "59bdbc8be020db0e06083162f4a210be78699842840a69a642218d73b6fbf25c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Bomb_Atlas.png",
+      "resource": "M48Textures/d12ae954dcc25f4c8479f650080d7efe",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d12ae954dcc25f4c8479f650080d7efe.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "0141a6b3524b87699331d3549be65c2394ec5e47f746007ed510099f4697c8a9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Combo_BombBomb_Atlas.png",
+      "resource": "M48Textures/1c0f450d1d465f67b22504788783743a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1c0f450d1d465f67b22504788783743a.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "ca95345bdf57bd0427a679457a3161e08d6cea543ada66ed9f70cd7ae07b7a8d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Combo_RocketBomb_Atlas.png",
+      "resource": "M48Textures/3d7de34c98b758748c38e9dbce266d90",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3d7de34c98b758748c38e9dbce266d90.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "4496f4f83f89845867a92b5e8982fdd926f100f5dae4224d77969a892fac6ac0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M04/Sprites/Rocket_Horizontal_Atlas.png",
+      "resource": "M48Textures/9089da0404f4518e8e5821eb7bdbc776",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9089da0404f4518e8e5821eb7bdbc776.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "8080cccb1b8055d52f4ee6329e4b0e6f80770b1097e547f50f435a21084dde17"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M04/Sprites/Rocket_Vertical_Atlas.png",
+      "resource": "M48Textures/52f8e7ab97045ba2aeb0f90bf4f7d0d3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/52f8e7ab97045ba2aeb0f90bf4f7d0d3.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "c55aabec93ceada2e3a3860580c583164ad7e3fe0b8f92db86a4cb357641a157"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Blocker_Atlas.png",
+      "resource": "M48Textures/01bd18731e7b500c814b5c72aa7d0f6d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/01bd18731e7b500c814b5c72aa7d0f6d.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "1407773c2a99d8197cdc4901df7dcbfa97b6fe60c91bb2a02f7536966b420518"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/StarFX_Atlas.png",
+      "resource": "M48Textures/627e039f46e15ab4a39563822cde7127",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/627e039f46e15ab4a39563822cde7127.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "9d05e4330be36ccf574b450e3c74fbcf1d9dc07b2d7a17b5c74bc99a5074d4e7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RocketBombBody_Atlas.png",
+      "resource": "M48Textures/4e23c1f127e25f0bad120fbad6387fef",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4e23c1f127e25f0bad120fbad6387fef.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "fa6744cd2ab18ba809af1f3b655c270d873159941c09309fe98c2c06b960c192"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RocketBombFX_Atlas.png",
+      "resource": "M48Textures/18db47fa86ec58518eae84ecdc89decf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/18db47fa86ec58518eae84ecdc89decf.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "99d18baa800b71eb19d32ed817bc6459db1d68080bac48aa45b2025037b69ff0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleBombBody_Atlas.png",
+      "resource": "M48Textures/0f4a2ed47a875d67b0b0fdce8d0f10a1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0f4a2ed47a875d67b0b0fdce8d0f10a1.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "709e681084bddf92cf324cb0fbd2a7d7774adb18bd7cbd80b6f1a2ca19f540e8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleBombFX_Atlas.png",
+      "resource": "M48Textures/3317dec880d65d3a9a7b84b866544ae5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3317dec880d65d3a9a7b84b866544ae5.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "3e34764f8991e8ec85888ff1cc9d85b56de28cd25faa95e286ea9325827f9fd0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleRocketBody_Atlas.png",
+      "resource": "M48Textures/3b69c0d418885110af0b9683d87ff741",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3b69c0d418885110af0b9683d87ff741.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "69637a542ee1dbac01d1fb0554fbf07b5c4a191a9b0a23f7590afe37b7cda4da"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleRocketFX_Atlas.png",
+      "resource": "M48Textures/6252e2937dc95c46abb9ffb5e057fb59",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6252e2937dc95c46abb9ffb5e057fb59.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "60d2a7482e9e58f5f0c5f591e9155f22db813eeded7f70ce2ee44c37a681cab9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainbowOrbBody_Atlas.png",
+      "resource": "M48Textures/5eef2a176c035fd0baeca7a5401859b7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5eef2a176c035fd0baeca7a5401859b7.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "bb29122f043a1f75296dfb77a3b60cbd31c6e75d98251d3dac852332c26af028"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainbowOrbFX_Atlas.png",
+      "resource": "M48Textures/359fa3274af35f08bbb1acd9ad14e7ac",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/359fa3274af35f08bbb1acd9ad14e7ac.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "9359ade97593535b5f63d5b549407e652d645cb3f17117b26e8af372bc6aebb2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainbowOrbImpact_Atlas.png",
+      "resource": "M48Textures/86f2f8091557552daa87214a7a281616",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/86f2f8091557552daa87214a7a281616.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "1d8c516e5af4e7a074c74c1973446c7430bb508154e4418717e3081da98169f9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbRocketBody_Atlas.png",
+      "resource": "M48Textures/649cd21905cf5872999238c3cdce6679",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/649cd21905cf5872999238c3cdce6679.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "0833e135c0dced41ef8acb74ca5acc55800d55cb7a69e7b58ef6ec5513f3edd8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbRocketFX_Atlas.png",
+      "resource": "M48Textures/0c0b11e52a145a4faf37426834e3dd29",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0c0b11e52a145a4faf37426834e3dd29.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "2113544df21f43aeb543b284693b781d93ed203df81325636fc8b5056e7ffef0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbBombBody_Atlas.png",
+      "resource": "M48Textures/6a505991e79b5b9b913a803841da65ed",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6a505991e79b5b9b913a803841da65ed.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "aaf974249971ff8c521e4a3616735d6f9fdfc0d3aa63eb2a7b51192a05c35625"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbBombFX_Atlas.png",
+      "resource": "M48Textures/73f3cbb38c615922ad39dd7ffe952178",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/73f3cbb38c615922ad39dd7ffe952178.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "0e693304085440f64b7ff4dca024a862a2a2832a475a4b0ef1e17e3c2384e00d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleOrbBody_Atlas.png",
+      "resource": "M48Textures/5b0fdb43a56f5ef7ad7d0429147349b1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5b0fdb43a56f5ef7ad7d0429147349b1.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "3b905c61b33768ee5b906b093448fd811bded7fc0865c3acf431b0e11d01f95e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleOrbFX_Atlas.png",
+      "resource": "M48Textures/6ad5688fa5ef5ee9aa9c4d0d941875d5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6ad5688fa5ef5ee9aa9c4d0d941875d5.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "7fad615dd955331c15bdaab2b75c3d7a05482ec4c0bafa234dfc0baf5b184daa"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleOrbWave_Atlas.png",
+      "resource": "M48Textures/fd609f3080c0539db8f5bdc2a7289fa7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fd609f3080c0539db8f5bdc2a7289fa7.png",
+      "width": 4096,
+      "height": 2048,
+      "rgbaBytes": 33554432,
+      "astc6x6Bytes": 3737376,
+      "sha256": "a6f76059b8f14fb8efa6370fdfe5b3812173e5b50292dbc353ff6b931d150c84"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerBody_Atlas.png",
+      "resource": "M48Textures/12e0128d50b15437ae6eafe7c82414c1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/12e0128d50b15437ae6eafe7c82414c1.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "aa7e9da453e279d323ddf3a9726b50d55806917f4a8b7d3b10d714b9db2ad628"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerFX_Atlas.png",
+      "resource": "M48Textures/4c4853d0c27e548ba431f60bfb2c40bf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4c4853d0c27e548ba431f60bfb2c40bf.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "3b1e4a830de024b2eb1f4404fd35f1230291dd986d18a406cbb2678a4ba3cbab"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerRocketH_Atlas.png",
+      "resource": "M48Textures/acaa1eb4ce455cc886a6b8592849e788",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/acaa1eb4ce455cc886a6b8592849e788.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "72d40184dd50f7c35ab5779c0ff9764c90bb732db6f1fe79a83134f7a02b9c57"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerRocketV_Atlas.png",
+      "resource": "M48Textures/6a2162fb7f3c50289eab7a04af98dff5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6a2162fb7f3c50289eab7a04af98dff5.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "dee0b86a440f76b75694188180415360177d9f54fbc221d120b11ba3df478c5e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerRocketFX_Atlas.png",
+      "resource": "M48Textures/853d0903869c5d2daca552f7f30ebaa6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/853d0903869c5d2daca552f7f30ebaa6.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "6518fd16155e302536c0246f91945da0e9c75691abf91012ace6d94297234868"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerBombBody_Atlas.png",
+      "resource": "M48Textures/56adffd341dd545f98c6b0399728644a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/56adffd341dd545f98c6b0399728644a.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "b2a7fecc45f1d46504643294741cea00529fdfcb4c8c0ecaccef0095cec2554d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerBombFX_Atlas.png",
+      "resource": "M48Textures/ec6080ea77325a61ab9f3bc6c03d97de",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ec6080ea77325a61ab9f3bc6c03d97de.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "6b0022dad760a76faa4cb2efbca0e3fcecb84086c9723cc782e13f7b5f5ea961"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleRainSeekerBody_Atlas.png",
+      "resource": "M48Textures/68c4a3f15fe25fdbaf68f1e99ef243cb",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/68c4a3f15fe25fdbaf68f1e99ef243cb.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "2bc195ce896997ca593cdade1da93e4af15b44f20e1e93c44ffc8c801618d236"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleRainSeekerFX_Atlas.png",
+      "resource": "M48Textures/398a005d7bbe5d7890ab69e5c9607264",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/398a005d7bbe5d7890ab69e5c9607264.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "00b6348ae248491cb47eaedb7c6913171390984a8766b43d50d4831467485886"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbRainSeekerBody_Atlas.png",
+      "resource": "M48Textures/d90b5b304d5f59ed8ef356d2f6dd083f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d90b5b304d5f59ed8ef356d2f6dd083f.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "bb2e0308380829434811bff575e14212b7295fb42b248db892ccf0765c7cb1ca"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/OrbRainSeekerFX_Atlas.png",
+      "resource": "M48Textures/fe7305e570865089a07fbb8295297bdd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fe7305e570865089a07fbb8295297bdd.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "b925c09f646b378181572d6ef1e7628751344f87d57ef0c6c4c190efbcdbf953"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/GoldenSeekerBody_Atlas.png",
+      "resource": "M48Textures/3dac8f35a8b5585a92c98bee1b615c69",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3dac8f35a8b5585a92c98bee1b615c69.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "cd4a8a0c441d6718e69fd8718840baf7535c5bb1ce643b0fb59d325904c7d276"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/GoldenSeekerTwin_Atlas.png",
+      "resource": "M48Textures/5799aadedba25831a0ef7cdb226989be",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5799aadedba25831a0ef7cdb226989be.png",
+      "width": 2048,
+      "height": 2048,
+      "rgbaBytes": 16777216,
+      "astc6x6Bytes": 1871424,
+      "sha256": "9e185d0eb11c41efe79685e8635e33f77812c5abafbd798f852f94443924dbe0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/crate_1.png",
+      "resource": "M48Textures/d7e8d64338895612832a74b0255049f2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d7e8d64338895612832a74b0255049f2.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "6799edeeb8370cc66ecf1c3a09f69732c67728cfb3421f603792b51931ff5efc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/crate_2.png",
+      "resource": "M48Textures/501cb74ecf3a5dcbac2f624f5803ee66",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/501cb74ecf3a5dcbac2f624f5803ee66.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "012b373abac1512502b4eecfb5b8737945de579d707ca472ba4075ef5b5087c6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/crate_3.png",
+      "resource": "M48Textures/81abfa3a8716503f8755061a33289275",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/81abfa3a8716503f8755061a33289275.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "b7f1d9152b1ba2dbfcf87032f0b966ac2ed182d3bbd02dabc6917cc06274c9db"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/moss_1.png",
+      "resource": "M48Textures/083231d7963b597da6461cb36d919937",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/083231d7963b597da6461cb36d919937.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "4262a9434bdf10a61c7e84a102e0c095786b4fe86a045cd849acb8078b9437dc"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/moss_2.png",
+      "resource": "M48Textures/11f5fac5d3dc5315939f7b9fa84e573c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/11f5fac5d3dc5315939f7b9fa84e573c.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "cb9d0bdadbe74cb2324f39a16568a1e8f46155624af91292750bd8000485bb79"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/stone_1.png",
+      "resource": "M48Textures/2378982bbb475e0bbb988bbc596d215b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2378982bbb475e0bbb988bbc596d215b.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "02afb60faebcb21be6caf101813ad831d7269af03b86db12e56f74cb90cd7fd0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/stone_2.png",
+      "resource": "M48Textures/47b17ff1ea0b5e819a253413319ef5a4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/47b17ff1ea0b5e819a253413319ef5a4.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "f36c1d5bb24c6e2e0c905631f72efec431e4df87e21a1780b99ad9951b110618"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/stone_3.png",
+      "resource": "M48Textures/b0fef9587b5859988ce6427d02bb0307",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b0fef9587b5859988ce6427d02bb0307.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "28a2213f9741fddf8b1ef4b764b1a07d1051ebae13174d52417d85502fe63fab"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/pail_Full.png",
+      "resource": "M48Textures/8c77866528875476ae675f598de7ee08",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8c77866528875476ae675f598de7ee08.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "26268b10981523cca188791059ab168ed9ba527a9a2d11f283661320437ef07b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/pail_Empty.png",
+      "resource": "M48Textures/55e1a9d4048d541b91419af6b9df3156",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/55e1a9d4048d541b91419af6b9df3156.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "26268b10981523cca188791059ab168ed9ba527a9a2d11f283661320437ef07b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/case_1.png",
+      "resource": "M48Textures/8cd7343413635bb0b9ea14fdd1f2166e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8cd7343413635bb0b9ea14fdd1f2166e.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "fe904b020321151126a43f3b1eeb65b4eb564b205d256c74ae3b3dcbd214a685"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/case_2.png",
+      "resource": "M48Textures/a6a43eec1d245e5c8dc6fb876aa18894",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a6a43eec1d245e5c8dc6fb876aa18894.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "89d1ab9578417038b9ab590ad2d2170dc02d25d6310ff0d093f2431e4616f2aa"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/gate_1.png",
+      "resource": "M48Textures/4d383ac543d25afa955d36169ff47587",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4d383ac543d25afa955d36169ff47587.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "3ea1cb6a2af4f5ff620612488fe83b57a3e87e3752bfa74fda5d8c13c267bea2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/gate_2.png",
+      "resource": "M48Textures/bc9d6324f6535233a4240a4a0f6ee1ca",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bc9d6324f6535233a4240a4a0f6ee1ca.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "67810473286ee1abca7423d00f8782777f0556f4d191b5c4852952502ab64b2b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Lantern_Gem_V2.png",
+      "resource": "M48Textures/e17816c24d815a308c13f6b045bed3aa",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e17816c24d815a308c13f6b045bed3aa.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "2ddf9374c11aca255133014881657ee09a4f91b5f040f15fd7fad511e3435333"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Leaf_V2.png",
+      "resource": "M48Textures/0131e6eea9585125b54cdf904db6dc4a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0131e6eea9585125b54cdf904db6dc4a.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "be68da01d613967fcf4620cb8c7dc611dbcb5cebd8a831209e7c51bfe53ab750"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Ribbon_V2.png",
+      "resource": "M48Textures/52f9d7ce752657ee86e7884d8ae4d271",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/52f9d7ce752657ee86e7884d8ae4d271.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "b89a300f226880c44b87c675649d9ee6201a2c4096c177685a7bee787bb117e1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Stone_Rune_V2.png",
+      "resource": "M48Textures/e8628db9872c5418836ed8d99afb3072",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e8628db9872c5418836ed8d99afb3072.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "76d9dc979d35f9399e3479372a43d71159b3823f8b7f1da54d08058cf369f926"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Sun_Shard_V2.png",
+      "resource": "M48Textures/d7e33e5ca0375406a5f1ab0108e98aac",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d7e33e5ca0375406a5f1ab0108e98aac.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "b9752fafd371bca682663083b978c382c19edf0c7a336197602e637e952aa417"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Tiles/TILE_Water_Drop_V2.png",
+      "resource": "M48Textures/c2de4f2020235a648ebf03e95bfebb16",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c2de4f2020235a648ebf03e95bfebb16.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "4d283bfebaa632e481c0853760ecfe737a800e09867aa80b74327cc0aecb3f93"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Boosters/Art/Hammer.png",
+      "resource": "M48Textures/3b83193b2e2153809f45f5ebf57ee9ff",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3b83193b2e2153809f45f5ebf57ee9ff.png",
+      "width": 1254,
+      "height": 1254,
+      "rgbaBytes": 6290064,
+      "astc6x6Bytes": 698896,
+      "sha256": "d55f05a0a17ccd723c583943ffb955274bf73950ec156ec906c3598f68a3ff9f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Boosters/Art/Axe.png",
+      "resource": "M48Textures/261e8f30056654fab60e04fef6bde457",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/261e8f30056654fab60e04fef6bde457.png",
+      "width": 1254,
+      "height": 1254,
+      "rgbaBytes": 6290064,
+      "astc6x6Bytes": 698896,
+      "sha256": "2e626857644844f34d6791625bc18f9bbdccca2daca5338f3955335ad1ee92a4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Boosters/Art/Ram.png",
+      "resource": "M48Textures/e0d1655f7f4c57448f9fdec274867a0a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e0d1655f7f4c57448f9fdec274867a0a.png",
+      "width": 1254,
+      "height": 1254,
+      "rgbaBytes": 6290064,
+      "astc6x6Bytes": 698896,
+      "sha256": "33f77fe87ce8591ad7f5e8f69959bc403a61c74b2f0ba43ce57250e4a22be760"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/Boosters/Art/Atlas.png",
+      "resource": "M48Textures/0dcacbe2fc475380a4766bd1153863b5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0dcacbe2fc475380a4766bd1153863b5.png",
+      "width": 1254,
+      "height": 1254,
+      "rgbaBytes": 6290064,
+      "astc6x6Bytes": 698896,
+      "sha256": "2eb2fcab7258bc7ae7fa184ab5239fd97b938568759bfc6742aa34bf48fb432f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_0_00.png",
+      "resource": "M48Textures/4087c6e222505c2aacf432560f0ee17b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4087c6e222505c2aacf432560f0ee17b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "37b11b68a9807669bef4dd26fae26d00491a32f82312b09bc5548db4ef13f1df"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_1_00.png",
+      "resource": "M48Textures/e9dbfa7e681b5e2dbf975d2ba63b0936",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e9dbfa7e681b5e2dbf975d2ba63b0936.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "ba4dacf4c8911ab6858a25472044ae6b6b70ff5cbe769b519cc371d736cdeef9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_2_00.png",
+      "resource": "M48Textures/35556b39753b5052a67e1dbab880074a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/35556b39753b5052a67e1dbab880074a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "702c0129f4289c8c9df10bcecb21b50283a34991552822436240cc89354481f8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_3_00.png",
+      "resource": "M48Textures/b99e4efcc0e656d8b8a132281a80f946",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b99e4efcc0e656d8b8a132281a80f946.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "52413858632312ca1ff51464e4315e5b43f367e21db7790ac71f58cc6b022d43"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_4_00.png",
+      "resource": "M48Textures/7a034e3c54ad536da045d908fbb36fe6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/7a034e3c54ad536da045d908fbb36fe6.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "063d7b182569797f91a99d23ff6d3cba022afb4029ae17542634ebf08858b9c7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_5_00.png",
+      "resource": "M48Textures/2ab3077d16eb5f4497fbcd44e767ec1b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2ab3077d16eb5f4497fbcd44e767ec1b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f93618d9b521be094c19a51a447ff8197b36856719c470997a89e3f828a6104a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_6_00.png",
+      "resource": "M48Textures/65d7d5b41abd5c59abd785e50abbf2cf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/65d7d5b41abd5c59abd785e50abbf2cf.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "bc480190d5750f0c90a586f561933562745291fce671e3084c5f6ebcec572e48"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Wood_Tumble_7_00.png",
+      "resource": "M48Textures/2294735bcd1a59e7a78bcf9f5903fc96",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2294735bcd1a59e7a78bcf9f5903fc96.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "ff2809ab69bab788279a7a289422c6c069988c1715cc5748418d917f5a899103"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Star_Accent_00.png",
+      "resource": "M48Textures/ce21e6782008565d880aca407c90abf7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ce21e6782008565d880aca407c90abf7.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "70a09751db83419bcc9c96c072e9874feed7de0f9d1ab9cfcec81583cfaf2945"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crate/Star_Accent_01.png",
+      "resource": "M48Textures/5e4dc94b94a15df88d1e028b1aa04fd8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5e4dc94b94a15df88d1e028b1aa04fd8.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "59141e9a74fea7b8e5ccee9078846a0efaaab2e3628f0fd0f6c472b4c1ca8322"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_00_00.png",
+      "resource": "M48Textures/74e20a1226785961811e54fd57b56b16",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/74e20a1226785961811e54fd57b56b16.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "0074bf9730a90c12599d9ce0e6303298929e8eb3c215440d2818e6caa7328f8c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_01_00.png",
+      "resource": "M48Textures/e7954f9bd73d5626a14e3bf12ccdef7a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e7954f9bd73d5626a14e3bf12ccdef7a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "71f5eb265ebcee34bec63960121950c2d20c95f5d2da1e8b9135f676b4cc0f88"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_02_00.png",
+      "resource": "M48Textures/1370f90f38b65554b2094d8d3e1a3cd5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1370f90f38b65554b2094d8d3e1a3cd5.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "afbdc06d074905f9cd7c94843e7914a28cc9d64aa4dbb793cb89bb4c6d8e5688"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_03_00.png",
+      "resource": "M48Textures/1c60d1c3fa315142819e999ffc02f246",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1c60d1c3fa315142819e999ffc02f246.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "9ebcd5b0caa4fa991901b8cca34dc974b796413a2ee473a6a0e223240a3ca1ee"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_04_00.png",
+      "resource": "M48Textures/417e5eba464357b1acabb38fb71390a8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/417e5eba464357b1acabb38fb71390a8.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e316d2f9e8318108d23c3fae85f41e8a6350a53bb615f82b1eb38cf4aff961f2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_05_00.png",
+      "resource": "M48Textures/5f4ca8af66d9571d93487a3510d0eac2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5f4ca8af66d9571d93487a3510d0eac2.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "faff3015753660a0dc5cea00cdbdb096c42db2424a16a9c8dfd84b3ec019acc2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_06_00.png",
+      "resource": "M48Textures/e4f6bb1a36aa5abc96f88bcd075a909a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e4f6bb1a36aa5abc96f88bcd075a909a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "7d5c4a1e0a2e21bc73898ad496fa2b848c07e1064aa210770544ae0df258ffb2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_07_00.png",
+      "resource": "M48Textures/cd5fecb1ec4e53049827a8db681fbe40",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cd5fecb1ec4e53049827a8db681fbe40.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "b14f3b4612cbfcc398f362fbffc6d8673543c5101e9a2e3b2707694cd857cca5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_08_00.png",
+      "resource": "M48Textures/8d801fc0930e51eea8487ef4ce55333f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8d801fc0930e51eea8487ef4ce55333f.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "216cc2e43dbe1e9227fe55ee1a32a6da0943573cb117c1603d6edd7094490e48"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_09_00.png",
+      "resource": "M48Textures/e7c57c4574e95dadb2960d70ad38c806",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e7c57c4574e95dadb2960d70ad38c806.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "640eae95e92fafb22657b8e7eb7fd8e2c0ead72bd1a65668dc922f4e0fb4efa9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_10_00.png",
+      "resource": "M48Textures/2a4fb29a24435740926e92e91c174ba5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2a4fb29a24435740926e92e91c174ba5.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "a464def29398c9269ba7efd2843495aa819022de7e3413ce15e0ce9ef3d61a36"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Tumble_11_00.png",
+      "resource": "M48Textures/3357fe5f71165000a3704822a206a60a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3357fe5f71165000a3704822a206a60a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f19f052ee3faae628d9e79c1f8c223c1b44f369c773ee24207d2d1f3a6b652d8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_1_00.png",
+      "resource": "M48Textures/c422e659059f5cb6919a1477b06a3b82",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c422e659059f5cb6919a1477b06a3b82.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "3ffeea0e01639202f4291c8301bee62979aa41f45f1c6013f3b6f93b7a72cdec"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_1_01.png",
+      "resource": "M48Textures/38f5e967783057ac919299b059cdb96b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/38f5e967783057ac919299b059cdb96b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_2_00.png",
+      "resource": "M48Textures/2d0e81a5817d5ab6abbdcac9923245f5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2d0e81a5817d5ab6abbdcac9923245f5.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "479ba647722c241d8af5c470bd2a33d9926a22fce9fb9b2583cc8f17f9187770"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_2_01.png",
+      "resource": "M48Textures/0c50cf6ce2a55bf7af2bba95c928e562",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0c50cf6ce2a55bf7af2bba95c928e562.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e22d619e25676d1433e99887a9b26df24de07e2298099eea2d3c2857817199a7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Reject_1_00.png",
+      "resource": "M48Textures/3cb1aaae70b753e1976cdf4c0497453a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3cb1aaae70b753e1976cdf4c0497453a.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "c846dc539a311e8757002227027bbe7522262f2d2e178dcb2b986a2b856afaff"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Reject_2_00.png",
+      "resource": "M48Textures/f0167c5b4f1357d9bb70edf8fcc48ec3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f0167c5b4f1357d9bb70edf8fcc48ec3.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "dcb5faa40a3cb86e486ea5e8af0364e99390042a6195be06eb09bdc7cc10997b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_Accent_00.png",
+      "resource": "M48Textures/e1f93abfbc8a5d95a736ac6b744ba9b6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e1f93abfbc8a5d95a736ac6b744ba9b6.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "97db507961b74e2dbad1caf8a87ee08ab65c048116142f850af63dbcb522c638"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Hit_Accent_01.png",
+      "resource": "M48Textures/45606b5c5fbf5c9384b0c8b72e6756e7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/45606b5c5fbf5c9384b0c8b72e6756e7.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "17850eb6928abd60361a7ea7a7b97aa1ca0bf3dda0e6d40ee82f9c3eeb85ed21"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Water_Release_00.png",
+      "resource": "M48Textures/0a2187843c335ce2bf09c6242460842d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0a2187843c335ce2bf09c6242460842d.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "bf9ec067a6006733fec8913cae6f265bdf6a16f300fc536c76564e20e0401817"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/gate/Sluice_Water_Release_01.png",
+      "resource": "M48Textures/fffa6e2911d6586d9730a6e89cd052d8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fffa6e2911d6586d9730a6e89cd052d8.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "f24b90a17ea49550768722a191fe0d7b3a59ac62f7a283972da325dec205fade"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Idle_00.png",
+      "resource": "M48Textures/12c4f1f6333d5a8c897141def5163a87",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/12c4f1f6333d5a8c897141def5163a87.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "5f4ec38c84ee41ee77589d8f6985ed8fe1fc0b089f6c688128ecc924551a3bcf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Idle_01.png",
+      "resource": "M48Textures/63634055b7b657c19458d93c191c24ed",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/63634055b7b657c19458d93c191c24ed.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "5f4ec38c84ee41ee77589d8f6985ed8fe1fc0b089f6c688128ecc924551a3bcf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Idle_02.png",
+      "resource": "M48Textures/bb5138daf823565f87379b6136264dfd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bb5138daf823565f87379b6136264dfd.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "5f4ec38c84ee41ee77589d8f6985ed8fe1fc0b089f6c688128ecc924551a3bcf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Fall_00.png",
+      "resource": "M48Textures/fa7e6610f84c5604adc519680395b63a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fa7e6610f84c5604adc519680395b63a.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "073325d742116cec373162e2b01e429ab8dfaf8051e7c4a72811bd825f42395d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Fall_01.png",
+      "resource": "M48Textures/0a95e674c68f5b5f981cd24cbbba1d98",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0a95e674c68f5b5f981cd24cbbba1d98.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "1e78b471ce6b025989434ed82555cf535dedb2178ad90910f2a404ab9949905c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Land_00.png",
+      "resource": "M48Textures/e2f4d1bee21d5842ac38c356076d8a4c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e2f4d1bee21d5842ac38c356076d8a4c.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "1d861c21d46dafc1044d50f307a0394f645647a47753aa76355a993ca591a147"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Land_01.png",
+      "resource": "M48Textures/20e17fee03d2515b9bcac914632f33e1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/20e17fee03d2515b9bcac914632f33e1.png",
+      "width": 512,
+      "height": 256,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 59168,
+      "sha256": "90227afcf98ff614e9a6f187d26659ec1a60526efcfe7a3c0c74bed2af962605"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Impact_00.png",
+      "resource": "M48Textures/513d4fdf2e5a5d2495bbc25cc44eb2bf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/513d4fdf2e5a5d2495bbc25cc44eb2bf.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "e4b93d4b44008680bb961803da235429eb8fa4617d505686570de40bbdb147f5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Collect_00.png",
+      "resource": "M48Textures/8a0717c5aade588181446f0282ae757a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8a0717c5aade588181446f0282ae757a.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "74a617b91c7480da66082c156bb7724fbc8a53ba24ac3fc5a11a2aebced8bca8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Collect_01.png",
+      "resource": "M48Textures/54e1b0e66844561c94c08988928aaa0c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/54e1b0e66844561c94c08988928aaa0c.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Landing_Splash_00.png",
+      "resource": "M48Textures/dfd56e797dc252afa98bc2ffddf39227",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dfd56e797dc252afa98bc2ffddf39227.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "c57df9deda32e2528b2e517c6547f7837ce31c16a223e4152b6b01b475bf122f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Landing_Splash_01.png",
+      "resource": "M48Textures/2fa7638544d15297a11f10a58c3d1740",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2fa7638544d15297a11f10a58c3d1740.png",
+      "width": 512,
+      "height": 256,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 59168,
+      "sha256": "3a5068c450294fa2a384aec7ffb13218eb8464f7649d58a47eeb2e628dd23e33"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Collection_FX_00.png",
+      "resource": "M48Textures/61e947e9f031599f916a572c4f685e6b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/61e947e9f031599f916a572c4f685e6b.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "8153b457e9459b767e7940513a5c7d0c869a47a46860c288d849313f914e6182"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pail/Pail_Collection_FX_01.png",
+      "resource": "M48Textures/5a87ed9fa2d65c7985c6505a19b16cae",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5a87ed9fa2d65c7985c6505a19b16cae.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "8cc9c54a78a0231ff80590029399d8ef21c466391647c12954a507ee01bf1545"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_00_00.png",
+      "resource": "M48Textures/5db8a378932d5100a6296fabaad18126",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5db8a378932d5100a6296fabaad18126.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f7512a8a63e5b4291358348f30482663ada60cc84c746ba47a334d2dcb4ad81c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_01_00.png",
+      "resource": "M48Textures/61df5c4084de5823bf7c48205c746c54",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/61df5c4084de5823bf7c48205c746c54.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "b4f6753764498f1cdc23018be92f1da6d18883ab2accfaf5491b2ab2af5e9b02"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_02_00.png",
+      "resource": "M48Textures/1623beeb50225694ab48a63052b36810",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1623beeb50225694ab48a63052b36810.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "ecd385851896231ac9398a719128c5b535999bf5077a73d996ab707b9c614006"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_03_00.png",
+      "resource": "M48Textures/634925b858815bd8aef5c4b9505f3923",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/634925b858815bd8aef5c4b9505f3923.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f8d88967b2647eb6c09c3e32dd6b8895d5db21c73d0f77e77ed00d4415aaafdb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_04_00.png",
+      "resource": "M48Textures/19ddc86d21e15da1afb0bd20e5d52bd4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/19ddc86d21e15da1afb0bd20e5d52bd4.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f5d1fe9f98dc0d4d1ce290d8ef8aa10f46fa35b4742ce9be1b7b97dd116007bb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_05_00.png",
+      "resource": "M48Textures/ca72133726bd5d0a876de2cd698d236f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ca72133726bd5d0a876de2cd698d236f.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "baf8155a4c0bab155167fc4c2105b5ba6fe4797173aed93ed412d9283d47d964"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_06_00.png",
+      "resource": "M48Textures/1f31fe0e24b651a48330bc143167e6f8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1f31fe0e24b651a48330bc143167e6f8.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "5a90060624c559ca35ae43a840cf148cdf6d2a0761dc3f6a31adcf91580ce350"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_07_00.png",
+      "resource": "M48Textures/6402aee08e9d51d2805374f7d8113b45",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6402aee08e9d51d2805374f7d8113b45.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "3ea41273dedbcbebe86a2cdd6edfa4b7f4aa7aeb2ac6ff0cb10eb83e29fc081d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_08_00.png",
+      "resource": "M48Textures/0bd9d0ad50585472b3dce6aad71870e4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0bd9d0ad50585472b3dce6aad71870e4.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "d86c36dd07bd43f98323d7282d871b0249aaf3a57b126c89039ce9ab01cf06fb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_09_00.png",
+      "resource": "M48Textures/613fb8aa27645485bf00bc2a42afd641",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/613fb8aa27645485bf00bc2a42afd641.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "2e82efeb03c281d9a1336f574a2dd9dfcc19be6eb57a4ab5552f83049d215cd7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Tumble_10_00.png",
+      "resource": "M48Textures/f7d236ad4c515951ad365b10c0636cf6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f7d236ad4c515951ad365b10c0636cf6.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4f248279c1096cebe30f09da41de90ab10e87ff9acab60996bb58d980e373903"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_1_00.png",
+      "resource": "M48Textures/cac11a9ea6e4566ea6c9fa9e9873669f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cac11a9ea6e4566ea6c9fa9e9873669f.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "148813a6d301d76a4ce9f58153e00d575b2fb286b2df17fe49905512cf795bbd"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_1_01.png",
+      "resource": "M48Textures/e72af3d816cf59a6abec32d62e7fe8fc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e72af3d816cf59a6abec32d62e7fe8fc.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_2_00.png",
+      "resource": "M48Textures/259e9c9d2f8856b6baeb923ef2cc9a2c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/259e9c9d2f8856b6baeb923ef2cc9a2c.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "356b37f410072673e457fbd222cc22bcd27df521571c5376f2b2924e381ebf57"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_2_01.png",
+      "resource": "M48Textures/19117ac8df1350ce97edbef2e5f7e2d2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/19117ac8df1350ce97edbef2e5f7e2d2.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "d283ca6d0b405fbe09e54ebeb48a0cb3832c81897232b66a864db7bd02cecc96"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_Accent_00.png",
+      "resource": "M48Textures/9ff21a85ee1752c7820ba0e5755f2d58",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9ff21a85ee1752c7820ba0e5755f2d58.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "1abf8d86b0a718cdf4dedf122c7704f5a0f80b328a71ab66c66ff6914a4b29c6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Hit_Accent_01.png",
+      "resource": "M48Textures/2a8ba7226afc5a4dbe0c437da9cb47ed",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2a8ba7226afc5a4dbe0c437da9cb47ed.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "73888c6611baa1113b980d4ac872a3b042c5dfdfa98042dd2b119fd56dc2029e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Clear_Accent_00.png",
+      "resource": "M48Textures/b309f98024595ee6a2216e1cfb472657",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b309f98024595ee6a2216e1cfb472657.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "299888a7e598972005d57321f74336d63623c8ab82a074b53f4e985bade5a53c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Clear_Accent_01.png",
+      "resource": "M48Textures/1c8950525bfd5822a80eed8c629dc557",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1c8950525bfd5822a80eed8c629dc557.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "a382b1f8d695c3db72ae38bdd1d0ee4cde6be2e8b47abbe2a12cba1d809e7240"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Grow_00.png",
+      "resource": "M48Textures/dbc344eaff275e6fab70d372a1535513",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dbc344eaff275e6fab70d372a1535513.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "10ac77fdff7b7e810611b0337cc8cbda38c8a1a499b5dafa5a8963395917e18d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/moss/Overgrowth_Grow_01.png",
+      "resource": "M48Textures/b7bcc8b2848c5d46b38b71eaeeb7a762",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b7bcc8b2848c5d46b38b71eaeeb7a762.png",
+      "width": 512,
+      "height": 256,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 59168,
+      "sha256": "3eed567bb6d641f64112c43a85813a0bba49eddbfc9ba6ca6e3f0dd183bd0c1f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_00_00.png",
+      "resource": "M48Textures/4cbb492fbf765957a8aea313d6d0947f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4cbb492fbf765957a8aea313d6d0947f.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "83877c0df22ca245e37067d0e210aa25a3dcd5fbc6a26d44a8e232889eae2d91"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_01_00.png",
+      "resource": "M48Textures/dc1fbbf93ab35f0cbb55898605e82609",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dc1fbbf93ab35f0cbb55898605e82609.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "c9ec9f9ba40b7266eb771b3c73c6d6873e8eeb41625991d11c9bb0a8c182a6d6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_02_00.png",
+      "resource": "M48Textures/0917d9e9510d5f70aa17ac231a5122a7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0917d9e9510d5f70aa17ac231a5122a7.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "fc3d6752b06e2eab296a1367b1823fe863ba6493b6c3c20d9057924ebd5d2ce9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_03_00.png",
+      "resource": "M48Textures/c7e553ee4f4352089cf3d8f948b60852",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c7e553ee4f4352089cf3d8f948b60852.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4546cc04ad127e979e37a892958e771396b13f751d60b62439a561812e0f0d31"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_04_00.png",
+      "resource": "M48Textures/3d85b04d8725589cafd582914c7b4f9e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3d85b04d8725589cafd582914c7b4f9e.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "0e72cf73d96bc355262d37575ca176419a97fcc96d6a4d7d166abe04f612a6fd"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_05_00.png",
+      "resource": "M48Textures/a14721bf215d5f55839005847aed22b3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a14721bf215d5f55839005847aed22b3.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "0be51097121ef26abd9b595676b0ffaa5593148f47900f9133febf3010e9926a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_06_00.png",
+      "resource": "M48Textures/170b0b23b4ba5f8a9714d94036fb7af6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/170b0b23b4ba5f8a9714d94036fb7af6.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4eaa0164c20c4cdf49ed1fb428d7490ae4f4daf9525f20abd151b561ba9e8be7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_07_00.png",
+      "resource": "M48Textures/d1216673d9025382bd0ed53808ff086b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d1216673d9025382bd0ed53808ff086b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "11691f8d5a84745871dd2645451cb97ea1dc634bf263218f9d07cc01af9ec737"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_08_00.png",
+      "resource": "M48Textures/e2f3836e524b596399b04713cf3098a4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e2f3836e524b596399b04713cf3098a4.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4f7951e3a889eef8058850e9e29af6006ea46cd1cfdbb13e51bb7e29e3422c71"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_09_00.png",
+      "resource": "M48Textures/f0ec6f4e6a985450bba8ff6b93be433a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f0ec6f4e6a985450bba8ff6b93be433a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e26e37f51efdc7d59196bdb4d9045d0d8db32bc36905824c37fcc7f8978af429"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_10_00.png",
+      "resource": "M48Textures/6e8b1e42e9f658f7ab60b56d36d43cd6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6e8b1e42e9f658f7ab60b56d36d43cd6.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "ff7a72b725396ad50b46471a3930763441149337a056785ee5ecc64d6b6e92d0"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_11_00.png",
+      "resource": "M48Textures/3b2255a908985ee7ad58057a0a17c124",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3b2255a908985ee7ad58057a0a17c124.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "1c7d333dc75109ad198421fb641d98e64b681e882457024dd99d30d46eefaebf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_12_00.png",
+      "resource": "M48Textures/451742e57a9358719e4c49a351407c11",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/451742e57a9358719e4c49a351407c11.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "374c392ca64899717aec8814e9f4ad13957594e6fc32647cf03065a229874e46"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_13_00.png",
+      "resource": "M48Textures/a4b30c0140cf5f33ab1ffb3c8a224833",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a4b30c0140cf5f33ab1ffb3c8a224833.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "6d0565ff3cc18adb96bb6e64c70d1a89a2a8985ad1c006a65cc81549a7b3f74f"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Tumble_14_00.png",
+      "resource": "M48Textures/9b3dfd12941c5220a1075eeefb56964d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9b3dfd12941c5220a1075eeefb56964d.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "1daae5c064fae1a60d499f813749f9574ecb5eb3d5692e287020142dfc48bbce"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_1_00.png",
+      "resource": "M48Textures/9d403c10b3545bf5b13728e5a2724852",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9d403c10b3545bf5b13728e5a2724852.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "c615ce07e3e3fe5f9d868b43d4c9ff74351aeaba0346680b15a60b1126f6f2d3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_1_01.png",
+      "resource": "M48Textures/66125963f1d9555ca5986637a8685817",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/66125963f1d9555ca5986637a8685817.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_2_00.png",
+      "resource": "M48Textures/1ccfb3e5d9eb597fac30ac6c61113665",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1ccfb3e5d9eb597fac30ac6c61113665.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "6b108f9159ebf470f2d412e4875f95e557a94f0fbb60ba4c46a259622265cbd2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_2_01.png",
+      "resource": "M48Textures/5a7feb1128ae52dd815d64f83fd7666e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5a7feb1128ae52dd815d64f83fd7666e.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "1182fe80f6c8e2f7e28b822a8030660ca98ad6aa170e421e981be8bfb6f475a8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_3_00.png",
+      "resource": "M48Textures/fa7274b6ac895d2faaf4b22bb076995e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fa7274b6ac895d2faaf4b22bb076995e.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "3afb5e07896d8061c49511acdbbd4e8e3c8c237c18c99e27723a6b4ef9120bdf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_3_01.png",
+      "resource": "M48Textures/2d5265bd720f5eac869f01e630bd5a62",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2d5265bd720f5eac869f01e630bd5a62.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "7a9ab44237467fc3762e860841e896b4c4f999ea1b28fc4b28500e454bdef280"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_Accent_00.png",
+      "resource": "M48Textures/796274be62135e628b030d7059974d8e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/796274be62135e628b030d7059974d8e.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "048bf0432bcceae398f5afd26fbcbc6f639d31f0cc5698a6dbac5f419e0bde69"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Hit_Accent_01.png",
+      "resource": "M48Textures/87eda1fc26b7561e88f46808409b72a1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/87eda1fc26b7561e88f46808409b72a1.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Clear_Accent_00.png",
+      "resource": "M48Textures/41c67aca4a8050d8bafb305ec455565c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/41c67aca4a8050d8bafb305ec455565c.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "9a7a64372ccf55d049ffbd58e40466167e6dccb6f0ed54fbe820c225b46929bb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/stone/Stone_Clear_Accent_01.png",
+      "resource": "M48Textures/8e8b7d714de05d0ab43dd2b0a2f15d8d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8e8b7d714de05d0ab43dd2b0a2f15d8d.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_00_00.png",
+      "resource": "M48Textures/67c770a30f295c9dabb35ccaa5b50638",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/67c770a30f295c9dabb35ccaa5b50638.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "6290001312971da81d709846011c5855fa51122da1b851163b845b3bd8f9693d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_01_00.png",
+      "resource": "M48Textures/cb61e864ece552d6bd4669c550c5b3d1",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cb61e864ece552d6bd4669c550c5b3d1.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "c18d0678c4a0caa97a7f6978922c3eb202b3c2ffebdc9ba0c3c03d1c7e30cd6e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_02_00.png",
+      "resource": "M48Textures/a3ee6031bb885b88abbbdfb12da2bcbc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a3ee6031bb885b88abbbdfb12da2bcbc.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "a55eae3c7c27d1b3001d8e3c53dc67e0005699151185f8cdd145507bd2ea2b22"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_03_00.png",
+      "resource": "M48Textures/ca256b46ef495758921d2015cde165ef",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ca256b46ef495758921d2015cde165ef.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "ca7fd3bf4861e26a4dc7d77b0429b4c7f3a548af2ce43dcd3f80aa80cbf82d70"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_04_00.png",
+      "resource": "M48Textures/ad9d2994a9d65e62b1fd2709c92773af",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ad9d2994a9d65e62b1fd2709c92773af.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "bf4b549bb6a702bfa1ffc88d5208fb5b2ca846eae8d0c3f4b4ffc6becae03aa1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_05_00.png",
+      "resource": "M48Textures/5e827fe943ec5c80a4b8f007b74b0d19",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5e827fe943ec5c80a4b8f007b74b0d19.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "7e17a3cd0112a1b882ad7967dedfc81d3c7f8843802bdab83c2a4b8730d3fa32"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_06_00.png",
+      "resource": "M48Textures/266d651f127b52cbbe18d1c591151c12",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/266d651f127b52cbbe18d1c591151c12.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "42b54054245a503b4dda91535f9e3e190489962193f883558bc0d815caeff282"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_07_00.png",
+      "resource": "M48Textures/fe45e0623d025421bf143c28f69c51ef",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fe45e0623d025421bf143c28f69c51ef.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "c46252bb93ca3f120ab755ef6e9d2d41ffe0d9a2f76bd354459152a27d283c96"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_08_00.png",
+      "resource": "M48Textures/2e352875194f5f2db90931dc91051203",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2e352875194f5f2db90931dc91051203.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "8e5a2af271c522a4efe27708d17e02fd41787e91d68e14f192ae985670ab0df8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_09_00.png",
+      "resource": "M48Textures/e6afec1e276c593a8ecc9747b1b34952",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e6afec1e276c593a8ecc9747b1b34952.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "02172780f366a4dbd6b342916308abcdf298d28ac97392c88e85704a5b4b4f7c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_10_00.png",
+      "resource": "M48Textures/64ef126ca401534ba504bde16e34cffc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/64ef126ca401534ba504bde16e34cffc.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "5fa83ff2218cf8b0ba139b115284f13829ef78e15b017f2dfe5a35c454fc665d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Tumble_11_00.png",
+      "resource": "M48Textures/1811970404465420a2f503013d7c3ff4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1811970404465420a2f503013d7c3ff4.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "67ff7245e046e42e993ca4f832e66b586a718a3010921639fec06d195c276840"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_1_00.png",
+      "resource": "M48Textures/75397323d08250aaab21ac9011159919",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/75397323d08250aaab21ac9011159919.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "fed8ed0020a244263b14c3b5bc9eb3db69d355f4f06b2c14aea0cc659e57d071"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_1_01.png",
+      "resource": "M48Textures/1ef642512a885d8fb3c022bf81a8a040",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1ef642512a885d8fb3c022bf81a8a040.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_2_00.png",
+      "resource": "M48Textures/314077da8d6e5ac89b707ede07197b40",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/314077da8d6e5ac89b707ede07197b40.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "5b76aa001208376108d58a0cfecad53755145d4d0e192fb63f734f141218abb7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_2_01.png",
+      "resource": "M48Textures/4a6a7da4e1c65ded9526a9731b45c267",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4a6a7da4e1c65ded9526a9731b45c267.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "21ca8c6db8ca709a972de9dd3fceee7ccd19f833ca3897cd3b999c2f4c2f8fb8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_Accent_00.png",
+      "resource": "M48Textures/468050b419cf51eaa8c962bd6afe6218",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/468050b419cf51eaa8c962bd6afe6218.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "de6f8bef3cd5a4c718b94d2300e73e4f56a955e0f0931d9da51dcbcddfc69c39"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Hit_Accent_01.png",
+      "resource": "M48Textures/cfd9c92236ce5c9199581023a0ddd170",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cfd9c92236ce5c9199581023a0ddd170.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Clear_Accent_00.png",
+      "resource": "M48Textures/f076d18bc86d5652b2580d3bb62e93a4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f076d18bc86d5652b2580d3bb62e93a4.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "8a3da5c5f3aafa8604868940e13229a55e97261f4d20727ac2ef0a28b1b193df"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/case/Case_Clear_Accent_01.png",
+      "resource": "M48Textures/90fde35dc35c506d984b83272782084c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/90fde35dc35c506d984b83272782084c.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_1.png",
+      "resource": "M48Textures/fc1e84fab96b5df3bac7bff6706a9890",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fc1e84fab96b5df3bac7bff6706a9890.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "66ad59c1ddc104326d80f08f9fa96f4c8e84452b3ba25db8078994c52d479624"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_2.png",
+      "resource": "M48Textures/65af50191fea591f91db557aa6f0ab59",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/65af50191fea591f91db557aa6f0ab59.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "8dadfee73bc7ab19ba5a6d9e62af6f035e9cf535843660526cc8bdff069e9872"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/pod_3.png",
+      "resource": "M48Textures/e772a6879b155726b890f3afc1e258ce",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/e772a6879b155726b890f3afc1e258ce.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "6e3e6bd6897b0e203ff74fd3ea411479ee01a07a9a098f06b87219f32222e3e4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_1.png",
+      "resource": "M48Textures/0b0d40e354ab5fd9a48e0300ff17ff67",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0b0d40e354ab5fd9a48e0300ff17ff67.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "da9d238e6e011f604053d00ebeba7e9effa02e5f63e1216db6fa6cdd1a2424c7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_2.png",
+      "resource": "M48Textures/7d3108d9bbb15253801310658715f3aa",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/7d3108d9bbb15253801310658715f3aa.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "a27d37a1b06a4507ec4ddd5991b3753013f05076d13d86e5adad23e8881ca2b3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_3.png",
+      "resource": "M48Textures/58ac98c869ed5c77b1cf07b6c1f6e7cf",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/58ac98c869ed5c77b1cf07b6c1f6e7cf.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "93cc6097dc5bce926f2f4f2af796fabd555efa84a2e2db9656f315e1b2ec87e6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_4.png",
+      "resource": "M48Textures/69626165e1105170983ef4e97d7d8347",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/69626165e1105170983ef4e97d7d8347.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "7f71cff681ee4a271fe67ac500dd2b3ef3ae85d53993ecbf84f0f22b939f6cb6"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/cabinet_5.png",
+      "resource": "M48Textures/5c1b6460550a59d08927285c40252fc8",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5c1b6460550a59d08927285c40252fc8.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "52be4949517a0f2dc25e0e5be888447d160cf59e5573116604436e88f72826ea"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/crystalIcon.png",
+      "resource": "M48Textures/c57a5be37b96537d91c620353e3a320e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c57a5be37b96537d91c620353e3a320e.png",
+      "width": 484,
+      "height": 780,
+      "rgbaBytes": 1510080,
+      "astc6x6Bytes": 168480,
+      "sha256": "357da3926cb19fc33e9cc5faeb185682019d926e986a0de3f06cd4efda108571"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/waterSpirit.png",
+      "resource": "M48Textures/375e6605aa265c6383ceca16474aa86c",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/375e6605aa265c6383ceca16474aa86c.png",
+      "width": 512,
+      "height": 512,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 118336,
+      "sha256": "ec6bae428740d27ff24d052b83b7285f8d13557e09471fbc6f2acfb3406703f4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/rainlight.png",
+      "resource": "M48Textures/ed89cf28191851acb13daaa93670414b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ed89cf28191851acb13daaa93670414b.png",
+      "width": 336,
+      "height": 547,
+      "rgbaBytes": 735168,
+      "astc6x6Bytes": 82432,
+      "sha256": "80862ff567633d8bb7e907f3fbd1d9c73c795d7c9d38ec3727f5aa58ac65d8a3"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/Obstacles/collectionGlint.png",
+      "resource": "M48Textures/dc6f1e4d069258908dde474c8da8f68a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dc6f1e4d069258908dde474c8da8f68a.png",
+      "width": 230,
+      "height": 250,
+      "rgbaBytes": 230000,
+      "astc6x6Bytes": 26208,
+      "sha256": "df3a646c9f9fa689672532105ce560d9e46411fc3f523d1ba325c3e9a300fc67"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Final_Burst_00.png",
+      "resource": "M48Textures/1d67eabf83e950edafa98af82c704002",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1d67eabf83e950edafa98af82c704002.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "987bceee4bf13e1f6664c6fadc64271d98d6c8fc0caafcfce6bf858490ee64f1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Final_Burst_01.png",
+      "resource": "M48Textures/d5c651899aa959beb1acd98eebf301c6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d5c651899aa959beb1acd98eebf301c6.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "474ec460ee5f704bd379f67889b007d211b1e07a72a98475151db8f12b3079e1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Impact_Burst_00.png",
+      "resource": "M48Textures/64c37d9162c251159046dc4c55c8d67a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/64c37d9162c251159046dc4c55c8d67a.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "1ec6ebe033f3750c3422830c2f84d66608bd9574c91ffdacb81a9cf9508d4d10"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Impact_Burst_01.png",
+      "resource": "M48Textures/2e111f330c0752a680fb0b168f2a1cf7",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2e111f330c0752a680fb0b168f2a1cf7.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "474ec460ee5f704bd379f67889b007d211b1e07a72a98475151db8f12b3079e1"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Base_00.png",
+      "resource": "M48Textures/125c8723f9df5a599e8a0b7663a093a2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/125c8723f9df5a599e8a0b7663a093a2.png",
+      "width": 1024,
+      "height": 256,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 117648,
+      "sha256": "8efb6a06b8850cdce40c9ebc2ec433a5403bc69f6aebe92caeaa95a932cc7f06"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Base_01.png",
+      "resource": "M48Textures/4eac179679ba524fb2f5fdcd5be79e18",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4eac179679ba524fb2f5fdcd5be79e18.png",
+      "width": 1024,
+      "height": 128,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 60192,
+      "sha256": "a7fe49f8cebe90066ea1abe4f204d3153c507765c2a2b2bbd99e685daf9ab287"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Middle_00.png",
+      "resource": "M48Textures/c52ea836d1ab5939a194ed134419d110",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c52ea836d1ab5939a194ed134419d110.png",
+      "width": 1024,
+      "height": 256,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 117648,
+      "sha256": "92c8689b90a72c2acf4b63733026bd3f2bfeaa86abe0307b15ff1f3e2277391b"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Middle_01.png",
+      "resource": "M48Textures/803669dd94415bc6a92b419947ee0e04",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/803669dd94415bc6a92b419947ee0e04.png",
+      "width": 1024,
+      "height": 128,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 60192,
+      "sha256": "d1a72bcdb4f859a20a2b6c7b130301c27bf2dd4d82a8e469b3b675f2f964ccae"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Top_00.png",
+      "resource": "M48Textures/c4b2add810385111bd750761c1045ce2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c4b2add810385111bd750761c1045ce2.png",
+      "width": 1024,
+      "height": 256,
+      "rgbaBytes": 1048576,
+      "astc6x6Bytes": 117648,
+      "sha256": "d900a7ff13b095a6df9b795959e52ae086de300556b9f3344e89a3bfe0bb553a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Pulse_Top_01.png",
+      "resource": "M48Textures/dac7e65f850250529b35f1d29628d38e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dac7e65f850250529b35f1d29628d38e.png",
+      "width": 1024,
+      "height": 128,
+      "rgbaBytes": 524288,
+      "astc6x6Bytes": 60192,
+      "sha256": "31d6dbaa27338c0a2bf1f2edfbaffe7d0966628cbc5292e83042d9c824aba056"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_0_00.png",
+      "resource": "M48Textures/d164d364e23a592aa2932b5ff2080f39",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d164d364e23a592aa2932b5ff2080f39.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "78d1b1a66571810240bb9f9d59c8b4b93e1af72fefab590c5ec58031aba457e4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_1_00.png",
+      "resource": "M48Textures/af1cdf2b3d8e5bc4bca81492e8235a7a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/af1cdf2b3d8e5bc4bca81492e8235a7a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "a2e676f927c36eb7751cafd125e57b13f241adf5e66629c003c61ef35c97faeb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_2_00.png",
+      "resource": "M48Textures/1243e308fcab55d4a426ae668436e315",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/1243e308fcab55d4a426ae668436e315.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "775785d2fb1871c7c59d8e4178d4eb9e381e9e787d0b77e611583b2fab910543"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_3_00.png",
+      "resource": "M48Textures/b51eb19b26225bb691e077119a907e31",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b51eb19b26225bb691e077119a907e31.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e40954abb27f54a387ad5a0aa72e2f03e46fa801d7e269583e7e25d51b9dbd6d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_4_00.png",
+      "resource": "M48Textures/c7f52e5e25f9541cadab1ebb012ddaba",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c7f52e5e25f9541cadab1ebb012ddaba.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "1802553ec6290eadda348f26a8e38da8b4b3c8da3ba7390b2c403f7a2f330595"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_5_00.png",
+      "resource": "M48Textures/4de4eb2ab3415c16bf66bfd0ef89861b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4de4eb2ab3415c16bf66bfd0ef89861b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "32427e2870e9bd94a404fea0e936150f3dcdd94d247b976f49fb9a90bbdf2215"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_6_00.png",
+      "resource": "M48Textures/a2a09bf7fcce5d529dbb264caa226942",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a2a09bf7fcce5d529dbb264caa226942.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4a96fa183b6edb685cd5de1bf7e5be0d9e5b1f09036361e119fde068326ee425"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Base_7_00.png",
+      "resource": "M48Textures/3a8f2065d4f959b289680e5b06754c20",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3a8f2065d4f959b289680e5b06754c20.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "72ff330defe5b579c0c25848de70a1f1b80f7c264892cc5bb38d99677d637974"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_0_00.png",
+      "resource": "M48Textures/c43af70d1acf5bb9800d958059a7cc86",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c43af70d1acf5bb9800d958059a7cc86.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "d599c1282dfccb4a359a10033705c47d1115c972d624dcfc6ebef517f6c2ca55"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_1_00.png",
+      "resource": "M48Textures/b84bf64991565cacbda0ed5d773551f3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b84bf64991565cacbda0ed5d773551f3.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "b5866d41e759e42de85f03438864125339370b8e37f6086aea44ed93d07ce4a2"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_2_00.png",
+      "resource": "M48Textures/a178697a0ef85eb8a16ad3931d0a0a8a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a178697a0ef85eb8a16ad3931d0a0a8a.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f0afe4f6726cd2ec562384ffb0490395b6ace84b69be8da15c54bc8b16bdd8e9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_3_00.png",
+      "resource": "M48Textures/756a9e6cb9f151929ddb3447217f6356",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/756a9e6cb9f151929ddb3447217f6356.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "8a10b4d5fead0c6c3974b820b9f2b1623054876d35b6a641fe09009871d1fbf4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_4_00.png",
+      "resource": "M48Textures/bbeff7ed0f835df7a88f75cfd2b81ef3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/bbeff7ed0f835df7a88f75cfd2b81ef3.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "7e187eedaf8d67b78323bf78ca2cfb798e11fc3feaef1df5a3347f3a3979d7cf"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_5_00.png",
+      "resource": "M48Textures/6adfbd0ce36c5539968035041cc1d624",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/6adfbd0ce36c5539968035041cc1d624.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "08cd88730d2c25a3437094087fccfcfdd248a6ca249ee08d7d330e55b2135f17"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_6_00.png",
+      "resource": "M48Textures/2418807b267550a6b4b646da61b8049d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/2418807b267550a6b4b646da61b8049d.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "d133f9fcea1ec785070b6193da1e9c32b41e7cfcfee7e3948ef0ec0c4e8a21b8"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Middle_7_00.png",
+      "resource": "M48Textures/3d4eb9b910ea53328a2ead422c215c46",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3d4eb9b910ea53328a2ead422c215c46.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4b824568c9827fa9ea62d28c74e40146265b58bf6b5fcd41e2550e442264e313"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_0_00.png",
+      "resource": "M48Textures/7ce89a7d6021514595240417cbbb1087",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/7ce89a7d6021514595240417cbbb1087.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "9536b386244bd792cfc1ec7e4cb7e160e708d804a166c134c314ae6030ede89a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_1_00.png",
+      "resource": "M48Textures/43aa657a2a7e59349a89dc6a54fd7ab2",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/43aa657a2a7e59349a89dc6a54fd7ab2.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "1968f4b41bc46d5a7655fd1b68e015e79a37f536bb50b8d04b195e3e5a6ea7bb"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_2_00.png",
+      "resource": "M48Textures/a88032ed5a76549c944ef7ab11b4eb5f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a88032ed5a76549c944ef7ab11b4eb5f.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "63bf668d2bed8054a15f01b4bf8c968dfc719548e85686b659c2230b864ec1fd"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_3_00.png",
+      "resource": "M48Textures/f46f48bc5b6f5603858255062df7f21e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/f46f48bc5b6f5603858255062df7f21e.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "4e23a57497a5dbbb04f3594eff7114ca8112d3dd3d009c89dbcb36805a9245d4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_4_00.png",
+      "resource": "M48Textures/4f5b3f0e6a1a5fedabde3be1175bb691",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/4f5b3f0e6a1a5fedabde3be1175bb691.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "960b4d5d51fe284b0206f0662bab50133dfdd611428f429768b4c6fe0874e633"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_5_00.png",
+      "resource": "M48Textures/aac4273dc4be525caf324ad055025607",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/aac4273dc4be525caf324ad055025607.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "879044c9cc1849790e68c21664d07dd5ce58c81134a5cda04507386fabc85364"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_6_00.png",
+      "resource": "M48Textures/3a6cfd14ec5a5b76b9a97388ffc527c5",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3a6cfd14ec5a5b76b9a97388ffc527c5.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "12d92f1a2e5682454854fd67b553c16c87a352b77c501c4ec9bc1b28af88179e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/crystal/Crystal_Tumble_Top_7_00.png",
+      "resource": "M48Textures/18b63196dfac561daa69dbee848752dd",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/18b63196dfac561daa69dbee848752dd.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "92e98b4a0d02380b135f091d8bc9495ecacba2f218247bc9c08bff1229439075"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_1_00.png",
+      "resource": "M48Textures/d55df856a2fb511eb80967b5e9662553",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d55df856a2fb511eb80967b5e9662553.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "e193adde56ceaa5c5dfaac318949f01d4ad8142a33e50da4fe5b5ffcd5327ec4"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_1_01.png",
+      "resource": "M48Textures/7e03675cc71b5e1d8eaf2667688476fc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/7e03675cc71b5e1d8eaf2667688476fc.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "39a67dcef09ca96889ebf9517cd4ae99d5367ec761f50373db9d544af960c669"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_2_00.png",
+      "resource": "M48Textures/5f20b887503e5c27ad4dbc504b6f31d0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5f20b887503e5c27ad4dbc504b6f31d0.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "3cd158357824ad413a7f803763f735475f5c0ce6a0320be1e43b655f2ad2378a"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_2_01.png",
+      "resource": "M48Textures/dae688f9e6a653ecb18bab4ad3d6ac51",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/dae688f9e6a653ecb18bab4ad3d6ac51.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "32bce3ea75ed96cfc2ae83f807c189a4576658f12652095ee3deeae1ba5f67ac"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_3_00.png",
+      "resource": "M48Textures/634c79e9a0be56b988a0fc2534603b7b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/634c79e9a0be56b988a0fc2534603b7b.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "9d3f2cec29253b7fec2ba0f4918f8023c9609d8c5a80568b7801d7c8db504a13"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_3_01.png",
+      "resource": "M48Textures/b44e56fd0d2e56488e74036e645a898b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b44e56fd0d2e56488e74036e645a898b.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e4ee3576e79c5fc09a915ecb6d605eaaf5d78680481f43a7ef246891d104a0ab"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_Accent_00.png",
+      "resource": "M48Textures/ffe4606fdad85ba2a84cdd53dc5944fc",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/ffe4606fdad85ba2a84cdd53dc5944fc.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "81cba55f04465e862091e3c770ae97ce03784aaea0977b0256b04915de23f288"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Hit_Accent_01.png",
+      "resource": "M48Textures/8bc3b466b88d5368815d272f0db0bf79",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/8bc3b466b88d5368815d272f0db0bf79.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "aacdb2b3aaf8c9577c48f009fb641997dc96fe3780a6ddede2e9205b6633823c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Release_Burst_00.png",
+      "resource": "M48Textures/0061bc856fff511181a3ed92a2f6259a",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/0061bc856fff511181a3ed92a2f6259a.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "8a26864b2ddb2e07e966b352d64d99af8a1053c9b7deb4817ac714f0044fa9c7"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Release_Burst_01.png",
+      "resource": "M48Textures/71150c1ccf3d55de982efdba1529cf2f",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/71150c1ccf3d55de982efdba1529cf2f.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "aacdb2b3aaf8c9577c48f009fb641997dc96fe3780a6ddede2e9205b6633823c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_0_00.png",
+      "resource": "M48Textures/caf3c2505c2c5e00a3685f07c14d5db0",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/caf3c2505c2c5e00a3685f07c14d5db0.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "784d558a429d305d5429a72d2cd4b673618d62fa5b4bb70af18496734c7446d9"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_1_00.png",
+      "resource": "M48Textures/fba8169e68cf50a8840731f2c16c6336",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/fba8169e68cf50a8840731f2c16c6336.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "469a300d7de1a11dde036be3fc693fa078cdb0e5847dda0c865d5e3534068ace"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_2_00.png",
+      "resource": "M48Textures/c55194d0f69b5d0b81a79c984e2fc7a4",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/c55194d0f69b5d0b81a79c984e2fc7a4.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "373cbd1db0f39adc1f99fd3bcf829b082c584c8ac1d1787972e42a64f9d26d3d"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_3_00.png",
+      "resource": "M48Textures/64daa0b8bd645e0e82e4eacb029df452",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/64daa0b8bd645e0e82e4eacb029df452.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "8b31c9b239575d5a3e8e6662cf108b51146b4f59be08d24270b50d49588bdd6e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_4_00.png",
+      "resource": "M48Textures/d7b6e6ab41145371b07bb04d53bb821d",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d7b6e6ab41145371b07bb04d53bb821d.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "f3f470a3aea36d3c01f281e45a9aa1a52befcf23194a3c81f93b557679cecef5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_5_00.png",
+      "resource": "M48Textures/a086a9ffffc95ccb907593408ba5da25",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/a086a9ffffc95ccb907593408ba5da25.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "5cb2f18015b579b20cabc4dcd9a5adfa2806ad0e91cc7a64b3aa7b8e3f95af7e"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_6_00.png",
+      "resource": "M48Textures/926ed32b96e153e7b54c761355a0fa56",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/926ed32b96e153e7b54c761355a0fa56.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "e257bef658be4fbce5160aeada1a03dfab7b68e4f2178e4ecd9ecd34ce211366"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Pod_Tumble_7_00.png",
+      "resource": "M48Textures/d909a5179e665a598d33d8a3bd4206ac",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d909a5179e665a598d33d8a3bd4206ac.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "6a9eea4625f7ac3b0230e2e6a2628ef9daa9a87fd77d07fd786f4f5200f58f1c"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/pod/Spirit_Idle_00.png",
+      "resource": "M48Textures/b5c59328faf851fd884526a943e80bf3",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/b5c59328faf851fd884526a943e80bf3.png",
+      "width": 1024,
+      "height": 512,
+      "rgbaBytes": 2097152,
+      "astc6x6Bytes": 235296,
+      "sha256": "8b79597b0c3a199232bc0dd95bd1fed20f629077fbf54c13c07053c9d611c7fa"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Clear_00.png",
+      "resource": "M48Textures/eb2bf1ca519b5fe4bd285cc8b579509b",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/eb2bf1ca519b5fe4bd285cc8b579509b.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "d518e60762ca079b7a61f496c7f45bf08d1832b19b95fe618ad402cb0b28aafe"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Clear_01.png",
+      "resource": "M48Textures/5dfdacf42d115728b3ddc06ce633821e",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5dfdacf42d115728b3ddc06ce633821e.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "404703aaa9d92555c647f9eeebd5f64d84059064bc3e5e72686df8e970550680"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Open_00.png",
+      "resource": "M48Textures/5c853908947754588e561d8d6cb38ced",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5c853908947754588e561d8d6cb38ced.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "d687a85d88a3fc85c67cfefcd336e628c515efad65a04d24b7ad9ceacdf7f8e5"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Cabinet_Open_01.png",
+      "resource": "M48Textures/afab7376a3745c7694f6dc1ea6e2d962",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/afab7376a3745c7694f6dc1ea6e2d962.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "25fe6840e4dd29e45ca6bc57f21690e25f8e34842cbf593ac84280ab7ef9fe43"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Star_Accent_00.png",
+      "resource": "M48Textures/cf5072f1e7f15b518974e797fe3a6ec6",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/cf5072f1e7f15b518974e797fe3a6ec6.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "70a09751db83419bcc9c96c072e9874feed7de0f9d1ab9cfcec81583cfaf2945"
+    },
+    {
+      "source": "Assets/HeartOfTheRain/M46/Art/FX/cabinet/Star_Accent_01.png",
+      "resource": "M48Textures/977f8248ce5652739db8d760b6b24e45",
+      "path": "Assets/HeartOfTheRain/M48/Resources/M48Textures/977f8248ce5652739db8d760b6b24e45.png",
+      "width": 1024,
+      "height": 1024,
+      "rgbaBytes": 4194304,
+      "astc6x6Bytes": 467856,
+      "sha256": "59141e9a74fea7b8e5ccee9078846a0efaaab2e3628f0fd0f6c472b4c1ca8322"
+    }
+  ]
+}

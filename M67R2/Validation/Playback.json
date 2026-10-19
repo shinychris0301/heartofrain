@@ -1,0 +1,10 @@
+{
+  "status": "PASS_OFFLINE_EXPORT",
+  "duration_seconds": 4.5,
+  "frames": 270,
+  "fps": 60,
+  "width": 430,
+  "height": 852,
+  "UnityCapture": false,
+  "note": "Isolated animation review on initial board; next-level route verified separately."
+}

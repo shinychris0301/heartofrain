@@ -1,0 +1,30 @@
+{
+  "id": "water_spirit_pod",
+  "footprint": [
+    1,
+    1
+  ],
+  "initialHP": 3,
+  "stages": {
+    "3": "sealed",
+    "2": "cracked",
+    "1": "split / spirit visible",
+    "0": "released / cell clear"
+  },
+  "placement": "Grouped banks; occupies its own cell; no underlying gem",
+  "hitRule": "One damage step per unique qualifying match or power-up activation",
+  "goldenSeeker": "Two children use distinct activation IDs",
+  "goal": "One released spirit per completed pod; no goals on intermediate hits",
+  "timing": {
+    "break": 0.1,
+    "finalCellRelease": 0.24,
+    "stageDuration": 0.8,
+    "spiritFlightFromBreak": 1.35
+  },
+  "counts": {
+    "firstHit": 2,
+    "secondHit": 4,
+    "finalHit": 8
+  },
+  "campaignStatus": "Not yet assigned to the 50 campaign levels; difficulty and solvability untested"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "storm_crystal",
+  "stages": "initialSegments -> ... -> 1 -> 0",
+  "anchored": "bottom cell; uppermost occupied cell is released on each hit",
+  "goalUnit": "one whole column, awarded only at 1 -> 0",
+  "hits": "one section per qualifying adjacent match or direct power-up activation",
+  "dedup": "one damage step per activation id per column, even if an area hit touches all three cells",
+  "goldenSeeker": "distinct child activation IDs can remove two sections",
+  "occupancy": "no gems in occupied cells; freed top cell enters refill at release marker",
+  "visualTiming": {
+    "bodyFlashBeginsSeconds": 0.033333,
+    "breakSeconds": 0.1,
+    "collapseEndsSeconds": 0.2,
+    "releaseCellSeconds": 0.24,
+    "stageClipSeconds": 0.8
+  },
+  "debris": {
+    "countPerSection": 8,
+    "opacity": "no lifetime fade",
+    "removal": "entire sprite below camera bottom",
+    "launchStaggerSeconds": 0.035
+  },
+  "proposedIntroductionLevel": 25,
+  "status": "M38 R3 asset revision; 50 campaign assignments remain unchanged",
+  "visualMechanism": "The column fractures at its foot and rapidly shortens while retaining its crown. Logical cell release remains top-first.",
+  "initialSegments": {
+    "min": 5,
+    "max": 9,
+    "default": 7
+  },
+  "initialFootprint": "1 x initialSegments",
+  "placement": {
+    "anchor": "bottom playable perimeter",
+    "banks": "outer left/right lanes",
+    "exclusiveLane": true,
+    "clearEnd": "No other obstacle below, in front of, or in the same crystal lane; no other obstacle in bottom two rows in review layouts."
+  }
+}

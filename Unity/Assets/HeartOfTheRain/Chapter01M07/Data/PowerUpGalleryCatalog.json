@@ -1,0 +1,652 @@
+{
+  "revision": "M33_FINAL_R1",
+  "entries": [
+    {
+      "id": "powerup_21",
+      "kind": 21,
+      "title": "Bomb",
+      "group": "Power-ups",
+      "description": "Charge, blast, stars, breakup and refill.",
+      "targetColor": 5,
+      "iconAtlas": 6,
+      "iconClip": "Idle"
+    },
+    {
+      "id": "powerup_4",
+      "kind": 4,
+      "title": "Rocket / Horizontal",
+      "group": "Power-ups",
+      "description": "Two rocket heads clear one complete row.",
+      "targetColor": 5,
+      "iconAtlas": 9,
+      "iconClip": "Idle"
+    },
+    {
+      "id": "powerup_5",
+      "kind": 5,
+      "title": "Rocket / Vertical",
+      "group": "Power-ups",
+      "description": "Two rocket heads clear one complete column.",
+      "targetColor": 5,
+      "iconAtlas": 10,
+      "iconClip": "Idle"
+    },
+    {
+      "id": "powerup_11",
+      "kind": 11,
+      "title": "Rain Seeker",
+      "group": "Power-ups",
+      "description": "Folded wings, curved flight and one targeted strike.",
+      "targetColor": 5,
+      "iconAtlas": 29,
+      "iconClip": "RS_Idle"
+    },
+    {
+      "id": "powerup_7",
+      "kind": 7,
+      "title": "Rainbow Orb",
+      "group": "Power-ups",
+      "description": "Clockwise rotation and beams clear one tile color.",
+      "targetColor": 5,
+      "iconAtlas": 19,
+      "iconClip": "OR_Idle"
+    },
+    {
+      "id": "powerup_16",
+      "kind": 16,
+      "title": "Golden Seeker",
+      "group": "Power-ups",
+      "description": "One Golden Seeker creates two simultaneous seekers.",
+      "targetColor": 5,
+      "iconAtlas": 40,
+      "iconClip": "GS_Idle"
+    },
+    {
+      "id": "powerup_6",
+      "kind": 6,
+      "title": "Rocket + Rocket",
+      "group": "Combinations",
+      "description": "The merged rockets clear a cross.",
+      "targetColor": 5,
+      "iconAtlas": 17,
+      "iconClip": "RR_Armed"
+    },
+    {
+      "id": "powerup_2",
+      "kind": 2,
+      "title": "Rocket + Bomb",
+      "group": "Combinations",
+      "description": "Merge and intensify, then clear three rows and columns.",
+      "targetColor": 5,
+      "iconAtlas": 13,
+      "iconClip": "RB_Armed"
+    },
+    {
+      "id": "powerup_3",
+      "kind": 3,
+      "title": "Bomb + Bomb",
+      "group": "Combinations",
+      "description": "Merge into a larger bomb and release a wider blast.",
+      "targetColor": 5,
+      "iconAtlas": 15,
+      "iconClip": "BB_Armed"
+    },
+    {
+      "id": "powerup_12",
+      "kind": 12,
+      "title": "Rain Seeker + Rocket",
+      "group": "Combinations",
+      "description": "Deliver a rocket to a reserved target line.",
+      "targetColor": 5,
+      "iconAtlas": 31,
+      "iconClip": "RX_H_Flight"
+    },
+    {
+      "id": "powerup_13",
+      "kind": 13,
+      "title": "Rain Seeker + Bomb",
+      "group": "Combinations",
+      "description": "Deliver a bomb and release its blast at the target.",
+      "targetColor": 5,
+      "iconAtlas": 34,
+      "iconClip": "SB_Flight"
+    },
+    {
+      "id": "powerup_14",
+      "kind": 14,
+      "title": "Rain Seeker + Rain Seeker",
+      "group": "Combinations",
+      "description": "Merge, split and send three seekers to distinct targets.",
+      "targetColor": 5,
+      "iconAtlas": 36,
+      "iconClip": "DS_Split"
+    },
+    {
+      "id": "powerup_8",
+      "kind": 8,
+      "title": "Rainbow Orb + Rocket",
+      "group": "Combinations",
+      "description": "Convert one color to rockets and launch a chain.",
+      "targetColor": 5,
+      "iconAtlas": 22,
+      "iconClip": "ORC_Charge"
+    },
+    {
+      "id": "powerup_9",
+      "kind": 9,
+      "title": "Rainbow Orb + Bomb",
+      "group": "Combinations",
+      "description": "Convert one color to bombs and detonate the sequence.",
+      "targetColor": 5,
+      "iconAtlas": 24,
+      "iconClip": "OB_Charge"
+    },
+    {
+      "id": "powerup_15",
+      "kind": 15,
+      "title": "Rainbow Orb + Rain Seeker",
+      "group": "Combinations",
+      "description": "Convert one color into seekers, then launch in waves.",
+      "targetColor": 5,
+      "iconAtlas": 38,
+      "iconClip": "OS_Form"
+    },
+    {
+      "id": "powerup_10",
+      "kind": 10,
+      "title": "Double Orb / Super Orb",
+      "group": "Combinations",
+      "description": "Form the Super Orb, rotate and release a full-board wave.",
+      "targetColor": 5,
+      "iconAtlas": 26,
+      "iconClip": "DO_Channel"
+    },
+    {
+      "id": "powerup_17",
+      "kind": 17,
+      "title": "Golden Seeker + Rocket",
+      "group": "Combinations",
+      "description": "Create two Golden carriers for two different rocket lines.",
+      "targetColor": 5,
+      "iconAtlas": 40,
+      "iconClip": "GS_Idle"
+    },
+    {
+      "id": "powerup_18",
+      "kind": 18,
+      "title": "Golden Seeker + Bomb",
+      "group": "Combinations",
+      "description": "Create two Golden carriers for two normal bomb blasts.",
+      "targetColor": 5,
+      "iconAtlas": 40,
+      "iconClip": "GS_Idle"
+    },
+    {
+      "id": "powerup_19",
+      "kind": 19,
+      "title": "Golden Seeker + Rain Seeker",
+      "group": "Combinations",
+      "description": "Two Golden and two Rain Seekers strike four targets.",
+      "targetColor": 5,
+      "iconAtlas": 41,
+      "iconClip": "GS_Duplicate"
+    },
+    {
+      "id": "powerup_20",
+      "kind": 20,
+      "title": "Golden Seeker + Rainbow Orb",
+      "group": "Combinations",
+      "description": "Each converted Golden Seeker creates a pair in waves.",
+      "targetColor": 5,
+      "iconAtlas": 40,
+      "iconClip": "GS_Idle"
+    },
+    {
+      "id": "powerup_0",
+      "kind": 0,
+      "title": "Bomb triggers Rocket",
+      "group": "Chain reactions",
+      "description": "A bomb contact triggers the neighboring rocket.",
+      "targetColor": 5,
+      "iconAtlas": 6,
+      "iconClip": "Charge"
+    },
+    {
+      "id": "powerup_1",
+      "kind": 1,
+      "title": "Rocket triggers Bomb",
+      "group": "Chain reactions",
+      "description": "A rocket contact triggers a second bomb explosion.",
+      "targetColor": 5,
+      "iconAtlas": 10,
+      "iconClip": "Flight"
+    }
+  ],
+  "library": [
+    {
+      "atlas": 0,
+      "title": "Bomb / light and blast",
+      "clipLabels": [
+        "Flash",
+        "Rays",
+        "Glint Hit"
+      ]
+    },
+    {
+      "atlas": 1,
+      "title": "Rocket / trail and contact",
+      "clipLabels": [
+        "Jet",
+        "Wake0",
+        "Wake1",
+        "Contact",
+        "Ignition"
+      ]
+    },
+    {
+      "atlas": 2,
+      "title": "Tile fragments / variation 1",
+      "clipLabels": [
+        "Tile0 / V0",
+        "Tile1 / V0",
+        "Tile2 / V0",
+        "Tile3 / V0",
+        "Tile4 / V0",
+        "Tile5 / V0"
+      ]
+    },
+    {
+      "atlas": 3,
+      "title": "Tile fragments / variation 2",
+      "clipLabels": [
+        "Tile0 / V1",
+        "Tile1 / V1",
+        "Tile2 / V1",
+        "Tile3 / V1",
+        "Tile4 / V1",
+        "Tile5 / V1"
+      ]
+    },
+    {
+      "atlas": 4,
+      "title": "Tile fragments / variation 3",
+      "clipLabels": [
+        "Tile0 / V2",
+        "Tile1 / V2",
+        "Tile2 / V2",
+        "Tile3 / V2",
+        "Tile4 / V2",
+        "Tile5 / V2"
+      ]
+    },
+    {
+      "atlas": 5,
+      "title": "Wood fragments",
+      "clipLabels": [
+        "Wood / V0",
+        "Wood / V1"
+      ]
+    },
+    {
+      "atlas": 6,
+      "title": "Bomb / body",
+      "clipLabels": [
+        "Idle",
+        "Create",
+        "Charge",
+        "Depth Turn",
+        "Detonate"
+      ]
+    },
+    {
+      "atlas": 9,
+      "title": "Rocket / horizontal body",
+      "clipLabels": [
+        "Idle",
+        "Create",
+        "Charge",
+        "Depth Turn",
+        "Flight"
+      ]
+    },
+    {
+      "atlas": 10,
+      "title": "Rocket / vertical body",
+      "clipLabels": [
+        "Idle",
+        "Create",
+        "Charge",
+        "Depth Turn",
+        "Flight"
+      ]
+    },
+    {
+      "atlas": 11,
+      "title": "Wood obstacle",
+      "clipLabels": [
+        "Crate Idle",
+        "Crate Breakup"
+      ]
+    },
+    {
+      "atlas": 12,
+      "title": "Stars",
+      "clipLabels": [
+        "Star Hit0",
+        "Star Hit1",
+        "Star Hit2",
+        "Star Burst",
+        "Star Trail",
+        "Star Create"
+      ]
+    },
+    {
+      "atlas": 13,
+      "title": "Rocket + Bomb / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Armed",
+        "Charge",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 14,
+      "title": "Rocket + Bomb / effects",
+      "clipLabels": [
+        "Gather",
+        "Pulse",
+        "Flash",
+        "Cross Burst"
+      ]
+    },
+    {
+      "atlas": 15,
+      "title": "Double Bomb / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Armed",
+        "Charge",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 16,
+      "title": "Double Bomb / effects",
+      "clipLabels": [
+        "Gather",
+        "Pulse",
+        "Flash",
+        "Radial Burst"
+      ]
+    },
+    {
+      "atlas": 17,
+      "title": "Double Rocket / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Armed",
+        "Charge",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 18,
+      "title": "Double Rocket / effects",
+      "clipLabels": [
+        "Gather",
+        "Pulse",
+        "Flash",
+        "Launch"
+      ]
+    },
+    {
+      "atlas": 19,
+      "title": "Rainbow Orb / body",
+      "clipLabels": [
+        "Create",
+        "Idle",
+        "Charge",
+        "Clockwise channel",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 20,
+      "title": "Rainbow Orb / beams",
+      "clipLabels": [
+        "Gather",
+        "Pulse",
+        "Flash",
+        "Target",
+        "Straight targeting beam",
+        "Beam head"
+      ]
+    },
+    {
+      "atlas": 21,
+      "title": "Rainbow Orb / impact and spin",
+      "clipLabels": [
+        "Orbit light",
+        "Hit",
+        "Stars",
+        "Rotating stars"
+      ]
+    },
+    {
+      "atlas": 22,
+      "title": "Orb + Rocket / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge"
+      ]
+    },
+    {
+      "atlas": 23,
+      "title": "Orb + Rocket / effects",
+      "clipLabels": [
+        "Gather",
+        "Convert",
+        "Arm Pulse",
+        "Launch"
+      ]
+    },
+    {
+      "atlas": 24,
+      "title": "Orb + Bomb / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge"
+      ]
+    },
+    {
+      "atlas": 25,
+      "title": "Orb + Bomb / effects",
+      "clipLabels": [
+        "Gather",
+        "Convert",
+        "Arm Pulse",
+        "Shock"
+      ]
+    },
+    {
+      "atlas": 26,
+      "title": "Double Orb / Super Orb body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge",
+        "Centered clockwise rotation",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 27,
+      "title": "Double Orb / spin and light",
+      "clipLabels": [
+        "Gather",
+        "Pulse",
+        "Spin Light",
+        "Spin Stars",
+        "Flash"
+      ]
+    },
+    {
+      "atlas": 28,
+      "title": "Double Orb / board wave",
+      "clipLabels": [
+        "Wave"
+      ]
+    },
+    {
+      "atlas": 29,
+      "title": "Rain Seeker / body",
+      "clipLabels": [
+        "Create",
+        "Idle",
+        "Charge",
+        "Lift",
+        "Flight",
+        "Dive",
+        "Shadow"
+      ]
+    },
+    {
+      "atlas": 30,
+      "title": "Rain Seeker / effects",
+      "clipLabels": [
+        "Focus",
+        "Takeoff",
+        "Wing Light",
+        "Trail",
+        "Impact"
+      ]
+    },
+    {
+      "atlas": 31,
+      "title": "Seeker + Rocket / horizontal",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge",
+        "Lift",
+        "Flight",
+        "Deploy"
+      ]
+    },
+    {
+      "atlas": 32,
+      "title": "Seeker + Rocket / vertical",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge",
+        "Lift",
+        "Flight",
+        "Deploy"
+      ]
+    },
+    {
+      "atlas": 33,
+      "title": "Seeker + Rocket / effects",
+      "clipLabels": [
+        "Gather",
+        "Takeoff",
+        "Wing Light",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 34,
+      "title": "Seeker + Bomb / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Charge",
+        "Lift",
+        "Flight",
+        "Deploy"
+      ]
+    },
+    {
+      "atlas": 35,
+      "title": "Seeker + Bomb / effects",
+      "clipLabels": [
+        "Gather",
+        "Takeoff",
+        "Wing Light",
+        "Release"
+      ]
+    },
+    {
+      "atlas": 36,
+      "title": "Double Rain Seeker / body",
+      "clipLabels": [
+        "Merge",
+        "Charge",
+        "Lift",
+        "Split"
+      ]
+    },
+    {
+      "atlas": 37,
+      "title": "Double Rain Seeker / effects",
+      "clipLabels": [
+        "Gather",
+        "Split Light"
+      ]
+    },
+    {
+      "atlas": 38,
+      "title": "Orb + Seeker / body",
+      "clipLabels": [
+        "Merge / Right",
+        "Merge / Left",
+        "Form a folded seeker",
+        "Dissolve"
+      ]
+    },
+    {
+      "atlas": 39,
+      "title": "Orb + Seeker / effects",
+      "clipLabels": [
+        "Gather",
+        "Convert",
+        "Launch"
+      ]
+    },
+    {
+      "atlas": 40,
+      "title": "Golden Seeker / body",
+      "clipLabels": [
+        "Create",
+        "Idle",
+        "Charge",
+        "Lift",
+        "Flight",
+        "Dive",
+        "Shadow"
+      ]
+    },
+    {
+      "atlas": 41,
+      "title": "Golden Seeker / pair creation",
+      "clipLabels": [
+        "Create two Golden Seekers",
+        "Pair creation light"
+      ]
+    }
+  ],
+  "standaloneViews": 6,
+  "approvedCombinations": 14,
+  "chainDemos": 2,
+  "activeAtlases": 40,
+  "compatibilityAtlases": 2,
+  "activeClips": 178,
+  "activeFrames": 2330
+}

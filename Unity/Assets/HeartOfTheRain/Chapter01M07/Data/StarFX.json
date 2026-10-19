@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4.8,
+  "pixelsPerUnit": 53.333333333333336,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "StarHit0",
+      "start": 0,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    },
+    {
+      "name": "StarHit1",
+      "start": 10,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    },
+    {
+      "name": "StarHit2",
+      "start": 20,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    },
+    {
+      "name": "StarBurst",
+      "start": 30,
+      "count": 14,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4666666666666667
+    },
+    {
+      "name": "StarTrail",
+      "start": 44,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    },
+    {
+      "name": "StarCreate",
+      "start": 54,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.3333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "StarHit0_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_000.png"
+    },
+    {
+      "name": "StarHit0_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_001.png"
+    },
+    {
+      "name": "StarHit0_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_002.png"
+    },
+    {
+      "name": "StarHit0_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_003.png"
+    },
+    {
+      "name": "StarHit0_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_004.png"
+    },
+    {
+      "name": "StarHit0_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_005.png"
+    },
+    {
+      "name": "StarHit0_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_006.png"
+    },
+    {
+      "name": "StarHit0_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_007.png"
+    },
+    {
+      "name": "StarHit0_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_008.png"
+    },
+    {
+      "name": "StarHit0_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit0_009.png"
+    },
+    {
+      "name": "StarHit1_000",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_000.png"
+    },
+    {
+      "name": "StarHit1_001",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_001.png"
+    },
+    {
+      "name": "StarHit1_002",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_002.png"
+    },
+    {
+      "name": "StarHit1_003",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_003.png"
+    },
+    {
+      "name": "StarHit1_004",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_004.png"
+    },
+    {
+      "name": "StarHit1_005",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_005.png"
+    },
+    {
+      "name": "StarHit1_006",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_006.png"
+    },
+    {
+      "name": "StarHit1_007",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_007.png"
+    },
+    {
+      "name": "StarHit1_008",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_008.png"
+    },
+    {
+      "name": "StarHit1_009",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit1_009.png"
+    },
+    {
+      "name": "StarHit2_000",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_000.png"
+    },
+    {
+      "name": "StarHit2_001",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_001.png"
+    },
+    {
+      "name": "StarHit2_002",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_002.png"
+    },
+    {
+      "name": "StarHit2_003",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_003.png"
+    },
+    {
+      "name": "StarHit2_004",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_004.png"
+    },
+    {
+      "name": "StarHit2_005",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_005.png"
+    },
+    {
+      "name": "StarHit2_006",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_006.png"
+    },
+    {
+      "name": "StarHit2_007",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_007.png"
+    },
+    {
+      "name": "StarHit2_008",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_008.png"
+    },
+    {
+      "name": "StarHit2_009",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarHit2_009.png"
+    },
+    {
+      "name": "StarBurst_000",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_000.png"
+    },
+    {
+      "name": "StarBurst_001",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_001.png"
+    },
+    {
+      "name": "StarBurst_002",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_002.png"
+    },
+    {
+      "name": "StarBurst_003",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_003.png"
+    },
+    {
+      "name": "StarBurst_004",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_004.png"
+    },
+    {
+      "name": "StarBurst_005",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_005.png"
+    },
+    {
+      "name": "StarBurst_006",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_006.png"
+    },
+    {
+      "name": "StarBurst_007",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_007.png"
+    },
+    {
+      "name": "StarBurst_008",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_008.png"
+    },
+    {
+      "name": "StarBurst_009",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_009.png"
+    },
+    {
+      "name": "StarBurst_010",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_010.png"
+    },
+    {
+      "name": "StarBurst_011",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_011.png"
+    },
+    {
+      "name": "StarBurst_012",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_012.png"
+    },
+    {
+      "name": "StarBurst_013",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarBurst_013.png"
+    },
+    {
+      "name": "StarTrail_000",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_000.png"
+    },
+    {
+      "name": "StarTrail_001",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_001.png"
+    },
+    {
+      "name": "StarTrail_002",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_002.png"
+    },
+    {
+      "name": "StarTrail_003",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_003.png"
+    },
+    {
+      "name": "StarTrail_004",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_004.png"
+    },
+    {
+      "name": "StarTrail_005",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_005.png"
+    },
+    {
+      "name": "StarTrail_006",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_006.png"
+    },
+    {
+      "name": "StarTrail_007",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_007.png"
+    },
+    {
+      "name": "StarTrail_008",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_008.png"
+    },
+    {
+      "name": "StarTrail_009",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarTrail_009.png"
+    },
+    {
+      "name": "StarCreate_000",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_000.png"
+    },
+    {
+      "name": "StarCreate_001",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_001.png"
+    },
+    {
+      "name": "StarCreate_002",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_002.png"
+    },
+    {
+      "name": "StarCreate_003",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_003.png"
+    },
+    {
+      "name": "StarCreate_004",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_004.png"
+    },
+    {
+      "name": "StarCreate_005",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_005.png"
+    },
+    {
+      "name": "StarCreate_006",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_006.png"
+    },
+    {
+      "name": "StarCreate_007",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_007.png"
+    },
+    {
+      "name": "StarCreate_008",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_008.png"
+    },
+    {
+      "name": "StarCreate_009",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/StarParticles12/StarCreate_009.png"
+    }
+  ]
+}

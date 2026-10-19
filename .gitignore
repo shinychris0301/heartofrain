@@ -1,0 +1,33 @@
+# Unity generated
+/Unity/[Ll]ibrary/
+/Unity/[Tt]emp/
+/Unity/[Oo]bj/
+/Unity/[Bb]uild/
+/Unity/[Bb]uilds/
+/Unity/[Ll]ogs/
+/Unity/[Uu]ser[Ss]ettings/
+/Unity/[Mm]emoryCaptures/
+/Unity/[Rr]ecordings/
+/Unity/*.csproj
+/Unity/*.sln
+/Unity/*.suo
+/Unity/*.user
+/Unity/.vs/
+/Unity/.idea/
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+
+# Headless harness build output
+/Tools/**/bin/
+/Tools/**/obj/
+
+# Offline validation build output
+/M67R2/Validation/Build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

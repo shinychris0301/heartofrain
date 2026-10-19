@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "direction": "Vertical",
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "pixelsPerUnit": 170.66666666666666,
+  "frameCanvasCells": 1.5,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "rectOrigin": "bottom-left; x/y/width/height are Unity Rect pixels",
+  "alpha": "straight",
+  "fps": 30,
+  "exhaustSocketCells": [
+    0,
+    -0.4
+  ],
+  "clips": [
+    {
+      "name": "Idle",
+      "start": 0,
+      "count": 1,
+      "fps": 30,
+      "loop": true,
+      "durationSeconds": 0.03333333333333333
+    },
+    {
+      "name": "Create",
+      "start": 1,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "Charge",
+      "start": 19,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DepthTurn",
+      "start": 31,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "durationSeconds": 0.8
+    },
+    {
+      "name": "Flight",
+      "start": 55,
+      "count": 8,
+      "fps": 30,
+      "loop": true,
+      "durationSeconds": 0.26666666666666666
+    }
+  ],
+  "frames": [
+    {
+      "name": "Vertical_Idle_000",
+      "x": 0,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Idle_000.png"
+    },
+    {
+      "name": "Vertical_Create_000",
+      "x": 256,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_000.png"
+    },
+    {
+      "name": "Vertical_Create_001",
+      "x": 512,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_001.png"
+    },
+    {
+      "name": "Vertical_Create_002",
+      "x": 768,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_002.png"
+    },
+    {
+      "name": "Vertical_Create_003",
+      "x": 1024,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_003.png"
+    },
+    {
+      "name": "Vertical_Create_004",
+      "x": 1280,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_004.png"
+    },
+    {
+      "name": "Vertical_Create_005",
+      "x": 1536,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_005.png"
+    },
+    {
+      "name": "Vertical_Create_006",
+      "x": 1792,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Vertical/Create_006.png"
+    },
+    {
+      "name": "Vertical_Create_007",
+      "x": 0,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_007.png"
+    },
+    {
+      "name": "Vertical_Create_008",
+      "x": 256,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_008.png"
+    },
+    {
+      "name": "Vertical_Create_009",
+      "x": 512,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_009.png"
+    },
+    {
+      "name": "Vertical_Create_010",
+      "x": 768,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_010.png"
+    },
+    {
+      "name": "Vertical_Create_011",
+      "x": 1024,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_011.png"
+    },
+    {
+      "name": "Vertical_Create_012",
+      "x": 1280,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_012.png"
+    },
+    {
+      "name": "Vertical_Create_013",
+      "x": 1536,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_013.png"
+    },
+    {
+      "name": "Vertical_Create_014",
+      "x": 1792,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Vertical/Create_014.png"
+    },
+    {
+      "name": "Vertical_Create_015",
+      "x": 0,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Create_015.png"
+    },
+    {
+      "name": "Vertical_Create_016",
+      "x": 256,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Create_016.png"
+    },
+    {
+      "name": "Vertical_Create_017",
+      "x": 512,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Create_017.png"
+    },
+    {
+      "name": "Vertical_Charge_000",
+      "x": 768,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Charge_000.png"
+    },
+    {
+      "name": "Vertical_Charge_001",
+      "x": 1024,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Charge_001.png"
+    },
+    {
+      "name": "Vertical_Charge_002",
+      "x": 1280,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Charge_002.png"
+    },
+    {
+      "name": "Vertical_Charge_003",
+      "x": 1536,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Charge_003.png"
+    },
+    {
+      "name": "Vertical_Charge_004",
+      "x": 1792,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Vertical/Charge_004.png"
+    },
+    {
+      "name": "Vertical_Charge_005",
+      "x": 0,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_005.png"
+    },
+    {
+      "name": "Vertical_Charge_006",
+      "x": 256,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_006.png"
+    },
+    {
+      "name": "Vertical_Charge_007",
+      "x": 512,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_007.png"
+    },
+    {
+      "name": "Vertical_Charge_008",
+      "x": 768,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_008.png"
+    },
+    {
+      "name": "Vertical_Charge_009",
+      "x": 1024,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_009.png"
+    },
+    {
+      "name": "Vertical_Charge_010",
+      "x": 1280,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_010.png"
+    },
+    {
+      "name": "Vertical_Charge_011",
+      "x": 1536,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/Charge_011.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_000",
+      "x": 1792,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Vertical/DepthTurn_000.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_001",
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_001.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_002",
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_002.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_003",
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_003.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_004",
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_004.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_005",
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_005.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_006",
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_006.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_007",
+      "x": 1536,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_007.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_008",
+      "x": 1792,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Vertical/DepthTurn_008.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_009",
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_009.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_010",
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_010.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_011",
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_011.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_012",
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_012.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_013",
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_013.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_014",
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_014.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_015",
+      "x": 1536,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_015.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_016",
+      "x": 1792,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Vertical/DepthTurn_016.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_017",
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_017.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_018",
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_018.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_019",
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_019.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_020",
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_020.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_021",
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_021.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_022",
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_022.png"
+    },
+    {
+      "name": "Vertical_DepthTurn_023",
+      "x": 1536,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/DepthTurn_023.png"
+    },
+    {
+      "name": "Vertical_Flight_000",
+      "x": 1792,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Vertical/Flight_000.png"
+    },
+    {
+      "name": "Vertical_Flight_001",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_001.png"
+    },
+    {
+      "name": "Vertical_Flight_002",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_002.png"
+    },
+    {
+      "name": "Vertical_Flight_003",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_003.png"
+    },
+    {
+      "name": "Vertical_Flight_004",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_004.png"
+    },
+    {
+      "name": "Vertical_Flight_005",
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_005.png"
+    },
+    {
+      "name": "Vertical_Flight_006",
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_006.png"
+    },
+    {
+      "name": "Vertical_Flight_007",
+      "x": 1536,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1792,
+      "source": "Source/Frames/Vertical/Flight_007.png"
+    }
+  ]
+}

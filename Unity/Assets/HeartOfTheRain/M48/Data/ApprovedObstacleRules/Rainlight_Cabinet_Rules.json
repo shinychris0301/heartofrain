@@ -1,0 +1,47 @@
+{
+  "id": "rainlight_cabinet",
+  "status": "M37 animation prototype; not yet assigned to the 50-level campaign",
+  "footprint": [
+    2,
+    2
+  ],
+  "occupancy": "Reserve all four cells. No gem or other obstacle may share any reserved cell.",
+  "motion": "anchored",
+  "goalFamily": "rainlight",
+  "goalUnitsPerCabinet": 4,
+  "activationPolicy": "At most one stage change per activation id per cabinet, even if an area effect touches multiple footprint cells. Golden Seeker child activations have distinct ids.",
+  "states": [
+    {
+      "name": "Closed",
+      "remainingRainlights": 4,
+      "hitResult": "Open; no goal collection"
+    },
+    {
+      "name": "Open",
+      "remainingRainlights": "4..1",
+      "hitResult": "Release exactly one rainlight and decrement remaining goal units by one"
+    },
+    {
+      "name": "Empty",
+      "remainingRainlights": 0,
+      "hitResult": "Retire footprint and refill once; ignore subsequent hits"
+    }
+  ],
+  "accepts": [
+    "orthogonally adjacent match",
+    "direct power-up hit"
+  ],
+  "animationRules": {
+    "openSeconds": 0.9,
+    "releaseFlightSeconds": 0.72,
+    "clearSeconds": 0.8,
+    "goalLogic": "Update gameplay progress when rainlight release is committed; animate the displayed counter on arrival.",
+    "refill": "Start after final clear reaches its handoff marker; no gem hidden behind the intact cabinet."
+  },
+  "futureProposedIntroductionLevel": 35,
+  "notImplemented": [
+    "Storm Crystal Column",
+    "Water-Spirit Pod",
+    "Campaign rebalancing for all nine planned families"
+  ]
+}

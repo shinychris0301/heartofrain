@@ -1,0 +1,904 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "title": "The Village Well",
+      "sourceTitle": "The General from the Hills",
+      "art": "Chapter01_VillageWell",
+      "opening": "In the village of Zarech, where white deer daisies grew above a silver river, Ivan had learned to mend a roof before he learned to carry a sword. Years later, he returned as general of Ancient Moscow's watch.",
+      "ending": "His villagers welcomed the commander, but his old friend Daria asked whether he still knew their names. Ivan answered by helping repair the village well. That evening, a messenger arrived: the city's sacred Heart had begun to beat unevenly. Ivan left his ceremonial banner behind and took his traveling cloak.\n\nIvan: \"A city is the people who must live through our decisions.\"",
+      "sourcePage": 9
+    },
+    {
+      "number": 2,
+      "title": "The Chamber Beneath the Square",
+      "sourceTitle": "The Chamber Beneath the Square",
+      "art": "Chapter02_Chamber",
+      "opening": "Beneath the central square, Ivan entered a chamber built around a luminous stone: the Heart of Ancient Moscow. Its light traveled through buried channels to the wells, gardens, and protective wards.",
+      "ending": "Keeper Orel showed him a hairline crack in the outer ring. Someone had been feeding the Heart whispers of distrust, turning the city's own fear against its defenses. Ivan ordered the chamber sealed while the watch searched the channels. Above them, the festival lanterns flickered, though no wind moved through the streets.\n\nOrel: \"It guards us only while its light can reach us.\"",
+      "sourcePage": 10
+    },
+    {
+      "number": 3,
+      "title": "A Door Made of Smoke",
+      "sourceTitle": "A Door Made of Smoke",
+      "art": "Unrevealed",
+      "opening": "The stolen whispers opened a narrow passage through the chamber wall. A figure of black stone stepped through it, carrying an iron lantern filled with red smoke.",
+      "ending": "He was Malrec, envoy of Varkul, the lord of the Hollow Furnace. Ivan struck the lantern, but its smoke divided into three shadows and slipped around him. Orel pulled the general clear as the outer ring shattered. Malrec lifted the Heart without touching it. For one terrible instant, every lantern in Ancient Moscow cast a shadow toward the sky.\n\nMalrec: \"Your fear has opened the door for us.\"",
+      "sourcePage": 11
+    },
+    {
+      "number": 4,
+      "title": "The Night of Falling Embers",
+      "sourceTitle": "The Night of Falling Embers",
+      "art": "Unrevealed",
+      "opening": "When the Heart vanished, the buried channels reversed. Embers burst from empty fountains; darkness gathered between houses, and flames climbed the timber roofs.",
+      "ending": "Ivan could not pursue Malrec while people were trapped beneath a collapsed walkway. He ordered the watch to cut firebreaks and carried a child to the square. From the western ridge came the sound of three iron bells, although no tower stood there. Orel recognized the signal of the Hollow Furnace. The Heart was being carried beyond the living city's boundaries.\n\nIvan: \"Open the lanes. Nobody is left behind.\"",
+      "sourcePage": 12
+    },
+    {
+      "number": 5,
+      "title": "Three Who Would Not Stay",
+      "sourceTitle": "Three Who Would Not Stay",
+      "art": "Unrevealed",
+      "opening": "Yaroslav, Ivan's oldest captain, organized the remaining watch. Boris, a village mason and smith, reinforced the shelters.",
+      "ending": "Daria mapped the fire's movement and found a trail where the darkness was flowing west. All three offered to join Ivan. He refused at first: a general should not empty his city's defenses for a private pursuit. Yaroslav placed command in the hands of Captain Vera, who had already secured the shelters. Together, they agreed on a rescue mission with four travelers and a city that could still protect itself.\n\nDaria: \"Take us because we can help, not because we are your friends.\"",
+      "sourcePage": 13
+    },
+    {
+      "number": 6,
+      "title": "The Keeper's Last Light",
+      "sourceTitle": "The Keeper's Last Light",
+      "art": "Unrevealed",
+      "opening": "Orel survived the shattered chamber, but the Heart's departure had dimmed the ward-stone he wore. He gave Ivan its remaining spark inside a crystal compass.",
+      "ending": "The compass pointed toward the Heart whenever its bearer remembered someone they wished to protect. It could not distinguish a road from a wall, and it offered no promise of victory. Orel warned that Varkul wanted more than a burning city: he wanted its survivors to believe that every rescue required a new victim. Ivan accepted the compass and rejected that bargain.\n\nIvan: \"Then we must bring back more than a stone.\"",
+      "sourcePage": 14
+    },
+    {
+      "number": 7,
+      "title": "The Gate That Still Held",
+      "sourceTitle": "The Gate That Still Held",
+      "art": "Unrevealed",
+      "opening": "At the western gate, the watch begged Ivan to take a larger force. Beyond the walls, however, a broad army would draw the Furnace's attention and leave the shelters exposed.",
+      "ending": "Ivan chose the narrow road. Before departing, he gave Vera orders to shelter families together, keep the wells covered, and record every missing person. The four travelers stepped beneath the surviving arch. Behind them, ordinary citizens raised a patchwork barrier against falling sparks. Ivan looked back once, understanding that the city's resistance had already begun.\n\nVera: \"Bring the dawn. We will hold a place for it.\"",
+      "sourcePage": 15
+    },
+    {
+      "number": 8,
+      "title": "The Road of Ash",
+      "sourceTitle": "The Road of Ash",
+      "art": "Unrevealed",
+      "opening": "Ash erased the road markings outside Ancient Moscow. Daria recovered their direction from drainage cuts beneath the dust; Boris laid flat stones across the hot ground.",
+      "ending": "At sunset they discovered refugees huddled in a roofless chapel. The compass drew west, away from the stranded families, but Ivan stopped. Yaroslav distributed their spare food while the others cleared a route to the city shelters. The delay cost them daylight. It also proved that the general's mission would not be allowed to turn the people it served into obstacles.\n\nYaroslav: \"A rescued Heart means little to an empty city.\"",
+      "sourcePage": 16
+    },
+    {
+      "number": 9,
+      "title": "An Unburned Ribbon",
+      "sourceTitle": "An Unburned Ribbon",
+      "art": "Unrevealed",
+      "opening": "At the edge of the ash field, a narrow indigo ribbon hung from a blackened post. Unlike everything around it, the cloth remained cool.",
+      "ending": "Daria found matching marks on nearby stones: someone had been guiding refugees through safe passages. Ivan followed the signs to a spring sealed beneath a slab. When Boris shifted it, clear water rose through the ash. A message scratched on the stone named no author, only a warning: the western bridge listened to spoken fear. Ivan tucked the ribbon beside the compass.\n\nDaria: \"Someone walked this road before us, and cared who came after.\"",
+      "sourcePage": 17
+    },
+    {
+      "number": 10,
+      "title": "The Bridge of Three Bells",
+      "sourceTitle": "The Bridge of Three Bells",
+      "art": "Unrevealed",
+      "opening": "The western bridge stood above a ravine filled with unnatural darkness. Three empty bells hung over its center.",
+      "ending": "When Boris admitted that he feared the span would fall, the first bell rang and a plank vanished. Ivan asked each companion to state a practical danger and a practical answer. Yaroslav secured a rope, Daria identified the stone supports, and Boris tested the remaining boards. Their honesty steadied the bridge; panic alone had fed its spell. On the far side, a woman's lantern appeared among the ruined arches.\n\nIvan: \"Name the danger. Then name what we can do.\"",
+      "sourcePage": 18
+    },
+    {
+      "number": 11,
+      "title": "The Lantern Beyond the Ravine",
+      "sourceTitle": "The Lantern Beyond the Ravine",
+      "art": "Unrevealed",
+      "opening": "The woman beyond the bridge did not wait to be rescued. She was lowering a rope to two strangers trapped on a ledge.",
+      "ending": "Ivan joined her, and together they hauled the travelers to safety. She introduced herself as Mila, an apprentice of the vanished Rainwardens, and asked whether the general intended to help people or merely defeat an enemy. Ivan answered by giving the strangers the last dry cloaks. Mila noticed the indigo ribbon at his belt. It was hers, left to mark a path that the flames could not swallow.\n\nMila: \"Keep the ribbon. There are still people who need the road.\"",
+      "sourcePage": 19
+    },
+    {
+      "number": 12,
+      "title": "A Spring Under Stone",
+      "sourceTitle": "A Spring Under Stone",
+      "art": "Unrevealed",
+      "opening": "Mila led the party to a covered springhouse where the Furnace's heat could not enter. She could guide water along old ward-lines, but could neither summon rain nor restore the stolen Heart.",
+      "ending": "Boris repaired the broken basin while Mila cleaned Ivan's burned hand. The general thanked her too formally, and she laughed at the distance he kept behind his title. Outside, Yaroslav stood watch; inside, Daria compared Mila's path marks with her own map. Their separate journeys began to become one route.\n\nMila: \"You may set down your rank long enough to drink.\"",
+      "sourcePage": 20
+    },
+    {
+      "number": 13,
+      "title": "The Map That Needed Two Hands",
+      "sourceTitle": "The Map That Needed Two Hands",
+      "art": "Unrevealed",
+      "opening": "Daria's map ended at the ravine. Mila's memory began beyond it, where moving fog concealed the road to the Hollow Furnace.",
+      "ending": "Alone, neither guide could reach the demon's lair. Together they charted a route through the Glasswood, the Sunken Quarter, and the Citadel of Cinders. Mila insisted on joining the expedition because the missing Rainwardens had left records along that path. Ivan accepted her expertise without promising her obedience. At dawn, five travelers left the springhouse, bound by a common purpose rather than a command.\n\nDaria: \"Your memory is a road. My map can give it edges.\"",
+      "sourcePage": 21
+    },
+    {
+      "number": 14,
+      "title": "The Orchard Without Shadows",
+      "sourceTitle": "The Orchard Without Shadows",
+      "art": "Unrevealed",
+      "opening": "They entered an orchard of silver-leaved trees whose roots had been hardened by Furnace magic. No fruit remained, and every trunk cast the same shadow regardless of the light.",
+      "ending": "Mila discovered that the shadows were restraining water underground. Ivan wanted to cut a straight path, but Boris warned that the roots held the slope together. They loosened the spell one tree at a time. When the water flowed, living leaves appeared beneath the silver crust. Ivan began to see restoration as a kind of victory he had never been taught to lead.\n\nBoris: \"A road that collapses behind us is no road home.\"",
+      "sourcePage": 22
+    },
+    {
+      "number": 15,
+      "title": "The General's Promise",
+      "sourceTitle": "The General's Promise",
+      "art": "Unrevealed",
+      "opening": "A soot patrol surrounded the orchard: silent humanoid guards carved from cracked black stone. Yaroslav formed a shield line while Ivan fought a path to higher ground.",
+      "ending": "Mila redirected a spring beneath the guards, cooling their joints until they locked in place. Afterward, Ivan promised to keep danger away from her. Mila refused a promise he could not keep. She asked for the truth about each risk and a voice in every decision. Ivan agreed, uncomfortable with how much that simple honesty required of him.\n\nMila: \"Do not promise I will never be afraid. Promise you will listen.\"",
+      "sourcePage": 23
+    },
+    {
+      "number": 16,
+      "title": "Letters in a Broken Tower",
+      "sourceTitle": "Letters in a Broken Tower",
+      "art": "Unrevealed",
+      "opening": "Inside a ruined signal tower, Mila found a Rainwarden letter sealed in glass. It described Varkul's theft of lesser ward-stones and his attempt to build a crown from borrowed light.",
+      "ending": "The final page had been removed. Ivan searched the upper floor and discovered that the tower's signal could still reach the city. He dictated a message for Vera: the Heart survived, and the mission had found a guide. Mila quietly added directions to the restored spring. Hope, they agreed, should travel with something people could use.\n\nIvan: \"Tell them where the water is. Then tell them we are coming back.\"",
+      "sourcePage": 24
+    },
+    {
+      "number": 17,
+      "title": "A Table for Five",
+      "sourceTitle": "A Table for Five",
+      "art": "Unrevealed",
+      "opening": "Rain did not fall, but a cold mist allowed the party to rest beneath the tower. Boris cooked a thin supper in a repaired pot.",
+      "ending": "Yaroslav told Mila how Ivan once tried to command a leaking roof and lost the argument. For the first time since the theft, Ivan laughed. Mila spoke of the hillside home she hoped to build, with a window wide enough to see the first storm of spring. Ivan described the village well. Their wishes sounded ordinary, and for that reason more precious than any enchanted treasure.\n\nMila: \"When this is over, I would like a room that belongs to no prophecy.\"",
+      "sourcePage": 25
+    },
+    {
+      "number": 18,
+      "title": "The Price of a Shortcut",
+      "sourceTitle": "The Price of a Shortcut",
+      "art": "Unrevealed",
+      "opening": "A new road appeared during the night, paved with untouched white stone. At its entrance, a faceless messenger offered passage straight to the Heart in exchange for the crystal compass.",
+      "ending": "Mila suspected a Furnace bargain, but the road's stones were real. Daria discovered that each step shifted the exit farther away. Ivan refused the trade and led everyone back to the difficult path. Before vanishing, the messenger revealed that Varkul knew Mila's name. She had hoped her journey could remain hidden from him.\n\nIvan: \"A promise that moves when tested is only another trap.\"",
+      "sourcePage": 26
+    },
+    {
+      "number": 19,
+      "title": "Mila's Unfinished Truth",
+      "sourceTitle": "Mila's Unfinished Truth",
+      "art": "Unrevealed",
+      "opening": "Mila admitted that her teacher had entered the Furnace and never returned. She had spent months following fragments of the Rainwardens' records, hoping to learn what happened.",
+      "ending": "Her lantern was the last working instrument of that order, and Varkul had tried to seize it before. Ivan was hurt that she had waited to tell him, but recognized how little trust a uniform alone deserved. He asked what else the lantern could do. Mila answered truthfully: she did not yet know. They agreed that uncertainty would be spoken, not hidden.\n\nMila: \"I can give you what I know. I cannot give you certainty.\"",
+      "sourcePage": 27
+    },
+    {
+      "number": 20,
+      "title": "The Door into Glasswood",
+      "sourceTitle": "The Door into Glasswood",
+      "art": "Unrevealed",
+      "opening": "At the entrance to Glasswood, translucent trunks formed a wall around an old gate. Its lock responded to the compass and the lantern together.",
+      "ending": "When Ivan and Mila raised them, the gate opened onto a forest reflecting a sky neither had seen. Daria marked the threshold with ordinary chalk so no spell could erase the way back. Yaroslav tightened his shield straps; Boris carried extra wedges for unstable ground. The party entered as a team. Behind them, the new leaves in the orchard rustled for the first time.\n\nYaroslav: \"Mark the return before we take the next step.\"",
+      "sourcePage": 28
+    },
+    {
+      "number": 21,
+      "title": "Trees of Borrowed Light",
+      "sourceTitle": "Trees of Borrowed Light",
+      "art": "Unrevealed",
+      "opening": "Glasswood's trunks stored stolen daylight. Each branch displayed a different memory of Ancient Moscow, some true and some invented.",
+      "ending": "Ivan saw the village untouched by fire and almost stepped away from the trail. Mila tested the vision with her lantern; it reflected no water and cast no human breath upon the glass. They broke the false image without damaging the living root below it. Daria began marking trustworthy trees with cord. The forest would be crossed through observation, not through confidence in the brightest scene.\n\nMila: \"A beautiful answer can still be the wrong road.\"",
+      "sourcePage": 29
+    },
+    {
+      "number": 22,
+      "title": "The Captain's Second Chance",
+      "sourceTitle": "The Captain's Second Chance",
+      "art": "Unrevealed",
+      "opening": "Yaroslav encountered a reflection of soldiers he had failed to save years earlier. The glass offered him a battle he could win this time if he abandoned the others.",
+      "ending": "He lowered his shield and confessed the old defeat to Ivan. The general did not offer easy absolution. He reminded his friend of the people waiting on the present road. Together they walked away from the reflection. Yaroslav left a strip of blue cloth on the trunk, a small acknowledgment that remembering loss need not become a surrender to it.\n\nYaroslav: \"I remember them. I will not abandon the living to follow them.\"",
+      "sourcePage": 30
+    },
+    {
+      "number": 23,
+      "title": "The Mason's Measure",
+      "sourceTitle": "The Mason's Measure",
+      "art": "Unrevealed",
+      "opening": "A glittering staircase crossed a chasm, but Boris saw no load-bearing joints. The magical stone demanded that the travelers believe in its strength.",
+      "ending": "Boris instead built a simple brace from fallen beams and showed the others where each foot should land. The staircase broke exactly where he had predicted, leaving their braced section intact. Mila helped cool the cut surfaces while Daria measured the remaining span. Ivan thanked Boris for disagreeing with him before the crossing. A general's authority, he was learning, must leave room for a better answer.\n\nBoris: \"Trust is welcome. A sound joint is still necessary.\"",
+      "sourcePage": 31
+    },
+    {
+      "number": 24,
+      "title": "A Map of What Remains",
+      "sourceTitle": "A Map of What Remains",
+      "art": "Unrevealed",
+      "opening": "Daria discovered that Glasswood shifted around wishes rather than footsteps. Every time someone imagined reaching the Furnace, the destination moved.",
+      "ending": "She mapped what could be touched: a stone well, a fallen arch, a pool that smelled of rain. The resulting route looked crooked but remained stable. Mila added marks from her teacher's journey, including a spiral beside the pool. Ivan recognized that spiral from the Heart chamber. For the first time, the Rainwardens' disappearance and the city's stolen light seemed to belong to the same design.\n\nDaria: \"We will map what stays, not what the forest promises.\"",
+      "sourcePage": 32
+    },
+    {
+      "number": 25,
+      "title": "The Pool of Unsaid Words",
+      "sourceTitle": "The Pool of Unsaid Words",
+      "art": "Unrevealed",
+      "opening": "The spiral pool held voices instead of reflections. Ivan heard Mila's hope for a home, and she heard his fear that he would return as a hero to a city of graves.",
+      "ending": "Embarrassed, they tried to leave, but the water rose across their path. Mila suggested speaking the words directly so the pool would no longer possess them. Ivan admitted he was beginning to care for her beyond the mission. She said the feeling was mutual, then asked him to let it grow without making it a vow made under siege.\n\nMila: \"Let us choose each other in daylight, too.\"",
+      "sourcePage": 33
+    },
+    {
+      "number": 26,
+      "title": "The Shard Collector",
+      "sourceTitle": "The Shard Collector",
+      "art": "Unrevealed",
+      "opening": "A masked Furnace lieutenant named Serev guarded the forest's center. He harvested daylight shards and offered to sell them back to the people from whom they had been stolen.",
+      "ending": "When Ivan refused, Serev sealed the trail with burning glass. Daria identified his supply line; Boris broke its supports while Yaroslav protected the others. Mila cooled the wall, and Ivan shattered the lieutenant's mask. Serev escaped through a smoke slit, leaving his store of daylight behind. The party released it into the trees instead of taking it as spoils.\n\nIvan: \"Light taken from a home is not yours to sell.\"",
+      "sourcePage": 34
+    },
+    {
+      "number": 27,
+      "title": "The Clearing of Real Stars",
+      "sourceTitle": "The Clearing of Real Stars",
+      "art": "Unrevealed",
+      "opening": "Released daylight opened a clearing where the true night sky could be seen. The party rested without a watcher trying to bargain with them.",
+      "ending": "Mila taught Ivan how her lantern measured moisture in the air. He showed her the plain cloth patch beneath his armor, sewn by his mother before his first command. They spoke of the people who had made their work possible. When their hands met over the lantern's handle, neither withdrew. The moment was small enough to belong to them alone.\n\nIvan: \"I would like to know you when no one needs saving.\"",
+      "sourcePage": 35
+    },
+    {
+      "number": 28,
+      "title": "The Letter Without a Seal",
+      "sourceTitle": "The Letter Without a Seal",
+      "art": "Unrevealed",
+      "opening": "Near the clearing, Mila found a letter from her teacher, Lada. It explained that the Heart could only be returned through an unbroken sequence of ward-lines.",
+      "ending": "A violent escape might recover the stone yet destroy the road that carried its light home. Lada had entered the Furnace to discover a safer route. The letter ended with a warning about a device called the Ash Lock. Its purpose was missing, but its outline resembled the spiral Ivan had seen beneath the city. The party copied every line before moving on.\n\nMila: \"She was looking for a way to bring everyone back.\"",
+      "sourcePage": 36
+    },
+    {
+      "number": 29,
+      "title": "A Kiss Before the Threshold",
+      "sourceTitle": "A Kiss Before the Threshold",
+      "art": "Unrevealed",
+      "opening": "At Glasswood's far gate, dawn appeared as a thin band in the distance. Ivan offered Mila the choice to return to the shelters with the recovered records.",
+      "ending": "She chose to continue, then asked him the same question. He smiled at being offered an exit from his own legend. Before rejoining the others, they shared a quiet first kiss. Neither called it destiny. They promised to keep asking, keep listening, and make room for a future larger than this road. The gate opened toward the drowned outskirts.\n\nMila: \"I am here because I choose to be.\"",
+      "sourcePage": 37
+    },
+    {
+      "number": 30,
+      "title": "The Forest Gives Back",
+      "sourceTitle": "The Forest Gives Back",
+      "art": "Unrevealed",
+      "opening": "As the five travelers left, the glass crust fell from the nearest trees. Green branches emerged without swallowing the old paths.",
+      "ending": "Daria sent a second signal toward Ancient Moscow, marking the forest as a possible refuge. Yaroslav recorded the lieutenant's mask and the direction of his escape. Boris kept one harmless shard for the compass's cracked frame. Ivan looked back at the restored clearing and understood the journey's pattern: every repaired place could become part of the road home. Below the ridge, ruined towers rose from dark water.\n\nBoris: \"We are not only finding the road. We are making it usable.\"",
+      "sourcePage": 38
+    },
+    {
+      "number": 31,
+      "title": "Streets Beneath Still Water",
+      "sourceTitle": "Streets Beneath Still Water",
+      "art": "Unrevealed",
+      "opening": "The Sunken Quarter had belonged to a small settlement on the old trade road. Furnace magic had flooded it without rain, holding the water still above the roof beams.",
+      "ending": "Mila could make a narrow dry lane but could not sustain it for long. Daria located a raised causeway on her map; Boris tested submerged steps with a pole. Ivan ordered short crossings and repeated rest stops rather than a heroic rush. Beneath the surface, pale window lights moved from house to house, inviting them to leave the safe route.\n\nIvan: \"We cross at the pace our guide can sustain.\"",
+      "sourcePage": 39
+    },
+    {
+      "number": 32,
+      "title": "The House with a Dry Window",
+      "sourceTitle": "The House with a Dry Window",
+      "art": "Unrevealed",
+      "opening": "One upper room remained dry. An elderly potter named Anya had sealed its window with ward-clay and sheltered several neighbors inside.",
+      "ending": "They had survived by collecting condensation and sharing grain. Ivan helped lower the residents to the causeway while Boris studied the clay seal. Mila recognized a Rainwarden recipe hidden in the potter's ordinary work. Anya gave them a pouch of the clay and asked that its purpose be remembered. No title had protected the room; skill, patience, and neighbors who trusted one another had done so.\n\nAnya: \"Take the clay. Leave the knowledge with someone who needs it.\"",
+      "sourcePage": 40
+    },
+    {
+      "number": 33,
+      "title": "The Market of Empty Cups",
+      "sourceTitle": "The Market of Empty Cups",
+      "art": "Unrevealed",
+      "opening": "At the drowned market, cups hovered above abandoned stalls. Every cup offered to remove one painful memory, leaving the traveler lighter and less certain of why they had come.",
+      "ending": "Yaroslav almost accepted one after hearing the voices of his lost soldiers. Mila poured ordinary water into it. The cup cracked, revealing the smoke hidden inside. Together the party broke the market's spell and recovered useful vessels for the refugees. Ivan kept his grief and fear. He would not surrender the people within them to make the road easier.\n\nYaroslav: \"Pain can burden me without owning my decisions.\"",
+      "sourcePage": 41
+    },
+    {
+      "number": 34,
+      "title": "The Record Beneath the Bell",
+      "sourceTitle": "The Record Beneath the Bell",
+      "art": "Unrevealed",
+      "opening": "A chapel bell lay underwater, resting on a sealed archive door. Boris and Yaroslav lifted it with a timber lever while Mila held the water aside.",
+      "ending": "Inside, Daria found evidence that Varkul's servants had redirected the quarter's ward-lines toward the Furnace. The floods were a reservoir for stolen power. A second record named Lada as a prisoner transferred to the Citadel of Cinders. Mila's hope rose too quickly, and Ivan gently asked how old the record was. They carried the evidence without pretending it promised survival.\n\nIvan: \"We will follow the record. We will not make it say more than it does.\"",
+      "sourcePage": 42
+    },
+    {
+      "number": 35,
+      "title": "A Dance on the Causeway",
+      "sourceTitle": "A Dance on the Causeway",
+      "art": "Unrevealed",
+      "opening": "With the residents safely beyond the flood, Anya hummed an old village tune. Daria tapped its rhythm on an empty cup, and Boris added an uneven beat.",
+      "ending": "Mila took Ivan's hand and taught him a few steps on the broad causeway. He moved like a commander trying to march through a dance, which made her laugh until she nearly forgot the cold. The moment did not erase the danger. It reminded them what the danger threatened: ordinary pleasures, shared freely, with no enemy deciding their price.\n\nMila: \"You may lead an army. I will lead this dance.\"",
+      "sourcePage": 43
+    },
+    {
+      "number": 36,
+      "title": "The Water That Climbed",
+      "sourceTitle": "The Water That Climbed",
+      "art": "Unrevealed",
+      "opening": "Malrec returned at midnight and reversed the quarter's current. Water climbed the tower walls and pressed against the causeway.",
+      "ending": "Ivan wanted to pursue him, but Mila could only hold one escape lane open. The general chose to protect the residents again. Daria opened a drainage gate while Boris broke the iron teeth holding it shut. Yaroslav blocked Malrec's smoke lantern long enough for everyone to retreat. The envoy escaped, furious that his bait had failed. The drained quarter revealed a stone staircase leading below the old reservoir.\n\nIvan: \"Let him run. Keep the lane open.\"",
+      "sourcePage": 44
+    },
+    {
+      "number": 37,
+      "title": "The Reservoir of Names",
+      "sourceTitle": "The Reservoir of Names",
+      "art": "Unrevealed",
+      "opening": "Below the quarter, the reservoir walls bore the names of people whose ward-stones had been stolen. The writing glowed whenever someone remembered the person it named.",
+      "ending": "Daria found villages omitted from every map she owned. Mila found Lada's name, still faintly lit. Ivan ordered a full copy, refusing to treat unfamiliar lives as less worthy of rescue. The compass strengthened when he read the names aloud. The Heart's light was not drawn only toward his own home; it recognized care directed beyond familiar streets.\n\nDaria: \"A missing place is still a place. We will put it back on the map.\"",
+      "sourcePage": 45
+    },
+    {
+      "number": 38,
+      "title": "What the Lantern Cannot Mend",
+      "sourceTitle": "What the Lantern Cannot Mend",
+      "art": "Unrevealed",
+      "opening": "Mila found the broken housing of a Rainwarden lantern. She tried to repair it until her hands shook, but its inner crystal had been consumed.",
+      "ending": "Ivan sat beside her without ordering her to rest or telling her the loss had a purpose. Eventually she set the fragments down. She admitted that saving the Heart might not save her teacher. Ivan admitted that he feared losing Mila now that he had begun imagining a future with her. They let both truths remain, and shared the silence without trying to turn it into courage.\n\nIvan: \"You do not have to make this hurt useful.\"",
+      "sourcePage": 46
+    },
+    {
+      "number": 39,
+      "title": "The Stair of Returning Light",
+      "sourceTitle": "The Stair of Returning Light",
+      "art": "Unrevealed",
+      "opening": "Using Anya's ward-clay, Boris sealed the reservoir's damaged joints. Mila redirected its remaining power into the empty channels toward Ancient Moscow.",
+      "ending": "For a moment, the compass displayed a complete road of gold, then dimmed at a break beneath the Citadel. Daria marked the gap as their next objective. Above them, the rescued residents began opening dry rooms again. The party left tools and instructions, turning the refuge into a working settlement. Restoring the Heart would require this same labor on a greater scale.\n\nBoris: \"Magic opens the channel. Someone must still mend its walls.\"",
+      "sourcePage": 47
+    },
+    {
+      "number": 40,
+      "title": "The Citadel on the Red Horizon",
+      "sourceTitle": "The Citadel on the Red Horizon",
+      "art": "Unrevealed",
+      "opening": "From the upper stair, the travelers saw the Citadel of Cinders suspended above a scarred plain. Its towers stood on great chains connected to the Hollow Furnace beyond.",
+      "ending": "Beneath the citadel, villagers carried stones to repair walls their captors kept breaking. Ivan studied the guards rather than drawing his sword. Mila recognized her teacher's lantern mark on one prison window. The route had become a rescue mission as well as a theft undone. Together they planned an entrance that would leave a way out for more than five people.\n\nIvan: \"We do not enter until we know how the prisoners leave.\"",
+      "sourcePage": 48
+    },
+    {
+      "number": 41,
+      "title": "A Gate for the Captive Workers",
+      "sourceTitle": "A Gate for the Captive Workers",
+      "art": "Unrevealed",
+      "opening": "Daria discovered a supply gate beneath the Citadel's western chain. Captive workers moved through it at fixed intervals, watched by stone guards that followed sounds rather than faces.",
+      "ending": "Yaroslav created a diversion with loose shield plates while Boris jammed the gate's locking beam. Ivan and Mila guided the first group through a drainage passage. The workers chose representatives to organize their own escape. The general gave them his map and asked what dangers he had missed. Their knowledge changed the plan before the guards noticed the opening.\n\nIvan: \"You know this prison. Show us where our plan is wrong.\"",
+      "sourcePage": 49
+    },
+    {
+      "number": 42,
+      "title": "The Workshop of Stolen Summers",
+      "sourceTitle": "The Workshop of Stolen Summers",
+      "art": "Unrevealed",
+      "opening": "Inside the Citadel, jars of warm light hung above a workshop. Each held a summer stolen from a ward-stone, leaving its home cold and barren.",
+      "ending": "Boris found his village's mason mark on a dismantled conduit and understood how widely the Furnace had reached. Mila opened the jars carefully, returning their light to the nearest intact channels. Ivan wanted to destroy the workshop, but the prisoners could use its tools. They broke the siphons, kept the benches, and made the room the escape route's first aid station.\n\nBoris: \"Break what enslaves. Keep what can help someone live.\"",
+      "sourcePage": 50
+    },
+    {
+      "number": 43,
+      "title": "The Prisoner Who Waited for Rain",
+      "sourceTitle": "The Prisoner Who Waited for Rain",
+      "art": "Unrevealed",
+      "opening": "Mila found Lada alive in the marked cell, weakened but still studying the walls. Their reunion began with tears and became an argument when Lada asked her apprentice to leave.",
+      "ending": "Mila refused to let fear decide for either of them. Lada revealed that the Heart was intact inside Varkul's crown engine. The Ash Lock connected it to the Furnace: removing the Heart would trigger a return surge through every stolen ward-line. Lada had found a way to divert that surge, but the necessary outer anchor remained beyond the citadel.\n\nLada: \"I wanted a solution. I found the shape of the danger.\"",
+      "sourcePage": 51
+    },
+    {
+      "number": 44,
+      "title": "The Commander of Cinders",
+      "sourceTitle": "The Commander of Cinders",
+      "art": "Unrevealed",
+      "opening": "The Citadel's commander, Ruzhen, blocked the prison stairs with a blade forged from captured ward-light. He mocked Ivan for slowing his mission to free strangers.",
+      "ending": "Ivan answered through the battle itself: Yaroslav protected the prisoners while the general drew Ruzhen away from the narrow exit. Daria released a counterweight, separating the commander from his power source. Boris shattered the exposed conduit. Ruzhen's weapon became ordinary iron, and Ivan defeated him without collapsing the stairs. The prisoners passed through the space their captor had claimed.\n\nIvan: \"Your prisoners are not the price of my victory.\"",
+      "sourcePage": 52
+    },
+    {
+      "number": 45,
+      "title": "The Crown Engine",
+      "sourceTitle": "The Crown Engine",
+      "art": "Unrevealed",
+      "opening": "From a maintenance gallery, the party saw a vision of the Furnace's engine. The golden Heart hovered inside a crown-shaped iron frame, feeding red light into Varkul's distant throne.",
+      "ending": "Four anchors held the system stable: the Citadel chain, the Glasswood root, the Sunken reservoir, and an outer rain gate. They had already restored two. Boris could release the Citadel anchor without killing the workers below, if someone first replaced its load with stone supports. Ivan delayed the pursuit again. A recovered Heart resting above crushed prisoners would be a defeat.\n\nDaria: \"The engine has four anchors. We can change how it fails.\"",
+      "sourcePage": 53
+    },
+    {
+      "number": 46,
+      "title": "The Argument on the Parapet",
+      "sourceTitle": "The Argument on the Parapet",
+      "art": "Unrevealed",
+      "opening": "Ivan asked Mila to accompany Lada and the freed prisoners to safety. She heard care, but also the return of a command disguised as protection.",
+      "ending": "Mila reminded him of their orchard promise. He admitted that love had made danger feel personal enough to cloud his judgment. She admitted she sometimes hid exhaustion to appear indispensable. They agreed on shared limits: no concealed symptoms, no private bargains, and no decision about another person's life made without that person's voice. Their love became stronger because the disagreement had been allowed to exist.\n\nMila: \"Ask me to stay safe. Do not decide my place for me.\"",
+      "sourcePage": 54
+    },
+    {
+      "number": 47,
+      "title": "A Promise Without a Prophecy",
+      "sourceTitle": "A Promise Without a Prophecy",
+      "art": "Unrevealed",
+      "opening": "That evening Ivan carved a small wooden window frame from a broken packing crate. He gave it to Mila as a promise of the hillside home she had described.",
+      "ending": "Mila tied her indigo ribbon through it, then broke the frame into two matching pieces so each could carry half. They agreed that the keepsakes guaranteed nothing; they were reminders to seek a life after the mission. She kissed him beneath the unfinished parapet. Above them, no stars appeared, but neither waited for the sky to approve their choice.\n\nIvan: \"A window for the first spring storm. If we both choose it still.\"",
+      "sourcePage": 55
+    },
+    {
+      "number": 48,
+      "title": "The Chain Beneath the City",
+      "sourceTitle": "The Chain Beneath the City",
+      "art": "Unrevealed",
+      "opening": "Boris and the freed workers built the supports together. Daria checked the loads while Yaroslav kept the guards from the worksite.",
+      "ending": "Ivan reached the main chain's lock and found Malrec waiting with a new smoke lantern. Instead of fighting alone, he called his companions and held the passage until they arrived. Mila cooled the lantern; Yaroslav broke it with his shield. Malrec fled toward the Furnace, stripped of his easiest weapon. The workers released the chain, and the Citadel settled safely onto the foundations they had made.\n\nIvan: \"I need you here. That is an order I should have learned sooner.\"",
+      "sourcePage": 56
+    },
+    {
+      "number": 49,
+      "title": "Lada's Road Out",
+      "sourceTitle": "Lada's Road Out",
+      "art": "Unrevealed",
+      "opening": "Lada refused to spend her rescue waiting quietly. She organized the freed workers into repair teams and gave Daria the formula for the outer rain gate.",
+      "ending": "She would return with the evacuees toward the Sunken Quarter, strengthening the ward-lines behind the expedition. Before parting, she told Mila that courage was not measured by how much pain she could endure unseen. Mila promised to keep that lesson. Their farewell held uncertainty, but it also held a practical plan: signals, meeting points, and people responsible for each section of the road.\n\nLada: \"Bring your whole self home, not only the part that can be useful.\"",
+      "sourcePage": 57
+    },
+    {
+      "number": 50,
+      "title": "The Gate Beyond the Citadel",
+      "sourceTitle": "The Gate Beyond the Citadel",
+      "art": "Unrevealed",
+      "opening": "The Furnace road began at an arch made from cooled ash. When the Citadel anchor disconnected, the arch cracked and revealed a path through a mountain of red glass.",
+      "ending": "Mila's lantern dimmed as she opened the first seal. She told Ivan immediately, honoring their agreement. They divided the lantern's tasks among ordinary lamps and the compass to conserve its strength. Yaroslav left a marker for Lada's teams. The five travelers continued, carrying a route made safer by everyone who had chosen to repair it behind them.\n\nMila: \"The lantern is weaker. I am telling you before it fails.\"",
+      "sourcePage": 58
+    },
+    {
+      "number": 51,
+      "title": "The Mountain That Breathed Heat",
+      "sourceTitle": "The Mountain That Breathed Heat",
+      "art": "Unrevealed",
+      "opening": "The mountain's passages expanded with the Furnace's breathing. Hot air pushed outward in long intervals; between them, the tunnels drew everything toward the center.",
+      "ending": "Daria measured the rhythm with hanging threads while Boris fixed resting platforms into the walls. Ivan moved the party only during the outward breath. At the first safe chamber, Mila found drops of clear water beneath the red glass. The outer rain gate was still alive somewhere inside the mountain, hidden beneath layers of stolen heat.\n\nDaria: \"We move on the rhythm we measure, not the one we hope for.\"",
+      "sourcePage": 59
+    },
+    {
+      "number": 52,
+      "title": "The Hall of Unfinished Swords",
+      "sourceTitle": "The Hall of Unfinished Swords",
+      "art": "Unrevealed",
+      "opening": "An abandoned forge held rows of swords with no handles. The Furnace had made weapons without anyone left to carry them.",
+      "ending": "Boris recognized that the blades were light collectors, drawing energy from every person who entered. He covered their cutting edges with ward-clay while Mila grounded the stored light through a drain. Ivan found a simple unfinished sword and left it where it stood. His own weapon, maintained by human hands, was enough. At the far wall, the forge's cooled pattern revealed the rain gate's first key.\n\nBoris: \"A weapon that takes from its wielder is another chain.\"",
+      "sourcePage": 60
+    },
+    {
+      "number": 53,
+      "title": "The Bargain in Ivan's Voice",
+      "sourceTitle": "The Bargain in Ivan's Voice",
+      "art": "Unrevealed",
+      "opening": "Varkul spoke through the forge using Ivan's own voice. He offered to return the Heart if the general surrendered Mila's lantern.",
+      "ending": "He even promised her safety, but refused to name the people whose ward-lines would remain enslaved. Ivan asked for a complete answer; the imitation voice repeated only the offer. Mila raised the lantern and revealed the speaking conduit. Together they sealed it. The demon's most dangerous weapon was not flame. It was a bargain made to sound like a decision Ivan had already chosen.\n\nIvan: \"If your mercy cannot name its cost, it is not mercy.\"",
+      "sourcePage": 61
+    },
+    {
+      "number": 54,
+      "title": "The First Rain Gate",
+      "sourceTitle": "The First Rain Gate",
+      "art": "Unrevealed",
+      "opening": "The gate lay beneath a glass floor, a circular mechanism designed to call the city's dormant storm wards. Its stonework had been fused by heat.",
+      "ending": "Boris cooled it gradually while Daria aligned the markings from Lada's formula. Mila used only a little lantern light, allowing the mechanism's own water to carry the rest. The gate opened, but its lower chamber was empty. A central anchor had been removed and carried deeper into the mountain. Restoring the gate would require finding that anchor before touching the Heart.\n\nMila: \"We have opened a door. We have not yet solved what lies behind it.\"",
+      "sourcePage": 62
+    },
+    {
+      "number": 55,
+      "title": "The General Sets Down His Banner",
+      "sourceTitle": "The General Sets Down His Banner",
+      "art": "Unrevealed",
+      "opening": "A guard chamber demanded a commander's banner as the price of entry. Ivan realized the Furnace recognized the symbols of authority more easily than the people beneath them.",
+      "ending": "He removed his decorative shoulder clasp and wrapped his armor in a worker's cloak. Daria led the party through the maintenance passage the guard chamber ignored. Mila watched him leave the emblem behind without resentment. He remained a general because of his responsibilities, not because an enchanted gate acknowledged his rank. Beyond it, the second forge waited.\n\nIvan: \"The duty comes with me. The ornament can stay.\"",
+      "sourcePage": 63
+    },
+    {
+      "number": 56,
+      "title": "A Room with No Echo",
+      "sourceTitle": "A Room with No Echo",
+      "art": "Unrevealed",
+      "opening": "The second forge contained a chamber that swallowed every sound. Unable to call instructions, the travelers worked from signals they had agreed upon earlier.",
+      "ending": "Yaroslav kept the group together with taps on his shield; Daria marked hazards in chalk. Mila took Ivan's hand when the darkness deepened, and he followed her lantern without trying to lead every step. At the far door, Boris restored a cracked resonator. Sound returned in a single rush, and Mila's first audible word was Ivan's name.\n\nMila: \"Ivan. There you are.\"",
+      "sourcePage": 64
+    },
+    {
+      "number": 57,
+      "title": "The Missing Anchor",
+      "sourceTitle": "The Missing Anchor",
+      "art": "Unrevealed",
+      "opening": "The rain anchor stood in the third forge, converted into a pedestal for Serev's stolen daylight. The lieutenant returned with a mask of mirrored glass and tried to trap the party in visions of their desired futures.",
+      "ending": "Ivan saw the hillside home; Mila saw Lada safe and smiling. They recognized how precisely the trap used what they loved. Daria covered the mirrors while Yaroslav pinned Serev's cloak. Boris freed the anchor, and Mila drained the false visions. Serev fled without his mask, unable to carry the truth he had exposed.\n\nMila: \"Wanting a future does not make this vision real.\"",
+      "sourcePage": 65
+    },
+    {
+      "number": 58,
+      "title": "The Ash Lock Explained",
+      "sourceTitle": "The Ash Lock Explained",
+      "art": "Unrevealed",
+      "opening": "Lada's final diagram arrived through the repaired signal line. It confirmed a terrible mechanism: when the Heart left the crown engine, the Ash Lock would send stored heat back toward the city.",
+      "ending": "The rain anchor could divert most of the surge into the outer gate. A second latch had to be held manually inside the engine chamber until the Heart crossed the threshold. The holder could escape if the gate remained stable; nobody was required to die. Ivan made that distinction explicit and planned a rope-assisted release, a backup brace, and an alternate exit.\n\nIvan: \"We plan for everyone to leave. No one is named as a sacrifice.\"",
+      "sourcePage": 66
+    },
+    {
+      "number": 59,
+      "title": "The Home They Intended to Build",
+      "sourceTitle": "The Home They Intended to Build",
+      "art": "Unrevealed",
+      "opening": "Before carrying the anchor back, the party rested in a cool alcove. Mila asked Ivan what he would do when he no longer needed to hold a sword.",
+      "ending": "He answered that he wanted to learn how to build well enough to deserve Boris's approval. She imagined teaching lantern craft and planting deer daisies outside their window. They pressed the two halves of their wooden keepsake together. Their future was specific now, made of tasks and mistakes they hoped to share. Its tenderness gave them reason to pursue a safer plan, not a reason to abandon one.\n\nIvan: \"Teach me the lantern. I will learn the window.\"",
+      "sourcePage": 67
+    },
+    {
+      "number": 60,
+      "title": "The Gate Learns the Rain",
+      "sourceTitle": "The Gate Learns the Rain",
+      "art": "Unrevealed",
+      "opening": "Boris reset the anchor while Daria synchronized the mechanism. Mila guided a thread of water through each restored channel.",
+      "ending": "Far away, the compass showed Ancient Moscow's central chamber answering with a faint gold pulse. The gate worked, although a red fracture beneath its foundation remained beyond their tools. They documented the weakness and prepared spare supports. Yaroslav sent the results to Lada and Vera. The party then opened the inner mountain door. Beyond it stood the Hollow Furnace, where the Heart beat above Varkul's empty throne.\n\nDaria: \"The route answers. We still watch the fracture.\"",
+      "sourcePage": 68
+    },
+    {
+      "number": 61,
+      "title": "The Lair of the Hollow King",
+      "sourceTitle": "The Lair of the Hollow King",
+      "art": "Unrevealed",
+      "opening": "The Hollow Furnace was a fortress built inward, its towers hanging over a shaft of red light. Varkul's servants had fashioned every corridor to direct visitors toward the throne.",
+      "ending": "Daria searched for the workers' routes instead. She found hand-worn footholds and tool shelves hidden behind the ceremonial walls. Ivan followed her through the narrow passages while Mila listened for the Heart's pulse. They entered the lair without announcing themselves. Below the throne gallery, a chain of occupied cells waited in the heat.\n\nDaria: \"Someone had to maintain this place. Their route will be ours.\"",
+      "sourcePage": 69
+    },
+    {
+      "number": 62,
+      "title": "Those Still Behind the Walls",
+      "sourceTitle": "Those Still Behind the Walls",
+      "art": "Unrevealed",
+      "opening": "The cells held craftspeople whose knowledge kept the Furnace alive. Among them was a stonemason who had cut the original rain gate.",
+      "ending": "She warned that its foundation had been deliberately weakened to collapse after the Heart's removal. Boris asked her to mark the fracture's hidden edge. Mila passed a signal to Lada, who could organize repairs from the outer side. Ivan opened the cells and gave the prisoners tools rather than commands. They chose whether to leave immediately or help dismantle the machine that had held them.\n\nIvan: \"Your freedom is not conditional on helping us.\"",
+      "sourcePage": 70
+    },
+    {
+      "number": 63,
+      "title": "The Captain's Stand",
+      "sourceTitle": "The Captain's Stand",
+      "art": "Unrevealed",
+      "opening": "A patrol discovered the open cells. Yaroslav held a narrow landing while the prisoners crossed behind him.",
+      "ending": "His shield cracked under the guards' heated blades, and a falling stone injured his leg. Ivan returned to help despite the compass pulling him toward the Heart. Together they withdrew behind Boris's temporary barrier. Yaroslav refused to call the injury a noble payment; it was a problem to treat. Mila cooled the swelling, Daria adapted their route, and the captain continued with a staff instead of pretending nothing had changed.\n\nYaroslav: \"Do not praise the wound. Help me walk.\"",
+      "sourcePage": 71
+    },
+    {
+      "number": 64,
+      "title": "The Mason's Door",
+      "sourceTitle": "The Mason's Door",
+      "art": "Unrevealed",
+      "opening": "Boris sealed the patrol passage with a wall the Furnace could not melt quickly. Behind it he carved a narrow removable block, leaving a deliberate return route.",
+      "ending": "The general asked whether it would hold. Boris answered with a limit, not a reassurance: long enough for one passage, perhaps two, if no one struck the base. Daria wrote the condition beside the map. They sent the remaining prisoners through while the barrier held. Every honest limit made their plan less glorious and more likely to keep someone alive.\n\nBoris: \"It holds under these conditions. Remember the conditions.\"",
+      "sourcePage": 72
+    },
+    {
+      "number": 65,
+      "title": "The Compass Taken",
+      "sourceTitle": "The Compass Taken",
+      "art": "Unrevealed",
+      "opening": "Malrec emerged from a floor of smoke and seized the compass. Its golden needle spun toward the throne, drawing him away from his escape path.",
+      "ending": "Ivan almost pursued alone, but Mila stopped him at the broken stair. Daria recognized a service bridge below and guided the group around. They recovered the compass from Malrec's abandoned lantern cage. The envoy had learned that the compass would not serve a bearer who sought only possession. Furious, he broke the cage and fled toward his master for another weapon.\n\nMila: \"We can recover it together. Do not turn urgency into solitude.\"",
+      "sourcePage": 73
+    },
+    {
+      "number": 66,
+      "title": "The Maiden's Own Battle",
+      "sourceTitle": "The Maiden's Own Battle",
+      "art": "Unrevealed",
+      "opening": "Mila found the Furnace's lantern vault, where broken Rainwarden crystals fed a wall of red fire. Ivan offered to guard the entrance while she chose how to free them.",
+      "ending": "With Daria's help, Mila changed the crystals' alignment instead of pouring her own strength into the wall. The fire softened into blue light. She recovered her teacher's old lens and fitted it to her lantern. The improvement did not make her invincible, but it gave her more control. Ivan admired the skill behind the miracle more than the spectacle itself.\n\nMila: \"Hold the door. This part is mine to solve.\"",
+      "sourcePage": 74
+    },
+    {
+      "number": 67,
+      "title": "The Hall of Borrowed Faces",
+      "sourceTitle": "The Hall of Borrowed Faces",
+      "art": "Unrevealed",
+      "opening": "Varkul filled the next hall with copies of people from Ivan's past. Each demanded a different rescue, scattering his attention until he could scarcely move.",
+      "ending": "Mila refused to identify the real path by guessing which voice sounded most sincere. She and Daria traced the floor's ward-lines, while Boris tested each doorway. Ivan followed the work they could verify. The copied faces faded as the hidden engine was disconnected. One true signal remained: Vera's report that Ancient Moscow still held, and the repaired wells had begun to glow.\n\nIvan: \"The city is still there. We answer the real message.\"",
+      "sourcePage": 75
+    },
+    {
+      "number": 68,
+      "title": "Malrec's Last Lantern",
+      "sourceTitle": "Malrec's Last Lantern",
+      "art": "Unrevealed",
+      "opening": "The envoy waited at the inner gate with a lantern carved from the citadel chain. It drew every spark in the corridor toward Ivan's armor.",
+      "ending": "The general laid his sword aside and used a worker's hook to ground the chain. Yaroslav struck the lantern's hinge; Mila cooled its core. Malrec tried to escape through smoke, but the grounded chain sealed his passage. His black-stone form crumbled into harmless ash when Boris broke the empty lantern. They left the corridor intact for the return rather than burning the victory into its walls.\n\nYaroslav: \"The hinge, Ivan. Leave the bright center alone.\"",
+      "sourcePage": 76
+    },
+    {
+      "number": 69,
+      "title": "The Threshold of the Heart",
+      "sourceTitle": "The Threshold of the Heart",
+      "art": "Unrevealed",
+      "opening": "Beyond the inner gate, the Heart floated within the crown engine. Its gold light flickered around red chains, and Ivan recognized the rhythm from the city chamber.",
+      "ending": "The five travelers checked their plan once more: rain gate answering, rope secured, alternate passage marked. Mila would operate the water latch because her restored lens could control it; Boris would brace it, Daria coordinate the gate, and Yaroslav protect the exit. Ivan would confront Varkul. Mila asked him to look at her before looking at the throne, and he did.\n\nMila: \"Remember the way out, even when you see what you came for.\"",
+      "sourcePage": 77
+    },
+    {
+      "number": 70,
+      "title": "The Lord Who Called Himself Dawn",
+      "sourceTitle": "The Lord Who Called Himself Dawn",
+      "art": "Unrevealed",
+      "opening": "Varkul descended from the empty throne, a towering humanoid figure of cracked obsidian wrapped in ember-red robes. He claimed that stolen light made him the city's rightful dawn.",
+      "ending": "Ivan asked why a dawn needed prisoners, broken wells, and darkness to survive. The demon answered by raising the crown engine's chains. Mila held the water latch open; Daria called the pulse intervals. Ivan advanced with his ordinary steel blade. The battle began around a machine that could be understood, interrupted, and dismantled.\n\nIvan: \"Light that needs our darkness has no claim to rule us.\"",
+      "sourcePage": 78
+    },
+    {
+      "number": 71,
+      "title": "A Crown Made of Other Lives",
+      "sourceTitle": "A Crown Made of Other Lives",
+      "art": "Unrevealed",
+      "opening": "Varkul's crown drew strength from the names carved on the stolen ward-lines. Every blow Ivan struck returned as heat through the floor.",
+      "ending": "Daria recognized the reservoir symbols and told him to stop attacking the crown directly. Mila opened a blue channel to the released name tablets; Boris cut the nearest conduit. The crown lost one of its lights. Ivan changed his approach, fighting to expose the connections rather than overpower the demon. Varkul recoiled at the first thing he could not replace: a captive source becoming free.\n\nDaria: \"Cut the connection. Do not feed the crown another blow.\"",
+      "sourcePage": 79
+    },
+    {
+      "number": 72,
+      "title": "The Four-Part Plan",
+      "sourceTitle": "The Four-Part Plan",
+      "art": "Unrevealed",
+      "opening": "The battle spread across four galleries. Yaroslav held the exit against soot guards; Boris reinforced the latch; Daria signaled Lada at the outer gate; Mila controlled the water pressure.",
+      "ending": "Ivan could see none of them clearly through the rising heat, so he trusted the agreed signals. When a gallery cracked, Daria called a pause instead of hiding the delay. Ivan drew Varkul away long enough for Boris to stabilize it. The plan worked because everyone was allowed to report failure while there was still time to respond.\n\nDaria: \"Pause the release. The west support is moving.\"",
+      "sourcePage": 80
+    },
+    {
+      "number": 73,
+      "title": "The Offer of a Living City",
+      "sourceTitle": "The Offer of a Living City",
+      "art": "Unrevealed",
+      "opening": "Varkul showed Ivan a vision of Ancient Moscow restored, with Mila beside him beneath a clear sky. He offered it in exchange for the names from the reservoir: strangers whose homes would remain dark forever.",
+      "ending": "Ivan felt the cruelty of a choice shaped exactly like his wish. He refused to speak for the people being traded. Mila closed the vision with a stream from her lantern. The demon's offer failed because their love had made room for a future, but had never given them ownership of anyone else's.\n\nIvan: \"I cannot buy our home with someone else’s.\"",
+      "sourcePage": 81
+    },
+    {
+      "number": 74,
+      "title": "The Blade of Ordinary Iron",
+      "sourceTitle": "The Blade of Ordinary Iron",
+      "art": "Unrevealed",
+      "opening": "Varkul shattered Ivan's sword at the guard. Boris threw him the unfinished blade recovered from the forge, now fitted with a plain wooden grip.",
+      "ending": "It held no stolen light. Ivan used it to pry open the crown engine's maintenance plate while Yaroslav covered his approach. Daria called the exposed locks in sequence. The demon struck wildly as his strength became a set of vulnerable parts. Ivan's final weapon mattered because it could do a simple task reliably, not because a prophecy had named its bearer.\n\nBoris: \"It is sound iron. Make it do the work.\"",
+      "sourcePage": 82
+    },
+    {
+      "number": 75,
+      "title": "The Lock Refuses to Yield",
+      "sourceTitle": "The Lock Refuses to Yield",
+      "art": "Unrevealed",
+      "opening": "The first three crown locks opened. The fourth remained fused to a damaged ward-line beneath Varkul's throne.",
+      "ending": "Mila warned that forcing it would send a surge into the rain gate's fractured foundation. Boris and Daria proposed cooling it in stages while Lada strengthened the outer side. Ivan held Varkul away from the latch and counted the signals. They gained time at the cost of exhaustion, but avoided a blind release. Beneath the throne, an unseen red vein began heating faster than their diagrams predicted.\n\nMila: \"It is not ready. Give the gate time to answer.\"",
+      "sourcePage": 83
+    },
+    {
+      "number": 76,
+      "title": "A Voice from Ancient Moscow",
+      "sourceTitle": "A Voice from Ancient Moscow",
+      "art": "Unrevealed",
+      "opening": "Vera's signal reached the chamber through the nearly restored ward-lines. She reported that citizens had cleared the Heart's socket and connected the shelters to its channels.",
+      "ending": "The city was preparing to receive what the party hoped to return. Ivan heard familiar voices beneath the crackle: the potter Anya, freed workers, and people from the road. Varkul tried to drown them in thunder from the engine, but Mila amplified the signal. Their work had become a circle of people helping one another across distance, with no single hero holding all its strength.\n\nVera: \"The chamber is ready. The city is working with you.\"",
+      "sourcePage": 84
+    },
+    {
+      "number": 77,
+      "title": "The Crown Falls",
+      "sourceTitle": "The Crown Falls",
+      "art": "Unrevealed",
+      "opening": "Lada's signal confirmed the rain gate's first reinforcement. Daria released the final crown lock, and Boris severed the throne conduit.",
+      "ending": "Varkul's crown broke into dull iron segments. The Heart rose clear of the frame, still held by the inner Ash Lock. Ivan met the demon on the lower stair and drove him away from the remaining power source. For the first time, Varkul cast an ordinary shadow. He was dangerous still, but no longer vast with light taken from others.\n\nIvan: \"There is nothing left in that crown that belongs to you.\"",
+      "sourcePage": 85
+    },
+    {
+      "number": 78,
+      "title": "The Defeat of Varkul",
+      "sourceTitle": "The Defeat of Varkul",
+      "art": "Unrevealed",
+      "opening": "Varkul tried to reconnect himself to the Heart through the broken throne. Ivan forced him onto the maintenance bridge while Mila sealed the last live conduit.",
+      "ending": "Yaroslav cut the bridge's chain at Daria's signal, dropping its empty far section and severing the demon's retreat. Ivan struck the exposed ember core in Varkul's chest with the plain iron blade. The stolen flame went out. Varkul collapsed into cold fragments, and the Furnace fell silent. Ivan had defeated the demon's leader, but the Heart had not yet crossed the threshold.\n\nIvan: \"The city’s light goes home.\"",
+      "sourcePage": 86
+    },
+    {
+      "number": 79,
+      "title": "The Heart in Human Hands",
+      "sourceTitle": "The Heart in Human Hands",
+      "art": "Unrevealed",
+      "opening": "The inner Ash Lock opened when Mila balanced its last water channel. Ivan lifted the Heart from its cradle.",
+      "ending": "Its warmth was gentle, unlike the Furnace's heat, and its light showed every exhausted face clearly. Boris checked the brace; Yaroslav began moving toward the marked exit. Daria waited for the outer gate's release confirmation. Ivan told Mila the Heart was free and reached for her hand. The planned rope-assisted release should have followed. Instead, the red vein beneath the dead throne burst through the floor.\n\nIvan: \"We have it. Now we bring all of us out.\"",
+      "sourcePage": 87
+    },
+    {
+      "number": 80,
+      "title": "The Furnace's Last Command",
+      "sourceTitle": "The Furnace's Last Command",
+      "art": "Unrevealed",
+      "opening": "Varkul's death triggered a concealed collapse mechanism beyond the mapped Ash Lock. The outer rain gate lost its second support; the release rope burned through before Mila could let go of the latch.",
+      "ending": "She reported the failure immediately. Boris tried to replace the rope while Daria searched for another control. Ivan set the Heart on a stable ledge and returned to Mila. The engine began pulling heat toward the city, and a red wave crossed the far gallery. Their enemy was gone. His machine still demanded an answer.\n\nMila: \"The rope is gone. The latch is holding the surge back.\"",
+      "sourcePage": 88
+    },
+    {
+      "number": 81,
+      "title": "The Choice at the Broken Latch",
+      "sourceTitle": "The Choice at the Broken Latch",
+      "art": "Unrevealed",
+      "opening": "Ivan and Boris attempted to jam the latch with the spare brace. The hidden heat vein softened the iron before it could seat.",
+      "ending": "Daria found a narrow passage to the threshold, but no second control. Mila understood the timing: if the Heart crossed the threshold while the latch remained held, the surge would divert into the mountain instead of the city. She asked the others to keep seeking a release while Ivan carried the Heart out. Ivan refused to leave her without trying the remaining passage first. They were still working for five survivors.\n\nMila: \"Keep looking. Carry it only when I give the signal.\"",
+      "sourcePage": 89
+    },
+    {
+      "number": 82,
+      "title": "The Path That Closed",
+      "sourceTitle": "The Path That Closed",
+      "art": "Unrevealed",
+      "opening": "Yaroslav crossed the narrow passage to secure its far end. A falling slab sealed the return side and crushed the support beneath Ivan's feet.",
+      "ending": "Mila redirected the water channel, catching the slab long enough for Boris to pull him clear. The effort cracked her lantern lens. Daria tried to signal Lada, but the collapsing gate answered only in broken pulses. Ivan could now reach the Heart and the threshold; he could not reach the latch from outside. Mila asked him to hear the facts before deciding what hope still allowed.\n\nMila: \"Listen to what has changed. Then choose with me.\"",
+      "sourcePage": 90
+    },
+    {
+      "number": 83,
+      "title": "The Last Rescue Attempt",
+      "sourceTitle": "The Last Rescue Attempt",
+      "art": "Unrevealed",
+      "opening": "Boris built a stone wedge from the gallery steps; Daria synchronized it with the outer gate's remaining pulses. For a moment the latch held without Mila's hands.",
+      "ending": "Ivan reached her, and they took one step together. Then the hidden vein split the wedge, sending a red lance toward his chest. Mila pulled him behind the latch's stone shield. She was struck by the backlash through her lantern, not by his choice to abandon her. The damage could no longer be reversed. She stayed conscious and asked him to move while the shield still held.\n\nIvan: \"One more way. There must be one more way.\"",
+      "sourcePage": 91
+    },
+    {
+      "number": 84,
+      "title": "The Maiden Holds the Rain",
+      "sourceTitle": "The Maiden Holds the Rain",
+      "art": "Unrevealed",
+      "opening": "Mila placed her broken lantern into the latch, creating one final stable channel. She knew it would outlast her strength, but only long enough for Ivan to cross with the Heart.",
+      "ending": "She told him that their hoped-for home had been real because they had chosen it, even if they would not share its rooms. Ivan knelt beside her and pressed their keepsake halves together. She asked him to keep the window wide, to teach someone the lantern craft, and to let his life continue. He promised through tears, then lifted the Heart.\n\nMila: \"Carry the light. Keep living where it can reach you.\"",
+      "sourcePage": 92
+    },
+    {
+      "number": 85,
+      "title": "Beyond the Threshold",
+      "sourceTitle": "Beyond the Threshold",
+      "art": "Unrevealed",
+      "opening": "Ivan crossed the threshold as Mila released the final surge into the mountain. Yaroslav and Boris pulled him behind the sheltering wall; Daria sealed the passage before the red wave could follow.",
+      "ending": "The Heart's light steadied. Through a narrow opening, Ivan saw Mila beyond the falling dust, still beside the blue channel she had made. The heat passed, and the engine became stone again. The party reopened the smallest safe path immediately. Ivan went back without the Heart, leaving it in his friends' guarded hands.\n\nIvan: \"Guard the Heart. I am going back for her.\"",
+      "sourcePage": 93
+    },
+    {
+      "number": 86,
+      "title": "The Silence After Her Name",
+      "sourceTitle": "The Silence After Her Name",
+      "art": "Unrevealed",
+      "opening": "They found Mila in the cooled chamber. Ivan held her while the last blue light left the broken lantern.",
+      "ending": "She heard him speak her name and answered with his. Her final words were ordinary: she was glad they had met on the road. Then she died. No hidden bargain restored her; no kiss changed the loss. Boris wrapped her carefully in a clean cloth, and the companions carried her out together. They had saved the Heart and defeated Varkul. The cost was not a proof of love, and they did not call it fair.\n\nMila: \"I am glad it was you on the road.\"",
+      "sourcePage": 94
+    },
+    {
+      "number": 87,
+      "title": "The Burden Shared by Four",
+      "sourceTitle": "The Burden Shared by Four",
+      "art": "Unrevealed",
+      "opening": "Outside the Furnace, Ivan could not lift the Heart and Mila's wrapped body alone. Yaroslav took the Heart; Boris and Daria made a carrying frame for their friend.",
+      "ending": "When Ivan tried to give orders, his voice failed. Daria told him the next steps plainly: rest, water, then the outer gate. The others accepted the work without asking him to become a symbol of endurance. Behind them the Furnace's red glow faded. Ahead, the road they had repaired remained, ready to carry both the rescued light and the person they had lost.\n\nDaria: \"You do not have to carry every part of this.\"",
+      "sourcePage": 95
+    },
+    {
+      "number": 88,
+      "title": "Lada at the Rain Gate",
+      "sourceTitle": "Lada at the Rain Gate",
+      "art": "Unrevealed",
+      "opening": "Lada met the party beside the damaged outer gate. She had repaired its surviving channels with the freed craftspeople, but had been unable to restore the collapsed support in time.",
+      "ending": "When she saw the broken lantern, she understood before Ivan could speak. She did not blame the apprentice who had saved them, nor excuse the machine that had forced the choice. Together they recorded what had failed so no future ward would depend on one person holding a lethal latch. Then Lada placed Mila's silver circlet beside the wrapped lantern.\n\nLada: \"We will remember her, and we will change what failed her.\"",
+      "sourcePage": 96
+    },
+    {
+      "number": 89,
+      "title": "The Return Through Living Places",
+      "sourceTitle": "The Return Through Living Places",
+      "art": "Unrevealed",
+      "opening": "The Citadel's workers opened their gates to the travelers. In the Sunken Quarter, Anya offered clean blankets; in Glasswood, the restored trees sheltered the carrying frame.",
+      "ending": "Ivan recognized each place they had stopped to help, now helping them in return. He told those who asked that Mila had been a craftswoman, guide, teacher's apprentice, and someone who laughed at his dancing. He refused to let her become only the moment she died. Her story belonged to the life she had lived along the road.\n\nIvan: \"Remember what she made possible while she was here.\"",
+      "sourcePage": 97
+    },
+    {
+      "number": 90,
+      "title": "The Hills Before the City",
+      "sourceTitle": "The Hills Before the City",
+      "art": "Unrevealed",
+      "opening": "On the hills above Ancient Moscow, Ivan chose a sheltered place near the spring to lay Mila to rest. Lada and the three friends stood with him.",
+      "ending": "He planted no magical seed and expected no return from the earth. He left one half of the wooden window keepsake beside her, keeping the other under his cloak. Below them, the city still burned along its outer lanes. Vera's signal called from the gate. Ivan rose when he could, and the companions continued with the Heart toward the chamber waiting below the square.\n\nIvan: \"I will remember you in the life I still have.\"",
+      "sourcePage": 98
+    },
+    {
+      "number": 91,
+      "title": "The Gate Opens Again",
+      "sourceTitle": "The Gate Opens Again",
+      "art": "Unrevealed",
+      "opening": "Ancient Moscow's surviving western gate opened before the general reached it. Vera had kept the shelters intact, and the repaired wells supplied the final firebreaks.",
+      "ending": "Citizens lined the cleared road without cheering. They saw the four friends' exhaustion, the broken lantern, and the golden Heart carried carefully between them. Ivan gave the city's watch a complete account: the demon was defeated, the Heart recovered, and Mila was dead. Vera listened, then assigned fresh hands to the chamber work. Returning did not mean the task was finished.\n\nVera: \"We have held the road. Let us carry the next part.\"",
+      "sourcePage": 99
+    },
+    {
+      "number": 92,
+      "title": "A City Makes Room for Light",
+      "sourceTitle": "A City Makes Room for Light",
+      "art": "Unrevealed",
+      "opening": "The square remained crowded with shelters and salvaged timber. Before restoring the Heart, Ivan helped Vera move families away from the chamber's unstable ceiling.",
+      "ending": "Boris checked the repairs; Daria matched the new channels to her return map. Lada placed Mila's surviving lens in the signal niche, where it could distribute light without bearing dangerous heat. Orel, frail but alive, recognized the repaired routes reaching beyond the city. The Heart would return to a wider network than the one from which it had been stolen.\n\nOrel: \"You have brought back the roads as well as the light.\"",
+      "sourcePage": 100
+    },
+    {
+      "number": 93,
+      "title": "The Heart Finds Its Place",
+      "sourceTitle": "The Heart Finds Its Place",
+      "art": "Unrevealed",
+      "opening": "Ivan descended with the Heart in his hands. The socket beneath the square had been rebuilt with Anya's ward-clay, village timber braces, and stone shaped by freed workers.",
+      "ending": "Nothing about it was untouched; everything about it was ready. Mila's broken lantern rested nearby as a memory, not a mechanism requiring another life. Ivan placed the Heart into its original center. For one long breath, the chamber remained dark. Then gold light filled the repaired ring and moved outward through every channel they had made whole.\n\nIvan: \"For the people here, and for those on the road.\"",
+      "sourcePage": 101
+    },
+    {
+      "number": 94,
+      "title": "Lightning Above the Towers",
+      "sourceTitle": "Lightning Above the Towers",
+      "art": "Unrevealed",
+      "opening": "The Heart's restored pulse reached the rain gate through the connected ward-lines. A white lightning stroke crossed the black sky above Ancient Moscow, illuminating every scorched roof and rebuilt arch.",
+      "ending": "The citizens flinched, then heard the deep answer of thunder. Ivan climbed into the square as the first cold drops struck the stones. Daria checked the drains; Vera moved people under stable cover. The long-awaited miracle arrived with work to do, and the city was ready to receive it without treating wonder as a substitute for care.\n\nDaria: \"Open the drains. The storm is real.\"",
+      "sourcePage": 102
+    },
+    {
+      "number": 95,
+      "title": "The Rain That Ended the Fire",
+      "sourceTitle": "The Rain That Ended the Fire",
+      "art": "Unrevealed",
+      "opening": "Rain fell in torrents. Flames hissed along the timber roofs, then folded into steam.",
+      "ending": "The red glow in the wells vanished, leaving water clear enough to reflect the lanterns. Ivan stood beneath the downpour until Yaroslav placed a cloak over his shoulders. Around them, citizens embraced, carried water to hidden embers, and called the names of people still missing. The city had been saved from the fire. It had not been spared every loss. Both truths belonged beneath the same returning sky.\n\nYaroslav: \"Come under the cloak. You are allowed to be cold.\"",
+      "sourcePage": 103
+    },
+    {
+      "number": 96,
+      "title": "The First Morning",
+      "sourceTitle": "The First Morning",
+      "art": "Unrevealed",
+      "opening": "By morning, the rain thinned to silver threads. Sunlight reached the central square through torn clouds, touching wet stone, patched walls, and exhausted faces.",
+      "ending": "Orel announced that the Heart's rhythm was steady. Ivan watched the city wake without expecting joy to replace his grief. Mila's absence remained beside the beauty she had helped restore. He took out his half of the wooden window frame and held it in the light. Then he joined Boris at a damaged house, where a real window still needed making.\n\nIvan: \"The morning is here. Let us make room for it.\"",
+      "sourcePage": 104
+    },
+    {
+      "number": 97,
+      "title": "Deer Daisies on the Hills",
+      "sourceTitle": "Deer Daisies on the Hills",
+      "art": "Unrevealed",
+      "opening": "Within days, white deer daisies opened across the hills above Ancient Moscow. They were the flowers villagers had always called by that name: white petals, golden centers, and slender silver-green leaves.",
+      "ending": "Raindrops still shone along their stems. Ivan walked to Mila's resting place with Lada and the three friends. He brought a small bunch of the flowers and spoke of the repaired window, the children learning lantern craft, and the rain that had finally come. He told her about life because that was the promise he could still keep.\n\nIvan: \"They have bloomed. I wished you could see them.\"",
+      "sourcePage": 105
+    },
+    {
+      "number": 98,
+      "title": "The School of Open Lanterns",
+      "sourceTitle": "The School of Open Lanterns",
+      "art": "Unrevealed",
+      "opening": "Lada opened a lantern workshop in a repaired house near the square. Its first rule was written over the bench: no ward should require a captive hand.",
+      "ending": "Daria helped document safe releases and failure signals. Boris taught the students to build sound housings before trusting bright crystals. Ivan attended the first lesson as a beginner, struggling with a delicate clasp. When the students laughed, he laughed with them. Mila's craft continued through teaching rather than through a claim that she had returned. Her name belonged beside the work, not above a demand for sacrifice.\n\nLada: \"Build the release before you build the light.\"",
+      "sourcePage": 106
+    },
+    {
+      "number": 99,
+      "title": "The General and the Unfinished City",
+      "sourceTitle": "The General and the Unfinished City",
+      "art": "Unrevealed",
+      "opening": "Ivan kept his command, but changed its work. The watch repaired roads, trained rescue teams, and protected the settlements connected to the Heart.",
+      "ending": "Yaroslav's leg healed slowly; he taught younger captains to report injuries without shame. Boris oversaw the new foundations, and Daria published a map that included the villages once omitted. Ivan built the hillside window he had promised, leaving the room available to travelers. He did not call it the home he and Mila would have shared. It was a living place made possible by remembering her.\n\nIvan: \"The city is safe enough to rebuild. That is our next duty.\"",
+      "sourcePage": 107
+    },
+    {
+      "number": 100,
+      "title": "The Legend of the Returning Rain",
+      "sourceTitle": "The Legend of the Returning Rain",
+      "art": "Unrevealed",
+      "opening": "Years afterward, people told how a village-born general and his three friends had followed the stolen Heart into the dark. They told of Mila, who had made the road passable, loved freely, and saved Ivan when the Furnace broke their escape.",
+      "ending": "Ivan always added the names of teachers, workers, refugees, and neighbors who had held the journey together. When the first spring storm reached the hills, he opened the wide window. Sunlight followed the rain, and deer daisies shone above Ancient Moscow. The legend ended with a city continuing to live, and a love remembered without being undone.\n\nIvan: \"Tell her life, too. Tell all the hands that brought the light home.\"",
+      "sourcePage": 108
+    }
+  ]
+}

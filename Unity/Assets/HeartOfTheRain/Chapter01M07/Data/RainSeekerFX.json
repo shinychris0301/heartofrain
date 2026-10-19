@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "RS_Focus",
+      "start": 0,
+      "count": 12,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "RS_Takeoff",
+      "start": 12,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RS_WingLight",
+      "start": 24,
+      "count": 12,
+      "fps": 60,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RS_Trail",
+      "start": 36,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "RS_Impact",
+      "start": 48,
+      "count": 16,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    }
+  ],
+  "frames": [
+    {
+      "name": "RS_Focus_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_000.png"
+    },
+    {
+      "name": "RS_Focus_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_001.png"
+    },
+    {
+      "name": "RS_Focus_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_002.png"
+    },
+    {
+      "name": "RS_Focus_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_003.png"
+    },
+    {
+      "name": "RS_Focus_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_004.png"
+    },
+    {
+      "name": "RS_Focus_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_005.png"
+    },
+    {
+      "name": "RS_Focus_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_006.png"
+    },
+    {
+      "name": "RS_Focus_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_007.png"
+    },
+    {
+      "name": "RS_Focus_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_008.png"
+    },
+    {
+      "name": "RS_Focus_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_009.png"
+    },
+    {
+      "name": "RS_Focus_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_010.png"
+    },
+    {
+      "name": "RS_Focus_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Focus_011.png"
+    },
+    {
+      "name": "RS_Takeoff_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_000.png"
+    },
+    {
+      "name": "RS_Takeoff_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_001.png"
+    },
+    {
+      "name": "RS_Takeoff_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_002.png"
+    },
+    {
+      "name": "RS_Takeoff_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_003.png"
+    },
+    {
+      "name": "RS_Takeoff_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_004.png"
+    },
+    {
+      "name": "RS_Takeoff_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_005.png"
+    },
+    {
+      "name": "RS_Takeoff_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_006.png"
+    },
+    {
+      "name": "RS_Takeoff_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_007.png"
+    },
+    {
+      "name": "RS_Takeoff_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_008.png"
+    },
+    {
+      "name": "RS_Takeoff_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_009.png"
+    },
+    {
+      "name": "RS_Takeoff_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_010.png"
+    },
+    {
+      "name": "RS_Takeoff_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Takeoff_011.png"
+    },
+    {
+      "name": "RS_WingLight_000",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_000.png"
+    },
+    {
+      "name": "RS_WingLight_001",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_001.png"
+    },
+    {
+      "name": "RS_WingLight_002",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_002.png"
+    },
+    {
+      "name": "RS_WingLight_003",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_003.png"
+    },
+    {
+      "name": "RS_WingLight_004",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_004.png"
+    },
+    {
+      "name": "RS_WingLight_005",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_005.png"
+    },
+    {
+      "name": "RS_WingLight_006",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_006.png"
+    },
+    {
+      "name": "RS_WingLight_007",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_007.png"
+    },
+    {
+      "name": "RS_WingLight_008",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_008.png"
+    },
+    {
+      "name": "RS_WingLight_009",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_009.png"
+    },
+    {
+      "name": "RS_WingLight_010",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_010.png"
+    },
+    {
+      "name": "RS_WingLight_011",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_WingLight_011.png"
+    },
+    {
+      "name": "RS_Trail_000",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_000.png"
+    },
+    {
+      "name": "RS_Trail_001",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_001.png"
+    },
+    {
+      "name": "RS_Trail_002",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_002.png"
+    },
+    {
+      "name": "RS_Trail_003",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_003.png"
+    },
+    {
+      "name": "RS_Trail_004",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_004.png"
+    },
+    {
+      "name": "RS_Trail_005",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_005.png"
+    },
+    {
+      "name": "RS_Trail_006",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_006.png"
+    },
+    {
+      "name": "RS_Trail_007",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_007.png"
+    },
+    {
+      "name": "RS_Trail_008",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_008.png"
+    },
+    {
+      "name": "RS_Trail_009",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_009.png"
+    },
+    {
+      "name": "RS_Trail_010",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_010.png"
+    },
+    {
+      "name": "RS_Trail_011",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Trail_011.png"
+    },
+    {
+      "name": "RS_Impact_000",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_000.png"
+    },
+    {
+      "name": "RS_Impact_001",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_001.png"
+    },
+    {
+      "name": "RS_Impact_002",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_002.png"
+    },
+    {
+      "name": "RS_Impact_003",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_003.png"
+    },
+    {
+      "name": "RS_Impact_004",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_004.png"
+    },
+    {
+      "name": "RS_Impact_005",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_005.png"
+    },
+    {
+      "name": "RS_Impact_006",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_006.png"
+    },
+    {
+      "name": "RS_Impact_007",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_007.png"
+    },
+    {
+      "name": "RS_Impact_008",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_008.png"
+    },
+    {
+      "name": "RS_Impact_009",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_009.png"
+    },
+    {
+      "name": "RS_Impact_010",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_010.png"
+    },
+    {
+      "name": "RS_Impact_011",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_011.png"
+    },
+    {
+      "name": "RS_Impact_012",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_012.png"
+    },
+    {
+      "name": "RS_Impact_013",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_013.png"
+    },
+    {
+      "name": "RS_Impact_014",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_014.png"
+    },
+    {
+      "name": "RS_Impact_015",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainSeeker25/RS_Impact_015.png"
+    }
+  ]
+}

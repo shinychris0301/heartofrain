@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 8,
+  "pixelsPerUnit": 32.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Flash",
+      "start": 0,
+      "count": 12,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    },
+    {
+      "name": "Rays",
+      "start": 12,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "GlintHit",
+      "start": 28,
+      "count": 8,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.13333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "Flash_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_000.png"
+    },
+    {
+      "name": "Flash_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_001.png"
+    },
+    {
+      "name": "Flash_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_002.png"
+    },
+    {
+      "name": "Flash_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_003.png"
+    },
+    {
+      "name": "Flash_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_004.png"
+    },
+    {
+      "name": "Flash_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_005.png"
+    },
+    {
+      "name": "Flash_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_006.png"
+    },
+    {
+      "name": "Flash_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_007.png"
+    },
+    {
+      "name": "Flash_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_008.png"
+    },
+    {
+      "name": "Flash_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_009.png"
+    },
+    {
+      "name": "Flash_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_010.png"
+    },
+    {
+      "name": "Flash_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Flash_011.png"
+    },
+    {
+      "name": "Rays_000",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_000.png"
+    },
+    {
+      "name": "Rays_001",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_001.png"
+    },
+    {
+      "name": "Rays_002",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_002.png"
+    },
+    {
+      "name": "Rays_003",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_003.png"
+    },
+    {
+      "name": "Rays_004",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_004.png"
+    },
+    {
+      "name": "Rays_005",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_005.png"
+    },
+    {
+      "name": "Rays_006",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_006.png"
+    },
+    {
+      "name": "Rays_007",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_007.png"
+    },
+    {
+      "name": "Rays_008",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_008.png"
+    },
+    {
+      "name": "Rays_009",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_009.png"
+    },
+    {
+      "name": "Rays_010",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_010.png"
+    },
+    {
+      "name": "Rays_011",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_011.png"
+    },
+    {
+      "name": "Rays_012",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_012.png"
+    },
+    {
+      "name": "Rays_013",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_013.png"
+    },
+    {
+      "name": "Rays_014",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_014.png"
+    },
+    {
+      "name": "Rays_015",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/Rays_015.png"
+    },
+    {
+      "name": "GlintHit_000",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_000.png"
+    },
+    {
+      "name": "GlintHit_001",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_001.png"
+    },
+    {
+      "name": "GlintHit_002",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_002.png"
+    },
+    {
+      "name": "GlintHit_003",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_003.png"
+    },
+    {
+      "name": "GlintHit_004",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_004.png"
+    },
+    {
+      "name": "GlintHit_005",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_005.png"
+    },
+    {
+      "name": "GlintHit_006",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_006.png"
+    },
+    {
+      "name": "GlintHit_007",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/Revision07/GlintHit_007.png"
+    }
+  ]
+}

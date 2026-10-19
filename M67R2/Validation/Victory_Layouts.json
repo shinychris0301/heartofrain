@@ -1,0 +1,79 @@
+[
+  {
+    "width": 320,
+    "height": 320,
+    "geometry": {
+      "width": 320,
+      "height": 320,
+      "size": 185.59999,
+      "x": 67.200005,
+      "y": 57.792004
+    }
+  },
+  {
+    "width": 320,
+    "height": 480,
+    "geometry": {
+      "width": 320,
+      "height": 480,
+      "size": 275.2,
+      "x": 22.399994,
+      "y": 88.063995
+    }
+  },
+  {
+    "width": 393,
+    "height": 698,
+    "geometry": {
+      "width": 393,
+      "height": 698,
+      "size": 337.98,
+      "x": 27.509995,
+      "y": 154.8086
+    }
+  },
+  {
+    "width": 430,
+    "height": 852,
+    "geometry": {
+      "width": 430,
+      "height": 852,
+      "size": 369.80002,
+      "x": 30.09999,
+      "y": 207.346
+    }
+  },
+  {
+    "width": 750,
+    "height": 369,
+    "geometry": {
+      "width": 750,
+      "height": 369,
+      "size": 214.01999,
+      "x": 267.99,
+      "y": 66.6414
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "geometry": {
+      "width": 768,
+      "height": 1024,
+      "size": 593.92,
+      "x": 87.04001,
+      "y": 184.93442
+    }
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "geometry": {
+      "width": 1280,
+      "height": 800,
+      "size": 464,
+      "x": 408,
+      "y": 144.48
+    }
+  }
+]

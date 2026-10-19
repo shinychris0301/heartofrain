@@ -1,0 +1,1060 @@
+{
+  "clips": [
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_0",
+      "metadata": "Art/FX/crate/Wood_Tumble_0.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_1",
+      "metadata": "Art/FX/crate/Wood_Tumble_1.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_2",
+      "metadata": "Art/FX/crate/Wood_Tumble_2.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_3",
+      "metadata": "Art/FX/crate/Wood_Tumble_3.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_4",
+      "metadata": "Art/FX/crate/Wood_Tumble_4.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_5",
+      "metadata": "Art/FX/crate/Wood_Tumble_5.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_6",
+      "metadata": "Art/FX/crate/Wood_Tumble_6.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Wood_Tumble_7",
+      "metadata": "Art/FX/crate/Wood_Tumble_7.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crate",
+      "name": "Star_Accent",
+      "metadata": "Art/FX/crate/Star_Accent.json",
+      "fps": 30,
+      "frames": 18,
+      "canvasCells": 3
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_00",
+      "metadata": "Art/FX/gate/Sluice_Tumble_00.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_01",
+      "metadata": "Art/FX/gate/Sluice_Tumble_01.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_02",
+      "metadata": "Art/FX/gate/Sluice_Tumble_02.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_03",
+      "metadata": "Art/FX/gate/Sluice_Tumble_03.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_04",
+      "metadata": "Art/FX/gate/Sluice_Tumble_04.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_05",
+      "metadata": "Art/FX/gate/Sluice_Tumble_05.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_06",
+      "metadata": "Art/FX/gate/Sluice_Tumble_06.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_07",
+      "metadata": "Art/FX/gate/Sluice_Tumble_07.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_08",
+      "metadata": "Art/FX/gate/Sluice_Tumble_08.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_09",
+      "metadata": "Art/FX/gate/Sluice_Tumble_09.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_10",
+      "metadata": "Art/FX/gate/Sluice_Tumble_10.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Tumble_11",
+      "metadata": "Art/FX/gate/Sluice_Tumble_11.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.0
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Hit_1",
+      "metadata": "Art/FX/gate/Sluice_Hit_1.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Hit_2",
+      "metadata": "Art/FX/gate/Sluice_Hit_2.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Reject_1",
+      "metadata": "Art/FX/gate/Sluice_Reject_1.json",
+      "fps": 30,
+      "frames": 12,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Reject_2",
+      "metadata": "Art/FX/gate/Sluice_Reject_2.json",
+      "fps": 30,
+      "frames": 12,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Hit_Accent",
+      "metadata": "Art/FX/gate/Sluice_Hit_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.6
+    },
+    {
+      "family": "gate",
+      "name": "Sluice_Water_Release",
+      "metadata": "Art/FX/gate/Sluice_Water_Release.json",
+      "fps": 30,
+      "frames": 30,
+      "canvasCells": 3.6
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Idle",
+      "metadata": "Art/FX/pail/Pail_Idle.json",
+      "fps": 30,
+      "frames": 48,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Fall",
+      "metadata": "Art/FX/pail/Pail_Fall.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Land",
+      "metadata": "Art/FX/pail/Pail_Land.json",
+      "fps": 30,
+      "frames": 18,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Impact",
+      "metadata": "Art/FX/pail/Pail_Impact.json",
+      "fps": 30,
+      "frames": 12,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Collect",
+      "metadata": "Art/FX/pail/Pail_Collect.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Landing_Splash",
+      "metadata": "Art/FX/pail/Pail_Landing_Splash.json",
+      "fps": 30,
+      "frames": 18,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "pail",
+      "name": "Pail_Collection_FX",
+      "metadata": "Art/FX/pail/Pail_Collection_FX.json",
+      "fps": 30,
+      "frames": 30,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_00",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_00.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_01",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_01.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_02",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_02.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_03",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_03.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_04",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_04.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_05",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_05.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_06",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_06.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_07",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_07.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_08",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_08.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_09",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_09.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Tumble_10",
+      "metadata": "Art/FX/moss/Overgrowth_Tumble_10.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Hit_1",
+      "metadata": "Art/FX/moss/Overgrowth_Hit_1.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Hit_2",
+      "metadata": "Art/FX/moss/Overgrowth_Hit_2.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Hit_Accent",
+      "metadata": "Art/FX/moss/Overgrowth_Hit_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Clear_Accent",
+      "metadata": "Art/FX/moss/Overgrowth_Clear_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "moss",
+      "name": "Overgrowth_Grow",
+      "metadata": "Art/FX/moss/Overgrowth_Grow.json",
+      "fps": 30,
+      "frames": 18,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_00",
+      "metadata": "Art/FX/stone/Stone_Tumble_00.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_01",
+      "metadata": "Art/FX/stone/Stone_Tumble_01.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_02",
+      "metadata": "Art/FX/stone/Stone_Tumble_02.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_03",
+      "metadata": "Art/FX/stone/Stone_Tumble_03.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_04",
+      "metadata": "Art/FX/stone/Stone_Tumble_04.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_05",
+      "metadata": "Art/FX/stone/Stone_Tumble_05.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_06",
+      "metadata": "Art/FX/stone/Stone_Tumble_06.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_07",
+      "metadata": "Art/FX/stone/Stone_Tumble_07.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_08",
+      "metadata": "Art/FX/stone/Stone_Tumble_08.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_09",
+      "metadata": "Art/FX/stone/Stone_Tumble_09.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_10",
+      "metadata": "Art/FX/stone/Stone_Tumble_10.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_11",
+      "metadata": "Art/FX/stone/Stone_Tumble_11.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_12",
+      "metadata": "Art/FX/stone/Stone_Tumble_12.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_13",
+      "metadata": "Art/FX/stone/Stone_Tumble_13.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Tumble_14",
+      "metadata": "Art/FX/stone/Stone_Tumble_14.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Hit_1",
+      "metadata": "Art/FX/stone/Stone_Hit_1.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Hit_2",
+      "metadata": "Art/FX/stone/Stone_Hit_2.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Hit_3",
+      "metadata": "Art/FX/stone/Stone_Hit_3.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Hit_Accent",
+      "metadata": "Art/FX/stone/Stone_Hit_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "stone",
+      "name": "Stone_Clear_Accent",
+      "metadata": "Art/FX/stone/Stone_Clear_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_00",
+      "metadata": "Art/FX/case/Case_Tumble_00.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_01",
+      "metadata": "Art/FX/case/Case_Tumble_01.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_02",
+      "metadata": "Art/FX/case/Case_Tumble_02.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_03",
+      "metadata": "Art/FX/case/Case_Tumble_03.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_04",
+      "metadata": "Art/FX/case/Case_Tumble_04.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_05",
+      "metadata": "Art/FX/case/Case_Tumble_05.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_06",
+      "metadata": "Art/FX/case/Case_Tumble_06.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_07",
+      "metadata": "Art/FX/case/Case_Tumble_07.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_08",
+      "metadata": "Art/FX/case/Case_Tumble_08.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_09",
+      "metadata": "Art/FX/case/Case_Tumble_09.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_10",
+      "metadata": "Art/FX/case/Case_Tumble_10.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Tumble_11",
+      "metadata": "Art/FX/case/Case_Tumble_11.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1
+    },
+    {
+      "family": "case",
+      "name": "Case_Hit_1",
+      "metadata": "Art/FX/case/Case_Hit_1.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "case",
+      "name": "Case_Hit_2",
+      "metadata": "Art/FX/case/Case_Hit_2.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "case",
+      "name": "Case_Hit_Accent",
+      "metadata": "Art/FX/case/Case_Hit_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "case",
+      "name": "Case_Clear_Accent",
+      "metadata": "Art/FX/case/Case_Clear_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Final_Burst",
+      "metadata": "Art/FX/crystal/Crystal_Final_Burst.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 4.6
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Impact_Burst",
+      "metadata": "Art/FX/crystal/Crystal_Impact_Burst.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 4.6
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Pulse_Base",
+      "metadata": "Art/FX/crystal/Crystal_Pulse_Base.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Pulse_Middle",
+      "metadata": "Art/FX/crystal/Crystal_Pulse_Middle.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Pulse_Top",
+      "metadata": "Art/FX/crystal/Crystal_Pulse_Top.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_0",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_0.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_1",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_1.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_2",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_2.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_3",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_3.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_4",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_4.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_5",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_5.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_6",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_6.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Base_7",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Base_7.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_0",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_0.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_1",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_1.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_2",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_2.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_3",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_3.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_4",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_4.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_5",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_5.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_6",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_6.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Middle_7",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Middle_7.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_0",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_0.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_1",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_1.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_2",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_2.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_3",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_3.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_4",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_4.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_5",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_5.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_6",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_6.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "crystal",
+      "name": "Crystal_Tumble_Top_7",
+      "metadata": "Art/FX/crystal/Crystal_Tumble_Top_7.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Hit_1",
+      "metadata": "Art/FX/pod/Pod_Hit_1.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Hit_2",
+      "metadata": "Art/FX/pod/Pod_Hit_2.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Hit_3",
+      "metadata": "Art/FX/pod/Pod_Hit_3.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Hit_Accent",
+      "metadata": "Art/FX/pod/Pod_Hit_Accent.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.6
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Release_Burst",
+      "metadata": "Art/FX/pod/Pod_Release_Burst.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3.6
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_0",
+      "metadata": "Art/FX/pod/Pod_Tumble_0.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_1",
+      "metadata": "Art/FX/pod/Pod_Tumble_1.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_2",
+      "metadata": "Art/FX/pod/Pod_Tumble_2.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_3",
+      "metadata": "Art/FX/pod/Pod_Tumble_3.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_4",
+      "metadata": "Art/FX/pod/Pod_Tumble_4.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_5",
+      "metadata": "Art/FX/pod/Pod_Tumble_5.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_6",
+      "metadata": "Art/FX/pod/Pod_Tumble_6.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Pod_Tumble_7",
+      "metadata": "Art/FX/pod/Pod_Tumble_7.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.2
+    },
+    {
+      "family": "pod",
+      "name": "Spirit_Idle",
+      "metadata": "Art/FX/pod/Spirit_Idle.json",
+      "fps": 30,
+      "frames": 32,
+      "canvasCells": 1.4
+    },
+    {
+      "family": "cabinet",
+      "name": "Cabinet_Clear",
+      "metadata": "Art/FX/cabinet/Cabinet_Clear.json",
+      "fps": 30,
+      "frames": 24,
+      "canvasCells": 3
+    },
+    {
+      "family": "cabinet",
+      "name": "Cabinet_Open",
+      "metadata": "Art/FX/cabinet/Cabinet_Open.json",
+      "fps": 30,
+      "frames": 27,
+      "canvasCells": 3
+    },
+    {
+      "family": "cabinet",
+      "name": "Star_Accent",
+      "metadata": "Art/FX/cabinet/Star_Accent.json",
+      "fps": 30,
+      "frames": 18,
+      "canvasCells": 3
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "entries": {
+    "Level complete!": [
+      "Level complete!",
+      "¡Nivel completado!",
+      "Niveau réussi !",
+      "Level geschafft!",
+      "Уровень пройден!"
+    ],
+    "Chapter complete!": [
+      "Chapter complete!",
+      "¡Capítulo completado!",
+      "Chapitre terminé !",
+      "Kapitel geschafft!",
+      "Глава завершена!"
+    ],
+    "Rewards earned": [
+      "Rewards earned",
+      "Recompensas ganadas",
+      "Récompenses gagnées",
+      "Erhaltene Belohnungen",
+      "Полученные награды"
+    ],
+    "Already cleared": [
+      "Already cleared",
+      "Ya completado",
+      "Déjà terminé",
+      "Bereits geschafft",
+      "Уже пройдено"
+    ],
+    "Continue": [
+      "Continue",
+      "Continuar",
+      "Continuer",
+      "Weiter",
+      "Продолжить"
+    ],
+    "View story": [
+      "View story",
+      "Ver historia",
+      "Voir l'histoire",
+      "Geschichte ansehen",
+      "Читать историю"
+    ],
+    "Home": [
+      "Home",
+      "Inicio",
+      "Accueil",
+      "Startseite",
+      "Главная"
+    ],
+    "All targets cleared": [
+      "All targets cleared",
+      "Todos los objetivos eliminados",
+      "Tous les objectifs éliminés",
+      "Alle Ziele erreicht",
+      "Все цели убраны"
+    ],
+    "Chapter {0} progress": [
+      "Chapter {0} progress",
+      "Progreso del capítulo {0}",
+      "Progression du chapitre {0}",
+      "Fortschritt: Kapitel {0}",
+      "Прогресс главы {0}"
+    ],
+    "Chapter {0} restored": [
+      "Chapter {0} restored",
+      "Capítulo {0} restaurado",
+      "Chapitre {0} restauré",
+      "Kapitel {0} wiederhergestellt",
+      "Глава {0} восстановлена"
+    ],
+    "No extra rewards for replays": [
+      "No extra rewards for replays",
+      "Sin recompensas extra al repetir",
+      "Rejouer n'offre pas de récompenses",
+      "Keine weiteren Belohnungen beim Wiederholen",
+      "За повтор нет дополнительных наград"
+    ],
+    "Level {0}": [
+      "Level {0}",
+      "Nivel {0}",
+      "Niveau {0}",
+      "Level {0}",
+      "Уровень {0}"
+    ],
+    "Next: Level {0}": [
+      "Next: Level {0}",
+      "Siguiente: nivel {0}",
+      "Suite : niveau {0}",
+      "Weiter: Level {0}",
+      "Далее: уровень {0}"
+    ],
+    "Coins": [
+      "Coins",
+      "Monedas",
+      "Pièces",
+      "Münzen",
+      "Монеты"
+    ],
+    "Stars": [
+      "Stars",
+      "Estrellas",
+      "Étoiles",
+      "Sterne",
+      "Звёзды"
+    ]
+  }
+}

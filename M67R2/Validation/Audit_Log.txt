@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ASSET_INTEGRITY_AND_MODAL_REMOVAL",
+  "old_files_changed": [
+    "Assets/HeartOfTheRain/App/Celebrations/Art/DariaAtlasBlend.shader",
+    "Assets/HeartOfTheRain/App/Celebrations/Art/Daria_Celebration_Atlas.png",
+    "Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/CelebrationMotion.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/CelebrationReview.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/DariaCelebrationView.cs",
+    "Assets/HeartOfTheRain/App/FirstStart/Runtime/FirstStartLayout.cs",
+    "Assets/HeartOfTheRain/App/Journey/Runtime/JourneyLayout.cs",
+    "Assets/HeartOfTheRain/App/Journey/Runtime/JourneyPage.cs",
+    "Assets/HeartOfTheRain/App/LevelComplete/Runtime/LevelCompleteLayout.cs",
+    "Assets/HeartOfTheRain/App/LevelComplete/Runtime/LevelCompleteModal.cs",
+    "Assets/HeartOfTheRain/App/LevelComplete/Runtime/LevelCompleteSession.cs",
+    "Assets/HeartOfTheRain/App/PreLevel/Runtime/HomeLevelFlow.cs",
+    "Assets/HeartOfTheRain/App/PreLevel/Runtime/PreLevelModal.cs",
+    "Assets/HeartOfTheRain/M47/Runtime/GameplayHUD.cs",
+    "ProjectSettings/EditorBuildSettings.asset"
+  ],
+  "changed_since_M67": [
+    "Assets/HeartOfTheRain/M47/Runtime/GameplayHUD.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/CelebrationReview.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/DariaCelebrationView.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/CelebrationMotion.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Art/Daria_Celebration_Atlas.png",
+    "Assets/HeartOfTheRain/App/Celebrations/Art/DariaAtlasBlend.shader",
+    "Assets/HeartOfTheRain/App/PreLevel/Runtime/HomeLevelFlow.cs",
+    "Assets/HeartOfTheRain/App/PreLevel/Runtime/PreLevelModal.cs"
+  ],
+  "new_files": [
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/VictoryCelebrationPlayer.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/VictoryCelebrationPlayer.cs.meta",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/VictoryMotion.cs",
+    "Assets/HeartOfTheRain/App/Celebrations/Runtime/VictoryMotion.cs.meta"
+  ],
+  "missing_files": [],
+  "unique_asset_guids": 2176,
+  "duplicate_guids": [],
+  "unresolved_references": [],
+  "approved_board_background_hud_tiles_obstacles_audio_and_levels": "BYTE_IDENTICAL_TO_M67",
+  "modified_character_art": "16-pose forward-facing Daria RGBA atlas; sRGB, untinted rendering, original olive/cream/brown palette",
+  "atlas_size": [
+    1254,
+    1254
+  ],
+  "victory_modal_in_live_or_standalone_win_flow": false
+}

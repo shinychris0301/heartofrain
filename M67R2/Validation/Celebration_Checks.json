@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PURE_CSHARP_CELEBRATION_POLICY_MOTION_AND_LAYOUT",
+  "checks": 18171,
+  "poseSamples": 1446,
+  "layouts": 7,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "UnityAPICompilation": "NOT_RUN",
+  "ShaderCompilation": "NOT_RUN",
+  "DeviceTesting": "NOT_RUN"
+}

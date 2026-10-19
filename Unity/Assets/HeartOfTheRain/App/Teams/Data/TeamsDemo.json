@@ -1,0 +1,526 @@
+{
+  "isDemo": true,
+  "selfId": "you",
+  "team": {
+    "id": "team1",
+    "name": "Rainkeepers",
+    "crest": "LB_CrestWell_R2",
+    "description": "Together, we bring the village well back to life. Share a little help and keep the rainlight glowing.",
+    "score": 2200,
+    "capacity": 50,
+    "members": [
+      {
+        "id": "RAIN1001",
+        "name": "Aurora",
+        "role": "Leader",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 50,
+        "helps": 42,
+        "online": true
+      },
+      {
+        "id": "RAIN1004",
+        "name": "Ember",
+        "role": "Co-leader",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 45,
+        "helps": 18,
+        "online": false
+      },
+      {
+        "id": "RAIN1007",
+        "name": "Stonekeeper",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 37,
+        "helps": 18,
+        "online": true
+      },
+      {
+        "id": "RAIN1010",
+        "name": "Silver Thread",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 28,
+        "helps": 18,
+        "online": false
+      },
+      {
+        "id": "you",
+        "name": "You",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 18,
+        "helps": 18,
+        "online": true
+      },
+      {
+        "id": "WELL2000",
+        "name": "Briar",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 12,
+        "helps": 0,
+        "online": true
+      },
+      {
+        "id": "WELL2001",
+        "name": "Clover",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 19,
+        "helps": 3,
+        "online": true
+      },
+      {
+        "id": "WELL2002",
+        "name": "Hazel",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 26,
+        "helps": 6,
+        "online": true
+      },
+      {
+        "id": "WELL2003",
+        "name": "Juniper",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 33,
+        "helps": 9,
+        "online": true
+      },
+      {
+        "id": "WELL2004",
+        "name": "Lark",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 40,
+        "helps": 12,
+        "online": false
+      },
+      {
+        "id": "WELL2005",
+        "name": "Maple",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 47,
+        "helps": 15,
+        "online": false
+      },
+      {
+        "id": "WELL2006",
+        "name": "Rowan",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 17,
+        "helps": 18,
+        "online": false
+      },
+      {
+        "id": "WELL2007",
+        "name": "Wren",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 24,
+        "helps": 21,
+        "online": false
+      },
+      {
+        "id": "WELL2008",
+        "name": "Fern",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 31,
+        "helps": 24,
+        "online": false
+      },
+      {
+        "id": "WELL2009",
+        "name": "Laurel",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 38,
+        "helps": 27,
+        "online": false
+      },
+      {
+        "id": "WELL2010",
+        "name": "Sorrel",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 45,
+        "helps": 30,
+        "online": false
+      },
+      {
+        "id": "WELL2011",
+        "name": "Ash",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 15,
+        "helps": 2,
+        "online": false
+      },
+      {
+        "id": "WELL2012",
+        "name": "Dew",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 22,
+        "helps": 5,
+        "online": false
+      },
+      {
+        "id": "WELL2013",
+        "name": "Cedar",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 29,
+        "helps": 8,
+        "online": false
+      },
+      {
+        "id": "WELL2014",
+        "name": "Brook",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 36,
+        "helps": 11,
+        "online": false
+      },
+      {
+        "id": "WELL2015",
+        "name": "Briar 2",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 43,
+        "helps": 14,
+        "online": false
+      },
+      {
+        "id": "WELL2016",
+        "name": "Clover 2",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 13,
+        "helps": 17,
+        "online": false
+      },
+      {
+        "id": "WELL2017",
+        "name": "Hazel 2",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 20,
+        "helps": 20,
+        "online": false
+      },
+      {
+        "id": "WELL2018",
+        "name": "Juniper 2",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 27,
+        "helps": 23,
+        "online": false
+      },
+      {
+        "id": "WELL2019",
+        "name": "Lark 2",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 34,
+        "helps": 26,
+        "online": false
+      },
+      {
+        "id": "WELL2020",
+        "name": "Maple 2",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 41,
+        "helps": 29,
+        "online": false
+      },
+      {
+        "id": "WELL2021",
+        "name": "Rowan 2",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 48,
+        "helps": 1,
+        "online": false
+      },
+      {
+        "id": "WELL2022",
+        "name": "Wren 2",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 18,
+        "helps": 4,
+        "online": false
+      },
+      {
+        "id": "WELL2023",
+        "name": "Fern 2",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 25,
+        "helps": 7,
+        "online": false
+      },
+      {
+        "id": "WELL2024",
+        "name": "Laurel 2",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 32,
+        "helps": 10,
+        "online": false
+      },
+      {
+        "id": "WELL2025",
+        "name": "Sorrel 2",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 39,
+        "helps": 13,
+        "online": false
+      },
+      {
+        "id": "WELL2026",
+        "name": "Ash 2",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 46,
+        "helps": 16,
+        "online": false
+      },
+      {
+        "id": "WELL2027",
+        "name": "Dew 2",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 16,
+        "helps": 19,
+        "online": false
+      },
+      {
+        "id": "WELL2028",
+        "name": "Cedar 2",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 23,
+        "helps": 22,
+        "online": false
+      },
+      {
+        "id": "WELL2029",
+        "name": "Brook 2",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 30,
+        "helps": 25,
+        "online": false
+      },
+      {
+        "id": "WELL2030",
+        "name": "Briar 3",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 37,
+        "helps": 28,
+        "online": false
+      },
+      {
+        "id": "WELL2031",
+        "name": "Clover 3",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 44,
+        "helps": 0,
+        "online": false
+      },
+      {
+        "id": "WELL2032",
+        "name": "Hazel 3",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 14,
+        "helps": 3,
+        "online": false
+      },
+      {
+        "id": "WELL2033",
+        "name": "Juniper 3",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 21,
+        "helps": 6,
+        "online": false
+      },
+      {
+        "id": "WELL2034",
+        "name": "Lark 3",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 28,
+        "helps": 9,
+        "online": false
+      },
+      {
+        "id": "WELL2035",
+        "name": "Maple 3",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 35,
+        "helps": 12,
+        "online": false
+      },
+      {
+        "id": "WELL2036",
+        "name": "Rowan 3",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 42,
+        "helps": 15,
+        "online": false
+      },
+      {
+        "id": "WELL2037",
+        "name": "Wren 3",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 12,
+        "helps": 18,
+        "online": false
+      },
+      {
+        "id": "WELL2038",
+        "name": "Fern 3",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 19,
+        "helps": 21,
+        "online": false
+      },
+      {
+        "id": "WELL2039",
+        "name": "Laurel 3",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 26,
+        "helps": 24,
+        "online": false
+      },
+      {
+        "id": "WELL2040",
+        "name": "Sorrel 3",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 33,
+        "helps": 27,
+        "online": false
+      },
+      {
+        "id": "WELL2041",
+        "name": "Ash 3",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 40,
+        "helps": 30,
+        "online": false
+      },
+      {
+        "id": "WELL2042",
+        "name": "Dew 3",
+        "role": "Member",
+        "portrait": "Portrait_Weaver_R2",
+        "level": 47,
+        "helps": 2,
+        "online": false
+      },
+      {
+        "id": "WELL2043",
+        "name": "Cedar 3",
+        "role": "Member",
+        "portrait": "Portrait_Ivan_R2",
+        "level": 17,
+        "helps": 5,
+        "online": false
+      },
+      {
+        "id": "WELL2044",
+        "name": "Brook 3",
+        "role": "Member",
+        "portrait": "Portrait_Scholar_R2",
+        "level": 24,
+        "helps": 8,
+        "online": false
+      }
+    ]
+  },
+  "eventTitle": "Wellkeeper Rally",
+  "eventDetail": "Restore the well together",
+  "eventProgress": 2200,
+  "eventGoal": 3000,
+  "chat": [
+    {
+      "id": "chat1",
+      "memberId": "RAIN1001",
+      "kind": "message",
+      "body": "Welcome, Rainkeepers! A little help goes a long way.",
+      "timeLabel": "10 min ago",
+      "received": 0,
+      "goal": 0
+    },
+    {
+      "id": "life1",
+      "memberId": "RAIN1007",
+      "kind": "life",
+      "body": "",
+      "timeLabel": "6 min ago",
+      "received": 2,
+      "goal": 5
+    },
+    {
+      "id": "chat2",
+      "memberId": "RAIN1004",
+      "kind": "message",
+      "body": "The well is glowing again. Great work, everyone!",
+      "timeLabel": "4 min ago",
+      "received": 0,
+      "goal": 0
+    }
+  ],
+  "mail": [
+    {
+      "id": "mail1",
+      "subject": "A welcome from Aurora",
+      "sender": "Aurora \u00b7 Team leader",
+      "summary": "A place for every Rainkeeper.",
+      "body": "Welcome to the Rainkeepers!\n\nOur village grows stronger whenever we help each other. Share encouragement in chat and lend a hand when a teammate asks for a life.\n\nEvery drop brings the well back to life.",
+      "dateLabel": "Today",
+      "unread": true
+    },
+    {
+      "id": "mail2",
+      "subject": "The well needs us",
+      "sender": "Aurora \u00b7 Team leader",
+      "summary": "Our next village goal.",
+      "body": "The village well is beginning to shine again.\n\nThe Wellkeeper Rally card shows our shared progress. Keep helping one another as we restore the village, one level at a time.\n\nRally numbers are sample values in this review.",
+      "dateLabel": "Today",
+      "unread": true
+    },
+    {
+      "id": "mail3",
+      "subject": "A brighter village",
+      "sender": "Rainkeepers",
+      "summary": "Thank you for being here.",
+      "body": "A warm light is returning to the village square.\n\nThank you for being part of the Rainkeepers. Our next chapter begins with a little kindness.",
+      "dateLabel": "Yesterday",
+      "unread": false
+    }
+  ]
+}

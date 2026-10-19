@@ -1,0 +1,555 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 576ef7d44de45fb8a6cefbed0ecafffc
+    type: 3
+  m_Name: GameplayUIAssets
+  m_EditorClassIdentifier: null
+  boards:
+    fileID: 11400000
+    guid: b756efc856e755558e36ece86e528810
+    type: 3
+  sprites:
+  - id: Avatar_Frame
+    sprite:
+      fileID: 21300000
+      guid: 1e3de811f0df54618da50e01c13dff20
+      type: 3
+  - id: Avatar_Ivan
+    sprite:
+      fileID: 21300000
+      guid: e1194156fef15034b7180a72c0b507f5
+      type: 3
+  - id: Avatar_Mask
+    sprite:
+      fileID: 21300000
+      guid: 406083e088c6500681762d7a66c0d7ef
+      type: 3
+  - id: Badge_Count
+    sprite:
+      fileID: 21300000
+      guid: 0588478ae9285254bfe86dcf9b0e0da8
+      type: 3
+  - id: boosterAtlas
+    sprite:
+      fileID: 21300000
+      guid: 03e46e9fb6bd562599d2dc467a6900be
+      type: 3
+  - id: boosterAxe
+    sprite:
+      fileID: 21300000
+      guid: 553e07e568b25a438b84910435547237
+      type: 3
+  - id: boosterHammer
+    sprite:
+      fileID: 21300000
+      guid: 291191afeab057aba090046c72b2a9c7
+      type: 3
+  - id: boosterRam
+    sprite:
+      fileID: 21300000
+      guid: b3c708037fd252bc82ef8042683cff2e
+      type: 3
+  - id: case_1
+    sprite:
+      fileID: 21300000
+      guid: 963481479be050c48b46a8f7e3dd3002
+      type: 3
+  - id: case_2
+    sprite:
+      fileID: 21300000
+      guid: d1e1498987555af8809ea84b46291f14
+      type: 3
+  - id: crate_1
+    sprite:
+      fileID: 21300000
+      guid: e5c57717f00d54869feec418d786f6e1
+      type: 3
+  - id: crate_2
+    sprite:
+      fileID: 21300000
+      guid: c48c4875f68452aca3bd293fb46c26b4
+      type: 3
+  - id: crate_3
+    sprite:
+      fileID: 21300000
+      guid: df02076efe825d22a36026cceaf11745
+      type: 3
+  - id: gate_1
+    sprite:
+      fileID: 21300000
+      guid: ab78fe1145165147944db15775ed939c
+      type: 3
+  - id: gate_2
+    sprite:
+      fileID: 21300000
+      guid: 55f3596c41e45577bea6e5d34c5224f5
+      type: 3
+  - id: moss_1
+    sprite:
+      fileID: 21300000
+      guid: a728c22e428c5dd6a89fcf40eb445df4
+      type: 3
+  - id: moss_2
+    sprite:
+      fileID: 21300000
+      guid: d22682f3d9f5541abe1754792ceba183
+      type: 3
+  - id: pail_Empty
+    sprite:
+      fileID: 21300000
+      guid: 47bf3b45ed4052a9bc588efd91efda1c
+      type: 3
+  - id: pail_Full
+    sprite:
+      fileID: 21300000
+      guid: 1ba6833515cd5bf9a73e0cc157398e53
+      type: 3
+  - id: stone_1
+    sprite:
+      fileID: 21300000
+      guid: 608a7ce35d99558e8d211d435044c80b
+      type: 3
+  - id: stone_2
+    sprite:
+      fileID: 21300000
+      guid: 5877ffede89359cf9f84711f43fd4905
+      type: 3
+  - id: stone_3
+    sprite:
+      fileID: 21300000
+      guid: 7caaa603a23d52fb88894a39e5c55bcd
+      type: 3
+  - id: tile0
+    sprite:
+      fileID: 21300000
+      guid: 9dfa15e7bda454ef87fd99199c4e9e4b
+      type: 3
+  - id: tile1
+    sprite:
+      fileID: 21300000
+      guid: f2cd6f9c78a65bc0861c5b519d132b9a
+      type: 3
+  - id: tile2
+    sprite:
+      fileID: 21300000
+      guid: 89eab0197c2a573e95c2f75e70b1d66e
+      type: 3
+  - id: tile3
+    sprite:
+      fileID: 21300000
+      guid: 29ccd3c524d6525ca2046e5d3d75ed05
+      type: 3
+  - id: tile4
+    sprite:
+      fileID: 21300000
+      guid: 724fe1f65b7c50eab354b57e353b1657
+      type: 3
+  - id: tile5
+    sprite:
+      fileID: 21300000
+      guid: 2371280349f2544e8c2c46e2a14fadbe
+      type: 3
+  - id: Booster_Default
+    sprite:
+      fileID: 21300000
+      guid: fc8104829bb655be8e331e93373910fd
+      type: 3
+  - id: Booster_Disabled
+    sprite:
+      fileID: 21300000
+      guid: fbe967dee60b5f7bbecc2fbd6a636f09
+      type: 3
+  - id: Booster_Outline
+    sprite:
+      fileID: 21300000
+      guid: 6f84d2011e165ed88853388afe9830fc
+      type: 3
+  - id: Booster_Selected
+    sprite:
+      fileID: 21300000
+      guid: 7694833242ec5a1d9b0a34860fbf5ebd
+      type: 3
+  - id: Button_Burgundy
+    sprite:
+      fileID: 21300000
+      guid: 1f389e36aa54518db21e0fc8d7bc438d
+      type: 3
+  - id: Button_Disabled
+    sprite:
+      fileID: 21300000
+      guid: 42157812b7f950ed8025176c4afc72f9
+      type: 3
+  - id: Button_Settings
+    sprite:
+      fileID: 21300000
+      guid: f88b9752098f5c7786f78745b1d820e2
+      type: 3
+  - id: Button_Teal
+    sprite:
+      fileID: 21300000
+      guid: a81a423df39456c8bef6e0712dcd87db
+      type: 3
+  - id: Focus_Cell
+    sprite:
+      fileID: 21300000
+      guid: 3098b739d37d5c548729a967f7e25590
+      type: 3
+  - id: Focus_Ring
+    sprite:
+      fileID: 21300000
+      guid: edab2e881067542ea3f2556b43c0fb69
+      type: 3
+  - id: Gameplay_Backdrop
+    sprite:
+      fileID: 21300000
+      guid: b6ccdf929e865e099d8f5f24467bdcce
+      type: 3
+  - id: HeartEmblem
+    sprite:
+      fileID: 21300000
+      guid: 21b2378a606a51de95bf9730741cb022
+      type: 3
+  - id: Icon_Arrow
+    sprite:
+      fileID: 21300000
+      guid: d9bb123d2bb05a9da769ac93fc1eb1b7
+      type: 3
+  - id: Icon_Check
+    sprite:
+      fileID: 21300000
+      guid: c11897c81e165e93ab391e538bad2eeb
+      type: 3
+  - id: Icon_Close
+    sprite:
+      fileID: 21300000
+      guid: ded5d502d2d65c5db36a4f2f1f241949
+      type: 3
+  - id: Icon_Hand
+    sprite:
+      fileID: 21300000
+      guid: 8e23fa3f15055c00a686eb8e967bd45c
+      type: 3
+  - id: Icon_Haptic
+    sprite:
+      fileID: 21300000
+      guid: 49290f06914e5a6ebd7bb5d991d6ff54
+      type: 3
+  - id: Icon_Moves
+    sprite:
+      fileID: 21300000
+      guid: 23509cf92e165f4cb0abec534aadc8f5
+      type: 3
+  - id: Icon_Play
+    sprite:
+      fileID: 21300000
+      guid: d8722350680e50c0a13ff4f064aeb05f
+      type: 3
+  - id: Icon_Retry
+    sprite:
+      fileID: 21300000
+      guid: cfcf5faa3dd45bfdbed8649378f40b8f
+      type: 3
+  - id: Icon_Settings
+    sprite:
+      fileID: 21300000
+      guid: 723b6177f07a569a821ceaef8c9b1bab
+      type: 3
+  - id: Icon_Sound
+    sprite:
+      fileID: 21300000
+      guid: 589332a58a45588c86d809044e24bd8b
+      type: 3
+  - id: Label_Tab
+    sprite:
+      fileID: 21300000
+      guid: 91a777112025501985246ea744beda3d
+      type: 3
+  - id: Panel_Dock
+    sprite:
+      fileID: 21300000
+      guid: 77c0ef06dd785b0eb97e8f00f2c199b0
+      type: 3
+  - id: Panel_GoalSlot
+    sprite:
+      fileID: 21300000
+      guid: e712242c7bd750b39eff210932ff47e5
+      type: 3
+  - id: Panel_Goals
+    sprite:
+      fileID: 21300000
+      guid: 814140087c4b5a24958f8fad98ad7dcf
+      type: 3
+  - id: Panel_Header
+    sprite:
+      fileID: 21300000
+      guid: b9475e3a8b1451e29fbc1ec4c7d58d13
+      type: 3
+  - id: Panel_Inset
+    sprite:
+      fileID: 21300000
+      guid: 0514671910005de681178c8681f76e39
+      type: 3
+  - id: Panel_Ivory
+    sprite:
+      fileID: 21300000
+      guid: bec771a1838a5c29ab5801262cd531f0
+      type: 3
+  - id: Panel_Modal
+    sprite:
+      fileID: 21300000
+      guid: 614c2077dc1d5b61a51361d85ec227b6
+      type: 3
+  - id: Panel_Moves
+    sprite:
+      fileID: 21300000
+      guid: 905e28517e24525eb38788a57eb2c0ee
+      type: 3
+  - id: Panel_Teal
+    sprite:
+      fileID: 21300000
+      guid: 3a2032dbbc495c0ca1beb6329e56114e
+      type: 3
+  - id: Progress_Fill
+    sprite:
+      fileID: 21300000
+      guid: 3642ed98354657e392ebbbf4a3d8dfc1
+      type: 3
+  - id: Progress_Track
+    sprite:
+      fileID: 21300000
+      guid: 46edec41c54a5914b4fe16ad967dfa25
+      type: 3
+  - id: Star_Gold
+    sprite:
+      fileID: 21300000
+      guid: ecc0005e212b508488be3b710ee19bc9
+      type: 3
+  - id: crystalIcon
+    sprite:
+      fileID: 21300000
+      guid: c57a5be37b96537d91c620353e3a320e
+      type: 3
+  - id: waterSpirit
+    sprite:
+      fileID: 21300000
+      guid: 375e6605aa265c6383ceca16474aa86c
+      type: 3
+  - id: rainlight
+    sprite:
+      fileID: 21300000
+      guid: ed89cf28191851acb13daaa93670414b
+      type: 3
+  sounds:
+  - id: atlas_open
+    clip:
+      fileID: 8300000
+      guid: d408233e1e7c5126aff82c1fbc962f99
+      type: 3
+  - id: atlas_shuffle
+    clip:
+      fileID: 8300000
+      guid: 63f310b5ffec593e99cf3107ec95b709
+      type: 3
+  - id: axe_sweep
+    clip:
+      fileID: 8300000
+      guid: 707d094924c05459ac1f94c209f93bc8
+      type: 3
+  - id: bomb_blast
+    clip:
+      fileID: 8300000
+      guid: e4a83f4cbcdf5287bda13d0f8a320a3c
+      type: 3
+  - id: bomb_charge
+    clip:
+      fileID: 8300000
+      guid: 34168fbdfca9599daadea01a4cab5419
+      type: 3
+  - id: combo_blast
+    clip:
+      fileID: 8300000
+      guid: 882137628f1b5c4dac9c126d72d15a2d
+      type: 3
+  - id: combo_merge
+    clip:
+      fileID: 8300000
+      guid: cef19b5658a15faaae8af7e13d03ecbf
+      type: 3
+  - id: foliage_clear
+    clip:
+      fileID: 8300000
+      guid: 21b8b8bc38fc5bfd8c15d426a6bced3c
+      type: 3
+  - id: goal_complete
+    clip:
+      fileID: 8300000
+      guid: 9a9e76b74bc4500abd0fa78b8b414d5b
+      type: 3
+  - id: golden_split
+    clip:
+      fileID: 8300000
+      guid: 7227ca23f1215c7881af78445100781e
+      type: 3
+  - id: hammer_hit
+    clip:
+      fileID: 8300000
+      guid: c75c2c65fda6517b9a4d5ba59249b964
+      type: 3
+  - id: hammer_swing
+    clip:
+      fileID: 8300000
+      guid: 169c19726a1f5dc69e86c3fe14e85d80
+      type: 3
+  - id: jar_collect
+    clip:
+      fileID: 8300000
+      guid: ccd3b48b21b655e7beabb0b7fc4ea6c3
+      type: 3
+  - id: level_lose
+    clip:
+      fileID: 8300000
+      guid: 362306c302f45582b220e6d8a8c0a7b7
+      type: 3
+  - id: level_win
+    clip:
+      fileID: 8300000
+      guid: 93fe81b2d89d50acb93e3784138922e3
+      type: 3
+  - id: metal_break
+    clip:
+      fileID: 8300000
+      guid: 286f693813275007b50524a780cfd52e
+      type: 3
+  - id: moves_low
+    clip:
+      fileID: 8300000
+      guid: 4a82f9bf63b254b7a5628e93ea4b7062
+      type: 3
+  - id: obstacle_crack
+    clip:
+      fileID: 8300000
+      guid: 649e6bfc1d4e54cd941aef3d08e1bb80
+      type: 3
+  - id: orb_beam
+    clip:
+      fileID: 8300000
+      guid: 5977823576495a8cba101da3d4d53756
+      type: 3
+  - id: orb_spin
+    clip:
+      fileID: 8300000
+      guid: 9aa0a4c8b69c58279e9d90e5112c7d41
+      type: 3
+  - id: orb_starlight
+    clip:
+      fileID: 8300000
+      guid: ba28503608965c45afb067aa53d9d994
+      type: 3
+  - id: power_create
+    clip:
+      fileID: 8300000
+      guid: af39e13e31b057728016979705f91b72
+      type: 3
+  - id: ram_charge
+    clip:
+      fileID: 8300000
+      guid: 2282e03a875f5450abc77dce3dfc9f96
+      type: 3
+  - id: ram_hit
+    clip:
+      fileID: 8300000
+      guid: 43cd36fb0a975c17b8ee84dabf0d2b42
+      type: 3
+  - id: rocket_launch
+    clip:
+      fileID: 8300000
+      guid: 3d22bc9917ce56cfb86e630bf3e69492
+      type: 3
+  - id: rocket_pass
+    clip:
+      fileID: 8300000
+      guid: c95f431da2af5ca2abcd286fec6f153b
+      type: 3
+  - id: seeker_hit
+    clip:
+      fileID: 8300000
+      guid: 653746d79274500b8fb32ab785555874
+      type: 3
+  - id: seeker_launch
+    clip:
+      fileID: 8300000
+      guid: aeb5f4d2d5fb5a5ba09a566aa6ac8b53
+      type: 3
+  - id: stone_break
+    clip:
+      fileID: 8300000
+      guid: 11ce438fd5d25aabb79e9a987942fe53
+      type: 3
+  - id: tile_land
+    clip:
+      fileID: 8300000
+      guid: a8bf5b5eae0656fa830ebec9ba081ff0
+      type: 3
+  - id: tile_match
+    clip:
+      fileID: 8300000
+      guid: 6838d9d570dd588799650fa7a4aa1b3e
+      type: 3
+  - id: tile_swap
+    clip:
+      fileID: 8300000
+      guid: e148217c802b5745ad3b0466b3a51e63
+      type: 3
+  - id: ui_close
+    clip:
+      fileID: 8300000
+      guid: 8344282c4c385ebcbefcc3f4fffb3413
+      type: 3
+  - id: ui_invalid
+    clip:
+      fileID: 8300000
+      guid: 8c7fedfb59f75c03b814aaf0c66b62a0
+      type: 3
+  - id: ui_open
+    clip:
+      fileID: 8300000
+      guid: b4e5939fcf0b524c99db995a6fe90b0e
+      type: 3
+  - id: ui_select
+    clip:
+      fileID: 8300000
+      guid: 572af755fc9d5e0aa58affdc466b5755
+      type: 3
+  - id: ui_tap
+    clip:
+      fileID: 8300000
+      guid: f4824017aa8c53898391c2d4168d71fe
+      type: 3
+  - id: wood_break
+    clip:
+      fileID: 8300000
+      guid: f13ad058058059c89e9874adcc8d6a92
+      type: 3
+  regular:
+    fileID: 12800000
+    guid: 49ab05f8909a57c3b6660b58e113e0a3
+    type: 3
+  bold:
+    fileID: 12800000
+    guid: 2ef4875515745c2c983e417fa9d63dfe
+    type: 3

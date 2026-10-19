@@ -1,0 +1,163 @@
+{
+  "pieces": [
+    {
+      "name": "Case_Tumble_00",
+      "index": 0,
+      "beforeHP": 2,
+      "material": "antique_brass_fitting",
+      "centerX": -0.21875,
+      "centerY": 0.28857421875,
+      "spinMultiplier": 0.85,
+      "scaleMultiplier": 1,
+      "angleDegrees": 145,
+      "launchDelay": 0.0
+    },
+    {
+      "name": "Case_Tumble_01",
+      "index": 1,
+      "beforeHP": 2,
+      "material": "antique_brass_fitting",
+      "centerX": 0.23193359375,
+      "centerY": 0.2822265625,
+      "spinMultiplier": 0.95,
+      "scaleMultiplier": 1,
+      "angleDegrees": 35,
+      "launchDelay": 0.02
+    },
+    {
+      "name": "Case_Tumble_02",
+      "index": 2,
+      "beforeHP": 2,
+      "material": "antique_brass_fitting",
+      "centerX": -0.23388671875,
+      "centerY": 0.05517578125,
+      "spinMultiplier": 1.05,
+      "scaleMultiplier": 1,
+      "angleDegrees": 125,
+      "launchDelay": 0.04
+    },
+    {
+      "name": "Case_Tumble_03",
+      "index": 3,
+      "beforeHP": 2,
+      "material": "antique_brass_fitting",
+      "centerX": 0.24560546875,
+      "centerY": 0.02392578125,
+      "spinMultiplier": 1.15,
+      "scaleMultiplier": 1,
+      "angleDegrees": 55,
+      "launchDelay": 0.0
+    },
+    {
+      "name": "Case_Tumble_04",
+      "index": 4,
+      "beforeHP": 1,
+      "material": "wine_shell",
+      "centerX": -0.23671875,
+      "centerY": 0.25859375,
+      "spinMultiplier": 0.85,
+      "scaleMultiplier": 1,
+      "angleDegrees": 150,
+      "launchDelay": 0.02
+    },
+    {
+      "name": "Case_Tumble_05",
+      "index": 5,
+      "beforeHP": 1,
+      "material": "wine_shell",
+      "centerX": 0.269140625,
+      "centerY": 0.244921875,
+      "spinMultiplier": 0.95,
+      "scaleMultiplier": 1,
+      "angleDegrees": 35,
+      "launchDelay": 0.04
+    },
+    {
+      "name": "Case_Tumble_06",
+      "index": 6,
+      "beforeHP": 1,
+      "material": "wine_shell",
+      "centerX": -0.267578125,
+      "centerY": -0.100390625,
+      "spinMultiplier": 1.05,
+      "scaleMultiplier": 1,
+      "angleDegrees": 165,
+      "launchDelay": 0.0
+    },
+    {
+      "name": "Case_Tumble_07",
+      "index": 7,
+      "beforeHP": 1,
+      "material": "wine_shell",
+      "centerX": 0.26875,
+      "centerY": -0.112109375,
+      "spinMultiplier": 1.15,
+      "scaleMultiplier": 1,
+      "angleDegrees": 15,
+      "launchDelay": 0.02
+    },
+    {
+      "name": "Case_Tumble_08",
+      "index": 8,
+      "beforeHP": 1,
+      "material": "wine_shell",
+      "centerX": -0.1359375,
+      "centerY": -0.266796875,
+      "spinMultiplier": 0.85,
+      "scaleMultiplier": 1,
+      "angleDegrees": 110,
+      "launchDelay": 0.04
+    },
+    {
+      "name": "Case_Tumble_09",
+      "index": 9,
+      "beforeHP": 1,
+      "material": "antique_brass_fitting",
+      "centerX": -0.371484375,
+      "centerY": -0.3234375,
+      "spinMultiplier": 0.95,
+      "scaleMultiplier": 1,
+      "angleDegrees": 135,
+      "launchDelay": 0.0
+    },
+    {
+      "name": "Case_Tumble_10",
+      "index": 10,
+      "beforeHP": 1,
+      "material": "antique_brass_fitting",
+      "centerX": 0.370703125,
+      "centerY": -0.3140625,
+      "spinMultiplier": 1.05,
+      "scaleMultiplier": 1,
+      "angleDegrees": 60,
+      "launchDelay": 0.02
+    },
+    {
+      "name": "Case_Tumble_11",
+      "index": 11,
+      "beforeHP": 1,
+      "material": "umber_base",
+      "centerX": 0.01328125,
+      "centerY": -0.362890625,
+      "spinMultiplier": 1.15,
+      "scaleMultiplier": 1,
+      "angleDegrees": 80,
+      "launchDelay": 0.04
+    }
+  ],
+  "gravity": 11.0,
+  "drag": 2.1,
+  "pieceScale": 1.3,
+  "canvasCells": 1,
+  "fps": 30,
+  "framesPerCycle": 32,
+  "launchSpeed": 2.8,
+  "launchSpeedVariation": 0.16,
+  "lift": 0.55,
+  "finalSpeedMultiplier": 1.18,
+  "counts": {
+    "hp2": 4,
+    "hp1": 8
+  },
+  "despawn": "Full sprite below camera bottom; no fade or shrink"
+}

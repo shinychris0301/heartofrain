@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442f78eca97050d58f6264d337677b48, type: 3}
+  m_Name: M58 End Level Assets
+  m_EditorClassIdentifier:
+  approvedSettings: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 3}
+  sprites:
+  - id: LifeLostHeart
+    sprite: {fileID: 21300000, guid: ee08f0482afa55dc8b1a8d36624b2509, type: 3}
+  - id: Avatar_Ivan_Home
+    sprite: {fileID: 21300000, guid: 8b5f5d92998255cb9eb8fdcc2826e1f4, type: 3}

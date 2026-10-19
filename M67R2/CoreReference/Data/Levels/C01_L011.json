@@ -1,0 +1,1627 @@
+{
+  "schemaVersion": 4,
+  "revision": "M36 R2",
+  "id": "C01_L011",
+  "chapter": 1,
+  "levelInChapter": 11,
+  "globalLevel": 11,
+  "name": "First Stone Bank",
+  "storyBeat": "Remove broken masonry",
+  "columns": 9,
+  "rows": 11,
+  "coordinateSystem": "bottom_left_y_up",
+  "activeCells": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 1
+    },
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 0,
+      "y": 7
+    },
+    {
+      "x": 0,
+      "y": 8
+    },
+    {
+      "x": 0,
+      "y": 9
+    },
+    {
+      "x": 0,
+      "y": 10
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 1
+    },
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "x": 1,
+      "y": 3
+    },
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 1,
+      "y": 5
+    },
+    {
+      "x": 1,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 7
+    },
+    {
+      "x": 1,
+      "y": 8
+    },
+    {
+      "x": 1,
+      "y": 9
+    },
+    {
+      "x": 1,
+      "y": 10
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 1
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 3
+    },
+    {
+      "x": 2,
+      "y": 4
+    },
+    {
+      "x": 2,
+      "y": 5
+    },
+    {
+      "x": 2,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 2,
+      "y": 8
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 1
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 5
+    },
+    {
+      "x": 3,
+      "y": 6
+    },
+    {
+      "x": 3,
+      "y": 7
+    },
+    {
+      "x": 3,
+      "y": 8
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 1
+    },
+    {
+      "x": 4,
+      "y": 2
+    },
+    {
+      "x": 4,
+      "y": 3
+    },
+    {
+      "x": 4,
+      "y": 4
+    },
+    {
+      "x": 4,
+      "y": 5
+    },
+    {
+      "x": 4,
+      "y": 6
+    },
+    {
+      "x": 4,
+      "y": 7
+    },
+    {
+      "x": 4,
+      "y": 8
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 1
+    },
+    {
+      "x": 5,
+      "y": 2
+    },
+    {
+      "x": 5,
+      "y": 3
+    },
+    {
+      "x": 5,
+      "y": 4
+    },
+    {
+      "x": 5,
+      "y": 5
+    },
+    {
+      "x": 5,
+      "y": 6
+    },
+    {
+      "x": 5,
+      "y": 7
+    },
+    {
+      "x": 5,
+      "y": 8
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 1
+    },
+    {
+      "x": 6,
+      "y": 2
+    },
+    {
+      "x": 6,
+      "y": 3
+    },
+    {
+      "x": 6,
+      "y": 4
+    },
+    {
+      "x": 6,
+      "y": 5
+    },
+    {
+      "x": 6,
+      "y": 6
+    },
+    {
+      "x": 6,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 9
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "y": 1
+    },
+    {
+      "x": 7,
+      "y": 2
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 4
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 7,
+      "y": 7
+    },
+    {
+      "x": 7,
+      "y": 8
+    },
+    {
+      "x": 7,
+      "y": 9
+    },
+    {
+      "x": 7,
+      "y": 10
+    },
+    {
+      "x": 8,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "y": 1
+    },
+    {
+      "x": 8,
+      "y": 2
+    },
+    {
+      "x": 8,
+      "y": 3
+    },
+    {
+      "x": 8,
+      "y": 4
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 8,
+      "y": 6
+    },
+    {
+      "x": 8,
+      "y": 7
+    },
+    {
+      "x": 8,
+      "y": 8
+    },
+    {
+      "x": 8,
+      "y": 9
+    },
+    {
+      "x": 8,
+      "y": 10
+    }
+  ],
+  "initialTiles": [
+    {
+      "x": 0,
+      "y": 6,
+      "color": 5
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": 5
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "color": 3
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "color": 4
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "color": 4
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": 4
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "color": 3
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "color": 4
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": 4
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": 3
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "color": 2
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "color": 1
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "color": 3
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": 4
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "color": 5
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "color": 2
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": 4
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "color": 1
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "color": 2
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": 4
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": 1
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "color": 1
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "color": 3
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": 5
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "color": 5
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "color": 3
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "color": 1
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "color": 4
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "color": 5
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "color": 3
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "color": 4
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "color": 1
+    }
+  ],
+  "obstacles": [
+    {
+      "instanceId": "C01_L011_pail_0_5",
+      "family": "pail",
+      "layer": "body",
+      "hp": 0,
+      "x": 0,
+      "y": 5,
+      "art": "OB_PAIL_FULL",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_pail_1_5",
+      "family": "pail",
+      "layer": "body",
+      "hp": 0,
+      "x": 1,
+      "y": 5,
+      "art": "OB_PAIL_FULL",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_stone_1_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 1,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_2_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_2_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 1,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_3_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_3_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 1,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_3_2",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 2,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_4_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_4_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 1,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_4_2",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 2,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_5_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_5_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 1,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_5_2",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 2,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_6_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_6_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 1,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_stone_7_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 0,
+      "art": "OB_STONE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L011_crate_0_0",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 0,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_0_1",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 1,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_0_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_0_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_0_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_1_1",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 1,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_1_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_1_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_1_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_2_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_2_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_2_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_2_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_3_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_3_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_3_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_4_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_4_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_4_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_5_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_5_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_5_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_6_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_6_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_6_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_6_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_7_1",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 1,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_7_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_7_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_7_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_7_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_0",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 8,
+      "y": 0,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_1",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 8,
+      "y": 1,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 8,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 8,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 8,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L011_crate_8_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 8,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    }
+  ],
+  "initialPowerUps": [],
+  "activeColors": [
+    5,
+    2,
+    1,
+    4,
+    3
+  ],
+  "tileSeed": 36011,
+  "spawnPoints": [
+    {
+      "x": 0,
+      "y": 10
+    },
+    {
+      "x": 1,
+      "y": 10
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 10
+    },
+    {
+      "x": 8,
+      "y": 10
+    }
+  ],
+  "gravity": "down_per_vertical_active_segment; fixed bodies block fall",
+  "obstaclePlacement": "authored_connected_patches_and_banks",
+  "cellOccupancy": "exactly one gem OR one standalone obstacle/target; no overlays or underlays",
+  "deliveryExits": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 0
+    }
+  ],
+  "deliveryRoutes": [
+    {
+      "start": {
+        "x": 0,
+        "y": 5
+      },
+      "exit": {
+        "x": 0,
+        "y": 0
+      },
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "start": {
+        "x": 1,
+        "y": 5
+      },
+      "exit": {
+        "x": 1,
+        "y": 0
+      },
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "introducesVariant": null,
+  "mossRegrowth": {
+    "enabled": false,
+    "startLevel": 27,
+    "afterConsecutiveMovesWithoutMossDamage": 2,
+    "maxNewCellsTotal": 3,
+    "spawnPerTrigger": 1,
+    "target": "replace one orthogonally adjacent ordinary gem with standalone HP1 moss; never share its cell",
+    "selection": "nearest existing moss, then bottom-left coordinate",
+    "exclude": "power-ups, obstacles, delivery targets and exit cells",
+    "goal": "remaining moss counter increases by one; all moss must be cleared"
+  },
+  "movesProposal": 33,
+  "difficultyIntent": "Standard",
+  "introduces": null,
+  "introducedFamilies": [],
+  "familiesPresent": [
+    "crate",
+    "stone",
+    "pail"
+  ],
+  "targetTypeCount": 3,
+  "targetTypeLimit": 3,
+  "objectivePolicy": "2 introductory/easy/relief; 3 standard; 4 hard/super-hard/finale. Obstacle and delivery goals only; no extra color goal.",
+  "lesson": "Clear the delivery columns and drop each pail through its marked exit.",
+  "goals": [
+    {
+      "type": "clear_obstacle",
+      "family": "crate",
+      "count": 37
+    },
+    {
+      "type": "clear_obstacle",
+      "family": "stone",
+      "count": 15
+    },
+    {
+      "type": "deliver",
+      "family": "pail",
+      "count": 2
+    }
+  ],
+  "formations": [
+    {
+      "layer": "body",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "activeCells": 99,
+    "bodyCells": 54,
+    "underlayCells": 0,
+    "overlayCells": 0,
+    "occupiedObstacleCells": 54,
+    "coveragePercent": 54.5,
+    "coverageCapPercent": 56,
+    "targetTypes": 3,
+    "damageUnits": 82,
+    "minimumDamageUnitsPerMove": 2.48,
+    "counts": {
+      "pail": 2,
+      "stone": 15,
+      "crate": 37
+    }
+  },
+  "validation": {
+    "noInitialMatches": true,
+    "legalOpeningSwaps": 24,
+    "frontierSwaps": 6,
+    "waterGateOpeningSwaps": 0,
+    "powerUpCreationOpeningSwaps": 4,
+    "exampleFrontierSwap": [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "exampleWaterSwap": null,
+    "examplePowerUpSwap": [
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        9
+      ]
+    ],
+    "seedAttempts": 2,
+    "fullSolvability": "NOT_TESTED",
+    "difficultyParity": "NOT_VERIFIED"
+  }
+}

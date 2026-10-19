@@ -1,0 +1,129 @@
+M33 POWER-UP INTEGRATION
+
+RUNTIME ASSETS
+Assets/HeartOfTheRain/Chapter01M04 contains the approved reference tiles,
+rocket sprite atlases, unlit materials and the deterministic review layout.
+Chapter01M05 contains the base sprite player, Bomb and obstacle atlases.
+Chapter01M07 contains final effects, combinations, Golden Seeker, playback
+controllers, manifests, validation fixtures and bound demo prefabs.
+Retain these paths and GUIDs when importing over previous milestones. A fresh
+project only needs this cumulative package; earlier packages are unnecessary.
+
+PLAYBACK ENTRY POINTS
+PowerUpPlaybackGallery (HeartOfTheRain.M07):
+  SelectEntry(index)   Select from Data/PowerUpGalleryCatalog.json.
+  Replay()            Restart the selection and play it.
+  Seek(seconds)       Pause at a time in the current selection.
+  StepFrame(+1/-1)     Step the active board timeline or animation clip.
+  SetBoardSize(c, r)   Rebuild the demonstration board with the chosen dimensions.
+  playing, speed, loop, autoAdvance are public playback controls.
+  Duration, PlaybackTime and EntryCount expose review state.
+
+BoardReactionReview (HeartOfTheRain.M07):
+  Assign an existing bound Demo prefab, configure kind/columns/rows/origin,
+  targetColor/seekerTarget/rocketVertical/showBlockers, then call Rebuild().
+  Set play=true for self-driven looping, or set externallyDriven=true and call
+  Sample(seconds) from an external clock. The gallery owns this clock itself.
+  CurrentPlan exposes the deterministic timeline and its tile/effect records.
+  PlayGoldenCombination(kind, cell, vertical, color) starts kinds 17 through 20.
+
+Example using a bound standalone board component:
+  review.columns = 9;
+  review.rows = 11;
+  review.PlayGoldenCombination(ReviewKind.GoldenSeekerBomb,
+                              new Vector2Int(4, 5));
+
+RenderedSpritePlayer (HeartOfTheRain.M05):
+  Supply atlas Texture2D, manifest TextAsset and the supplied unlit Material.
+  Initialize() creates shared sprites from manifest rectangles.
+  Play(clipName) plays independently; Completed reports a finished nonlooping
+  clip. Sample(clipName, seconds) provides deterministic external playback.
+  Set playOnEnable=false before activating externally driven objects.
+  No runtime meshes or lights are required for the baked depth appearance.
+
+ASSET IMPORT CONTRACT
+Keep texture dimensions at least as large as their manifest atlasWidth/Height.
+The supplied .meta files disable mipmaps, retain alpha and use clamp wrapping.
+Do not repack or resize an atlas without rebuilding its frame rectangles.
+Frame x/y values use Unity's bottom-left origin; topLeftY is used by the Python
+review renderer. pixelsPerUnit and frame canvas extents already encode scale.
+Use white sprite tint. The supplied unlit materials preserve the authored art;
+tile glow is a separate property block during orb targeting. Review mobile
+texture compression and memory on target devices before choosing release
+import settings; no performance or pipeline certification is included.
+The gallery uses all pages for review. A release level can load its needed
+effect families instead of carrying the complete review catalog at once.
+
+REVIEW KIND MAP AND APPROVED BEHAVIOR
+21 Bomb: one normal blast, radius 2 in cells (5 x 5 at board center), clipped
+   to the board. The standalone review no longer requires a chained rocket.
+4/5 Rocket Horizontal/Vertical: two heads clear one row/column.
+11 Rain Seeker: one curved flight and one targeted strike.
+7 Rainbow Orb: clockwise rotation, intense white/gold straight beams and
+   starlight impacts clear the selected tile color.
+16 Golden Seeker: one item forms two Golden Seekers; both launch together.
+6 Rocket + Rocket: merge then clear a cross.
+2 Rocket + Bomb: merge/expand, then clear three rows and three columns.
+3 Bomb + Bomb: merge into a larger bomb and release the approved wider blast.
+12 Rain Seeker + Rocket: carry one rocket to a target row/column.
+13 Rain Seeker + Bomb: carry one bomb and release its normal blast on arrival.
+14 Rain Seeker + Rain Seeker: three seekers target distinct cells.
+8 Rainbow Orb + Rocket: convert one color to rockets and launch their clears.
+9 Rainbow Orb + Bomb: convert one color to bombs and detonate the sequence.
+15 Rainbow Orb + Rain Seeker: convert one color to seekers and launch waves.
+10 Double Orb: form the Super Orb design, rotate and clear the board in a wave.
+17 Golden Seeker + Rocket: two Golden carriers, two distinct rocket lines;
+   preserve the configured rocket orientation.
+18 Golden Seeker + Bomb: two Golden carriers, two normal bomb blasts.
+19 Golden Seeker + Rain Seeker: two Golden plus two Rain Seekers, four targets.
+20 Golden Seeker + Rainbow Orb: each converted Golden creates two; two source
+   cells per wave with .08-second staggering and .8 seconds between waves,
+   at most eight active flights in the supplied planner.
+0/1 Bomb triggers Rocket / Rocket triggers Bomb: contact-triggered chain demos.
+
+SHARED RULES PRESERVED
+Folded seeker wings during rest/charge; open wings in flight. Body scale 1.4.
+Curved travel, height crest, banking and an accelerating final dive.
+Golden pairs are visibly created even when eligible targets run out; unassigned
+seekers dissolve with stars and deal no damage. Targets are reserved so flights
+do not duplicate a target unnecessarily. Refill waits for every carrier and
+its payload, including overlapping bomb blasts.
+Ordinary tile destruction uses the approved 14 pieces (8 medium, 6 small),
+approved enlarged fragment scale and original tile hues. Wood has its own
+breakup. Stars remain layered separately from the fragment sprites.
+No Golden + Golden combo is added. Super Orb has no standalone gameplay kind.
+
+COLOR INDEX MAP
+0 orange lantern, 1 green leaf, 2 red heart, 3 purple rune,
+4 yellow sun, 5 blue water drop.
+Legacy reference PNG filenames are retained for stable bindings. In particular,
+TILE_Ribbon_V2.png contains the approved heart design.
+For supported orb conversion combinations, targetColor=-1 selects automatically;
+0 through 5 force a color for review. The catalog defaults to blue for comparison.
+
+LIVE GAME INTEGRATION BOUNDARY
+ReviewPlan.Build and GoldenSeekerComboPlan.Build currently create a seeded
+demonstration layout. They are executable choreography references, not a live
+match-3 board-state API. In the game, supply actual tile IDs, obstacles and
+eligible targets to your gameplay resolver; feed the resolved target cells
+and activation times into the corresponding playback tracks. The included
+plan data provides origin, power lifetimes, flight start/travel/targets, effect
+start/duration/transforms, conversion times, hit times, and fall destinations.
+Apply gameplay hits once when their event times are crossed; do not re-apply
+damage from a visual sample or while scrubbing. Reserve targets before launch,
+coalesce overlapping damage, and release the refill barrier after the final
+flight and payload. Use the game's own gravity/refill and objective resolver.
+The demo's grid generation, refill and score-free review loop can then be
+replaced without altering the approved sprites or animation clip definitions.
+
+VALIDATION COMMANDS
+Unity menu: Heart of the Rain > Power-Ups > Validate Complete Package.
+Runs the prior C# gates, Golden target-exhaustion checks, 18 Bomb fixtures,
+gallery inventory and effect references. This gate is supplied but was not
+executed in the packaging environment.
+Offline:
+  python Source/validate_final.py /absolute/path/M33_PowerUps_Final_R1
+The final audit expects the restored M32_GoldenSeekerCombos_R1 sibling as the
+approved baseline. The packaged Final_Report.json records the completed run.
+Source/render_final.py builds review stills and a three-worker, 60-fps film.
+Source/package_final.py assembles .unitypackage and ZIP with payload hashes.

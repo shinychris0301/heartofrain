@@ -1,0 +1,19 @@
+{
+  "currentLevel": 18,
+  "coins": 1250,
+  "lives": 5,
+  "maxLives": 5,
+  "chapterNumber": 1,
+  "chapterTitle": "The Village Well",
+  "completedLevelsInChapter": 17,
+  "levelsPerChapter": 50,
+  "dailyVisible": true,
+  "cupVisible": true,
+  "dailyStatus": "Ready",
+  "cupStatus": "2d 06h",
+  "reduceMotion": false,
+  "wellworksVisible": true,
+  "teamVisible": true,
+  "wellworksStatus": "12/20",
+  "teamStatus": "1d 04h"
+}

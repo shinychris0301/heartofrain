@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 4096,
+  "atlasHeight": 2048,
+  "frameSize": 512,
+  "frameCanvasCells": 10,
+  "pixelsPerUnit": 51.2,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "DO_Wave",
+      "start": 0,
+      "count": 32,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "DO_Wave_000",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_000.png"
+    },
+    {
+      "name": "DO_Wave_001",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_001.png"
+    },
+    {
+      "name": "DO_Wave_002",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_002.png"
+    },
+    {
+      "name": "DO_Wave_003",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_003.png"
+    },
+    {
+      "name": "DO_Wave_004",
+      "x": 2048,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_004.png"
+    },
+    {
+      "name": "DO_Wave_005",
+      "x": 2560,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_005.png"
+    },
+    {
+      "name": "DO_Wave_006",
+      "x": 3072,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_006.png"
+    },
+    {
+      "name": "DO_Wave_007",
+      "x": 3584,
+      "y": 1536,
+      "topLeftY": 0,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_007.png"
+    },
+    {
+      "name": "DO_Wave_008",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_008.png"
+    },
+    {
+      "name": "DO_Wave_009",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_009.png"
+    },
+    {
+      "name": "DO_Wave_010",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_010.png"
+    },
+    {
+      "name": "DO_Wave_011",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_011.png"
+    },
+    {
+      "name": "DO_Wave_012",
+      "x": 2048,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_012.png"
+    },
+    {
+      "name": "DO_Wave_013",
+      "x": 2560,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_013.png"
+    },
+    {
+      "name": "DO_Wave_014",
+      "x": 3072,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_014.png"
+    },
+    {
+      "name": "DO_Wave_015",
+      "x": 3584,
+      "y": 1024,
+      "topLeftY": 512,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_015.png"
+    },
+    {
+      "name": "DO_Wave_016",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_016.png"
+    },
+    {
+      "name": "DO_Wave_017",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_017.png"
+    },
+    {
+      "name": "DO_Wave_018",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_018.png"
+    },
+    {
+      "name": "DO_Wave_019",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_019.png"
+    },
+    {
+      "name": "DO_Wave_020",
+      "x": 2048,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_020.png"
+    },
+    {
+      "name": "DO_Wave_021",
+      "x": 2560,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_021.png"
+    },
+    {
+      "name": "DO_Wave_022",
+      "x": 3072,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_022.png"
+    },
+    {
+      "name": "DO_Wave_023",
+      "x": 3584,
+      "y": 512,
+      "topLeftY": 1024,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_023.png"
+    },
+    {
+      "name": "DO_Wave_024",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_024.png"
+    },
+    {
+      "name": "DO_Wave_025",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_025.png"
+    },
+    {
+      "name": "DO_Wave_026",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_026.png"
+    },
+    {
+      "name": "DO_Wave_027",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_027.png"
+    },
+    {
+      "name": "DO_Wave_028",
+      "x": 2048,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_028.png"
+    },
+    {
+      "name": "DO_Wave_029",
+      "x": 2560,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_029.png"
+    },
+    {
+      "name": "DO_Wave_030",
+      "x": 3072,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_030.png"
+    },
+    {
+      "name": "DO_Wave_031",
+      "x": 3584,
+      "y": 0,
+      "topLeftY": 1536,
+      "width": 512,
+      "height": 512,
+      "source": "Source/Frames/DoubleOrb24/DO_Wave_031.png"
+    }
+  ]
+}

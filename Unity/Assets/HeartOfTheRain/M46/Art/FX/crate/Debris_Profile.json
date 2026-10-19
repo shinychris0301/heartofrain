@@ -1,0 +1,60 @@
+{
+  "revision": "R3",
+  "pieces": [
+    {
+      "name": "Wood_Tumble_0",
+      "centerX": -0.3361008608655188,
+      "centerY": 0.31408498667456325,
+      "spinMultiplier": 0.88
+    },
+    {
+      "name": "Wood_Tumble_1",
+      "centerX": -0.04805091894689542,
+      "centerY": 0.258032990555269,
+      "spinMultiplier": 0.95
+    },
+    {
+      "name": "Wood_Tumble_2",
+      "centerX": 0.3017090176051606,
+      "centerY": 0.3155438048129154,
+      "spinMultiplier": 1.02
+    },
+    {
+      "name": "Wood_Tumble_3",
+      "centerX": -0.23643102438279062,
+      "centerY": -0.007369264531947172,
+      "spinMultiplier": 1.09
+    },
+    {
+      "name": "Wood_Tumble_4",
+      "centerX": 0.16799828411211074,
+      "centerY": 0.008459336889352909,
+      "spinMultiplier": 1.1600000000000001
+    },
+    {
+      "name": "Wood_Tumble_5",
+      "centerX": -0.33175454545454547,
+      "centerY": -0.3241545454545455,
+      "spinMultiplier": 1.23
+    },
+    {
+      "name": "Wood_Tumble_6",
+      "centerX": -0.034520832152921704,
+      "centerY": -0.25896688759002195,
+      "spinMultiplier": 1.3
+    },
+    {
+      "name": "Wood_Tumble_7",
+      "centerX": 0.3097721748400853,
+      "centerY": -0.3066190418873375,
+      "spinMultiplier": 1.37
+    }
+  ],
+  "gravity": 8.5,
+  "drag": 2.8,
+  "pieceScale": 1.3,
+  "canvasCells": 1.2,
+  "fps": 30,
+  "framesPerCycle": 32,
+  "despawn": "Only after the complete sprite is below the camera bottom; never fade or use a fixed lifetime"
+}

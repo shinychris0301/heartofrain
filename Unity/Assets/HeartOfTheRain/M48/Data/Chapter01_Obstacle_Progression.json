@@ -1,0 +1,1550 @@
+{
+  "milestone": "M50 R1",
+  "introductions": {
+    "crystal": 21,
+    "pod": 28,
+    "cabinet": 36
+  },
+  "updatedLevels": [
+    21,
+    22,
+    24,
+    28,
+    29,
+    30,
+    32,
+    34,
+    36,
+    37,
+    39,
+    40,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "board": "9x9",
+      "difficulty": "Teach",
+      "moves": 26,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 22
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "introduced": [
+        "crate",
+        "moss"
+      ],
+      "reservedCells": 34
+    },
+    {
+      "level": 2,
+      "board": "9x9",
+      "difficulty": "Easy",
+      "moves": 24,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 33
+    },
+    {
+      "level": 3,
+      "board": "9x9",
+      "difficulty": "Easy",
+      "moves": 23,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 30
+    },
+    {
+      "level": 4,
+      "board": "9x9",
+      "difficulty": "Easy",
+      "moves": 22,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 14
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 14
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 28
+    },
+    {
+      "level": 5,
+      "board": "9x9",
+      "difficulty": "Easy",
+      "moves": 22,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 28
+    },
+    {
+      "level": 6,
+      "board": "9x9",
+      "difficulty": "Relief",
+      "moves": 24,
+      "families": [
+        "crate",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 20
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 13
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 33
+    },
+    {
+      "level": 7,
+      "board": "9x9",
+      "difficulty": "Teach",
+      "moves": 24,
+      "families": [
+        "crate",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "introduced": [
+        "stone"
+      ],
+      "reservedCells": 28
+    },
+    {
+      "level": 8,
+      "board": "9x9",
+      "difficulty": "Standard",
+      "moves": 25,
+      "families": [
+        "crate",
+        "moss",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 11
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 42
+    },
+    {
+      "level": 9,
+      "board": "9x9",
+      "difficulty": "Standard",
+      "moves": 23,
+      "families": [
+        "crate",
+        "moss",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 13
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 13
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 36
+    },
+    {
+      "level": 10,
+      "board": "9x9",
+      "difficulty": "Teach",
+      "moves": 24,
+      "families": [
+        "crate",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "introduced": [
+        "pail"
+      ],
+      "reservedCells": 29
+    },
+    {
+      "level": 11,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 33,
+      "families": [
+        "crate",
+        "stone",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 37
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 15
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 54
+    },
+    {
+      "level": 12,
+      "board": "9x11",
+      "difficulty": "Relief",
+      "moves": 26,
+      "families": [
+        "crate",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 38
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 40
+    },
+    {
+      "level": 13,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 33,
+      "families": [
+        "crate",
+        "stone",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 33
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 13
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 48
+    },
+    {
+      "level": 14,
+      "board": "9x11",
+      "difficulty": "Teach",
+      "moves": 26,
+      "families": [
+        "crate",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [
+        "case"
+      ],
+      "reservedCells": 36
+    },
+    {
+      "level": 15,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 27,
+      "families": [
+        "crate",
+        "stone",
+        "pail",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 23
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 11
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 42
+    },
+    {
+      "level": 16,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 30,
+      "families": [
+        "crate",
+        "moss",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 31
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 49
+    },
+    {
+      "level": 17,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 32,
+      "families": [
+        "crate",
+        "moss",
+        "stone",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 13
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 60
+    },
+    {
+      "level": 18,
+      "board": "9x11",
+      "difficulty": "Teach",
+      "moves": 26,
+      "families": [
+        "crate",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "introduced": [
+        "gate"
+      ],
+      "reservedCells": 33
+    },
+    {
+      "level": 19,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 32,
+      "families": [
+        "crate",
+        "moss",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 43
+    },
+    {
+      "level": 20,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 30,
+      "families": [
+        "crate",
+        "moss",
+        "stone",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 11
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 20
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 17
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 54
+    },
+    {
+      "level": 21,
+      "board": "11x11",
+      "difficulty": "Introduction",
+      "moves": 30,
+      "families": [
+        "crate",
+        "crystal"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 28
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        }
+      ],
+      "introduced": [
+        "crystal"
+      ],
+      "reservedCells": 33
+    },
+    {
+      "level": 22,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 36,
+      "families": [
+        "crate",
+        "crystal",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 29
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 9
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 44
+    },
+    {
+      "level": 23,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 40,
+      "families": [
+        "crate",
+        "moss",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 38
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 62
+    },
+    {
+      "level": 24,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 34,
+      "families": [
+        "crate",
+        "crystal",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 9
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 44
+    },
+    {
+      "level": 25,
+      "board": "11x11",
+      "difficulty": "Hard",
+      "moves": 39,
+      "families": [
+        "crate",
+        "stone",
+        "case",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 10
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 69
+    },
+    {
+      "level": 26,
+      "board": "11x11",
+      "difficulty": "Relief",
+      "moves": 28,
+      "families": [
+        "crate",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 45
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 47
+    },
+    {
+      "level": 27,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 36,
+      "families": [
+        "crate",
+        "moss",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 54
+    },
+    {
+      "level": 28,
+      "board": "11x11",
+      "difficulty": "Introduction",
+      "moves": 32,
+      "families": [
+        "crate",
+        "pod"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        }
+      ],
+      "introduced": [
+        "pod"
+      ],
+      "reservedCells": 31
+    },
+    {
+      "level": 29,
+      "board": "11x11",
+      "difficulty": "Hard",
+      "moves": 40,
+      "families": [
+        "crate",
+        "pod",
+        "stone",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 14
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 50
+    },
+    {
+      "level": 30,
+      "board": "11x11",
+      "difficulty": "Hard",
+      "moves": 44,
+      "families": [
+        "crate",
+        "crystal",
+        "pod",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 65
+    },
+    {
+      "level": 31,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 36,
+      "families": [
+        "crate",
+        "moss",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 43
+    },
+    {
+      "level": 32,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 34,
+      "families": [
+        "crate",
+        "pod",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 9
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 33
+    },
+    {
+      "level": 33,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 38,
+      "families": [
+        "crate",
+        "stone",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 46
+    },
+    {
+      "level": 34,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 34,
+      "families": [
+        "crate",
+        "pod",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 33
+    },
+    {
+      "level": 35,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 40,
+      "families": [
+        "crate",
+        "stone",
+        "case",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 50
+    },
+    {
+      "level": 36,
+      "board": "9x11",
+      "difficulty": "Introduction",
+      "moves": 30,
+      "families": [
+        "crate",
+        "cabinet"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "introduced": [
+        "cabinet"
+      ],
+      "reservedCells": 30
+    },
+    {
+      "level": 37,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 36,
+      "families": [
+        "crate",
+        "crystal",
+        "cabinet"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 36
+    },
+    {
+      "level": 38,
+      "board": "9x11",
+      "difficulty": "Standard",
+      "moves": 42,
+      "families": [
+        "crate",
+        "stone",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 23
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 47
+    },
+    {
+      "level": 39,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 38,
+      "families": [
+        "crate",
+        "pod",
+        "cabinet",
+        "case"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 43
+    },
+    {
+      "level": 40,
+      "board": "9x11",
+      "difficulty": "Hard",
+      "moves": 40,
+      "families": [
+        "crate",
+        "pod",
+        "cabinet",
+        "stone"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 8
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 14
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 42
+    },
+    {
+      "level": 41,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 40,
+      "families": [
+        "crate",
+        "moss",
+        "pail"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 3
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 49
+    },
+    {
+      "level": 42,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 42,
+      "families": [
+        "crate",
+        "pail",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 48
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 60
+    },
+    {
+      "level": 43,
+      "board": "11x11",
+      "difficulty": "Hard",
+      "moves": 44,
+      "families": [
+        "crate",
+        "crystal",
+        "pod",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 53
+    },
+    {
+      "level": 44,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 38,
+      "families": [
+        "crate",
+        "cabinet",
+        "moss"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 43
+    },
+    {
+      "level": 45,
+      "board": "11x11",
+      "difficulty": "Super hard",
+      "moves": 44,
+      "families": [
+        "crate",
+        "pod",
+        "cabinet",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 21
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 60
+    },
+    {
+      "level": 46,
+      "board": "11x11",
+      "difficulty": "Relief",
+      "moves": 30,
+      "families": [
+        "crate",
+        "pod"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 27
+    },
+    {
+      "level": 47,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 36,
+      "families": [
+        "crate",
+        "cabinet",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 9
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 38
+    },
+    {
+      "level": 48,
+      "board": "11x11",
+      "difficulty": "Standard",
+      "moves": 44,
+      "families": [
+        "crate",
+        "moss",
+        "gate"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 32
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 56
+    },
+    {
+      "level": 49,
+      "board": "11x11",
+      "difficulty": "Hard",
+      "moves": 44,
+      "families": [
+        "crate",
+        "crystal",
+        "pod",
+        "cabinet"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 32
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 8
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 58
+    },
+    {
+      "level": 50,
+      "board": "11x11",
+      "difficulty": "Finale",
+      "moves": 44,
+      "families": [
+        "crate",
+        "crystal",
+        "pod",
+        "cabinet"
+      ],
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 8
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "introduced": [],
+      "reservedCells": 46
+    }
+  ],
+  "balanceStatus": "Authored progression and structural validation; natural-play difficulty is unverified.",
+  "balanceAdjustedLevels": [
+    1,
+    5,
+    10,
+    13,
+    19,
+    30,
+    31,
+    33,
+    35,
+    38,
+    41,
+    42,
+    43,
+    45,
+    48,
+    49,
+    50
+  ]
+}

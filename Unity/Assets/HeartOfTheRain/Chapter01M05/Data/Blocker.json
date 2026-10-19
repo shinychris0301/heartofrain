@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 384,
+  "frameCanvasCells": 6.4,
+  "pixelsPerUnit": 60.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "fps": 30,
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "CrateIdle",
+      "start": 0,
+      "count": 1,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.03333333333333333
+    },
+    {
+      "name": "CrateBreakup",
+      "start": 1,
+      "count": 24,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.8
+    }
+  ],
+  "frames": [
+    {
+      "name": "Blocker_CrateIdle_000",
+      "x": 0,
+      "y": 1664,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/CrateIdle_000.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_000",
+      "x": 384,
+      "y": 1664,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/CrateBreakup_000.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_001",
+      "x": 768,
+      "y": 1664,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/CrateBreakup_001.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_002",
+      "x": 1152,
+      "y": 1664,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/CrateBreakup_002.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_003",
+      "x": 1536,
+      "y": 1664,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/CrateBreakup_003.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_004",
+      "x": 0,
+      "y": 1280,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/CrateBreakup_004.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_005",
+      "x": 384,
+      "y": 1280,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/CrateBreakup_005.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_006",
+      "x": 768,
+      "y": 1280,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/CrateBreakup_006.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_007",
+      "x": 1152,
+      "y": 1280,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/CrateBreakup_007.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_008",
+      "x": 1536,
+      "y": 1280,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/CrateBreakup_008.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_009",
+      "x": 0,
+      "y": 896,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/CrateBreakup_009.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_010",
+      "x": 384,
+      "y": 896,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/CrateBreakup_010.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_011",
+      "x": 768,
+      "y": 896,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/CrateBreakup_011.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_012",
+      "x": 1152,
+      "y": 896,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/CrateBreakup_012.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_013",
+      "x": 1536,
+      "y": 896,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/CrateBreakup_013.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_014",
+      "x": 0,
+      "y": 512,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/CrateBreakup_014.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_015",
+      "x": 384,
+      "y": 512,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/CrateBreakup_015.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_016",
+      "x": 768,
+      "y": 512,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/CrateBreakup_016.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_017",
+      "x": 1152,
+      "y": 512,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/CrateBreakup_017.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_018",
+      "x": 1536,
+      "y": 512,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/CrateBreakup_018.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_019",
+      "x": 0,
+      "y": 128,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/CrateBreakup_019.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_020",
+      "x": 384,
+      "y": 128,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/CrateBreakup_020.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_021",
+      "x": 768,
+      "y": 128,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/CrateBreakup_021.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_022",
+      "x": 1152,
+      "y": 128,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/CrateBreakup_022.png"
+    },
+    {
+      "name": "Blocker_CrateBreakup_023",
+      "x": 1536,
+      "y": 128,
+      "width": 384,
+      "height": 384,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/CrateBreakup_023.png"
+    }
+  ]
+}

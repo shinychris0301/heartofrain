@@ -1,0 +1,276 @@
+{
+  "revision": "M45 R2",
+  "sprites": [
+    {
+      "id": "crate_1",
+      "family": "crate",
+      "hp": 1,
+      "path": "Art/Obstacles/crate_1.png",
+      "canvasCells": 1.0,
+      "displayName": "Supply Crate"
+    },
+    {
+      "id": "crate_2",
+      "family": "crate",
+      "hp": 2,
+      "path": "Art/Obstacles/crate_2.png",
+      "canvasCells": 1.0,
+      "displayName": "Supply Crate"
+    },
+    {
+      "id": "crate_3",
+      "family": "crate",
+      "hp": 3,
+      "path": "Art/Obstacles/crate_3.png",
+      "canvasCells": 1.0,
+      "displayName": "Supply Crate"
+    },
+    {
+      "id": "moss_1",
+      "family": "moss",
+      "hp": 1,
+      "path": "Art/Obstacles/moss_1.png",
+      "canvasCells": 1.4,
+      "displayName": "Well Overgrowth"
+    },
+    {
+      "id": "moss_2",
+      "family": "moss",
+      "hp": 2,
+      "path": "Art/Obstacles/moss_2.png",
+      "canvasCells": 1.4,
+      "displayName": "Well Overgrowth"
+    },
+    {
+      "id": "stone_1",
+      "family": "stone",
+      "hp": 1,
+      "path": "Art/Obstacles/stone_1.png",
+      "canvasCells": 1.4,
+      "displayName": "Rune Stone"
+    },
+    {
+      "id": "stone_2",
+      "family": "stone",
+      "hp": 2,
+      "path": "Art/Obstacles/stone_2.png",
+      "canvasCells": 1.4,
+      "displayName": "Rune Stone"
+    },
+    {
+      "id": "stone_3",
+      "family": "stone",
+      "hp": 3,
+      "path": "Art/Obstacles/stone_3.png",
+      "canvasCells": 1.4,
+      "displayName": "Rune Stone"
+    },
+    {
+      "id": "pail_Full",
+      "family": "pail",
+      "hp": "Full",
+      "path": "Art/Obstacles/pail_Full.png",
+      "canvasCells": 1.4,
+      "displayName": "Restoration Jar"
+    },
+    {
+      "id": "pail_Empty",
+      "family": "pail",
+      "hp": "Empty",
+      "path": "Art/Obstacles/pail_Empty.png",
+      "canvasCells": 1.4,
+      "displayName": "Restoration Jar"
+    },
+    {
+      "id": "case_1",
+      "family": "case",
+      "hp": 1,
+      "path": "Art/Obstacles/case_1.png",
+      "canvasCells": 1.4,
+      "displayName": "Sealed Supply Case"
+    },
+    {
+      "id": "case_2",
+      "family": "case",
+      "hp": 2,
+      "path": "Art/Obstacles/case_2.png",
+      "canvasCells": 1.4,
+      "displayName": "Sealed Supply Case"
+    },
+    {
+      "id": "gate_1",
+      "family": "gate",
+      "hp": 1,
+      "path": "Art/Obstacles/gate_1.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Sluice"
+    },
+    {
+      "id": "gate_2",
+      "family": "gate",
+      "hp": 2,
+      "path": "Art/Obstacles/gate_2.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Sluice"
+    },
+    {
+      "id": "tile0",
+      "path": "Art/Tiles/TILE_Lantern_Gem_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 0
+    },
+    {
+      "id": "tile1",
+      "path": "Art/Tiles/TILE_Leaf_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 1
+    },
+    {
+      "id": "tile2",
+      "path": "Art/Tiles/TILE_Ribbon_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 2
+    },
+    {
+      "id": "tile3",
+      "path": "Art/Tiles/TILE_Stone_Rune_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 3
+    },
+    {
+      "id": "tile4",
+      "path": "Art/Tiles/TILE_Sun_Shard_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 4
+    },
+    {
+      "id": "tile5",
+      "path": "Art/Tiles/TILE_Water_Drop_V2.png",
+      "canvasCells": 0.88,
+      "family": "gem",
+      "color": 5
+    },
+    {
+      "id": "boosterHammer",
+      "path": "../Boosters/Art/Hammer.png",
+      "canvasCells": 1.0
+    },
+    {
+      "id": "boosterAxe",
+      "path": "../Boosters/Art/Axe.png",
+      "canvasCells": 1.0
+    },
+    {
+      "id": "boosterRam",
+      "path": "../Boosters/Art/Ram.png",
+      "canvasCells": 1.0
+    },
+    {
+      "id": "boosterAtlas",
+      "path": "../Boosters/Art/Atlas.png",
+      "canvasCells": 1.0
+    },
+    {
+      "id": "pod_1",
+      "family": "pod",
+      "hp": 1,
+      "path": "Art/Obstacles/pod_1.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Spirit Pod"
+    },
+    {
+      "id": "pod_2",
+      "family": "pod",
+      "hp": 2,
+      "path": "Art/Obstacles/pod_2.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Spirit Pod"
+    },
+    {
+      "id": "pod_3",
+      "family": "pod",
+      "hp": 3,
+      "path": "Art/Obstacles/pod_3.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Spirit Pod"
+    },
+    {
+      "id": "cabinet_1",
+      "family": "cabinet",
+      "hp": 1,
+      "path": "Art/Obstacles/cabinet_1.png",
+      "canvasCells": 3,
+      "displayName": "Rainlight Cabinet"
+    },
+    {
+      "id": "cabinet_2",
+      "family": "cabinet",
+      "hp": 2,
+      "path": "Art/Obstacles/cabinet_2.png",
+      "canvasCells": 3,
+      "displayName": "Rainlight Cabinet"
+    },
+    {
+      "id": "cabinet_3",
+      "family": "cabinet",
+      "hp": 3,
+      "path": "Art/Obstacles/cabinet_3.png",
+      "canvasCells": 3,
+      "displayName": "Rainlight Cabinet"
+    },
+    {
+      "id": "cabinet_4",
+      "family": "cabinet",
+      "hp": 4,
+      "path": "Art/Obstacles/cabinet_4.png",
+      "canvasCells": 3,
+      "displayName": "Rainlight Cabinet"
+    },
+    {
+      "id": "cabinet_5",
+      "family": "cabinet",
+      "hp": 5,
+      "path": "Art/Obstacles/cabinet_5.png",
+      "canvasCells": 3,
+      "displayName": "Rainlight Cabinet"
+    },
+    {
+      "id": "crystalIcon",
+      "family": "crystal",
+      "hp": 1,
+      "path": "Art/Obstacles/crystalIcon.png",
+      "canvasCells": 1.2,
+      "displayName": "Storm Crystal"
+    },
+    {
+      "id": "waterSpirit",
+      "family": "collection",
+      "hp": 0,
+      "path": "Art/Obstacles/waterSpirit.png",
+      "canvasCells": 1.4,
+      "displayName": "Water Spirit"
+    },
+    {
+      "id": "rainlight",
+      "family": "collection",
+      "hp": 0,
+      "path": "Art/Obstacles/rainlight.png",
+      "canvasCells": 0.614,
+      "displayName": "Rainlight"
+    },
+    {
+      "id": "collectionGlint",
+      "family": "collection",
+      "hp": 0,
+      "path": "Art/Obstacles/collectionGlint.png",
+      "canvasCells": 1,
+      "displayName": "Collection Glint"
+    }
+  ],
+  "integrationRevision": "M48 R2"
+}

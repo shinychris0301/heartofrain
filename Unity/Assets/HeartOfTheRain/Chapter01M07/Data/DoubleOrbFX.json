@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 6,
+  "pixelsPerUnit": 42.666666666666664,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "DO_Gather",
+      "start": 0,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "DO_Pulse",
+      "start": 18,
+      "count": 8,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.26666666666666666
+    },
+    {
+      "name": "DO_SpinLight",
+      "start": 26,
+      "count": 12,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DO_SpinStars",
+      "start": 38,
+      "count": 12,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "DO_Flash",
+      "start": 50,
+      "count": 14,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.23333333333333334
+    }
+  ],
+  "frames": [
+    {
+      "name": "DO_Gather_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_000.png"
+    },
+    {
+      "name": "DO_Gather_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_001.png"
+    },
+    {
+      "name": "DO_Gather_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_002.png"
+    },
+    {
+      "name": "DO_Gather_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_003.png"
+    },
+    {
+      "name": "DO_Gather_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_004.png"
+    },
+    {
+      "name": "DO_Gather_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_005.png"
+    },
+    {
+      "name": "DO_Gather_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_006.png"
+    },
+    {
+      "name": "DO_Gather_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_007.png"
+    },
+    {
+      "name": "DO_Gather_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_008.png"
+    },
+    {
+      "name": "DO_Gather_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_009.png"
+    },
+    {
+      "name": "DO_Gather_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_010.png"
+    },
+    {
+      "name": "DO_Gather_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_011.png"
+    },
+    {
+      "name": "DO_Gather_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_012.png"
+    },
+    {
+      "name": "DO_Gather_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_013.png"
+    },
+    {
+      "name": "DO_Gather_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_014.png"
+    },
+    {
+      "name": "DO_Gather_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_015.png"
+    },
+    {
+      "name": "DO_Gather_016",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_016.png"
+    },
+    {
+      "name": "DO_Gather_017",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Gather_017.png"
+    },
+    {
+      "name": "DO_Pulse_000",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_000.png"
+    },
+    {
+      "name": "DO_Pulse_001",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_001.png"
+    },
+    {
+      "name": "DO_Pulse_002",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_002.png"
+    },
+    {
+      "name": "DO_Pulse_003",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_003.png"
+    },
+    {
+      "name": "DO_Pulse_004",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_004.png"
+    },
+    {
+      "name": "DO_Pulse_005",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_005.png"
+    },
+    {
+      "name": "DO_Pulse_006",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_006.png"
+    },
+    {
+      "name": "DO_Pulse_007",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Pulse_007.png"
+    },
+    {
+      "name": "DO_SpinLight_000",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_000.png"
+    },
+    {
+      "name": "DO_SpinLight_001",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_001.png"
+    },
+    {
+      "name": "DO_SpinLight_002",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_002.png"
+    },
+    {
+      "name": "DO_SpinLight_003",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_003.png"
+    },
+    {
+      "name": "DO_SpinLight_004",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_004.png"
+    },
+    {
+      "name": "DO_SpinLight_005",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_005.png"
+    },
+    {
+      "name": "DO_SpinLight_006",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_006.png"
+    },
+    {
+      "name": "DO_SpinLight_007",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_007.png"
+    },
+    {
+      "name": "DO_SpinLight_008",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_008.png"
+    },
+    {
+      "name": "DO_SpinLight_009",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_009.png"
+    },
+    {
+      "name": "DO_SpinLight_010",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_010.png"
+    },
+    {
+      "name": "DO_SpinLight_011",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinLight_011.png"
+    },
+    {
+      "name": "DO_SpinStars_000",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_000.png"
+    },
+    {
+      "name": "DO_SpinStars_001",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_001.png"
+    },
+    {
+      "name": "DO_SpinStars_002",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_002.png"
+    },
+    {
+      "name": "DO_SpinStars_003",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_003.png"
+    },
+    {
+      "name": "DO_SpinStars_004",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_004.png"
+    },
+    {
+      "name": "DO_SpinStars_005",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_005.png"
+    },
+    {
+      "name": "DO_SpinStars_006",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_006.png"
+    },
+    {
+      "name": "DO_SpinStars_007",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_007.png"
+    },
+    {
+      "name": "DO_SpinStars_008",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_008.png"
+    },
+    {
+      "name": "DO_SpinStars_009",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_009.png"
+    },
+    {
+      "name": "DO_SpinStars_010",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_010.png"
+    },
+    {
+      "name": "DO_SpinStars_011",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_SpinStars_011.png"
+    },
+    {
+      "name": "DO_Flash_000",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_000.png"
+    },
+    {
+      "name": "DO_Flash_001",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_001.png"
+    },
+    {
+      "name": "DO_Flash_002",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_002.png"
+    },
+    {
+      "name": "DO_Flash_003",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_003.png"
+    },
+    {
+      "name": "DO_Flash_004",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_004.png"
+    },
+    {
+      "name": "DO_Flash_005",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_005.png"
+    },
+    {
+      "name": "DO_Flash_006",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_006.png"
+    },
+    {
+      "name": "DO_Flash_007",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_007.png"
+    },
+    {
+      "name": "DO_Flash_008",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_008.png"
+    },
+    {
+      "name": "DO_Flash_009",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_009.png"
+    },
+    {
+      "name": "DO_Flash_010",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_010.png"
+    },
+    {
+      "name": "DO_Flash_011",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_011.png"
+    },
+    {
+      "name": "DO_Flash_012",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_012.png"
+    },
+    {
+      "name": "DO_Flash_013",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/DoubleOrb24/DO_Flash_013.png"
+    }
+  ]
+}

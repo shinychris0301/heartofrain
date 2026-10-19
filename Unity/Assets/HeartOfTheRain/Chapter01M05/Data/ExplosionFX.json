@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 7.2,
+  "pixelsPerUnit": 35.55555555555556,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "fps": 30,
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Burst",
+      "start": 0,
+      "count": 22,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.36666666666666664
+    },
+    {
+      "name": "Wave",
+      "start": 22,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Spark",
+      "start": 38,
+      "count": 6,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.2
+    }
+  ],
+  "frames": [
+    {
+      "name": "ExplosionFX_Burst_000",
+      "x": 0,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_000.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_001",
+      "x": 256,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_001.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_002",
+      "x": 512,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_002.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_003",
+      "x": 768,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_003.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_004",
+      "x": 1024,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_004.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_005",
+      "x": 1280,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_005.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_006",
+      "x": 1536,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_006.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_007",
+      "x": 1792,
+      "y": 1792,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Burst_007.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_008",
+      "x": 0,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_008.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_009",
+      "x": 256,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_009.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_010",
+      "x": 512,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_010.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_011",
+      "x": 768,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_011.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_012",
+      "x": 1024,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_012.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_013",
+      "x": 1280,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_013.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_014",
+      "x": 1536,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_014.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_015",
+      "x": 1792,
+      "y": 1536,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 256,
+      "source": "Source/Frames/Revision05/Burst_015.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_016",
+      "x": 0,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_016.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_017",
+      "x": 256,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_017.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_018",
+      "x": 512,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_018.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_019",
+      "x": 768,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_019.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_020",
+      "x": 1024,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_020.png"
+    },
+    {
+      "name": "ExplosionFX_Burst_021",
+      "x": 1280,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Burst_021.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_000",
+      "x": 1536,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Wave_000.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_001",
+      "x": 1792,
+      "y": 1280,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 512,
+      "source": "Source/Frames/Revision05/Wave_001.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_002",
+      "x": 0,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_002.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_003",
+      "x": 256,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_003.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_004",
+      "x": 512,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_004.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_005",
+      "x": 768,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_005.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_006",
+      "x": 1024,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_006.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_007",
+      "x": 1280,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_007.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_008",
+      "x": 1536,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_008.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_009",
+      "x": 1792,
+      "y": 1024,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Wave_009.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_010",
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_010.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_011",
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_011.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_012",
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_012.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_013",
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_013.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_014",
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_014.png"
+    },
+    {
+      "name": "ExplosionFX_Wave_015",
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Wave_015.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_000",
+      "x": 1536,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Spark_000.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_001",
+      "x": 1792,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1024,
+      "source": "Source/Frames/Revision05/Spark_001.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_002",
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Revision05/Spark_002.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_003",
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Revision05/Spark_003.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_004",
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Revision05/Spark_004.png"
+    },
+    {
+      "name": "ExplosionFX_Spark_005",
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "topLeftY": 1280,
+      "source": "Source/Frames/Revision05/Spark_005.png"
+    }
+  ]
+}

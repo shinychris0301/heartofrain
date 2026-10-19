@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b53b9571005c91b00a4e8a00dc8089, type: 3}
+  m_Name: M56 PreLevel Assets
+  m_EditorClassIdentifier:
+  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
+  gameplay: {fileID: 11400000, guid: 3221c74ca04855078656bacf716fc140, type: 3}
+  initialStock: 05000000050000000300000002000000
+  rewardCoins: 50
+  rewardStars: 1
+  retryLifeIcon: {fileID: 21300000, guid: ae5b452b0a6d5243858333fd6e28c726, type: 3}
+  sprites:
+  - id: Bomb
+    sprite: {fileID: 21300000, guid: e009a279259b587a97217bd9741a8b3b, type: 3}
+  - id: BoosterSelected
+    sprite: {fileID: 21300000, guid: 3c88b481bad3560a86047399982c6c25, type: 3}
+  - id: BoosterSocket
+    sprite: {fileID: 21300000, guid: f937e5278b7859ddb7e23ad820abb5fe, type: 3}
+  - id: BoosterWellSelected_R2
+    sprite: {fileID: 21300000, guid: aa266332437b50f6a9a8bec31cd82ddd, type: 3}
+  - id: BoosterWell_R2
+    sprite: {fileID: 21300000, guid: 239c166eb7b450d080f29adb6b37ccd6, type: 3}
+  - id: Close
+    sprite: {fileID: 21300000, guid: 0505a30085c255f4bb93a7b7472ed3bc, type: 3}
+  - id: GoldenSeeker
+    sprite: {fileID: 21300000, guid: 131575e9235d578e8e15abdf98d29fc4, type: 3}
+  - id: GoldenSeeker_R2
+    sprite: {fileID: 21300000, guid: 22d36eb217435f52baa3fc2079d12a67, type: 3}
+  - id: IvoryInset
+    sprite: {fileID: 21300000, guid: 4b88fcd7c35f500faa344f73e9487094, type: 3}
+  - id: ModalPanel
+    sprite: {fileID: 21300000, guid: 3376d2f844d056aab09b58ea6de9717a, type: 3}
+  - id: ModalShell_R2
+    sprite: {fileID: 21300000, guid: b3f5403a60fa5929bbd7a1a112ab6cdb, type: 3}
+  - id: NavyInset
+    sprite: {fileID: 21300000, guid: 05f88cdb364c568b9d359489fd4a7523, type: 3}
+  - id: QuantityBadge_R2
+    sprite: {fileID: 21300000, guid: 5f1e1c45c30e570486f933a70983f521, type: 3}
+  - id: RainbowOrb
+    sprite: {fileID: 21300000, guid: 61d9dde65fd553cf860f2f88edd14d1d, type: 3}
+  - id: RainbowOrb_R2
+    sprite: {fileID: 21300000, guid: 510ce4f8172a5be495e15c9fb71eb699, type: 3}
+  - id: RewardCoin
+    sprite: {fileID: 21300000, guid: f9926b6eace557a9abb623412e03714e, type: 3}
+  - id: RewardStar_R2
+    sprite: {fileID: 21300000, guid: 9d2490d544ec53708f4e51833da62fdf, type: 3}
+  - id: Rocket
+    sprite: {fileID: 21300000, guid: eb3022bc2ca4567d9f1c71fd5c2d397c, type: 3}
+  - id: SectionDivider_R2
+    sprite: {fileID: 21300000, guid: 2b1a2a6da63d553284248a28e66f4263, type: 3}
+  - id: SelectedCheck
+    sprite: {fileID: 21300000, guid: 6e3249beec4855eeb16f63469c31c851, type: 3}
+  - id: SelectionTick_R2
+    sprite: {fileID: 21300000, guid: dcde921f6a05592b98a7815b6c7c7162, type: 3}

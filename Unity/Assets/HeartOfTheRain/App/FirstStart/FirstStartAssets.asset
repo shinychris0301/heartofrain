@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a322e79e9c522082f895be373fbd37, type: 3}
+  m_Name: M65 First Start Assets
+  m_EditorClassIdentifier:
+  shared: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 3}
+  lessons:
+  - {fileID: 4900000, guid: a46d46ea677e5d0abd4577c63e123178, type: 3}
+  - {fileID: 4900000, guid: ad77f988d2cc59a7b2c5ebd70e698400, type: 3}
+  - {fileID: 4900000, guid: 96df6a32ccfd5936b0499aae914a36bf, type: 3}
+  sprites:
+  - id: FS_CellLight
+    sprite: {fileID: 21300000, guid: ac2ba34c0f53507284264885866375de, type: 3}
+  - id: FS_CellSlate
+    sprite: {fileID: 21300000, guid: ec9c77dd23c153e4801948095af564ff, type: 3}
+  - id: FS_Chip
+    sprite: {fileID: 21300000, guid: 80493e80a57e535dbc7a49885c1fda77, type: 3}
+  - id: FS_Panel
+    sprite: {fileID: 21300000, guid: 9e5977c8ed235c19b8d644dca7b53c14, type: 3}

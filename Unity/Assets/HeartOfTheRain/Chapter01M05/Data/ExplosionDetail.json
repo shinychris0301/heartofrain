@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 192,
+  "frameCanvasCells": 3.6,
+  "pixelsPerUnit": 53.33333333333333,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "fps": 30,
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "Tile0",
+      "start": 0,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Tile1",
+      "start": 16,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Tile2",
+      "start": 32,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Tile3",
+      "start": 48,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Tile4",
+      "start": 64,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "Tile5",
+      "start": 80,
+      "count": 16,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.5333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "ExplosionDetail_Tile0_000",
+      "x": 0,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_001",
+      "x": 192,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_002",
+      "x": 384,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_003",
+      "x": 576,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_004",
+      "x": 768,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_005",
+      "x": 960,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_006",
+      "x": 1152,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_007",
+      "x": 1344,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_008",
+      "x": 1536,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_009",
+      "x": 1728,
+      "y": 1856,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 0,
+      "source": "Source/Frames/Revision05/Tile0_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_010",
+      "x": 0,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_011",
+      "x": 192,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_012",
+      "x": 384,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_013",
+      "x": 576,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_014",
+      "x": 768,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile0_015",
+      "x": 960,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile0_015.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_000",
+      "x": 1152,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile1_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_001",
+      "x": 1344,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile1_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_002",
+      "x": 1536,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile1_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_003",
+      "x": 1728,
+      "y": 1664,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 192,
+      "source": "Source/Frames/Revision05/Tile1_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_004",
+      "x": 0,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_005",
+      "x": 192,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_006",
+      "x": 384,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_007",
+      "x": 576,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_008",
+      "x": 768,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_009",
+      "x": 960,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_010",
+      "x": 1152,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_011",
+      "x": 1344,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_012",
+      "x": 1536,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_013",
+      "x": 1728,
+      "y": 1472,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 384,
+      "source": "Source/Frames/Revision05/Tile1_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_014",
+      "x": 0,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile1_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile1_015",
+      "x": 192,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile1_015.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_000",
+      "x": 384,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_001",
+      "x": 576,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_002",
+      "x": 768,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_003",
+      "x": 960,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_004",
+      "x": 1152,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_005",
+      "x": 1344,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_006",
+      "x": 1536,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_007",
+      "x": 1728,
+      "y": 1280,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 576,
+      "source": "Source/Frames/Revision05/Tile2_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_008",
+      "x": 0,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_009",
+      "x": 192,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_010",
+      "x": 384,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_011",
+      "x": 576,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_012",
+      "x": 768,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_013",
+      "x": 960,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_014",
+      "x": 1152,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile2_015",
+      "x": 1344,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile2_015.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_000",
+      "x": 1536,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile3_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_001",
+      "x": 1728,
+      "y": 1088,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 768,
+      "source": "Source/Frames/Revision05/Tile3_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_002",
+      "x": 0,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_003",
+      "x": 192,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_004",
+      "x": 384,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_005",
+      "x": 576,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_006",
+      "x": 768,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_007",
+      "x": 960,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_008",
+      "x": 1152,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_009",
+      "x": 1344,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_010",
+      "x": 1536,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_011",
+      "x": 1728,
+      "y": 896,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 960,
+      "source": "Source/Frames/Revision05/Tile3_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_012",
+      "x": 0,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile3_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_013",
+      "x": 192,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile3_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_014",
+      "x": 384,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile3_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile3_015",
+      "x": 576,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile3_015.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_000",
+      "x": 768,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_001",
+      "x": 960,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_002",
+      "x": 1152,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_003",
+      "x": 1344,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_004",
+      "x": 1536,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_005",
+      "x": 1728,
+      "y": 704,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1152,
+      "source": "Source/Frames/Revision05/Tile4_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_006",
+      "x": 0,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_007",
+      "x": 192,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_008",
+      "x": 384,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_009",
+      "x": 576,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_010",
+      "x": 768,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_011",
+      "x": 960,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_012",
+      "x": 1152,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_013",
+      "x": 1344,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_014",
+      "x": 1536,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile4_015",
+      "x": 1728,
+      "y": 512,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1344,
+      "source": "Source/Frames/Revision05/Tile4_015.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_000",
+      "x": 0,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_000.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_001",
+      "x": 192,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_001.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_002",
+      "x": 384,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_002.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_003",
+      "x": 576,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_003.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_004",
+      "x": 768,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_004.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_005",
+      "x": 960,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_005.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_006",
+      "x": 1152,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_006.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_007",
+      "x": 1344,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_007.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_008",
+      "x": 1536,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_008.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_009",
+      "x": 1728,
+      "y": 320,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1536,
+      "source": "Source/Frames/Revision05/Tile5_009.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_010",
+      "x": 0,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_010.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_011",
+      "x": 192,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_011.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_012",
+      "x": 384,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_012.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_013",
+      "x": 576,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_013.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_014",
+      "x": 768,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_014.png"
+    },
+    {
+      "name": "ExplosionDetail_Tile5_015",
+      "x": 960,
+      "y": 128,
+      "width": 192,
+      "height": 192,
+      "topLeftY": 1728,
+      "source": "Source/Frames/Revision05/Tile5_015.png"
+    }
+  ]
+}

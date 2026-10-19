@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c649c3ecb25b8dbc1a9d3096d5dcfd, type: 3}
+  m_Name: M60 Journey Assets
+  m_EditorClassIdentifier:
+  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
+  preLevel: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 3}
+  catalog: {fileID: 4900000, guid: 74a9f46863ef5f1e8e8bb432412f9f38, type: 3}
+  sprites:
+  - id: ArchiveBackdrop
+    sprite: {fileID: 21300000, guid: cb37493608c2556b8006f28c99a261d0, type: 3}
+  - id: CardShade
+    sprite: {fileID: 21300000, guid: ea38452dc4175128880740b579b791a8, type: 3}
+  - id: Chapter02_Chamber
+    sprite: {fileID: 21300000, guid: be8130f504425ad5bfe6c733f95afd37, type: 3}
+  - id: ChapterFrame
+    sprite: {fileID: 21300000, guid: f943006a0138545598074763d527e9c9, type: 3}
+  - id: CoverMask
+    sprite: {fileID: 21300000, guid: d60ac16a072d58e6bff0ef56c5b686f9, type: 3}
+  - id: DockActive
+    sprite: {fileID: 21300000, guid: 340a8a555d295564a88f96a58b6ff99e, type: 3}
+  - id: DockBar
+    sprite: {fileID: 21300000, guid: 6eef818c77d753438cf571d9898f88ac, type: 3}
+  - id: HeaderBar
+    sprite: {fileID: 21300000, guid: 8fd88c2a05a256f5b8b0454bcad2d939, type: 3}
+  - id: Lock
+    sprite: {fileID: 21300000, guid: 5453972615a958b3bfa712d6dbd1c2f5, type: 3}
+  - id: ReaderPanel
+    sprite: {fileID: 21300000, guid: 0d24995a0ab25029937c1a9c405941f6, type: 3}
+  - id: Unrevealed
+    sprite: {fileID: 21300000, guid: 53ab85b345325d439e7f064ecc358b00, type: 3}

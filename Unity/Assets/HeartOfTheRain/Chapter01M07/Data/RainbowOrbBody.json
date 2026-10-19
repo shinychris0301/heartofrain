@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "atlasWidth": 2048,
+  "atlasHeight": 2048,
+  "frameSize": 256,
+  "frameCanvasCells": 4,
+  "pixelsPerUnit": 64.0,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "alpha": "straight",
+  "rectOrigin": "bottom-left",
+  "clips": [
+    {
+      "name": "OR_Create",
+      "start": 0,
+      "count": 18,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.6
+    },
+    {
+      "name": "OR_Idle",
+      "start": 18,
+      "count": 12,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.4
+    },
+    {
+      "name": "OR_Charge",
+      "start": 30,
+      "count": 10,
+      "fps": 30,
+      "loop": false,
+      "endBehavior": "hold",
+      "durationSeconds": 0.3333333333333333
+    },
+    {
+      "name": "OR_Channel",
+      "start": 40,
+      "count": 16,
+      "fps": 30,
+      "loop": true,
+      "endBehavior": "hold",
+      "durationSeconds": 0.5333333333333333
+    },
+    {
+      "name": "OR_Release",
+      "start": 56,
+      "count": 8,
+      "fps": 60,
+      "loop": false,
+      "endBehavior": "hide",
+      "durationSeconds": 0.13333333333333333
+    }
+  ],
+  "frames": [
+    {
+      "name": "OR_Create_000",
+      "x": 0,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_000.png"
+    },
+    {
+      "name": "OR_Create_001",
+      "x": 256,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_001.png"
+    },
+    {
+      "name": "OR_Create_002",
+      "x": 512,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_002.png"
+    },
+    {
+      "name": "OR_Create_003",
+      "x": 768,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_003.png"
+    },
+    {
+      "name": "OR_Create_004",
+      "x": 1024,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_004.png"
+    },
+    {
+      "name": "OR_Create_005",
+      "x": 1280,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_005.png"
+    },
+    {
+      "name": "OR_Create_006",
+      "x": 1536,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_006.png"
+    },
+    {
+      "name": "OR_Create_007",
+      "x": 1792,
+      "y": 1792,
+      "topLeftY": 0,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_007.png"
+    },
+    {
+      "name": "OR_Create_008",
+      "x": 0,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_008.png"
+    },
+    {
+      "name": "OR_Create_009",
+      "x": 256,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_009.png"
+    },
+    {
+      "name": "OR_Create_010",
+      "x": 512,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_010.png"
+    },
+    {
+      "name": "OR_Create_011",
+      "x": 768,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_011.png"
+    },
+    {
+      "name": "OR_Create_012",
+      "x": 1024,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_012.png"
+    },
+    {
+      "name": "OR_Create_013",
+      "x": 1280,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_013.png"
+    },
+    {
+      "name": "OR_Create_014",
+      "x": 1536,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_014.png"
+    },
+    {
+      "name": "OR_Create_015",
+      "x": 1792,
+      "y": 1536,
+      "topLeftY": 256,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_015.png"
+    },
+    {
+      "name": "OR_Create_016",
+      "x": 0,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_016.png"
+    },
+    {
+      "name": "OR_Create_017",
+      "x": 256,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Create_017.png"
+    },
+    {
+      "name": "OR_Idle_000",
+      "x": 512,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_000.png"
+    },
+    {
+      "name": "OR_Idle_001",
+      "x": 768,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_001.png"
+    },
+    {
+      "name": "OR_Idle_002",
+      "x": 1024,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_002.png"
+    },
+    {
+      "name": "OR_Idle_003",
+      "x": 1280,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_003.png"
+    },
+    {
+      "name": "OR_Idle_004",
+      "x": 1536,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_004.png"
+    },
+    {
+      "name": "OR_Idle_005",
+      "x": 1792,
+      "y": 1280,
+      "topLeftY": 512,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_005.png"
+    },
+    {
+      "name": "OR_Idle_006",
+      "x": 0,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_006.png"
+    },
+    {
+      "name": "OR_Idle_007",
+      "x": 256,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_007.png"
+    },
+    {
+      "name": "OR_Idle_008",
+      "x": 512,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_008.png"
+    },
+    {
+      "name": "OR_Idle_009",
+      "x": 768,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_009.png"
+    },
+    {
+      "name": "OR_Idle_010",
+      "x": 1024,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_010.png"
+    },
+    {
+      "name": "OR_Idle_011",
+      "x": 1280,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Idle_011.png"
+    },
+    {
+      "name": "OR_Charge_000",
+      "x": 1536,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_000.png"
+    },
+    {
+      "name": "OR_Charge_001",
+      "x": 1792,
+      "y": 1024,
+      "topLeftY": 768,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_001.png"
+    },
+    {
+      "name": "OR_Charge_002",
+      "x": 0,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_002.png"
+    },
+    {
+      "name": "OR_Charge_003",
+      "x": 256,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_003.png"
+    },
+    {
+      "name": "OR_Charge_004",
+      "x": 512,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_004.png"
+    },
+    {
+      "name": "OR_Charge_005",
+      "x": 768,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_005.png"
+    },
+    {
+      "name": "OR_Charge_006",
+      "x": 1024,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_006.png"
+    },
+    {
+      "name": "OR_Charge_007",
+      "x": 1280,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_007.png"
+    },
+    {
+      "name": "OR_Charge_008",
+      "x": 1536,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_008.png"
+    },
+    {
+      "name": "OR_Charge_009",
+      "x": 1792,
+      "y": 768,
+      "topLeftY": 1024,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Charge_009.png"
+    },
+    {
+      "name": "OR_Channel_000",
+      "x": 0,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_000.png"
+    },
+    {
+      "name": "OR_Channel_001",
+      "x": 256,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_001.png"
+    },
+    {
+      "name": "OR_Channel_002",
+      "x": 512,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_002.png"
+    },
+    {
+      "name": "OR_Channel_003",
+      "x": 768,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_003.png"
+    },
+    {
+      "name": "OR_Channel_004",
+      "x": 1024,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_004.png"
+    },
+    {
+      "name": "OR_Channel_005",
+      "x": 1280,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_005.png"
+    },
+    {
+      "name": "OR_Channel_006",
+      "x": 1536,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_006.png"
+    },
+    {
+      "name": "OR_Channel_007",
+      "x": 1792,
+      "y": 512,
+      "topLeftY": 1280,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_007.png"
+    },
+    {
+      "name": "OR_Channel_008",
+      "x": 0,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_008.png"
+    },
+    {
+      "name": "OR_Channel_009",
+      "x": 256,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_009.png"
+    },
+    {
+      "name": "OR_Channel_010",
+      "x": 512,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_010.png"
+    },
+    {
+      "name": "OR_Channel_011",
+      "x": 768,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_011.png"
+    },
+    {
+      "name": "OR_Channel_012",
+      "x": 1024,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_012.png"
+    },
+    {
+      "name": "OR_Channel_013",
+      "x": 1280,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_013.png"
+    },
+    {
+      "name": "OR_Channel_014",
+      "x": 1536,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_014.png"
+    },
+    {
+      "name": "OR_Channel_015",
+      "x": 1792,
+      "y": 256,
+      "topLeftY": 1536,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Channel_015.png"
+    },
+    {
+      "name": "OR_Release_000",
+      "x": 0,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_000.png"
+    },
+    {
+      "name": "OR_Release_001",
+      "x": 256,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_001.png"
+    },
+    {
+      "name": "OR_Release_002",
+      "x": 512,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_002.png"
+    },
+    {
+      "name": "OR_Release_003",
+      "x": 768,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_003.png"
+    },
+    {
+      "name": "OR_Release_004",
+      "x": 1024,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_004.png"
+    },
+    {
+      "name": "OR_Release_005",
+      "x": 1280,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_005.png"
+    },
+    {
+      "name": "OR_Release_006",
+      "x": 1536,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_006.png"
+    },
+    {
+      "name": "OR_Release_007",
+      "x": 1792,
+      "y": 0,
+      "topLeftY": 1792,
+      "width": 256,
+      "height": 256,
+      "source": "Source/Frames/RainbowOrb21/OR_Release_007.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9af087902b5f949d88d4fe90b1c728, type: 3}
+  m_Name: M66 Level Complete Assets
+  m_EditorClassIdentifier:
+  shared: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 3}
+  preLevel: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 3}
+  sprites:
+  - id: LC_Fill
+    sprite: {fileID: 21300000, guid: 4c56515b77a65c6b9f45fde90d18e2c2, type: 3}
+  - id: LC_Halo
+    sprite: {fileID: 21300000, guid: 28c81b04c6be5cf99ab6a2fc765ddcf1, type: 3}
+  - id: LC_Home
+    sprite: {fileID: 21300000, guid: e8f217c8755b59afb555875bceca53f4, type: 3}
+  - id: LC_RewardWell
+    sprite: {fileID: 21300000, guid: 3e78819c30b05d82ac957f5ad003a615, type: 3}
+  - id: LC_Track
+    sprite: {fileID: 21300000, guid: 4083bfb35e7f580483f36eb4e4aee6b1, type: 3}

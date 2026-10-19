@@ -1,0 +1,31 @@
+{
+  "revision": "M47 UI R11",
+  "direction": "A - Ivory & Slate",
+  "status": "applied to exported assets and gameplay previews",
+  "colors": {
+    "ivoryTop": "#F3EDE1",
+    "ivoryBottom": "#E3D8C5",
+    "ivoryBase": "#B5A58F",
+    "panelEdge": "#C8BAA4",
+    "containerTop": "#26394D",
+    "containerBottom": "#1D2E40",
+    "champagne": "#AE9F86",
+    "avatarRim": "#D3C4AC",
+    "ink": "#203044",
+    "cellDark": "#394B63",
+    "cellLight": "#4A6078",
+    "boardFrame": "#22364A",
+    "boardShadow": "#101D2C"
+  },
+  "background": "generated regrade of the existing rainy courtyard; subdued slate blue-gray, restrained amber highlights",
+  "preserve": [
+    "level occupancy",
+    "all board masks",
+    "tile artwork",
+    "obstacle artwork",
+    "booster icons",
+    "portrait",
+    "UI geometry",
+    "animation timing"
+  ]
+}

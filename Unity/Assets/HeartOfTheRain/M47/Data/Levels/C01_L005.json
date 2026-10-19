@@ -1,0 +1,978 @@
+{
+  "schemaVersion": 4,
+  "revision": "M50 R1 / first measured balance pass",
+  "id": "C01_L005",
+  "chapter": 1,
+  "levelInChapter": 5,
+  "globalLevel": 5,
+  "name": "Well Approach",
+  "storyBeat": "Arrival and clearing",
+  "columns": 9,
+  "rows": 9,
+  "coordinateSystem": "bottom_left_y_up",
+  "activeCells": [
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "x": 1,
+      "y": 3
+    },
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 1,
+      "y": 5
+    },
+    {
+      "x": 1,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 1
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 3
+    },
+    {
+      "x": 2,
+      "y": 4
+    },
+    {
+      "x": 2,
+      "y": 5
+    },
+    {
+      "x": 2,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 2,
+      "y": 8
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 1
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 5
+    },
+    {
+      "x": 3,
+      "y": 6
+    },
+    {
+      "x": 3,
+      "y": 7
+    },
+    {
+      "x": 3,
+      "y": 8
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 1
+    },
+    {
+      "x": 4,
+      "y": 2
+    },
+    {
+      "x": 4,
+      "y": 3
+    },
+    {
+      "x": 4,
+      "y": 4
+    },
+    {
+      "x": 4,
+      "y": 5
+    },
+    {
+      "x": 4,
+      "y": 6
+    },
+    {
+      "x": 4,
+      "y": 7
+    },
+    {
+      "x": 4,
+      "y": 8
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 1
+    },
+    {
+      "x": 5,
+      "y": 2
+    },
+    {
+      "x": 5,
+      "y": 3
+    },
+    {
+      "x": 5,
+      "y": 4
+    },
+    {
+      "x": 5,
+      "y": 5
+    },
+    {
+      "x": 5,
+      "y": 6
+    },
+    {
+      "x": 5,
+      "y": 7
+    },
+    {
+      "x": 5,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 1
+    },
+    {
+      "x": 6,
+      "y": 2
+    },
+    {
+      "x": 6,
+      "y": 3
+    },
+    {
+      "x": 6,
+      "y": 4
+    },
+    {
+      "x": 6,
+      "y": 5
+    },
+    {
+      "x": 6,
+      "y": 6
+    },
+    {
+      "x": 6,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 7,
+      "y": 2
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 4
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 8,
+      "y": 2
+    },
+    {
+      "x": 8,
+      "y": 3
+    },
+    {
+      "x": 8,
+      "y": 4
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 8,
+      "y": 6
+    }
+  ],
+  "initialTiles": [
+    {
+      "x": 0,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": 5
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": 2
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": 2
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": 4
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": 4
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": 5
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": 5
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": 1
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": 2
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": 4
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": 4
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": 1
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": 1
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": 4
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": 2
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": 1
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": 5
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": 5
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "color": 4
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "color": 2
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "color": 4
+    }
+  ],
+  "obstacles": [
+    {
+      "instanceId": "C01_L005_moss_0_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 0,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_0_6",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 0,
+      "y": 6,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_1_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 1,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_1_6",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 1,
+      "y": 6,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_2_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_2_6",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 6,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_2_7",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 7,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_3_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_3_6",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 6,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_4_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_4_6",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 6,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_moss_5_5",
+      "family": "moss",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 5,
+      "art": "OB_MOSS_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L005_crate_2_8",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 2,
+      "y": 8,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_3_7",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 7,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_3_8",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 8,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_4_7",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 7,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_4_8",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 8,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_5_6",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 6,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_5_7",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 7,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_5_8",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 8,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_6_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_6_6",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 6,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_6_7",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 7,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_6_8",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 8,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_7_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_7_6",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 6,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_8_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 8,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L005_crate_8_6",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 8,
+      "y": 6,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    }
+  ],
+  "initialPowerUps": [],
+  "activeColors": [
+    5,
+    2,
+    1,
+    4
+  ],
+  "tileSeed": 36005,
+  "spawnPoints": [
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 8
+    },
+    {
+      "x": 3,
+      "y": 8
+    },
+    {
+      "x": 4,
+      "y": 8
+    },
+    {
+      "x": 5,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 8,
+      "y": 6
+    }
+  ],
+  "gravity": "down_per_vertical_active_segment; fixed bodies block fall",
+  "obstaclePlacement": "authored_connected_patches_and_banks",
+  "cellOccupancy": "exactly one gem OR one standalone obstacle/target; no overlays or underlays",
+  "deliveryExits": [],
+  "deliveryRoutes": [],
+  "introducesVariant": null,
+  "mossRegrowth": {
+    "enabled": false,
+    "startLevel": 27,
+    "afterConsecutiveMovesWithoutMossDamage": 2,
+    "maxNewCellsTotal": 3,
+    "spawnPerTrigger": 1,
+    "target": "replace one orthogonally adjacent ordinary gem with standalone HP1 moss; never share its cell",
+    "selection": "nearest existing moss, then bottom-left coordinate",
+    "exclude": "power-ups, obstacles, delivery targets and exit cells",
+    "goal": "remaining moss counter increases by one; all moss must be cleared"
+  },
+  "movesProposal": 22,
+  "difficultyIntent": "Easy",
+  "introduces": null,
+  "introducedFamilies": [],
+  "familiesPresent": [
+    "crate",
+    "moss"
+  ],
+  "targetTypeCount": 2,
+  "targetTypeLimit": 2,
+  "objectivePolicy": "2 introductory/easy/relief; 3 standard; 4 hard/super-hard/finale. Obstacle and delivery goals only; no extra color goal.",
+  "lesson": "Clear the work face, then combine power-ups to reach the deeper layers.",
+  "goals": [
+    {
+      "type": "clear_obstacle",
+      "family": "crate",
+      "count": 16
+    },
+    {
+      "type": "clear_obstacle",
+      "family": "moss",
+      "count": 12
+    }
+  ],
+  "formations": [
+    {
+      "layer": "body",
+      "cells": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 7
+        },
+        {
+          "x": 2,
+          "y": 8
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 7
+        },
+        {
+          "x": 3,
+          "y": 8
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 6
+        },
+        {
+          "x": 4,
+          "y": 7
+        },
+        {
+          "x": 4,
+          "y": 8
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 6
+        },
+        {
+          "x": 5,
+          "y": 7
+        },
+        {
+          "x": 5,
+          "y": 8
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 6,
+          "y": 7
+        },
+        {
+          "x": 6,
+          "y": 8
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 6
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 6
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "activeCells": 65,
+    "bodyCells": 28,
+    "underlayCells": 0,
+    "overlayCells": 0,
+    "occupiedObstacleCells": 28,
+    "coveragePercent": 43.1,
+    "coverageCapPercent": 44,
+    "targetTypes": 2,
+    "damageUnits": 28,
+    "minimumDamageUnitsPerMove": 1.27,
+    "counts": {
+      "moss": 12,
+      "crate": 16
+    }
+  },
+  "validation": {
+    "noInitialMatches": true,
+    "openingAudit": "See Validation/Starting_Board_Checks.json",
+    "fullSolvability": "SEE_AUTOMATED_RUNS_NOT_HUMAN_BALANCE",
+    "difficultyParity": "NOT_VERIFIED"
+  },
+  "balancePass": {
+    "baselineRuns": 5,
+    "scope": "Agent diagnostic tuning, not production balance",
+    "preserved": "Board mask, obstacle positions/families/counts, goal types and art",
+    "reason": "Remove pre-existing match"
+  }
+}

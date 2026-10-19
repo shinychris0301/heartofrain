@@ -1,0 +1,352 @@
+[
+  {
+    "locale": "en",
+    "key": "Well done!",
+    "text": "Well done!"
+  },
+  {
+    "locale": "en",
+    "key": "Wonderful!",
+    "text": "Wonderful!"
+  },
+  {
+    "locale": "en",
+    "key": "You did it!",
+    "text": "You did it!"
+  },
+  {
+    "locale": "en",
+    "key": "The village well is restored.",
+    "text": "The village well is restored."
+  },
+  {
+    "locale": "en",
+    "key": "You did it! The well is working again.",
+    "text": "You did it! The well is working again."
+  },
+  {
+    "locale": "en",
+    "key": "A messenger arrives: the Heart of Ancient Moscow is faltering.",
+    "text": "A messenger arrives: the Heart of Ancient Moscow is faltering."
+  },
+  {
+    "locale": "en",
+    "key": "Watch celebration",
+    "text": "Watch celebration"
+  },
+  {
+    "locale": "en",
+    "key": "Village restored",
+    "text": "Village restored"
+  },
+  {
+    "locale": "en",
+    "key": "A message from the city",
+    "text": "A message from the city"
+  },
+  {
+    "locale": "en",
+    "key": "Daria",
+    "text": "Daria"
+  },
+  {
+    "locale": "en",
+    "key": "Levels {0}\u2013{1}",
+    "text": "Levels {0}\u2013{1}"
+  },
+  {
+    "locale": "en",
+    "key": "Chapter {0} complete",
+    "text": "Chapter {0} complete"
+  },
+  {
+    "locale": "en",
+    "key": "Skip",
+    "text": "Skip"
+  },
+  {
+    "locale": "en",
+    "key": "Continue",
+    "text": "Continue"
+  },
+  {
+    "locale": "es",
+    "key": "Well done!",
+    "text": "\u00A1Muy bien!"
+  },
+  {
+    "locale": "es",
+    "key": "Wonderful!",
+    "text": "\u00A1Maravilloso!"
+  },
+  {
+    "locale": "es",
+    "key": "You did it!",
+    "text": "\u00A1Lo lograste!"
+  },
+  {
+    "locale": "es",
+    "key": "The village well is restored.",
+    "text": "El pozo del pueblo est\u00E1 restaurado."
+  },
+  {
+    "locale": "es",
+    "key": "You did it! The well is working again.",
+    "text": "\u00A1Lo lograste! El pozo vuelve a funcionar."
+  },
+  {
+    "locale": "es",
+    "key": "A messenger arrives: the Heart of Ancient Moscow is faltering.",
+    "text": "Llega un mensajero: el Coraz\u00F3n de la Antigua Mosc\u00FA late de forma irregular."
+  },
+  {
+    "locale": "es",
+    "key": "Watch celebration",
+    "text": "Ver celebraci\u00F3n"
+  },
+  {
+    "locale": "es",
+    "key": "Village restored",
+    "text": "Pueblo restaurado"
+  },
+  {
+    "locale": "es",
+    "key": "A message from the city",
+    "text": "Un mensaje de la ciudad"
+  },
+  {
+    "locale": "es",
+    "key": "Daria",
+    "text": "Daria"
+  },
+  {
+    "locale": "es",
+    "key": "Levels {0}\u2013{1}",
+    "text": "Niveles {0}\u2013{1}"
+  },
+  {
+    "locale": "es",
+    "key": "Chapter {0} complete",
+    "text": "Cap\u00EDtulo {0} completado"
+  },
+  {
+    "locale": "es",
+    "key": "Skip",
+    "text": "Omitir"
+  },
+  {
+    "locale": "es",
+    "key": "Continue",
+    "text": "Continuar"
+  },
+  {
+    "locale": "fr",
+    "key": "Well done!",
+    "text": "Bravo !"
+  },
+  {
+    "locale": "fr",
+    "key": "Wonderful!",
+    "text": "Magnifique !"
+  },
+  {
+    "locale": "fr",
+    "key": "You did it!",
+    "text": "Tu as r\u00E9ussi !"
+  },
+  {
+    "locale": "fr",
+    "key": "The village well is restored.",
+    "text": "Le puits du village est restaur\u00E9."
+  },
+  {
+    "locale": "fr",
+    "key": "You did it! The well is working again.",
+    "text": "Tu as r\u00E9ussi ! Le puits fonctionne \u00E0 nouveau."
+  },
+  {
+    "locale": "fr",
+    "key": "A messenger arrives: the Heart of Ancient Moscow is faltering.",
+    "text": "Un messager arrive : le C\u0153ur de l\u2019ancienne Moscou bat irr\u00E9guli\u00E8rement."
+  },
+  {
+    "locale": "fr",
+    "key": "Watch celebration",
+    "text": "Voir la c\u00E9l\u00E9bration"
+  },
+  {
+    "locale": "fr",
+    "key": "Village restored",
+    "text": "Village restaur\u00E9"
+  },
+  {
+    "locale": "fr",
+    "key": "A message from the city",
+    "text": "Un message de la ville"
+  },
+  {
+    "locale": "fr",
+    "key": "Daria",
+    "text": "Daria"
+  },
+  {
+    "locale": "fr",
+    "key": "Levels {0}\u2013{1}",
+    "text": "Niveaux {0}\u2013{1}"
+  },
+  {
+    "locale": "fr",
+    "key": "Chapter {0} complete",
+    "text": "Chapitre {0} termin\u00E9"
+  },
+  {
+    "locale": "fr",
+    "key": "Skip",
+    "text": "Passer"
+  },
+  {
+    "locale": "fr",
+    "key": "Continue",
+    "text": "Continuer"
+  },
+  {
+    "locale": "de",
+    "key": "Well done!",
+    "text": "Gut gemacht!"
+  },
+  {
+    "locale": "de",
+    "key": "Wonderful!",
+    "text": "Wunderbar!"
+  },
+  {
+    "locale": "de",
+    "key": "You did it!",
+    "text": "Geschafft!"
+  },
+  {
+    "locale": "de",
+    "key": "The village well is restored.",
+    "text": "Der Dorfbrunnen ist wiederhergestellt."
+  },
+  {
+    "locale": "de",
+    "key": "You did it! The well is working again.",
+    "text": "Geschafft! Der Brunnen funktioniert wieder."
+  },
+  {
+    "locale": "de",
+    "key": "A messenger arrives: the Heart of Ancient Moscow is faltering.",
+    "text": "Ein Bote trifft ein: Das Herz des Alten Moskaus schl\u00E4gt unregelm\u00E4\u00DFig."
+  },
+  {
+    "locale": "de",
+    "key": "Watch celebration",
+    "text": "Feier ansehen"
+  },
+  {
+    "locale": "de",
+    "key": "Village restored",
+    "text": "Dorf wiederhergestellt"
+  },
+  {
+    "locale": "de",
+    "key": "A message from the city",
+    "text": "Eine Nachricht aus der Stadt"
+  },
+  {
+    "locale": "de",
+    "key": "Daria",
+    "text": "Daria"
+  },
+  {
+    "locale": "de",
+    "key": "Levels {0}\u2013{1}",
+    "text": "Level {0}\u2013{1}"
+  },
+  {
+    "locale": "de",
+    "key": "Chapter {0} complete",
+    "text": "Kapitel {0} abgeschlossen"
+  },
+  {
+    "locale": "de",
+    "key": "Skip",
+    "text": "\u00DCberspringen"
+  },
+  {
+    "locale": "de",
+    "key": "Continue",
+    "text": "Weiter"
+  },
+  {
+    "locale": "ru",
+    "key": "Well done!",
+    "text": "\u041E\u0442\u043B\u0438\u0447\u043D\u043E!"
+  },
+  {
+    "locale": "ru",
+    "key": "Wonderful!",
+    "text": "\u041F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E!"
+  },
+  {
+    "locale": "ru",
+    "key": "You did it!",
+    "text": "\u041F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C!"
+  },
+  {
+    "locale": "ru",
+    "key": "The village well is restored.",
+    "text": "\u0414\u0435\u0440\u0435\u0432\u0435\u043D\u0441\u043A\u0438\u0439 \u043A\u043E\u043B\u043E\u0434\u0435\u0446 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D."
+  },
+  {
+    "locale": "ru",
+    "key": "You did it! The well is working again.",
+    "text": "\u041F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C! \u041A\u043E\u043B\u043E\u0434\u0435\u0446 \u0441\u043D\u043E\u0432\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442."
+  },
+  {
+    "locale": "ru",
+    "key": "A messenger arrives: the Heart of Ancient Moscow is faltering.",
+    "text": "\u041F\u0440\u0438\u0431\u044B\u0432\u0430\u0435\u0442 \u0433\u043E\u043D\u0435\u0446: \u0421\u0435\u0440\u0434\u0446\u0435 \u0414\u0440\u0435\u0432\u043D\u0435\u0439 \u041C\u043E\u0441\u043A\u0432\u044B \u0431\u044C\u0451\u0442\u0441\u044F \u043D\u0435\u0440\u043E\u0432\u043D\u043E."
+  },
+  {
+    "locale": "ru",
+    "key": "Watch celebration",
+    "text": "\u0421\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043F\u0440\u0430\u0437\u0434\u043D\u043E\u0432\u0430\u043D\u0438\u0435"
+  },
+  {
+    "locale": "ru",
+    "key": "Village restored",
+    "text": "\u0414\u0435\u0440\u0435\u0432\u043D\u044F \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430"
+  },
+  {
+    "locale": "ru",
+    "key": "A message from the city",
+    "text": "\u0412\u0435\u0441\u0442\u044C \u0438\u0437 \u0433\u043E\u0440\u043E\u0434\u0430"
+  },
+  {
+    "locale": "ru",
+    "key": "Daria",
+    "text": "\u0414\u0430\u0440\u044C\u044F"
+  },
+  {
+    "locale": "ru",
+    "key": "Levels {0}\u2013{1}",
+    "text": "\u0423\u0440\u043E\u0432\u043D\u0438 {0}\u2013{1}"
+  },
+  {
+    "locale": "ru",
+    "key": "Chapter {0} complete",
+    "text": "\u0413\u043B\u0430\u0432\u0430 {0} \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
+  },
+  {
+    "locale": "ru",
+    "key": "Skip",
+    "text": "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C"
+  },
+  {
+    "locale": "ru",
+    "key": "Continue",
+    "text": "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+  }
+]

@@ -1,0 +1,159 @@
+M46 TECHNICAL HANDOFF — 17 OCTOBER 2026
+
+Architecture
+BoardModel.cs owns occupancy, goals, move budget and resolution. Piece IDs
+persist through movement. Each accepted action produces immutable before/after
+snapshots and timed steps; the review locks interaction until those steps finish.
+BoardPresentation.cs samples these steps and the approved power-up choreography.
+M46Playground.cs maps the samples to pooled SpriteRenderers and review controls.
+M46Assets.asset binds all textures, manifests and canonical level JSON.
+M46AtlasBank creates frame sprites lazily, validates clip names when sampled,
+and caches them. Original power-up source files remain available in M33 paths.
+The adapted M46 planners use actual masks, occupants, colors and targets.
+
+Board coordinates and art
+Integer x grows right; y grows up. Cell pitch is 1 Unity unit. The canonical
+boards have 64 pixels per cell plus 15 pixels of margin on each side. This
+margin is retained; it is not squeezed into the cell pitch. Background faces
+use the approved RainSlate_R2 alternation, with zero added gutters.
+L10 is 9x9; L18 and L40 are 9x11; L41 is 11x11. No canonical level was resized.
+The source grayscale masks are preserved. Four RGBA alpha-mask derivatives
+encode exactly the same mask values into alpha for Unity SpriteMask use.
+Body sprites are masked to the active-cell union; flights, beams and debris
+can extend beyond it. Obstacles occupy cells exclusively, with no gem overlay.
+Camera framing and safe-area layout are dynamic. The UI is a review interface.
+
+Resolution order
+Validate swap -> spend one move -> swap animation -> match/activate -> damage
+and power chains -> jar collection -> vertical gravity/refill -> cascades ->
+regrowth/reshuffle -> win/loss/input unlock. A single accepted move can produce
+many cascades. Invalid swaps restore the exact state and use no move. Delivery
+has its own phase; refill cannot enter a collecting jar's cell early.
+
+Gravity and refill
+Gems, power-ups, crates and jars fall vertically. Fixed obstacles and inactive
+cells split each column into segments. Only segments connected to a declared
+spawn point refill. Sealed cavities can therefore remain empty until their
+blocking obstacle is removed. Diagonal slide, portals and conveyors are not
+part of this milestone. Refill uses a deterministic xorshift PRNG; the earlier
+low-bit LCG pattern that caused excessive cascades was removed. Resolution has
+an explicit guard, which was not reached by the delivered verification cases.
+
+Match creation
+3 in line: normal clear. 4 horizontal/vertical: corresponding rocket.
+5 or more in line: Rainbow Orb. Intersecting horizontal and vertical runs:
+Bomb. 2x2 square: Rain Seeker. Priority is orb, bomb, rocket, square. The swapped
+destination is preferred for creation. Canonical layouts were originally
+validated for line matches; some contain dormant 2x2 groups. Only groups
+intersecting newly swapped/fallen/refilled piece IDs resolve, so an unrelated
+opening move does not clear a dormant group elsewhere. Revisit initial-board
+square avoidance in the campaign authoring milestone.
+Golden Seeker has no invented match recipe or unlock rule. It is review-placed
+here and produces TWO Golden Seekers when activated. Targets prefer damageable
+obstacles, then distant eligible gems. A delivery jar is never a seeker target.
+When too few targets exist, excess children dissolve without inventing a hit.
+
+Approved combination mapping (IDs retained from M33)
+Rocket + Rocket       6      Rocket + Bomb          2
+Bomb + Bomb           3      Orb + Rocket           8
+Orb + Bomb            9      Orb + Orb             10
+Rain + Rocket        12      Rain + Bomb           13
+Rain + Rain          14      Orb + Rain            15
+Golden + Rocket      17      Golden + Bomb         18
+Golden + Rain        19      Orb + Golden          20
+Standalone IDs: H4, V5, Orb7, Rain11, Golden16, Bomb21.
+Golden + Golden is intentionally unsupported: no approved rule was supplied.
+Double Orb keeps the approved Super Orb body design without a new Super Orb
+mechanic. Existing M33 chain-reaction demonstrations remain in the source pack.
+Vertical combinations normalize the partner's visual pose to the horizontally
+authored merge sheets while retaining its actual reserved cell in the model.
+
+Obstacle rules
+Supply crate: HP1/2/3, falls; adjacent match or direct power-up damage.
+Well overgrowth: HP1/2, fixed; adjacent match or direct power-up damage.
+Rune stone: HP1/2/3, fixed; adjacent match or direct power-up damage.
+Restoration jar: falls, immune to damage; only a marked delivery exit counts.
+Sealed supply case: HP1/2, fixed; direct power-up damage only.
+Water sluice: HP1/2, fixed; adjacent blue-water match or direct power-up damage.
+One activation damages a given obstacle once. Independent seeker children and
+converted power-ups have independent activation IDs. Final damage decreases
+the goal once. The visual goal counter changes at body release (+0.24 seconds),
+or at the jar collection timestamp. It never decrements on a mere HP crack.
+
+Regrowth
+Enabled by the level data from L27. After two consecutive moves without moss
+damage, replace one eligible orthogonally adjacent gem with HP1 overgrowth.
+Exclude powers, obstacles and exits. Choose bottom-left deterministically;
+maximum three added clumps per level. Increase the remaining moss goal for each
+new clump. Damage resets the quiet-move count. Clearing all moss prevents growth.
+
+Visual effects
+The 42 approved power atlas bindings and 86 obstacle clips are included.
+Gem debris uses the approved M33 three variations per color, not a new random
+fragment count. Obstacle pieces use the approved 1.3 scale and per-HP fragment
+profiles. Pieces keep their baked volume and tumble; they do not fade or shrink.
+Horizontal travel is contained in the viewport; despawn occurs only when the
+entire sprite falls below the camera bottom. FX can outlive a logic step and
+continue across gravity. Restart replaces the entire session and presentation
+history. No delayed coroutine callbacks can mutate a restarted model.
+
+Playback evidence
+ExportPlayback.cs runs the same BoardModel and BoardPresentation used by Unity.
+It exports state traces and compressed per-frame draw commands at 30 fps.
+render_playback.py crops the approved atlases and composites those commands.
+The offline compositor approximates the shader's edge glow; Unity shader/mask
+behavior must still be checked. Complete videos preserve time and event order.
+The short review uses cuts between timestamped excerpts, with no speed changes.
+
+Validation boundaries
+PASS: standalone C# compilation/execution; 280 ordered/directional combination
+cases; 64 focused mechanics checks; 280 presentation cases and 3,872,610 sampled
+poses with valid clip names; canonical board/asset provenance and frame bounds.
+The four reference playbacks contain actual swaps, creation, chains, damage,
+falls, refill, regrowth and delivery. L10 reaches Won with review-placed powers;
+this is NOT a proof of solvability under natural play.
+NOT RUN: Unity import/API compilation, Play Mode rendering/input, Android/iOS
+builds, GPU profiling, 50-level win-rate/balance, exhaustive reshuffle cases.
+
+Unity acceptance pass still required
+- Import in a fresh 2D project, compile and run M46 > Validate Assets and Gameplay.
+- Open the supplied scene, play each level, swap/tap and combine horizontally
+  and vertically; verify no missing sprites, pink shaders or bad frame sizes.
+- Pause and restart during a flight, a collection and refill; verify clean reset.
+- Check portrait safe areas, both configured input backends and touch gestures.
+- Verify mask clipping, white/gold beams, clockwise orb motion, two Golden
+  carriers, obstacle palette and full-screen debris travel against the videos.
+- Profile a target phone after the optional mobile preset. Do not treat the
+  desktop all-assets review scene as the final mobile runtime architecture.
+
+Memory and build preparation
+Reference base atlas texels: power 736.0 MiB; obstacle 287.5 MiB, RGBA32.
+ASTC 6x6 is approximately 114 MiB for those same base atlas dimensions, before
+block rounding, bodies, surfaces and runtime overhead. This is an estimate,
+not measured GPU use. The menu applies Android and iPhone importer overrides,
+keeps full dimensions, and leaves masks uncompressed. A clear-overrides command
+is supplied. Confirm target GPU format support and review compression artifacts.
+A shipping build needs selective asset loading, smaller sprite caches, lower
+per-frame allocations and platform profiling. No audio, haptics, monetization,
+saving, progression UI or pre-level booster economy is included in this slice.
+
+Reproduction
+Install Python with Pillow and NumPy, ffmpeg, and a .NET 8 SDK. Set
+M46_DOTNET_ROOT to the SDK directory if dotnet is not discoverable.
+Run from the package root:
+  python3 Source/compile_headless.py Mechanics
+  python3 Source/compile_headless.py Combos
+  python3 Source/compile_headless.py PresentationChecks
+  python3 Source/compile_headless.py ExportPlayback
+  python3 Source/render_playback.py
+  python3 Source/prepare_unity.py
+The headless UnityMathShim defines only the math types used by choreography.
+It is outside Unity/Assets and is not a fake renderer or Unity compilation test.
+SDK binaries and transfer helpers are not included. No proprietary reference
+app footage or competitor assets are distributed.
+
+Official API references checked for implementation
+https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporterFormat.ASTC_6x6.html
+https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporterPlatformSettings.html
+https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporter.SetPlatformTextureSettings.html
+https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/jsonutility/fromjson
