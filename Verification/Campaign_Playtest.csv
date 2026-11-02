@@ -1,0 +1,51 @@
+﻿level,id,moves,goals,seed,device,os,build,locale,tester_cohort,attempts,wins,quits,remaining_moves,duration_seconds,starting_items,tools_used,notes,evidence,status
+1,C01_L001,26,crate:22; moss:12,36001,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+2,C01_L002,24,crate:21; moss:12,36002,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+3,C01_L003,23,crate:18; moss:12,36003,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+4,C01_L004,22,crate:14; moss:14,36004,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+5,C01_L005,22,crate:16; moss:12,36005,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+6,C01_L006,24,crate:20; moss:13,36006,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+7,C01_L007,24,crate:18; stone:10,36007,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+8,C01_L008,25,crate:19; moss:12; stone:11,36008,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+9,C01_L009,23,crate:13; moss:13; stone:10,36009,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+10,C01_L010,24,crate:27; pail:2,36010,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+11,C01_L011,33,crate:37; stone:15; pail:2,36011,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+12,C01_L012,26,crate:38; pail:2,36012,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+13,C01_L013,33,crate:33; stone:13; pail:2,36013,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+14,C01_L014,26,crate:30; case:6,36014,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+15,C01_L015,27,crate:23; stone:11; pail:2; case:6,36015,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+16,C01_L016,30,crate:31; moss:12; case:6,36016,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+17,C01_L017,32,crate:25; moss:13; stone:16; case:6,36017,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+18,C01_L018,26,crate:27; gate:6,36018,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+19,C01_L019,32,crate:25; moss:12; gate:6,36019,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+20,C01_L020,30,crate:11; moss:20; stone:17; gate:6,36020,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+21,C01_L021,30,crate:28; crystal:1,511000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+22,C01_L022,36,crate:29; crystal:1; stone:9,512000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+23,C01_L023,40,crate:38; moss:16; gate:8,36023,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+24,C01_L024,34,crate:21; crystal:2; case:9,514000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+25,C01_L025,39,crate:30; stone:19; case:10; gate:10,36025,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+26,C01_L026,28,crate:45; pail:2,36026,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+27,C01_L027,36,crate:30; moss:16; case:8,36027,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+28,C01_L028,32,crate:25; pod:6,518000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+29,C01_L029,40,crate:18; pod:12; stone:14; case:6,519027,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+30,C01_L030,44,crate:27; crystal:2; pod:12; stone:10,520000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+31,C01_L031,36,crate:19; moss:16; gate:8,36031,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+32,C01_L032,34,crate:18; pod:6; gate:9,522011,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+33,C01_L033,38,crate:26; stone:12; gate:8,36033,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+34,C01_L034,34,crate:21; pod:6; case:6,524004,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+35,C01_L035,40,crate:16; stone:16; case:8; gate:10,36035,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+36,C01_L036,30,crate:26; rainlight:4,526003,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+37,C01_L037,36,crate:26; crystal:1; rainlight:4,527002,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+38,C01_L038,42,crate:23; stone:16; gate:8,36038,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+39,C01_L039,38,crate:21; pod:12; rainlight:4; case:6,529014,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+40,C01_L040,40,crate:8; pod:12; rainlight:8; stone:14,530023,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+41,C01_L041,40,crate:30; moss:16; pail:3,36041,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+42,C01_L042,42,crate:48; pail:4; gate:8,36042,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+43,C01_L043,44,crate:21; crystal:2; pod:12; gate:10,533008,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+44,C01_L044,38,crate:27; rainlight:4; moss:12,534000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+45,C01_L045,44,crate:25; pod:6; rainlight:8; gate:21,535080,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+46,C01_L046,30,crate:21; pod:6,536000,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+47,C01_L047,36,crate:21; rainlight:8; gate:9,537001,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+48,C01_L048,44,crate:32; moss:16; gate:8,36048,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+49,C01_L049,44,crate:32; crystal:2; pod:8; rainlight:4,539060,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST
+50,C01_L050,44,crate:18; crystal:2; pod:8; rainlight:4,485003,,,,,,,,,,,,,,,PENDING_HUMAN_DEVICE_PLAYTEST

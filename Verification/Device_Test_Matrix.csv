@@ -1,0 +1,21 @@
+id,priority,area,scenario,acceptance,evidence,status
+DEV-01,P0,Install,Install development APK on authorized ARM64 Android phone,App starts without crash and version is recorded,APK hash and device OS model and logcat,PENDING
+DEV-02,P0,Boot,Fresh install with no prior profile,Approved first-start appears and Home does not bootstrap demo progression,Video and initial state,PENDING
+DEV-03,P0,Persistence,Win then force quit and restart before during and after celebration,Progress wallet and all eight stock fields retained exactly once,State and attempt receipt,PENDING_BLOCKED_BY_ENG_02_03_05
+DEV-04,P0,Retry,Out of moves then Try Again,One attempt outcome and approved life policy through unified retry,Video and before after stock,PENDING_BLOCKED_BY_ENG_03_04
+DEV-05,P0,Exit,Cancel exit then confirm exit then retry,Cancel changes nothing and confirm costs one life once,Video and before after state,PENDING
+DEV-06,P0,Input,Cancel drag and multitouch during effect pause focus loss or resize,No stale swap or tool use and no duplicate input,Video and input trace,PENDING
+DEV-07,P0,Inventory,Select cancel use tools and reload level,Only accepted tools debit persistent stock and reload does not grant free stock,Before after stock,PENDING_BLOCKED_BY_ENG_05
+DEV-08,P0,Victory,Win first clear replay and last-move win,Exactly one reward and animation-only celebration,Attempt receipt and native video,PENDING
+DEV-09,P0,Finale,First clear L50 then replay L50,Finale route correct with no duplicate reward and no L51,Video and state,PENDING
+DEV-10,P0,Rendering,Daria regular reduced-motion and skip in overlay and finale,No sleeve seam or alpha draw-order artifacts and skip preserves settlement,Identical-size reference and native frames,PENDING
+DEV-11,P1,Campaign,Human play all 50 levels without purchases,All goals reachable with complete attempts cohort and sample counts,Campaign_Playtest.csv and session files,PENDING
+DEV-12,P1,Powers,All 14 pairs both orders orientations edges holes and chains,Approved contacts child counts timing and unique damage,Replay seed trace and video,PENDING
+DEV-13,P1,Obstacles,All nine families HP states crystals 5 to 9 cabinet 2x2 pod and jar,Logical goal units and footprint occupancy preserved,Replay seed trace and video,PENDING
+DEV-14,P1,Locales,English Spanish French German Russian at all pages and modals,No missing glyphs clipped labels or untranslated errors,Five locale screenshot sets and native review,PENDING
+DEV-15,P1,Layout,Tall narrow cutout phone and tablet plus 2 3 4 goals and large wallet,Safe-area touch targets readable without overlap,Viewport and safe-area screenshots,PENDING
+DEV-16,P1,Performance,Cold boot repeated level load worst power chains Orb and Daria,Measured frame-time distribution memory GC draw calls and thermals recorded,Profiler trace and device identifiers,PENDING
+DEV-17,P1,Audio,Toggle music sound then pause resume and relaunch,Preferences persist and no duplicated sources or unintended playback,Video and source counts,PENDING
+DEV-18,P1,Recovery,Corrupt truncated save interrupted commit and schema migration,Recover last valid profile without duplicate grants or silent reset,Fault-injection report,PENDING_BLOCKED_BY_ENG_02_03
+DEV-19,P1,Services,Offline Shop Teams Leaderboard and event timers,Demo state identified and unavailable actions do not imply live services,Video and service status,PENDING
+DEV-20,P1,Release,Support privacy terms app identity and store configuration,Real destinations and release-account configuration reviewed,Release checklist,PENDING

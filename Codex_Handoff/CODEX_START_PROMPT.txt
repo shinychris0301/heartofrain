@@ -1,0 +1,5 @@
+Work on Heart of the Rain using the supplied M67R4 baseline. Read AGENTS.md and Codex_Handoff/Documentation/00_START_HERE.md, 01_STATUS_AND_DECISIONS.md, 03_UNITY_SETUP_AND_ARCHITECTURE.md, and 09_IMPLEMENTATION_BACKLOG.md.
+
+First inspect the actual repository and establish a clean Unity2022.3.62f3 import/compile baseline if Unity is available. Report exact blockers and do not upgrade the engine or redesign assets. The first production milestone is durable profile persistence and migration, followed by unified attempt settlement and persistent booster inventory. Preserve the approved 2D visuals, separate Rocket/Bomb stock, all50 Chapter1 layouts and current celebration.
+
+Implement one reviewable milestone with meaningful state/recovery tests. Keep native Unity/device validation separate from headless checks. Do not activate purchases, deploy a backend, or publish a store build as part of this initial task. Update documentation and report the remaining gaps. Design questions will be reviewed separately with me.

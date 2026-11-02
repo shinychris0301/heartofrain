@@ -1,0 +1,188 @@
+{
+  "monthly": [
+    [
+      "Gross IAP spend",
+      31250,
+      "Ex-tax player spend before refunds and platform fee"
+    ],
+    [
+      "Net IAP revenue",
+      26031.25,
+      "Refund-adjusted spend less illustrative platform fee"
+    ],
+    [
+      "Paid ad impressions",
+      108000,
+      "DAU-days × participation × opportunities × fill"
+    ],
+    [
+      "Net ad revenue",
+      864,
+      "Publisher-net eCPM; no additional IAP fee"
+    ],
+    [
+      "Total net revenue",
+      26895.25,
+      "Net IAP + net publisher ad revenue"
+    ],
+    [
+      "Variable service cost",
+      600,
+      "DAU-days × variable cost"
+    ],
+    [
+      "Paid acquisition spend",
+      35000,
+      "Paid installs × CPI"
+    ],
+    [
+      "Operating contribution",
+      -13704.75,
+      "Net revenue − service − fixed content/ops − acquisition"
+    ],
+    [
+      "Net ARPDAU",
+      0.08965083333333333,
+      "Net monthly revenue / DAU-days"
+    ]
+  ],
+  "cohort": [
+    [
+      "Net revenue / install",
+      0.64680225,
+      "90-day horizon"
+    ],
+    [
+      "Contribution / install",
+      0.6329372499999999,
+      "Before acquisition and fixed ops"
+    ],
+    [
+      "Net revenue ROAS",
+      0.18480064285714287,
+      "Net revenue / acquisition spend"
+    ],
+    [
+      "After-acquisition contribution",
+      -28670.627500000002,
+      "Excludes fixed content/ops"
+    ],
+    [
+      "Modeled payback day",
+      "Not reached",
+      "Contribution covers acquisition"
+    ],
+    [
+      "Break-even CPI",
+      0.6329372499999999,
+      "Before fixed cost / risk reserve"
+    ],
+    [
+      "Retention check",
+      "OK",
+      "D0=100%; decreasing anchors"
+    ],
+    [
+      "Cohort input check",
+      "OK",
+      "Nonnegative inputs / positive installs"
+    ]
+  ],
+  "economy": [
+    [
+      "First-clear wins",
+      45,
+      "Attempts × win rate × first-clear share of wins"
+    ],
+    [
+      "Total free coin faucets",
+      3250,
+      "First-clear rewards + other grants + optional ad coins"
+    ],
+    [
+      "Tool coin sinks",
+      3000,
+      "Attempts × tool purchase uses/attempt × example cost"
+    ],
+    [
+      "Life-refill coin sinks",
+      1000,
+      "Refill count × example cost"
+    ],
+    [
+      "Continue coin sinks",
+      4500,
+      "Attempts × continue rate × example cost"
+    ],
+    [
+      "Net coins per modeled batch",
+      -5250,
+      "Free faucets − example sinks; purchases not modeled"
+    ],
+    [
+      "First clears to afford one tool",
+      6,
+      "Rounded up; first-clear coins only"
+    ]
+  ],
+  "scenario_checks": {
+    "zero_ad_revenue": 0,
+    "zero_CPI_payback_day": 0,
+    "invalid_retention_detected": true,
+    "restored_monthly_contribution": -13704.75
+  },
+  "formula_scan": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "2o8kqi",
+      "target": {
+        "id": "wb/jr2m8x",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "match",
+        "tokens": [
+          "match"
+        ]
+      },
+      "include": {
+        "tokens": []
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  },
+  "inspect": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "nog4p1",
+      "target": {
+        "id": "wb/m4z59d",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "table",
+        "tokens": [
+          "table"
+        ]
+      },
+      "include": {
+        "requested": "values,formulas",
+        "tokens": [
+          "values",
+          "formulas"
+        ]
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  }
+}
