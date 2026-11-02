@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c4da14427757d7b7dd4dcdc5f27f57, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  assets: {fileID: 11400000, guid: c5802a255f8a5e59b2b47470b6d783f1, type: 3}
+  assets: {fileID: 11400000, guid: c5802a255f8a5e59b2b47470b6d783f1, type: 2}
   initialLevel: 2
   initialBooster: 1
   autoPlay: 1

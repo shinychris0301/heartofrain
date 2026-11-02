@@ -8,9 +8,12 @@ namespace HeartOfTheRain.M46 {
         readonly Dictionary<int,Piece> occupants; readonly HashSet<int> sources=new HashSet<int>();
         public readonly int Columns,Rows,PartnerX,PartnerY,VisualPartnerX,OriginX,OriginY;
         public readonly Piece Origin,Partner;
-        public LiveBoardInput(BoardModel board,Piece origin,Piece partner){
+        public LiveBoardInput(BoardModel board,Piece origin,Piece partner,IEnumerable<int> protectedPowerIds=null){
             Columns=board.Level.columns;Rows=board.Level.rows;Origin=origin.Copy();Partner=partner==null?null:partner.Copy();OriginX=origin.x;OriginY=origin.y;
             Active=new HashSet<int>(board.Active);occupants=board.Pieces.ToDictionary(p=>p.Key,p=>p.Value.Copy());sources.Add(origin.id);if(partner!=null)sources.Add(partner.id);
+            // Seekers and other aimed effects must choose a hittable target;
+            // the mixed swap's just-earned power is reserved for this wave.
+            if(protectedPowerIds!=null)sources.UnionWith(protectedPowerIds);
             VisualPartnerX=partner!=null&&partner.y==origin.y?partner.x:origin.x+1<Columns?origin.x+1:origin.x-1;
             PartnerX=partner==null?VisualPartnerX:partner.x;PartnerY=partner==null?origin.y:partner.y;
             Grid=new int[Columns,Rows];for(int y=0;y<Rows;y++)for(int x=0;x<Columns;x++){Piece p;Grid[x,y]=occupants.TryGetValue(y*Columns+x,out p)&&p.family=="gem"?p.color:-1;
@@ -23,17 +26,24 @@ namespace HeartOfTheRain.M46 {
     }
     public static class LivePowerPlan {
         public static ReviewPlan Build(BoardModel board,Activation request,LiveBoardInput live){
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            if(board.VerificationUseCheckpoint77Model78)return HeartOfTheRain.Verification.Checkpoint77Model78Control.LivePowerPlan77.Build(board,request,live);
+#endif
             int color=request.color;
-            if(color<0){var counts=new int[6];foreach(var p in board.Pieces.Values)if(p.family=="gem")counts[p.color]++;color=Enumerable.Range(0,6).OrderByDescending(i=>counts[i]).ThenBy(i=>i).First();}
-            int kind=request.kind;var targets=new List<Vector2Int>();
-            for(int y=0;y<live.Rows;y++)for(int x=0;x<live.Columns;x++)if(live.CanTarget(x,y)&&Math.Abs(x-live.OriginX)+Math.Abs(y-live.OriginY)>1)targets.Add(new Vector2Int(x,y));
-            targets=targets.OrderByDescending(q=>live.Obstacles.Contains(q.y*live.Columns+q.x)).ThenByDescending(q=>(q.x-live.OriginX)*(q.x-live.OriginX)+(q.y-live.OriginY)*(q.y-live.OriginY)).ThenBy(q=>q.y).ThenBy(q=>q.x).ToList();
-            if((kind==11||kind==12||kind==13)&&targets.Count==0)return NoTarget(live,kind);
-            var target=targets.Count>0?targets[0]:new Vector2Int(-1,-1);
+            if(color<0){var counts=new int[6];foreach(var p in board.Pieces.Values)if(p.family=="gem")counts[p.color]++;color=0;for(int i=1;i<counts.Length;i++)if(counts[i]>counts[color])color=i;}
+            int kind=request.kind;var target=new Vector2Int(-1,-1);bool targetFound=false,bestObstacle=false;int bestDistance=0;
+            // Only the first sorted target was consumed. Row-major traversal
+            // retains the old y/x tie order while selecting obstacle/distance
+            // priority without materializing and sorting the whole candidate list.
+            for(int y=0;y<live.Rows;y++)for(int x=0;x<live.Columns;x++)if(live.CanTarget(x,y)&&Math.Abs(x-live.OriginX)+Math.Abs(y-live.OriginY)>1){
+                bool obstacle=live.Obstacles.Contains(y*live.Columns+x);int dx=x-live.OriginX,dy=y-live.OriginY,distance=dx*dx+dy*dy;
+                if(!targetFound||obstacle&&!bestObstacle||obstacle==bestObstacle&&distance>bestDistance){targetFound=true;bestObstacle=obstacle;bestDistance=distance;target=new Vector2Int(x,y);}
+            }
+            if((kind==11||kind==12||kind==13)&&!targetFound)return NoTarget(live,kind);
             var plan=ReviewPlan.Build(live.Columns,live.Rows,kind,new Vector2Int(live.OriginX,live.OriginY),false,color,target,request.vertical,live);
             // Cell-centred impacts only appear in active cells; broad explosions,
             // flight paths and solid debris may extend beyond the board.
-            plan.effects=plan.effects.Where(e=>!new[]{"OR_Hit","OR_Stars","OR_Target","Contact","Wake0","Wake1"}.Contains(e.clip)||live.Active.Contains((int)Math.Round(e.y)*live.Columns+(int)Math.Round(e.x))).ToArray();
+            var retained=new List<ReviewFx>(plan.effects.Length);foreach(var e in plan.effects){bool cellCentred=e.clip=="OR_Hit"||e.clip=="OR_Stars"||e.clip=="OR_Target"||e.clip=="Contact"||e.clip=="Wake0"||e.clip=="Wake1";if(!cellCentred||live.Active.Contains((int)Math.Round(e.y)*live.Columns+(int)Math.Round(e.x)))retained.Add(e);}plan.effects=retained.ToArray();
             if(kind==16||kind==14){
                 int expected=kind==16?2:3;var fx=plan.effects.ToList();int existing=plan.flights==null?0:plan.flights.Length;
                 if(kind==16)foreach(var f in plan.flights)f.golden=true;

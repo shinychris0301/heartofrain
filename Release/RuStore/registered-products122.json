@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "OWNER_CONFIRMED_REGISTERED_PUBLICATION_UNVERIFIED",
+  "ownerConfirmedOn": "2026-10-30",
+  "applicationId": null,
+  "products": [
+    {"id": "coins-1000", "storeProductId": "hotr_coins_1000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "coins-5000", "storeProductId": "hotr_coins_5000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "coins-10000", "storeProductId": "hotr_coins_10000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "coins-25000", "storeProductId": "hotr_coins_25000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "coins-50000", "storeProductId": "hotr_coins_50000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "coins-100000", "storeProductId": "hotr_coins_100000", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "wellkeeper", "storeProductId": "hotr_bundle_wellkeeper_c", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "rainy-day", "storeProductId": "hotr_bundle_rainy_day", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "rainlight", "storeProductId": "hotr_bundle_rainlight", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "village", "storeProductId": "hotr_bundle_village", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "festival", "storeProductId": "hotr_bundle_festival", "type": "CONSUMABLE", "registered": true, "published": null},
+    {"id": "keepers", "storeProductId": "hotr_bundle_keepers", "type": "CONSUMABLE", "registered": true, "published": null}
+  ]
+}

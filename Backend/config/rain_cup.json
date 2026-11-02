@@ -1,0 +1,13 @@
+{
+  "version": "rain-cup-practice-v1",
+  "unlockClears": 10,
+  "durationSeconds": 172800,
+  "rivalFinalScores": [24,18,12,6],
+  "rankRewards": [
+    { "coins": 300, "stars": 0, "starting": [1,1,0,0], "tools": [0,0,0,0] },
+    { "coins": 200, "stars": 0, "starting": [0,0,0,0], "tools": [1,0,0,0] },
+    { "coins": 100, "stars": 0, "starting": [0,0,0,0], "tools": [0,0,0,0] },
+    { "coins": 50, "stars": 0, "starting": [0,0,0,0], "tools": [0,0,0,0] },
+    { "coins": 50, "stars": 0, "starting": [0,0,0,0], "tools": [0,0,0,0] }
+  ]
+}

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0510243c66995a8399b72a773eee6884, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  uiAssets: {fileID: 11400000, guid: 3221c74ca04855078656bacf716fc140, type: 3}
+  uiAssets: {fileID: 11400000, guid: 3221c74ca04855078656bacf716fc140, type: 2}
   initialLevel: 21
   showLevelIntro: 1
   boardRecoil: 1

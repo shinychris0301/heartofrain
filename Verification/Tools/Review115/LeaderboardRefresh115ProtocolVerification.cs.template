@@ -1,0 +1,41 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Text;
+using HeartOfTheRain.App.OnlineIdentity;
+using HeartOfTheRain.App.OnlineSocial;
+using UnityEditor;
+using UnityEngine;
+namespace HeartOfTheRain.Verification {
+ public static class LeaderboardRefresh115ProtocolVerification {
+  const string Me="11111111111111111111111111111111",Other="22222222222222222222222222222222";
+  [Serializable] sealed class Report {public string status="RUNNING",scope="Actual Unity client strict decoder with intercepted scripted transport; no HTTP, device or provider.";public int checks,cases,requests;public List<string> errors=new List<string>();}
+  sealed class Store:IProtectedSessionStore82 {byte[] data;public byte[] Read()=>data;public void CompareExchange(string expected,byte[] next){data=next;}public void Dispose(){data=null;}}
+  static Report report;static void Check(bool b,string s){report.checks++;if(!b)throw new InvalidOperationException(s);}
+  public static void Run(){var output=Path.GetFullPath(Environment.GetEnvironmentVariable("HOTR_REVIEW115_OUT")??throw new InvalidOperationException("Output required"));Directory.CreateDirectory(output);report=new Report();SocialBackendClient82 client=null;var store=new Store();string json=null;var access=new SocialAccess82(Me,IdentityProtocol82.NewSecret());try{
+   Action<IEnumerator> intercept=exchange=>{Check(exchange.GetType().Name.StartsWith("<Exchange>",StringComparison.Ordinal),"Only captured network boundary intercepted");var flags=BindingFlags.NonPublic|BindingFlags.Instance;var pending=typeof(SocialBackendClient82).GetField("active",flags).GetValue(client);Check(pending!=null,"Real client owns pending request");typeof(SocialBackendClient82).GetMethod("Complete",flags).Invoke(client,new object[]{pending,json,null,false});pending.GetType().GetMethod("Release",BindingFlags.Public|BindingFlags.NonPublic|BindingFlags.Instance).Invoke(pending,null);(exchange as IDisposable)?.Dispose();report.requests++;};
+   client=new SocialBackendClient82("https://staging.hotr-native-fixture.net",()=>access,intercept,store,true,false);
+   string row="{\\\"playerId\\\":\\\""+Other+"\\\",\\\"displayName\\\":\\\"Peer\\\",\\\"score\\\":4,\\\"rank\\\":1}";row=row.Replace("\\\"","\"");
+   string self="{\"playerId\":\""+Me+"\",\"displayName\":\"Self\",\"score\":0,\"rank\":9}";
+   string good="{\"scope\":\"global\",\"regionCode\":\"\",\"scoreSource\":\"server_verified_completed_levels\",\"tiesShareRank\":true,\"rewardGranted\":false,\"hasMore\":false,\"nextOffset\":1,\"entries\":["+row+"],\"hasSelfEntry\":true,\"selfEntry\":"+self+"}";
+   Action<string,bool> player=(wire,expected)=>{json=wire;SocialReply82<SocialRankRefresh115> reply=null;client.GetRanksRefresh115("global",0,20,x=>reply=x);Check(reply!=null&&reply.Succeeded==expected,"Player decoder acceptance");report.cases++;};
+   player(good,true);player(good.Replace("\"hasSelfEntry\":true","\"hasSelfEntry\":false"),false);player(good.Replace("\"hasSelfEntry\":true,", ""),false);player(good.Replace(Me,Other),false);player(good.Replace("server_verified_completed_levels","client_guess"),false);player(good.Replace("\"nextOffset\":1","\"nextOffset\":2"),false);player(good.Replace("["+row+"]","["+row+","+row+"]").Replace("\"nextOffset\":1","\"nextOffset\":2"),false);
+   string teamrow="{\"teamId\":\""+Other+"\",\"name\":\"Team\",\"badgeId\":\"oak\",\"score\":4,\"memberCount\":2,\"rank\":1}";
+   string team="{\"scope\":\"global\",\"regionCode\":\"\",\"scoreSource\":\"server_verified_opted_in_team_completed_levels\",\"teamRegionSource\":\"current_leader_selected_country\",\"tiesShareRank\":true,\"rewardGranted\":false,\"hasMore\":false,\"nextOffset\":1,\"entries\":["+teamrow+"],\"hasTeam\":true,\"hasSelfEntry\":true,\"selfEntry\":"+teamrow+"}";
+   Action<string,bool> teams=(wire,expected)=>{json=wire;SocialReply82<SocialTeamRanksRefresh115> reply=null;client.GetTeamRanksRefresh115("global",0,20,x=>reply=x);Check(reply!=null&&reply.Succeeded==expected,"Team decoder acceptance");report.cases++;};
+   teams(team,true);teams(team.Replace("\"hasTeam\":true","\"hasTeam\":false"),false);teams(team.Replace("\"badgeId\":\"oak\"","\"badgeId\":\"invented\""),false);teams(team.Replace("\"hasSelfEntry\":true","\"hasSelfEntry\":false"),false);teams(team.Replace("\"hasSelfEntry\":true","\"hasSelfEntry\":false").Replace("\"selfEntry\":"+teamrow,"\"selfEntry\":null"),true);
+   string normalized;Check(!SocialBackendClient82.TryPlayerSearch115("A",out normalized),"A one-character query is rejected");Check(SocialBackendClient82.TryPlayerSearch115("Rain",out normalized),"Valid player search accepted");
+   string search="{\"players\":[{\"playerId\":\""+Other+"\",\"displayName\":\"Rain\",\"completedLevels\":4,\"leaderboardOptIn\":true}],\"relationships\":[{\"playerId\":\""+Other+"\",\"state\":\"None\"}],\"hasMore\":true,\"nextCursor\":\""+new string('A',43)+"\"}";search=search.Replace("\\\"","\"");
+   json=search;SocialReply82<SocialPlayerSearch115> result=null;client.GetPlayerSearch115("Rain","",1,x=>result=x);Check(result!=null&&result.Succeeded&&result.value.players.Length==1&&result.value.hasMore,"Valid search response uses cursor");report.cases++;
+   json="{\"players\":[],\"relationships\":[],\"hasMore\":true,\"nextCursor\":\""+new string('A',43)+"\"}";result=null;client.GetPlayerSearch115("Rain","",1,x=>result=x);Check(result!=null&&result.Succeeded&&result.value.players.Length==0&&result.value.hasMore,"Sparse empty search pages can still continue");report.cases++;
+   json=search.Replace("\"state\":\"None\"","\"state\":\"Forged\"");result=null;client.GetPlayerSearch115("Rain","",1,x=>result=x);Check(result!=null&&!result.Succeeded,"Unknown relationship is rejected");report.cases++;
+   json=search.Replace("\"relationships\":[{\"playerId\":\""+Other+"\",\"state\":\"None\"}]","\"relationships\":[]");result=null;client.GetPlayerSearch115("Rain","",1,x=>result=x);Check(result!=null&&!result.Succeeded,"Missing matching relationship rejected");report.cases++;
+   string third=new string('3',32),request=new string('4',32);json="{\"players\":[{\"playerId\":\""+Other+"\",\"displayName\":\"Rain\",\"completedLevels\":1,\"leaderboardOptIn\":true},{\"playerId\":\""+third+"\",\"displayName\":\"Cloud\",\"completedLevels\":1,\"leaderboardOptIn\":true}],\"relationships\":[{\"playerId\":\""+Other+"\",\"state\":\"Incoming\",\"requestId\":\""+request+"\"},{\"playerId\":\""+third+"\",\"state\":\"Incoming\",\"requestId\":\""+request+"\"}],\"hasMore\":false,\"nextCursor\":\"\"}";result=null;client.GetPlayerSearch115("Rain","",2,x=>result=x);Check(result!=null&&!result.Succeeded,"Duplicate request IDs across distinct results rejected");report.cases++;
+   json=search.Replace("\"nextCursor\":\""+new string('A',43)+"\"","\"nextCursor\":\"bad!\"");result=null;client.GetPlayerSearch115("Rain","",1,x=>result=x);Check(result!=null&&!result.Succeeded,"Malformed opaque cursor rejected");report.cases++;
+  }catch(Exception e){report.errors.Add(e.ToString());}finally{if(client!=null)client.Dispose();store.Dispose();report.status=report.errors.Count==0?"PASS_NATIVE_RANK115_PROTOCOL":"FAIL_NATIVE_RANK115_PROTOCOL";File.WriteAllText(Path.Combine(output,"Protocol115.json"),JsonUtility.ToJson(report,true),new UTF8Encoding(false));}EditorApplication.Exit(report.errors.Count==0?0:1);}
+ }
+}
+#endif

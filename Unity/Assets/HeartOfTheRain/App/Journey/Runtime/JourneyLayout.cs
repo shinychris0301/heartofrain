@@ -19,9 +19,8 @@ namespace HeartOfTheRain.App.Journey
    Art(f,"backdrop","ArchiveBackdrop",0,0,w,h);Art(f,"top-bar","HeaderBar",0,0,w,head);
    Label(f,"title",r.reading?"Story":"Journey",52,wide?8:14,w-104,42,32);
    if(r.reading){Art(f,"reader-close-art","Close",w-46,16,30,30);Hit(f,"reader-close","reader-close",w-53,9,44,44,"Return to Journey");}
-   float dw=Math.Min(w,620),dh=MainNavigationLayout.Height(w,h),dx=(w-dw)/2,dy=h-dh;
-   MainNavigationLayout.Add(f,dx,dy,dw,dh,0);
-   r.viewportY=head;r.viewportHeight=Math.Max(120,dy-head-2);
+   MainNavigationLayout.AddDock(f,w,h,0);
+   r.viewportY=head;r.viewportHeight=Math.Max(120,h-MainNavigationLayout.ReservedHeight(w,h)-head-2);
   }
   static void Card(HomeFrame f,JourneySession s,JourneyChapter c,float x,float y,float w,float h)
   {

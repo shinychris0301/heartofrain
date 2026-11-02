@@ -1,0 +1,13 @@
+{
+  "vk": {
+    "enabled": false,
+    "clientId": "",
+    "redirectUri": ""
+  },
+  "registration": {
+    "vkRedirectUri": "https://api.novamind-it.ru/v1/identity/vk/callback",
+    "yandexRewardedUnitId": "R-M-20291714-1",
+    "yandexInterstitialUnitId": "R-M-20291714-2",
+    "interstitialPlacementEnabled": false
+  }
+}

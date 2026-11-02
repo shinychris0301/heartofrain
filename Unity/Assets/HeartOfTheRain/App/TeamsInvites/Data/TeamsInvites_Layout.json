@@ -1,0 +1,89 @@
+{
+  "reference": [
+    1080,
+    1920
+  ],
+  "portraitPhoneMin": [
+    360,
+    640
+  ],
+  "tabletColumnDp": 520,
+  "safeArea": true,
+  "modalOffsetY": "max(-80,(logicalViewportHeight-1920)/2), applied to art, text and hit targets together",
+  "rects": {
+    "frame": [
+      80,
+      330,
+      920,
+      1320
+    ],
+    "crest": [
+      440,
+      220,
+      200,
+      200
+    ],
+    "close": [
+      930,
+      325,
+      104,
+      104
+    ],
+    "tabs": [
+      140,
+      600,
+      800,
+      106
+    ],
+    "search": [
+      140,
+      730,
+      800,
+      110
+    ],
+    "friendRows": [
+      [
+        140,
+        860,
+        800,
+        164
+      ],
+      [
+        140,
+        1042,
+        800,
+        164
+      ],
+      [
+        140,
+        1224,
+        800,
+        164
+      ]
+    ],
+    "footer": [
+      200,
+      1460,
+      680,
+      144
+    ],
+    "shareCard": [
+      140,
+      748,
+      800,
+      668
+    ],
+    "teamCode": [
+      180,
+      1174,
+      720,
+      126
+    ]
+  },
+  "friendRow": "Avatar116; name44; level34; 324-wide action with 44px primary label; independent status/action. Grow rows for larger text; no compression to fit an arbitrary row count.",
+  "scroll": "Only content between tabs and fixed footer scrolls. Search remains at list top. Keyboard reduces viewport and scrolls focus into view.",
+  "minTouchDp": 48,
+  "clip": "Do not mask crest or close button; no modal-wide clipping mask.",
+  "resizing": "Respect existing portrait lock. Reflow or scroll on short windows and accessibility text. Keep existing shared CanvasScaler.",
+  "fixtures": "Three sample friends, team code #RAIN7, 43/50 capacity and level50 are review data only."
+}

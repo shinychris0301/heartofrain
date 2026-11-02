@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "appId": null,
+  "environment": "production",
+  "products": [
+    {
+      "storeProductId": "hotr_coins_1000",
+      "type": "CONSUMABLE",
+      "amountMinor": 9900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_coins_5000",
+      "type": "CONSUMABLE",
+      "amountMinor": 29900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_coins_10000",
+      "type": "CONSUMABLE",
+      "amountMinor": 49900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_coins_25000",
+      "type": "CONSUMABLE",
+      "amountMinor": 89900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_coins_50000",
+      "type": "CONSUMABLE",
+      "amountMinor": 159900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_coins_100000",
+      "type": "CONSUMABLE",
+      "amountMinor": 299900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_wellkeeper_c",
+      "type": "CONSUMABLE",
+      "amountMinor": 9900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_rainy_day",
+      "type": "CONSUMABLE",
+      "amountMinor": 19900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_rainlight",
+      "type": "CONSUMABLE",
+      "amountMinor": 29900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_village",
+      "type": "CONSUMABLE",
+      "amountMinor": 39900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_festival",
+      "type": "CONSUMABLE",
+      "amountMinor": 59900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    },
+    {
+      "storeProductId": "hotr_bundle_keepers",
+      "type": "CONSUMABLE",
+      "amountMinor": 99900,
+      "currency": "RUB",
+      "registered": true,
+      "published": null
+    }
+  ]
+}

@@ -1069,7 +1069,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "0141a6b3524b87699331d3549be65c2394ec5e47f746007ed510099f4697c8a9"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "529dd32bcee517375d083f172e34d5b32d76002bad5aea51e947bcffc890a872"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Combo_BombBomb_Atlas.png",
@@ -1099,7 +1101,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "8080cccb1b8055d52f4ee6329e4b0e6f80770b1097e547f50f435a21084dde17"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "9bd96cdc25b37f79105d792b266dd0ae8fed4ccff28f2e89dd99453f3fc8f1d8"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M04/Sprites/Rocket_Vertical_Atlas.png",
@@ -1109,7 +1113,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "c55aabec93ceada2e3a3860580c583164ad7e3fe0b8f92db86a4cb357641a157"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "35b20f3ee7f1a8662bc0789573c2d5c059463e474f43554e4f763d4a6e0395ee"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Blocker_Atlas.png",
@@ -1199,7 +1205,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "bb29122f043a1f75296dfb77a3b60cbd31c6e75d98251d3dac852332c26af028"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "210206e79d111b37865c920cbe0e4b716a635c8866643e8f2dea083025e2b01d"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainbowOrbFX_Atlas.png",
@@ -1269,7 +1277,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "3b905c61b33768ee5b906b093448fd811bded7fc0865c3acf431b0e11d01f95e"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "c5192513c4579e6b9989b15d73bdf69296e31b12b921a84c8ead27692e6d12fb"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleOrbFX_Atlas.png",
@@ -1299,7 +1309,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "aa7e9da453e279d323ddf3a9726b50d55806917f4a8b7d3b10d714b9db2ad628"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "331bf5e228fd7491daa7380f910b6c0c1ec896eab18a9eb7b124c62d5a057c90"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerFX_Atlas.png",
@@ -1409,7 +1421,9 @@
       "height": 2048,
       "rgbaBytes": 16777216,
       "astc6x6Bytes": 1871424,
-      "sha256": "cd4a8a0c441d6718e69fd8718840baf7535c5bb1ce643b0fb59d325904c7d276"
+      "androidTextureFormat": "ASTC_4x4",
+      "androidTextureBytes": 4194304,
+      "sha256": "cb6ee311f27ceb165ce673b3d6eadf5397faa8fef585de2a72bbe365601af90f"
     },
     {
       "source": "Assets/HeartOfTheRain/Chapter01M07/Sprites/GoldenSeekerTwin_Atlas.png",

@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+namespace HeartOfTheRain.App.TeamsMail { public static class TeamsMailText111 {
+static readonly Dictionary<string,string[]> values = new Dictionary<string,string[]> {
+ { "team_reward", new[] { "Team reward", "Recompensa del equipo", "Récompense de l’équipe", "Team-Belohnung", "Награда команды" } },
+ { "saved_rewards", new[] { "Saved team rewards", "Premios de equipo guardados", "R\u00e9compenses d\u0027\u00e9quipe sauvegard\u00e9es", "Gespeicherte Team-Belohnungen", "\u0421\u043e\u0445\u0440\u0430\u043d\u0451\u043d\u043d\u044b\u0435 \u043d\u0430\u0433\u0440\u0430\u0434\u044b \u043a\u043e\u043c\u0430\u043d\u0434\u044b" } },
+ { "unread_short", new[] { "New", "Nuevo", "Nouveau", "Neu", "\u041d\u043e\u0432\u043e\u0435" } },
+ { "new_count", new[] { "{count} new", "{count} nuevos", "{count} nouveaux", "{count} neu", "\u041d\u043e\u0432\u044b\u0445: {count}" } },
+ { "unread", new[] { "Unread", "Sin leer", "Non lu", "Ungelesen", "\u041d\u0435 \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043e" } },
+ { "read", new[] { "Read", "Le\u00eddo", "Lu", "Gelesen", "\u041f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043e" } },
+ { "coins", new[] { "Coins", "Monedas", "Pi\u00e8ces", "M\u00fcnzen", "\u041c\u043e\u043d\u0435\u0442\u044b" } },
+ { "lives", new[] { "Lives", "Vidas", "Vies", "Leben", "\u0416\u0438\u0437\u043d\u0438" } },
+ { "collect", new[] { "Collect", "Recoger", "R\u00e9cup\u00e9rer", "Abholen", "\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c" } },
+ { "collecting", new[] { "Collecting\u2026", "Recogiendo\u2026", "R\u00e9cup\u00e9ration\u2026", "Wird abgeholt\u2026", "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435\u2026" } },
+ { "reward_collected", new[] { "Reward collected", "Premio recibido", "R\u00e9compense re\u00e7ue", "Belohnung erhalten", "\u041d\u0430\u0433\u0440\u0430\u0434\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0430" } },
+ { "collected_note", new[] { "Added to your balance.", "Se ha a\u00f1adido a tu saldo.", "Ajout\u00e9e \u00e0 votre solde.", "Deinem Guthaben hinzugef\u00fcgt.", "\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u0432\u0430\u0448 \u0441\u0447\u0451\u0442." } },
+ { "done", new[] { "Done", "Listo", "Termin\u00e9", "Fertig", "\u0413\u043e\u0442\u043e\u0432\u043e" } },
+ { "close", new[] { "Close", "Cerrar", "Fermer", "Schlie\u00dfen", "\u0417\u0430\u043a\u0440\u044b\u0442\u044c" } },
+ { "retry", new[] { "Retry", "Reintentar", "R\u00e9essayer", "Erneut versuchen", "\u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c" } },
+ { "claim_error", new[] { "Could not confirm the reward. Please retry.", "No se pudo confirmar el premio. Int\u00e9ntalo de nuevo.", "La r\u00e9compense n\u2019a pas pu \u00eatre confirm\u00e9e. R\u00e9essayez.", "Die Belohnung konnte nicht best\u00e4tigt werden. Bitte erneut versuchen.", "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c \u043d\u0430\u0433\u0440\u0430\u0434\u0443. \u041f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0451 \u0440\u0430\u0437." } },
+ { "reward_expired", new[] { "Reward expired", "Premio caducado", "R\u00e9compense expir\u00e9e", "Belohnung abgelaufen", "\u0421\u0440\u043e\u043a \u0438\u0441\u0442\u0451\u043a" } },
+ { "expired_note", new[] { "This reward is no longer available.", "Este premio ya no est\u00e1 disponible.", "Cette r\u00e9compense n\u2019est plus disponible.", "Diese Belohnung ist nicht mehr verf\u00fcgbar.", "\u042d\u0442\u0430 \u043d\u0430\u0433\u0440\u0430\u0434\u0430 \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0430." } },
+ { "lives_full", new[] { "Lives full", "Vidas al m\u00e1ximo", "Vies au maximum", "Leben voll", "\u0416\u0438\u0437\u043d\u0438 \u043f\u043e\u043b\u043d\u044b" } },
+ { "full_note", new[] { "Return when you have room for lives. Check the expiry time.", "Vuelve cuando tengas espacio para vidas. Comprueba la caducidad.", "Revenez quand vous aurez de la place pour des vies. V\u00e9rifiez la date limite.", "Komm zur\u00fcck, wenn du Platz f\u00fcr Leben hast. Beachte die Ablaufzeit.", "\u0412\u0435\u0440\u043d\u0438\u0442\u0435\u0441\u044c, \u043a\u043e\u0433\u0434\u0430 \u043f\u043e\u044f\u0432\u0438\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e \u0434\u043b\u044f \u0436\u0438\u0437\u043d\u0435\u0439. \u0421\u043b\u0435\u0434\u0438\u0442\u0435 \u0437\u0430 \u0441\u0440\u043e\u043a\u043e\u043c \u043d\u0430\u0433\u0440\u0430\u0434\u044b." } },
+ { "no_mail", new[] { "No mail yet", "A\u00fan no hay correo", "Aucun courrier", "Noch keine Post", "\u041f\u043e\u043a\u0430 \u043d\u0435\u0442 \u043f\u0438\u0441\u0435\u043c" } },
+ { "empty_note", new[] { "Team messages and rewards will appear here.", "Aqu\u00ed aparecer\u00e1n los mensajes y premios del equipo.", "Les messages et r\u00e9compenses d\u2019\u00e9quipe appara\u00eetront ici.", "Hier erscheinen Teamnachrichten und Belohnungen.", "\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u043f\u0438\u0441\u044c\u043c\u0430 \u0438 \u043d\u0430\u0433\u0440\u0430\u0434\u044b \u043a\u043e\u043c\u0430\u043d\u0434\u044b." } },
+ { "offline_title", new[] { "You\u2019re offline", "Sin conexi\u00f3n", "Hors connexion", "Du bist offline", "\u041d\u0435\u0442 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f" } },
+ { "offline_note", new[] { "Saved mail is still available.", "Puedes leer el correo guardado.", "Le courrier enregistr\u00e9 reste accessible.", "Gespeicherte Post bleibt lesbar.", "\u0421\u043e\u0445\u0440\u0430\u043d\u0451\u043d\u043d\u044b\u0435 \u043f\u0438\u0441\u044c\u043c\u0430 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b." } },
+ { "connect_claim", new[] { "Connect to collect your reward.", "Con\u00e9ctate para recoger el premio.", "Connectez-vous pour r\u00e9cup\u00e9rer la r\u00e9compense.", "Verbinde dich, um die Belohnung abzuholen.", "\u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u0441\u044c, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043d\u0430\u0433\u0440\u0430\u0434\u0443." } },
+ { "reward_status_ready", new[] { "Reward available", "Premio disponible", "R\u00e9compense disponible", "Belohnung verf\u00fcgbar", "\u041d\u0430\u0433\u0440\u0430\u0434\u0430 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0430" } },
+ { "loading", new[] { "Loading mail\u2026", "Cargando correo\u2026", "Chargement du courrier\u2026", "Post wird geladen\u2026", "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u043f\u0438\u0441\u0435\u043c\u2026" } },
+ { "load_error", new[] { "Mail could not be loaded.", "No se pudo cargar el correo.", "Impossible de charger le courrier.", "Post konnte nicht geladen werden.", "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043f\u0438\u0441\u044c\u043c\u0430." } },
+ { "open_message", new[] { "Open message", "Abrir mensaje", "Ouvrir le message", "Nachricht \u00f6ffnen", "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u0438\u0441\u044c\u043c\u043e" } },
+ { "claim_pending_note", new[] { "Waiting for confirmation\u2026", "Esperando confirmaci\u00f3n\u2026", "En attente de confirmation\u2026", "Best\u00e4tigung wird erwartet\u2026", "\u041e\u0436\u0438\u0434\u0430\u0435\u043c \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u044f\u2026" } },
+ { "reward_details", new[] { "Reward details", "Detalles del premio", "D\u00e9tail de la r\u00e9compense", "Belohnungsdetails", "\u0421\u043e\u0441\u0442\u0430\u0432 \u043d\u0430\u0433\u0440\u0430\u0434\u044b" } },
+ { "mail_accessibility", new[] { "Team mail, {count} unread", "Correo del equipo, {count} sin leer", "Courrier d\u2019\u00e9quipe, {count} non lus", "Teampost, {count} ungelesen", "\u041f\u043e\u0447\u0442\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u044b, \u043d\u0435\u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043d\u044b\u0445: {count}" } },
+ { "sender", new[] { "From {name}", "De {name}", "De {name}", "Von {name}", "\u041e\u0442: {name}" } },
+ { "refresh", new[] { "Refresh", "Actualizar", "Actualiser", "Aktualisieren", "\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c" } },
+ { "expiry_short", new[] { "{time} left", "Quedan {time}", "Encore {time}", "Noch {time}", "\u041e\u0441\u0442\u0430\u043b\u043e\u0441\u044c: {time}" } },
+};
+public static string T(string key) { string[] value; int i=HeartOfTheRain.App.Localization.GameLocale.Current; return values.TryGetValue(key,out value)?value[Math.Max(0,Math.Min(4,i))]:key; }
+public static string Count(int n)=>T("new_count").Replace("{count}",n.ToString());
+} }

@@ -1,0 +1,97 @@
+﻿menu,source
+Heart of the Rain/App/M64/Open Main Settings Review,Assets/HeartOfTheRain/App/AppSettings/Editor/AppSettingsReview.cs
+Heart of the Rain/App/M64/Capture Actual Settings Game View,Assets/HeartOfTheRain/App/AppSettings/Editor/AppSettingsReview.cs
+Heart of the Rain/App/M64/Validate Main Settings Assets,Assets/HeartOfTheRain/App/AppSettings/Editor/AppSettingsReview.cs
+Heart of the Rain/App/M67 R3/Open Daria Celebration Review,Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs
+Heart of the Rain/App/M67 R3/Open Chapter 1 Finale Review,Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs
+Heart of the Rain/App/M67 R3/Validate Celebration Assets,Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs
+Heart of the Rain/App/M67 R3/Log Last Victory Frame Timing,Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs
+Heart of the Rain/App/M67 R3/Capture Actual Game View,Assets/HeartOfTheRain/App/Celebrations/Editor/CelebrationEditor.cs
+Heart of the Rain/App/M58/Open End Level Review,Assets/HeartOfTheRain/App/EndLevel/Editor/EndLevelReview.cs
+Heart of the Rain/App/M58/Open Confirmation in Play Mode,Assets/HeartOfTheRain/App/EndLevel/Editor/EndLevelReview.cs
+Heart of the Rain/App/M58/Validate End Level Assets,Assets/HeartOfTheRain/App/EndLevel/Editor/EndLevelReview.cs
+Heart of the Rain/App/M58/Capture Actual Confirmation Game View,Assets/HeartOfTheRain/App/EndLevel/Editor/EndLevelReview.cs
+Heart of the Rain/App/M65/Open First Start Review,Assets/HeartOfTheRain/App/FirstStart/Editor/FirstStartReview.cs
+Heart of the Rain/App/M65/Open First Run Entry,Assets/HeartOfTheRain/App/FirstStart/Editor/FirstStartReview.cs
+Heart of the Rain/App/M65/Validate First Start Assets,Assets/HeartOfTheRain/App/FirstStart/Editor/FirstStartReview.cs
+Heart of the Rain/App/M65/Capture Actual First Start Game View,Assets/HeartOfTheRain/App/FirstStart/Editor/FirstStartReview.cs
+Heart of the Rain/App/M55/Report Home Color Settings,Assets/HeartOfTheRain/App/Home/Editor/HomeArtImportPolicy.cs
+Heart of the Rain/App/M55/Open Home Review,Assets/HeartOfTheRain/App/Home/Editor/HomePageEditor.cs
+Heart of the Rain/App/M55/Refresh Home Asset Bindings,Assets/HeartOfTheRain/App/Home/Editor/HomePageEditor.cs
+Heart of the Rain/App/M60/Open Journey Review,Assets/HeartOfTheRain/App/Journey/Editor/JourneyReview.cs
+Heart of the Rain/App/M60/Preview Completed Chapter 1,Assets/HeartOfTheRain/App/Journey/Editor/JourneyReview.cs
+Heart of the Rain/App/M60/Use Current Home Progress,Assets/HeartOfTheRain/App/Journey/Editor/JourneyReview.cs
+Heart of the Rain/App/M60/Capture Actual Journey Game View,Assets/HeartOfTheRain/App/Journey/Editor/JourneyReview.cs
+Heart of the Rain/App/M60/Validate Journey Assets,Assets/HeartOfTheRain/App/Journey/Editor/JourneyReview.cs
+Heart of the Rain/App/M61/Open Leaderboard Review,Assets/HeartOfTheRain/App/Leaderboard/Editor/LeaderboardReview.cs
+Heart of the Rain/App/M61/Reset Sample Friends and Rankings,Assets/HeartOfTheRain/App/Leaderboard/Editor/LeaderboardReview.cs
+Heart of the Rain/App/M61/Capture Actual Leaderboard Game View,Assets/HeartOfTheRain/App/Leaderboard/Editor/LeaderboardReview.cs
+Heart of the Rain/App/M61/Validate Leaderboard Assets,Assets/HeartOfTheRain/App/Leaderboard/Editor/LeaderboardReview.cs
+Heart of the Rain/App/M66/Open Level Complete Review,Assets/HeartOfTheRain/App/LevelComplete/Editor/LevelCompleteEditor.cs
+Heart of the Rain/App/M66/Open Chapter 1 Finale Review,Assets/HeartOfTheRain/App/LevelComplete/Editor/LevelCompleteEditor.cs
+Heart of the Rain/App/M66/Validate Level Complete Assets,Assets/HeartOfTheRain/App/LevelComplete/Editor/LevelCompleteEditor.cs
+Heart of the Rain/App/M66/Capture Actual Level Complete Game View,Assets/HeartOfTheRain/App/LevelComplete/Editor/LevelCompleteEditor.cs
+Heart of the Rain/App/M56/Open Home to Pre-level Review,Assets/HeartOfTheRain/App/PreLevel/Editor/PreLevelReview.cs
+Heart of the Rain/App/M56/Validate Pre-level Artwork,Assets/HeartOfTheRain/App/PreLevel/Editor/PreLevelReview.cs
+Heart of the Rain/App/M56/Capture Actual Game View,Assets/HeartOfTheRain/App/PreLevel/Editor/PreLevelReview.cs
+Heart of the Rain/App/M59/Open Try Again Review,Assets/HeartOfTheRain/App/Retry/Editor/RetryReview.cs
+Heart of the Rain/App/M59/Open Exit Confirmation in Play Mode,Assets/HeartOfTheRain/App/Retry/Editor/RetryReview.cs
+Heart of the Rain/App/M59/Validate Retry Bindings,Assets/HeartOfTheRain/App/Retry/Editor/RetryReview.cs
+Heart of the Rain/App/M59/Capture Actual Try Again Game View,Assets/HeartOfTheRain/App/Retry/Editor/RetryReview.cs
+Heart of the Rain/App/M57/Open Settings Review,Assets/HeartOfTheRain/App/Settings/Editor/GameplaySettingsMenu.cs
+Heart of the Rain/App/M57/Open Settings in Play Mode,Assets/HeartOfTheRain/App/Settings/Editor/GameplaySettingsMenu.cs
+Heart of the Rain/App/M57/Validate Settings Assets,Assets/HeartOfTheRain/App/Settings/Editor/GameplaySettingsMenu.cs
+Heart of the Rain/App/M57/Capture Actual Settings Game View,Assets/HeartOfTheRain/App/Settings/Editor/GameplaySettingsMenu.cs
+Heart of the Rain/App/M63/Open Shop Review,Assets/HeartOfTheRain/App/Shop/Editor/ShopReview.cs
+Heart of the Rain/App/M63/Reset Shop Preview,Assets/HeartOfTheRain/App/Shop/Editor/ShopReview.cs
+Heart of the Rain/App/M63/Capture Actual Shop Game View,Assets/HeartOfTheRain/App/Shop/Editor/ShopReview.cs
+Heart of the Rain/App/M63/Validate Shop Assets,Assets/HeartOfTheRain/App/Shop/Editor/ShopReview.cs
+Heart of the Rain/App/M62/Open Teams Review,Assets/HeartOfTheRain/App/Teams/Editor/TeamsReview.cs
+Heart of the Rain/App/M62/Reset Sample Team Activity,Assets/HeartOfTheRain/App/Teams/Editor/TeamsReview.cs
+Heart of the Rain/App/M62/Capture Actual Teams Game View,Assets/HeartOfTheRain/App/Teams/Editor/TeamsReview.cs
+Heart of the Rain/App/M62/Validate Teams Assets,Assets/HeartOfTheRain/App/Teams/Editor/TeamsReview.cs
+Heart of the Rain/M04/Bake native sprite clips,Assets/HeartOfTheRain/Chapter01M04/Editor/RocketSpriteBaker.cs
+Heart of the Rain/M04/Open 2D asset demo,Assets/HeartOfTheRain/Chapter01M04/Editor/RocketSpriteBaker.cs
+Heart of the Rain/M05/Bake native sprite clips,Assets/HeartOfTheRain/Chapter01M05/Editor/BombSpriteBaker.cs
+Heart of the Rain/M05/Open 2D asset demo,Assets/HeartOfTheRain/Chapter01M05/Editor/BombSpriteBaker.cs
+Heart of the Rain/M32/Golden Seeker + Rocket,Assets/HeartOfTheRain/Chapter01M07/Editor/GoldenSeekerComboReview.cs
+Heart of the Rain/M32/Golden Seeker + Bomb,Assets/HeartOfTheRain/Chapter01M07/Editor/GoldenSeekerComboReview.cs
+Heart of the Rain/M32/Golden Seeker + Rain Seeker,Assets/HeartOfTheRain/Chapter01M07/Editor/GoldenSeekerComboReview.cs
+Heart of the Rain/M32/Golden Seeker + Rainbow Orb,Assets/HeartOfTheRain/Chapter01M07/Editor/GoldenSeekerComboReview.cs
+Heart of the Rain/M32/Validate Golden Seeker combinations,Assets/HeartOfTheRain/Chapter01M07/Editor/GoldenSeekerComboValidation.cs
+Heart of the Rain/M07/Bake native sprite clips,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M25/Open Rain Seeker review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M26/Open Rain Seeker + Rocket review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M27/Open Rain Seeker + Bomb review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M28/Open Double Rain Seeker review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M29/Open Orb + Rain Seeker review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M30/Open Golden Seeker review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M31/Open Double Orb Super design review,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/M07/Open 2D asset demo,Assets/HeartOfTheRain/Chapter01M07/Editor/ImpactReviewBaker.cs
+Heart of the Rain/Power-Ups/Open Playback Gallery,Assets/HeartOfTheRain/Chapter01M07/Editor/PowerUpsFinalReview.cs
+Heart of the Rain/Power-Ups/Validate Complete Package,Assets/HeartOfTheRain/Chapter01M07/Editor/PowerUpsFinalReview.cs
+Heart of the Rain/M07/Validate review plans against preview fixtures,Assets/HeartOfTheRain/Chapter01M07/Editor/ReviewPlanValidation.cs
+Heart of the Rain/M46/Mobile Textures/Apply ASTC 6x6 Overrides,Assets/HeartOfTheRain/M46/Editor/M46MobileTextures.cs
+Heart of the Rain/M46/Mobile Textures/Clear Mobile Overrides,Assets/HeartOfTheRain/M46/Editor/M46MobileTextures.cs
+Heart of the Rain/M46/Open Playable Review,Assets/HeartOfTheRain/M46/Editor/M46ReviewMenu.cs
+Heart of the Rain/M46/Rebuild Review Scene,Assets/HeartOfTheRain/M46/Editor/M46ReviewMenu.cs
+Heart of the Rain/M46/Validate Assets and Gameplay,Assets/HeartOfTheRain/M46/Editor/M46ReviewMenu.cs
+Heart of the Rain/M47/Open Chapter 1 Gameplay,Assets/HeartOfTheRain/M47/Editor/GameplayMenu.cs
+Heart of the Rain/M47/Validate UI and Chapter Assets,Assets/HeartOfTheRain/M47/Editor/GameplayMenu.cs
+Heart of the Rain/M47/Rebuild Gameplay Scene,Assets/HeartOfTheRain/M47/Editor/GameplayMenu.cs
+Heart of the Rain/M48/Recording/Record Replay/Level 21 - Storm Crystal,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Record Replay/Level 28 - Water Spirit Pod,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Record Replay/Level 36 - Rainlight Cabinet,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Record Replay/Level 49 - Late Challenge,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Record Replay/Level 50 - Chapter Finale,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Start MP4 with Audio,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Start MP4 and Staged Showcase,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Stop MP4,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/Recording/Stop Replay and MP4,Assets/HeartOfTheRain/M48/Editor/M48Recording.cs
+Heart of the Rain/M48/1 Open Review Scene,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/2 Configure Review Project,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/3 Validate Imported Assets,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/5 Open Local Playtest Reports,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/Build/Windows Review,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/Build/Android Review APK,Assets/HeartOfTheRain/M48/Editor/M48ReviewMenu.cs
+Heart of the Rain/M48/4 Guided Review Session,Assets/HeartOfTheRain/M48/Editor/M52ReviewSession.cs

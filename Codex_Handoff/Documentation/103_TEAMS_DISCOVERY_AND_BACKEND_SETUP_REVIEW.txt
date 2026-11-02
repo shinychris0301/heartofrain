@@ -1,0 +1,106 @@
+103 - Teams discovery and VK/backend configuration
+
+REVIEWED_WITH_OPEN_ACCEPTANCE_GATES: the source repair is verified in the pinned
+Unity Editor and the selected backend messaging tests. No APK, device operation,
+hosted service, real VK authorization or production activation is part of this
+checkpoint. The previously installed APK remains checkpoint 101; its current
+physical state has not been inspected in this checkpoint.
+
+CAUSE
+
+The ordinary local TeamsPage selected TeamsDemo.json, which already assigned
+the sample player to Rainkeepers. That preview had Chat, Info, Mail and Rankings
+but no Create or Join actions. The separate connected Teams implementation
+already contained real client requests and backend create/join services.
+An ordinary unconfigured local build never selected those services.
+
+REPAIR
+
+Ordinary local Teams now reuses the existing online page's unavailable state.
+It displays Create team and Join a team, with an explanation and muted,
+non-interactive buttons. It creates no social identity, sample membership,
+network command, wallet change or inferred connection. There is no ineffective
+retry button in this permanently unconfigured state. Existing sample content
+remains an explicit Editor/development review fixture.
+
+Connected nonmembers keep Create team and Join on available directory rows.
+Connected members keep Chat, Info, Rankings and Leave in Team Info. The server
+enforces one team per player, capacity and durable request idempotency. A leader
+with other members must transfer leadership before leaving.
+
+The feature needs a configured managed game account, app socialEnabled=true
+and backend HOTR_SOCIAL_ENABLED=1. A managed guest is sufficient; VK linking
+is optional. This change does not deploy or enable an online service.
+
+VERIFICATION
+
+Backend/Messaging01 passes all 18 tests, with zero failures/errors/skips. The
+tests use actual Python/FastAPI TestClient and disposable SQLite databases.
+They cover create/join/capacity/one-team rules, retries, permissions, moderation
+and deletion boundaries. All 101 backend inputs match the sealed 102 source
+and remain unchanged. This is not an Android, public-network or live-user test.
+The external Starlette/httpx deprecation remains recorded separately.
+
+Final TeamsMain02 passes 268 native checks across 15 layouts: five locales at
+320x568, 420x900 and 768x1024. Actual TeamsPage initialization/Home navigation,
+no fabricated session/write, managed-unready route priority, explicit demo
+opt-in and connected layout guards pass. Ordinary persistent Profiles and the
+exact language preference are preserved. Two final Russian offscreen UGUI
+captures (420x900 and 768x1024) were individually reviewed and accepted.
+
+RegionalMain01 passes 11,665 checks/80 cases; GeneralMain01 passes 535 checks.
+These are their own frozen source epochs. Only the new test capture helper was
+changed before TeamsMain02; runtime code remains identical. No general/regional
+rerun or fresh Social82 native HTTP integration is claimed. Connected snapshots
+are explicit UI fixtures; backend mutations are tested independently above.
+
+TeamsMain01 passed 254 behavioral assertions, but its two images were rejected
+because the capture switched canvas projection after background layout. Its
+old Editor-window bounds produced black capture gaps. The fixture was repaired
+using fixed WorldSpace geometry before production Reflow/Fill, with corner
+containment, all-edge painting and >99% framebuffer coverage checks. Initial
+results/images remain retained. Runtime PageBackdrop90 was not changed.
+
+Selected native logs contain zero C# warnings/errors. No new Android BuildReport
+or IL2CPP verification is implied; existing broader warning/performance/device
+acceptance remains separate. Editor shutdown allocator diagnostics and the
+external backend dependency deprecation are retained in the warning categories.
+
+VK/BACKEND SETUP ANSWER
+
+Release/RuStore/VK_BACKEND_AND_CALLBACK_CONFIGURATION.txt gives the exact
+current setup: issued numeric VK client ID, owned HTTPS API hostname, exact
+/v1/identity/vk/callback allow-list/backend agreement, staging environment,
+durable database, Windows worker requirements, runtime app configuration and
+real-provider/device acceptance. Placeholder values are not live configuration.
+The backend explicitly rejects production mode. No automatically delivered
+production endpoint/configuration is currently implemented. The existing
+installed 101 APK does not include checkpoint 102 VK registration code.
+
+CHANGED SCOPE AND REMAINING ACCEPTANCE
+
+Runtime changes are limited to Teams routing, unavailable-state presentation
+and five-language copy. Review-only sample opt-in and focused verification are
+additional code changes. Existing artwork, .meta GUIDs, engine, gameplay,
+economy, credentials and startup code must remain preserved.
+
+Runtime files:
+Unity/Assets/HeartOfTheRain/App/Teams/Runtime/TeamsPage.cs
+Unity/Assets/HeartOfTheRain/App/OnlineSocial/Runtime/OnlineTeamsPage82.cs
+Unity/Assets/HeartOfTheRain/App/OnlineSocial/Runtime/OnlineTeamsLayout82.cs
+Unity/Assets/HeartOfTheRain/App/OnlineSocial/Runtime/OnlineTeamsText82.cs
+
+Review code:
+Unity/Assets/HeartOfTheRain/Verification/PlayerRegressionSuite.cs
+Unity/Assets/HeartOfTheRain/Verification/Editor/TeamsDiscovery103Verification.cs
+The new verification script has its own stable .meta; existing .meta files are
+preserved. The sample player walkthrough now explicitly calls ResetDemo.
+
+Evidence entry: Verification/Evidence/Review103/Comparison.html
+Detailed native/host reports, source epochs and reviewed image bindings are
+linked there. Checkpoint102 reports and raw invocations remain unchanged.
+
+Live managed-service hosting/configuration, actual Android Create/Join with
+multiple players, real VK authorization and release/operational readiness are
+still required. Checkpoint 102's sealed reports remain historical evidence;
+they are not rerun or relabelled as checkpoint 103 device verification.

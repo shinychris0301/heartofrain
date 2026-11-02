@@ -1,0 +1,26 @@
+{
+  "scope": "visual revision; existing host social/ranking services remain authoritative",
+  "tabs": [
+    "Friends",
+    "Players",
+    "Teams"
+  ],
+  "ranking": "Use server rank, score, ties and pagination. Do not sort the visible window to invent global rank. Player metric follows current level-based product rule; team score uses server value.",
+  "top3": "Present only authoritative ranks1–3; fewer results leave unused slots absent. Rest of list begins at4 without duplication.",
+  "selfRow": "Pinned current-player rank in current scope, or not-ranked state. Teams tab pins current team only if member. No membership implied from demo values.",
+  "regions": "Explicit country selection; do not infer from language, device, account or IP. Draft selection commits only on Select. World data independent of region. No location permission.",
+  "friends": "Profile tap opens existing player profile; Add opens find-friends. Request becomes Sent only on confirmed backend result. More opens existing management flow; removal requires confirmation.",
+  "statesRequired": [
+    "loading",
+    "empty",
+    "offline",
+    "failure/retry",
+    "rank absent",
+    "country unset",
+    "request pending/confirmed/failed",
+    "remove confirm/pending/failed"
+  ],
+  "noBackend": "Preview values are fixtures. No real requests, removals, messages, rewards or rank changes.",
+  "navigation": "Preserve shared Home dock artwork/behavior. Friends/Players/Teams are page tabs, not new bottom-nav destinations.",
+  "motion": "180ms page opacity;140ms tab crossfade; no rank reordering animation during scroll; reduced motion opacity only."
+}

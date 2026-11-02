@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "targetFps": 60,
+  "modalOpenMs": 220,
+  "modalCloseMs": 160,
+  "claimFeedback": {
+    "trigger": "Only once after authoritative claim success",
+    "durationMs": 650,
+    "closedToOpenedCrossfadeMs": 180,
+    "checkFadeInMs": [
+      0,
+      180
+    ],
+    "rewardPositionsRemainFixed": true,
+    "starSprites": "TA_Stat_star, two small accents only",
+    "starTimingMs": [
+      140,
+      570
+    ],
+    "noUnverifiedBalanceAnimation": true
+  },
+  "reducedMotion": {
+    "durationMs": 120,
+    "transformAnimation": false,
+    "crossfadeOnly": true
+  },
+  "playback": "Reference MP4 is a rendered timing study using the exact exported assets, not evidence of a Unity runtime or backend."
+}

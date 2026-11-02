@@ -3,11 +3,12 @@ namespace HeartOfTheRain.M47 {
  [Serializable] public class FeedbackCue {public string id,haptic;public float time,gain=1;}
  public static class FeedbackPlan {
   public static List<FeedbackCue> Build(BoardStep s){
+   if(s.playbackTracks!=null){var combined=new List<FeedbackCue>();foreach(var track in s.playbackTracks)foreach(var cue in Build(track.step))combined.Add(new FeedbackCue{id=cue.id,haptic=cue.haptic,time=track.start+Math.Max(0,cue.time-track.leadIn),gain=cue.gain});foreach(var m in s.motion)foreach(float time in LocalCascadeContinuation.LandingContacts(m))if(!combined.Any(c=>c.id=="tile_land"&&Math.Abs(c.time-time)<.06f))combined.Add(new FeedbackCue{id="tile_land",time=time,gain=.5f});return combined.OrderBy(c=>c.time).ToList();}
    var list=new List<FeedbackCue>();var keys=new HashSet<string>();
    void Add(string id,float t,float gain=1,string haptic=null){t=Math.Max(0,Math.Min(s.duration,t));var key=id+"/"+(int)(t/.045f);if(keys.Add(key))list.Add(new FeedbackCue{id=id,time=t,gain=gain,haptic=haptic});}
    if(s.kind=="swap")Add("tile_swap",0,.75f);
    if(s.kind=="match")Add("tile_match",.08f,.8f);
-   if(s.kind=="gravity"&&s.motion.Count>0)Add("tile_land",Math.Max(0,s.duration-.1f),.65f);
+   if(s.kind=="gravity")foreach(var m in s.motion)foreach(float time in LocalCascadeContinuation.LandingContacts(m))Add("tile_land",time,.5f);
    if(s.kind=="deliver")Add("jar_collect",.7f,1,"success");
    if(s.kind=="grow")Add("foliage_clear",.18f,.4f);
    if(s.kind=="shuffle")Add("atlas_shuffle",0,.6f);

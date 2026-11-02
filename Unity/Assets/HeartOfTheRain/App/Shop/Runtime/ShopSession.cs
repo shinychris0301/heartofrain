@@ -50,6 +50,9 @@ namespace HeartOfTheRain.App.Shop
   public bool Open(string id)
   {if(Modal||!catalog.offers.Any(o=>o.id==id))return false;OpenOfferId=id;return true;}
   public void Close(){OpenOfferId="";}
-  public string Price(ShopOffer o){return o.available&&!string.IsNullOrWhiteSpace(o.priceLabel)?o.priceLabel:"Unavailable";}
+  // A preview price describes contents; it never enables checkout or delivery.
+  // Unavailable live products must still wait for an actual store quotation.
+  public bool HasDisplayPrice(ShopOffer o)=>o!=null&&(IsPreview||o.available)&&!string.IsNullOrWhiteSpace(o.priceLabel);
+  public string Price(ShopOffer o){return HasDisplayPrice(o)?o.priceLabel:"Unavailable";}
  }
 }

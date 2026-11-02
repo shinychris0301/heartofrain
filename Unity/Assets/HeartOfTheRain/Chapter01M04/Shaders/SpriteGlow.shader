@@ -13,7 +13,7 @@ Shader "HeartOfTheRain/M04/SpriteGlow"
         Cull Off ZWrite Off Blend SrcAlpha One
         Pass
         {
-            Tags { "LightMode"="SRPDefaultUnlit" }
+            // No LightMode tag: unlit in the built-in pipeline and SRP.
             CGPROGRAM
             #pragma vertex SpriteVert
             #pragma fragment frag

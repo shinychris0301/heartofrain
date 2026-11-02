@@ -1,0 +1,82 @@
+[
+  {
+    "id": "find_team",
+    "approvedSource": "Access_R4",
+    "review": "Review/ApprovedPages/find_team.png",
+    "route": "Teams > Find",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "create_team",
+    "approvedSource": "Access_R4",
+    "review": "Review/ApprovedPages/create_team.png",
+    "route": "Teams > Create",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "badge_picker",
+    "approvedSource": "Access_R4",
+    "review": "Review/ApprovedPages/badge_picker.png",
+    "route": "Create > Badge",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "team_join",
+    "approvedSource": "Access_R4",
+    "review": "Review/ApprovedPages/team_join.png",
+    "route": "Find > Details",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "team_member",
+    "approvedSource": "Access_R4",
+    "review": "Review/ApprovedPages/team_member.png",
+    "route": "Member > Team Info",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "chat_help",
+    "approvedSource": "Chat_Help_R1",
+    "review": "Review/ApprovedPages/chat_help.png",
+    "route": "Member > Chat",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "mail",
+    "approvedSource": "Mail_R1",
+    "review": "Review/ApprovedPages/mail.png",
+    "route": "Member > Mail",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "invite_friends",
+    "approvedSource": "Invites_R1",
+    "review": "Review/ApprovedPages/invite_friends.png",
+    "route": "Team Info > Invite > Friends",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "invite_share",
+    "approvedSource": "Invites_R1",
+    "review": "Review/ApprovedPages/invite_share.png",
+    "route": "Team Info > Invite > Share",
+    "proofType": "archived approved source-asset composition; not device capture",
+    "runtimeStatus": "host implementation requires verification"
+  },
+  {
+    "id": "leave_team",
+    "approvedSource": "new Leave_R1, awaiting review",
+    "review": "Review/01_confirm_RU.png",
+    "route": "Team Info > Leave team",
+    "proofType": "native source-asset composition",
+    "runtimeStatus": "design contract only; no controller"
+  }
+]

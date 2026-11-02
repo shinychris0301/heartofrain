@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "HeartOfTheRainProviderPreparation122",
+  "publicOrigin": "https://api.novamind-it.ru",
+  "currentDeployment": {
+    "mode": "staging",
+    "serviceName": "HOTRStaging",
+    "identityScope": "review-novamind-vps-1",
+    "dataDirectory": "C:\\ProgramData\\HeartOfTheRain\\staging-data",
+    "loopbackPort": 8751
+  },
+  "productionCandidate": {
+    "status": "NOT_A_RUNTIME_MANIFEST",
+    "activationSupported": false,
+    "runtimeImplementationPresent": true,
+    "requiresSeparateAuthority": true,
+    "dataDirectory": "C:\\ProgramData\\HeartOfTheRain\\production-authority",
+    "loopbackPort": 8752,
+    "note": "Preserve the existing staging database, scope and services. Do not initialize or copy it as a production wallet."
+  },
+  "serverCredentialReferences": {
+    "HOTR_RUSTORE_KEY_ID": "",
+    "HOTR_RUSTORE_PRIVATE_KEY_FILE": "",
+    "HOTR_RUSTORE_NOTIFICATION_KEY_FILE": ""
+  },
+  "notificationIngress": {
+    "sandboxPath": "/v1/commerce/notifications/rustore/sandbox",
+    "productionPath": "/v1/commerce/notifications/rustore/production",
+    "senderNetworksVerified": false,
+    "note": "Never trust loopback or client Forwarded headers as a RuStore sender. Current staging proxy cannot establish sender identity."
+  },
+  "monitoring": {
+    "publicOrigin": "https://api.novamind-it.ru",
+    "loopbackOrigin": "http://127.0.0.1:8751",
+    "expectedMode": "staging",
+    "checkEveryMinutes": 1,
+    "alertDestinationConfigured": false
+  }
+}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b81791ce0e4e229bc06e316053bb7a, type: 3}
+  m_Name: Assets
+  m_EditorClassIdentifier:
+  sprites:
+  - id: TC_Bubble_Incoming
+    sprite: {fileID: 21300000, guid: 4240e932411f5219a156521d17b84df9, type: 3}
+  - id: TC_Bubble_Outgoing
+    sprite: {fileID: 21300000, guid: 09a9986652455d1690a1b971e2b2eba9, type: 3}
+  - id: TC_Icon_ArrowDown
+    sprite: {fileID: 21300000, guid: 19b85278c9855b29b12ba574f19f79f7, type: 3}
+  - id: TC_Icon_Chat
+    sprite: {fileID: 21300000, guid: eda09140adc4555292d1238250b1e450, type: 3}
+  - id: TC_Icon_Clock
+    sprite: {fileID: 21300000, guid: 4d72fb91df28513cab4e5b73b3b4b80c, type: 3}
+  - id: TC_Icon_Mail
+    sprite: {fileID: 21300000, guid: fe86853995675253a8e0ca219f08865a, type: 3}
+  - id: TC_Icon_More
+    sprite: {fileID: 21300000, guid: 135189f4eac254459a24395800b04b0a, type: 3}
+  - id: TC_Icon_Refresh
+    sprite: {fileID: 21300000, guid: 75e50719097c5e7f98b38391af7ba25c, type: 3}
+  - id: TC_Icon_Send
+    sprite: {fileID: 21300000, guid: 96e7153eb53c5a998c845d3d144782a0, type: 3}
+  - id: TC_Notification_Disc
+    sprite: {fileID: 21300000, guid: 2d223b43c2f551f4a80b84afa54aa6dd, type: 3}

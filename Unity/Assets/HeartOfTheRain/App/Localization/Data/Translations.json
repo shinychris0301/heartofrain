@@ -7,6 +7,15 @@
     "ru"
   ],
   "entries": {
+    "No moves left": ["No moves left", "No quedan movimientos", "Plus de coups possibles", "Keine Züge mehr", "Ходов больше нет"],
+    "Refill {0}": ["Refill {0}", "Recargar {0}", "Recharger {0}", "Auffüllen {0}", "Пополнить {0}"],
+    "Next life in {0}": ["Next life in {0}", "Próxima vida en {0}", "Prochaine vie dans {0}", "Nächstes Leben in {0}", "Следующая жизнь через {0}"],
+    "Not enough coins": ["Not enough coins", "No hay suficientes monedas", "Pas assez de pièces", "Nicht genug Münzen", "Недостаточно монет"],
+    "Refill lives for {0} coins": ["Refill lives for {0} coins", "Recargar vidas por {0} monedas", "Recharger les vies pour {0} pièces", "Leben für {0} Münzen auffüllen", "Пополнить жизни за {0} монет"],
+    "Ram: choose a row": ["Ram: choose a row", "Ariete: elige una fila", "Bélier : choisissez une ligne", "Ramme: Wähle eine Reihe", "Таран: выберите ряд"],
+    "Axe: choose a column": ["Axe: choose a column", "Hacha: elige una columna", "Hache : choisissez une colonne", "Axt: Wähle eine Spalte", "Топор: выберите столбец"],
+    "Hammer: choose a tile": ["Hammer: choose a tile", "Martillo: elige una ficha", "Marteau : choisissez une tuile", "Hammer: Wähle einen Stein", "Молоток: выберите плитку"],
+    "Use during a level": ["Use during a level", "Úsalos durante un nivel", "À utiliser pendant un niveau", "Während eines Levels verwenden", "Используйте во время уровня"],
     "Settings": [
       "Settings",
       "Ajustes",
@@ -447,6 +456,20 @@
       "Quête",
       "Teamquest",
       "Задание"
+    ],
+    "Video": [
+      "Video",
+      "Vídeo",
+      "Vidéo",
+      "Video",
+      "Видео"
+    ],
+    "Later": [
+      "Later",
+      "Más tarde",
+      "Plus tard",
+      "Später",
+      "Позже"
     ],
     "Ready": [
       "Ready",

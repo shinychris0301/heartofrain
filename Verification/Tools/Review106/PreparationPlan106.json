@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "status": "BEFORE_CAPTURE_VERIFIED_AWAITING_FINAL_COMBINED_FREEZE",
+  "utc": "2026-10-28T16:33:08.988782Z",
+  "baseline105": {
+    "path": "Verification/Evidence/Review105/TCP/Flow02/MainSources_after.json",
+    "sha256": "9eee6c27ea56cca4105c29435b4a33ebbef65821a0518d8965e6ac72795c3304",
+    "bytes": 1057298
+  },
+  "baselineMain": {
+    "path": "Verification/Tools/Review106/BaselineMain106.json",
+    "sha256": "f432f9ced9a67330fcad2153cb1fd07be4b0e063a67dbcdb83dfd0adf03b92cb",
+    "bytes": 1079233
+  },
+  "baselineInputCount": 5482,
+  "currentInputsAtPreparation": 5482,
+  "currentEquals105AtPreparation": true,
+  "inventory": {
+    "path": "Verification/Tools/Review106/ProcessInventory106.json",
+    "sha256": "853582224444dc9bec624820b31085c11a9dfe1c59f86204f7e58acd2cc5a6d9",
+    "bytes": 4219
+  },
+  "nativeExecutionStarted": true,
+  "apkAdbOrEngineMigration": false,
+  "proposedNativeScope": [
+    "Actual goal sprites across every mapped goal type/count and all frame/count/bounce scale bounds.",
+    "Actual Home/shared dock icons selected/unselected, actions/animation peaks, alpha-centered containment.",
+    "Phone720x1600, narrow320x568, tablet768x1024/1536x2048 and injected safe insets; exact fixture canvas/camera before Render/Fill.",
+    "Same-geometry105 reconstructed before frames only if exact source formulas/art are retained and labels distinguish them from actual archived app/device.",
+    "Ordinary Profiles/language/settings/meta/art and gameplay semantics preserved."
+  ],
+  "suiteContracts": "Pending client goal and nav entry/report/env from their separate owners.",
+  "processBoundary": "PID4068 known exact Hub service is left alone; older83/82 Python helpers have no106 ownership and remain untouched. Fresh native calls use existing strict Editor-only process guard.",
+  "beforeInvocation": "Verification/Evidence/Review106/Native/BeforeMain01/Invocation.json",
+  "beforeRuntimeExactly105": true,
+  "approvedFinalEntries": [
+    {
+      "entry": "HeartOfTheRain.Verification.GoalOptics106Verification.Run",
+      "report": "Native/GoalOptics106.json",
+      "env": "HOTR_REVIEW106_OUT",
+      "expected": "PASS_NATIVE_GOAL_OPTICS106"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.Navigation106Verification.Run",
+      "report": "Navigation106.json",
+      "env": "HOTR_REVIEW106_OUT",
+      "expected": "PASS_NATIVE_NAVIGATION106"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.BaselineCapture106.Run",
+      "report": "Native/BaselineCapture106.json",
+      "env": "HOTR_REVIEW106_OUT",
+      "expected": "PASS_NATIVE_BASELINE_CAPTURE106",
+      "phase": "After"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.NativeVerification.Run",
+      "report": "Native_Checks.json",
+      "env": "HOTR_REVIEW93_OUT",
+      "expected": "PASS_NATIVE_EDITOR_CHECKS"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.PageBackdrop90Verification.Run",
+      "report": "Report.json",
+      "env": "HOTR_PAGE_BACKDROP90_OUT",
+      "expected": "PASS_NATIVE_PAGE_BACKDROP90"
+    }
+  ],
+  "captureFixtureSHA256": "e9329f43e1accf4e2a9e79647aa568b7ba63cced44ef2ac2020fb22448ab4a86",
+  "runnerSHA256": "abc78427b33e2e01ba8d7f156af3c7e5ff5b9e3614372b06ca8c521b1ad299f5",
+  "limitation": "Editor/source-controlled rendered fixtures only; syntheticHomeLevel18/events andHUD-onlyemptycenter are intentional. No game attempt, physical phone, APK, backend or performance certification.",
+  "finalNativeExecutionStarted": false,
+  "baselineFixtureLimitations": {
+    "actualEditorScreen": [
+      720,
+      1600
+    ],
+    "homeState": "Default syntheticLevel18/event values,1250coins; no ordinary profile factory.",
+    "hud": "HUD-only transparent framebuffer; no board/background or gameplay attempt.",
+    "alpha": "Actual isolated imported-image GPU bounds above24/255; same camera and source fixture before/after.",
+    "device": false
+  }
+}

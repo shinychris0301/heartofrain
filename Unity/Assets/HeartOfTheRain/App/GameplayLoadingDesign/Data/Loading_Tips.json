@@ -1,0 +1,143 @@
+{
+  "revision": "R2",
+  "diagramReference": [
+    360,
+    240
+  ],
+  "coordinateOrigin": "top-left",
+  "header": "live localized power-up name",
+  "selection": {
+    "eligible": "current power-up unlock state and existing hint preference",
+    "choose": "once per accepted new level start; avoid immediately repeating where another tip is eligible",
+    "retry": "keep the same tip",
+    "duringLoading": "never rotate",
+    "empty": "hide title and diagram; retain Loading dots"
+  },
+  "tips": [
+    {
+      "id": "rain",
+      "powerKind": 11,
+      "titleKey": "rain",
+      "altKey": "rainAlt",
+      "action": "one remote target hit; abbreviated, not the full source-cross behavior",
+      "hero": {
+        "asset": "Rain_Seeker_Original.png",
+        "rect": [
+          4,
+          64,
+          146,
+          146
+        ]
+      },
+      "grid": [
+        "water",
+        "leaf",
+        "heart",
+        "rune",
+        "water",
+        "leaf",
+        "heart",
+        "leaf",
+        "water"
+      ],
+      "highlightIndices": [
+        3
+      ],
+      "arrow": {
+        "asset": "LT_Flight_Arrow.png",
+        "rect": [
+          132,
+          96,
+          72,
+          29
+        ]
+      }
+    },
+    {
+      "id": "orb",
+      "powerKind": 7,
+      "titleKey": "orb",
+      "altKey": "orbAlt",
+      "action": "all matching-purple example tiles selected",
+      "hero": {
+        "asset": "Rainbow_Orb_Original.png",
+        "rect": [
+          4,
+          64,
+          146,
+          146
+        ]
+      },
+      "grid": [
+        "rune",
+        "water",
+        "heart",
+        "leaf",
+        "rune",
+        "water",
+        "heart",
+        "leaf",
+        "rune"
+      ],
+      "highlightIndices": [
+        0,
+        4,
+        8
+      ],
+      "links": {
+        "asset": "LT_Orb_Links.png",
+        "rect": [
+          0,
+          0,
+          360,
+          240
+        ]
+      }
+    }
+  ],
+  "grid": {
+    "origin": [
+      198,
+      56
+    ],
+    "columns": 3,
+    "rows": 3,
+    "pitch": 49,
+    "cellSize": [
+      46,
+      46
+    ],
+    "cellAsset": "LT_Tip_Cell.png",
+    "tileInset": [
+      3,
+      3
+    ],
+    "tileSize": [
+      40,
+      40
+    ],
+    "highlightOffset": [
+      -2,
+      -2
+    ],
+    "highlightSize": [
+      50,
+      50
+    ],
+    "highlightAsset": "LT_Target.png"
+  },
+  "tileAssets": {
+    "water": "TILE_Water_Drop_V2.png",
+    "leaf": "TILE_Leaf_V2.png",
+    "rune": "TILE_Stone_Rune_V2.png",
+    "heart": "TILE_Ribbon_V2.png"
+  },
+  "drawOrder": [
+    "hero",
+    "cells_and_tiles",
+    "arrow_or_links",
+    "target_highlights"
+  ],
+  "mechanicsChanges": false,
+  "creationRecipesDepicted": false
+}

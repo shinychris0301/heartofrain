@@ -1,0 +1,74 @@
+{
+  "revision": "R3",
+  "scope": "Browser prototype; not Unity",
+  "cases": 735,
+  "passed": 735,
+  "failed": [],
+  "flows": [
+    {
+      "name": "Notification precedes continue",
+      "passed": true
+    },
+    {
+      "name": "Notification advances to modal",
+      "passed": true
+    },
+    {
+      "name": "700 coins: Play On opens shop in the same click, with no move purchase",
+      "passed": true
+    },
+    {
+      "name": "Shop close restores offer without life loss",
+      "passed": true
+    },
+    {
+      "name": "Price opens simulated native checkout",
+      "passed": true
+    },
+    {
+      "name": "Verified coin purchase returns to offer without auto-spending",
+      "passed": true
+    },
+    {
+      "name": "Explicit Play On after top-up resumes same attempt",
+      "passed": true
+    },
+    {
+      "name": "Enough coins / rapid repeat taps: one debit and same board",
+      "passed": true
+    },
+    {
+      "name": "Canceled store purchase preserves wallet and life",
+      "passed": true
+    },
+    {
+      "name": "Store error adds no coins",
+      "passed": true
+    },
+    {
+      "name": "Unknown move purchase remains locked for reconciliation",
+      "passed": true
+    },
+    {
+      "name": "Check status does not charge twice",
+      "passed": true
+    },
+    {
+      "name": "Updated quote requires another explicit tap",
+      "passed": true
+    },
+    {
+      "name": "Cancel exit returns to Continue",
+      "passed": true
+    },
+    {
+      "name": "Confirmed exit settles one life once",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion uses a static notification",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

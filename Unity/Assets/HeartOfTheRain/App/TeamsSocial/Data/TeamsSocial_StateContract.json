@@ -1,0 +1,75 @@
+{
+  "revision": "TeamsSocial_R1",
+  "authority": "server owns membership, request status, donation eligibility, cooldown and balances; no success is fabricated locally",
+  "sampleValues": {
+    "requestCapacity": 5,
+    "requestCooldownSeconds": 14400,
+    "messageGraphemeLimit": 250,
+    "nature": "review fixtures only; bind to existing configuration"
+  },
+  "proposedEconomy": {
+    "helpSpendsDonorLives": false,
+    "donationReward": "not introduced by this design",
+    "recipientOverflow": "retain unclaimed entitlement; never discard rewards or silently exceed caps",
+    "approvalScope": "UI behavior proposal; actual balance/storage policy must match the host server"
+  },
+  "requestAction": {
+    "eligible": "show green Request lives",
+    "submitting": "disable repeat action; show Requesting; keep button geometry",
+    "success": "create own request card from returned requestId and expiresAt; start cooldown from server time",
+    "failure": "restore action and show localized error; do not consume cooldown locally",
+    "cooldown": "show server-derived countdown; refresh on resume/reconnect; do not reset from device time",
+    "existingOpenRequest": "scroll to own request instead of posting duplicate",
+    "notMember": "return to Teams access after confirmed membership loss"
+  },
+  "donationAction": {
+    "eligible": "show Help on another member request",
+    "submitting": "disable that request action only",
+    "success": "replace button with check and Sent; update received count from response; play short heart transfer",
+    "failure": "show error and Retry; do not increment request or debit/give balance",
+    "duplicate": "server enforces unique donor per request; repeated response is idempotent",
+    "selfRequest": "never show Help",
+    "fullOrExpired": "refresh card and show complete/ended state; no optimistic grant",
+    "concurrentLastSlot": "server resolves eligibility; refresh count after conflict"
+  },
+  "receiving": {
+    "partial": "show server-confirmed received/required; no Collect until server marks claimable",
+    "ready": "five filled hearts in example, green Collect",
+    "collecting": "disable repeat action; keep pending UI while server transaction completes",
+    "success": "atomically credit granted amount and mark request claimed; show Collected; update existing lives/bank widget",
+    "failure": "keep entitlement ready; show retry; do not play successful credit animation",
+    "fullLives": "show Lives full / Collect later; preserve entitlement until capacity is available or approved bank accepts it",
+    "partialCapacity": "claim at most allowed amount or bank remainder using server policy; never mark entire request claimed if entitlement remains"
+  },
+  "messages": {
+    "fetch": "cursor-based history; show older-load spinner in feed; preserve scroll anchor",
+    "send": "use client-generated operation id; pending bubble until acknowledged; no duplicate on retry",
+    "failed": "keep draft or failed bubble with explicit Retry",
+    "newWhileAtBottom": "append and maintain bottom anchor",
+    "newWhileReadingHistory": "show New messages pill; do not jump scroll",
+    "timestamps": "format in user locale from authoritative UTC timestamps",
+    "systemEvents": "deduplicate by eventId; use localized templates and safe plain text",
+    "report": "use existing message moderation/report flow; long-press or overflow action; not sent automatically"
+  },
+  "offline": "keep cached history visible, show connection strip, disable request/help/collect; preserve unsent draft. Revalidate when connected.",
+  "empty": "team badge, story-aligned welcoming copy, enabled Message action if connected",
+  "loading": "keep header/navigation stable; content loading state only",
+  "mail": "existing destination only; unread count is authoritative; no new reward inbox backend in this package",
+  "serverIntegrationNotes": [
+    "Reuse existing authentication and team services.",
+    "Reject requests from removed members.",
+    "Do not trust client-provided balances or cooldown timestamps.",
+    "Bind all operations to stable request/message/operation IDs.",
+    "On app restart, recover unacknowledged operations from server state before retry."
+  ],
+  "validationScenarios": [
+    "request success/failure/cooldown/resume",
+    "help success/duplicate/self/full/expired/offline",
+    "simultaneous donations to last slot",
+    "claim success/retry/full lives/partial capacity/relaunch",
+    "empty/long/emoji/localized messages",
+    "new messages while scrolled up",
+    "keyboard and safe areas",
+    "membership removed during chat"
+  ]
+}

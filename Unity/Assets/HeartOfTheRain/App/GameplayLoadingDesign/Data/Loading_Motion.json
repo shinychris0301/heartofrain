@@ -1,0 +1,32 @@
+{
+  "revision": "R2",
+  "onlyAnimatedElement": "three loading dots",
+  "dots": {
+    "durationSeconds": 1.2,
+    "delaysSeconds": [
+      0,
+      0.16,
+      0.32
+    ],
+    "alpha": {
+      "0": 0.3,
+      "28%": 1,
+      "48%": 1,
+      "75%": 0.3,
+      "100%": 0.3
+    },
+    "movement": "none",
+    "clock": "unscaled time",
+    "accessible": "decorative; aria-hidden; announce status label only"
+  },
+  "reducedMotion": {
+    "dotsAlpha": 1,
+    "exitFadeSeconds": 0
+  },
+  "exitFadeSeconds": 0.16,
+  "minimumDwellSeconds": 0,
+  "demoLoadSeconds": 3,
+  "demoMustNotShip": true,
+  "tipChangeDuringLoad": false,
+  "powerupCreation": "hold gameplay birth clocks until the first visible gameplay frame"
+}

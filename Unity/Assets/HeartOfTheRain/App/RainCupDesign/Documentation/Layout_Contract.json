@@ -1,0 +1,603 @@
+{
+  "revision": "Rain Cup R1",
+  "scope": "Assets and design contract; no native scene, prefab or production event service.",
+  "referenceLogicalViewport": [
+    393,
+    852
+  ],
+  "canvas": {
+    "referenceLogicalViewport": [
+      393,
+      852
+    ],
+    "referencePixelsPerUnit": 100,
+    "scaleMode": "Use existing responsive app UI scale service; evaluate viewport after scaling. Do not introduce a width-only phone canvas for all devices.",
+    "safeArea": "Use existing safe-area adapter in logical coordinates.",
+    "parityFixtures": [
+      {
+        "physicalPixels": [
+          1179,
+          2556
+        ],
+        "scale": 3,
+        "logicalViewport": [
+          393,
+          852
+        ]
+      },
+      {
+        "physicalPixels": [
+          1536,
+          2048
+        ],
+        "scale": 2,
+        "logicalViewport": [
+          768,
+          1024
+        ]
+      },
+      {
+        "physicalPixels": [
+          2532,
+          1170
+        ],
+        "scale": 3,
+        "logicalViewport": [
+          844,
+          390
+        ]
+      }
+    ],
+    "nativeIntegration": "Choose CanvasScaler or existing root configuration to produce the intended logical viewport without changing unrelated page canvases."
+  },
+  "modal": {
+    "maxPortraitWidth": 440,
+    "sideMargin": 12,
+    "innerSidePadding": 20,
+    "bottomPadding": 18,
+    "topClearanceAfterSafeArea": 44,
+    "bottomClearanceAfterSafeArea": 14,
+    "headerHeight": 67,
+    "titleSize": 30,
+    "titleColor": "#FFF4D7",
+    "bodyTextColor": "#163A61",
+    "backdropColor": "#071228",
+    "backdropAlpha": 0.439,
+    "reviewBackdropBlurPx": 7,
+    "scrollMask": "Body viewport only; leave title chrome and Close outside mask."
+  },
+  "close": {
+    "top": -32,
+    "right": -14,
+    "touchSize": [
+      46,
+      46
+    ],
+    "visibleSize": [
+      50.6,
+      50.6
+    ]
+  },
+  "body": {
+    "flow": [
+      "Practice label",
+      "Trophy and score / status",
+      "Standings / Rewards tabs",
+      "Ranked list"
+    ],
+    "verticalScroll": "Header and footer stay fixed. Five rows fit default portrait; smaller and longer localized layouts scroll. Preserve scroll position on rebind, reset it when switching tabs.",
+    "practiceFontSize": 11,
+    "hero": {
+      "columns": [
+        0.43,
+        0.57
+      ],
+      "minHeight": 111,
+      "artHeight": 101,
+      "paddingTRBL": [
+        5,
+        12,
+        5,
+        4
+      ],
+      "bottomGap": 12,
+      "scoreFontSize": 36,
+      "labelFontSize": 12,
+      "noteFontSize": 11,
+      "progressTrackHeight": 16,
+      "progressInnerPadding": 3
+    },
+    "tabs": {
+      "trackMinHeight": 44,
+      "selectedMinHeight": 38,
+      "outerPadding": 3,
+      "gap": 3,
+      "fontSize": 15,
+      "minimumFittedFont": 11.5,
+      "activeArt": "RC_Tab_Active.png",
+      "trackArt": "RC_Tabs_Track.png",
+      "sliceBordersLBRT": [
+        96,
+        80,
+        96,
+        80
+      ],
+      "sliceMultiplier": 8,
+      "centerHeightInSourcePixels": 32
+    },
+    "list": {
+      "rowMinHeight": 56,
+      "rowGap": 5,
+      "columnGap": 8,
+      "paddingTRBL": [
+        6,
+        12,
+        8,
+        12
+      ],
+      "rankingColumns": [
+        35,
+        42,
+        "flex",
+        48
+      ],
+      "rewardColumns": [
+        35,
+        "flex"
+      ],
+      "badgeSize": [
+        35,
+        42
+      ],
+      "plainBadgeSize": [
+        35,
+        35
+      ],
+      "avatarSize": [
+        42,
+        42
+      ],
+      "nameFontSize": 15,
+      "scoreFontSize": 22,
+      "quantityFontSize": 18,
+      "rewardIconSize": [
+        34,
+        34
+      ],
+      "rocketIconSize": [
+        39,
+        34
+      ],
+      "hammerIconSize": [
+        35,
+        35
+      ],
+      "rewardItemGap": 12,
+      "rewardTextGap": 3,
+      "nameOverflow": "Ellipsis; full player name available to accessibility layer."
+    },
+    "avatar": {
+      "separateFrameAndPortrait": true,
+      "useActualUserAvatar": true,
+      "demoPortraitUnityIncluded": false,
+      "maskArt": "RC_Avatar_Mask.png",
+      "frameArt": "RC_Avatar_Frame.png",
+      "maskCircleSourceUnits": {
+        "canvas": [
+          128,
+          128
+        ],
+        "center": [
+          64,
+          63
+        ],
+        "radius": 52
+      },
+      "fullFrameMaskAndFrameRect": "Both use the 42 x 42 full frame; portrait child fills circle bounds at left=9.375%, top=8.59375%, width=81.25%, height=81.25%, center cropped."
+    }
+  },
+  "footer": {
+    "topPadding": 11,
+    "horizontalPadding": 3,
+    "buttonMinHeight": 58,
+    "fontSize": 25,
+    "minimumFittedFont": 18,
+    "textPaddingTRBL": [
+      12,
+      15,
+      12,
+      15
+    ],
+    "primarySliceMultiplier": 8.57,
+    "noteFontSize": 10,
+    "noteTopGap": 8,
+    "noteMinHeight": 13
+  },
+  "breakpoints": {
+    "widthMax345": {
+      "sidePadding": 17,
+      "titleSize": 27,
+      "longTitleSize": 22,
+      "heroHeight": 111,
+      "heroArtHeight": 101,
+      "heroTitleSize": 18,
+      "scoreSize": 31,
+      "tabsFontSize": 13,
+      "rowMinHeight": 57,
+      "rowGap": 5,
+      "columnGap": 6,
+      "rowHorizontalPadding": 9,
+      "badgeSize": [
+        30,
+        36
+      ],
+      "plainBadgeSize": [
+        30,
+        30
+      ],
+      "avatarSize": [
+        37,
+        37
+      ],
+      "rankingColumns": [
+        30,
+        37,
+        "flex",
+        42
+      ],
+      "nameSize": 13,
+      "scoreSizeInRow": 20,
+      "rewardBox": [
+        29,
+        29
+      ],
+      "rocketBox": [
+        33,
+        29
+      ],
+      "hammerBox": [
+        30,
+        30
+      ],
+      "rewardItemGap": 8,
+      "quantitySize": 16,
+      "buttonSize": 23,
+      "footerNoteSize": 9
+    },
+    "heightMax650": {
+      "heroMinHeight": 102,
+      "trophyHeight": 92,
+      "heroBottomGap": 10,
+      "footerTopPadding": 9,
+      "modalBottomPadding": 17
+    },
+    "widthMin650AndHeightMax550": {
+      "maxModalWidth": 720,
+      "columns": [
+        0.4,
+        0.6
+      ],
+      "columnGap": 18,
+      "leftColumnSticky": true,
+      "heroMinHeight": 116,
+      "trophyHeight": 98,
+      "rowMinHeight": 57,
+      "footerMaxWidth": 365,
+      "buttonMinHeight": 50,
+      "buttonFontSize": 22
+    }
+  },
+  "localization": {
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ru"
+    ],
+    "japanese": false,
+    "titleLongerThan14": "Use 24px title at normal widths and 22px at <=345, allow two lines.",
+    "fitButtons": "Recalculate on locale, safe-area and resolution changes; never use stale fitted sizes; do not scale rasterized text.",
+    "fonts": "Use provided AccountTitle and AccountBody as TMP source fonts; generate target glyph coverage and verify actual TMP material/atlas in Unity."
+  },
+  "components": {
+    "AccountChrome.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        186,
+        170,
+        186,
+        288
+      ],
+      "pixelsPerUnitMultiplier": 3.891,
+      "preserveAspect": false
+    },
+    "Close.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "DG_Card_Bonus.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Collected.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Today.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Upcoming.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Hero_Well.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Star.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Home_Background.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Primary.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        300,
+        240,
+        300,
+        240
+      ],
+      "pixelsPerUnitMultiplier": 8.57,
+      "preserveAspect": false
+    },
+    "RC_Avatar_Frame.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Avatar_Mask.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Rank_Bronze.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Rank_Gold.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Rank_Silver.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Rival_Emblem.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "RC_Tab_Active.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        96,
+        80,
+        96,
+        80
+      ],
+      "pixelsPerUnitMultiplier": 8,
+      "preserveAspect": false
+    },
+    "RC_Tabs_Track.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        96,
+        80,
+        96,
+        80
+      ],
+      "pixelsPerUnitMultiplier": 8,
+      "preserveAspect": false
+    },
+    "RC_Trophy.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Bomb.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Coin.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Hammer.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Rocket.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Selection_Check.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "WW_Lock.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "WW_Progress_Fill.png": {
+      "imageType": "Simple",
+      "spriteBorderLBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": false,
+      "usage": "Stretch inside the inset track to progress fraction; sprite borders are ignored on this Rain Cup component."
+    },
+    "WW_Progress_Track.png": {
+      "imageType": "Sliced",
+      "spriteBorderLBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "pixelsPerUnitMultiplier": 8,
+      "preserveAspect": false
+    }
+  }
+}

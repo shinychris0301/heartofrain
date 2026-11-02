@@ -1,0 +1,89 @@
+M68 CELEBRATION — CODE INTEGRATION CONTRACT
+
+ROOT
+Assets/HeartOfTheRain/M68Celebration/
+All artwork is finalized for this revision. Do not reposition separate arms
+over a torso, recolor the olive coat, or add the old cutout rig on top.
+Replace the old character presentation when integrating this clip. Keep the
+existing completion/reward/save logic and chapter boundary logic.
+
+PLAYBACK AND LAYOUT
+- Duration 3.5 seconds, non-looping; 210 samples at 60 fps.
+- Use elapsed, unscaled time rather than advancing one frame per Update.
+  Sample min(209, floor(t * 60)); finish at t >= 3.5. A dropped display frame
+  should skip to the current sample, not make the animation play slowly.
+- Preserve square aspect. In safe-area coordinates use a square of side
+  min(safeWidth * 1.06, safeHeight * 0.84), centered at (0.5, 0.49) measured
+  from the top-left. Equivalently y=0.51 in bottom-left coordinates.
+- The transparent canvas already includes framing and motion padding.
+- Put a full-screen black scrim behind all celebration visuals. Its alpha
+  is in Effects_Timeline.json, including entry/exit fades; maximum 0.96.
+  The scrim covers screen edges and safe-area insets as well as the board.
+- Play Celebration_Win.wav once at t=0.18, gain 0.60, respecting SFX settings.
+  Do not play the old victory cue simultaneously.
+- There is no modal, title panel or button baked into the art. Allow tap-to-skip
+  after 0.65 seconds if the existing UX requires it; fade out rather than cut.
+- Do not grant rewards again on replay, skip or resume. Resume/suspend handling
+  and completion callback are runtime responsibilities.
+
+BAKED ATLAS OPTION
+- Read Data/Dariya_Celebration.json. Page indices and rectangles are explicit.
+- Each page is 3104 x 3104 with 4px gutters; each frame is 768 x 768.
+- rect_top_left uses PNG coordinates. rect_unity_bottom_left is the equivalent
+  bottom-left rectangle; do not invert twice. Pivot is (0.5,0.5).
+- PNGs contain straight alpha, sRGB color, all character/effect opacity fades.
+  Do not multiply by the character opacity a second time.
+- Textures: max size 4096, no resizing, clamp, bilinear, no mipmaps, Read/Write
+  off, alpha transparency enabled. Included metadata uses uncompressed review
+  quality, with the same TextureImporter convention as the existing project.
+- The textures are Texture2D assets plus explicit rectangles, not auto-sliced
+  Sprite subassets or a ready-made Animator controller. Codex may create Sprite
+  subassets or use the existing atlas renderer from the declared rectangles.
+- All 14 uncompressed RGBA pages occupy about 515 MiB before overhead. This is
+  reference/export quality, not a mobile residency target. Do not keep them all
+  resident by default. Prefer the mesh data for production, or validate texture
+  compression and page loading on target devices. No mobile benchmark is claimed.
+
+MESH OPTION — SAME AUTHORED CHARACTER MOTION, SMALLER TEXTURE SET
+- Mesh/Dariya_Mesh_Clip.json defines every binary layout and file reference.
+- 5,070 vertices, 6,448 triangles, 210 position samples, little-endian data.
+- Positions: float32 [frame][vertex][xy], normalized square, x right / y up.
+  Subtract (0.5,0.5), multiply by the square size, then place at its center.
+  Position file has 8,517,600 bytes. Linear interpolation between adjacent
+  samples is allowed; never recalculate different arm pivots in runtime code.
+- UVs: float32 [vertex][uv], bottom-left origin; texel centers are included.
+- Indices: int32 [triangle][3], clockwise in XY. Verify culling/material setup.
+- Base texture is Art/Dariya_Master.png. Blink texture is the matched
+  Mesh/Dariya_Blink_Texture.png, which changes only the eye regions.
+- Blend base and blink texture RGBA with the sampled blink weight, then apply
+  the sampled opacity to alpha. Preserve the original texture colors, use
+  transparent unlit rendering, and do not apply scene lighting or tinting.
+- Effects_Timeline.json provides per-frame halo center, normalized size,
+  angle in degrees, opacity and particle positions/sizes/angles/opacities.
+  Effect coordinates use TOP-LEFT origin. Convert y to 1-y for Unity XY.
+  Positive image angles are counterclockwise as viewed on screen.
+- Effects_Design.json supplies particle ids, star flags and confetti colors.
+  Star particles use Art/Celebration_Star.png; other particles are small solid
+  rectangles. height_ratio sets each rectangle's flutter. All effects render
+  behind the character, in order: halo, stars/confetti, character.
+- The mesh data is portable asset data, not a bundled Unity runtime component.
+  Validate visual agreement with the baked clip once the player is integrated.
+
+REDUCED MOTION
+Use Art/Dariya_Reduced_Motion.png as a static square sprite: fade in 0.18s,
+hold 1.5s, fade out 0.20s. Use the same black scrim. Omit particles and movement.
+
+CHAPTER USE
+For a chapter cinematic, reuse the mesh character samples 12 through 188 and
+hold sample 188 with opacity 1. Do not loop the level clip or fade the character
+out while dialogue continues. Keep the established chapter-specific well/story
+sequence. The packed level clip already includes its gold effects, so use the
+mesh or re-render character-only frames for different chapter compositions.
+
+CHECK AFTER INTEGRATION
+Compare times 0.20, 0.65, 1.15, 1.55, 1.88 and 2.75 with the review sheet.
+Check sleeves, fingers, curls, eye blink, color, black scrim and overall scale.
+Confirm no legacy rig remains visible; test portrait/tablet/landscape safe areas,
+SFX mute, reduced motion, skip, pause/resume and a single completion callback.
+Measure memory and frame time on actual target devices. No Unity Editor or
+device run was available for this art-only delivery.

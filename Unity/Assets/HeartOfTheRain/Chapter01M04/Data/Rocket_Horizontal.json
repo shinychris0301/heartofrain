@@ -3,8 +3,8 @@
   "direction": "Horizontal",
   "atlasWidth": 2048,
   "atlasHeight": 2048,
-  "frameSize": 256,
-  "pixelsPerUnit": 170.66666666666666,
+  "frameSize": 384,
+  "pixelsPerUnit": 256.0,
   "frameCanvasCells": 1.5,
   "pivot": [
     0.5,
@@ -21,14 +21,15 @@
     {
       "name": "Idle",
       "start": 0,
-      "count": 1,
+      "count": 48,
       "fps": 30,
       "loop": true,
-      "durationSeconds": 0.03333333333333333
+      "durationSeconds": 1.6,
+      "endBehavior": "hold"
     },
     {
       "name": "Create",
-      "start": 1,
+      "start": 48,
       "count": 18,
       "fps": 30,
       "loop": false,
@@ -36,7 +37,7 @@
     },
     {
       "name": "Charge",
-      "start": 19,
+      "start": 66,
       "count": 12,
       "fps": 30,
       "loop": false,
@@ -44,7 +45,7 @@
     },
     {
       "name": "DepthTurn",
-      "start": 31,
+      "start": 78,
       "count": 24,
       "fps": 30,
       "loop": false,
@@ -52,7 +53,7 @@
     },
     {
       "name": "Flight",
-      "start": 55,
+      "start": 102,
       "count": 8,
       "fps": 30,
       "loop": true,
@@ -62,570 +63,995 @@
   "frames": [
     {
       "name": "Horizontal_Idle_000",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_000.png",
+      "x": 456,
+      "y": 1024,
+      "topLeftY": 860,
+      "width": 228,
+      "height": 164
+    },
+    {
+      "name": "Horizontal_Idle_001",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_001.png",
+      "x": 228,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_002",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_002.png",
       "x": 0,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_003",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_003.png",
+      "x": 1160,
+      "y": 1700,
+      "topLeftY": 176,
+      "width": 232,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_004",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_004.png",
+      "x": 1392,
+      "y": 1700,
+      "topLeftY": 176,
+      "width": 232,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_005",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_005.png",
+      "x": 1160,
+      "y": 1872,
       "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Idle_000.png"
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_006",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_006.png",
+      "x": 1392,
+      "y": 1872,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_007",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_007.png",
+      "x": 1624,
+      "y": 1872,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_008",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_008.png",
+      "x": 0,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_009",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_009.png",
+      "x": 232,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_010",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_010.png",
+      "x": 464,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_011",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_011.png",
+      "x": 696,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_012",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_012.png",
+      "x": 928,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_013",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_013.png",
+      "x": 696,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_014",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_014.png",
+      "x": 464,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_015",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_015.png",
+      "x": 232,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_016",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_016.png",
+      "x": 0,
+      "y": 1868,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 180
+    },
+    {
+      "name": "Horizontal_Idle_017",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_017.png",
+      "x": 1624,
+      "y": 1872,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_018",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_018.png",
+      "x": 1392,
+      "y": 1872,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_019",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_019.png",
+      "x": 1160,
+      "y": 1872,
+      "topLeftY": 0,
+      "width": 232,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_020",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_020.png",
+      "x": 1392,
+      "y": 1700,
+      "topLeftY": 176,
+      "width": 232,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_021",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_021.png",
+      "x": 1160,
+      "y": 1700,
+      "topLeftY": 176,
+      "width": 232,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_022",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_022.png",
+      "x": 0,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_023",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_023.png",
+      "x": 228,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_024",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_024.png",
+      "x": 456,
+      "y": 1024,
+      "topLeftY": 860,
+      "width": 228,
+      "height": 164
+    },
+    {
+      "name": "Horizontal_Idle_025",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_025.png",
+      "x": 0,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_026",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_026.png",
+      "x": 456,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_027",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_027.png",
+      "x": 684,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_028",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_028.png",
+      "x": 228,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_029",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_029.png",
+      "x": 456,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_030",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_030.png",
+      "x": 684,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_031",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_031.png",
+      "x": 912,
+      "y": 1520,
+      "topLeftY": 356,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_032",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_032.png",
+      "x": 928,
+      "y": 1692,
+      "topLeftY": 180,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_033",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_033.png",
+      "x": 1156,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_034",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_034.png",
+      "x": 1384,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_035",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_035.png",
+      "x": 1612,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_036",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_036.png",
+      "x": 0,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_037",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_037.png",
+      "x": 1612,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_038",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_038.png",
+      "x": 1384,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_039",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_039.png",
+      "x": 1156,
+      "y": 1524,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_040",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_040.png",
+      "x": 928,
+      "y": 1692,
+      "topLeftY": 180,
+      "width": 228,
+      "height": 176
+    },
+    {
+      "name": "Horizontal_Idle_041",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_041.png",
+      "x": 912,
+      "y": 1520,
+      "topLeftY": 356,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_042",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_042.png",
+      "x": 684,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_043",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_043.png",
+      "x": 456,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_044",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_044.png",
+      "x": 228,
+      "y": 1528,
+      "topLeftY": 348,
+      "width": 228,
+      "height": 172
+    },
+    {
+      "name": "Horizontal_Idle_045",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_045.png",
+      "x": 684,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_046",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_046.png",
+      "x": 456,
+      "y": 1188,
+      "topLeftY": 692,
+      "width": 228,
+      "height": 168
+    },
+    {
+      "name": "Horizontal_Idle_047",
+      "source": "M70_All_Powerups/Build/Rocket_Horizontal/Frames/Idle_047.png",
+      "x": 0,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_Create_000",
-      "x": 256,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_000.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_000.png",
+      "x": 1880,
+      "y": 1528,
+      "topLeftY": 492,
+      "width": 36,
+      "height": 28
     },
     {
       "name": "Horizontal_Create_001",
-      "x": 512,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_001.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_001.png",
+      "x": 1840,
+      "y": 1524,
+      "topLeftY": 492,
+      "width": 40,
+      "height": 32
     },
     {
       "name": "Horizontal_Create_002",
-      "x": 768,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_002.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_002.png",
+      "x": 1508,
+      "y": 968,
+      "topLeftY": 1040,
+      "width": 52,
+      "height": 40
     },
     {
       "name": "Horizontal_Create_003",
-      "x": 1024,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_003.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_003.png",
+      "x": 1976,
+      "y": 1736,
+      "topLeftY": 256,
+      "width": 72,
+      "height": 56
     },
     {
       "name": "Horizontal_Create_004",
-      "x": 1280,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_004.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_004.png",
+      "x": 1792,
+      "y": 1100,
+      "topLeftY": 876,
+      "width": 96,
+      "height": 72
     },
     {
       "name": "Horizontal_Create_005",
-      "x": 1536,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_005.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_005.png",
+      "x": 1856,
+      "y": 1704,
+      "topLeftY": 256,
+      "width": 120,
+      "height": 88
     },
     {
       "name": "Horizontal_Create_006",
-      "x": 1792,
-      "y": 1792,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 0,
-      "source": "Source/Frames/Horizontal/Create_006.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_006.png",
+      "x": 1364,
+      "y": 900,
+      "topLeftY": 1040,
+      "width": 144,
+      "height": 108
     },
     {
       "name": "Horizontal_Create_007",
-      "x": 0,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_007.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_007.png",
+      "x": 1856,
+      "y": 1792,
+      "topLeftY": 136,
+      "width": 168,
+      "height": 120
     },
     {
       "name": "Horizontal_Create_008",
-      "x": 256,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_008.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_008.png",
+      "x": 1856,
+      "y": 1912,
+      "topLeftY": 0,
+      "width": 184,
+      "height": 136
     },
     {
       "name": "Horizontal_Create_009",
-      "x": 512,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_009.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_009.png",
+      "x": 1840,
+      "y": 1556,
+      "topLeftY": 348,
+      "width": 200,
+      "height": 144
     },
     {
       "name": "Horizontal_Create_010",
-      "x": 768,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_010.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_010.png",
+      "x": 0,
+      "y": 524,
+      "topLeftY": 1372,
+      "width": 212,
+      "height": 152
     },
     {
       "name": "Horizontal_Create_011",
-      "x": 1024,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_011.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_011.png",
+      "x": 452,
+      "y": 524,
+      "topLeftY": 1364,
+      "width": 220,
+      "height": 160
     },
     {
       "name": "Horizontal_Create_012",
-      "x": 1280,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_012.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_012.png",
+      "x": 684,
+      "y": 1024,
+      "topLeftY": 860,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Create_013",
-      "x": 1536,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_013.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_013.png",
+      "x": 1140,
+      "y": 1020,
+      "topLeftY": 864,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Create_014",
-      "x": 1792,
-      "y": 1536,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 256,
-      "source": "Source/Frames/Horizontal/Create_014.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_014.png",
+      "x": 912,
+      "y": 1016,
+      "topLeftY": 868,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Create_015",
-      "x": 0,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Create_015.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_015.png",
+      "x": 456,
+      "y": 860,
+      "topLeftY": 1024,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Create_016",
-      "x": 256,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Create_016.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_016.png",
+      "x": 228,
+      "y": 856,
+      "topLeftY": 1028,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Create_017",
-      "x": 512,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Create_017.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Create_017.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Charge_000",
-      "x": 768,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Charge_000.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_000.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Charge_001",
-      "x": 1024,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Charge_001.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_001.png",
+      "x": 1140,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_Charge_002",
-      "x": 1280,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Charge_002.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_002.png",
+      "x": 680,
+      "y": 676,
+      "topLeftY": 1200,
+      "width": 220,
+      "height": 172
     },
     {
       "name": "Horizontal_Charge_003",
-      "x": 1536,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Charge_003.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_003.png",
+      "x": 224,
+      "y": 504,
+      "topLeftY": 1368,
+      "width": 212,
+      "height": 176
     },
     {
       "name": "Horizontal_Charge_004",
-      "x": 1792,
-      "y": 1280,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 512,
-      "source": "Source/Frames/Horizontal/Charge_004.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_004.png",
+      "x": 0,
+      "y": 344,
+      "topLeftY": 1524,
+      "width": 204,
+      "height": 180
     },
     {
       "name": "Horizontal_Charge_005",
-      "x": 0,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_005.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_005.png",
+      "x": 1592,
+      "y": 1004,
+      "topLeftY": 864,
+      "width": 200,
+      "height": 180
     },
     {
       "name": "Horizontal_Charge_006",
-      "x": 256,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_006.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_006.png",
+      "x": 1592,
+      "y": 1004,
+      "topLeftY": 864,
+      "width": 200,
+      "height": 180
     },
     {
       "name": "Horizontal_Charge_007",
-      "x": 512,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_007.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_007.png",
+      "x": 0,
+      "y": 344,
+      "topLeftY": 1524,
+      "width": 204,
+      "height": 180
     },
     {
       "name": "Horizontal_Charge_008",
-      "x": 768,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_008.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_008.png",
+      "x": 224,
+      "y": 504,
+      "topLeftY": 1368,
+      "width": 212,
+      "height": 176
     },
     {
       "name": "Horizontal_Charge_009",
-      "x": 1024,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_009.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_009.png",
+      "x": 680,
+      "y": 676,
+      "topLeftY": 1200,
+      "width": 220,
+      "height": 172
     },
     {
       "name": "Horizontal_Charge_010",
-      "x": 1280,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_010.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_010.png",
+      "x": 1140,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_Charge_011",
-      "x": 1536,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/Charge_011.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Charge_011.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_DepthTurn_000",
-      "x": 1792,
-      "y": 1024,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 768,
-      "source": "Source/Frames/Horizontal/DepthTurn_000.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_000.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_DepthTurn_001",
-      "x": 0,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_001.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_001.png",
+      "x": 912,
+      "y": 1180,
+      "topLeftY": 700,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_002",
-      "x": 256,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_002.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_002.png",
+      "x": 228,
+      "y": 1356,
+      "topLeftY": 520,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_003",
-      "x": 512,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_003.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_003.png",
+      "x": 0,
+      "y": 1352,
+      "topLeftY": 524,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_004",
-      "x": 768,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_004.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_004.png",
+      "x": 1824,
+      "y": 1348,
+      "topLeftY": 524,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_005",
-      "x": 1024,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_005.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_005.png",
+      "x": 1824,
+      "y": 1172,
+      "topLeftY": 700,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_006",
-      "x": 1280,
-      "y": 768,
-      "width": 256,
-      "height": 256,
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_006.png",
+      "x": 684,
+      "y": 848,
       "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_006.png"
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_007",
-      "x": 1536,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_007.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_007.png",
+      "x": 456,
+      "y": 684,
+      "topLeftY": 1188,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_008",
-      "x": 1792,
-      "y": 768,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1024,
-      "source": "Source/Frames/Horizontal/DepthTurn_008.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_008.png",
+      "x": 908,
+      "y": 844,
+      "topLeftY": 1032,
+      "width": 224,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_009",
-      "x": 0,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_009.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_009.png",
+      "x": 456,
+      "y": 1356,
+      "topLeftY": 520,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_010",
-      "x": 256,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_010.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_010.png",
+      "x": 1368,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_011",
-      "x": 512,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_011.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_011.png",
+      "x": 1596,
+      "y": 1184,
+      "topLeftY": 696,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_012",
-      "x": 768,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_012.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_012.png",
+      "x": 232,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_013",
-      "x": 1024,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_013.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_013.png",
+      "x": 228,
+      "y": 1020,
+      "topLeftY": 860,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_014",
-      "x": 1280,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_014.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_014.png",
+      "x": 684,
+      "y": 1356,
+      "topLeftY": 520,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_015",
-      "x": 1536,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_015.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_015.png",
+      "x": 1140,
+      "y": 1352,
+      "topLeftY": 524,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_016",
-      "x": 1792,
-      "y": 512,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1280,
-      "source": "Source/Frames/Horizontal/DepthTurn_016.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_016.png",
+      "x": 228,
+      "y": 680,
+      "topLeftY": 1192,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_017",
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_017.png",
       "x": 0,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_017.png"
+      "y": 676,
+      "topLeftY": 1196,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_018",
-      "x": 256,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_018.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_018.png",
+      "x": 1368,
+      "y": 1008,
+      "topLeftY": 864,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_019",
-      "x": 512,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_019.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_019.png",
+      "x": 1140,
+      "y": 844,
+      "topLeftY": 1028,
+      "width": 224,
+      "height": 176
     },
     {
       "name": "Horizontal_DepthTurn_020",
-      "x": 768,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_020.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_020.png",
+      "x": 912,
+      "y": 1348,
+      "topLeftY": 528,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_021",
-      "x": 1024,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_021.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_021.png",
+      "x": 1368,
+      "y": 1352,
+      "topLeftY": 524,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_DepthTurn_022",
-      "x": 1280,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_022.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_022.png",
+      "x": 464,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
     },
     {
       "name": "Horizontal_DepthTurn_023",
-      "x": 1536,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/DepthTurn_023.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/DepthTurn_023.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Flight_000",
-      "x": 1792,
-      "y": 256,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1536,
-      "source": "Source/Frames/Horizontal/Flight_000.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_000.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Flight_001",
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_001.png",
       "x": 0,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_001.png"
+      "y": 1016,
+      "topLeftY": 864,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_Flight_002",
-      "x": 256,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_002.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_002.png",
+      "x": 1596,
+      "y": 1352,
+      "topLeftY": 524,
+      "width": 228,
+      "height": 172
     },
     {
       "name": "Horizontal_Flight_003",
-      "x": 512,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_003.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_003.png",
+      "x": 0,
+      "y": 1016,
+      "topLeftY": 864,
+      "width": 228,
+      "height": 168
     },
     {
       "name": "Horizontal_Flight_004",
-      "x": 768,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_004.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_004.png",
+      "x": 0,
+      "y": 852,
+      "topLeftY": 1032,
+      "width": 228,
+      "height": 164
     },
     {
       "name": "Horizontal_Flight_005",
-      "x": 1024,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_005.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_005.png",
+      "x": 696,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
     },
     {
       "name": "Horizontal_Flight_006",
-      "x": 1280,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_006.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_006.png",
+      "x": 1624,
+      "y": 1700,
+      "topLeftY": 176,
+      "width": 232,
+      "height": 172
     },
     {
       "name": "Horizontal_Flight_007",
-      "x": 1536,
-      "y": 0,
-      "width": 256,
-      "height": 256,
-      "topLeftY": 1792,
-      "source": "Source/Frames/Horizontal/Flight_007.png"
+      "source": "Chapter01_Sprite_Milestone04/Source/Frames/Horizontal/Flight_007.png",
+      "x": 696,
+      "y": 1700,
+      "topLeftY": 180,
+      "width": 232,
+      "height": 168
     }
-  ]
+  ],
+  "packing": "M70 midpoint-preserving trim; repeated poses share identical rectangles",
+  "revision": "M70_Clarity_Idle_R1"
 }

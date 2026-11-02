@@ -1,0 +1,18 @@
+{
+  "fpsTarget": 60,
+  "modalEnterMs": 220,
+  "modalExitMs": 160,
+  "tabChangeMs": 140,
+  "rowPending": "Immediate disabled action; no success effects until server confirmation.",
+  "sentFeedback": {
+    "crossfadeMs": 140,
+    "durationMs": 140,
+    "toastDurationMs": 2200
+  },
+  "copyFeedback": {
+    "showAfter": "successful clipboard write",
+    "durationMs": 2000
+  },
+  "reducedMotion": "120ms opacity only; no scale or particle effects.",
+  "preview": "Timing study only, simulated responses; no real messages sent."
+}

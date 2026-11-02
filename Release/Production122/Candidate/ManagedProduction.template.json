@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mode": "ManagedGuestServer",
+  "runtimeMode": "production",
+  "origin": "https://api.novamind-it.ru",
+  "identityScope": "prod-heartoftherain",
+  "packageName": "",
+  "consoleAppId": "",
+  "socialEnabled": true,
+  "allowDevelopmentLoopback": false
+}

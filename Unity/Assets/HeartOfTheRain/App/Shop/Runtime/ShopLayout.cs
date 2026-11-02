@@ -48,17 +48,18 @@ namespace HeartOfTheRain.App.Shop
   }
   static void Empty(HomeFrame f,float x,float y,float w)
   {Art(f,"empty-art","SP_CoinPouch",x+w/2-52,y+30,104,104,"",false,true);Text(f,"empty-title","The market is resting",x,y+155,w,30,23,"","#FFF3D7");Text(f,"empty-detail","Please check back later.",x,y+193,w,25,14,"","#B9D6E5",true);}
-  public static ShopFrame Build(float width,float height,ShopSession s,int coinBalance)
+  public static ShopFrame Build(float width,float height,ShopSession s,int coinBalance,HeartOfTheRain.App.Advertising.AdShopView85 advertising=null)
   {
    bool wide=width/Math.Max(1,height)>1.4f;var r=new ShopFrame{width=Math.Max(320,width),height=Math.Max(320,height)};
-   float w=r.width,h=r.height,dh=MainNavigationLayout.Height(w,h),head=62,cw=Math.Min(w-28,840),cx=(w-cw)/2;
+   float w=r.width,h=r.height,dh=MainNavigationLayout.ReservedHeight(w,h),head=62,cw=Math.Min(w-28,840),cx=(w-cw)/2;
    foreach(var f in new[]{r.chrome,r.overlay}){f.width=w;f.height=h;}r.content.width=w;
-   Art(r.chrome,"background","LB2_Background",0,0,w,h);
+   var background=Add(r.chrome,"background","cover",0,0,w,h);background.asset="TA_Background";
    Art(r.chrome,"balance-panel","LB2_RowTop",14,11,106,40,"",true);Art(r.chrome,"balance-icon","RewardCoin",18,14,34,34,"",false,true);
    Text(r.chrome,"balance",HomeLayoutEngine.CompactNumber(Math.Max(0,coinBalance)),51,17,61,25,16);
    Text(r.chrome,"title","Shop",126,9,w-252,42,29,"","#FFFFFF");
    r.viewportY=head;r.viewportHeight=Math.Max(44,h-head-dh-22);
    bool columns=cw>=650;float colw=columns?(cw-16)/2:cw,leftY=4,rightY=4,rightX=columns?cx+colw+16:cx;
+   if(advertising!=null){float offset=HeartOfTheRain.App.Advertising.RewardedAdsLayout85.AddCard(r.content,cx,4,cw,advertising);leftY+=offset;rightY+=offset;}
    var specials=s.Specials;var mega=s.Mega;var coins=s.Coins;
    if(specials.Length>0)
    {
@@ -78,7 +79,7 @@ namespace HeartOfTheRain.App.Shop
    if(specials.Length==0&&mega.Length==0&&coins.Length==0){Empty(r.content,cx,8,cw);coinsY=270;}
    r.content.height=Math.Max(r.viewportHeight,Math.Max(coinsY,rightY)+8);
    Text(r.chrome,"preview-note",s.IsPreview?"Shop preview · sample prices":"Purchases currently unavailable",cx,h-dh-23,cw,20,10,"","#B4D2E1",true);
-   float dw=Math.Min(w,620);MainNavigationLayout.Add(r.chrome,(w-dw)/2,h-dh,dw,dh,4);
+   MainNavigationLayout.AddDock(r.chrome,w,h,4);
    if(s.Modal)
    {
     var f=r.overlay;var shade=Add(f,"modal-shade","color",0,0,w,h);shade.color="#061423C8";Hit(f,"modal-block","disabled",0,0,w,h,"Offer details");
@@ -91,7 +92,7 @@ namespace HeartOfTheRain.App.Shop
     if(shortModal)
     {
      Text(f,"detail-price",s.Price(offer),18,169,110,30,24,p);
-     Text(f,"detail-price-note",s.IsPreview?"Sample price":"Store unavailable",18,201,110,18,10,p,"#69818E",true);
+     Text(f,"detail-price-note",s.IsPreview&&s.HasDisplayPrice(offer)?"Sample price":"Store unavailable",18,201,110,18,10,p,"#69818E",true);
      Text(f,"detail-status-1","Purchases are not available",141,175,mw-159,18,11,p,"#58778A",true);
      Text(f,"detail-status-2",s.IsPreview?"in this preview.":"Please try again later.",141,193,mw-159,18,11,p,"#58778A",true);
      Button(f,"detail-back","close","Back to Shop",18,mh-62,mw-36,48,p,"LB2_TabActive",16);
@@ -100,13 +101,14 @@ namespace HeartOfTheRain.App.Shop
     {
      float fx=horizontal?390:18,fw=horizontal?mw-410:mw-36,fy=horizontal?77:mh-177;
      Text(f,"detail-price",s.Price(offer),fx,fy,fw,34,27,p);
-     Text(f,"detail-price-note",s.IsPreview?"Sample price":"Store unavailable",fx,fy+35,fw,20,11,p,"#69818E",true);
+     Text(f,"detail-price-note",s.IsPreview&&s.HasDisplayPrice(offer)?"Sample price":"Store unavailable",fx,fy+35,fw,20,11,p,"#69818E",true);
      Text(f,"detail-status-1","Purchases are not available",fx,fy+65,fw,19,12,p,"#58778A",true);
      Text(f,"detail-status-2",s.IsPreview?"in this preview.":"Please try again later.",fx,fy+84,fw,19,12,p,"#58778A",true);
      Button(f,"detail-back","close","Back to Shop",fx,mh-62,fw,48,p,"LB2_TabActive",16);
     }
 
    }
+   if(advertising!=null&&advertising.consent)HeartOfTheRain.App.Advertising.RewardedAdsLayout85.AddConsent(r.overlay,w,h);
    return r;
   }
  }

@@ -1,0 +1,52 @@
+# Candidate only. Do not replace the running staging proxy before release acceptance.
+# Source ranges checked against official RuStore documentation on 30 October 2026:
+# https://www.rustore.ru/help/developers/monetization/payment-callback/server-set-up
+# Direct Internet -> owned Caddy -> loopback API only; no CDN/proxy trust is assumed.
+api.novamind-it.ru {
+    # Optional same draft pages as the staging host; HTTPS does not mean legal acceptance.
+    # Copy only the reviewed Release/Production122/public HTML to this private root.
+    @draftPages path /privacy /support /terms
+    handle @draftPages {
+        root * C:/ProgramData/HeartOfTheRain/production-services/public
+        rewrite * {path}.html
+        header Cache-Control "no-store"
+        header X-Content-Type-Options "nosniff"
+        file_server
+    }
+
+    @private path /internal /internal/* /docs* /redoc* /openapi.json*
+    handle @private {
+        respond 404
+    }
+
+    @sandbox path /v1/commerce/notifications/rustore/sandbox /v1/commerce/notifications/rustore/sandbox/*
+    handle @sandbox {
+        respond 404
+    }
+
+    @payment path /v1/commerce/notifications/rustore/production /v1/commerce/notifications/rustore/production/
+    handle @payment {
+        @untrusted_sender not remote_ip 95.163.133.0/30 85.198.107.0/24 79.137.140.128/26 85.142.251.128/26
+        respond @untrusted_sender 403
+        @not_post not method POST
+        respond @not_post 405
+        reverse_proxy 127.0.0.1:8752 {
+            # Overwrite, never append or copy an incoming identity header.
+            header_up X-Hotr-Verified-Client-IP {remote_host}
+            header_up -Forwarded
+            header_up -X-Forwarded-For
+            header_up -X-Real-IP
+        }
+    }
+
+    handle {
+        reverse_proxy 127.0.0.1:8752 {
+            header_up X-Hotr-Verified-Client-IP {remote_host}
+            header_up -Forwarded
+            header_up -X-Forwarded-For
+            header_up -X-Real-IP
+        }
+    }
+    # Access logging is intentionally absent: VK callback queries and payment
+    # bodies must not be collected. Availability logs use monitoring122 instead.
+}

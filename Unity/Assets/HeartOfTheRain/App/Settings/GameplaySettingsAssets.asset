@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5643e5f277f353f2b106200e09f60204, type: 3}
   m_Name: M57 Gameplay Settings Assets
   m_EditorClassIdentifier:
-  approvedUI: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 3}
+  approvedUI: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 2}
   reviewMusic: {fileID: 8300000, guid: 1919912ba26b552eb4849956b50783e7, type: 3}
   sprites:
   - id: ExitButton

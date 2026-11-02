@@ -1,0 +1,55 @@
+Heart of the Rain: inactive production files on the owned Windows VPS
+
+This workflow only prepares separately restricted source/configuration paths.
+It never initializes an authority/database, installs or starts a service, writes
+provider keys or placeholder key files, changes the existing staging source,
+manifest, identity scope, database or proxy, or enables payments/VK/advertising.
+
+New destinations must all be absent before installation:
+  C:\Apps\HeartOfTheRain\Production122
+  C:\ProgramData\HeartOfTheRain\production-services
+  C:\ProgramData\HeartOfTheRain\production-secrets
+
+The tested backend is placed at:
+  C:\Apps\HeartOfTheRain\Production122\Backend
+
+Public approved product mappings are placed under the adjacent
+Production122\Release\RuStore directory for preparation tools that use the
+repository-relative public catalogue. Every archive payload file is hash-pinned.
+The backend source/configuration/requirements must match the successful full
+backend test report before the archive can be built. Public templates and
+catalogue metadata must match the separately source-bound DiscoveryFocused122
+review and are recorded in their own input hash map, not represented as provider
+proof. The full report must have every test executed and passed, no skips, and
+its real approved-worker integration test accepted. A failed or partial report
+cannot create an archive.
+
+The existing .venv-service interpreter is reused read-only only if its launcher,
+base executable and pyvenv.cfg hashes match the reviewed host observation,
+Python reports exactly 3.14.10 and exact locked dependencies pass. It is not
+modified, upgraded or copied. New candidate service XML uses the new working
+directory, LocalService, a fixed PYTHONPATH and PYTHONNOUSERSITE. No services are
+registered; the examples have Manual startup and reference a future completed
+production-manifest.json that is deliberately absent.
+
+production-manifest.INCOMPLETE.json contains only reference paths and incomplete
+public settings. It is not a usable activation manifest. Its configDirectory
+points to the separate new source root. commerce.candidate.json is disabled and
+contains the twelve approved item grants/prices/mappings. No production commerce
+configuration or registered app ID is fabricated. Existing pending financial
+records are never copied or rewritten.
+
+Code, public metadata, configuration and the empty secrets directory grant
+LocalService read/execute only. Only production-services\logs grants it Modify.
+Administrators and SYSTEM retain full control. Installation refuses existing
+targets, linked paths, unexpected archive entries, mismatched file hashes,
+changed dependency locks or incompatible installed dependencies before creating
+the new roots. Partial output after a failure is preserved; do not delete an
+unknown path or rerun by overwriting it.
+
+After successful inactive staging, provide the issued public app IDs/package,
+release identity, real Console key files and approved worker separately. Review
+the completed private manifest/catalogue and actual provider/Android/recovery
+evidence before authority initialization or service installation. Those actions
+are outside this installer. See KEY_DESTINATIONS122.txt for the exact future key
+paths; both key files remain absent after inactive installation.

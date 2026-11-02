@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "enabled": true,
+  "verificationMode": "sdk_client_reported",
+  "sandbox": true,
+  "consoleAppId": "2063777840",
+  "runtimeMode": "staging",
+  "packageName": "com.heartoftherain.game",
+  "backendOrigin": "https://api.novamind-it.ru"
+}

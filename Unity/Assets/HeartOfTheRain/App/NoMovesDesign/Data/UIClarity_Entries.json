@@ -1,0 +1,132 @@
+{
+  "revision": "No Moves R2",
+  "merge": "By GUID; preserve all unrelated current entries",
+  "assets": [
+    {
+      "guid": "ce160dfabad851f39bd4f32eacb5c86d",
+      "name": "AccountChrome.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountChrome.png",
+      "width": 1392,
+      "height": 1130,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "dfcb312489db58b1b40ba996134b92ff",
+      "name": "Close.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/Close.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "db4cc2fd686c582183ef2e3c8461bc1e",
+      "name": "LifeLostHeart.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/LifeLostHeart.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "ddc3b24940f45c63849314b575d95ba3",
+      "name": "NM_Coin_Glyph.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Coin_Glyph.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "bc8167dd7ec35aa780f0a5fbd2749cd4",
+      "name": "NM_Continue_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Continue_Band.png",
+      "width": 1600,
+      "height": 1280,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "d44062016c7f5caca12af0288ec9ce64",
+      "name": "NM_Dariya_Continue.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Dariya_Continue.png",
+      "width": 1195,
+      "height": 1316,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "2ef9072c6f4659a48fa09f59dd0583b5",
+      "name": "NM_Moves_Badge.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Moves_Badge.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "9346654dd05d5c91bfba5aac2202d127",
+      "name": "NM_Notice_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Notice_Band.png",
+      "width": 1600,
+      "height": 400,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "a0c712e095555467827aabe46019dd70",
+      "name": "NM_Offer_Halo.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Offer_Halo.png",
+      "width": 1024,
+      "height": 922,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "a2ec93401534508c9397c6b835301bcf",
+      "name": "NM_Secondary.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Secondary.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "610e9fde7676584a8ab7387a96bcc515",
+      "name": "NM_Wallet_Pill.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Wallet_Pill.png",
+      "width": 512,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "d53cea537853598d83dc7e3aa43baba4",
+      "name": "Primary.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/Primary.png",
+      "width": 1821,
+      "height": 503,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "05319d4e12a8549bae03996414a96e79",
+      "name": "SP_CoinPouch.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_CoinPouch.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "6836a7ca0b00575ab0857a335e4be42a",
+      "name": "SP_Mega.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_Mega.png",
+      "width": 400,
+      "height": 320,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    }
+  ]
+}

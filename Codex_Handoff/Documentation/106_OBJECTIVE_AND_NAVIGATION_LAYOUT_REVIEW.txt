@@ -1,0 +1,120 @@
+106 - Objective artwork and bottom navigation containment
+
+IMPLEMENTED_AND_EDITOR_VERIFIED; Android build/device acceptance remains open.
+This checkpoint addresses the two reported UI components. Main Unity remains
+2022.3.62f3. The installed APK was not rebuilt, replaced or rechecked here.
+
+WHAT CHANGED
+
+Objective sprites previously shared 56 px rectangles but had different transparent
+padding. In the actual 720 x 1600 render the visible crate/moss/stone/pail maxima
+were 48/36/36/31 px. Static, measured source-alpha bounds now give every mapped
+sprite a 58-unit visible maximum extent, preserving its original aspect ratio,
+inside a 60 px masked artwork cell. The matched render measures 58 px for all four.
+All nine mapped goal types are covered. No readable imports, runtime texture
+readbacks, new sprite copies or asset GUID changes were introduced.
+
+The sliced goal panel grows from 120 to 122 px and stays inside the actual painted blue
+header, including its shadow. Header, moves, portrait, board and control bounds
+are unchanged. Counters use a centered bounded row with the original 1.16 pulse
+and 0.24-second timing; real glyphs/checks stay separated from artwork and bevels.
+Collection flights target the new optical cell center. Goal counts, completion
+sounds and gameplay/model/reward semantics are unchanged.
+
+Shared navigation now uses five equal columns inset 8% from the rounded ends.
+All icons share one size and baseline regardless of selection; approved artwork
+and selected-frame aspect are preserved. The measured720px icon centers are
+all 106.5 px from the bottom, versus 110 px for inactive icons and 132 px for Home
+before. Icons are intentionally smaller to fit the framed bar and label space.
+The dock position/reservation and navigation actions are unchanged.
+
+Press feedback tints the frame and pulses the centered icon while the selected
+frame and hit bounds remain fixed. This avoids shrinking a frame under its
+unchanged label. Label spacing accounts for accented glyph overhang/shadows.
+A label box below 10 logical units omits the visual word; the full accessible
+name and action remain. This fallback includes very narrow or enlarged UI
+fixtures; the reviewed default 720 px Home and tablet retain their labels.
+One-time binding can fit dock nodes to an actual safe mask smaller than the
+minimum page frame; no per-frame fit, alpha analysis or idle transform writes
+were added.
+
+CHANGED FILES
+
+Unity/Assets/HeartOfTheRain/M47/Runtime/GameplayHUD.cs
+Unity/Assets/HeartOfTheRain/M47/Runtime/GoalIconLayout106.cs (+new meta)
+Unity/Assets/HeartOfTheRain/App/Home/Runtime/HomeLayoutEngine.cs
+Unity/Assets/HeartOfTheRain/App/Home/Runtime/MainNavigationFeedback.cs
+
+Three new Editor fixtures and their metas provide the matched capture,
+objective-alpha/glyph checks and shared navigation tests. Verification/Tools/
+Review106 contains the bounded native runner and source audit. Current handoff
+docs and the evidence gallery are updated; native PNG sets stay local with six
+selected byte-identical originals retained. Existing LF/CRLF conventions are
+preserved. SourceChanges106.patch shows the narrow runtime diff against exact,
+hash-matching105 bytes recovered read-only from the older private copy.
+
+VERIFICATION
+
+Actual pinned Unity Editor runs pass:
+- GoalMain03: 7,425 assertions,108 component layouts,12 GPU layouts,9 mapped
+  source-art bounds, all 50 actual level goal configurations and 5 locale headers.
+  Synthetic1/88/999/4 counts, completion checks and pulse peaks are included.
+  This is not gameplay completion of 50 levels.
+- NavMain07: 159,446 assertions across 420 geometry/selection/motion/locale cases.
+  Widths 320/393/720/768/1024, scales 1/1.5/2.5/5, injected safe insets, all five
+  selections, rest/press/release and unchanged click/accessibility routes.
+  Source alpha is mapped through actual CanvasRenderer meshes; native phone/
+  tablet images supplement the geometry checks.420 is not 420 device playtests.
+- Matched BeforeMain01/AfterMain01: 15 checks each; actual Editor Screen 720 x 1600
+  confirmed before capture, with byte-identical capture fixture and equivalent
+  synthetic Home/HUD state. Actual Home.Build and GameplayHUD.Build/UpdateState.
+- GeneralMain01: 535 existing native model/import checks.
+- BackdropMain01: 3,260 assertions/108 shared-page cases, 0 failures/0 errors.
+
+Compiler scanning reports zero C# warning/error lines across the 14 Editor
+invocations. Non-blocking Editor diagnostics remain recorded separately: 14
+runs with licensing-refresh notices and 12 with shutdown allocator notices. These were not
+classified as resolved app warnings.
+
+Root individually viewed the matched Home/HUD originals, all four final goal
+captures, both final navigation captures, and actual Shop/Leaderboard backdrop
+fixtures. Six originals are linked in Verification/Evidence/Review106/
+Comparison.html with hashes and source scopes in ImageSelection106.json.
+Home/event/social/shop fixture data is synthetic/demo, not proof of services.
+The dark center in HUD-only images is an omitted board/background renderer,
+not a newly observed app black-space defect.
+
+EPOCHS AND RETAINED FAILURES
+
+Fourteen serial native invocations are retained, including eight failed
+attempts. The first objective panel shadow crossed the blue header border;
+a narrow rainlight case exposed insufficient counter-pulse separation.
+Navigation checks exposed the shrinking-frame label, undersized label budgets
+and a French accent overlap. Two early colour-classifier failures (NavMain02
+and NavMain04) were enclosed pale cyan highlights rather than gold-border overflow.
+The final test uses a source-row blue span with real gold, transparent/outside
+negative controls and the exact known cyan highlight as a positive control.
+No geometry was shrunk merely to remove that final highlight false positive.
+Read FailuresAndEpochs106.json for the original run boundaries and corrections.
+
+GoalMain03 predates final navigation-only edits. Its called goal runtime,
+helper, fixture and assets remain byte-identical in final sources. Final
+NavMain07/AfterMain01/GeneralMain01/BackdropMain01 use matching final inputs.
+No failed report, diagnostic capture or source epoch was relabelled a pass.
+
+BOUNDARIES AND OPEN ACCEPTANCE
+
+Exact105-to106 source audit: 5,482 to 5,490 Unity inputs, 3 existing UI changes,
+8 additions, 0 removals; all 5,479 other inputs and 2,863 original metas preserved.
+Artwork, palette, imports, engine/packages/settings, Java startup, level masks,
+gameplay/economy and all 105 backend inputs/support are unchanged. Ordinary
+Profiles, ServerReview, saved language, ProjectSettings and GameView guards
+pass in their recorded native runs. No backend suite/service/worker was run.
+
+These are native Editor fixtures, not an Android build or physical-device
+acceptance. No ADB, APK, installation, deployment, live provider or production
+activation occurred. The older isolated Unity6 copy was not synced/promoted.
+Full-page scrolling/content separation at extreme UI overrides remains an
+existing limit outside this dock-only fit; those layouts are not certified by
+the navigation-only matrix. Existing launch/backend/provider/performance and
+actual-device gates remain open; fullyVetted/productionApproved=false.

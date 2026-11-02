@@ -6,38 +6,73 @@ namespace HeartOfTheRain.App.Teams
  {
   public HomePage home;public TeamsAssets assets;public bool openOnStart;
   TeamsSession session;Canvas canvas;CanvasScaler scaler;CanvasGroup fade;RectTransform safe,chrome,viewport,content,overlay;ScrollRect scroll;
-  Vector2Int lastSize;Rect lastSafe;float lastScale,opened;string draft="";
+  Vector2Int lastSize;Rect lastSafe;float lastScale,opened;string draft="",countryDraft="";
   readonly Dictionary<string,RectTransform> nodes=new Dictionary<string,RectTransform>();readonly Dictionary<string,float> positions=new Dictionary<string,float>();
-  public bool IsVisible=>canvas&&canvas.gameObject.activeSelf;public TeamsSession ReviewSession=>session;
+  HeartOfTheRain.App.OnlineSocial.OnlineTeamsPage82 online;
+#if UNITY_EDITOR
+  bool reviewSampleTeam;
+#endif
+  public bool IsVisible=>(online&&online.IsVisible)||(canvas&&canvas.gameObject.activeSelf);public TeamsSession ReviewSession=>session;
+  bool ServerSelected=>home&&home.GetComponent<HeartOfTheRain.App.Profile.PlayerProfileHost>()&&home.GetComponent<HeartOfTheRain.App.Profile.PlayerProfileHost>().ServerSession;
+  bool ReviewSelected {
+   get {
+#if UNITY_EDITOR
+    return reviewSampleTeam||gameObject.scene.name=="M62_Teams_Review";
+#else
+    return false;
+#endif
+   }
+  }
+  bool UseOnline(){if(!ServerSelected&&ReviewSelected)return false;if(!online)online=gameObject.AddComponent<HeartOfTheRain.App.OnlineSocial.OnlineTeamsPage82>();if(ServerSelected)online.Configure(home,assets,home.GetComponent<HeartOfTheRain.App.Profile.PlayerProfileHost>().ServerSession);else online.ConfigureUnavailable(home,assets);return true;}
   string ScrollKey=>session.Tab+":"+session.OpenMailId;
   Font BodyFont=>assets.leaderboard.journey.home.regularFont;Font BoldFont=>assets.leaderboard.journey.home.boldFont;
   void Start()
   {
-   if(!home||!assets||!assets.demoData){Debug.LogError("Assign Teams assets, Home and review fixture.",this);enabled=false;return;}
+   if(!home||!assets||(ReviewSelected&&!assets.demoData&&!ServerSelected)){Debug.LogError("Assign Teams assets, Home and review fixture.",this);enabled=false;return;}
+   if(UseOnline()){home.Build();home.NavigationRequested.AddListener(Route);if(openOnStart)Show();return;}
    home.Build();if(session==null)session=new TeamsSession(JsonUtility.FromJson<TeamsSnapshot>(assets.demoData.text));home.NavigationRequested.AddListener(Route);if(openOnStart)Show();
   }
   // Live snapshots are read-only until a real social service handles actions.
-  public void ApplySnapshot(TeamsSnapshot snapshot){if(session==null)session=new TeamsSession(snapshot);else session.ApplySnapshot(snapshot);draft="";positions.Clear();if(IsVisible)Reflow(1);}
-  public void ResetDemo(){session=new TeamsSession(JsonUtility.FromJson<TeamsSnapshot>(assets.demoData.text));draft="";positions.Clear();if(IsVisible)Reflow(1);}
+  public void ApplySnapshot(TeamsSnapshot snapshot){
+#if UNITY_EDITOR
+   if(ServerSelected)return;bool showing=IsVisible;reviewSampleTeam=true;if(online&&online.IsVisible)online.Hide(false);if(session==null)session=new TeamsSession(snapshot);else session.ApplySnapshot(snapshot);draft="";positions.Clear();if(showing)Show();
+#endif
+  }
+  public void ResetDemo(){
+#if UNITY_EDITOR
+   if(ServerSelected)return;bool showing=IsVisible;reviewSampleTeam=true;if(online&&online.IsVisible)online.Hide(false);session=new TeamsSession(JsonUtility.FromJson<TeamsSnapshot>(assets.demoData.text));draft="";positions.Clear();if(showing)Show();
+#endif
+  }
   void Route(string action){if(action=="teams"||action=="team")Show();else if(action=="journey"||action=="leaderboard"||action=="home")Hide(false);}
   public void Show()
   {
-   if(session==null)return;var flow=home.GetComponent<HomeLevelFlow>();var modal=home.GetComponent<PreLevelModal>();if((flow&&flow.Playing)||(modal&&modal.IsVisible))return;
+   if(UseOnline()){if(canvas)canvas.gameObject.SetActive(false);online.Show();return;}
+   if(session==null){if(!ReviewSelected||!assets.demoData)return;session=new TeamsSession(JsonUtility.FromJson<TeamsSnapshot>(assets.demoData.text));}var flow=home.GetComponent<HomeLevelFlow>();var modal=home.GetComponent<PreLevelModal>();if((flow&&flow.Playing)||(modal&&modal.IsVisible))return;
    var journey=home.GetComponent<JourneyPage>();if(journey)journey.Hide(false);var ranks=home.GetComponent<LeaderboardPage>();if(ranks)ranks.Hide(false);session.UpdateSelfLevel(home.State.currentLevel);
+   if(session.Rankings==null)session.Rankings=new LeaderboardSession(JsonUtility.FromJson<LeaderboardSnapshot>(assets.leaderboard.demoData.text));session.Rankings.SetRegion(HeartOfTheRain.App.OnlineSocial.CountryRegion89.Saved);
    Build();canvas.gameObject.SetActive(true);home.SetPresentation(false,false);opened=Time.unscaledTime;Reflow(positions.ContainsKey(ScrollKey)?positions[ScrollKey]:1);Focus("tab-"+(int)session.Tab);
   }
   public void Hide(bool showHome=true)
   {
+   if(online&&online.IsVisible)online.Hide(showHome);
    if(!IsVisible)return;positions[ScrollKey]=scroll.verticalNormalizedPosition;session.CancelCompose();draft="";canvas.gameObject.SetActive(false);
    if(showHome){home.SetPresentation(true,true);if(EventSystem.current)foreach(var c in home.GetComponentsInChildren<HomeControlLabel>())if(c.action=="teams"){var b=c.GetComponent<Button>();if(b&&b.interactable&&b.gameObject.activeInHierarchy){EventSystem.current.SetSelectedGameObject(b.gameObject);break;}}}
   }
   public void Request(string action)
   {
+   if(online&&online.IsVisible){online.Request(action);return;}
    if(!IsVisible||string.IsNullOrEmpty(action)||action=="disabled")return;
-   if(session.Modal&&action!="cancel-compose"&&action!="post-preview")return;
+   if(session.Rankings?.RegionOpen==true&&!HeartOfTheRain.App.OnlineSocial.CountryRegion89.DialogAction(action))return;
+   if(session.Composing&&action!="cancel-compose"&&action!="post-preview")return;
    positions[ScrollKey]=scroll.verticalNormalizedPosition;float pos=scroll.verticalNormalizedPosition;string focus="";bool revealNewest=false;
    if(action=="home"){Hide();return;}if(action=="journey"||action=="leaderboard"||action=="shop"){Hide(false);home.NavigationRequested.Invoke(action);return;}if(action=="teams")return;
-   if(action.StartsWith("tab:",StringComparison.Ordinal)){int n;if(!int.TryParse(action.Substring(4),out n)||n<0||n>2)return;session.Select((TeamsTab)n);pos=positions.ContainsKey(ScrollKey)?positions[ScrollKey]:1;focus="tab-"+n;}
+   if(action=="choose-country"&&session.Rankings!=null){countryDraft="";session.Rankings.OpenRegion();focus="country-code-input";}
+   else if(action=="cancel-country"){session.Rankings?.CloseRegion();focus="choose-country";}
+   else if(action=="search-country"&&session.Rankings!=null){session.Rankings.SearchRegion(countryDraft);}
+   else if((action=="country-prev"||action=="country-next")&&session.Rankings!=null){session.Rankings.RegionNext(action=="country-next"?1:-1);}
+   else if(action=="save-country"||action.StartsWith("country:",StringComparison.Ordinal)){string country=action=="save-country"?countryDraft:action.Substring(8);if(HeartOfTheRain.App.OnlineSocial.CountryRegion89.Save(country)){session.Rankings.SetRegion(country);pos=1;}else session.Rankings.InvalidRegion();}
+   else if((action=="scope-global"||action=="scope-regional")&&session.Rankings!=null){session.Rankings.SetLocal(action=="scope-regional");pos=1;}
+   else if(action.StartsWith("tab:",StringComparison.Ordinal)){int n;if(!int.TryParse(action.Substring(4),out n)||n<0||n>3)return;session.Select((TeamsTab)n);pos=positions.ContainsKey(ScrollKey)?positions[ScrollKey]:1;focus="tab-"+n;}
    else if(action=="compose"){if(!session.BeginCompose())return;draft="";focus="message-input";}
    else if(action=="cancel-compose"){session.CancelCompose();draft="";focus="compose";}
    else if(action=="post-preview"){if(!session.PostPreview(draft)){Focus("message-input");return;}draft="";pos=0;revealNewest=true;focus="compose";}
@@ -60,13 +95,13 @@ namespace HeartOfTheRain.App.Teams
    canvas.vertexColorAlwaysGammaSpace=true;
 #endif
    scaler=root.gameObject.AddComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ConstantPixelSize;root.gameObject.AddComponent<GraphicRaycaster>();fade=root.gameObject.AddComponent<CanvasGroup>();
-   var matte=Rect("Safe-area matte",root);matte.anchorMin=Vector2.zero;matte.anchorMax=Vector2.one;matte.sizeDelta=Vector2.zero;matte.gameObject.AddComponent<Image>().color=ColorOf("#071A30");
    safe=Rect("Teams safe area",root);safe.gameObject.AddComponent<RectMask2D>();chrome=Rect("Fixed header and navigation",safe);
    viewport=Rect("Teams viewport",safe);viewport.gameObject.AddComponent<Image>().color=Color.clear;viewport.gameObject.AddComponent<RectMask2D>();scroll=viewport.gameObject.AddComponent<ScrollRect>();scroll.viewport=viewport;scroll.horizontal=false;scroll.vertical=true;scroll.movementType=ScrollRect.MovementType.Clamped;scroll.scrollSensitivity=35;
    content=Rect("Teams content",viewport);scroll.content=content;overlay=Rect("Message composer",safe);
   }
   void Update()
   {
+   if(online&&online.IsVisible)return;
    if(!IsVisible)return;if(lastSize.x!=Screen.width||lastSize.y!=Screen.height||lastSafe!=Screen.safeArea||Mathf.Abs(lastScale-home.CurrentUIScale)>.01f)Reflow(scroll.verticalNormalizedPosition);
    fade.alpha=home.State.reduceMotion?1:Mathf.Clamp01((Time.unscaledTime-opened)/.2f);
 #if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
@@ -74,7 +109,7 @@ namespace HeartOfTheRain.App.Teams
 #else
    bool back=Input.GetKeyDown(KeyCode.Escape);
 #endif
-   if(back){if(session.Modal)Request("cancel-compose");else if(session.OpenMailId.Length>0)Request("close-mail");else Hide();}
+   if(back){if(session.Rankings?.RegionOpen==true)Request("cancel-country");else if(session.Composing)Request("cancel-compose");else if(session.OpenMailId.Length>0)Request("close-mail");else Hide();}
   }
   void Reflow(float position)
   {
@@ -94,23 +129,24 @@ namespace HeartOfTheRain.App.Teams
    {
     var parent=string.IsNullOrEmpty(e.parent)?root:nodes[e.parent];var rt=Rect(e.id,parent);Place(rt,e.x,e.y,e.width,e.height);nodes[e.id]=rt;
     if(e.kind=="group")
-    {if(string.IsNullOrEmpty(e.action))continue;var im=rt.gameObject.AddComponent<Image>();im.color=Color.clear;var b=rt.gameObject.AddComponent<Button>();b.targetGraphic=im;b.transition=Selectable.Transition.None;b.interactable=e.action!="disabled";string action=e.action;b.onClick.AddListener(()=>Request(action));var label=rt.gameObject.AddComponent<HomeControlLabel>();label.action=action;label.label=e.label;}
+    {if(e.id.EndsWith("-progress-clip",StringComparison.Ordinal)){rt.gameObject.AddComponent<RectMask2D>();rt.gameObject.SetActive(e.width>0);}if(string.IsNullOrEmpty(e.action))continue;var im=rt.gameObject.AddComponent<Image>();im.color=Color.clear;var b=rt.gameObject.AddComponent<Button>();b.targetGraphic=im;b.transition=Selectable.Transition.None;b.interactable=e.action!="disabled";string action=e.action;b.onClick.AddListener(()=>Request(action));var label=rt.gameObject.AddComponent<HomeControlLabel>();label.action=action;label.label=e.label;}
     else if(e.kind=="input")
     {
-     rt.gameObject.AddComponent<RectMask2D>();var im=rt.gameObject.AddComponent<Image>();im.color=Color.clear;var field=rt.gameObject.AddComponent<InputField>();field.targetGraphic=im;field.characterLimit=120;field.lineType=InputField.LineType.MultiLineNewline;
+     rt.gameObject.AddComponent<RectMask2D>();var im=rt.gameObject.AddComponent<Image>();im.color=Color.clear;var field=rt.gameObject.AddComponent<InputField>();field.targetGraphic=im;bool country=e.id=="country-code-input";field.characterLimit=country?80:120;field.lineType=country?InputField.LineType.SingleLine:InputField.LineType.MultiLineNewline;
      var tr=Rect("Input text",rt);Place(tr,0,0,e.width,e.height);var t=tr.gameObject.AddComponent<Text>();t.font=BodyFont;t.fontSize=e.fontSize;t.color=ColorOf(e.color);t.alignment=TextAnchor.UpperLeft;t.supportRichText=false;t.raycastTarget=false;t.horizontalOverflow=HorizontalWrapMode.Wrap;field.textComponent=t;
-     var ph=Rect("Placeholder",rt);Place(ph,0,0,e.width,e.height);var pt=ph.gameObject.AddComponent<Text>();pt.font=t.font;pt.fontSize=e.fontSize;pt.color=ColorOf("#73818B");pt.alignment=TextAnchor.UpperLeft;pt.text=e.label;pt.raycastTarget=false;field.placeholder=pt;field.text=draft;field.onValueChanged.AddListener(v=>draft=v);
+     var ph=Rect("Placeholder",rt);Place(ph,0,0,e.width,e.height);var pt=ph.gameObject.AddComponent<Text>();pt.font=t.font;pt.fontSize=e.fontSize;pt.color=ColorOf("#73818B");pt.alignment=TextAnchor.UpperLeft;pt.text=e.label;pt.raycastTarget=false;field.placeholder=pt;field.text=country?countryDraft:draft;field.onValueChanged.AddListener(v=>{if(country)countryDraft=v;else draft=v;});
      var label=rt.gameObject.AddComponent<HomeControlLabel>();label.action="message-input";label.label=e.label;
     }
     else if(e.kind=="paragraph")
     {var lines=e.text.Split('\n');for(int i=0;i<lines.Length;i++){var line=Rect("Line "+i,rt);Place(line,0,i*(e.fontSize+6),e.width,e.fontSize+6);var t=line.gameObject.AddComponent<Text>();t.font=BodyFont;t.text=lines[i];t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=TextAnchor.MiddleLeft;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.color=ColorOf(e.color);}}
     else if(e.kind=="text"||e.kind=="lefttext"||e.kind=="subtext"||e.kind=="leftsubtext")
-    {var t=rt.gameObject.AddComponent<Text>();t.font=e.kind.Contains("subtext")?BodyFont:BoldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind.StartsWith("left",StringComparison.Ordinal)?TextAnchor.MiddleLeft:TextAnchor.MiddleCenter;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;while(t.fontSize>9&&t.preferredWidth>e.width)t.fontSize--;}
+    {var t=rt.gameObject.AddComponent<Text>();t.font=e.kind.Contains("subtext")?BodyFont:BoldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind.StartsWith("left",StringComparison.Ordinal)?TextAnchor.MiddleLeft:TextAnchor.MiddleCenter;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;LabelFit.Apply(t,e.width,e.height,9);}
     else if(e.kind=="cover")
     {var sp=assets.Find(e.asset);var im=rt.gameObject.AddComponent<RawImage>();im.texture=sp.texture;im.uvRect=JourneyPage.CoverUV(sp,e.width,e.height);im.color=ColorOf(e.color);im.raycastTarget=false;}
     else
-    {var im=rt.gameObject.AddComponent<Image>();if(e.kind!="color")im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.sliced?4:1;im.preserveAspect=e.preserveAspect;im.raycastTarget=false;if(e.kind=="mask"){var mask=rt.gameObject.AddComponent<Mask>();mask.showMaskGraphic=false;}}
+    {var im=rt.gameObject.AddComponent<Image>();if(e.kind!="color")im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.sliced?4:1;im.preserveAspect=e.preserveAspect;SpriteFit.Center(im);im.raycastTarget=false;if(e.kind=="mask"){var mask=rt.gameObject.AddComponent<Mask>();mask.showMaskGraphic=false;}}
    }
+   foreach(var e in frame.elements)if(e.id=="background"||e.id=="modal-shade"||e.id=="country-shade")PageBackdrop90.Fill(nodes[e.id].GetComponent<MaskableGraphic>(),canvas);
    foreach(var e in frame.elements)if(!string.IsNullOrEmpty(e.action)&&e.action!="disabled"&&!e.id.StartsWith("nav-",StringComparison.Ordinal))
    {var gs=new List<Graphic>();foreach(var n in nodes)if(n.Key.StartsWith(e.id+"-",StringComparison.Ordinal)){var g=n.Value.GetComponent<Graphic>();if(g)gs.Add(g);}nodes[e.id].gameObject.AddComponent<PreLevelButtonFeedback>().Configure(gs.ToArray(),home.State.reduceMotion);}
   }

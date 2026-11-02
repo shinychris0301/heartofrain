@@ -1,0 +1,8 @@
+# Proposed additions to the repository .gitignore; REVIEW/APPLY SEPARATELY.
+# Raw 94 native logs remain local and keep their existing native SHA bindings.
+# This includes copied 2022 baselines and every casing of the two raw basenames.
+/Verification/Evidence/Unity6Migration94/**/[Uu][Nn][Ii][Tt][Yy].[Ll][Oo][Gg]
+/Verification/Evidence/Unity6Migration94/**/[Cc][Oo][Nn][Ss][Oo][Ll][Ee].[Ll][Oo][Gg]
+# Explicit private copy scope, even when the parent cache is already ignored.
+/.verification-cache/Unity6Migration94/PrivateEvidence/
+# *.sanitized.log and Privacy/*/Receipt.json remain committable derivatives.

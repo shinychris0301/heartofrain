@@ -1,0 +1,178 @@
+{
+  "revision": "Home Lives R1",
+  "clock": "Unscaled presentation time",
+  "loss": {
+    "trigger": "Once after settled debit acknowledgment / queued return-to-Home presentation event",
+    "countDuration": 0.46,
+    "keys": [
+      {
+        "t": 0,
+        "scale": 1,
+        "x": 0
+      },
+      {
+        "t": 0.138,
+        "scale": 0.93,
+        "x": -2,
+        "color": "#B12640"
+      },
+      {
+        "t": 0.253,
+        "scale": 1,
+        "x": 2
+      },
+      {
+        "t": 0.368,
+        "scale": 1,
+        "x": -1
+      },
+      {
+        "t": 0.46,
+        "scale": 1,
+        "x": 0
+      }
+    ],
+    "float": {
+      "duration": 0.9,
+      "origin": [
+        "0.68*w",
+        "0.87*h"
+      ],
+      "icon": "R3_Lives.png",
+      "iconBox": [
+        "0.055*w",
+        "0.055*w"
+      ],
+      "text": "−1",
+      "fontSize": "0.046*w",
+      "textColor": "#FFF4DC",
+      "gap": 3,
+      "keys": [
+        {
+          "t": 0,
+          "y": -4,
+          "scale": 0.9,
+          "alpha": 0
+        },
+        {
+          "t": 0.135,
+          "y": 0,
+          "scale": 1,
+          "alpha": 1
+        },
+        {
+          "t": 0.585,
+          "alpha": 1
+        },
+        {
+          "t": 0.9,
+          "y": 32,
+          "scale": 0.92,
+          "alpha": 0
+        }
+      ]
+    }
+  },
+  "refill": {
+    "trigger": "Once after confirmed single-life restoration",
+    "countDuration": 0.6,
+    "peakScale": 1.1,
+    "peakTime": 0.24,
+    "peakColor": "#377347",
+    "float": {
+      "duration": 0.8,
+      "origin": [
+        "0.68*w",
+        "h"
+      ],
+      "icon": "R3_Lives.png",
+      "text": "+1",
+      "fontSize": "0.046*w",
+      "textColor": "#E5FFD3",
+      "yFrom": 17,
+      "yTo": -18,
+      "scaleFrom": 0.9,
+      "scaleTo": 1,
+      "alphaKeys": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          1
+        ],
+        [
+          0.65,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "stars": {
+      "art": "DG_Star.png",
+      "count": 4,
+      "size": [
+        8,
+        8
+      ],
+      "duration": 0.65,
+      "origin": [
+        "0.75*w",
+        "0.5*h"
+      ],
+      "offsets": [
+        [
+          24,
+          -11
+        ],
+        [
+          -23,
+          -16
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          -16,
+          20
+        ]
+      ],
+      "alphaKeys": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "scaleKeys": [
+        [
+          0,
+          0.2
+        ],
+        [
+          0.2,
+          1
+        ],
+        [
+          1,
+          0.3
+        ]
+      ]
+    }
+  },
+  "multiLifeCatchUp": "Update directly on resume; suppress single +1 feedback when multiple lives were restored. A semantic multi-life celebration would need an explicit amount label.",
+  "reducedMotion": "Apply text/state changes and accessibility announcement only; omit all moving/scaling effects.",
+  "canvas": "FX layer outside header clipping, below safe-area bounds; raycasts disabled. No gameplay blocking or life-loss modal."
+}

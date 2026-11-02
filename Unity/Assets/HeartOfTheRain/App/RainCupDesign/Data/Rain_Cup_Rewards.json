@@ -1,0 +1,84 @@
+{
+  "reference": "User screenshot Screenshot 2026-10-22 081841.png",
+  "mode": "practice",
+  "simulatedRivals": true,
+  "unlockCompletedLevels": 10,
+  "pointsPerQualifyingNewLevel": 1,
+  "replaysAwardPoints": false,
+  "prizes": [
+    {
+      "rank": 1,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 300,
+          "art": "Reward_Coin.png"
+        },
+        {
+          "id": "rocket",
+          "quantity": 1,
+          "art": "Reward_Rocket.png"
+        },
+        {
+          "id": "bomb",
+          "quantity": 1,
+          "art": "Reward_Bomb.png"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 200,
+          "art": "Reward_Coin.png"
+        },
+        {
+          "id": "hammer",
+          "quantity": 1,
+          "art": "Reward_Hammer.png"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 100,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 50,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 50,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    }
+  ],
+  "notDefinedByScreenshot": [
+    "duration",
+    "reset policy",
+    "event finish trigger",
+    "tie breaking",
+    "enrollment scope",
+    "population size beyond visible five prize ranks"
+  ],
+  "productionRule": "Retain existing authoritative event service and inventory IDs. Five rows in this preview are sample data, not a restriction on the actual event population."
+}

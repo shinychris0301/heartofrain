@@ -2,6 +2,7 @@ using System;using System.Collections;using System.Collections.Generic;
 using UnityEngine;using UnityEngine.UI;using UnityEngine.EventSystems;
 using HeartOfTheRain.App.Home;using HeartOfTheRain.App.PreLevel;using HeartOfTheRain.App.Settings;
 using HeartOfTheRain.App.Journey;using HeartOfTheRain.App.Leaderboard;using HeartOfTheRain.App.Teams;using HeartOfTheRain.App.Shop;using HeartOfTheRain.M46;
+using HeartOfTheRain.App.AccountDesign;
 namespace HeartOfTheRain.App.AppSettings
 {
  [DisallowMultipleComponent] public sealed class AppSettingsPage:MonoBehaviour
@@ -11,12 +12,25 @@ namespace HeartOfTheRain.App.AppSettings
   public HomePage home;public AppSettingsAssets assets;public bool openOnStart;
   AppSettingsSession session;Canvas canvas;CanvasScaler scaler;CanvasGroup fade;RectTransform safe,chrome,viewport,content,indicator;ScrollRect scroll;
   Vector2Int lastSize;Rect lastSafe;float lastScale,opened;string lastSection="inventory";
+  AccountModal account;AccountDesignAssets accountArt;bool accountSuspended;int accountClosedFrame=-1;
+  public IAccountService AccountService {get;set;}
+  HeartOfTheRain.App.ServerAccount.ServerAccountService83 ownedServerAccount;
+  public AccountModal AccountView=>account;
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+  [NonSerialized] public ISettingsStore VerificationStore;
+#endif
   readonly Dictionary<string,RectTransform> nodes=new Dictionary<string,RectTransform>();
   public bool IsVisible=>canvas&&canvas.gameObject.activeSelf;public AppSettingsSession ReviewSession=>session;
   void Start()
   {
    if(!home||!assets||!assets.shop||!assets.gameplaySettings||!assets.destinations){Debug.LogError("Assign Home and main Settings assets.",this);enabled=false;return;}
-   home.Build();session=new AppSettingsSession(new Preferences(),JsonUtility.FromJson<AppSettingsLinks>(assets.destinations.text));home.NavigationRequested.AddListener(Route);
+   ISettingsStore storage=new Preferences();
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+   if(VerificationStore!=null)storage=VerificationStore;
+#endif
+   home.Build();session=new AppSettingsSession(storage,JsonUtility.FromJson<AppSettingsLinks>(assets.destinations.text));home.NavigationRequested.AddListener(Route);
+   accountArt=AccountDesignAssets.Load();account=home.gameObject.AddComponent<AccountModal>();account.Configure(home,accountArt);account.Dismissed+=ReturnFromAccount;
+   EnsureAccountService();
    if(openOnStart)StartCoroutine(OpenAfterStart());
   }
   IEnumerator OpenAfterStart(){yield return null;Show();}
@@ -24,19 +38,23 @@ namespace HeartOfTheRain.App.AppSettings
   {if(action=="settings")Show();else if(action=="home")Hide();else if(action=="journey"||action=="leaderboard"||action=="teams"||action=="team"||action=="shop"||action=="coins")Hide(false);}
   public void Show()
   {
-   if(session==null)return;var flow=home.GetComponent<HomeLevelFlow>();if(!flow||!flow.CanOpenAppSettings)return;
+   if(session==null||accountSuspended)return;var flow=home.GetComponent<HomeLevelFlow>();if(!flow||!flow.CanOpenAppSettings)return;
    var journey=home.GetComponent<JourneyPage>();if(journey)journey.Hide(false);var ranks=home.GetComponent<LeaderboardPage>();if(ranks)ranks.Hide(false);var teams=home.GetComponent<TeamsPage>();if(teams)teams.Hide(false);var shop=home.GetComponent<ShopPage>();if(shop)shop.Hide(false);
-   home.ShowEvents(false);var tools=new BoosterInventory();session.Open(flow.StartingStockSnapshot(),new[]{tools.hammer,tools.axe,tools.ram,tools.atlas});
-   Build();canvas.gameObject.SetActive(true);home.SetPresentation(true,false);opened=Time.unscaledTime;Reflow(1);Focus("close");
+   home.ShowEvents(false);session.Open(flow.StartingStockSnapshot(),flow.ToolStockSnapshot());
+   RefreshSaveStatus();Build();canvas.gameObject.SetActive(true);home.SetPresentation(true,false);opened=Time.unscaledTime;Reflow(1);Focus("close");
   }
   public void Hide(bool showHome=true)
   {
-   if(!IsVisible)return;canvas.gameObject.SetActive(false);
+   if(!IsVisible)return;if(account)account.Hide(false);accountSuspended=false;fade.interactable=fade.blocksRaycasts=true;canvas.GetComponent<GraphicRaycaster>().enabled=true;canvas.gameObject.SetActive(false);
    if(showHome){home.SetPresentation(true,true);if(EventSystem.current)foreach(var label in home.GetComponentsInChildren<HomeControlLabel>())if(label.action=="settings"){var b=label.GetComponent<Button>();if(b&&b.IsInteractable()&&b.gameObject.activeInHierarchy){EventSystem.current.SetSelectedGameObject(b.gameObject);break;}}}
   }
   public void Request(string action)
   {
-   if(!IsVisible||string.IsNullOrEmpty(action)||action=="disabled")return;
+   if(!IsVisible||accountSuspended||string.IsNullOrEmpty(action)||action=="disabled")return;
+   if(action=="save-progress"&&session.Page=="main"){
+    EnsureAccountService();
+    if(account&&account.Show(AccountService)){accountSuspended=true;fade.alpha=0;fade.interactable=fade.blocksRaycasts=false;canvas.GetComponent<GraphicRaycaster>().enabled=false;}return;
+   }
    if(action=="close"){Hide();return;}
    if(action=="shop"&&session.Page=="inventory"){Hide(false);home.NavigationRequested.Invoke("shop");return;}
    float position=scroll.verticalNormalizedPosition;string focus="";
@@ -48,6 +66,18 @@ namespace HeartOfTheRain.App.AppSettings
    {string url;if(session.TryLink(action.Substring(5),out url)){Application.OpenURL(url);return;}if(session.Page!="notice")return;position=1;focus="return";}
    else {if(session.Page!="main"||!session.Navigate(action))return;lastSection=action;position=1;focus="return";}
    Reflow(position);if(focus.Length>0)Focus(focus);
+  }
+  void EnsureAccountService(){
+   if(AccountService!=null&&!(AccountService is LocalAccountService))return;
+   var selected=HeartOfTheRain.App.ServerAccount.ServerAccountService83.Select(home);if(selected!=null){ownedServerAccount=selected as HeartOfTheRain.App.ServerAccount.ServerAccountService83;AccountService=selected;}else if(AccountService==null)AccountService=new LocalAccountService(home);
+  }
+  void RefreshSaveStatus(){EnsureAccountService();try{session.SaveStatusKey=AccountService.Read()?.EntryStatusKey??"saveUnavailable";}catch(Exception){session.SaveStatusKey="saveUnavailable";}}
+  void ReturnFromAccount(){
+   if(!accountSuspended)return;accountSuspended=false;accountClosedFrame=Time.frameCount;
+   fade.alpha=1;fade.interactable=fade.blocksRaycasts=true;canvas.GetComponent<GraphicRaycaster>().enabled=true;
+   if(lastSize.x!=Screen.width||lastSize.y!=Screen.height||lastSafe!=Screen.safeArea||Mathf.Abs(lastScale-home.CurrentUIScale)>.01f)Reflow(scroll.verticalNormalizedPosition);
+   RefreshSaveStatus();RectTransform rt;if(nodes.TryGetValue("save-progress-status",out rt))rt.GetComponent<Text>().text=AccountText.T(session.SaveStatusKey);
+   Focus("save-progress");
   }
   void Build()
   {
@@ -63,7 +93,7 @@ namespace HeartOfTheRain.App.AppSettings
   }
   void Update()
   {
-   if(!IsVisible)return;if(lastSize.x!=Screen.width||lastSize.y!=Screen.height||lastSafe!=Screen.safeArea||Mathf.Abs(lastScale-home.CurrentUIScale)>.01f)Reflow(scroll.verticalNormalizedPosition);
+   if(!IsVisible||accountSuspended||accountClosedFrame==Time.frameCount)return;if(lastSize.x!=Screen.width||lastSize.y!=Screen.height||lastSafe!=Screen.safeArea||Mathf.Abs(lastScale-home.CurrentUIScale)>.01f)Reflow(scroll.verticalNormalizedPosition);
    fade.alpha=home.State.reduceMotion?1:Mathf.Clamp01((Time.unscaledTime-opened)/.18f);
 #if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
    bool back=UnityEngine.InputSystem.Keyboard.current!=null&&UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame;
@@ -91,10 +121,11 @@ namespace HeartOfTheRain.App.AppSettings
     if(e.kind=="group")
     {if(string.IsNullOrEmpty(e.action))continue;var im=rt.gameObject.AddComponent<Image>();im.color=Color.clear;var b=rt.gameObject.AddComponent<Button>();b.targetGraphic=im;b.transition=Selectable.Transition.None;b.interactable=e.action!="disabled";string action=e.action;b.onClick.AddListener(()=>Request(action));var label=rt.gameObject.AddComponent<HomeControlLabel>();label.action=action;label.label=e.label;rt.gameObject.AddComponent<AppSettingsFocusScroll>().owner=this;}
     else if(e.kind=="text"||e.kind=="lefttext")
-    {var t=rt.gameObject.AddComponent<Text>();t.font=assets.Home.boldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind=="lefttext"?TextAnchor.MiddleLeft:TextAnchor.MiddleCenter;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;while(t.fontSize>10&&t.preferredWidth>e.width)t.fontSize--;}
+    {var t=rt.gameObject.AddComponent<Text>();t.font=e.id=="save-progress-label"&&accountArt?accountArt.titleFont:e.id=="save-progress-status"&&accountArt?accountArt.bodyFont:assets.Home.boldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind=="lefttext"?TextAnchor.MiddleLeft:TextAnchor.MiddleCenter;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;LabelFit.Apply(t,e.width,e.height);}
     else
-    {var im=rt.gameObject.AddComponent<Image>();if(e.kind!="color")im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.sliced?4:1;im.preserveAspect=e.preserveAspect;im.raycastTarget=false;}
+    {var im=rt.gameObject.AddComponent<Image>();if(e.kind!="color")im.sprite=e.asset=="Account_Primary"&&accountArt?accountArt.primary:assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.asset=="Account_Primary"?8.57f:e.sliced?4:1;im.preserveAspect=e.preserveAspect;SpriteFit.Center(im);im.raycastTarget=false;}
    }
+   foreach(var e in frame.elements)if(e.id=="backdrop")PageBackdrop90.Fill(nodes[e.id].GetComponent<MaskableGraphic>(),canvas);
    foreach(var e in frame.elements)if(!string.IsNullOrEmpty(e.action)&&e.action!="disabled")
    {var gs=new List<Graphic>();foreach(var n in nodes)if(n.Key.StartsWith(e.id+"-",StringComparison.Ordinal)){var g=n.Value.GetComponent<Graphic>();if(g)gs.Add(g);}nodes[e.id].gameObject.AddComponent<PreLevelButtonFeedback>().Configure(gs.ToArray(),home.State.reduceMotion);}
   }
@@ -109,6 +140,6 @@ namespace HeartOfTheRain.App.AppSettings
   static Color ColorOf(string value){Color c;return ColorUtility.TryParseHtmlString(value,out c)?c:Color.white;}
   static RectTransform Rect(string name,Transform parent){var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);return (RectTransform)go.transform;}
   static void Place(RectTransform rt,float x,float y,float w,float h){rt.anchorMin=rt.anchorMax=rt.pivot=new Vector2(0,1);rt.anchoredPosition=new Vector2(x,-y);rt.sizeDelta=new Vector2(w,h);}
-  void OnDestroy(){if(home)home.NavigationRequested.RemoveListener(Route);}
+  void OnDestroy(){ownedServerAccount?.Dispose();if(home)home.NavigationRequested.RemoveListener(Route);if(account){account.Dismissed-=ReturnFromAccount;account.Hide(false);}}
  }
 }

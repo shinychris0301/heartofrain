@@ -9,7 +9,7 @@ namespace HeartOfTheRain.App.EndLevel.Editor
   [MenuItem("Heart of the Rain/App/M58/Open End Level Review")]
   public static void Open(){if(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())EditorSceneManager.OpenScene(Root+"/Scenes/M58_EndLevel_Review.unity");}
   [MenuItem("Heart of the Rain/App/M58/Open Confirmation in Play Mode")]
-  public static void Show(){var c=Object.FindObjectOfType<GameplaySettingsController>();if(c)c.ShowEndLevel();else Debug.LogWarning("Start a level from the app review scene first.");}
+  public static void Show(){var c=Object.FindFirstObjectByType<GameplaySettingsController>();if(c)c.ShowEndLevel();else Debug.LogWarning("Start a level from the app review scene first.");}
   [MenuItem("Heart of the Rain/App/M58/Validate End Level Assets")]
   public static void Validate()
   {
@@ -23,7 +23,7 @@ namespace HeartOfTheRain.App.EndLevel.Editor
   [MenuItem("Heart of the Rain/App/M58/Capture Actual Confirmation Game View")]
   public static void Capture()
   {
-   var c=Object.FindObjectOfType<GameplaySettingsController>();if(!Application.isPlaying||!c||!c.IsEndLevelVisible){Debug.LogWarning("Open the M58 confirmation in Play Mode first.");return;}
+   var c=Object.FindFirstObjectByType<GameplaySettingsController>();if(!Application.isPlaying||!c||!c.IsEndLevelVisible){Debug.LogWarning("Open the M58 confirmation in Play Mode first.");return;}
    string dir=Path.GetFullPath("../ReviewCaptures");Directory.CreateDirectory(dir);string path=Path.Combine(dir,"M58_EndLevel_"+System.DateTime.Now.ToString("yyyyMMdd_HHmmss")+".png");ScreenCapture.CaptureScreenshot(path);Debug.Log("Queued actual Game view capture: "+path);
   }
  }

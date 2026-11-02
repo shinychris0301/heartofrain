@@ -1,0 +1,29 @@
+{
+  "revision": "TeamsSocial_R1",
+  "dependencies": "R4 TeamsAccess included byte-for-byte; Home fonts/navigation references retained at host paths",
+  "roles": {
+    "teamBadge": "TA_Badge_<badgeId>",
+    "lifeReceived": "TA_Stat_heart",
+    "helpStat": "TA_Icon_Help",
+    "memberCount": "TA_Icon_People",
+    "teamScore": "TA_Stat_star",
+    "level": "TA_Stat_up",
+    "chat": "TC_Icon_Chat",
+    "mail": "TC_Icon_Mail",
+    "send": "TC_Icon_Send",
+    "cooldown": "TC_Icon_Clock",
+    "refresh": "TC_Icon_Refresh",
+    "unreadBadge": "TC_Notification_Disc",
+    "incomingMessage": "TC_Bubble_Incoming",
+    "outgoingMessage": "TC_Bubble_Outgoing"
+  },
+  "doNotSubstitute": [
+    "Do not replace pink TA_Stat_heart with maroon Home Icon_Lives or flat TA_Icon_Heart.",
+    "Do not replace the filled clasped-hands Help icon with the old outlined glyph.",
+    "Do not regenerate existing R4 emblems, avatars, navigation or painted statistics.",
+    "Do not tint colored artwork; only tint monochrome glyphs and empty heart slots as specified."
+  ],
+  "text": "all UI text, counts, timers, names and numerals stay live; no text baked into new assets",
+  "runtimeIllustrationMaxOutput": "512 px heart sources may be used up to 256 reference units at 2160-wide output; current hearts max80 units",
+  "newGlyphs": "256 px source; current largest glyph88 reference units; preserves >1 source pixel per output pixel at 2160 width"
+}

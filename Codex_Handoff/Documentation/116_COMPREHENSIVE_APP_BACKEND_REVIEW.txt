@@ -1,0 +1,338 @@
+HEART OF THE RAIN - COMPREHENSIVE APP AND BACKEND REVIEW116
+29 October 2026
+
+The selected app/backend snapshot has completed actual Unity Editor, Android emulator, SQLite/ASGI/TCP and approved replay-worker checks. The reproduced legacy Teams crash is repaired. The wrong branded2022 test profile was replaced with the approved splash-free6000.3.27f1 candidate; all201 decoded cold-start frames show no Unity branding, and its actual full player regression passes2,267 checks/50boards/408actions/354clips. Failed native/UI epochs and remaining acceptance concerns are retained; this is not production/provider/host approval.
+
+TESTED SOURCE AND COMMIT SCOPE
+
+Initial source cut: 2026-10-29T13:09:35.627802Z. Final app: 5,874 inputs / 3,073 original GUIDs, Harness08 manifest SHA256 9cc946e8e6760a5cd3cf44bcf7ae60bd3ab432ac5a040bef23f001b13b6ca350. Twelve reviewed source changes comprise ten Editor fixtures, the Teams runtime fallback, and a UNITY_EDITOR-only sanitized journal observer whose shipping preprocessed source is unchanged. Backend runtime/tests/config match the full 693-test epoch; the later operational harness/schema guide corrections have separate evidence. Non-Unity source is the sealed 432-file cut. The user explicitly selected committing tested copies while preserving newer workspace edits uncommitted. Main Unity remains 2022.3.62f3; the user-visible candidate uses the separately approved, unpromoted 6000.3.27f1 no-splash profile. Its H05 source epoch has exact shipping runtime/art/GUID equivalence to final H08; remaining changes are Editor fixtures.
+
+EXECUTION EVIDENCE
+
+Backend full suite: PASS 693 distinct tests; zero failures/errors/skips; actual approved Unity replay worker
+  Scope: Disposable SQLite, in-process ASGI and actual pinned Windows worker; all 129 inputs unchanged during full execution. Provider responses are controlled.
+  Evidence: Verification/Evidence/Review116/Backend/Full01/Service_Tests.json
+
+Backend post-harness subset: PASS 80 repeated tests; zero failures/errors/skips
+  Scope: Operations/readiness/migration subset after current-schema assertion correction; not 80 additional distinct tests.
+  Evidence: Verification/Evidence/Review116/Backend/FocusedOps01/ServiceTests.json
+
+Actual TCP and operations: PASS 199 checks; schema14 backup/restore, restart and integrity
+  Scope: 162 recorded application requests plus separate rate-limit loop; 72 concurrent reads and 12 claim retries with one grant. Busy local latency is not production capacity. Owned listeners closed.
+  Evidence: Verification/Evidence/Review116/Backend/BackendSummary116.json
+
+Pinned Unity native matrix: 53 broad scopes: 50 accepted scoped passes, 3 open acceptance concerns; 104 invocations / 27 failed epochs retained
+  Scope: Actual Unity2022.3.62f3 Editor. Original and targeted source epochs remain separate. Open Windows atomic replace1175, Regional offscreen visual clipping and unreproduced receipt safe-area failure.
+  Evidence: Verification/Evidence/Review116/App/NativeSnapshotSummary116.json
+
+Actual Unity/backend HTTP: 9 of 10 selected scopes pass; final Social fails at23,155 checks
+  Scope: Identity25; Account59; Pay38; verified gameplay303; Commerce180; Teams Help87/Mail49/Invite37/Leave33 pass. Social stops on pending Info-footer geometry; pending discard, transfer/former-owner leave, non-BMP Unicode, bounded team-history/pagination and final wallet rereads did not execute. Synthetic SDK/publisher/provider controls; no real money or hosted/device service acceptance.
+  Evidence: Verification/Evidence/Review116/App/NativeSnapshotSummary116.json
+
+Teams legacy crash regression: Reproduced before fix; PASS20 native checks across4 tabs after fix
+  Scope: Missing new-provider sprite IDs fall through to original approved sprite bank; actual before Android Render/Reflow/Show crash and restored Rally asset are retained.
+  Evidence: Verification/Evidence/Review116/App/Fixes/TeamsAssetFallback/FixReceipt.json
+
+Android2022 diagnostic regression: PASS2,198 checks /50 boards /408 actions /354 clips
+  Scope: Actual API34 ARM64-translation emulator on exact internal r2 APK. Older packages/profile/preferences preserved. This branded2022 package was stopped; no ordinary relaunch after splash complaint.
+  Evidence: Verification/Evidence/Review116/Emulator/RegressionCanonicalAlias04/Result.json
+
+Android2022 build configurations: Development and Non-Development builds/static checks pass
+  Scope: Actual main-engine compilation, SDK-free internal IDs/debug signing; non-development artifact was never installed. Failed install/source epochs remain retained.
+  Evidence: Verification/Evidence/Review116/Android/StaticNonDevelopment02Canonical/StaticApk116.json
+
+Splash-free LTS actual build: PASS actual ARM64 IL2CPP Development build; zero BuildReport errors/warnings; all4 splash getters false
+  Scope: Unity6000.3.27f1 approved isolated profile, no engine promotion. Actual335,850,962-byte internal debug APK SHA256 d158262bcd885b3cc5b769a4b92a3a9ac99174a07684e0b5b193c676650d3fc9. Failed first Gradle foreign-project guard and corrected separate owned cache retained.
+  Evidence: Verification/Evidence/Review116/LTSNoSplash/Build02/Build.json
+
+Splash-free LTS static qualification: PASS14 checks
+  Scope: API26→36, ARM64 IL2CPP, SDK-free signature/CRC/alignment/source/profile checks. Actual cold recording is a separate gate.
+  Evidence: Verification/Evidence/Review116/LTSNoSplash/Static02/StaticApkLts116.json
+
+Commerce independent SQLite audit: PASS43/43 assertions
+  Scope: Read-only after service closure: per-actor frozen grants/ledger/entitlements, cancellation,101 pending rows, creator ownership and exactly one Daily+50.
+  Evidence: Verification/Evidence/Review116/Connected/Core04/AssertedSQLiteAudit116.json
+
+Social independent SQLite audit: PASS12/12 scoped assertions; native Social remains FAIL
+  Scope: Exact actor/channel/team ownership, message and operation receipts, settled protected recovery and rejected legacy owner-leave preserving membership; does not cover unexecuted combined tail.
+  Evidence: Verification/Evidence/Review116/Connected/Core05/AssertedSQLiteAudit116_ChannelBound.json
+
+Canonical HTTP imports and cleanup: PASS16 fresh service guards
+  Scope: All129 sealed backend inputs match per service, canonical imports/config exact, listener ownership established and owned handles/processes/listeners closed. Earlier aggregate failures remain failed.
+  Evidence: Verification/Evidence/Review116/Connected/FinalCoreServiceGuards116.json
+
+Actual splash-free process-cold launch: PASS; all201 decoded frames reviewed; no Unity branding observed
+  Scope: Actual authorized API34 emulator OS recording, two chronological contact sheets and full-resolution loading/Prologue frames. Ordinary Russian Home reached using normal Skip controls; internal Development Build watermark remains.
+  Evidence: Verification/Evidence/Review116/Emulator/ColdStartLTSNoSplash01/VisualReview.json
+
+Splash-free LTS full Android regression: PASS2,267 checks /50 boards /408 actions /354 clips /0 failures
+  Scope: Actual API34 authorized emulator with ARM64 translation on exact LTSBuild02 APK. Own durable profile/preferences/cold media and four older game datasets/APKs preserved. Accelerated fixture, not human-campaign/performance certification.
+  Evidence: Verification/Evidence/Review116/Emulator/RegressionLTSNoSplash01/Result.json
+
+Final LTS source/profile/cache equivalence: PASS2,592 shipping inputs /3,073 original GUIDs; foreign cache4,344 files unchanged
+  Scope: Actual H05 built epoch equals final H08 shipping runtime/art; five differences are Editor fixtures. Same-GUID approved LTS meta migration only; main critical settings unchanged. Later prepare-only path preflight has separate retained source/AST proof.
+  Evidence: Verification/Evidence/Review116/LTSNoSplash/Build02/FinalBuildSourceAndCacheProof116.json
+
+Durable public-profile reproduction: PASS fresh H08 preparation;5,874 canonical /5,882 copied inputs
+  Scope: Public approved profile bundle and explicit frozen source; no privateReview98 Packages/settings/metas required. Stock6000.3.27f1 Android modules/public Gradle cache remain toolchain prerequisites. No second APK or engine promotion.
+  Evidence: Verification/Evidence/Review116/LTSNoSplash/DurablePreparationH08_R1.json
+
+Final ordinary Home: PASS; own Level1/1250coins/5lives/0of50 preserved
+  Scope: Actual ordinary Russian Home after the full LTS fixture; older packages/data remain intact. Internal Development Build watermark is expected; no live service/provider acceptance.
+  Evidence: Verification/Evidence/Review116/Emulator/HomeLTSNoSplashFinal01/Home.json
+
+NATIVE SCOPE MATRIX
+
+Original broad runs and later targeted runs retain separate source epochs.
+Checks are scoped assertions, not independent production acceptance tests.
+
+- ResourceFault: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=63; latest=SnapshotFull01_ResourceFault/PASS_NATIVE116_INVOCATION/63; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ResourceFault
+- General: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=535; latest=SnapshotFinal02_General/PASS_NATIVE116_INVOCATION/535; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness07.json; selected run=SnapshotFinal02_General
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotBoot01_General/Invocation.json", "sha256": "8437426267f6cd46100d1d8a5b2d11a10bbd46455ba56521e1e52b79b057c5f3"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116.json", "sha256": "99d852809ec6d1357898095b9832abc4d9562cf0f5f5dc8d5b438363a8bcb557"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotBoot01_General"}
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget01_General/Invocation.json", "sha256": "ff36e75a5053f3db6c5738682cbfc7e7ed0b3e078d47123651072d495146051d"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json", "sha256": "eeba5e5c026d7b125f466fd8df518ed0e0ea9375a33a55e2501c8c2df0812002"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget01_General"}
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget02_General/Invocation.json", "sha256": "b96795afb61dcd3ae3544c15203fb0ad2ebe45b4cb2bb1dfd72591a7e2bcdc95"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness04.json", "sha256": "37ac3acdb9c07dfc441d19794d52fad999ca8eb80f5067ab4d48ab0afa51ca0c"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget02_General"}
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget03_General/Invocation.json", "sha256": "a53f63d809740adb854449d1603e086912027ff04e652affa5825e6ba008bb3b"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness05.json", "sha256": "b0bc2b91f3a22b9b8bcc6ab230ffa28a7a8f9a8f4972038fd9eeb3c66dfbe28d"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget03_General"}
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotFinal01_General/Invocation.json", "sha256": "89a8b9ecb08f722d8ec8a1813082fe9e7362038f4556a8604764acaacedf179a"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness06.json", "sha256": "5cc85e7a37d76a233b89d1154e800207d805e326dec6a1e4a00e4428b4a5f180"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotFinal01_General"}
+  Accepted targeted rerun: {"cases": null, "checks": 535, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotFinal02_General/Invocation.json", "sha256": "d90facf14588212a59477131f1b1487425101c824ba2c68078c3cefa4e5d5841"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness07.json", "sha256": "da838d7721d60429728554341a8f5318c2b63a44f7b6d93b98db34959b699451"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotFinal02_General"}
+- ProfileTransactions: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=13584; latest=SnapshotFull01_ProfileTransactions/PASS_NATIVE116_INVOCATION/13584; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ProfileTransactions
+- ProfileDesign: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=382; latest=SnapshotFull01_ProfileDesign/PASS_NATIVE116_INVOCATION/382; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ProfileDesign
+- DailyGift: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=2968; latest=SnapshotFull01_DailyGift/PASS_NATIVE116_INVOCATION/2968; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_DailyGift
+- Wellworks: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=5415; latest=SnapshotFull01_Wellworks/PASS_NATIVE116_INVOCATION/5415; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Wellworks
+- RainCup: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=8081; latest=SnapshotFull01_RainCup/PASS_NATIVE116_INVOCATION/8081; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_RainCup
+- HomeLives: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=3276; latest=SnapshotFull01_HomeLives/PASS_NATIVE116_INVOCATION/3276; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_HomeLives
+- Loading: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=8076; latest=SnapshotFull01_Loading/PASS_NATIVE116_INVOCATION/8076; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Loading
+- LoadingLifetime: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=0; latest=SnapshotFull01_LoadingLifetime/PASS_NATIVE116_INVOCATION/0; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_LoadingLifetime
+- NoMoves: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=57554; latest=SnapshotFull01_NoMoves/PASS_NATIVE116_INVOCATION/57554; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_NoMoves
+- RepeatMoves: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=93; latest=SnapshotFull01_RepeatMoves/PASS_NATIVE116_INVOCATION/93; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_RepeatMoves
+- MixedPowerSwap: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=4113; latest=SnapshotFull01_MixedPowerSwap/PASS_NATIVE116_INVOCATION/4113; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_MixedPowerSwap
+- Cascade: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=29106; latest=SnapshotFull01_Cascade/PASS_NATIVE116_INVOCATION/29106; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Cascade
+- Lifecycle: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=32; latest=SnapshotFull01_Lifecycle/PASS_NATIVE116_INVOCATION/32; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Lifecycle
+- Recovery: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=85; latest=SnapshotFull01_Recovery/PASS_NATIVE116_INVOCATION/85; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Recovery
+- Checkout: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=3410; latest=SnapshotFull01_Checkout/PASS_NATIVE116_INVOCATION/3410; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Checkout
+- Capacity: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=46; latest=SnapshotFull01_Capacity/PASS_NATIVE116_INVOCATION/46; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Capacity
+- Guard: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=328; latest=SnapshotFull01_Guard/PASS_NATIVE116_INVOCATION/328; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Guard
+- Identity: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=69; latest=SnapshotFull01_Identity/PASS_NATIVE116_INVOCATION/69; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Identity
+- ServerCore: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=55; latest=SnapshotFull01_ServerCore/PASS_NATIVE116_INVOCATION/55; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ServerCore
+- Account: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=101; latest=SnapshotFull01_Account/PASS_NATIVE116_INVOCATION/101; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Account
+- Rubles: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=2236; latest=SnapshotFull01_Rubles/PASS_NATIVE116_INVOCATION/2236; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Rubles
+- AdFlow: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=191; latest=SnapshotFull01_AdFlow/PASS_NATIVE116_INVOCATION/191; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_AdFlow
+- AdsParser: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=140; latest=SnapshotFull01_AdsParser/PASS_NATIVE116_INVOCATION/140; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_AdsParser
+- AdsUi: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=736; latest=SnapshotFull01_AdsUi/PASS_NATIVE116_INVOCATION/736; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_AdsUi
+- AdsJournal: OPEN_REPRODUCED_WINDOWS_ATOMIC_REPLACE_IO; original=FAIL_NATIVE116_INVOCATION; original checks=94; latest=SnapshotTarget03_AdsJournal/FAIL_NATIVE116_INVOCATION/7; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness05.json; selected run=SnapshotTarget02_AdsJournal
+  Accepted targeted rerun: {"cases": 9, "checks": 96, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget02_AdsJournal/Invocation.json", "sha256": "b51f57ae04020ff4ebeb3090c4985065902a6b213f2284dbf4362e38ed702270"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness04.json", "sha256": "37ac3acdb9c07dfc441d19794d52fad999ca8eb80f5067ab4d48ab0afa51ca0c"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget02_AdsJournal"}
+- Regional: OPEN_OFFSCREEN_VISUAL_ACCEPTANCE_CONCERN_WITH_NATIVE_ASSERTIONS_PASS; original=FAIL_NATIVE116_INVOCATION; original checks=31; latest=SnapshotFinal02_Regional/PASS_NATIVE116_INVOCATION/9299; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness07.json; selected run=SnapshotFinal02_Regional
+  Accepted targeted rerun: {"cases": 80, "checks": 9299, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotFinal02_Regional/Invocation.json", "sha256": "0446d0bcf7b1be244d03ff847339945fc8c4a60c36e66177cf919af4f46f5067"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness07.json", "sha256": "da838d7721d60429728554341a8f5318c2b63a44f7b6d93b98db34959b699451"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotFinal02_Regional"}
+- Provider: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=280; latest=SnapshotFull01_Provider/PASS_NATIVE116_INVOCATION/280; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Provider
+- Display: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=14780; latest=SnapshotFull01_Display/PASS_NATIVE116_INVOCATION/14780; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Display
+- Progress: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=2043; latest=SnapshotFull01_Progress/PASS_NATIVE116_INVOCATION/2043; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Progress
+- Tutorial: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=319; latest=SnapshotFull01_Tutorial/PASS_NATIVE116_INVOCATION/319; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Tutorial
+- RussianLocale: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=580; latest=SnapshotFull01_RussianLocale/PASS_NATIVE116_INVOCATION/580; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_RussianLocale
+- Snapshot: PASS_SCOPED_NATIVE; original=FAIL_NATIVE116_INVOCATION; original checks=0; latest=SnapshotTarget01_Snapshot/PASS_NATIVE116_INVOCATION/18313; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json; selected run=SnapshotTarget01_Snapshot
+  Accepted targeted rerun: {"cases": null, "checks": 18313, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget01_Snapshot/Invocation.json", "sha256": "fa4ca32868f7d3963df0cf4fbbd410886676a16da066271fb51c6fd6316a5b67"}, "layouts": null, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json", "sha256": "eeba5e5c026d7b125f466fd8df518ed0e0ea9375a33a55e2501c8c2df0812002"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget01_Snapshot"}
+- ObstacleIntro98: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=566; latest=SnapshotFull01_ObstacleIntro98/PASS_NATIVE116_INVOCATION/566; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ObstacleIntro98
+- NoMovesTransactions: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=4232; latest=SnapshotFull01_NoMovesTransactions/PASS_NATIVE116_INVOCATION/4232; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_NoMovesTransactions
+- ProfileClarity: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=270; latest=SnapshotFull01_ProfileClarity/PASS_NATIVE116_INVOCATION/270; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ProfileClarity
+- ProfileM71: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=8244; latest=SnapshotFull01_ProfileM71/PASS_NATIVE116_INVOCATION/8244; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ProfileM71
+- Startup99: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=30; latest=SnapshotFull01_Startup99/PASS_NATIVE116_INVOCATION/30; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Startup99
+- RewardJournal100: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=30; latest=SnapshotFull01_RewardJournal100/PASS_NATIVE116_INVOCATION/30; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_RewardJournal100
+- RewardUI100: OPEN_UNREPRODUCED_SAFE_AREA_ACCEPTANCE_CONCERN; original=FAIL_NATIVE116_INVOCATION; original checks=3492; latest=SnapshotRewardDiag02_RewardUI100/PASS_NATIVE116_INVOCATION/8686; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json; selected run=SnapshotRewardDiag02_RewardUI100
+  Accepted targeted rerun: {"cases": null, "checks": 9919, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotRewardDiag01_RewardUI100/Invocation.json", "sha256": "c5fa2aaf3bfb7c2dce20a0a3ec6fbba7178904681ba4e2d4a404cb53bd3112fe"}, "layouts": 15, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json", "sha256": "eeba5e5c026d7b125f466fd8df518ed0e0ea9375a33a55e2501c8c2df0812002"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotRewardDiag01_RewardUI100"}
+  Accepted targeted rerun: {"cases": null, "checks": 8686, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotRewardDiag02_RewardUI100/Invocation.json", "sha256": "696ec410ba847b67bfe5d1b8a8dbdd84aeb7bb8281b8e952e6a22e953852bbb6"}, "layouts": 15, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness02.json", "sha256": "eeba5e5c026d7b125f466fd8df518ed0e0ea9375a33a55e2501c8c2df0812002"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotRewardDiag02_RewardUI100"}
+- Lives101: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=1539; latest=SnapshotFull01_Lives101/PASS_NATIVE116_INVOCATION/1539; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Lives101
+- VkSignin102: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=793; latest=SnapshotFull01_VkSignin102/PASS_NATIVE116_INVOCATION/793; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_VkSignin102
+- ServerConfig104: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=149; latest=SnapshotFull01_ServerConfig104/PASS_NATIVE116_INVOCATION/149; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_ServerConfig104
+- GoalOptics106: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=7425; latest=SnapshotFull01_GoalOptics106/PASS_NATIVE116_INVOCATION/7425; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_GoalOptics106
+- AdConfig107: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=85; latest=SnapshotFull01_AdConfig107/PASS_NATIVE116_INVOCATION/85; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_AdConfig107
+- Navigation108: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=6451; latest=SnapshotFull01_Navigation108/PASS_NATIVE116_INVOCATION/6451; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_Navigation108
+- TeamsAccess109: PASS_SCOPED_NATIVE; original=FAIL_NATIVE116_INVOCATION; original checks=478; latest=SnapshotTarget03_TeamsAccess109/PASS_NATIVE116_INVOCATION/23346; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness05.json; selected run=SnapshotTarget03_TeamsAccess109
+  Accepted targeted rerun: {"cases": 36, "checks": 23346, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget02_TeamsAccess109/Invocation.json", "sha256": "6a7d844fb8479adfddf23cb69615903860ddca9f41e036f436d2412da75d0cf4"}, "layouts": 135, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness04.json", "sha256": "37ac3acdb9c07dfc441d19794d52fad999ca8eb80f5067ab4d48ab0afa51ca0c"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget02_TeamsAccess109"}
+  Accepted targeted rerun: {"cases": 36, "checks": 23346, "exactFinalInputs": false, "invocation": {"path": "Verification/Evidence/Review116/App/Native/SnapshotTarget03_TeamsAccess109/Invocation.json", "sha256": "8ad69eee8df3c24eb198ef6505c6868ebe89cc628de0394a4441f69e0a01ec96"}, "layouts": 135, "sourceManifest": {"path": "Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness05.json", "sha256": "b0bc2b91f3a22b9b8bcc6ab230ffa28a7a8f9a8f4972038fd9eeb3c66dfbe28d"}, "status": "PASS_NATIVE116_INVOCATION", "tag": "SnapshotTarget03_TeamsAccess109"}
+- TeamsScroll109: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=723; latest=SnapshotFull01_TeamsScroll109/PASS_NATIVE116_INVOCATION/723; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_TeamsScroll109
+- TeamsChatHelp110: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=76001; latest=SnapshotFull01_TeamsChatHelp110/PASS_NATIVE116_INVOCATION/76001; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_TeamsChatHelp110
+- TeamsMail111: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=72888; latest=SnapshotFull01_TeamsMail111/PASS_NATIVE116_INVOCATION/72888; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_TeamsMail111
+- TeamsInvites112: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=28598; latest=SnapshotFull01_TeamsInvites112/PASS_NATIVE116_INVOCATION/28598; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_TeamsInvites112
+- TeamsLeave113: PASS_SCOPED_NATIVE; original=PASS_NATIVE116_INVOCATION; original checks=12099; latest=SnapshotFull01_TeamsLeave113/PASS_NATIVE116_INVOCATION/12099; latest epoch=Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_AfterTeamsFix01.json; selected run=SnapshotFull01_TeamsLeave113
+
+ACTUAL UNITY / TCP / SQLITE MATRIX
+
+- HeartOfTheRain.Verification.Commerce100HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=180; run=Core04_CommerceHttp
+- HeartOfTheRain.Verification.Identity82Verification.RunHttp: PASS_NATIVE116_INVOCATION; checks=25; run=Core02_IdentityHttp
+- HeartOfTheRain.Verification.RuStore81Verification.RunHttp: PASS_NATIVE116_INVOCATION; checks=38; run=Core02_PayHttp
+- HeartOfTheRain.Verification.ServerAccount83HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=59; run=Core02_AccountHttp
+- HeartOfTheRain.Verification.ServerGameplay83HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=303; run=Core03_ServerHttp
+- HeartOfTheRain.Verification.Social82Verification.RunHttp: FAIL_NATIVE116_INVOCATION; checks=23155; run=Core05_SocialHttp
+- HeartOfTheRain.Verification.TeamsChatHelp110HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=87; run=Teams01_TeamsChatHelp110_Native
+- HeartOfTheRain.Verification.TeamsInvites112HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=37; run=Teams01_TeamsInvites112_Native
+- HeartOfTheRain.Verification.TeamsLifecycle113HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=33; run=Teams01_TeamsLeave113_Native
+- HeartOfTheRain.Verification.TeamsMail111HttpVerification.Run: PASS_NATIVE116_INVOCATION; checks=49; run=Teams01_TeamsMail111_Native
+
+CONFIRMED CHANGES
+
+- Unity/Assets/HeartOfTheRain/App/Teams/Runtime/TeamsAssets.cs: preserve new provider precedence and fall through on a miss, restoring original approved sprites and preventing the actual legacy Teams Render crash. No artwork/GUID/economy/gameplay change.
+
+- Backend/tools/review_operational93.py: replace obsolete schema8 backup/restore assertion with SCHEMA_VERSION. Backend/TEAM_MAIL_UPGRADE111.txt: describe current-schema initialization. No backend transaction/runtime repair was needed or claimed.
+
+- Ten Editor fixtures: align selectors/current DTO/cache/versioned-membership/reward-modal expectations with approved current behavior, keep raw false/null/privacy and financial idempotency assertions, retain original failed epochs, and shorten only disposable synthetic journal paths. Regional canvas refit improves height but remains visually unaccepted at the right edge.
+
+- RewardedAdsJournal85.cs: add only a UNITY_EDITOR sanitized exception type/HResult observer for intermittent Windows1175 diagnosis. Player preprocessed source equality is separately proven; no financial retry/state/writer behavior change.
+
+- Verification/Tools/Review116: durable public approved LTS profile, exact source/toolchain/build pins and user-visible launch validator. Branded2022 APKs require explicit diagnostic selection. Internal build/launch/testing/Git helpers preserve older artifacts and newer working/staged intent.
+
+- Current handoff/report/remediation evidence: exact selected source manifests, failure classifications, per-scope execution and source epochs, real Android images, process/data-preservation receipts and separate production gates.
+
+EXACT APP SOURCE REPAIRS IN THIS REVIEW
+
+- Unity/Assets/HeartOfTheRain/App/Advertising/Runtime/RewardedAdsJournal85.cs: UNITY_EDITOR-only sanitized observer; player preprocessed source equality proved
+- Unity/Assets/HeartOfTheRain/App/ServerGameplay/Editor/ServerGameplay83HttpVerification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/App/Teams/Runtime/TeamsAssets.cs: Production fallback fix
+- Unity/Assets/HeartOfTheRain/Verification/Editor/Commerce100HttpVerification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/Regional89ControlledVerification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/Regional89Verification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/RewardPresentation100UiVerification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/RewardedAdsJournal85Verification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/Social82Verification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/SocialPaging83Verification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/TeamsAccess109Verification.cs: Editor fixture
+- Unity/Assets/HeartOfTheRain/Verification/Editor/TeamsDiscovery103Verification.cs: Editor fixture
+
+All original asset GUIDs and artwork are preserved. Full selected file inventories
+and backend/release/tooling provenance are in Repository/NonUnityCommitSource116.json
+and the explicitly selected final app manifest; newer main bytes are excluded.
+
+RETAINED FAILURES AND MATERIAL LIMITATIONS
+
+- Windows Editor ads journal: intermittent IOException0x80070497 / Win321175 on short103/134-character paths; old Claiming intent stays byte-identical. A separate lifecycle repeat passes96 checks, but the fault is unresolved; direct File.Replace probes pass and the cause is unknown.
+
+- Regional native assertions pass9,299/80 cases, but the768px offscreen image still has a black right margin/clipped controls after a capture-only background refit. Full-frame visual acceptance remains open; this is not a demonstrated runtime artwork defect.
+
+- Final Social actual HTTP run fails at23,155 checks on the pending Info-footer geometry assertion (Russian720x1280). A failing-state PNG was not captured. Pending discard, transfer/former-owner leave, non-BMP Unicode, bounded team-history/pagination and final wallet rereads did not execute; dedicated feature/HTTP scopes remain separately valid.
+
+- One reward-receipt tablet safe-area run failed. Two unchanged-runtime/unchanged-assertion diagnostic runs pass15 layouts/four lifecycle cases each; this does not establish a runtime fix.
+
+- Actual legacy Teams preview has a white null-sprite heart square: absent R3_Lives lookup. Existing approved LivesHeart alias can address it in a narrow future fix; no new artwork was invented.
+
+- SDK/publisher/VK/advertising responses and seeded social data are controlled. No live payment, real provider flow, hosted HTTPS, production authority migration, off-host disaster restore, release signing or production activation was performed.
+
+- The physical phone was untouched. Android8/OEM/low-memory/warm-recreation/accessibility/human-campaign/performance acceptance remains open. ServerCore-named native contracts do not qualify Windows Server Core OS or a Linux worker.
+
+- Existing Starlette deprecation, later migration interruption-boundary gaps, sustained/max-history worker capacity and prior startup/frame performance concerns remain follow-up work.
+
+- The owner subsequently confirmed that they manually closed the emulator. A dnplayer.exe access-violation record0xc0000005 was present around a closure before LTS installation; this does not establish a spontaneous shutdown or an app-caused failure. Earlier observations and preservation receipts remain unchanged.
+
+- Newer main workspace changes are not the tested cut and will remain uncommitted. Safe main merging preserved both newer Regional fixture files. Failed build/install/harness/native epochs are retained, not relabelled passes.
+
+ORDERED REMEDIATION
+
+HEART OF THE RAIN - REVIEW116 REMEDIATION PLAN
+29 October 2026
+
+FINAL PLAN AFTER THE LOCAL APP/BACKEND TEST RUNS.
+Failed epochs and open acceptance concerns remain recorded. This plan does not
+authorize production activation or promotion of the main Unity engine.
+
+Confirmed repairs and verification work
+
+- Teams asset resolution: TI_/TM_/TC_ provider misses now fall through to the
+  original approved sprite bank. The previous Android Teams review crash and
+  exact native Render/Reflow/Show stack were reproduced before the repair.
+  The native regression then passed20 checks across all four legacy tabs;
+  the repaired Android run passed the former failure point and all50 boards.
+- Backend operational rehearsal: replaced its obsolete schema8 assertion with
+  SCHEMA_VERSION. Actual schema14 backup/restore, database integrity and restart
+  then passed199 checks. The fresh-initialization guide now says current schema.
+- Test infrastructure: retained and corrected obsolete UI fixture selectors,
+  versioned membership expectations, bounded temporary fixture paths and missing
+  public comparison prerequisites. No failed source epoch was relabelled a pass.
+- Android test transport: a separate owned localhost ADB server exposes only the
+  authorized emulator. Default APK placement succeeds; attempted internal
+  placement produced a real restorecon failure. No security, mount or global
+  Android setting was changed.
+- Splash-free launch: the visible test had selected the older2022 profile with
+  both Unity splash flags enabled. The approved isolated6000.3.27f1 profile is
+  now reproducible from public settings and the selected app source. Its actual
+  SDK-free ARM64 build passes with both getters false before/after build; all201
+  decoded cold-start frames show no Unity branding. The actual LTS player passes
+  2267 checks/50 boards/408 actions/354 clips. Ordinary2022 launches now require
+  explicit diagnostic selection. Main2022 settings, artwork and GUIDs remain
+  preserved; this internal Development Build still has its debug watermark.
+
+Ordered follow-up
+
+1. Diagnose the Windows atomic journal replacement failure before enabling ads.
+   The real Unity writer intermittently returns IOException0x80070497,
+   Win32ERROR_UNABLE_TO_REMOVE_REPLACED(1175), on short103/134-character paths.
+   The old Claiming intent remains byte-identical; direct File.Replace probes
+   pass, so the cause is not established. Retain the exact private synthetic
+   fixture, sanitized Editor type/HResult diagnostics and previous failing runs.
+   Reproduce on the selected supported host, inspect file/handle conditions,
+   then choose a narrow durable-write repair only after the cause is known.
+   Acceptance: lifecycle, contention, corruption, cancellation, lost-ack and
+   long-name cases pass with old/new state and fault boundaries verified.
+   Do not delete pending intent or silently retry an uncertain financial action.
+
+2. Resolve the remaining capture, scrolling and legacy-image concerns.
+   Regional controls now pass9299 checks/80 cases after an Editor-only capture
+   ordering correction. The first failed768px image had a correctly bound
+   backdrop sized for Screen640x480. Refitting after attaching the768x1024 target
+   fixes its height, but a black right margin and clipped controls remain.
+   Diagnose camera/canvas/RectMask clip space using original PNGs and corners;
+   require full-frame coverage and contained controls before visual acceptance.
+   Do not infer a runtime layout defect from this offscreen fixture alone.
+   The final Social HTTP run executes23155 checks and fails its retained pending
+   Info-footer geometry assertion (Russian720x1280; Social82Verification.cs:322).
+   Capture that exact locale/viewport/scroll
+   state and distinguish a stale assertion from real card/footer obstruction.
+   Preserve the assertion and all ownership/privacy controls. After a proven
+   repair, rerun pending discard, transfer/former-owner leave, non-BMP Unicode,
+   bounded team-history/pagination and final wallet rereads that did not execute
+   in this combined tail. Dedicated feature/HTTP results retain separate scope.
+   Also correct the legacy Teams life-request heart lookup: TeamsLayout asks
+   for absent R3_Lives, leaving a white null-sprite Image in the clipped row.
+   Use the already approved LivesHeart asset alias, retain its GUID/art, and
+   verify an actual native capture and Android row at phone/tablet sizes.
+
+3. Reproduce the one reward-receipt safe-area failure.
+   One native run failed during the tablet locale matrix. Two unchanged-runtime
+   diagnostic runs subsequently passed15 layouts and four lifecycle cases each.
+   Keep this as an unreproduced acceptance concern. Exercise resize, locale
+   transitions and peak animation scale with recorded safe-area/receipt bounds
+   and a failure image. A geometry change requires an actual failing witness;
+   model grants and durable acknowledgement must remain outside animation logic.
+
+4. Extend later-schema upgrade fault coverage before any real migration.
+   The Review111/112 upgrade tests have fewer owner/file/snapshot/receipt boundary
+   controls than109. Add the missing interrupted receipt/marker and changed
+   owner/source/snapshot cases, then rehearse the exact CLI upgrade chain and
+   off-host restore on disposable copies of the selected host. Never adopt an
+   unrelated/default database or replace the live authority with a test restore.
+
+5. Qualify the actual staging host and supported Android device matrix.
+   Configure owned HTTPS, protected service-account storage, supervision,
+   monitoring and tested backups. Run two-account Android Help/Mail/Leave/rejoin,
+   account recovery and transaction lifecycle acceptance. Test the Android8
+   baseline, additional OEM/display/low-memory devices and long-session/dense
+   gameplay performance. Include warm recreation, cold-start transitions and
+   the prior brief grey/black-frame concerns; absence of Unity branding in this
+   one recording does not close those broader startup/performance gates.
+   Editor assertions and accelerated emulator fixtures
+   do not certify human campaign balance, accessibility or smoothness.
+   Windows Server Core and a Linux worker remain separately unqualified hosts.
+
+6. Complete provider and release inputs before activation.
+   Use the developer-owned release signer and secure backups; verify the actual
+   certificate and compatible version upgrade. Configure real Console/products,
+   VK, advertising, backend and factual policy/support inputs, then run provider
+   sandbox, bank-return, interruption and recovery acceptance. Invitations stay
+   disabled until policy approval; mail needs a legitimate trusted issuer.
+   Rendering an offer, team page or timer is not service/payment acceptance.
+
+7. Clear maintenance warnings and integrate newer work separately.
+   Review the existing Starlette test-client deprecation with pinned dependencies
+   and rerun the backend suite after any compatibility change. Measure sustained
+   selected-host load, replay maximum-history resource use and queue latency.
+   The user explicitly chose to commit the tested snapshot while leaving newer
+   main-workspace changes uncommitted. Review and test that newer work in its own
+   source epoch before a subsequent commit; do not silently fold it into116.
+
+Machine-readable source/result bindings: Verification/Evidence/Review116/Review116Summary.json
+Visual evidence and direct report links: Verification/Evidence/Review116/Comparison.html

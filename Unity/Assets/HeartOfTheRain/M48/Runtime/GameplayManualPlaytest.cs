@@ -1,3 +1,5 @@
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+// Review and QA tooling: compiled for the Editor and development builds only.
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -65,3 +67,4 @@ namespace HeartOfTheRain.M48 {
         void OnApplicationQuit(){if(ManualPlaytestRunning)StopManualPlaytest("INTERRUPTED","Application closed.");}
     }
 }
+#endif

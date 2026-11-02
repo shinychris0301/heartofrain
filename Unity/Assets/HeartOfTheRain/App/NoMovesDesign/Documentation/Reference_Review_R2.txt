@@ -1,0 +1,40 @@
+REFERENCE REVIEW — R2
+
+Inspected both uploaded references directly:
+- Screenshot 2026-10-24 042354.png: Continue panel; wallet 710; +20 moves; Play On 900; coin offer below.
+- Screenshot 2026-10-24 042404.png: Shop overlay over the same dimmed board, visible wallet, offers/coin rows and close control.
+The separate Out of moves notification is specified by the user; it is not visible in these two still images.
+
+WHAT WAS MISSING IN R1
+R1 jumped directly into a tall generic modal. The large empty medallion occupied the center, there was no character,
+the wallet competed inside the card, and insufficient coins required a separate Get coins route.
+The shop was a functional placeholder rather than a designed overlay.
+
+R2 DESIGN
+1. A short full-width Out of moves band appears over the dimmed board after the final turn resolves.
+2. A compact wide Continue? panel replaces it. Dariya sits on the left; the move badge and short offer sit on the right.
+3. The wallet sits above the panel. A single Play On + coin price action is visually dominant.
+4. A Village Purse coin offer sits below. This uses the existing M63 coin-pouch illustration and sample coin SKU.
+5. Play On checks the current balance. Enough coins requests a move purchase; insufficient coins opens Shop immediately.
+   There is no second Get coins button/intermediate screen. The reference itself shows an underfunded continue panel,
+   so Shop is opened by the player's Play On tap rather than forced open before they can see the offer.
+6. The in-level Shop focuses the existing coin catalog and keeps the board dimmed behind it. Closing it restores Continue.
+   A verified coin purchase returns to Continue; the player taps Play On again to spend coins on moves.
+
+BRAND / CONTENT
+Keep sapphire/slate, ivory, warm gold and green actions. Do not copy the reference game's characters, logo, purple
+identity, fake discounts, or countdown. Dariya's new transparent portrait is derived from her approved M67R4 reference.
+The character and four new UI surface vectors are isolated assets; no global protagonist or gameplay artwork is replaced.
+This is the coin-focused in-level shop entry, not a replacement for the main Shop page's special-offer carousel or bundles.
+Rocket and Bomb remain separate items in the full shop; this coin-only view introduces no new booster bundles.
+
+The reference shows +20 for 900. Our preview retains the prior unapproved fixture of +5 for 900: these amounts are
+configuration values, not a design asset or a commitment to match the reference game's economy. Bind the real quote.
+The six dollar prices come from the existing M63 preview catalog, which is explicitly marked isPreview. The native
+build must get localized product prices/availability from its actual store SDK; the preview has no real checkout.
+
+RESPONSIVE / CLARITY
+The portrait and badge are independent high-resolution PNGs. Text, balances, +N and prices remain live.
+Phones use a stacked offer; landscape places the optional coin offer alongside it. The shop list scrolls independently.
+Preserve all 4x slice corners and source dimensions; use the original transparent alpha, not a flattened screenshot.
+All five app languages are supplied. No Japanese. Native Unity rendering still requires a current-project build review.

@@ -1,0 +1,6 @@
+﻿id,hypothesis,treatment,population,primary_measure,guardrails,dependencies
+EXP01,Improve first-session understanding,Tutorial pacing/clarity,New players,Tutorial completion and D1 retention,Quit rate;time;errors,Before monetization pressure
+EXP02,Present starter value at an appropriate time,Offer eligibility/timing only,Engaged nonpayers,Net contribution per eligible user,D7 retention;refunds;support,Needs durable commerce; actual price approval
+EXP03,Improve bundle utility and clarity,Contents ladder,Eligible shop viewers,Verified conversion and contribution,Retention;refunds;coin-pack cannibalization,Fix dominated offers first
+EXP04,Optional ads add incremental value,Rewarded placement versus no-ad holdout,Consenting eligible population,Total net contribution per eligible user,IAP;retention;latency;complaints,Needs reward verification and caps
+EXP05,Story-themed events improve engagement,One event/reward cadence,Eligible progressed players,D7 engagement and contribution,Content exhaustion;fatigue;support,Needs server event/claim system

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "reference": [
+    1080,
+    1920
+  ],
+  "phoneMin": [
+    360,
+    640
+  ],
+  "tabletContentWidthDp": 520,
+  "safeArea": "Apply device safe-area insets outside content root. Scrolling handles reduced available height; never shrink live text below minima.",
+  "sharedHeader": "Identical to TeamsSocial R1, Mail selected; Team Info opens existing team details.",
+  "rects": {
+    "teamSummary": [
+      40,
+      214,
+      1000,
+      210
+    ],
+    "tabs": [
+      40,
+      448,
+      1000,
+      106
+    ],
+    "status": [
+      40,
+      578,
+      1000,
+      64
+    ],
+    "inboxFirst": [
+      40,
+      654,
+      1000,
+      260
+    ],
+    "inboxSecond": [
+      40,
+      936,
+      1000,
+      240
+    ],
+    "inboxThird": [
+      40,
+      1198,
+      1000,
+      240
+    ],
+    "modal": [
+      104,
+      390,
+      872,
+      1230
+    ],
+    "crest": [
+      420,
+      290,
+      240,
+      240
+    ],
+    "modalClose": [
+      902,
+      390,
+      104,
+      104
+    ],
+    "modalInner": [
+      152,
+      720,
+      776,
+      650
+    ],
+    "modalPrimary": [
+      240,
+      1410,
+      600,
+      148
+    ]
+  },
+  "inbox": "Scroll viewport from y=642 to dock top - 24; content-height based, retain scroll across details. Only mail rows scroll.",
+  "modalResponsive": "Center within safe area; if available height is insufficient use fixed title/footer and an inner vertical ScrollRect, no uniform whole-modal minification. Preserve 48dp close hit target.",
+  "text": "Live TMP text; provided HomeRounded fonts or exact licensed host equivalents; localization file separated. Counts and server strings never baked.",
+  "nativeProofs": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024,
+      520
+    ],
+    [
+      2160,
+      3840
+    ]
+  ],
+  "minimumTouchDp": 48,
+  "nineSlice": "Use ComponentManifest border values and proofBorderScale equivalent geometry; do not stretch whole corner artwork.",
+  "modalProofOffsetY": "max(-80, (logicalViewportHeight - 1920) / 2); apply the identical offset to images, text and hit areas"
+}

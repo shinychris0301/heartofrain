@@ -1,0 +1,1097 @@
+{
+  "format_version": 1,
+  "fps": 60,
+  "frame_count": 210,
+  "duration_seconds": 3.5,
+  "vertex_count": 5070,
+  "triangle_count": 6448,
+  "positions": {
+    "file": "Dariya_Positions.f32.bytes",
+    "type": "little_endian_float32",
+    "shape": [
+      210,
+      5070,
+      2
+    ],
+    "units": "normalized square, x right / y up",
+    "frame_stride_bytes": 40560
+  },
+  "uv": {
+    "file": "Dariya_UV.f32.bytes",
+    "type": "little_endian_float32",
+    "shape": [
+      5070,
+      2
+    ],
+    "origin": "bottom-left",
+    "texel_center_sampling": true
+  },
+  "indices": {
+    "file": "Dariya_Indices.i32.bytes",
+    "type": "little_endian_int32",
+    "shape": [
+      6448,
+      3
+    ],
+    "winding": "clockwise in XY"
+  },
+  "base_texture": "../Art/Dariya_Master.png",
+  "blink_texture": "Dariya_Blink_Texture.png",
+  "blend": "lerp(base RGBA, blink RGBA, blink_weight); multiply output alpha by opacity",
+  "samples": [
+    {
+      "frame": 0,
+      "opacity": 0.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 1,
+      "opacity": 0.024132500127013165,
+      "blink": 0.0
+    },
+    {
+      "frame": 2,
+      "opacity": 0.0901793425798913,
+      "blink": 0.0
+    },
+    {
+      "frame": 3,
+      "opacity": 0.18861454046639237,
+      "blink": 2.02139e-318
+    },
+    {
+      "frame": 4,
+      "opacity": 0.3099121068942743,
+      "blink": 1.6840121060048848e-244
+    },
+    {
+      "frame": 5,
+      "opacity": 0.444546054971295,
+      "blink": 2.640093321881849e-184
+    },
+    {
+      "frame": 6,
+      "opacity": 0.5829903978052127,
+      "blink": 5.079931124106401e-136
+    },
+    {
+      "frame": 7,
+      "opacity": 0.7157191485037849,
+      "blink": 5.817907800642868e-98
+    },
+    {
+      "frame": 8,
+      "opacity": 0.8332063201747703,
+      "blink": 1.4301199090467445e-68
+    },
+    {
+      "frame": 9,
+      "opacity": 0.925925925925926,
+      "blink": 2.02311688341891e-46
+    },
+    {
+      "frame": 10,
+      "opacity": 0.9843519788650105,
+      "blink": 3.2838162632192776e-30
+    },
+    {
+      "frame": 11,
+      "opacity": 1.0,
+      "blink": 9.066354174661287e-19
+    },
+    {
+      "frame": 12,
+      "opacity": 1.0,
+      "blink": 4.693417893571972e-11
+    },
+    {
+      "frame": 13,
+      "opacity": 1.0,
+      "blink": 3.73400926961521e-06
+    },
+    {
+      "frame": 14,
+      "opacity": 1.0,
+      "blink": 0.0027825196837131367
+    },
+    {
+      "frame": 15,
+      "opacity": 1.0,
+      "blink": 0.08801263071609952
+    },
+    {
+      "frame": 16,
+      "opacity": 1.0,
+      "blink": 0.398183292746077
+    },
+    {
+      "frame": 17,
+      "opacity": 1.0,
+      "blink": 0.645594561561044
+    },
+    {
+      "frame": 18,
+      "opacity": 1.0,
+      "blink": 0.6988808955223245
+    },
+    {
+      "frame": 19,
+      "opacity": 1.0,
+      "blink": 0.6997788003889402
+    },
+    {
+      "frame": 20,
+      "opacity": 1.0,
+      "blink": 0.6675759553248568
+    },
+    {
+      "frame": 21,
+      "opacity": 1.0,
+      "blink": 0.4647410343348318
+    },
+    {
+      "frame": 22,
+      "opacity": 1.0,
+      "blink": 0.13446215771553094
+    },
+    {
+      "frame": 23,
+      "opacity": 1.0,
+      "blink": 0.006846936477654717
+    },
+    {
+      "frame": 24,
+      "opacity": 1.0,
+      "blink": 1.9321831337649708e-05
+    },
+    {
+      "frame": 25,
+      "opacity": 1.0,
+      "blink": 7.074973092364446e-10
+    },
+    {
+      "frame": 26,
+      "opacity": 1.0,
+      "blink": 5.852140193778877e-17
+    },
+    {
+      "frame": 27,
+      "opacity": 1.0,
+      "blink": 1.4155562549713663e-27
+    },
+    {
+      "frame": 28,
+      "opacity": 1.0,
+      "blink": 9.638095828796581e-43
+    },
+    {
+      "frame": 29,
+      "opacity": 1.0,
+      "blink": 1.3220759606102143e-63
+    },
+    {
+      "frame": 30,
+      "opacity": 1.0,
+      "blink": 1.9444293068598827e-91
+    },
+    {
+      "frame": 31,
+      "opacity": 1.0,
+      "blink": 1.2133557778000632e-127
+    },
+    {
+      "frame": 32,
+      "opacity": 1.0,
+      "blink": 9.452664591588894e-174
+    },
+    {
+      "frame": 33,
+      "opacity": 1.0,
+      "blink": 2.0115016600469847e-231
+    },
+    {
+      "frame": 34,
+      "opacity": 1.0,
+      "blink": 1.9021148576714877e-302
+    },
+    {
+      "frame": 35,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 36,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 37,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 38,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 39,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 40,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 41,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 42,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 43,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 44,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 45,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 46,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 47,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 48,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 49,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 50,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 51,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 52,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 53,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 54,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 55,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 56,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 57,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 58,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 59,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 60,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 61,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 62,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 63,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 64,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 65,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 66,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 67,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 68,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 69,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 70,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 71,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 72,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 73,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 74,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 75,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 76,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 77,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 78,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 79,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 80,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 81,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 82,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 83,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 84,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 85,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 86,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 87,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 88,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 89,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 90,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 91,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 92,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 93,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 94,
+      "opacity": 1.0,
+      "blink": 1e-323
+    },
+    {
+      "frame": 95,
+      "opacity": 1.0,
+      "blink": 2.6922003212695995e-260
+    },
+    {
+      "frame": 96,
+      "opacity": 1.0,
+      "blink": 1.0628183691684005e-206
+    },
+    {
+      "frame": 97,
+      "opacity": 1.0,
+      "blink": 7.24871351758319e-162
+    },
+    {
+      "frame": 98,
+      "opacity": 1.0,
+      "blink": 8.770613032605731e-125
+    },
+    {
+      "frame": 99,
+      "opacity": 1.0,
+      "blink": 1.675817675391156e-94
+    },
+    {
+      "frame": 100,
+      "opacity": 1.0,
+      "blink": 3.9017173613337354e-70
+    },
+    {
+      "frame": 101,
+      "opacity": 1.0,
+      "blink": 7.403979960512478e-51
+    },
+    {
+      "frame": 102,
+      "opacity": 1.0,
+      "blink": 6.639677199581395e-36
+    },
+    {
+      "frame": 103,
+      "opacity": 1.0,
+      "blink": 1.4142841039640462e-24
+    },
+    {
+      "frame": 104,
+      "opacity": 1.0,
+      "blink": 3.117552132729933e-16
+    },
+    {
+      "frame": 105,
+      "opacity": 1.0,
+      "blink": 2.685970964132078e-10
+    },
+    {
+      "frame": 106,
+      "opacity": 1.0,
+      "blink": 2.9611903664809103e-06
+    },
+    {
+      "frame": 107,
+      "opacity": 1.0,
+      "blink": 0.0011855487455933347
+    },
+    {
+      "frame": 108,
+      "opacity": 1.0,
+      "blink": 0.04240479526949361
+    },
+    {
+      "frame": 109,
+      "opacity": 1.0,
+      "blink": 0.28896892061308316
+    },
+    {
+      "frame": 110,
+      "opacity": 1.0,
+      "blink": 0.6935372605193153
+    },
+    {
+      "frame": 111,
+      "opacity": 1.0,
+      "blink": 0.9394130628134773
+    },
+    {
+      "frame": 112,
+      "opacity": 1.0,
+      "blink": 0.9975643184532971
+    },
+    {
+      "frame": 113,
+      "opacity": 1.0,
+      "blink": 0.9999904740584799
+    },
+    {
+      "frame": 114,
+      "opacity": 1.0,
+      "blink": 0.9877302162356105
+    },
+    {
+      "frame": 115,
+      "opacity": 1.0,
+      "blink": 0.8698191399241119
+    },
+    {
+      "frame": 116,
+      "opacity": 1.0,
+      "blink": 0.5356388796484015
+    },
+    {
+      "frame": 117,
+      "opacity": 1.0,
+      "blink": 0.15682520202353778
+    },
+    {
+      "frame": 118,
+      "opacity": 1.0,
+      "blink": 0.012866253719045505
+    },
+    {
+      "frame": 119,
+      "opacity": 1.0,
+      "blink": 0.00015111809500246103
+    },
+    {
+      "frame": 120,
+      "opacity": 1.0,
+      "blink": 1.1253517471925272e-07
+    },
+    {
+      "frame": 121,
+      "opacity": 1.0,
+      "blink": 2.039814493820775e-12
+    },
+    {
+      "frame": 122,
+      "opacity": 1.0,
+      "blink": 2.9949561796639627e-19
+    },
+    {
+      "frame": 123,
+      "opacity": 1.0,
+      "blink": 1.0275389296940957e-28
+    },
+    {
+      "frame": 124,
+      "opacity": 1.0,
+      "blink": 2.0600058548311441e-41
+    },
+    {
+      "frame": 125,
+      "opacity": 1.0,
+      "blink": 5.231172893674579e-58
+    },
+    {
+      "frame": 126,
+      "opacity": 1.0,
+      "blink": 3.16178242390583e-79
+    },
+    {
+      "frame": 127,
+      "opacity": 1.0,
+      "blink": 7.408883413617391e-106
+    },
+    {
+      "frame": 128,
+      "opacity": 1.0,
+      "blink": 9.503656825116324e-139
+    },
+    {
+      "frame": 129,
+      "opacity": 1.0,
+      "blink": 8.168061791737512e-179
+    },
+    {
+      "frame": 130,
+      "opacity": 1.0,
+      "blink": 4.990618743176098e-227
+    },
+    {
+      "frame": 131,
+      "opacity": 1.0,
+      "blink": 1.9936891930470506e-284
+    },
+    {
+      "frame": 132,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 133,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 134,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 135,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 136,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 137,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 138,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 139,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 140,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 141,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 142,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 143,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 144,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 145,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 146,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 147,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 148,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 149,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 150,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 151,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 152,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 153,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 154,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 155,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 156,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 157,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 158,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 159,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 160,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 161,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 162,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 163,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 164,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 165,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 166,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 167,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 168,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 169,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 170,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 171,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 172,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 173,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 174,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 175,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 176,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 177,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 178,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 179,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 180,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 181,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 182,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 183,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 184,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 185,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 186,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 187,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 188,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 189,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 190,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 191,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 192,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 193,
+      "opacity": 1.0,
+      "blink": 0.0
+    },
+    {
+      "frame": 194,
+      "opacity": 0.9934132383111977,
+      "blink": 0.0
+    },
+    {
+      "frame": 195,
+      "opacity": 0.9680211370262394,
+      "blink": 0.0
+    },
+    {
+      "frame": 196,
+      "opacity": 0.9259259259259266,
+      "blink": 0.0
+    },
+    {
+      "frame": 197,
+      "opacity": 0.8696583792247068,
+      "blink": 0.0
+    },
+    {
+      "frame": 198,
+      "opacity": 0.8017492711370277,
+      "blink": 0.0
+    },
+    {
+      "frame": 199,
+      "opacity": 0.7247293758773348,
+      "blink": 0.0
+    },
+    {
+      "frame": 200,
+      "opacity": 0.6411294676600797,
+      "blink": 0.0
+    },
+    {
+      "frame": 201,
+      "opacity": 0.5534803206997085,
+      "blink": 0.0
+    },
+    {
+      "frame": 202,
+      "opacity": 0.4643127092106687,
+      "blink": 0.0
+    },
+    {
+      "frame": 203,
+      "opacity": 0.376157407407408,
+      "blink": 0.0
+    },
+    {
+      "frame": 204,
+      "opacity": 0.291545189504374,
+      "blink": 0.0
+    },
+    {
+      "frame": 205,
+      "opacity": 0.21300682971601426,
+      "blink": 0.0
+    },
+    {
+      "frame": 206,
+      "opacity": 0.14307310225677672,
+      "blink": 0.0
+    },
+    {
+      "frame": 207,
+      "opacity": 0.08427478134110733,
+      "blink": 0.0
+    },
+    {
+      "frame": 208,
+      "opacity": 0.03914264118345734,
+      "blink": 0.0
+    },
+    {
+      "frame": 209,
+      "opacity": 0.010207455998272219,
+      "blink": 0.0
+    }
+  ],
+  "interpolation": "linear between adjacent position frames; clamp at last frame; stop at 3.5 seconds",
+  "layout": "Same square canvas and center as Data/Dariya_Celebration.json. Subtract (0.5,0.5) before scaling.",
+  "effects": "Use Data/Effects_Timeline.json and Data/Effects_Design.json; mesh contains only the character.",
+  "implementation_status": "Portable asset data; native Unity player must be integrated and verified by Codex."
+}

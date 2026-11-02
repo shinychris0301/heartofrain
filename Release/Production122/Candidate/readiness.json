@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "status": "external_inputs_and_integration_required",
+  "configurationConsistent": false,
+  "releaseChecks": {
+    "release_schema_version_valid": true,
+    "payment_environment_valid": true,
+    "production_environment_required": true,
+    "backend_origin_matches": true,
+    "registered_package_required": false,
+    "registered_console_application_matches": false,
+    "payment_return_scheme_required": false,
+    "release_version_code_required": false,
+    "minimum_api_required": true,
+    "target_api_required": true,
+    "release_certificate_required": false,
+    "privacyPolicyUrl_required": false,
+    "supportUrl_required": false,
+    "termsUrl_required": false
+  },
+  "productionClientChecks": {
+    "managed_fields_exact": true,
+    "checkout_fields_exact": true,
+    "managed_schema_version": true,
+    "checkout_schema_version": true,
+    "production_modes": true,
+    "origins_bound": true,
+    "identity_scope_bound": true,
+    "production_identity_scope_required": true,
+    "social_enabled": true,
+    "package_bound": false,
+    "application_bound": false,
+    "checkout_enabled": false,
+    "live_environment": true,
+    "loopback_disabled": true
+  },
+  "payments": {
+    "schemaVersion": 1,
+    "scope": "public_payment_configuration_only",
+    "configurationValid": false,
+    "configurationBlockers": [
+      "console_inventory_schema_valid",
+      "commerce_enabled",
+      "commerce_app_id_configured",
+      "commerce_has_enabled_products",
+      "checkout_enabled",
+      "checkout_app_id_configured",
+      "checkout_and_commerce_app_id_match"
+    ],
+    "checks": [
+      {
+        "id": "commerce_schema_valid",
+        "passed": true
+      },
+      {
+        "id": "checkout_schema_valid",
+        "passed": true
+      },
+      {
+        "id": "approved_catalog_schema_valid",
+        "passed": true
+      },
+      {
+        "id": "console_inventory_schema_valid",
+        "passed": false
+      },
+      {
+        "id": "commerce_enabled",
+        "passed": false
+      },
+      {
+        "id": "commerce_app_id_configured",
+        "passed": false
+      },
+      {
+        "id": "commerce_has_enabled_products",
+        "passed": false
+      },
+      {
+        "id": "store_product_ids_unique",
+        "passed": true
+      },
+      {
+        "id": "catalog_has_only_approved_offers",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-1000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-1000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-5000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-5000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-10000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-10000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-25000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-25000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-50000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-50000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:coins-100000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:coins-100000",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:wellkeeper",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:wellkeeper",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:rainy-day",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:rainy-day",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:rainlight",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:rainlight",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:village",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:village",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:festival",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:festival",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_terms:keepers",
+        "passed": true
+      },
+      {
+        "id": "approved_offer_store_binding:keepers",
+        "passed": true
+      },
+      {
+        "id": "expected_environment_matches",
+        "passed": true
+      },
+      {
+        "id": "checkout_enabled",
+        "passed": false
+      },
+      {
+        "id": "checkout_app_id_configured",
+        "passed": false
+      },
+      {
+        "id": "checkout_and_commerce_app_id_match",
+        "passed": false
+      },
+      {
+        "id": "checkout_and_commerce_environment_match",
+        "passed": true
+      }
+    ],
+    "plannedItemCount": 12,
+    "configuredItemCount": 12,
+    "enabledItemCount": 0,
+    "consoleInventorySupplied": true,
+    "consoleInventoryAuthenticityVerified": false,
+    "sandboxProviderAcceptanceVerified": false,
+    "productionReady": false,
+    "technicalBlockers": [
+      "owned_production_authority_and_approved_worker_deployment_required",
+      "issued_provider_credentials_and_console_binding_acceptance_required",
+      "configured_production_android_identity_wallet_checkout_acceptance_required",
+      "trusted_notification_ingress_and_reconciliation_acceptance_required",
+      "release_signing_and_ordinary_android_provider_acceptance_required"
+    ],
+    "providerRequestsMade": false,
+    "secretsRead": false,
+    "featuresActivated": false
+  },
+  "providers": {
+    "status": "provider_configuration_blocked",
+    "configurationValid": true,
+    "readyForProviderTest": false,
+    "blockers": [
+      "vk_disabled",
+      "advertising_disabled"
+    ],
+    "vk": {
+      "configurationValid": true,
+      "enabled": false,
+      "callbackMatchesOrigin": false,
+      "readyForProviderTest": false,
+      "blockers": [
+        "vk_disabled"
+      ],
+      "liveAcceptanceVerified": false
+    },
+    "advertising": {
+      "configurationValid": true,
+      "clientEnabled": false,
+      "backendEnabled": false,
+      "privacyConfigured": false,
+      "readyForProviderTest": false,
+      "blockers": [
+        "advertising_disabled"
+      ],
+      "completionMode": "sdk_client_reported_capped",
+      "completionAuthoritative": false,
+      "rewardCoins": 400,
+      "dailyLimit": 3,
+      "cooldownSeconds": 600,
+      "interstitialPlacementAdded": false,
+      "liveAcceptanceVerified": false
+    },
+    "productionEnabled": false,
+    "providerAcceptanceVerified": false,
+    "networkContacted": false
+  },
+  "productionEnabled": false,
+  "productionLauncherImplemented": true,
+  "productionClientImplemented": true,
+  "existingStagingAuthorityChanged": false,
+  "providerAcceptanceVerified": false,
+  "monitoringInstallationVerifiedByThisOfflineCheck": false,
+  "secretsRead": false,
+  "networkContacted": false,
+  "remainingEngineering": [
+    "production_authority_proxy_and_reconciliation_deployment_acceptance",
+    "approved_gameplay_worker_deployment_and_campaign_parity",
+    "configured_android_provider_interruption_and_recovery_tests",
+    "release_signer_sdk_build_and_final_legal_content",
+    "encrypted_off_host_restore_and_reboot_acceptance"
+  ]
+}

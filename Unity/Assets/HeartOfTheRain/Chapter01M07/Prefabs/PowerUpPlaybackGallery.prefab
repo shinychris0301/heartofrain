@@ -145,8 +145,8 @@ MonoBehaviour:
   - {fileID: 4900000, guid: b33a14a26f41522b88f5dfc5cb5b2718, type: 3}
   - {fileID: 4900000, guid: 33932ce6c3c75af2a7e2fbae8d4ac6f7, type: 3}
   - {fileID: 4900000, guid: f59aae5d11785ae1b672fae0f96992ae, type: 3}
-  spriteMaterial: {fileID: 2100000, guid: aef43b58c56b5a6d9c93eb85b9a32aa5, type: 3}
-  tileGlowMaterial: {fileID: 2100000, guid: 72231ff8ac895bc09a6a5889f1126a75, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: aef43b58c56b5a6d9c93eb85b9a32aa5, type: 2}
+  tileGlowMaterial: {fileID: 2100000, guid: 72231ff8ac895bc09a6a5889f1126a75, type: 2}
   referenceTiles:
   - {fileID: 21300000, guid: 0e34bc8e4cd05093b57a7a7a0618217b, type: 3}
   - {fileID: 21300000, guid: 1b787612f812579ca7ad3996ac288d1e, type: 3}

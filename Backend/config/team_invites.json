@@ -1,0 +1,7 @@
+{
+  "version": "invite112_provisional_disabled",
+  "enabled": false,
+  "permission": "member",
+  "lifetimeSeconds": 604800,
+  "limitPerHour": 10
+}

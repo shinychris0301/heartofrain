@@ -1,8 +1,8 @@
 {
-  "support": "",
+  "support": "https://api.novamind-it.ru/support",
   "instagram": "",
   "youtube": "",
   "facebook": "",
-  "terms": "",
-  "privacy": ""
+  "terms": "https://api.novamind-it.ru/terms",
+  "privacy": "https://api.novamind-it.ru/privacy"
 }

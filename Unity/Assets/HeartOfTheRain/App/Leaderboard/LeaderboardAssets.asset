@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf1582be6335d3eb7b87afe986021c4, type: 3}
   m_Name: M61 Leaderboard Assets
   m_EditorClassIdentifier:
-  journey: {fileID: 11400000, guid: 7cf56974eaec559e8b4aaf9817ecb5d1, type: 3}
-  demoData: {fileID: 4900000, guid: ccc55688e6505ced8520d356ce30866d, type: 3}
+  journey: {fileID: 11400000, guid: 7cf56974eaec559e8b4aaf9817ecb5d1, type: 2}
   sprites:
   - id: LB2_Add
     sprite: {fileID: 21300000, guid: 1f7841dd735c562891321be7e73ea147, type: 3}
@@ -111,13 +110,3 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: a1ea9a45dd4956369eb1ec335a969a5c, type: 3}
   - id: LB_TabActive
     sprite: {fileID: 21300000, guid: 3110855ccb765562b3663ec2d25da12d, type: 3}
-  - id: Portrait_Ivan_R2
-    sprite: {fileID: 21300000, guid: cc4d8b06e33b56e69b6ae5a90b0c126d, type: 3}
-  - id: Portrait_Scholar
-    sprite: {fileID: 21300000, guid: b98d341248405e748072d45c1f496102, type: 3}
-  - id: Portrait_Scholar_R2
-    sprite: {fileID: 21300000, guid: 757119ee8ad05696930f9d8235d858cc, type: 3}
-  - id: Portrait_Weaver
-    sprite: {fileID: 21300000, guid: a162fb161f8f5d5ca0eebb658ddc0fcb, type: 3}
-  - id: Portrait_Weaver_R2
-    sprite: {fileID: 21300000, guid: 8fe6eb19da015963a876cbfe24481399, type: 3}

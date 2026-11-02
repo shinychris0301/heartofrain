@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "AUTHORIZED_ROOT_SOURCE_FREEZE_RELEASED",
+  "scope": "Checkpoint-local serial main Unity2022 verification authorized by root; no APK/device/backend invocation.",
+  "runner": {
+    "path": "Verification/Tools/Review103/run_native103.py",
+    "sha256": "0b24c44f1dd53aba0338113f0ecddc2c11c135f83350c0dd698ec6da7bfd9c5b"
+  },
+  "baseline102": "Verification/Evidence/Review102/Native/Flow01_Native/MainSources_after.json",
+  "mainEngine": "2022.3.62f3",
+  "noApkOrDevicePlanned": true,
+  "fullBackendOrSocialHttpPlanned": false,
+  "proposedSuites": [
+    {
+      "entry": "HeartOfTheRain.Verification.TeamsDiscovery103Verification.Run",
+      "report": "Native/TeamsDiscovery103.json",
+      "env": "HOTR_REVIEW103_OUT",
+      "expected": "PASS_NATIVE_TEAMS_DISCOVERY103",
+      "locales": 5,
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          420,
+          900
+        ],
+        [
+          768,
+          1024
+        ]
+      ],
+      "ordinaryProfilesAndSavedLanguageGuard": true
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.Regional89Verification.Run",
+      "report": "Report.json",
+      "env": "HOTR_REGION89_OUTPUT",
+      "expected": "PASS_NATIVE_REGIONAL89"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.NativeVerification.Run",
+      "report": "Native_Checks.json",
+      "env": "HOTR_REVIEW93_OUT",
+      "expected": "PASS_NATIVE_EDITOR_CHECKS"
+    }
+  ],
+  "capturingPolicy": "Onlyroot-reviewed meaningfulfinalunavailableRussian andclearlyinjectedconnectedstatespublished; old102andrawproofsremainunchanged. Nativeoffscreenlayoutcapturesarenotphysicaldevice/livehostingtests."
+}

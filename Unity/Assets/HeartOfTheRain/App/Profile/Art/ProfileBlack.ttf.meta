@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3436adfe8ce255d290a61d402218e8c5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 48
+  includeFontData: 1
+  fontNames: []
+  fallbackFontReferences: []
+  fontRenderingMode: 0
+  ascentCalculationMode: 1

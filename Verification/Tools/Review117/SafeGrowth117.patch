@@ -1,0 +1,21 @@
+diff --git a/Unity/Assets/HeartOfTheRain/M46/Runtime/BoardModel.cs b/Unity/Assets/HeartOfTheRain/M46/Runtime/BoardModel.cs
+--- a/Unity/Assets/HeartOfTheRain/M46/Runtime/BoardModel.cs
++++ b/Unity/Assets/HeartOfTheRain/M46/Runtime/BoardModel.cs
+@@ -8,7 +8,8 @@ namespace HeartOfTheRain.M46
+     [Serializable] public class ObstacleCell:Cell { public string family; public int hp; }
+     [Serializable] public class Goal { public string family; public int count; }
+     [Serializable] public class GrowthRule {
+-        public bool enabled; public int undamagedMoves,maxNewClumps;
++        // Opt-in for new configurations; legacy level JSON leaves this false.
++        public bool enabled,safeSegmentBottom; public int undamagedMoves,maxNewClumps;
+         // Older authored levels use the long-form names; preserve those files.
+         public int afterConsecutiveMovesWithoutMossDamage,maxNewCellsTotal;
+         public int Interval=>undamagedMoves>0?undamagedMoves:afterConsecutiveMovesWithoutMossDamage;
+@@ -478,6 +479,6 @@ namespace HeartOfTheRain.M46
+             bool enabled=Level.mossRegrowth!=null?Level.mossRegrowth.enabled:Level.globalLevel>=27;
+             int interval=Level.mossRegrowth==null?2:Level.mossRegrowth.Interval,limit=Level.mossRegrowth==null?3:Level.mossRegrowth.Limit;
+             if(!enabled)return;if(mossHit){QuietMoves=0;return;}QuietMoves=Math.Min(interval,QuietMoves+1);if(QuietMoves<interval||GrowthUsed>=limit)return;
+-            var options=new HashSet<int>();foreach(var p in Pieces.Values.Where(p=>p.family=="moss"))foreach(var d in D){var q=At(p.x+d.x,p.y+d.y);if(q!=null&&q.family=="gem"&&!Exits.Contains(Key(q.x,q.y)))options.Add(Key(q.x,q.y));}
++            var options=new HashSet<int>();foreach(var p in Pieces.Values.Where(p=>p.family=="moss"))foreach(var d in D){var q=At(p.x+d.x,p.y+d.y);if(q!=null&&q.family=="gem"&&!Exits.Contains(Key(q.x,q.y))&&(Level.mossRegrowth==null||!Level.mossRegrowth.safeSegmentBottom||!Inside(q.x,q.y-1)))options.Add(Key(q.x,q.y));}
+             if(options.Count==0)return;int key=options.OrderBy(k=>k/Level.columns).ThenBy(k=>k%Level.columns).First();var step=Start("grow",.6f,"Overgrowth spreads");var old=Pieces[key];RemoveGem(old,step,0,"growth");var growth=new Piece{x=old.x,y=old.y,family="moss",hp=1};Add(growth);GoalDelta("moss",1);step.created.Add(growth.Copy());GrowthUsed++;QuietMoves=0;Finish(step,result);
+         }

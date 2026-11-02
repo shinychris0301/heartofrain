@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "SEALED_PREINTEGRATION_BASELINE109",
+  "utc": "2026-10-28T20:23:54.455434Z",
+  "inputCount": 5502,
+  "guidCount": 2874,
+  "matchesSealed107108": true,
+  "baseline107": {
+    "path": "Verification/Evidence/Review107/Native/AndroidBuildLts01/MainSources_after.json",
+    "sha256": "0311c17a459de8c8aecccf612351f8328b56c3fae17e798e99d64c513e3b6ffa"
+  },
+  "sources": {
+    "path": "Verification/Tools/Review109/BaselineMain109.json",
+    "sha256": "0311c17a459de8c8aecccf612351f8328b56c3fae17e798e99d64c513e3b6ffa"
+  },
+  "guids": {
+    "path": "Verification/Tools/Review109/BaselineGuids109.json",
+    "sha256": "da7629f87fed05fc284838f7b42e913d2cab18394d0fb67e30dda426354d0c24"
+  },
+  "unityInvoked": false,
+  "sdkImported": false,
+  "buildInvoked": false,
+  "deviceInvoked": false
+}

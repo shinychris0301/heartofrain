@@ -1,0 +1,138 @@
+{
+  "revision": "Home Lives R1",
+  "assets": [
+    {
+      "file": "Artwork/DG_Star.png",
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Star.png",
+      "guid": "0e022ac2fb095ef3b2500dd0ee90df5b",
+      "sha256": "5e2e5b3554ace13da574e86c8d84a4316bc1a5bae28aa8c2764a21baf3031a86",
+      "bytes": 11267,
+      "source": "Approved shared artwork; original bytes/path/GUID retained",
+      "width": 256,
+      "height": 256,
+      "imageType": "Simple",
+      "preserveAspect": true,
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "importBaseline": {
+        "mipmaps": true,
+        "mipmapFilter": "Box",
+        "filter": "Trilinear",
+        "sRGB": true,
+        "maxTextureSize": 256,
+        "npotScale": "None",
+        "compression": "RGBA32 reference, Default/Android/iPhone/Standalone",
+        "ignoreMipmapLimit": true,
+        "wrap": "Clamp",
+        "streaming": false
+      }
+    },
+    {
+      "file": "Artwork/HL_Clock.png",
+      "unityPath": "Assets/HeartOfTheRain/App/HomeLivesDesign/Art/HL_Clock.png",
+      "guid": "c5b05642d6a153b28806a2b17ba255cb",
+      "sha256": "4cbd053ea9d9051ff2ad72126c1f986c796b3373465cc069cf31b4648a63bab2",
+      "bytes": 9698,
+      "source": "New native SVG clock",
+      "width": 256,
+      "height": 256,
+      "imageType": "Simple",
+      "preserveAspect": true,
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "importBaseline": {
+        "mipmaps": true,
+        "mipmapFilter": "Box",
+        "filter": "Trilinear",
+        "sRGB": true,
+        "maxTextureSize": 256,
+        "npotScale": "None",
+        "compression": "RGBA32 reference, Default/Android/iPhone/Standalone",
+        "ignoreMipmapLimit": true,
+        "wrap": "Clamp",
+        "streaming": false
+      }
+    },
+    {
+      "file": "Artwork/HomeRounded.ttf",
+      "unityPath": "Assets/HeartOfTheRain/App/Home/Fonts/HomeRounded-Black.ttf",
+      "guid": "c8788ad069a35eff90dc88314e5dcc9e",
+      "sha256": "43ee8e316bdcd7f359da84dd17ebc7f96415366e807dac9e39919db00ff7a29e",
+      "bytes": 132216,
+      "source": "Approved shared artwork; original bytes/path/GUID retained"
+    },
+    {
+      "file": "Artwork/R3_Lives.png",
+      "unityPath": "Assets/HeartOfTheRain/App/Home/Art/R3_Lives.png",
+      "guid": "ae5b452b0a6d5243858333fd6e28c726",
+      "sha256": "0d6382ff80326a099971353a4c3424af3ba8369314403560b4d5d4873e012571",
+      "bytes": 100334,
+      "source": "Approved shared artwork; original bytes/path/GUID retained",
+      "width": 297,
+      "height": 260,
+      "imageType": "Simple",
+      "preserveAspect": true,
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "importBaseline": {
+        "mipmaps": true,
+        "mipmapFilter": "Box",
+        "filter": "Trilinear",
+        "sRGB": true,
+        "maxTextureSize": 512,
+        "npotScale": "None",
+        "compression": "RGBA32 reference, Default/Android/iPhone/Standalone",
+        "ignoreMipmapLimit": true,
+        "wrap": "Clamp",
+        "streaming": false
+      }
+    },
+    {
+      "file": "Artwork/R4_Header.png",
+      "unityPath": "Assets/HeartOfTheRain/App/Home/Art/R4_Header.png",
+      "guid": "284e1fe3ca8551aba1d3cf0fe1144989",
+      "sha256": "71f17523e9c18006da5389fd1eb615403d85014616c18b3a44190f12bc63f0b3",
+      "bytes": 898504,
+      "source": "Approved shared artwork; original bytes/path/GUID retained",
+      "width": 2121,
+      "height": 360,
+      "imageType": "Simple",
+      "preserveAspect": false,
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelsPerUnitMultiplier": 1,
+      "importBaseline": {
+        "mipmaps": true,
+        "mipmapFilter": "Box",
+        "filter": "Trilinear",
+        "sRGB": true,
+        "maxTextureSize": 4096,
+        "npotScale": "None",
+        "compression": "RGBA32 reference, Default/Android/iPhone/Standalone",
+        "ignoreMipmapLimit": true,
+        "wrap": "Clamp",
+        "streaming": false
+      },
+      "usage": "Runtime subregions: retain approved R2 panel/connector/fallback geometry; never render complete atlas behind custom portrait."
+    }
+  ]
+}

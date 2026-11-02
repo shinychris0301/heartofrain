@@ -1,0 +1,22 @@
+{
+  "targetFps": 60,
+  "modalEnter": {
+    "durationMs": 220,
+    "opacity": [
+      0,
+      1
+    ],
+    "scale": [
+      0.96,
+      1
+    ],
+    "easing": "easeOutCubic",
+    "pivot": "modal center"
+  },
+  "modalExitMs": 160,
+  "pending": "immediate disabled Leave action; optional indeterminate indicator; wait for server, no fake countdown",
+  "confirmed": "remove modal, route existing Find Team; toast2600ms, opacity120ms; never confetti",
+  "error": "update title/body and footer in place;140ms opacity; no shake",
+  "reducedMotion": "120ms opacity only; no scale",
+  "preview": "Rendered timing study with simulated state sequence; not a Unity or network capture."
+}

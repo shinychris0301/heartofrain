@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5aab1c81b2d45798f95efcbf5506a8d, type: 3}
+  m_Name: Leaderboard Medals
+  m_EditorClassIdentifier: 
+  gold: {fileID: 21300000, guid: befec9f54652567f8b3c750feb61ea38, type: 3}
+  silver: {fileID: 21300000, guid: 77100ffb769f5a39aaf0fc32625e0a02, type: 3}
+  bronze: {fileID: 21300000, guid: 49d9993a7a4e501b92596e038bb2b205, type: 3}

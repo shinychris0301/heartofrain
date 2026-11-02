@@ -1,0 +1,70 @@
+{
+  "revision": "Home Lives R1",
+  "scope": "Existing Home header only; no full Home runtime or life service replacement.",
+  "sourceHeader": {
+    "unityPath": "Assets/HeartOfTheRain/App/Home/Art/R4_Header.png",
+    "sourcePixels": [
+      2121,
+      360
+    ],
+    "avatarPanelSeparation": "Preserve approved R2 runtime slices and connector; never draw whole atlas behind a selected portrait.",
+    "frameDisplay": "Square of headerWidth * 0.17; left aligned; centered vertically; independent of 400px atlas extraction bounds.",
+    "atlasRegionsFile": "Data/Header_Atlas_Regions.json"
+  },
+  "coordinates": "Header-local top-left logical UI units; w=existing header width; h=w*360/2121. Preserve current safe-area-aware header geometry.",
+  "lifeCount": {
+    "id": "life-count",
+    "x": "0.68*w",
+    "y": "0.32*h",
+    "width": "0.15*w",
+    "height": "0.28*h",
+    "fontSize": "0.043*w",
+    "font": "Existing HomeRounded-Black / matching TMP asset",
+    "alignment": "Centered",
+    "color": "#101A29",
+    "lastLifeColor": "#945522",
+    "zeroLivesColor": "#B12640",
+    "text": "{lives}/{maxLives}",
+    "format": "Live text. Do not bake numbers into textures."
+  },
+  "timer": {
+    "id": "life-refill-status",
+    "x": "0.678*w",
+    "y": "0.59*h",
+    "width": "0.154*w",
+    "height": "0.17*h",
+    "fontSize": "clamp(0.028*w,10,18)",
+    "alignment": "Centered horizontal row",
+    "gap": 2,
+    "color": "#425F79",
+    "fullColor": "#377347",
+    "clockSize": "clamp(0.025*w,8,15)",
+    "clockArt": "HL_Clock.png",
+    "formatBelowHour": "MM:SS",
+    "formatAtLeastHour": "H:MM:SS, hide clock to reserve text width",
+    "rounding": "ceil(max(0, nextRefillAt - synchronizedNow) / 1000)",
+    "full": "Localized Full; hide clock; no refill deadline.",
+    "waiting": "Clock + ellipsis when below cap and awaiting authoritative timestamp/balance; do not show an invented time."
+  },
+  "touch": {
+    "existingLifeAction": "lives",
+    "x": "0.56*w",
+    "width": "0.29*w",
+    "height": "max(44,h)",
+    "verticalCenter": "h/2",
+    "effectRaycastTarget": false,
+    "countAndTimerRaycastTarget": false,
+    "behavior": "Use existing Lives / refill flow. No automatic purchase or new modal in this delivery."
+  },
+  "avatar": "Current profile service remains responsible; review shows approved original fallback, not a replacement portrait.",
+  "responsive": "Same HomeLayoutEngine header formulas as approved R2. Tested 320,393,430,768 portrait widths and 844 landscape. Apply safe area before calculating frame. Keep text live on the existing full-resolution UI canvas.",
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "japanese": false,
+  "decorativeHeart": "The main heart is baked into the approved wallet panel. Do not animate another heart directly over it. A separate R3_Lives sprite is used only for the departing/arriving feedback."
+}

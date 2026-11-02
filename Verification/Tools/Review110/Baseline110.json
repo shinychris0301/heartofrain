@@ -1,0 +1,40 @@
+{
+  "status": "FROZEN_PRE_EDIT_BASELINE110",
+  "utc": "2026-10-28T22:16:37.887146+00:00",
+  "mainInputs": 5665,
+  "assetGuids": 2958,
+  "matchesExactFinal109": true,
+  "main": {
+    "path": "Verification/Tools/Review110/BaselineMain110.json",
+    "sha256": "b6d23559a7c456a9cfc615a8b4b237977436d692c145d518705ff45ed96ff00a",
+    "bytes": 1092348
+  },
+  "guids": {
+    "path": "Verification/Tools/Review110/BaselineGuids110.json",
+    "sha256": "edcbccc0a0d989ca088a9b1d6b3264befd4a1f2d0e2ad4d280bca4970d7801b9",
+    "bytes": 323664
+  },
+  "previous": {
+    "path": "Verification/Evidence/Review109/Native/AndroidBuildLts01/MainSources_after.json",
+    "sha256": "b6d23559a7c456a9cfc615a8b4b237977436d692c145d518705ff45ed96ff00a",
+    "bytes": 1092348
+  },
+  "instructions": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "2807d6a78dba178aecb1f3655cad541fe06eeaae9f7d6cc066f06b3479139eb6",
+      "bytes": 1844
+    },
+    {
+      "path": "Codex_Handoff/Documentation/00_START_HERE.md",
+      "sha256": "d94dfb1a48b94392e821eae371bbd17e6e35ef4d995dfc9e390b8cd8fadd7bec",
+      "bytes": 82107
+    },
+    {
+      "path": "Codex_Handoff/Documentation/01_STATUS_AND_DECISIONS.md",
+      "sha256": "f38a77aaa77822034de196cb4fc8962514e0835d11577b7e64e44a449480cf81",
+      "bytes": 98522
+    }
+  ],
+  "scope": "Read-only pre-edit main Assets/Packages/ProjectSettings and unique GUID snapshot. No Unity/compiler/import/build/SDK/service/ADB/device operation."
+}

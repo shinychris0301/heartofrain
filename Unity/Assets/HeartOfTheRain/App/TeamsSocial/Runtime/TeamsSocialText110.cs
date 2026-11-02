@@ -1,0 +1,78 @@
+using System;
+using System.Collections.Generic;
+using HeartOfTheRain.App.Localization;
+
+namespace HeartOfTheRain.App.TeamsSocial
+{
+    public static class TeamsSocialText110
+    {
+        static readonly Dictionary<string,string[]> Copy = new Dictionary<string,string[]>(StringComparer.Ordinal) {
+            { "invalid_message", new[] { "Remove invalid characters", "Elimina los caracteres no válidos", "Retirez les caractères non valides", "Ungültige Zeichen entfernen", "Удалите недопустимые символы" } },
+            { "teams", new[] { "Teams", "Equipos", "Équipes", "Teams", "Команды" } },
+            { "chat", new[] { "Chat", "Chat", "Discussion", "Chat", "Чат" } },
+            { "mail", new[] { "Mail", "Correo", "Courrier", "Post", "Почта" } },
+            { "team_info", new[] { "Team info", "Ver equipo", "Infos équipe", "Teaminfo", "О команде" } },
+            { "online", new[] { "{count} online", "{count} en línea", "{count} en ligne", "{count} online", "{count} в сети" } },
+            { "today", new[] { "Today", "Hoy", "Aujourd’hui", "Heute", "Сегодня" } },
+            { "message", new[] { "Message", "Mensaje", "Message", "Nachricht", "Сообщение" } },
+            { "request_lives", new[] { "Request lives", "Pedir vidas", "Demander des vies", "Leben anfragen", "Попросить жизни" } },
+            { "help", new[] { "Help", "Ayudar", "Aider", "Helfen", "Помочь" } },
+            { "help_sent", new[] { "Sent", "Enviada", "Envoyée", "Gesendet", "Отправлено" } },
+            { "request_title", new[] { "Needs lives", "Necesita vidas", "Besoin de vies", "Braucht Leben", "Нужны жизни" } },
+            { "own_request", new[] { "Your life request", "Tu solicitud de vidas", "Votre demande de vies", "Deine Lebensanfrage", "Ваш запрос жизней" } },
+            { "waiting", new[] { "Waiting for help", "Esperando ayuda", "En attente d’aide", "Warte auf Hilfe", "Ждём помощи" } },
+            { "ready", new[] { "Lives are ready!", "¡Vidas listas!", "Les vies sont prêtes !", "Leben sind bereit!", "Жизни собраны!" } },
+            { "claim", new[] { "Collect", "Recoger", "Récupérer", "Abholen", "Забрать" } },
+            { "claimed", new[] { "Collected", "Recogidas", "Récupérées", "Abgeholt", "Получено" } },
+            { "request_again", new[] { "Next request", "Próxima solicitud", "Prochaine demande", "Nächste Anfrage", "Новый запрос" } },
+            { "next_request", new[] { "Available in {time}", "Disponible en {time}", "Disponible dans {time}", "Verfügbar in {time}", "Доступно через {time}" } },
+            { "compose_placeholder", new[] { "Write a message…", "Escribe un mensaje…", "Écrivez un message…", "Nachricht schreiben…", "Напишите сообщение…" } },
+            { "send", new[] { "Send", "Enviar", "Envoyer", "Senden", "Отправить" } },
+            { "sending", new[] { "Sending…", "Enviando…", "Envoi…", "Wird gesendet…", "Отправка…" } },
+            { "retry", new[] { "Retry", "Reintentar", "Réessayer", "Erneut versuchen", "Повторить" } },
+            { "no_connection", new[] { "No connection", "Sin conexión", "Pas de connexion", "Keine Verbindung", "Нет соединения" } },
+            { "connection_message", new[] { "Reconnect to chat and help.", "Conéctate para chatear y ayudar.", "Reconnectez-vous pour discuter et aider.", "Verbinde dich zum Chatten und Helfen.", "Подключитесь, чтобы общаться и помогать." } },
+            { "empty_chat", new[] { "Start the conversation", "Inicia la conversación", "Lancez la discussion", "Beginne das Gespräch", "Начните разговор" } },
+            { "welcome_text", new[] { "Together, we will bring the village back to life.", "Juntos devolveremos la vida al pueblo.", "Ensemble, redonnons vie au village.", "Gemeinsam erwecken wir das Dorf zum Leben.", "Вместе мы вернём жизнь в деревню." } },
+            { "helps_received", new[] { "{received} / {required}", "{received} / {required}", "{received} / {required}", "{received} / {required}", "{received} / {required}" } },
+            { "you", new[] { "You", "Tú", "Vous", "Du", "Вы" } },
+            { "joined", new[] { "{name} joined the team.", "{name} se ha unido al equipo.", "{name} a rejoint l’équipe.", "{name} ist dem Team beigetreten.", "{name} вступила в команду." } },
+            { "character_count", new[] { "{count}/{max}", "{count}/{max}", "{count}/{max}", "{count}/{max}", "{count}/{max}" } },
+            { "cancel", new[] { "Cancel", "Cancelar", "Annuler", "Abbrechen", "Отмена" } },
+            { "new_messages", new[] { "New messages", "Mensajes nuevos", "Nouveaux messages", "Neue Nachrichten", "Новые сообщения" } },
+            { "lives_full", new[] { "Lives full", "Vidas al máximo", "Vies au maximum", "Leben voll", "Жизни полны" } },
+            { "lives_full_hint", new[] { "Your reward stays here. Collect it when you have room.", "Tu recompensa se guarda. Recógela cuando tengas espacio.", "Votre récompense reste ici. Récupérez-la quand vous avez de la place.", "Deine Belohnung bleibt hier. Hole sie ab, wenn du Platz hast.", "Награда сохранится. Заберите её, когда появится место." } },
+            { "collect_later", new[] { "Collect later", "Recoger luego", "Récupérer plus tard", "Später abholen", "Забрать позже" } },
+            { "claim_error", new[] { "Could not collect. Try again.", "No se pudo recoger. Reinténtalo.", "Échec de récupération. Réessayez.", "Abholen fehlgeschlagen. Erneut versuchen.", "Не удалось получить. Повторите." } },
+            { "help_error", new[] { "Could not send help. Retry.", "No se pudo enviar ayuda. Reinténtalo.", "Impossible d’aider. Réessayez.", "Hilfe fehlgeschlagen. Erneut versuchen.", "Не удалось помочь. Повторите." } },
+            { "request_error", new[] { "Request failed. Try again.", "La solicitud falló. Reinténtalo.", "La demande a échoué. Réessayez.", "Anfrage fehlgeschlagen. Erneut versuchen.", "Не удалось отправить запрос. Повторите." } },
+            { "message_error", new[] { "Not sent. Tap to retry.", "No enviado. Toca para reintentar.", "Non envoyé. Touchez pour réessayer.", "Nicht gesendet. Zum Wiederholen tippen.", "Не отправлено. Нажмите для повтора." } },
+            { "help_is_free", new[] { "Helping does not spend your lives.", "Ayudar no consume tus vidas.", "Aider ne dépense pas vos vies.", "Helfen verbraucht keine eigenen Leben.", "Помощь не тратит ваши жизни." } },
+            { "request_visible", new[] { "Your teammates can now help.", "Tu equipo ya puede ayudarte.", "Votre équipe peut maintenant vous aider.", "Dein Team kann dir jetzt helfen.", "Теперь команда может вам помочь." } },
+            { "sent_to", new[] { "Life sent to {name}", "Vida enviada a {name}", "Vie envoyée à {name}", "Leben an {name} gesendet", "Жизнь отправлена: {name}" } },
+            { "received_feedback", new[] { "Lives collected", "Vidas recogidas", "Vies récupérées", "Leben abgeholt", "Жизни получены" } },
+            { "more", new[] { "More", "Más", "Plus", "Mehr", "Ещё" } },
+            { "report", new[] { "Report message", "Denunciar mensaje", "Signaler le message", "Nachricht melden", "Пожаловаться" } },
+            { "report_confirm", new[] { "Report this message?", "¿Denunciar este mensaje?", "Signaler ce message ?", "Diese Nachricht melden?", "Пожаловаться на сообщение?" } },
+            { "no_self_help", new[] { "Your teammates can help you.", "Tus compañeros pueden ayudarte.", "Vos coéquipiers peuvent vous aider.", "Deine Teammitglieder können dir helfen.", "Вам могут помочь участники команды." } },
+            { "already_helped", new[] { "You already helped", "Ya has ayudado", "Vous avez déjà aidé", "Du hast bereits geholfen", "Вы уже помогли" } },
+            { "request_full", new[] { "Request complete", "Solicitud completada", "Demande terminée", "Anfrage erfüllt", "Запрос выполнен" } },
+            { "request_expired", new[] { "Request ended", "Solicitud finalizada", "Demande close", "Anfrage beendet", "Запрос завершён" } },
+            { "team_left", new[] { "Join a team to chat and help.", "Únete a un equipo para chatear y ayudar.", "Rejoignez une équipe pour discuter et aider.", "Tritt einem Team bei, um zu chatten und zu helfen.", "Вступите в команду, чтобы общаться и помогать." } },
+            { "request_pending", new[] { "Requesting…", "Solicitando…", "Demande en cours…", "Anfrage läuft…", "Отправка запроса…" } },
+            { "claim_pending", new[] { "Collecting…", "Recogiendo…", "Récupération…", "Wird abgeholt…", "Получение…" } },
+            { "minutes_ago", new[] { "{count} min ago", "Hace {count} min", "Il y a {count} min", "Vor {count} Min.", "{count} мин назад" } },
+            { "now", new[] { "Just now", "Ahora mismo", "À l’instant", "Gerade eben", "Только что" } },
+            { "mail_unavailable", new[] { "Team mail is not available yet.", "El correo del equipo aún no está disponible.", "Le courrier d’équipe n’est pas encore disponible.", "Teampost ist noch nicht verfügbar.", "Почта команды пока недоступна." } },
+            { "presence_unavailable", new[] { "Presence is unavailable", "Presencia no disponible", "Présence indisponible", "Anwesenheit nicht verfügbar", "Статус в сети недоступен" } },
+            { "service_unavailable", new[] { "Life help is unavailable. Please reconnect.", "La ayuda de vidas no está disponible. Vuelve a conectarte.", "L’aide en vies est indisponible. Reconnectez-vous.", "Lebenshilfe ist nicht verfügbar. Bitte erneut verbinden.", "Помощь жизнями недоступна. Подключитесь снова." } },
+            { "rankings", new[] { "Rankings", "Clasificación", "Classements", "Ranglisten", "Рейтинги" } },
+            { "request_closed", new[] { "Request closed", "Solicitud cerrada", "Demande fermée", "Anfrage geschlossen", "Запрос закрыт" } },
+            { "claim_remainder", new[] { "Remaining: {count}", "Restantes: {count}", "Restantes : {count}", "Verbleibend: {count}", "Осталось: {count}" } },
+            { "message_limit", new[] { "Maximum {count} characters", "Máximo {count} caracteres", "Maximum : {count} caractères", "Höchstens {count} Zeichen", "Не более {count} символов" } },
+            { "saved_lives", new[] { "Saved team lives", "Vidas del equipo guardadas", "Vies d’équipe conservées", "Gespeicherte Teamleben", "Сохранённые жизни команды" } },
+        };
+        public static string T(string key) { string[] value; return Copy.TryGetValue(key, out value) ? value[GameLocale.Current] : key; }
+        public static string Format(string key,string name,object value) => T(key).Replace("{" + name + "}", Convert.ToString(value,System.Globalization.CultureInfo.InvariantCulture));
+    }
+}

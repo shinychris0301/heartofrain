@@ -8,6 +8,7 @@ namespace HeartOfTheRain.App.Home.Editor
     public static class HomePageEditor
     {
         private const string Root = "Assets/HeartOfTheRain/App/Home";
+        private static readonly string[] NavigationSprites = { "Nav_Active", "R3_Dock", "R3_Journey", "R3_Leaderboard", "R3_Home", "R3_Teams", "R3_Shop" };
         [MenuItem("Heart of the Rain/App/M55/Open Home Review")]
         public static void OpenReview()
         {
@@ -23,7 +24,7 @@ namespace HeartOfTheRain.App.Home.Editor
             asset.previewState = AssetDatabase.LoadAssetAtPath<TextAsset>(Root + "/Data/Home_Preview_State.json");
             asset.boldFont = AssetDatabase.LoadAssetAtPath<Font>(Root + "/Fonts/HomeRounded-Black.ttf");
             asset.regularFont = AssetDatabase.LoadAssetAtPath<Font>(Root + "/Fonts/HomeRounded-ExtraBold.ttf");
-            asset.sprites = AssetDatabase.FindAssets("t:Sprite", new[]{Root+"/Art"}).Select(g => AssetDatabase.GUIDToAssetPath(g)).Distinct().Where(p=>System.IO.Path.GetFileName(p).StartsWith("R4_")||System.IO.Path.GetFileName(p).StartsWith("Chapter01_")||System.IO.Path.GetFileName(p)=="R3_Header.png").OrderBy(p=>p).Select(p => new HomeSprite { id=System.IO.Path.GetFileNameWithoutExtension(p), sprite=AssetDatabase.LoadAssetAtPath<Sprite>(p) }).ToArray();
+            asset.sprites = AssetDatabase.FindAssets("t:Sprite", new[]{Root+"/Art"}).Select(g => AssetDatabase.GUIDToAssetPath(g)).Distinct().Where(p=>System.IO.Path.GetFileName(p).StartsWith("R4_")||System.IO.Path.GetFileName(p).StartsWith("Chapter01_")||System.IO.Path.GetFileName(p)=="R3_Header.png"||NavigationSprites.Contains(System.IO.Path.GetFileNameWithoutExtension(p))).OrderBy(p=>p).Select(p => new HomeSprite { id=System.IO.Path.GetFileNameWithoutExtension(p), sprite=AssetDatabase.LoadAssetAtPath<Sprite>(p) }).ToArray();
             asset.chapterBackground = asset.Find("Chapter01_VillageWell");
             EditorUtility.SetDirty(asset); AssetDatabase.SaveAssets();
             Selection.activeObject = asset;

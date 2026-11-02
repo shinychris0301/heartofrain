@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23",
+  "sources": [
+    {
+      "name": "Heart_of_the_Rain_Gameplay_Loading_R1.zip",
+      "libraryId": "libfile_869a9687a288819183dce143c7ad4f41",
+      "version": 0,
+      "sha256": "bd093ca7f35e2cbe2fae8c39ec03f8fdeac22a18c41afc8136e28f6e4c1a6eb7"
+    },
+    {
+      "name": "Heart_of_the_Rain_M70_All_Powerups.zip",
+      "libraryId": "libfile_580a18ee3ac88191a903f745ed2b7281",
+      "version": 1,
+      "sha256": "664ea39f2908584ee5d336d32d7690d2ef289a1ded864f6713e64251cbd49f57"
+    },
+    {
+      "name": "Heart_of_the_Rain_M25_RainSeeker_R3.zip",
+      "libraryId": "libfile_e01d97dcfb4481918b5814ae15a768f2",
+      "version": 2,
+      "sha256": "007f8f3f6e4270e3cce6200873d2a9fd1571d75d8b32be5f4add5e8059169c53"
+    },
+    {
+      "name": "Heart_of_the_Rain_Tiles_V4.zip",
+      "libraryId": "libfile_610848a16b3481919358c7f14b1e7239",
+      "version": 2,
+      "sha256": "cae485e65e1baa0fa9b1204d567b7aca1bb62587a9666e463d903b251cce71dd"
+    }
+  ],
+  "referenceImage": {
+    "name": "Screenshot 2026-10-22 114408(1).png",
+    "libraryId": "libfile_a7e6d6fe342c8191a70b6aca1140718f",
+    "use": "layout inspiration only; no pixels copied"
+  },
+  "rainRule": "M25 Documentation/Animation_and_Gameplay.md: launch cross plus one target outside cross; flight itself does not hit intervening cells",
+  "orbRule": {
+    "source": "M25 ReviewPlan.cs kind7",
+    "sha256": "dc338e0a80f0627151edec4667dfc25bc3c268436385da1eb37e99a7a216119c",
+    "evidence": "grid[x,y]==targetColor && (x!=ox||y!=oy) && !wood; beams for every collected target"
+  },
+  "currentProductionBranchInspected": false,
+  "runtimeAssetsModified": false
+}

@@ -6,16 +6,17 @@ namespace HeartOfTheRain.App.Teams
  [Serializable] public sealed class TeamChatEntry {public string id,memberId,kind,body,timeLabel;public int received,goal;}
  [Serializable] public sealed class TeamLetter {public string id,subject,sender,summary,body,dateLabel;public bool unread;}
  [Serializable] public sealed class TeamsSnapshot {public bool isDemo;public string selfId,eventTitle,eventDetail;public int eventProgress,eventGoal;public TeamProfile team;public TeamChatEntry[] chat;public TeamLetter[] mail;}
- public enum TeamsTab {Chat,Info,Mail}
+ public enum TeamsTab {Chat,Info,Mail,Rankings}
  public sealed class TeamsSession
  {
+  public HeartOfTheRain.App.Leaderboard.LeaderboardSession Rankings {get;set;}
   public TeamsSnapshot Data {get;private set;}
   public TeamsTab Tab {get;private set;}=TeamsTab.Chat;
   public string OpenMailId {get;private set;}="";
   public bool Composing {get;private set;}
   public string Notice {get;private set;}="";
   readonly HashSet<string> helped=new HashSet<string>(StringComparer.Ordinal),read=new HashSet<string>(StringComparer.Ordinal);int sequence;
-  public bool Modal=>Composing;
+  public bool Modal=>Composing||Rankings?.RegionOpen==true;
   public TeamsSession(TeamsSnapshot data){ApplySnapshot(data);}
   static bool Bad(string s)=>string.IsNullOrWhiteSpace(s);
   public void ApplySnapshot(TeamsSnapshot d)

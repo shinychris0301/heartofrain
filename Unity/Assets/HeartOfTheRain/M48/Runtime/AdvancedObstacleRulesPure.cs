@@ -17,19 +17,25 @@ namespace HeartOfTheRain.M46 {
             if(o.family=="crystal"&&(Inside(o.x,o.y-1)||Inside(o.x-1,o.y)&&Inside(o.x+1,o.y)))
                 throw new ArgumentException("Storm Crystal must anchor at a bottom outer perimeter");
         }
+        readonly Dictionary<int,Piece> footprintOwners=new Dictionary<int,Piece>();
+        readonly Dictionary<int,int> footprintCounts=new Dictionary<int,int>();
         void ValidateFootprints(){
-            foreach(var p in Pieces.Values.Where(q=>q.ownerId!=0)){
-                var root=Pieces.Values.FirstOrDefault(q=>q.id==p.ownerId);
-                if(root==null||!root.IsAnchor||root.family!=p.family||root.hp!=p.hp)throw new InvalidOperationException("Invalid shared obstacle owner");
-            }
-            foreach(var root in Pieces.Values.Where(q=>q.IsAnchor&&(q.family=="cabinet"||q.family=="crystal"))){
-                int w=root.family=="cabinet"?2:1,h=root.family=="cabinet"?2:root.hp;
-                var members=Pieces.Values.Where(q=>q.ownerId==root.id).ToArray();
-                if(members.Length!=w*h)throw new InvalidOperationException("Incomplete obstacle footprint");
-                for(int dy=0;dy<h;dy++)for(int dx=0;dx<w;dx++)if(At(root.x+dx,root.y+dy)?.ownerId!=root.id)throw new InvalidOperationException("Broken footprint");
-                if(root.family=="crystal"&&Pieces.Values.Any(q=>q.x==root.x&&q.family!="gem"&&q.family!="power"&&q.ownerId!=root.id))
-                    throw new InvalidOperationException("Crystal lane must exclude other obstacles");
-            }
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            if(VerificationUseCheckpoint77Model78){ValidateFootprintsCheckpoint77Model78();return;}
+#endif
+            bool needed=false;foreach(var p in Pieces.Values)if(p.ownerId!=0||p.IsAnchor&&(p.family=="cabinet"||p.family=="crystal")){needed=true;break;}if(!needed)return;
+            footprintOwners.Clear();footprintCounts.Clear();try{
+                foreach(var p in Pieces.Values){if(!footprintOwners.ContainsKey(p.id))footprintOwners.Add(p.id,p);int count;footprintCounts.TryGetValue(p.ownerId,out count);footprintCounts[p.ownerId]=count+1;}
+                foreach(var p in Pieces.Values)if(p.ownerId!=0){Piece owner;footprintOwners.TryGetValue(p.ownerId,out owner);
+                    if(owner==null||!owner.IsAnchor||owner.family!=p.family||owner.hp!=p.hp)throw new InvalidOperationException("Invalid shared obstacle owner");
+                }
+                foreach(var root in Pieces.Values)if(root.IsAnchor&&(root.family=="cabinet"||root.family=="crystal")){
+                    int w=root.family=="cabinet"?2:1,h=root.family=="cabinet"?2:root.hp,count;footprintCounts.TryGetValue(root.id,out count);
+                    if(count!=w*h)throw new InvalidOperationException("Incomplete obstacle footprint");
+                    for(int dy=0;dy<h;dy++)for(int dx=0;dx<w;dx++)if(At(root.x+dx,root.y+dy)?.ownerId!=root.id)throw new InvalidOperationException("Broken footprint");
+                    if(root.family=="crystal")foreach(var p in Pieces.Values)if(p.x==root.x&&p.family!="gem"&&p.family!="power"&&p.ownerId!=root.id)throw new InvalidOperationException("Crystal lane must exclude other obstacles");
+                }
+            }finally{footprintOwners.Clear();footprintCounts.Clear();}
         }
         bool HitAdvanced(Piece p,BoardStep step,float time,string activation){
             if(p.family!="crystal"&&p.family!="cabinet"&&p.family!="pod")return false;

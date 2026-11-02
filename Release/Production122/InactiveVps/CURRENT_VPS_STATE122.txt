@@ -1,0 +1,60 @@
+Observed 2026-10-30 22:01:18 UTC on the existing Windows VPS
+
+Status: inactive_production_files_staged_and_verified
+Production activation: false
+
+Separately staged source:
+  C:\Apps\HeartOfTheRain\Production122\Backend
+Public catalogue metadata:
+  C:\Apps\HeartOfTheRain\Production122\Release\RuStore
+Restricted configuration/templates and future logs:
+  C:\ProgramData\HeartOfTheRain\production-services
+Restricted empty key directory:
+  C:\ProgramData\HeartOfTheRain\production-secrets
+
+The archive contains 102 payload files, 822240 bytes. All payload hashes were
+verified after copying. Its 83 runtime modules, eight configuration files and
+two requirements files match the accepted full backend test snapshot: 888/888
+tests passed, no skips, including the approved real-worker integration. Three
+ancillary catalogue/template inputs match the separately reviewed 174-test
+discovery snapshot. These tests are not live-provider or Android acceptance.
+
+The installed Python remains unchanged at 3.14.10. Its launcher, base executable
+and pyvenv.cfg hashes matched the reviewed preflight; all 19 installed dependency
+versions match the existing requirements lock. On-host AST parsing accepted all
+83 modules. No new production runtime or provider code was executed on the VPS.
+
+LocalService has read/execute access to code/configuration/empty secrets. Only
+the future logs directory grants it Modify. Administrators and SYSTEM retain
+full control. No authority directory, database, complete production-manifest.json,
+private key or placeholder key file was created. Production service examples
+remain unregistered Manual templates. Commerce remains disabled for all 12 items.
+
+All 76 existing staging source files and the existing manifest, owner marker and
+Caddy configuration retained their preflight hashes. HOTRStaging and HOTRCaddy
+remain Running. HOTRMonitor122 remains LocalService, with nine healthy checks in
+a fresh status observation. No existing source, proxy or service was replaced.
+
+Future owner-provided Console key files, absent at installation:
+  C:\ProgramData\HeartOfTheRain\production-secrets\rustore-private-key
+  C:\ProgramData\HeartOfTheRain\production-secrets\rustore-notification-key
+
+See KEY_DESTINATIONS122.txt for file formats and private handling. Actual public
+Console IDs, release identity/worker bindings, real issued keys, completed private
+configuration and live-provider/Android/recovery acceptance remain required before
+authority initialization or production service installation. The legal pages
+remain temporary drafts pending the operator's details and approval.
+
+Evidence:
+  Verification/Evidence/Review122/InactiveVps/InactiveVpsInstall122.json
+  Verification/Evidence/Review122/InactiveVps/BundleManifest122.json
+  Verification/Evidence/Review122/InactiveVps/IndependentActualBundle122.json
+  Verification/Evidence/Review122/Backend/Full05/Service_Tests.json
+
+Archive SHA256:
+  d5270c71764254c09bba623a95e550135054c221a30e06ff5801a84452734d1b
+Installed file-manifest SHA256:
+  48f5cf6eadf4eabd69e9a7d0457b36c373bbfd14ac22d393d06e7a3501527536
+
+Preserve these new directories. Re-running the installer refuses existing roots;
+it does not overwrite, adopt or clean them up.

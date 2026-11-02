@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e53944ce775524ab9abdf82be28958, type: 3}
   m_Name: M63 Shop Assets
   m_EditorClassIdentifier:
-  teams: {fileID: 11400000, guid: 362a4ad1acb6564c8e67cc45efe97c01, type: 3}
+  teams: {fileID: 11400000, guid: 362a4ad1acb6564c8e67cc45efe97c01, type: 2}
   catalog: {fileID: 4900000, guid: 95b56501fa345850b98f96904f23e60e, type: 3}
   sprites:
   - id: SP_CoinPouch

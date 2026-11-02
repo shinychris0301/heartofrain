@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "scope": "Visual contract only; host Codex implements services and UI. Fixtures are not production economy.",
+  "entry": "Teams > Mail; authenticated membership context from existing Teams flow. No redesign of access/search/create/chat.",
+  "states": [
+    "loading",
+    "inbox",
+    "read_detail",
+    "reward_ready",
+    "claim_pending",
+    "claimed",
+    "claim_error",
+    "expired",
+    "lives_full",
+    "offline_cached",
+    "offline_reward",
+    "empty",
+    "load_error"
+  ],
+  "mailFields": [
+    "messageId",
+    "teamId",
+    "senderId",
+    "kind",
+    "localizedTitle",
+    "body",
+    "sentAtUtc",
+    "readAtUtc",
+    "expiresAtUtc",
+    "rewardEntitlementId",
+    "rewardItems",
+    "claimState",
+    "remainingRewardItems",
+    "serverRevision"
+  ],
+  "transitions": [
+    {
+      "from": "inbox",
+      "action": "open",
+      "to": "read_detail",
+      "effect": "Mark read idempotently. Never claim implicitly; synchronize unread count with server."
+    },
+    {
+      "from": "reward_ready",
+      "action": "collect",
+      "to": "claim_pending",
+      "effect": "Disable duplicate taps. Request authenticated entitlement claim with idempotency key tied to entitlement and claimant."
+    },
+    {
+      "from": "claim_pending",
+      "action": "server_confirmed",
+      "to": "claimed",
+      "effect": "Update authoritative balances then run visual feedback once per confirmed claim revision."
+    },
+    {
+      "from": "claim_pending",
+      "action": "timeout_or_network_failure",
+      "to": "claim_error",
+      "effect": "Outcome may be unknown; reconcile server claim status before retry. Retry same idempotency key, never grant locally."
+    },
+    {
+      "from": "reward_ready",
+      "action": "server_expired",
+      "to": "expired",
+      "effect": "No grant. Keep message text readable."
+    },
+    {
+      "from": "reward_ready",
+      "action": "server_capacity_blocked",
+      "to": "lives_full",
+      "effect": "Reflect server policy. Example proof assumes entire bundle deferred. Do not discard lives or grant coins twice."
+    },
+    {
+      "from": "offline_cached",
+      "action": "open_cached",
+      "to": "read_detail",
+      "effect": "Allow cached text; queue read acknowledgement if supported; claims disabled until reconnection and refresh."
+    }
+  ],
+  "rewardRules": [
+    "Server owns eligibility, balances, expiry, capacity and membership authorization.",
+    "Use existing life-cap policy. Partial grants require per-item remaining entitlements; render authoritative remainder. Do not create an implicit life bank.",
+    "Coin and life values in screenshots (300 and 2) are fictional review fixtures, not approved economy settings.",
+    "Closing a pending modal does not cancel a server transaction. Reopen by entitlement status.",
+    "Expired and claimed are distinct, stable states. Device clock is not authoritative for expiry.",
+    "No auto-navigation to Shop, no purchase or coin cost in Mail."
+  ],
+  "serviceMethods": [
+    "ListTeamMail(teamId,cursor)",
+    "GetTeamMail(messageId)",
+    "MarkTeamMailRead(messageId,revision)",
+    "ClaimTeamMailReward(entitlementId,idempotencyKey)",
+    "GetClaimStatus(entitlementId)",
+    "RefreshBalances()"
+  ],
+  "fixturesOnly": {
+    "team": "Rainkeepers",
+    "members": "43/50",
+    "online": 8,
+    "unread": 2,
+    "rewards": [
+      {
+        "type": "coins",
+        "amount": 300
+      },
+      {
+        "type": "lives",
+        "amount": 2
+      }
+    ],
+    "expiryText": "1d 23h"
+  },
+  "accessibility": [
+    "Unread uses seal plus label/count, not color only.",
+    "Modal focus trapped and restored to originating row. Android system back closes modal before leaving Mail.",
+    "Screen-reader roles and localized labels; respect reduced-motion setting; scroll lists and large text.",
+    "Do not render server message content as rich text/markup without sanitization."
+  ],
+  "notIncluded": [
+    "Team mail backend",
+    "Message sending by leaders",
+    "Purchase flow",
+    "Production reward configuration",
+    "Unity prefabs or C# runtime implementation"
+  ]
+}

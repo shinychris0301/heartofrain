@@ -1,0 +1,158 @@
+Heart of the Rain: owned production operations candidate (review122)
+
+This workflow is implemented separately from staging. It does not activate the
+existing VPS authority, import an offline/staging wallet, charge a payment, or
+approve a release. Provider keys, public app identity, approved replay bundle,
+signed app integration and actual provider/device acceptance must be supplied
+and verified before an operator starts production. The existing staging root,
+scope, installed services and deployed monitor remain unchanged.
+
+Authority and concurrency
+
+production_runtime122 validates a private exact manifest, fresh production
+root, catalog digest, public origin, production identity scope, official sender
+networks and approved replay configuration. initialize creates ownership and
+lock files without a database. The first explicit API context creates the new
+authority and marks it Ready. Unknown, missing, interrupted, staging and
+quarantined roots are not silently adopted or migrated.
+
+Production operations use that same exact owner nonce/manifest binding and
+current schema. The API holds its runtime lease; the reconciliation process
+holds a separate exclusive operations lease and may run beside the API. Each
+real reconciliation batch also enters the in-flight permit so cancellation or
+context closure cannot release its process lease before synchronous work drains.
+Snapshot administration uses the independent short control lock. These locks
+are single-host process ownership, not distributed leadership.
+
+Create a new online snapshot
+
+From the deployed Backend directory, using only the existing private manifest:
+
+  <python.exe> -B -m hotr_backend.production_ops122 backup --manifest <private-production-manifest.json> --name before-release-001
+
+The only output files are <owned-data>/backups/<name>.sqlite3 and the matching
+.receipt.json. Names accept 1-48 ASCII letters/digits/underscore/hyphen and reject
+Windows device names. Existing files, links and hard links are rejected. A
+Pending receipt is durably written before the existing validated SQLite backup
+API copies the authority, including committed WAL contents. Ready is recorded
+only after current-schema/FK/integrity validation and independent size/SHA-256
+confirmation. The immutable receipt binds deployment, origin, identity scope,
+owner nonce, manifest digest, schema and operation time. It contains no player
+rows or credential payloads. Later live writes are outside that snapshot.
+
+A failed operation preserves its Pending receipt/partial artifact. Investigate
+privately and use a new name; never delete an unknown pending financial or backup
+artifact to make a retry succeed. Windows permissions inherit the private
+service-account ACL; mode0600 alone does not establish the intended Windows ACL.
+Ensure sufficient disk, explicit encrypted retention and an off-VPS copy. The
+local snapshot itself is not an encrypted disaster-recovery backup.
+
+Restore only into a new quarantine
+
+  <python.exe> -B -m hotr_backend.production_ops122 restore-quarantine --manifest <private-production-manifest.json> --name before-release-001 --tag drill-001
+
+The operation accepts only this exact authority's canonical Ready receipt with
+matching current schema, hash and size and no SQLite sidecars. It creates only
+<owned-data>/restores/<tag>. A RestoreQuarantinedPending marker precedes the
+copy. ValidatedQuarantine is recorded only after validated target copying and
+unchanged source receipt/hash/owner checks. Backup Ready finalization likewise
+rechecks the captured owner binding after copying. Failure remains blocked and preserved.
+
+No production owner marker or Ready authority is created in that root. No
+listener is bound, live database replaced, service stopped, wallet merged or
+manifest changed. activationAllowed is always false. An off-host recovery,
+configuration change, release migration or eventual cutover needs a separately
+reviewed procedure that ensures one authority and reconciles post-snapshot
+financial work. Do not rename the quarantine marker or copy a production owner
+marker to force startup. Restoring an old snapshot can lose later purchases;
+this workflow deliberately cannot activate it.
+
+Bounded payment reconciliation
+
+Inspect durable work without provider requests or clock/database writes:
+
+  <python.exe> -B -m hotr_backend.production_ops122 queue-summary --manifest <private-production-manifest.json>
+
+Run one bounded batch under an active operations-purpose production permit:
+
+  <python.exe> -B -m hotr_backend.production_ops122 reconcile --manifest <private-production-manifest.json> --max-jobs 5 --seed-limit 20 --poll-seconds 300
+
+Only already-known server order/invoice bindings are seeded. A callback is an
+authenticated hint; it never authorizes credit. The existing leased worker
+queries RuStore's verified invoice adapter and uses Commerce's atomic bound
+receipt/wallet projection. Pending requests survive process/provider outages;
+expired leases can be reclaimed and stale completions are fenced. Duplicate
+confirmation cannot issue another receipt or repeat an item/coin grant.
+
+The worker never invents invoice IDs, creates a client purchase, confirms a held
+payment, issues a refund, acknowledges SDK delivery or releases a one-time offer
+from a client cancellation. Later verified refund/reversal enters review under
+the existing model. SDK acknowledgement remains after durable client delivery;
+the worker only observes its later provider status. Dead work remains visible
+for explicit investigation and is not automatically resurrected.
+
+Results contain aggregate job states/counts, due work and expired leases; no
+player/order/invoice IDs, provider bodies, keys, tokens or exception messages.
+The queue read observes the greater of persisted high-water time and current
+wall time without changing the durable clock, so an idle/stopped worker cannot
+hide overdue work. It is read-only with a bounded SQLite query deadline. A Dead count
+produces operator_attention_required even when the latest batch was idle.
+
+Supervision candidate
+
+  <python.exe> -B -m hotr_backend.production_ops122 supervise-reconciliation --manifest <private-production-manifest.json> --max-jobs 5 --seed-limit 20 --poll-seconds 300 --interval-seconds 30
+
+The process retains one operations context/lease and emits a sanitized result
+per bounded batch. Keyboard interruption drains the context; process failure
+leaves durable leases for later recovery. Exact job-count limits bound batches;
+they are not a production throughput/latency guarantee. The provider adapter has
+its own network limits. Alerts about dead work and recovery require operator
+review; no automatic money reversal or financial retry override is introduced.
+
+HOTRProduction122.xml.example and HOTRReconciliation122.xml.example are separate
+WinSW candidates using LocalService, bounded local logs and restart-on-failure.
+They are not installed by this repository change. Check absolute executable,
+manifest, log roots, restricted ACLs and approved WinSW binary before any
+installation. Start reconciliation only after the explicit API startup makes
+the separate authority Ready. The current HOTRStaging/HOTRCaddy services are
+not modified. Reboot/restart/provider acceptance and capacity remain actual-host
+checks, not properties established by XML rendering or host unit tests.
+
+Proxy candidate
+
+Caddyfile.production122.example preserves restricted internal/doc routes and
+separates production/sandbox notifications. Only the four official RuStore
+remote socket ranges may POST to the production notification path. Other peers
+receive403, wrong methods405; sandbox notifications remain404. Caddy overwrites
+X-Hotr-Verified-Client-IP with its real remote_host and strips incoming Forwarded,
+X-Forwarded-For and X-Real-IP. The backend independently requires the exact
+loopback proxy peer, a single canonical verified address and the configured
+provider source range before authenticating notification ciphertext.
+
+Do not add loopback as a RuStore source, trust client forwarding headers, expose
+8752 publicly, or insert a CDN without re-reviewing the chain. The template's
+optional /privacy, /support and /terms routes serve the same explicitly draft
+HTML as Release/Production122/public. They do not set legalAccepted=true or
+complete operator/contact/legal review. Access logs are absent to avoid VK
+callback queries and purchase data; availability logs use monitoring122.
+
+Official sender ranges, checked 30 October2026:
+https://www.rustore.ru/help/developers/monetization/payment-callback/server-set-up
+Caddy header semantics:
+https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#defaults
+
+Validation boundaries
+
+Production operations tests use the actual fresh-root initializer, owner files,
+database/schema, OS locks, permit lifecycle and SQLite transactions. Only the
+provider and Unity replay worker factories are scripted. They cover committed
+WAL capture, ownership/tamper/failure boundaries, permanent restore quarantine,
+known live-environment invoice recovery, exact-once credit, retry/dead states,
+stale job leases and in-flight context draining. These are not actual provider,
+Unity worker, Android or production deployment acceptance.
+
+The proxy tests run the exact hash-pinned Caddy binary: offline adaptation plus
+an isolated loopback HTTP proxy/backend. They verify actual header replacement,
+sender denial, protected routes and static drafts; all owned listeners/processes
+close. Successful RuStore delivery, public TLS/real peer routing and the deployed
+production service remain separate tests.

@@ -84,6 +84,16 @@ namespace HeartOfTheRain.M07
             if(mode==0)SelectEntry(selectedEntry+delta);
             else{selectedClip=(selectedClip+delta+clipManifest.clips.Length)%clipManifest.clips.Length;cursor=0;}
         }
+        // M70 frames are cropped and variable-sized. Fit the whole selected clip,
+        // rather than a possibly tiny first Create frame from another clip.
+        public static float ClipHalfHeight(SpriteManifest manifest,int clipIndex,float aspect)
+        {
+            var clip=manifest.clips[clipIndex];float width=0,height=0;
+            for(int i=clip.start;i<clip.start+clip.count;i++){
+                var frame=manifest.frames[i];width=Mathf.Max(width,frame.width);height=Mathf.Max(height,frame.height);
+            }
+            return .62f*Mathf.Max(height,width/Mathf.Max(.2f,aspect))/manifest.pixelsPerUnit;
+        }
         void LateUpdate()
         {
             if(data==null)return;
@@ -102,8 +112,7 @@ namespace HeartOfTheRain.M07
                 if(mode==0)board.FitPreviewCamera();
                 else
                 {
-                    float canvas=clipManifest.frames[0].width/clipManifest.pixelsPerUnit;
-                    cam.orthographicSize=.62f*canvas*Mathf.Max(1,1/cam.aspect);
+                    cam.orthographicSize=ClipHalfHeight(clipManifest,selectedClip,cam.aspect);
                 }
             }
             Sample();

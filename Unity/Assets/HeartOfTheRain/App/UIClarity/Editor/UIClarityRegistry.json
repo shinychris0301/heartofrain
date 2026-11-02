@@ -1,0 +1,554 @@
+{
+  "revision": "UI Clarity R1 + Rain Cup R1 (live shared GUIDs retained) + Gameplay Loading R2 + No Moves R2 + No Moves R3 + Russian launch wordmark R3",
+  "assets": [
+    {
+      "guid": "ce160dfabad851f39bd4f32eacb5c86d",
+      "name": "AccountChrome.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountChrome.png",
+      "width": 1392,
+      "height": 1130,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "dfcb312489db58b1b40ba996134b92ff",
+      "name": "Close.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/Close.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "e251b65e614251f5a0b233bbf1d4678a",
+      "name": "DG_Card_Bonus.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Bonus.png",
+      "width": 576,
+      "height": 576,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "5d20f65e78ca56b4845d1e6dbff2dad5",
+      "name": "DG_Card_Collected.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Collected.png",
+      "width": 576,
+      "height": 576,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "a88ca46cf329552796638bd97a4f9f1d",
+      "name": "DG_Card_Today.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Today.png",
+      "width": 576,
+      "height": 576,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "369ad220437a5f27bfb6c6d7530c8916",
+      "name": "DG_Card_Upcoming.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Upcoming.png",
+      "width": 576,
+      "height": 576,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "68a7c30267df5eb2a12abc04fc59d247",
+      "name": "DG_Gift_Chest.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Gift_Chest.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "e23ca6c6014d5827a3cd861463e36027",
+      "name": "DG_Hero_Well.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Hero_Well.png",
+      "width": 576,
+      "height": 576,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "0e022ac2fb095ef3b2500dd0ee90df5b",
+      "name": "DG_Star.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Star.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "14a80ba11e8f50598176afa21c9ca5c0",
+      "name": "Primary.png",
+      "path": "Assets/HeartOfTheRain/App/Profile/Art/Primary.png",
+      "width": 1821,
+      "height": 503,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "1ad2a056d01a59599b5bb503d5cdae83",
+      "name": "Reward_Bomb.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Bomb.png",
+      "width": 196,
+      "height": 228,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "7f822ff99c2e5a8ab1d0ccc7a64a7b7e",
+      "name": "Reward_Coin.png",
+      "path": "Assets/HeartOfTheRain/App/Home/Art/R3_Coin.png",
+      "width": 276,
+      "height": 281,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "16cf1a1a5c99514e9858e1d94e84a163",
+      "name": "Reward_Hammer.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Hammer.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "dec76ca00b525ffbb297088a0a8fb247",
+      "name": "Reward_Orb.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Orb.png",
+      "width": 220,
+      "height": 208,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "41b62c8cfece593097fd6f7cce7688ee",
+      "name": "Reward_Rocket.png",
+      "path": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Rocket.png",
+      "width": 228,
+      "height": 164,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "14096b28f3585e91995e603135abf96a",
+      "name": "Selection_Check.png",
+      "path": "Assets/HeartOfTheRain/App/Profile/Art/CheckSource.png",
+      "width": 232,
+      "height": 236,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "481d1804277e5f78934ecd7f989dfb97",
+      "name": "Reward_Golden_Seeker.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/Reward_Golden_Seeker.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "c2660af70c11540c9a0e18103861d52e",
+      "name": "WW_Lock.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Lock.png",
+      "width": 144,
+      "height": 144,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "82015c721a645793b8539a6bc5ed6dfb",
+      "name": "WW_Milestone_Badge.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Milestone_Badge.png",
+      "width": 360,
+      "height": 360,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "7f7359cab811566bb16b2586b3444626",
+      "name": "WW_Progress_Fill.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Progress_Fill.png",
+      "width": 384,
+      "height": 96,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "60269092d2d05e34b7827d07dd6305f6",
+      "name": "WW_Progress_Track.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Progress_Track.png",
+      "width": 576,
+      "height": 144,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "30153f2cd1c756ab8696ffed5f2caa0b",
+      "name": "WW_Village_Well.png",
+      "path": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Village_Well.png",
+      "width": 1200,
+      "height": 1311,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "927ea81f1653577ba2d08d7d86e5715b",
+      "name": "RC_Avatar_Frame.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Avatar_Frame.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "f8a168bc25975377bd568f5163a8f3a8",
+      "name": "RC_Avatar_Mask.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Avatar_Mask.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": false,
+      "policy": "Alpha mask"
+    },
+    {
+      "guid": "791288ba8fb75d41a27369dcb9c43e81",
+      "name": "RC_Rank_Bronze.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Rank_Bronze.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "07ad6e4d80b255eb9702cec51743c233",
+      "name": "RC_Rank_Gold.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Rank_Gold.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "25dcee402a9751d3914e277e6397bf9c",
+      "name": "RC_Rank_Silver.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Rank_Silver.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "f757753a43035712b2e464db52a82205",
+      "name": "RC_Rival_Emblem.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Rival_Emblem.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "799ec0f3c99b5b59af789e15321cc133",
+      "name": "RC_Tab_Active.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Tab_Active.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "b3cff88c8f4851f5bdacc851a49acf0e",
+      "name": "RC_Tabs_Track.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Tabs_Track.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "e248e3022883546496acbf9f6020b27f",
+      "name": "RC_Trophy.png",
+      "path": "Assets/HeartOfTheRain/App/RainCupDesign/Art/RC_Trophy.png",
+      "width": 1354,
+      "height": 1161,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "c5b05642d6a153b28806a2b17ba255cb",
+      "name": "HL_Clock.png",
+      "path": "Assets/HeartOfTheRain/App/HomeLivesDesign/Art/HL_Clock.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "ae5b452b0a6d5243858333fd6e28c726",
+      "name": "R3_Lives.png",
+      "path": "Assets/HeartOfTheRain/App/Home/Art/R3_Lives.png",
+      "width": 297,
+      "height": 260,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "284e1fe3ca8551aba1d3cf0fe1144989",
+      "name": "R4_Header.png",
+      "path": "Assets/HeartOfTheRain/App/Home/Art/R4_Header.png",
+      "width": 2121,
+      "height": 360,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "b42a91fd16c05d0a8e3581809b89a131",
+      "name": "GL_Primary.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/GL_Primary.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "9cf221c1a6b4535dadb9c2de83977d3d",
+      "name": "GL_Secondary.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/GL_Secondary.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "52fc7d709b2052cfb70f25c21ce90e5c",
+      "name": "LT_Background.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_Background.png",
+      "width": 1080,
+      "height": 1920,
+      "mipmaps": false,
+      "policy": "Flat UI decoration"
+    },
+    {
+      "guid": "d8aab35c1eb65e75ba21eb5f31fdd0c5",
+      "name": "LT_Flight_Arrow.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_Flight_Arrow.png",
+      "width": 400,
+      "height": 160,
+      "mipmaps": false,
+      "policy": "Flat UI decoration"
+    },
+    {
+      "guid": "17b8e8ce94885fc2bc5f867eeadf8709",
+      "name": "LT_Orb_Links.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_Orb_Links.png",
+      "width": 1440,
+      "height": 960,
+      "mipmaps": false,
+      "policy": "Flat UI decoration"
+    },
+    {
+      "guid": "1f49a7b03d4b5983ad01fa2c5bf4822e",
+      "name": "LT_RainPattern.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_RainPattern.png",
+      "width": 384,
+      "height": 384,
+      "mipmaps": false,
+      "policy": "Flat UI decoration"
+    },
+    {
+      "guid": "f5a04570489b578f8db20b1290421b48",
+      "name": "LT_Target.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_Target.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "a9590df969ff53a5b0db9060fd198ad1",
+      "name": "LT_Tip_Cell.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/LT_Tip_Cell.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "ce1115867df95d79ac7a970a8eafefd2",
+      "name": "Rain_Seeker_Original.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/Rain_Seeker_Original.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "ca2470cf1a495bd688801687ae424650",
+      "name": "Rainbow_Orb_Original.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/Rainbow_Orb_Original.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "8b1571b4e3a25176ad13e087add949cd",
+      "name": "TILE_Leaf_V2.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/TILE_Leaf_V2.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "9ded2ed18fd75e519be2686731f8ca3a",
+      "name": "TILE_Ribbon_V2.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/TILE_Ribbon_V2.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "ec2420b7115c53458270df3a0b003adb",
+      "name": "TILE_Stone_Rune_V2.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/TILE_Stone_Rune_V2.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "fa5657aefec557c587ea62db74f8db05",
+      "name": "TILE_Water_Drop_V2.png",
+      "path": "Assets/HeartOfTheRain/App/GameplayLoadingDesign/Art/TILE_Water_Drop_V2.png",
+      "width": 512,
+      "height": 512,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "db4cc2fd686c582183ef2e3c8461bc1e",
+      "name": "LifeLostHeart.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/LifeLostHeart.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "ddc3b24940f45c63849314b575d95ba3",
+      "name": "NM_Coin_Glyph.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Coin_Glyph.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "bc8167dd7ec35aa780f0a5fbd2749cd4",
+      "name": "NM_Continue_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Continue_Band.png",
+      "width": 1600,
+      "height": 1280,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "d44062016c7f5caca12af0288ec9ce64",
+      "name": "NM_Dariya_Continue.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Dariya_Continue.png",
+      "width": 1195,
+      "height": 1316,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "2ef9072c6f4659a48fa09f59dd0583b5",
+      "name": "NM_Moves_Badge.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Moves_Badge.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "9346654dd05d5c91bfba5aac2202d127",
+      "name": "NM_Notice_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Notice_Band.png",
+      "width": 1600,
+      "height": 400,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "a0c712e095555467827aabe46019dd70",
+      "name": "NM_Offer_Halo.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Offer_Halo.png",
+      "width": 1024,
+      "height": 922,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "a2ec93401534508c9397c6b835301bcf",
+      "name": "NM_Secondary.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Secondary.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "610e9fde7676584a8ab7387a96bcc515",
+      "name": "NM_Wallet_Pill.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Wallet_Pill.png",
+      "width": 512,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "05319d4e12a8549bae03996414a96e79",
+      "name": "SP_CoinPouch.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_CoinPouch.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "6836a7ca0b00575ab0857a335e4be42a",
+      "name": "SP_Mega.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_Mega.png",
+      "width": 400,
+      "height": 320,
+      "mipmaps": false,
+      "policy": "Sliced surface"
+    },
+    {
+      "guid": "d6c3c7093684533f92960082e5b694f3",
+      "name": "NM_Wallet_Plus.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Wallet_Plus.png",
+      "width": 128,
+      "height": 128,
+      "mipmaps": true,
+      "policy": "Filtered artwork"
+    },
+    {
+      "guid": "dbf14ca73e245a739834a16d7faa3b82",
+      "name": "Title_Logo_RU_R1.png",
+      "path": "Assets/HeartOfTheRain/App/Launch/Art/Title_Logo_RU_R1.png",
+      "width": 1774,
+      "height": 887,
+      "mipmaps": false,
+      "policy": "UI logo; source-sized RGBA32, Bilinear, no atlas downscale"
+    }
+  ]
+}

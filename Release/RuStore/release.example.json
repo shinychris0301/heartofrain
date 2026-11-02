@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "UNCONFIGURED_NOT_A_REGISTERED_APPLICATION",
+  "packageName": null,
+  "consoleApplicationId": null,
+  "paymentReturnScheme": null,
+  "backendOrigin": null,
+  "privacyPolicyUrl": null,
+  "supportUrl": null,
+  "termsUrl": null,
+  "minimumApiLevel": 26,
+  "targetApiLevel": 35,
+  "versionCode": null,
+  "signingCertificateSha256": null,
+  "environment": "sandbox",
+  "candidateIdentifiers": {
+    "packageName": "com.heartoftherain.game",
+    "paymentReturnScheme": "heartoftherain-pay",
+    "note": "Proposals only. Register and verify availability before copying into an external release configuration. The existing verification package and signing identity are preserved."
+  },
+  "candidateProducts": [
+    { "shopOfferId": "coins-1000", "proposedStoreProductId": "hotr_coins_1000", "coins": 1000, "enabled": false },
+    { "shopOfferId": "coins-5000", "proposedStoreProductId": "hotr_coins_5000", "coins": 5000, "enabled": false },
+    { "shopOfferId": "coins-10000", "proposedStoreProductId": "hotr_coins_10000", "coins": 10000, "enabled": false },
+    { "shopOfferId": "coins-25000", "proposedStoreProductId": "hotr_coins_25000", "coins": 25000, "enabled": false },
+    { "shopOfferId": "coins-50000", "proposedStoreProductId": "hotr_coins_50000", "coins": 50000, "enabled": false },
+    { "shopOfferId": "coins-100000", "proposedStoreProductId": "hotr_coins_100000", "coins": 100000, "enabled": false }
+  ],
+  "notificationPaths": {
+    "sandbox": "/v1/commerce/notifications/rustore/sandbox",
+    "production": "/v1/commerce/notifications/rustore/production",
+    "status": "IMPLEMENTED_DISABLED_UNHOSTED_UNREGISTERED"
+  },
+  "note": "This file is outside Unity Assets and is not loaded by the game. RuStore assigns the Console ID. A real HTTPS origin follows deployment; no invented URL is presented as live. Do not add keys, passwords, bearer credentials or raw receipts. Prices come from SDK amountLabel. Reward quantities come from an approved server catalog, never from this proposal."
+}

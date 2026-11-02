@@ -1,0 +1,159 @@
+Yandex rewarded advertising - setup107
+
+APPROVED PUBLIC PLACEMENTS AND REWARD
+
+Rewarded Video: R-M-20291714-1
+Interstitial:   R-M-20291714-2 (configured only; no display point is added)
+Shop offer: 400 coins, three successful claims per player-local day,
+600-second cooldown after each successful server credit.
+No fill, cancellation and incomplete video do not consume quota.
+A managed guest is sufficient; linking VK or Google is not required for this offer.
+Ordinary offline wallets are not imported into the server wallet.
+
+WHAT THE OWNER STILL NEEDS TO SUPPLY
+
+1. A working public HTTPS API origin and operated backend, with stable private
+   database storage, backups, TLS/proxy/supervision and an actual managed account.
+2. A published HTTPS Russian privacy-policy URL and reviewed version string,
+   covering the actual SDK/AppMetrica and backend processing/audience.
+3. Confirmation that these Yandex units belong to the actual Android package,
+   that the app/listing and publisher/payment details are approved, and that the
+   Console reward description matches the 400-coin offer.
+4. Before release: existing RuStore package/signing/products/provider inputs and
+   production acceptance. The107 SDK builder is a development/staging profile;
+   it does not remove the existing production guard or publish the application.
+
+Keep signing keys, payout credentials, backend bearer/API secrets and publisher
+passwords outside chat, Unity resources, Git, setup descriptors and logs.
+
+BACKEND OPT-IN - EXPLICIT AND STOPPED
+
+The repository Backend/config/ads.json remains disabled. The reviewed staging
+launcher uses its own owned policy file, not that repository file at runtime.
+
+Create an external staging descriptor using
+Release/RuStore/staging-server.example.json. Fill its real publicOrigin,
+identityScope, deploymentId, private dataDirectory and port; retain disabled
+unconfigured VK/replay settings until those integrations are ready. Add the
+optional JSON boolean:
+
+  "rewardedAdsEnabled": true
+
+Omitting it means false. Strings/numbers are rejected. For a new empty owned
+root, initialize using this descriptor. For an existing owned root, stop its
+service and take a verified backup, then run the explicit transition. From the
+Backend directory, use the existing virtual environment:
+
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging105 configure-rewarded-ads --manifest C:\HOTR-Private\staging-server.json
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging105 preflight --manifest C:\HOTR-Private\staging-server.json
+
+The command holds runtime/control locks, preserves the existing database,
+player IDs, balances, pending opportunities and receipts, and changes only the
+recognized fixed-policy ads configuration. A running service, foreign policy or
+wrong ownership is rejected. Retry after an interrupted acknowledgement uses
+the same committed setting; do not manually reset the marker/database.
+Use the same configured descriptor when restarting. To disable new videos,
+set the flag to false and run the stopped transition again. Existing durable
+reports/claims can recover; disabling admission does not reset rewards.
+
+Export a NEW external public managed-app JSON through the existing command:
+
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging105 export-app-config --manifest C:\HOTR-Private\staging-server.json --out C:\HOTR-Private\managed-app.json
+
+That output remains exactly six public fields. Advertising IDs/privacy do not
+belong in it. See Release/RuStore/STAGING_SERVER_OPERATIONS105.txt for initialization/start,
+backup/restore and hosting limitations. With replay.enabled=false this is a
+social/advertising staging profile: authoritative gameplay execution remains
+unavailable until the approved replay worker is configured. There is no silent
+fallback into an offline wallet or board attempt. The PowerShell wrapper remains subject
+to this PC's existing script policy; no execution-policy override is needed by
+the tested Python CLI.
+
+CLIENT CONFIGURATION AND SDK BUILD
+
+Copy Release/Advertising/advertising.example.json to an external public
+advertising configuration. Keep both supplied IDs, set enabled=true only when
+the real privacy URL and managed backend are ready, and fill privacyUrl and
+privacyVersion. V2 has exactly these six fields:
+
+  version, enabled, rewardedUnitId, interstitialUnitId, privacyUrl, privacyVersion
+
+Do not add secrets, server fields or an invented URL. The parser checks syntax;
+it does not establish that the URL is published, operated or legally sufficient.
+The packaged key is HOTR_Advertising/Configuration. Invalid or disabled packaged
+configuration never falls back to a device-file activation. Opening Shop cannot
+initialize/load/show the SDK; the player explicitly chooses the voluntary video
+and accepts the privacy explanation for each video.
+
+From the project root, inspect the current builder help:
+
+  Backend\.venv\Scripts\python.exe Verification\Tools\Review107\prepare_ads107.py --help
+  Backend\.venv\Scripts\python.exe Verification\Tools\Review107\run_native107.py --help
+
+Prepare a fresh uniquely named candidate with prepare_ads107.py --tag NAME
+--execute. Use its returned Game/Preparation.json paths with the explicit native
+runner and HeartOfTheRain.App.Advertising.Editor.AdvertisingBuild107 entry.
+BuildDevelopment is the actual APK entry; RunPackaging is a no-APK import/cleanup
+check. For configured staging development, pass BOTH --managed-config and
+--advertising-config to the same build, not two nested old builders. The lease
+requires dedicated stagingreview package, Android Development, debug signing,
+no script debugging/profiler and no RuStore channel. Unconfigured review uses
+the separate ads107review package and disabled packaged defaults.
+
+Example configured development build, only AFTER replacing the two external
+JSON files with the owner's real public values (run from the project root):
+
+  Backend\.venv\Scripts\python.exe Verification\Tools\Review107\prepare_ads107.py --tag OwnerAds01 --execute
+
+Then use the same fresh Game project in ONE build command:
+
+  Backend\.venv\Scripts\python.exe Verification\Tools\Review107\run_native107.py --execute --tag OwnerAdsBuild01 --entry HeartOfTheRain.App.Advertising.Editor.AdvertisingBuild107.BuildDevelopment --report AndroidBuild107.json --expected PASS_NATIVE_ADS107_ANDROID_BUILD --project .verification-cache\Review107\Candidates\OwnerAds01\Game --apk .verification-cache\Review107\Candidates\OwnerAds01\Game\Builds\HeartOfTheRain_Ads_Staging.apk --managed-config C:\HOTR-Private\managed-app.json --advertising-config C:\HOTR-Private\advertising.json --timeout 3600
+
+Use fresh tags/output paths for later attempts; foreign or existing artifacts
+are preserved. This command compiles a debug-signed development APK, never a
+published/signed production release. It does not install or request an ad.
+The configured APK uses the dedicated stagingreview package. Omit both config
+arguments only for the separate unconfigured ads107review verification build.
+
+On another build PC, arrange the exact supported Editor/toolchain and download
+the official yandex-mobileads-lite-8.6.0.unitypackage into the documented Ads85
+vendor cache. The package SHA256 is:
+0d0a2546dd752d6b02864df5833767703ae88d5b292da0e0b8eec815d7f066c3
+The preparer fails closed if the pin, stock tools, sources or ownership differ.
+Do not patch installed Editor DLLs or disable Windows security controls.
+
+The build uses pinned Yandex8.6.0, SDK privacy settings before loading,
+automatic SDK initialization disabled, no location/AD_ID permissions and HTTPS
+traffic policy. AppMetrica remains a required dependency. These controls do not
+prove zero pre-consent collection or replace a real-device privacy assessment.
+No interstitial is loaded or displayed by this integration.
+
+VERIFICATION STILL NEEDED BEFORE LIVE ACTIVATION
+
+Use Yandex's official demo-unit harness for SDK playback checks; do not click
+live ads during development. The current full-game profile locks the supplied
+real IDs and is not a fake demo-traffic build. Perform controlled Android checks
+for completed/incomplete/cancelled/no-fill/failed ads, duplicate callbacks,
+background/token renewal, app termination and reconnection, identity change,
+wallet refresh and recovery without double credit. Confirm local-midnight,
+travel/DST and cooldown behavior against authoritative server time. Test current
+phones/tablets and app upgrades with real hosting before production activation.
+
+Yandex does not offer server-side reward verification. This integration is
+sdk_client_reported_capped, not SSV: the backend owns the 400-coin amount,
+quota, ownership, atomic credit and durable receipt, but cannot independently
+prove an impression. A modified authenticated client can falsely report up to
+1,200 coins/day. There is no fabricated provider signature or public trusted
+grant webhook. Completed SDK callbacks are recorded before networking, claimed
+idempotently by the server, then projected from a fresh authoritative wallet.
+
+PRIMARY REFERENCES CHECKED
+
+https://ads.yandex.com/helpcenter/en/dev/unity/quick-start
+https://ads.yandex.com/helpcenter/en/dev/unity/rewarded
+https://ads.yandex.com/helpcenter/en/support/faq/sdk-integration
+
+Current verified results and exact artifact paths belong in the checkpoint107
+review/evidence. Source checks, SDK compilation and native packaging are not
+proof that a real ad played, that a hosted backend is active or that revenue
+has been earned.

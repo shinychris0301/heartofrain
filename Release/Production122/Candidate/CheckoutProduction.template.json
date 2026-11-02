@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "enabled": false,
+  "sandbox": false,
+  "consoleAppId": "",
+  "runtimeMode": "production",
+  "packageName": "",
+  "backendOrigin": "https://api.novamind-it.ru"
+}

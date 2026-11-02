@@ -1,0 +1,126 @@
+RAIN CUP — CODEX INTEGRATION HANDOFF
+
+Deliverable and source of truth
+Use the included art directly; do not redraw the modal, coin, Rocket, Bomb,
+Hammer, trophy, avatar ring or medals with substitute CSS/primitive icons.
+Layout_Contract.json and Rain_Cup.template.html describe the reviewed layout.
+All text and quantities are live text; rank numbers are not baked into medals.
+Rain_Cup_Motion.json describes presentation effects, not native animation clips.
+
+The current Unity project was not supplied for this milestone. No production
+scene/prefab was modified, and the Editor-only clarity tool was not compiled
+here. Complete native integration and compare framebuffer captures before
+calling this implemented in the app.
+
+Import and shared asset safety
+1. Import Rain_Cup_Design_R1.unitypackage OR merge UnityPatch/Assets. Inspect
+   existing newer shared assets before import; keep their approved revisions.
+2. Shared Account, DailyGift, Home and Wellworks assets retain their exact
+   corrected bytes, GUIDs and paths. New art lives in App/RainCupDesign/Art.
+3. The UIClarityRegistry extends the previous 23 entries to 32; existing entries
+   and tool identities are retained. Merge by GUID if the project registry has
+   newer additional entries. Never replace a newer registry with a shorter one.
+4. Honor page-specific Image settings: Primary uses multiplier 8.57 here, not
+   the compact Wellworks button multiplier. DG cards/hero use 6; the compact progress track
+   uses 8. The fill is a Simple Image stretched within the track to the value,
+   with preserveAspect disabled and its stored borders ignored. Changing a component multiplier is not a texture-meta
+   change. AccountChrome uses 3.891. See every exact border in the manifest.
+5. New tab track and selection use LBRT borders [96,80,96,80], multiplier 8.
+   The 192px source height has a 32px center. Do not use 96 for both vertical
+   borders: that removes the center and creates a visible transparent stripe.
+
+Native hierarchy
+Existing app Canvas / safe-area adapter
+  EventOverlay (dim/blur behind the modal only)
+    RainCupModal (sliced AccountChrome; no parent mask)
+      Header (localized title; Close outside body mask)
+      BodyViewport (RectMask2D / vertical ScrollRect)
+        BodyLayout
+          Overview (practice label, trophy, score/status/progress)
+          Competition (tab group, standings or rewards list)
+      Footer (primary action, rule/status text)
+      CelebrationOverlay (pooled stars; outside ScrollRect mask)
+
+Use a vertical layout in portrait. At a logical width >=650 and height <=550,
+place Overview beside Competition using 40/60 columns; keep footer centered.
+Keep header and footer fixed while body scrolls. Recalculate after safe-area,
+orientation, keyboard/window or locale changes. Do not clip the close ornament.
+Set art Image.color to white. Keep full-screen blur/dim behind the modal.
+
+Canvas scaling and clarity
+The dimensions in the contract are logical UI units AFTER the app's UI scale.
+Use the existing responsive scale service and verify its resulting logical
+viewport; do not blindly add a width-only 393px reference Canvas that maps
+every tablet to a 393-unit phone. Example parity viewports:
+1179x2556 at scale 3 -> 393x852; 1536x2048 at scale 2 -> 768x1024;
+2532x1170 at scale 3 -> 844x390. These are test fixtures, not device detection.
+If using CanvasScaler, configure its reference/scale strategy to produce the
+chosen logical viewport. Do not alter unrelated page canvases globally.
+Budget source pixels using actual framebuffer scale, sprite UV area and maximum
+animation scale. See Clarity_Codex_Handoff.txt and Pixel_Budgets.json.
+
+Profile and rivals
+Bind the actual current user's profile portrait. ReviewAssets/Avatar_Dariya.png
+is illustrative and is deliberately excluded from UnityPatch. Avatar, mask and
+gold frame are independent. Never bake lives, coins or other panels into them.
+RC_Avatar_Mask and RC_Avatar_Frame occupy the same full rect. Crop the portrait
+inside the circular opening using the exact inset in Layout_Contract.json.
+Use the rain emblem as an anonymous practice-rival marker, not a fabricated
+real user's portrait. Player names/scores in the review are sample data only.
+
+State-to-action mapping
+locked: show service completion progress toward 10; disabled Locked action.
+ready: show Join; join only when the authoritative state allows enrollment.
+active: show score and rank; Play opens the existing pre-level flow.
+results: show authoritative final rank and corresponding unclaimed prize.
+claimed: show collected marker; Done closes the overlay.
+
+Keep the Practice event / Simulated rivals label visible in this practice mode.
+No invented timer, cycle reset, enrollment deadline or event-duration rule is
+included. More than five participants may be returned by the real service;
+render the full list and user's actual rank without clamping to five.
+The supplied reference defines five prize tiers, not five total participants.
+
+Production service bindings
+- Read authoritative eventId, state, completed qualifying levels, enrollment,
+  score, standings, finalRank and claim status; preserve the existing service.
+- One point is earned only from a confirmed qualifying NEW-level completion.
+  Play taps and replay completions must not award points.
+- Map semantic reward IDs coins/rocket/bomb/hammer to existing inventory IDs;
+  Rocket and Bomb remain independent quantities and assets everywhere.
+- Join/Claim requests disable duplicate submission while pending. Use the
+  service's idempotency mechanism scoped to player/event/claim. Apply inventory
+  changes from its acknowledged authoritative grant, once.
+- On failure retain the unclaimed state, show the localized retry message and
+  refresh the authoritative event before retrying if outcome is unknown.
+- Closing or changing the UI stops presentation only. A request accepted by the
+  real service may still succeed; reconcile on reopen rather than canceling a
+  transaction based on the preview's animation token.
+- Never mark a whole event complete because a sample score reaches 16. The
+  preview's result scenario is a fixture, not a gameplay trigger.
+
+The review intentionally uses no persistence and no real network or inventory.
+Its raincup:playRequested browser event represents a handoff only. Do not copy
+demo state transitions, sample rivals or the 380ms artificial wait into the app.
+
+Localization and accessibility
+Use EN/ES/FR/DE/RU strings from Localization/Rain_Cup_Strings.json. No Japanese.
+Use the supplied approved fonts as TMP source fonts and verify Cyrillic and
+accent coverage in the actual generated atlas/material. Source-font cmap checks
+pass, but they do not certify a native TMP atlas. Refit localized buttons/tabs
+on every resize and locale change; use wrapping for explanatory copy.
+Keep keyboard/controller focus, selected-tab state, action labels, score/rank
+announcements and reward names available to the accessibility layer.
+Respect reduced motion: replace entry/claim bursts with immediate state change.
+
+Native acceptance checks still required
+Open from the existing Home event entry, test close/reopen, every state, both
+tabs, localized labels, tiny phones, tablets, landscape and real safe areas.
+Verify all reward items and quantities, pending/error/retry, late success after
+dismissal and duplicate request handling against the real inventory service.
+Capture idle and peak animation frames at native resolution on Android/iOS.
+Compare colors, foreground clarity, slice corners, frame shape and text with
+the review at matching physical dimensions. Check memory/performance before
+introducing compression or atlas optimizations. The included lossless reference
+textures total approximately 57 MiB if all resident, excluding fonts and driver
+overhead; existing shared texture reuse reduces incremental cost.

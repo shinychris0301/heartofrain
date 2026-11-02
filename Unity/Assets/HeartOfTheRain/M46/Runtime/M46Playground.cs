@@ -1,3 +1,5 @@
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+// Review and QA tooling: compiled for the Editor and development builds only.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,8 @@ namespace HeartOfTheRain.M46 {
         public M46Assets assets;[Range(0,3)]public int initialLevel;
         BoardModel board;BoardPresentation presentation;M46AtlasBank bank;Camera view;Transform root;Material bodyMaterial;
         readonly List<SpriteRenderer> pool=new List<SpriteRenderer>();readonly List<BoardStep> queue=new List<BoardStep>();
-        readonly MaterialPropertyBlock lightBlock=new MaterialPropertyBlock();
+        MaterialPropertyBlock lightBlock;
+        void Awake(){lightBlock=new MaterialPropertyBlock();}
         SpriteRenderer selection;Texture2D selectionTexture;Sprite selectionSprite;BoardStep current;BoardSnapshot idle;float clock,started;int levelIndex,queueIndex,inject=-1;Cell selected,pressed;bool pause;string message="Swap adjacent gems. Tap a selected power-up to activate it.";
         public BoardModel Model=>board;public bool Busy=>current!=null;
         void Start(){if(assets==null){Debug.LogError("Assign the supplied M46Assets.asset.");enabled=false;return;}bank=new M46AtlasBank(assets);var cameraObject=new GameObject("M46 Review Camera");cameraObject.transform.SetParent(transform,false);view=cameraObject.AddComponent<Camera>();view.orthographic=true;view.clearFlags=CameraClearFlags.SolidColor;view.backgroundColor=new Color(.055f,.09f,.14f);view.transform.localPosition=new Vector3(0,0,-10);bodyMaterial=new Material(Shader.Find("Sprites/Default"));Load(initialLevel);}
@@ -33,7 +36,7 @@ namespace HeartOfTheRain.M46 {
         void Accept(TurnResult result){if(!result.accepted){message=result.reason;return;}Enqueue(result.steps);}
         public void PlaySample(){Load(levelIndex);Enqueue(ReviewScenario.Build(board));}
         void Update(){if(board==null)return;Fit();if(!pause){clock+=Time.deltaTime;if(current!=null&&clock-started>=current.duration){clock=started+current.duration;Next();}}ReadPointer();Render();}
-        void Render(){var draws=presentation.Sample(current,idle,clock,started);int count=0;foreach(var d in draws){var sprite=bank.Get(d);if(sprite==null||d.alpha<=0)continue;if(count>=pool.Count)pool.Add(Make("Sampled sprite",d.order));var sr=pool[count++];sr.enabled=true;sr.sprite=sprite;sr.sortingOrder=d.order;sr.sharedMaterial=d.glow>0?assets.tileGlowMaterial:d.masked?bodyMaterial:assets.effectsMaterial;sr.maskInteraction=d.masked?SpriteMaskInteraction.VisibleInsideMask:SpriteMaskInteraction.None;sr.transform.localPosition=Position(d.x,d.y);sr.transform.localScale=new Vector3(d.sx,d.sy,1);sr.transform.localRotation=Quaternion.Euler(0,0,d.angle);sr.color=new Color(d.red,d.green,d.blue,d.alpha);lightBlock.Clear();lightBlock.SetFloat("_Glow",d.glow);sr.SetPropertyBlock(lightBlock);}for(int i=count;i<pool.Count;i++)pool[i].enabled=false;
+        void Render(){var draws=presentation.Sample(current,idle,clock,started);int count=0;foreach(var d in draws){var sprite=bank.Get(d);if(sprite==null||d.alpha<=0)continue;if(count>=pool.Count)pool.Add(Make("Sampled sprite",d.order));var sr=pool[count++];sr.enabled=true;sr.sprite=sprite;sr.sortingOrder=d.order;sr.sharedMaterial=d.glow>0?assets.tileGlowMaterial:d.masked?bodyMaterial:assets.effectsMaterial;sr.maskInteraction=d.masked?SpriteMaskInteraction.VisibleInsideMask:SpriteMaskInteraction.None;sr.transform.localPosition=Position(d.x,d.y);sr.transform.localScale=new Vector3(d.sx,d.sy,1);sr.transform.localRotation=Quaternion.Euler(0,0,d.angle);sr.color=new Color(d.red,d.green,d.blue,d.alpha);sr.GetPropertyBlock(lightBlock);lightBlock.SetTexture("_MainTex",sprite.texture);lightBlock.SetFloat("_Glow",d.glow);sr.SetPropertyBlock(lightBlock);}for(int i=count;i<pool.Count;i++)pool[i].enabled=false;
             selection.enabled=selected!=null&&!Busy;if(selection.enabled)selection.transform.localPosition=Position(selected.x,selected.y);
         }
         Cell ScreenCell(Vector2 screen){var w=view.ScreenToWorldPoint(new Vector3(screen.x,screen.y,10));w=transform.InverseTransformPoint(w);int x=Mathf.RoundToInt(w.x+(board.Level.columns-1)*.5f),y=Mathf.RoundToInt(w.y+(board.Level.rows-1)*.5f);return board.Inside(x,y)?new Cell(x,y):null;}
@@ -71,3 +74,4 @@ namespace HeartOfTheRain.M46 {
         void OnDestroy(){if(bank!=null)bank.Dispose();if(bodyMaterial!=null)Destroy(bodyMaterial);if(selectionSprite!=null)Destroy(selectionSprite);if(selectionTexture!=null)Destroy(selectionTexture);}
     }
 }
+#endif

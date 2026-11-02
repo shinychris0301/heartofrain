@@ -1,0 +1,7 @@
+{
+  "version": "team_help110_review_v1",
+  "capacity": 5,
+  "cooldownSeconds": 14400,
+  "lifetimeSeconds": 14400,
+  "helpSpendsDonorLives": false
+}

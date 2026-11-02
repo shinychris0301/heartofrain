@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "revision": "2026-10-31",
+  "language": "ru",
+  "operatorName": "ИП Евсягин Алексей Валерьевич",
+  "country": "Россия",
+  "website": "https://novamind.ru/",
+  "supportEmail": "info@novamind.ru",
+  "operatorIdentityConfirmed": true,
+  "supportContactConfirmed": true,
+  "finalPublicationReady": true,
+  "publicOrigin": "https://api.novamind-it.ru",
+  "routes": ["/privacy", "/terms", "/support"],
+  "productionEnabled": false,
+  "note": "Owner-confirmed identity/contact; 163 local Chromium/HTTP/link/layout checks pass across nine cases. This flag permits only static-page publication, not legal-compliance certification, backend retention/refund acceptance or production activation."
+}

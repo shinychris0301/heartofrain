@@ -8,7 +8,7 @@ namespace HeartOfTheRain.App.Retry.Editor
   [MenuItem("Heart of the Rain/App/M59/Open Try Again Review")]
   public static void Open(){if(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())EditorSceneManager.OpenScene("Assets/HeartOfTheRain/App/Retry/Scenes/M59_TryAgain_Review.unity");}
   [MenuItem("Heart of the Rain/App/M59/Open Exit Confirmation in Play Mode")]
-  public static void Exit(){var c=Object.FindObjectOfType<GameplaySettingsController>();if(c)c.ShowEndLevel();else Debug.LogWarning("Start a level first; confirm Exit to review the real retry transition.");}
+  public static void Exit(){var c=Object.FindFirstObjectByType<GameplaySettingsController>();if(c)c.ShowEndLevel();else Debug.LogWarning("Start a level first; confirm Exit to review the real retry transition.");}
   [MenuItem("Heart of the Rain/App/M59/Validate Retry Bindings")]
   public static void Validate()
   {
@@ -19,7 +19,7 @@ namespace HeartOfTheRain.App.Retry.Editor
   [MenuItem("Heart of the Rain/App/M59/Capture Actual Try Again Game View")]
   public static void Capture()
   {
-   var flow=Object.FindObjectOfType<HomeLevelFlow>();if(!Application.isPlaying||!flow||!flow.RetryVisible){Debug.LogWarning("Confirm exit from a running level to open Try Again first.");return;}
+   var flow=Object.FindFirstObjectByType<HomeLevelFlow>();if(!Application.isPlaying||!flow||!flow.RetryVisible){Debug.LogWarning("Confirm exit from a running level to open Try Again first.");return;}
    string dir=Path.GetFullPath("../ReviewCaptures");Directory.CreateDirectory(dir);string path=Path.Combine(dir,"M59_TryAgain_"+System.DateTime.Now.ToString("yyyyMMdd_HHmmss")+".png");ScreenCapture.CaptureScreenshot(path);Debug.Log("Queued actual Game view capture: "+path);
   }
  }

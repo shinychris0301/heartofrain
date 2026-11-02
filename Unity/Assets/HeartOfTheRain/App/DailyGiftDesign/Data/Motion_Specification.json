@@ -1,0 +1,114 @@
+{
+  "revision": "Daily Gift R1",
+  "timingUnits": "milliseconds",
+  "backendRule": "Success animation begins only after a real confirmed reward grant. The review simulates a response after 380 ms.",
+  "open": {
+    "duration": 250,
+    "opacity": [
+      0,
+      1
+    ],
+    "translateY": [
+      10,
+      0
+    ],
+    "scale": [
+      0.98,
+      1
+    ],
+    "ease": "ease-out"
+  },
+  "success": {
+    "chest": {
+      "duration": 650,
+      "ease": "cubic-bezier(0.15,0.7,0.3,1)",
+      "keyframes": [
+        {
+          "t": 0,
+          "rotationDegrees": -4,
+          "scale": 1
+        },
+        {
+          "t": 0.3,
+          "rotationDegrees": 3,
+          "scale": 1.12
+        },
+        {
+          "t": 0.65,
+          "rotationDegrees": -6,
+          "scale": 0.99
+        },
+        {
+          "t": 1,
+          "rotationDegrees": -4,
+          "scale": 1
+        }
+      ]
+    },
+    "reward": {
+      "duration": 600,
+      "keyframes": [
+        {
+          "t": 0,
+          "scale": 0.85
+        },
+        {
+          "t": 0.4,
+          "scale": 1.15
+        },
+        {
+          "t": 1,
+          "scale": 1
+        }
+      ]
+    },
+    "glints": {
+      "asset": "DG_Star.png",
+      "count": 14,
+      "duration": 850,
+      "size": 22,
+      "delay": "(index % 4) × 25 ms",
+      "trajectory": "angle = index / 14 × 2π; dx = cos(angle) × (90 + (index % 3) × 18); dy = sin(angle) × 75 - 25; rotation = index × 39°",
+      "opacityKeys": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "scaleKeys": [
+        [
+          0,
+          0.2
+        ],
+        [
+          1,
+          0.5
+        ]
+      ],
+      "blend": "Normal alpha; no full-screen bloom required."
+    },
+    "light": {
+      "duration": 700,
+      "style": "Soft warm radial light over hero only",
+      "scale": [
+        0.7,
+        1.2
+      ],
+      "opacity": [
+        1,
+        0
+      ]
+    }
+  },
+  "reducedMotion": "Instant final state; no pop, travel, stars or flash.",
+  "idle": "Static chest illustration; no looping high-intensity effects.",
+  "dismissal": "Cancel presentation callbacks and particles when the modal closes. Backend request reconciliation is handled by the existing reward service, independently of this preview."
+}

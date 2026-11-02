@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "TA_Panel_Cream",
+    "file": "Art/TA_Panel_Cream.png",
+    "width": 2079,
+    "height": 449,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5,
+    "nativeMaster": "panel_cream"
+  },
+  {
+    "id": "TA_Panel_Blue",
+    "file": "Art/TA_Panel_Blue.png",
+    "width": 952,
+    "height": 1403,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      164,
+      164,
+      164,
+      164
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.47560975609756095,
+    "nativeMaster": "panel_blue"
+  },
+  {
+    "id": "TA_Field",
+    "file": "Art/TA_Field.png",
+    "width": 1847,
+    "height": 313,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      80,
+      80,
+      80,
+      80
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5,
+    "nativeMaster": "field"
+  },
+  {
+    "id": "TA_Stat",
+    "file": "Art/TA_Stat.png",
+    "width": 2080,
+    "height": 524,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.28,
+    "nativeMaster": "stat"
+  },
+  {
+    "id": "TA_Button_Blue",
+    "file": "Art/TA_Button_Blue.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue"
+  },
+  {
+    "id": "TA_Button_Blue_Pressed",
+    "file": "Art/TA_Button_Blue_Pressed.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue"
+  },
+  {
+    "id": "TA_Button_Green",
+    "file": "Art/TA_Button_Green.png",
+    "width": 1942,
+    "height": 504,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      221,
+      221,
+      221,
+      221
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.22171945701357465,
+    "nativeMaster": "button_green"
+  },
+  {
+    "id": "TA_Button_Green_Pressed",
+    "file": "Art/TA_Button_Green_Pressed.png",
+    "width": 1942,
+    "height": 504,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      221,
+      221,
+      221,
+      221
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.22171945701357465,
+    "nativeMaster": "button_green"
+  },
+  {
+    "id": "TA_Button_Red",
+    "file": "Art/TA_Button_Red.png",
+    "width": 2064,
+    "height": 420,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      184,
+      184,
+      184,
+      184
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.25,
+    "nativeMaster": "button_red"
+  },
+  {
+    "id": "TA_Button_Red_Pressed",
+    "file": "Art/TA_Button_Red_Pressed.png",
+    "width": 2064,
+    "height": 420,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      184,
+      184,
+      184,
+      184
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.25,
+    "nativeMaster": "button_red"
+  },
+  {
+    "id": "TA_Button_Inactive",
+    "file": "Art/TA_Button_Inactive.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.127208480565371,
+    "nativeMaster": "dock"
+  },
+  {
+    "id": "TA_Button_Inactive_Pressed",
+    "file": "Art/TA_Button_Inactive_Pressed.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.127208480565371,
+    "nativeMaster": "dock"
+  },
+  {
+    "id": "TA_Button_Disabled",
+    "file": "Art/TA_Button_Disabled.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue"
+  },
+  {
+    "id": "TA_Button_Disabled_Pressed",
+    "file": "Art/TA_Button_Disabled_Pressed.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue"
+  },
+  {
+    "id": "TA_Tab_Track",
+    "file": "Art/TA_Tab_Track.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.127208480565371,
+    "nativeMaster": "dock"
+  },
+  {
+    "id": "TA_Tab_Selected",
+    "file": "Art/TA_Tab_Selected.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue"
+  },
+  {
+    "id": "TA_Badge_Cell",
+    "file": "Art/TA_Badge_Cell.png",
+    "width": 512,
+    "height": 512,
+    "border": [
+      80,
+      80,
+      80,
+      80
+    ],
+    "kind": "chrome",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Badge_Selected",
+    "file": "Art/TA_Badge_Selected.png",
+    "width": 512,
+    "height": 512,
+    "border": [
+      80,
+      80,
+      80,
+      80
+    ],
+    "kind": "chrome",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Badge_Frame",
+    "file": "Art/TA_Badge_Frame.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_frame",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Search",
+    "file": "Art/TA_Icon_Search.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Plus",
+    "file": "Art/TA_Icon_Plus.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Minus",
+    "file": "Art/TA_Icon_Minus.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Close",
+    "file": "Art/TA_Icon_Close.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Check",
+    "file": "Art/TA_Icon_Check.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_Chevron",
+    "file": "Art/TA_Icon_Chevron.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Icon_People",
+    "file": "Art/TA_Icon_People.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/people.png"
+  },
+  {
+    "id": "TA_Icon_Invite",
+    "file": "Art/TA_Icon_Invite.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/invite.png"
+  },
+  {
+    "id": "TA_Icon_Heart",
+    "file": "Art/TA_Icon_Heart.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "usage": "Optional monochrome symbol only; not approved for statistics",
+    "preferredStatisticsSprite": "TA_Stat_heart"
+  },
+  {
+    "id": "TA_Icon_Star",
+    "file": "Art/TA_Icon_Star.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "usage": "Optional monochrome symbol only; not approved for statistics",
+    "preferredStatisticsSprite": "TA_Stat_star"
+  },
+  {
+    "id": "TA_Icon_Up",
+    "file": "Art/TA_Icon_Up.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "usage": "Optional monochrome symbol only; not approved for statistics",
+    "preferredStatisticsSprite": "TA_Stat_up"
+  },
+  {
+    "id": "TA_Icon_Help",
+    "file": "Art/TA_Icon_Help.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/help.png"
+  },
+  {
+    "id": "TA_Close_Disc",
+    "file": "Art/TA_Close_Disc.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "disc",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Check_Disc",
+    "file": "Art/TA_Check_Disc.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "disc",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Rank_Gold",
+    "file": "Art/TA_Rank_Gold.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Rank_Silver",
+    "file": "Art/TA_Rank_Silver.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Rank_Bronze",
+    "file": "Art/TA_Rank_Bronze.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Emblem_drop",
+    "file": "Art/TA_Emblem_drop.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-r1-downsampled",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Emblem_lantern",
+    "file": "Art/TA_Emblem_lantern.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/lantern.png"
+  },
+  {
+    "id": "TA_Emblem_well",
+    "file": "Art/TA_Emblem_well.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/well.png"
+  },
+  {
+    "id": "TA_Emblem_sun",
+    "file": "Art/TA_Emblem_sun.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/sun.png"
+  },
+  {
+    "id": "TA_Emblem_wave",
+    "file": "Art/TA_Emblem_wave.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/wave.png"
+  },
+  {
+    "id": "TA_Emblem_crystal",
+    "file": "Art/TA_Emblem_crystal.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/crystal.png"
+  },
+  {
+    "id": "TA_Emblem_book",
+    "file": "Art/TA_Emblem_book.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/book.png"
+  },
+  {
+    "id": "TA_Emblem_oak",
+    "file": "Art/TA_Emblem_oak.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/oak.png"
+  },
+  {
+    "id": "TA_Emblem_moon",
+    "file": "Art/TA_Emblem_moon.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/moon.png"
+  },
+  {
+    "id": "TA_Emblem_cottage",
+    "file": "Art/TA_Emblem_cottage.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/cottage.png"
+  },
+  {
+    "id": "TA_Emblem_banners",
+    "file": "Art/TA_Emblem_banners.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/banners.png"
+  },
+  {
+    "id": "TA_Emblem_raincloud",
+    "file": "Art/TA_Emblem_raincloud.png",
+    "width": 512,
+    "height": 512,
+    "kind": "emblem",
+    "source": "generated-reference-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/raincloud.png"
+  },
+  {
+    "id": "TA_Background",
+    "file": "Art/TA_Background.png",
+    "width": 2160,
+    "height": 3840,
+    "kind": "background",
+    "source": "native-layer-composite",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "layerNativeWidths": [
+      2156,
+      1254,
+      1254
+    ],
+    "note": "2160x3840 composite; detailed layers downsampled, not a resized 941px screenshot"
+  },
+  {
+    "id": "TA_Badge_drop",
+    "file": "Art/TA_Badge_drop.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame_Drop",
+    "emblemBox": [
+      108,
+      94,
+      297,
+      297
+    ]
+  },
+  {
+    "id": "TA_Badge_lantern",
+    "file": "Art/TA_Badge_lantern.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      85,
+      95,
+      342,
+      342
+    ]
+  },
+  {
+    "id": "TA_Badge_well",
+    "file": "Art/TA_Badge_well.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      95,
+      105,
+      322,
+      322
+    ]
+  },
+  {
+    "id": "TA_Badge_sun",
+    "file": "Art/TA_Badge_sun.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      85,
+      95,
+      342,
+      342
+    ]
+  },
+  {
+    "id": "TA_Badge_wave",
+    "file": "Art/TA_Badge_wave.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      88,
+      98,
+      336,
+      336
+    ]
+  },
+  {
+    "id": "TA_Badge_crystal",
+    "file": "Art/TA_Badge_crystal.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      76,
+      86,
+      360,
+      360
+    ]
+  },
+  {
+    "id": "TA_Badge_book",
+    "file": "Art/TA_Badge_book.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      76,
+      86,
+      360,
+      360
+    ]
+  },
+  {
+    "id": "TA_Badge_oak",
+    "file": "Art/TA_Badge_oak.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      89,
+      99,
+      334,
+      334
+    ]
+  },
+  {
+    "id": "TA_Badge_moon",
+    "file": "Art/TA_Badge_moon.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      93,
+      103,
+      326,
+      326
+    ]
+  },
+  {
+    "id": "TA_Badge_cottage",
+    "file": "Art/TA_Badge_cottage.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      76,
+      86,
+      360,
+      360
+    ]
+  },
+  {
+    "id": "TA_Badge_banners",
+    "file": "Art/TA_Badge_banners.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      76,
+      86,
+      360,
+      360
+    ]
+  },
+  {
+    "id": "TA_Badge_raincloud",
+    "file": "Art/TA_Badge_raincloud.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      76,
+      86,
+      360,
+      360
+    ]
+  },
+  {
+    "id": "TA_Nav_Dock_HQ",
+    "file": "Art/TA_Nav_Dock_HQ.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.26148409893992935,
+    "nativeMaster": "dock"
+  },
+  {
+    "id": "TA_Stat_star",
+    "file": "Art/TA_Stat_star.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Stat_up",
+    "file": "Art/TA_Stat_up.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Stat_heart",
+    "file": "Art/TA_Stat_heart.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Avatar_crystal",
+    "file": "Art/TA_Avatar_crystal.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Avatar_leaf",
+    "file": "Art/TA_Avatar_leaf.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Badge_Frame_Drop",
+    "file": "Art/TA_Badge_Frame_Drop.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100
+  },
+  {
+    "id": "TA_Panel_Inner",
+    "file": "Art/TA_Panel_Inner.png",
+    "width": 640,
+    "height": 640,
+    "kind": "chrome",
+    "source": "vector-r2",
+    "border": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5
+  }
+]

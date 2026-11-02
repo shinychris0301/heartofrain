@@ -1,0 +1,7 @@
+{
+  "version": "rustore-commerce-v1",
+  "enabled": false,
+  "appId": null,
+  "sandbox": true,
+  "products": []
+}

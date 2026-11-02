@@ -1,0 +1,38 @@
+{
+  "revision": "R2",
+  "states": [
+    "Resolving",
+    "Notice",
+    "WaitingForQuote",
+    "Offer",
+    "Shop",
+    "StorePending",
+    "PurchasingMoves",
+    "Unknown",
+    "ConfirmEnd",
+    "Playing",
+    "Ended",
+    "Won"
+  ],
+  "routes": {
+    "wonOnFinalMove": "Won, never offer",
+    "resolvedZeroMoves": "Notice -> Offer",
+    "playEnoughCoins": "PurchasingMoves -> reconcile -> Playing",
+    "playInsufficientCoins": "Shop immediately; no transaction dispatched",
+    "serverRejectsInsufficientCoins": "Shop immediately after known rejection",
+    "shopCancel": "Offer",
+    "storePurchaseCanceled": "Shop",
+    "storePurchaseVerified": "Offer with refreshed quote/wallet",
+    "purchaseTimeout": "Unknown -> reconcile same operation ID",
+    "offerClose": "ConfirmEnd",
+    "confirmCancel": "Offer",
+    "confirmEnd": "idempotent loss settlement -> existing Try Again"
+  },
+  "demoValues": {
+    "extraMoves": 5,
+    "coinCost": 900,
+    "referenceBalance": 710,
+    "enoughBalance": 2500
+  },
+  "productionPrices": "trusted economy + platform store catalog; no fallback to preview"
+}

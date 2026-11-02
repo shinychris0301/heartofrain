@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: M67_CelebrationAssets
   m_EditorClassIdentifier:
   dariaAtlas: {fileID: 2800000, guid: e029f35770a75f7e8a9ba349acf0501a, type: 3}
+  dariaTorso: {fileID: 2800000, guid: 8e92ac6cdb775415ae5af484b4d080e6, type: 3}
+  dariaHead: {fileID: 2800000, guid: 0a3c54391e4e5f9894afc91e7d458bbd, type: 3}
+  dariaLeftArm: {fileID: 2800000, guid: fb0e51435e74501ab97ec3b8e96ab6f5, type: 3}
+  dariaRightArm: {fileID: 2800000, guid: 4aa9fb09de865a62bdb139d44c926d55, type: 3}
   dariaBlend: {fileID: 4800000, guid: a5e65e8b7bc5502ea120221567e464ee, type: 3}
   ui: {fileID: 11400000, guid: f7a33712cdeb5629bde2f1ee2e6cdef1, type: 2}
   music: {fileID: 8300000, guid: 1919912ba26b552eb4849956b50783e7, type: 3}

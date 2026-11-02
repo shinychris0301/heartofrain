@@ -1,0 +1,22 @@
+{
+  "alias": "heartoftherain-release",
+  "storeType": "PKCS12",
+  "keyAlgorithm": "RSA",
+  "keySize": 3072,
+  "signatureAlgorithm": "SHA256withRSA",
+  "subject": "CN=Heart of the Rain Release",
+  "serialHex": "bc0d9535585c484c",
+  "notBeforeUtc": "2026-10-30T07:50:42Z",
+  "notAfterUtc": "2054-03-17T07:50:42Z",
+  "sha1": "a3925b6fbb1faad20bd56a6a7c592147e7f7f7b6",
+  "sha256": "7257537a5b329cc5b018d93299d748404432c1b49f1b2388444ab843a4ba170d",
+  "challengeVerified": true,
+  "schemaVersion": 1,
+  "packageName": "com.heartoftherain.game",
+  "consoleApplicationId": "2063777840",
+  "keystoreFile": "heartoftherain-release.keystore",
+  "keystoreSHA256": "b8bbd46bba26056189df644798b3792d759be89cec1890ea6251b50e47865521",
+  "createdUtc": "2026-10-31T07:50:44.788582+00:00",
+  "purpose": "Developer-owned future release signing identity",
+  "androidApkSigned": false
+}

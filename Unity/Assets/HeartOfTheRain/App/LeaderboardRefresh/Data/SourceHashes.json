@@ -1,0 +1,242 @@
+[
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Cream.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Cream.png",
+    "sha256": "77af6d9a070e979901603c849387c9faf78299dc4ee4dbf1945a66b6af86c748",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Blue.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Blue.png",
+    "sha256": "f3e21723078a444ee10d10ed9bbf8ecb82d8c7b70a334865165631c1bfa99cbd",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Field.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Field.png",
+    "sha256": "6244113828d6ab40a8e2a7d67d6eccb07d90e6225f642aef55a395f9cc22292b",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat.png",
+    "sha256": "4bcbb19ede7df294c096d6d64b82b0c20d0eefe1b040cc4237b709bd390a66cf",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Blue.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Blue.png",
+    "sha256": "873ee7542940edd751d625c0cec1c9de03ee766040b94c227c6d7839ec84e77f",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Green.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Green.png",
+    "sha256": "18e2430fc8091e3d6c684d13718da72beb67bafbbb7bb0c9bdeab863446fba45",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Red.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Red.png",
+    "sha256": "199e0ff56d73869497ed6a198a66cf36c7e891005404c8b2a8fc0153cd58d289",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Disabled.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Disabled.png",
+    "sha256": "43115389e24862d598dacd587e8d8091a382a5ed439777dcff92f759cd66699b",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Track.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Track.png",
+    "sha256": "06ad41d7eb69ef2ee4063e968dac8cd345d5558e917c1f5cd9b167d39e76e81a",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Selected.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Selected.png",
+    "sha256": "873ee7542940edd751d625c0cec1c9de03ee766040b94c227c6d7839ec84e77f",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Search.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Search.png",
+    "sha256": "c6ec1a91e9739cc123c2d59c70c299854a5fee12a07e877dd9cfd93714bfd925",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Close.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Close.png",
+    "sha256": "0314e4942c20edcae22796448d02ffe015c286bcf4c896e4069c7d12fcd6fffd",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Check.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Check.png",
+    "sha256": "1bcb61b584c3808e0ec4ac7be8c6642dea41b04e77a9bb382c6db2d7762f6d28",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Chevron.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Chevron.png",
+    "sha256": "0a0e72cada36108989eff36efc391dd2103fdbb933389f03bbbde35e7c14a849",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_People.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_People.png",
+    "sha256": "569e53b04f1d3a1fac6237f92be1db66b6bf0127bd098277bc72eeafc5b3963b",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Invite.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Invite.png",
+    "sha256": "f6180c64361c7cf8536c827709e5a2cd5ebd2cb9ec934ee9de7b336e54d2d2d6",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Help.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Help.png",
+    "sha256": "118866f6d5a6498caca8cea4cbdc402d761ba3ae9fe7c51f0c753e3cee9202f3",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Close_Disc.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Close_Disc.png",
+    "sha256": "03feba9f5e61345d520fb0b73b7d2061007054cc20648a78358e0a5a6495fe54",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Gold.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Gold.png",
+    "sha256": "3b1139c9b9ab7f61aba686782acce1805c8e55259442b65a3324e927be5f16cb",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Silver.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Silver.png",
+    "sha256": "0f162fde01fdeda48ed4c208a266e792e2c2d82c4ef2f089c109d1ba0e5f7693",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Bronze.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Bronze.png",
+    "sha256": "d5d7aac13777638e7e7ed618ed497e01404d7d3913d862f1008f079d4cb7485c",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Background.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Background.png",
+    "sha256": "605406b5d845b5f393f60491317cfcb53fcc267fcbe0b2a8d4fe95873f0856ee",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_drop.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_drop.png",
+    "sha256": "37897ba5418bfab5392e204281a0a73d5d840554d607c93629a1f76f7697c38e",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_lantern.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_lantern.png",
+    "sha256": "8080273b4e175502fcb82173d1b7856fc6d83bc6082d8b613b634777a471daed",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_well.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_well.png",
+    "sha256": "48101a0c329a0a33cc64c5dacd27891a5dcf41a834bd983eca37ab637cced8b8",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_sun.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_sun.png",
+    "sha256": "b7aa3a5c5f7665d0ad1c6d6e7d4a95ed81371c2fcafa24c4a40473dffc14fdd0",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_wave.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_wave.png",
+    "sha256": "de7d0d879d3e571d0b6545a83c404f3c3f5e6838b01ebf78e6133ee2f8be37bf",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Nav_Dock_HQ.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Nav_Dock_HQ.png",
+    "sha256": "06ad41d7eb69ef2ee4063e968dac8cd345d5558e917c1f5cd9b167d39e76e81a",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_star.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_star.png",
+    "sha256": "0a37cd851699f7435988650d93ab1a5c9d8c71b42815f9c9d8cdb8386f4df08a",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_up.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_up.png",
+    "sha256": "6c5bab94d85f042ac433744c2817dffedaf2f2072f3efe09badf4658837fadec",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_heart.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_heart.png",
+    "sha256": "58c5fadb8e170b94f55a9e967bce5785b6e288ede6e6679fe869128f41c4fbbc",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_crystal.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_crystal.png",
+    "sha256": "fee688392b283df4025fc612c6c70618f5aeb0b140f321064914377c1694b502",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_leaf.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_leaf.png",
+    "sha256": "199b779ab9d1715416e4fff6a6480a4ccad1e1f191ef63a20cd26673e40f5773",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Inner.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Inner.png",
+    "sha256": "8b194fd12866be6cff8c2e3aa6ae732914086ce730817299f5695928bd383b62",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_More.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_More.png",
+    "sha256": "5286dd15a4f60afe5ce244f52c80c9832ec22f9caee1eb6a9cbb1f9846af2138",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_Clock.png",
+    "source": "output/Heart_of_the_Rain_Teams_Leave_R1/Unity/Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_Clock.png",
+    "sha256": "0f0134c5fbd9c3d1c6e1718a8717a0914aaff6b28c80e86d1e325dcb738b8e5c",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Ivan_R2.png",
+    "source": "downloads/leader_revision/M61_Leaderboard/UnityChanges/Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Ivan_R2.png",
+    "sha256": "a0c3422ddb3d02e6eb433bae6057db852b540a15dfee2ef118b1301985ce55a7",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Weaver_R2.png",
+    "source": "downloads/leader_revision/M61_Leaderboard/UnityChanges/Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Weaver_R2.png",
+    "sha256": "cea6fd519fdeb2bb42b58853dd4e944ff764619d8aab1bb16014e0bcf5274601",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Scholar_R2.png",
+    "source": "downloads/leader_revision/M61_Leaderboard/UnityChanges/Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Scholar_R2.png",
+    "sha256": "0634867690d553ab6f5b2113a62b2b1a78e2d9776ee8c269a2e935cb801817c3",
+    "sourceBytesUnchanged": true
+  },
+  {
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/LB2_AvatarMask.png",
+    "source": "downloads/leader_revision/M61_Leaderboard/UnityChanges/Assets/HeartOfTheRain/App/Leaderboard/Art/LB2_AvatarMask.png",
+    "sha256": "b7fd939806cf04fe7069c0e0477c3600b9b0ea0844527123b24459ab5b228b44",
+    "sourceBytesUnchanged": true
+  }
+]

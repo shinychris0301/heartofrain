@@ -1,0 +1,195 @@
+Heart of the Rain: owned staging operations (checkpoint105)
+
+Scope and prerequisites
+
+This workflow prepares a staging authority and performs controlled restart and
+restore drills. It does not provide hosting, DNS, HTTPS, an operating-system
+supervisor, production activation, real payment/ad acceptance or Android device
+certification. Hosting remains an owner setup item. Unity and its approved
+artwork, existing application saves and the production identity are unchanged.
+
+Use Backend/requirements.lock in the existing Python3.12 environment. Copy
+Release/RuStore/staging-server.example.json to a private operator directory
+outside source, Assets and any web root. Complete its owned public HTTPS origin,
+stable deploymentId, stable review-* identityScope, absolute private dataDirectory
+and loopback port. The empty-origin example intentionally cannot initialize.
+Keep all nine manifest fields. Disabled VK and replay fields must remain empty.
+
+On this review PC, Windows execution policy blocked the recorded PowerShell
+wrapper probe before Python started; no data changed. The .ps1 wrapper remains
+blocked and unverified here. No policy bypass or override is part of this
+workflow. Use the existing, tested Python module commands below from Backend.
+Hosts using the optional PowerShell wrapper need their administrator-approved
+local policy; do not execute or reinterpret the denied script as a workaround.
+
+The backend enables managed guest identity and social services explicitly.
+VK linking is optional; it is not required to create or join a team. Enable real
+VK only after obtaining the issued client ID and registering the exact callback
+<publicOrigin>/v1/identity/vk/callback. See VK_BACKEND_AND_CALLBACK_CONFIGURATION.txt.
+The manifest accepts no payment/API secrets. Purchases, advertising rewards and
+payment notification ingress remain disabled in this staging launcher.
+
+For gameplay, separately supply the approved replay bundle, approval file and
+approval SHA256. A disabled replay worker permits account/social drills only;
+a passing health/readiness response does not certify playable server levels.
+
+Protect the private root, operator manifest and backups with the service account's
+filesystem permissions. The scripts do not change Windows ACLs or install a
+service. Core snapshots request mode0600; Windows inherits the parent's ACL.
+Backups include private identity/session and social data. Restrict access and
+set the owner's retention/encryption/off-device-copy policy before public use.
+Never publish database files, receipts, keys, tokens or credential exports.
+
+Initialize and start
+
+From Backend, with your private manifest path substituted:
+
+  .venv/Scripts/python.exe -B -m hotr_backend.staging105 initialize --manifest <private-manifest.json>
+  .venv/Scripts/python.exe -B -m hotr_backend.staging105 preflight --manifest <private-manifest.json>
+  .venv/Scripts/python.exe -B -m hotr_backend.staging105 start --manifest <private-manifest.json>
+
+On hosts whose local policy permits the optional wrapper, equivalent commands
+from the project root are:
+
+  Backend/Start-Staging105.ps1 -Action initialize -Manifest <private-manifest.json>
+  Backend/Start-Staging105.ps1 -Action preflight -Manifest <private-manifest.json>
+  Backend/Start-Staging105.ps1 -Action start -Manifest <private-manifest.json>
+
+Initialization accepts only a fresh/empty private root and creates an ownership
+marker, lock files, private subdirectories and disabled provider configuration.
+It does not create a database. The first owned start creates the authority and
+marks it Ready. Repeat starts use that Ready authority; do not initialize again.
+Existing unknown databases are not adopted. Missing Ready databases, ambiguous
+Initialized databases and RestorePending directories fail closed.
+
+Use this staging launcher rather than Run-Local.ps1 for the drill. The latter is
+an existing general local development convenience and inherits its environment.
+The staging launcher uses explicit configuration, a private authority.sqlite3,
+a lifetime process lock and a retained loopback socket; it does not enable public
+network exposure. The owner must configure a trusted HTTPS reverse proxy/domain
+and an appropriate supervisor separately. Do not expose the raw loopback listener.
+
+GET /healthz proves liveness and reports productionEnabled:false. GET /readyz
+proves current schema and rolled-back SQLite writer access. Neither endpoint
+certifies provider credentials, replay execution, public TLS or Android routing.
+Use the owner process/rendezvous information to verify the intended listener.
+
+Restart the same authority
+
+Record the two disposable users' stable internal IDs and non-secret expected
+profile/team/record state; keep their device keys/tokens in private test storage.
+Stop only the foreground staging process you started, using Ctrl+C or the owned
+supervisor's graceful stop. Wait for that process and its listener to close.
+Do not terminate unrelated Python/Unity processes or delete SQLite WAL/SHM files.
+Start again with the same manifest and verify health/readiness plus authenticated
+session renewal, wallet/progress and social receipts. An OS-released runtime lock
+permits a later start; a second concurrent start must be rejected.
+
+Create an owned online snapshot
+
+Run the following from Backend. Names contain only 1-48 ASCII letters, digits,
+underscores or hyphens; do not include an extension or path. Use a fresh name.
+
+  .venv/Scripts/python.exe -B -m hotr_backend.staging_ops105 backup --manifest <private-manifest.json> --name before-drill
+
+This calls the existing validated SQLite backup API, including committed WAL
+contents. The listener may remain running; the short operations lock is separate
+from its lifetime serving lock. The result represents one consistent snapshot;
+later writes are not part of it.
+
+The only destinations are:
+
+  <dataDirectory>/backups/before-drill.sqlite3
+  <dataDirectory>/backups/before-drill.receipt.json
+
+A Pending receipt is written before copying. Ready is recorded only after core
+integrity/schema validation and independent SHA256/size confirmation. The receipt
+binds the source deploymentId, publicOrigin, identityScope and private root nonce.
+It contains public ownership metadata and digests, not users or payment tokens.
+Never edit a receipt, replace its snapshot, copy another deployment's snapshot
+into this folder, or retry by deleting an earlier artifact. A failed operation
+preserves its Pending receipt/partial files; inspect privately and use a new name.
+Existing targets are never overwritten. This wrapper accepts no arbitrary source
+or destination path. The older general backup CLI remains available separately
+to an operator; it does not create this staging ownership receipt.
+
+Restore to a fresh, nonactive root
+
+  .venv/Scripts/python.exe -B -m hotr_backend.staging_ops105 restore --manifest <private-manifest.json> --backup before-drill --tag restore-drill
+
+Restore accepts only an owned Ready receipt with the exact immutable snapshot
+hash, size and current schema. Missing/Pending/foreign/tampered proofs, links,
+snapshot WAL/SHM/journal sidecars and collisions fail closed before a target is
+created. It creates a fresh root only at:
+
+  <old dataDirectory>/restores/restore-drill
+
+The shared initializer marks that root RestorePending before the existing core
+restore writes authority.sqlite3. Independent result-hash checks and the shared
+exact-current-schema/FK/integrity validation must succeed before its marker
+becomes Ready. Failure preserves a blocked RestorePending root and any partial
+database. Do not remove or rewrite that marker to force startup. Use a new tag
+after investigating. Restore never replaces the running database, changes the
+old manifest, launches a listener or activates the restored authority.
+
+Manual drill cutover
+
+After successful restore, copy the FULL original manifest to a NEW private JSON
+outside Assets. Preserve version/mode, publicOrigin, deploymentId, identityScope,
+port, VK and replay settings. Change only dataDirectory to the exact restored
+root above. Keep both manifests and the operation results for the private audit.
+The new root has its own nonce and is already Ready; do not initialize it again.
+
+Stop the OLD listener and verify its owned process/socket are closed before
+starting the restored manifest. This is a manual single-authority staging
+cutover. Root locks do not provide distributed leadership across two different
+data directories, and changing the port must not be used to run both authorities.
+Run the Python preflight/start commands with the new manifest, then
+health/readiness and the two-user
+checks below. A restored snapshot intentionally excludes all post-snapshot work;
+it is not a production zero-data-loss recovery or automatic rollback mechanism.
+
+The wrapper's nonce-bound receipt proves same-owned-root staging provenance. An
+off-device disaster restore, lost original root/marker or production retention
+process needs a separately reviewed recovery procedure; do not forge ownership.
+
+Two-managed-user acceptance checklist
+
+Use two isolated managed guest accounts with separate device keys. Verify stable
+IDs and preserved sessions after restart and restored-root cutover. Exercise
+profile/region settings, send/accept a friend request, direct messages, team
+create/join, team chat, membership and individual records. Reconcile/retry the
+same committed command ID and verify there is one receipt/message/membership
+change. Verify unauthorized cross-user reads/actions fail and disabled purchases,
+ads, VK (when unconfigured) and gameplay replay (when disabled) remain unavailable.
+
+Verify the snapshot's expected state independently in SQLite/API reads: wallet
+revision and inventory, first-clear records, friend/team ownership and command
+receipts. Compare before restart and after restore; test a duplicate committed
+command without granting currency or creating another message. Never modify
+ledger rows or invent wins to make the UI appear populated. Host/TestClient/TCP
+results must remain distinct from actual Android and real-provider acceptance.
+
+Deliver the same public configuration to the app
+
+Export from the validated server manifest to a NEW private JSON, from Backend:
+
+  .venv/Scripts/python.exe -B -m hotr_backend.staging105 export-app-config --manifest <private-manifest.json> --out <new-private-app-config.json>
+
+The optional policy-approved PowerShell equivalent, from the project root, is:
+
+  Backend/Start-Staging105.ps1 -Action export-app-config -Manifest <private-manifest.json> -Out <new-private-app-config.json>
+
+The export contains ONLY the six public checkpoint104 fields: version, mode,
+origin, identityScope, allowDevelopmentLoopback:false and socialEnabled:true.
+It does not contain database paths, deployment internals, VK secrets or tokens.
+Use this export unchanged with Verification/Tools/Review104/prepare_staging104.py
+and follow STAGING_BUILD_CONFIGURATION104.txt. This avoids manually retyping a
+different origin or identity scope. The isolated Android development package is
+com.heartoftherain.stagingreview. Do not copy the server manifest into Resources,
+modify the ordinary installed app's save, or auto-import its local wallet.
+
+The checkpoint104 build/export work does not provision a host or install an APK.
+Actual public HTTPS, APK build/installation, two physical-device accounts, real
+VK return, supervised restart, replay and production payment/ad acceptance remain
+separate gates until executed and recorded with their actual evidence.

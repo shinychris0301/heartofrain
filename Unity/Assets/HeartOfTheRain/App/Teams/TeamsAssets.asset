@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6022ae83440b53348d76d278b015651d, type: 3}
   m_Name: M62 Teams Assets
   m_EditorClassIdentifier:
-  leaderboard: {fileID: 11400000, guid: 28339e57b5b1539590ece5ba42fa17dc, type: 3}
-  demoData: {fileID: 4900000, guid: 91fa4161b8845388927ecdde145081ac, type: 3}
+  leaderboard: {fileID: 11400000, guid: 28339e57b5b1539590ece5ba42fa17dc, type: 2}
   sprites:
   - id: TM_CardMask
     sprite: {fileID: 21300000, guid: 56f144ccd0845a44b82f40df4e52b064, type: 3}

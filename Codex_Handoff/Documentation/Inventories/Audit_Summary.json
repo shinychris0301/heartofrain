@@ -1,0 +1,43 @@
+{
+  "status": "PASS_STATIC_SOURCE_AND_LEVEL_STRUCTURE",
+  "unity_files": 4218,
+  "csharp_scripts": 146,
+  "levels": 50,
+  "story_chapters": 100,
+  "raster_images": 1031,
+  "raster_rgba32_sum_bytes": 3407533412,
+  "memory_estimate_scope": "Sum of every raster source, including duplicates and review assets; NOT simultaneous residency or measured GPU/RAM use.",
+  "dimension_counts": {
+    "9x9": 10,
+    "9x11": 20,
+    "11x11": 20
+  },
+  "target_type_counts": {
+    "2": 16,
+    "3": 21,
+    "4": 13
+  },
+  "obstacle_first_level": {
+    "moss": 1,
+    "crate": 1,
+    "stone": 7,
+    "pail": 10,
+    "case": 14,
+    "gate": 18,
+    "crystal": 21,
+    "pod": 28,
+    "cabinet": 36
+  },
+  "scene_count": 17,
+  "model_source_files": [],
+  "notes": [
+    "L50 integrationNotes still says 40 moves; effective movesProposal is 44. Runtime value takes precedence."
+  ],
+  "not_tested": [
+    "Unity import and API compile",
+    "Play Mode and touch input",
+    "Android/iOS builds",
+    "Device performance",
+    "Level solvability or human difficulty"
+  ]
+}

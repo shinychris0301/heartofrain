@@ -1,0 +1,33 @@
+{
+  "newSprites": 0,
+  "roles": {
+    "modal": "TA_Panel_Blue",
+    "crest": "TA_Badge_banners",
+    "content": "TA_Panel_Cream",
+    "teamBadge": "current team badge; fixture TA_Badge_drop",
+    "closeDisc": "TA_Close_Disc",
+    "closeGlyph": "TA_Icon_Close",
+    "cancel": "TA_Button_Blue",
+    "leave": "TA_Button_Red",
+    "pendingDisabled": "TA_Button_Disabled",
+    "toast": "TA_Panel_Blue",
+    "check": "TA_Icon_Check (white)"
+  },
+  "preserve": {
+    "painted": [
+      "TA_Stat_star",
+      "TA_Stat_up",
+      "TA_Stat_heart",
+      "TA_Rank_Gold",
+      "TA_Rank_Silver",
+      "TA_Rank_Bronze"
+    ],
+    "Help": "TA_Icon_Help, filled clasped hands, #064873",
+    "People": "TA_Icon_People, solid pair, #05426b",
+    "Invite": "TA_Icon_Invite, preserve authored white/navy, do not tint",
+    "badgeAndAvatar": "retain exact exported image, existing frame geometry and preserveAspect"
+  },
+  "slicing": "use inherited component borders and proofBorderScale; no whole-image stretch",
+  "tints": "painted art white; utility glyphs only as specified",
+  "text": "live font and data, never baked into artwork"
+}

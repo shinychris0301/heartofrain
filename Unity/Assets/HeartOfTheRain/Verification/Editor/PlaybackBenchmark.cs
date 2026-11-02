@@ -1,0 +1,11 @@
+#if UNITY_EDITOR
+using System;using System.Diagnostics;using System.IO;using System.Linq;using UnityEditor;using UnityEngine;using HeartOfTheRain.M46;
+namespace HeartOfTheRain.Verification {
+ public static class PlaybackBenchmark {
+  [Serializable] public class Row {public string name;public double millisecondsPerSample;public long allocatedBytesPerSample;public int history;}
+  [Serializable] public class Report {public string scope="Native Editor CPU sampler microbenchmark; byte allocation counter returns zero on this backend and is not usable evidence. No GPU/display/frame-rate or physical-device claim.";public Row[] samples;public double turnMilliseconds;public float sequentialPlaybackSeconds;public int steps;}
+  public static void Run(){Measure();EditorApplication.Exit(0);}
+  public static void Measure(){var a=AssetDatabase.LoadAssetAtPath<HeartOfTheRain.M47.GameplayUIAssets>("Assets/HeartOfTheRain/M48/M48GameplayUIAssets.asset").boards;var b=new BoardModel(JsonUtility.FromJson<LevelData>(a.levels[20].text));var p=new BoardPresentation{columns=b.Level.columns,rows=b.Level.rows};foreach(var pr in a.debrisProfiles)p.profiles.Add(pr.family,JsonUtility.FromJson<DebrisProfile>(pr.metadata.text));var gem=b.Pieces.Values.First(x=>x.family=="gem");b.InjectReviewPower(gem.x,gem.y,7);var watch=Stopwatch.StartNew();var result=b.Tap(gem.x,gem.y);watch.Stop();var r=new Report{turnMilliseconds=watch.Elapsed.TotalMilliseconds,steps=result.steps.Count,sequentialPlaybackSeconds=result.steps.Sum(s=>s.duration)};float t=0;foreach(var s in result.steps){p.Add(s,t);t+=s.duration;}var idle=b.Snapshot();var rows=new Row[2];for(int mode=0;mode<2;mode++){float time=mode==0?t:t+29;for(int i=0;i<10;i++)p.SampleLive(null,idle,time,0);long before=GC.GetAllocatedBytesForCurrentThread();watch.Restart();for(int i=0;i<240;i++){p.PruneHistory(time);p.SampleLive(null,idle,time,0);}watch.Stop();rows[mode]=new Row{name=mode==0?"recent_effects":"expired_visuals_retained_history",millisecondsPerSample=watch.Elapsed.TotalMilliseconds/240,allocatedBytesPerSample=(GC.GetAllocatedBytesForCurrentThread()-before)/240,history=p.history.Count};}r.samples=rows;string path=Path.GetFullPath("../Verification/Evidence/Fluidity/Playback_After.json");Directory.CreateDirectory(Path.GetDirectoryName(path));File.WriteAllText(path,JsonUtility.ToJson(r,true));}
+ }
+}
+#endif

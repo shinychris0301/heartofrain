@@ -1,0 +1,5 @@
+{
+  "enabled": true,
+  "clientId": "54867814",
+  "redirectUri": "https://api.novamind-it.ru/v1/identity/vk/callback"
+}

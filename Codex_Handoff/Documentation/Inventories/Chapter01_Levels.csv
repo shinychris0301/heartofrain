@@ -1,0 +1,51 @@
+﻿level,id,name,columns,rows,active_cells,moves,difficulty_intent,target_types,goals,obstacle_families,logical_obstacles,obstacle_cells,coverage_pct,seed,introduces,source
+1,C01_L001,Village Court,9,9,81,26,Teach,2,crate:22; moss:12,crate; moss,34,34,42.0,36001,crate,Assets/HeartOfTheRain/M47/Data/Levels/C01_L001.json
+2,C01_L002,South Store,9,9,77,24,Easy,2,crate:21; moss:12,crate; moss,33,33,42.9,36002,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L002.json
+3,C01_L003,West Workyard,9,9,69,23,Easy,2,crate:18; moss:12,crate; moss,30,30,43.5,36003,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L003.json
+4,C01_L004,Twin Stacks,9,9,73,22,Easy,2,crate:14; moss:14,crate; moss,28,28,38.4,36004,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L004.json
+5,C01_L005,Well Approach,9,9,65,22,Easy,2,crate:16; moss:12,crate; moss,28,28,43.1,36005,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L005.json
+6,C01_L006,Timber Waist,9,9,75,24,Relief,2,crate:20; moss:13,crate; moss,33,33,44.0,36006,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L006.json
+7,C01_L007,East Workyard,9,9,69,24,Teach,2,crate:18; stone:10,crate; stone,28,28,40.6,36007,stone,Assets/HeartOfTheRain/M47/Data/Levels/C01_L007.json
+8,C01_L008,Central Loading Bay,9,9,75,25,Standard,3,crate:19; moss:12; stone:11,crate; moss; stone,42,42,56.0,36008,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L008.json
+9,C01_L009,Two Landings,9,9,65,23,Standard,3,crate:13; moss:13; stone:10,crate; moss; stone,36,36,55.4,36009,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L009.json
+10,C01_L010,Timber Basin,9,9,71,24,Teach,2,crate:27; pail:2,crate; pail,29,29,40.8,36010,pail,Assets/HeartOfTheRain/M47/Data/Levels/C01_L010.json
+11,C01_L011,First Stone Bank,9,11,99,33,Standard,3,crate:37; stone:15; pail:2,crate; pail; stone,54,54,54.5,36011,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L011.json
+12,C01_L012,Narrow Foundation,9,11,91,26,Relief,2,crate:38; pail:2,crate; pail,40,40,44.0,36012,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L012.json
+13,C01_L013,Western Drain,9,11,87,33,Standard,3,crate:33; stone:13; pail:2,crate; pail; stone,48,48,55.2,36013,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L013.json
+14,C01_L014,Eastern Drain,9,11,87,26,Teach,2,crate:30; case:6,case; crate,36,36,41.4,36014,case,Assets/HeartOfTheRain/M47/Data/Levels/C01_L014.json
+15,C01_L015,Stone Steps,9,11,75,27,Hard,4,crate:23; stone:11; pail:2; case:6,case; crate; pail; stone,42,42,56.0,36015,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L015.json
+16,C01_L016,Open Channel,9,11,89,30,Standard,3,crate:31; moss:12; case:6,case; crate; moss,49,49,55.1,36016,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L016.json
+17,C01_L017,Courtyard Banks,9,11,95,32,Hard,4,crate:25; moss:13; stone:16; case:6,case; crate; moss; stone,60,60,63.2,36017,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L017.json
+18,C01_L018,Double Terrace,9,11,79,26,Teach,2,crate:27; gate:6,crate; gate,33,33,41.8,36018,gate,Assets/HeartOfTheRain/M47/Data/Levels/C01_L018.json
+19,C01_L019,Left Service Walk,9,11,77,32,Standard,3,crate:25; moss:12; gate:6,crate; gate; moss,43,43,55.8,36019,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L019.json
+20,C01_L020,Foundation Ring,9,11,90,30,Hard,4,crate:11; moss:20; stone:17; gate:6,crate; gate; moss; stone,54,54,60.0,36020,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L020.json
+21,C01_L021,Deep Foundation,11,11,121,30,Introduction,2,crate:28; crystal:1,crate; crystal,29,33,27.3,511000,crystal,Assets/HeartOfTheRain/M47/Data/Levels/C01_L021.json
+22,C01_L022,Recessed Square,11,11,109,36,Standard,3,crate:29; crystal:1; stone:9,crate; crystal; stone,39,44,40.4,512000,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L022.json
+23,C01_L023,Lower Stone Court,11,11,113,40,Standard,3,crate:38; moss:16; gate:8,crate; gate; moss,62,62,54.9,36023,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L023.json
+24,C01_L024,Broad Waterway,11,11,105,34,Standard,3,crate:21; crystal:2; case:9,case; crate; crystal,32,44,41.9,514000,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L024.json
+25,C01_L025,Three-Sided Basin,11,11,111,39,Hard,4,crate:30; stone:19; case:10; gate:10,case; crate; gate; stone,69,69,62.2,36025,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L025.json
+26,C01_L026,Two Banks,11,11,109,28,Relief,2,crate:45; pail:2,crate; pail,47,47,43.1,36026,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L026.json
+27,C01_L027,Seeker Landing,11,11,97,36,Standard,3,crate:30; moss:16; case:8,case; crate; moss,54,54,55.7,36027,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L027.json
+28,C01_L028,Five-Cell Passage,11,11,97,32,Introduction,2,crate:25; pod:6,crate; pod,31,31,32.0,518000,pod,Assets/HeartOfTheRain/M47/Data/Levels/C01_L028.json
+29,C01_L029,Stone Courtyard,11,11,109,40,Hard,4,crate:18; pod:12; stone:14; case:6,case; crate; pod; stone,50,50,45.9,519027,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L029.json
+30,C01_L030,Well Ring,11,11,112,44,Hard,4,crate:27; crystal:2; pod:12; stone:10,crate; crystal; pod; stone,51,65,58.0,520000,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L030.json
+31,C01_L031,Shifted Worksite,9,11,77,36,Standard,3,crate:19; moss:16; gate:8,crate; gate; moss,43,43,55.8,36031,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L031.json
+32,C01_L032,Terraced Cargo,9,11,77,34,Standard,3,crate:18; pod:6; gate:9,crate; gate; pod,33,33,42.9,522011,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L032.json
+33,C01_L033,Left Bank Return,9,11,83,38,Standard,3,crate:26; stone:12; gate:8,crate; gate; stone,46,46,55.4,36033,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L033.json
+34,C01_L034,Right Bank Return,9,11,83,34,Standard,3,crate:21; pod:6; case:6,case; crate; pod,33,33,39.8,524004,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L034.json
+35,C01_L035,Deep Well Rim,9,11,92,40,Hard,4,crate:16; stone:16; case:8; gate:10,case; crate; gate; stone,50,50,54.3,36035,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L035.json
+36,C01_L036,Upper Landing,9,11,93,30,Introduction,2,crate:26; rainlight:4,cabinet; crate,27,30,32.3,526003,cabinet,Assets/HeartOfTheRain/M47/Data/Levels/C01_L036.json
+37,C01_L037,Falling Cargo,9,11,85,36,Standard,3,crate:26; crystal:1; rainlight:4,cabinet; crate; crystal,28,36,42.4,527002,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L037.json
+38,C01_L038,Stone Flanks,9,11,85,42,Standard,3,crate:23; stone:16; gate:8,crate; gate; stone,47,47,55.3,36038,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L038.json
+39,C01_L039,Offset Channel,9,11,85,38,Hard,4,crate:21; pod:12; rainlight:4; case:6,cabinet; case; crate; pod,40,43,50.6,529014,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L039.json
+40,C01_L040,Supply Court,9,11,89,40,Hard,4,crate:8; pod:12; rainlight:8; stone:14,cabinet; crate; pod; stone,36,42,47.2,530023,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L040.json
+41,C01_L041,Outer Basin,11,11,89,40,Standard,3,crate:30; moss:16; pail:3,crate; moss; pail,49,49,55.1,36041,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L041.json
+42,C01_L042,Four Banks,11,11,109,42,Standard,3,crate:48; pail:4; gate:8,crate; gate; pail,60,60,55.0,36042,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L042.json
+43,C01_L043,Eastern Retaining Wall,11,11,109,44,Hard,4,crate:21; crystal:2; pod:12; gate:10,crate; crystal; gate; pod,45,53,48.6,533008,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L043.json
+44,C01_L044,Western Retaining Wall,11,11,109,38,Standard,3,crate:27; rainlight:4; moss:12,cabinet; crate; moss,40,43,39.4,534000,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L044.json
+45,C01_L045,Stone Crescent,11,11,105,44,Super hard,4,crate:25; pod:6; rainlight:8; gate:21,cabinet; crate; gate; pod,54,60,57.1,535080,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L045.json
+46,C01_L046,Last Timber Stores,11,11,101,30,Relief,2,crate:21; pod:6,crate; pod,27,27,26.7,536000,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L046.json
+47,C01_L047,Three Channels,11,11,105,36,Standard,3,crate:21; rainlight:8; gate:9,cabinet; crate; gate,32,38,36.2,537001,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L047.json
+48,C01_L048,Full Restoration,11,11,101,44,Standard,3,crate:32; moss:16; gate:8,crate; gate; moss,56,56,55.4,36048,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L048.json
+49,C01_L049,Wellhead Chambers,11,11,115,44,Hard,4,crate:32; crystal:2; pod:8; rainlight:4,cabinet; crate; crystal; pod,43,58,50.4,539060,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L049.json
+50,C01_L050,Water for Zarech,11,11,111,44,Finale,4,crate:18; crystal:2; pod:8; rainlight:4,cabinet; crate; crystal; pod,29,46,41.4,485003,,Assets/HeartOfTheRain/M47/Data/Levels/C01_L050.json

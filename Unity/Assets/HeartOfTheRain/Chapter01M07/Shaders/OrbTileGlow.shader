@@ -15,7 +15,7 @@ Shader "HeartOfTheRain/M20/OrbTileGlow"
         Blend One OneMinusSrcAlpha
         Pass
         {
-            Tags { "LightMode"="SRPDefaultUnlit" }
+            // No LightMode tag: unlit in the built-in pipeline and SRP.
             CGPROGRAM
             #pragma vertex SpriteVert
             #pragma fragment OrbGlowFrag

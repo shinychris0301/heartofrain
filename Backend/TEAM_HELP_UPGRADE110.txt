@@ -1,0 +1,58 @@
+Team help110: explicit owned staging upgrade to schema12
+
+The provisional approved rules are configurable in config/team_help.json:
+up to5 unique teammates per request, free donor help once/request, four-hour
+request cooldown/lifetime. Existing max5 lives and1800-second regeneration
+remain unchanged. Existing explicit social activation gates this service;
+production mode remains unavailable. No server is started by this guide.
+
+New empty owned roots use normal initialization/start and create schema13.
+Do not run an old-root upgrade against a new Initialized root.
+
+For an existing owned Ready schema10 or11 authority, stop its supervised
+service, preserve the descriptor/durable directory and existing backups, then
+run from Backend with a fresh name (up to40ASCII letters/digits/_/-):
+
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging_upgrade110 --manifest C:\HOTR-Private\staging-server.json --name before-team-help110
+
+If a schema109 upgrade was interrupted, supply its ORIGINAL backup name:
+
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging_upgrade110 --manifest C:\HOTR-Private\staging-server.json --name before-team-help110 --prior-name before-team-badges109
+
+The command finishes the independently bound10-to11 step when necessary,
+then seals a new owner-bound schema11 snapshot before11-to12. It never guesses
+an interrupted109 receipt name or deletes a partial/foreign artifact. The old
+107 advertising policy, its pending claims and owner nonce are preserved.
+
+UpgradePending109/UpgradePending110 keep ordinary startup and factory access
+closed while their corresponding mutation is pending. An intermediate Ready
+schema11 or12 cannot start the current schema13 service. Each step changes SQLite
+atomically, retains all its old rows/sequences, seals Complete before returning
+the exact Ready marker and can reconcile lost postcommit/ready replies.
+Historical completed109 receipts remain replayable after the later upgrade.
+
+Retry the SAME command/names after interruption. If a failure occurred before
+a verified backup receipt existed, SQLite was not migrated; preserve the
+unbound partial artifact and choose a NEW explicit name after operator review.
+Changed snapshots, ownership, source file identity or pending data block
+recovery. Do not manually clear a Pending marker or copy old data over the
+authority. Backups are not automatic deployment or permission to reset wallets.
+
+After completed status, run the separate schema12-to13 Mail upgrade described
+in TEAM_MAIL_UPGRADE111.txt before starting the current service. Then run the
+normal preflight/start workflow and take a NEW current-schema backup with
+staging_ops105. Restore remains current-schema-only
+and never silently activates a historical snapshot. The old109 CLI still only
+targets schema11; it alone is insufficient to start the current schema13 app.
+
+Help entitlements are owned by the requester. Leaving/removal/team closure
+closes donations but preserves already-earned unclaimed units. The owner-only
+listing/claim route exposes no former roster/history. Collect regenerates first,
+uses the real wallet migration/quarantine/revision guard, fills only free
+capacity and retains remainder. A full-wallet Deferred receipt grants0; a later
+explicit Collect uses a NEW command ID. Exact retries never grant twice.
+
+All validation uses temporary SQLite/ASGI and controlled failure fixtures,
+not a production authority, power-loss certification, public deployment or
+device/provider acceptance. Live hosting, runtime safeguards and moderation
+operations still need their existing operational acceptance.

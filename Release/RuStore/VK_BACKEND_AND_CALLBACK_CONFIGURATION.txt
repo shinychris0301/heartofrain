@@ -1,0 +1,265 @@
+VK ID, HTTPS backend and callback configuration
+Prepared for the current checkpoint 102 implementation
+
+STATUS AND SCOPE
+
+This is an operator recipe for STAGING VERIFICATION. It is not evidence that a
+VK application, domain, hosted service or production release already exists.
+Every value inside <...> is a placeholder and must be replaced before execution.
+Do not paste passwords, private keys, VK tokens or authorization codes into chat,
+source control, screenshots or logs.
+
+The backend currently accepts HOTR_BACKEND_MODE=local or staging only. Setting
+it to production raises an error intentionally. Do not remove that guard or
+advertise production readiness merely because the staging login works.
+
+The checkpoint 102 code supports browser-based VK registration and confirmed
+sign-in to an existing managed account. It does not add the native VK Android
+SDK. Existing local phone saves remain separate; there is no automatic upload,
+wallet import or account merge. The previously installed checkpoint 101 APK
+does not contain the new checkpoint 102 VK implementation. A configured Android
+test build from the new source is still required for actual-device acceptance.
+
+1. REGISTER THE VK APPLICATION
+
+Use the current official registration instructions linked by VK's own SDK:
+    https://github.com/VKCOM/vkid-web-sdk
+Follow its application-creation / VK ID business-console link. Select the
+supported browser/web OAuth integration matching this backend-owned flow.
+Do not configure an unrelated native-SDK redirect scheme for this recipe.
+
+Record the issued numeric VK application/client ID. This is a VK ID identifier,
+not the RuStore Console Application ID, Android package name or product ID.
+The backend accepts a nonzero numeric client ID of up to 20 digits. Do not
+invent an ID or reuse an SDK sample application's registration.
+
+Choose the actual public API hostname first. Register this EXACT redirect URL:
+    https://<OWNED_API_HOST>/v1/identity/vk/callback
+
+Use the same hostname, HTTPS scheme and path in the VK Console and backend
+configuration. The current callback validator requires HTTPS on port 443/default
+HTTPS, exactly /v1/identity/vk/callback, and no query string, fragment or embedded
+username/password. Localhost is not a valid real callback. An /api prefix or a
+different path is not supported by this configuration. Complete any domain and
+application checks required by the selected VK registration workflow.
+
+2. PREPARE A HOST AND DURABLE STORAGE
+
+The API uses Python 3.12, FastAPI/Uvicorn and SQLite. Install the exact project
+dependencies from Backend/requirements.lock in an isolated environment. It has
+been verified on Windows; no Docker/Compose deployment is supplied here.
+
+The complete managed game also needs the currently approved gameplay verifier.
+That worker is a LOCAL Windows Mono executable constrained by Windows Job
+Objects. It is not a remote-worker service. Starting Python on a Linux VPS does
+not make that Windows worker executable there. A Windows staging host is the
+direct path for the present complete stack; another worker platform/adapter
+needs separate implementation and verification. Authentication-only service
+checks do not establish that managed gameplay can verify or settle a level.
+
+Provide a private, persistent local-disk directory for the service account:
+    <ABSOLUTE_PRIVATE_STAGING_DATA_DIRECTORY>
+The service creates authority.sqlite3 there. Keep its database, WAL and SHM
+files on the same persistent filesystem under the same service identity.
+Do not use ephemeral container storage or a publicly served directory.
+
+Use SQLite's backup API / the existing backup command for an online database.
+Copying only authority.sqlite3 while it has active WAL writers can lose committed
+data. Back up an existing database before supported schema migrations. Use new
+backup/restore paths; never overwrite an owner's phone save or replace a
+production database with staging data. The current source migrates supported
+server databases to schema 10 transactionally.
+
+3. CREATE THE PYTHON ENVIRONMENT
+
+Windows PowerShell, starting in the repository root. Reuse an existing reviewed
+Backend/.venv if appropriate; otherwise use a real installed Python 3.12
+executable, replacing the placeholder below:
+
+    & '<PATH_TO_PYTHON_3_12_EXE>' -m venv .\Backend\.venv
+    .\Backend\.venv\Scripts\python.exe -m pip install -r .\Backend\requirements.lock
+
+Do not assume the Windows Store python alias is a working interpreter. This
+guide does not automatically install a Python runtime or upgrade dependencies.
+
+4. CONFIGURE THE STAGING SERVICE
+
+Set these values in the service's environment. For an interactive verification
+session, PowerShell process-scoped variables are:
+
+    $env:HOTR_BACKEND_MODE = 'staging'
+    $env:HOTR_BACKEND_DATA_DIR = '<ABSOLUTE_PRIVATE_STAGING_DATA_DIRECTORY>'
+    $env:HOTR_MANAGED_IDENTITY_ENABLED = '1'
+    $env:HOTR_VK_ID_ENABLED = '1'
+    $env:HOTR_VK_ID_CLIENT_ID = '<ISSUED_NUMERIC_VK_CLIENT_ID>'
+    $env:HOTR_VK_ID_REDIRECT_URI = 'https://<OWNED_API_HOST>/v1/identity/vk/callback'
+    $env:HOTR_SOCIAL_ENABLED = '1'
+
+The example app configuration below enables social pages, so its corresponding
+server feature must also be enabled. This is functional staging setup, not
+approval of moderation, public chat, privacy policy or operating capacity.
+Store deployment credentials, TLS private keys and any provider secrets in the
+host's protected service/secret configuration, not in Unity or this file. The
+current browser adapter uses client ID plus PKCE; do not invent a client-secret
+environment variable unsupported by the implementation.
+
+For the complete managed gameplay path also configure the already reviewed
+worker, using actual owner-approved files and their recorded approval digest:
+
+    $env:HOTR_GAMEPLAY_REPLAY_ENABLED = '1'
+    $env:HOTR_REPLAY_BUNDLE = '<ABSOLUTE_APPROVED_WINDOWS_WORKER_DIRECTORY>'
+    $env:HOTR_REPLAY_APPROVAL_FILE = '<ABSOLUTE_APPROVAL_JSON_PATH>'
+    $env:HOTR_REPLAY_APPROVAL_SHA256 = '<RECORDED_APPROVAL_SHA256>'
+    $env:HOTR_REPLAY_JOB_DIR = '<ABSOLUTE_PRIVATE_WRITABLE_WORKER_JOB_DIRECTORY>'
+
+Do not fabricate approval hashes, edit the approved bundle or expose worker job
+files publicly. VK-only tests can omit replay activation, but such a service
+cannot be described as a fully functioning managed-game deployment. Other
+payment/advertising features remain governed by their separate disabled
+configuration and acceptance work.
+
+5. START THE PRIVATE API LISTENER
+
+In the same environment, switch from the repository root to Backend and run:
+
+    Set-Location .\Backend
+    .\.venv\Scripts\python.exe -m uvicorn hotr_backend.api:create_app --factory --host 127.0.0.1 --port 8751 --no-access-log --no-proxy-headers --limit-concurrency 32
+
+Alternatively, Backend/Run-Local.ps1 runs that same private listener using the
+configured environment. The API module is hotr_backend.api:create_app with
+--factory; python -m hotr_backend is the operator CLI, not a web-server command.
+Use a supervised service with an explicit working directory and inherited
+environment for hosted staging. Do not add multiple workers or claim capacity
+without testing the chosen SQLite/worker topology.
+
+The listener is loopback-only. Place a reverse proxy on the same host (or design
+and verify another private topology) and expose HTTPS port 443, not port 8751.
+Create real DNS A/AAAA records for the owned hostname and a valid trusted TLS
+certificate matching it. Forward /v1/... paths and callback query parameters
+unchanged to the API. Do not insert an /api URL prefix or strip the callback
+parameters before forwarding.
+
+CALLBACK LOGGING IS IMPORTANT: code, state and other callback parameters must
+not appear in proxy/CDN/WAF/access/error/tracing/analytics logs. Uvicorn's
+--no-access-log does not disable an upstream proxy's logs. A proxy log format
+using the full request or request URI can include the query string; use a
+reviewed redacted format or disable callback logging at every applicable layer.
+Do not enable HTTP-body logging. Preserve the application's no-store, CSP and
+no-referrer callback headers.
+
+The conservative startup command does not trust forwarded client headers.
+Behind a proxy, source rate limits can therefore share the proxy's socket IP.
+Before public traffic, review the exact trusted-proxy configuration and genuine
+client-address handling; never trust arbitrary client-supplied forwarding
+headers. A one-player staging test is not a production load/abuse assessment.
+
+Check the actual deployed origin:
+    GET https://<OWNED_API_HOST>/healthz
+    GET https://<OWNED_API_HOST>/readyz
+
+/healthz is process liveness and deliberately reports productionEnabled:false.
+/readyz checks schema and bounded SQLite writer access; it does not validate VK
+credentials, the gameplay worker, social moderation, HTTPS trust on a phone or
+release readiness. Test those separately.
+
+6. CONFIGURE THE UNITY APP EXPLICITLY
+
+The current runtime reads a configuration FILE. It is not a Unity Inspector
+asset and is not enabled merely by changing backend environment variables.
+The default runtime path is:
+    <Application.persistentDataPath>/ServerReview/configuration.json
+
+For controlled Editor/development use, HOTR_SERVER_GAMEPLAY_CONFIG can select
+another explicit file path. Do not assume setting a PC environment variable
+configures an Android app. The app must receive the intended configuration in
+its own runtime environment, through a reviewed configuration/build procedure.
+There is currently no automatically delivered production endpoint/config file.
+
+Example JSON, replacing <OWNED_API_HOST> with the actual registered hostname:
+
+    {
+      "version": 1,
+      "mode": "ManagedGuestServer",
+      "origin": "https://<OWNED_API_HOST>",
+      "identityScope": "review-vk-staging",
+      "allowDevelopmentLoopback": false,
+      "socialEnabled": true
+    }
+
+origin must be the HTTPS authority alone: no /api path, query, fragment or
+embedded credentials. Real non-loopback origins require a DNS hostname;
+example.com/.org/.net and their subdomains, plus test/local placeholder domains,
+are intentionally rejected. A placeholder is not a working endpoint.
+
+The current identityScope must match review-[a-z0-9.-]{1,50}. Keep a selected
+scope stable after enrollment: changing it changes protected device/session
+selection and can create a separate guest instead of restoring the old one.
+The review- prefix is a current code constraint, not a production approval.
+
+Missing configuration keeps the existing local profile path. A present invalid
+configuration fails explicitly; do not silently replace a local save or copy its
+balance into a server wallet to make registration appear successful.
+
+TEAMS IN THE CONFIGURED APP
+
+A managed guest identity is sufficient for Teams; linking VK is optional.
+Both the app's socialEnabled=true and server HOTR_SOCIAL_ENABLED=1 are required.
+Players without a team can use Create or Join from the team directory. Existing
+members use Team Info to leave; a leader must transfer leadership first if other
+members remain. An unconfigured ordinary local build cannot create real teams.
+These controls still require configured app/backend and operational acceptance;
+the existence of a page or passing service tests does not establish a live team.
+
+7. VERIFY THE REAL VK FLOW ON A CONFIGURED NEW BUILD
+
+Create a test build containing checkpoint 102 code; the installed checkpoint
+101 artifact does not contain these changes. Use disposable managed test users.
+In Settings -> Save Progress, start Register / sign in with VK. Complete the
+authorization in the system browser, return to the game and check VK status.
+
+A new VK identity should offer Finish VK registration for the same managed
+guest. An existing VK-linked identity should show the exact target journey and
+require confirmation before switching. There must be no account/wallet merge,
+extra genesis reward, hidden recovery-code rotation or automatic forfeiture of
+another device's active level. This flow currently uses manual browser return
+and status checking, not an installed VK SDK or an automatic app-return link.
+
+The VK HTTPS callback is separate from the RuStore payment-return deep link;
+do not substitute heartoftherain-pay or a vk{clientId} SDK scheme for this URL.
+
+Complete real-provider/device acceptance for consent, cancellation, no installed
+VK app, restart during authorization/completion, expired flow, network failure,
+duplicate callbacks, conflicting targets, logout and deletion. Existing local
+automated tests use explicit simulated VK responses and do not satisfy these
+live acceptance requirements.
+
+8. VALUES THE OWNER NEEDS TO PROVIDE
+
+- The issued numeric VK client/application ID and selected registration type.
+- The actual owned HTTPS API hostname and exact allowed callback URL.
+- Hosting OS/provider/location, service identity and persistent data directory.
+- DNS/TLS availability and who administers the reverse proxy and service.
+- For complete managed gameplay: the reviewed Windows worker/approval paths,
+  recorded approval SHA256 and private job directory on that host.
+- The intended test app/build and reviewed runtime configuration delivery path.
+- Public privacy/support URLs and an approved account/retention policy.
+
+Provide non-secret identifiers and deployment decisions only. Keep VK/provider
+tokens, authorization codes, passwords, TLS private keys, payment secrets and
+release signing keys outside chat and source. Actual domain registration,
+hosting deployment, VK Console configuration, live testing and production
+activation have NOT been performed by creating this guide.
+
+SOURCE REFERENCES
+
+Backend/README.md (runtime and local/staging startup sections)
+Backend/Run-Local.ps1 (actual Uvicorn command)
+Backend/requirements.lock (pinned dependencies)
+Backend/hotr_backend/api.py (mode guard, environment activation, health/readiness)
+Backend/hotr_backend/vk_provider.py (client ID and exact HTTPS callback checks)
+Backend/hotr_backend/replay_contract.py (approved local Windows worker contract)
+Unity/Assets/HeartOfTheRain/App/ServerGameplay/Runtime/ServerGameplayConfiguration.cs
+Unity/Assets/HeartOfTheRain/App/RuStore/Runtime/RuStoreBackendClient.cs
+Release/RuStore/VK_ID_SETUP.txt
+Codex_Handoff/Documentation/102_VK_REGISTRATION_AND_SIGNIN_REVIEW.md
+https://github.com/VKCOM/vkid-web-sdk

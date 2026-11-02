@@ -1,0 +1,112 @@
+Managed staging Android configuration - checkpoint 104
+=====================================================
+
+CURRENT CHECKPOINT (30 October 2026): The isolated candidate
+`.verification-cache/Review104/Candidates/vps_20261030_a` built a debug-signed
+Android APK with zero errors and two reported build warnings. It was installed
+on the connected Android 16 phone under `com.heartoftherain.stagingreview` and
+reached Home and Teams after the normal first-time story/tutorial routing.
+Android showed a compatibility warning before first launch. The VPS staging
+backend is running. The phone browser displayed the public `/healthz` JSON;
+the client created a staging QA team and retrieved its membership after app
+restart. Intermittent external reachability, slow Teams loading, and
+two-account social acceptance are still open. See `WindowsVps/DEPLOY.md`.
+Production-mode rejection and RuStore release preflight remain enabled.
+
+The checked-in staging-build.example.json deliberately has an empty origin.
+It MUST report BLOCKED_STAGING104 before creating a candidate, resource or APK.
+Do not replace it with a made-up endpoint or put credentials in this manifest.
+
+Allowed manifest fields (all six must be supplied to the Python preparer):
+version=1; mode=ManagedGuestServer; origin=real HTTPS API authority;
+identityScope=stable review-* scope; allowDevelopmentLoopback=false;
+socialEnabled=true to exercise Teams. Unknown/duplicate keys and secret fields
+are rejected. The injected asset is regenerated from a validated DTO; raw
+external JSON is never shipped. This manifest is non-secret, but should be kept
+outside the Unity Assets tree. Never include tokens, codes, passwords or keys.
+
+Owner prerequisites
+-------------------
+Provide an owned API hostname with DNS/TLS and deployed staging authority,
+persistent database/backup/service administration, and the actual numeric VK
+client ID with exact HTTPS callback registration. Managed guest Teams does not
+require VK; the backend social switch must still be enabled. The current full
+managed-gameplay replay worker requires its approved Windows runtime and pins.
+See VK_BACKEND_AND_CALLBACK_CONFIGURATION.txt for the backend/callback setup.
+
+Use an external real configuration only after those decisions are made. From
+the repository root, with the existing Python3.12 environment:
+
+  Backend/.venv/Scripts/python.exe Verification/Tools/Review104/prepare_staging104.py --config Release/RuStore/staging-build.example.json
+
+The unchanged example blocks. A real validated configuration without --execute
+only checks syntax; it does not contact the endpoint or establish availability.
+To prepare a NEW isolated candidate after review, use a unique safe tag:
+
+  Backend/.venv/Scripts/python.exe Verification/Tools/Review104/prepare_staging104.py --config <PRIVATE_NONSECRET_CONFIG_PATH> --tag <FRESH_TAG> --execute
+
+This copies current Assets, Packages and ProjectSettings exactly into:
+  .verification-cache/Review104/Candidates/<FRESH_TAG>/Game
+with Preparation.json alongside Game. Before the FIRST Editor import, only the
+private ProjectSettings copy receives companyName/productName HeartRainStaging104,
+Android/Standalone identifiers com.heartoftherain.stagingreview and custom-keystore=false.
+The original source/settings/asset GUID bytes and Unity2022.3.62f3 stay intact.
+No Library, profile, signing credentials or gameplay save is imported. A failed
+or partial copy is retained; use a new tag instead of overwriting an attempt.
+
+Reviewed build entry (not executed by preparation)
+-------------------------------------------------
+Only the isolated current Unity2022.3.62f3 project may call:
+  HeartOfTheRain.App.ServerGameplay.Editor.StagingServerBuild104.Run
+Select Android BEFORE invoking this entry; batch commands must include
+-buildTarget Android. The real entry rejects another active target before
+injecting a resource, preventing a target-switch reload from losing its lease.
+
+Supply process-local HOTR_STAGING104_CONFIG=<PRIVATE_NONSECRET_CONFIG_PATH> and
+HOTR_STAGING104_ISOLATION=<CANDIDATE_DIRECTORY>/Preparation.json. The entry verifies
+the receipt, canonical configuration digest and copied file hashes before any
+temporary resource or build. It requires the separate package, Android
+Development option and debug signing. It never signs a store release. Normal
+Unity Android SDK/NDK/build requirements still apply; configuration syntax does
+not imply the toolchain is installed or an APK can be built.
+
+The temporary resource is exactly:
+  Assets/HeartOfTheRain/Resources/HOTR_Server/ManagedStaging.json
+The asset, its meta, new folder and folder meta are owned by one in-memory build
+lease and an on-disk marker. Default builds fail on stale, duplicate, differently
+cased, wrong-path/type or unowned matching Resources keys, including Packages.
+The dedicated entry generates canonical public settings, synchronously imports,
+builds and removes only its exact owned bytes in finally. Modified/foreign
+bytes are preserved and prevent cleanup. Main Resources remains untouched.
+
+The runtime packaged source is accepted only by the dedicated Android
+Development package. It takes priority over a persistent legacy review file so
+a stale device file cannot silently redirect the staged app. Stable scope and
+package preserve the candidate's managed identity across its own upgrades.
+Ordinary offline saves and wallets are separate and are never imported/merged.
+
+Failure or interruption
+-----------------------
+An interrupted Editor leaves its marker/resource for diagnosis. A marker alone
+cannot authorize another build; the active lease is process-local. Do not
+delete unknown files or weaken the global build guard to continue.
+
+After confirming the owning Editor is stopped, inspect the exact candidate
+marker .hotr-staging104-lease.json and record its SHA256. Explicit recovery is:
+
+  Backend/.venv/Scripts/python.exe Verification/Tools/Review104/prepare_staging104.py --recover --execute --tag <FRESH_TAG> --marker-sha256 <REVIEWED_MARKER_SHA256>
+
+Recovery checks that the recorded owning process is stopped, then the prepared
+receipt, nonce, payload/meta hashes and all folder
+contents before deleting only the fixed owned files/folder/marker. Foreign or
+modified bytes block recovery and are preserved. There is no recursive removal.
+Recovery does not claim PlayerSettings restoration after a hard interruption;
+use a fresh candidate for a later build. Never point recovery at the main game.
+
+Verification limits
+-------------------
+StagingServerPackagingVerification104 is an isolated Editor-only import/cleanup
+test entry using synthetic delegates. Even a passing report is not an APK,
+network, real VK, payment, physical-device or production acceptance test.
+Actual hosted-backend and two-user Android acceptance still require owner setup,
+a separately reviewed build and the checks in the backend/callback guide.

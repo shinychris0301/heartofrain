@@ -1,0 +1,6 @@
+// Isolated build-profile input, not an ordinary-project Gradle modification.
+allprojects {
+    dependencyLocking {
+        lockAllConfigurations()
+    }
+}

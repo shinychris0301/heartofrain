@@ -1,0 +1,487 @@
+{
+  "revision": "Wellworks R1",
+  "referenceLogicalViewport": [
+    393,
+    852
+  ],
+  "scope": "Visual design and assets only; not a native prefab or production reward implementation.",
+  "canvas": {
+    "referenceResolution": [
+      393,
+      852
+    ],
+    "referencePixelsPerUnit": 100,
+    "scaleMode": "ScaleWithScreenSize",
+    "matchWidthOrHeight": 0,
+    "safeArea": "Use the existing app safe-area solution. All following dimensions are logical UI units."
+  },
+  "modal": {
+    "maxPortraitWidth": 440,
+    "sideMargin": 12,
+    "innerSidePadding": 20,
+    "bottomPadding": 22,
+    "topClearanceAfterSafeArea": 44,
+    "bottomClearanceAfterSafeArea": 14,
+    "headerHeight": 67,
+    "titleSize": 30,
+    "titleColor": "#FFF4D7",
+    "bodyTextColor": "#163A61",
+    "backdropColor": "#071228",
+    "backdropAlpha": 0.439,
+    "reviewBackdropBlurPx": 7,
+    "mask": "Scroll viewport only; never clip the chrome or close ornament."
+  },
+  "close": {
+    "top": -32,
+    "right": -14,
+    "touchSize": [
+      46,
+      46
+    ],
+    "visibleSize": [
+      50.6,
+      50.6
+    ]
+  },
+  "body": {
+    "flow": [
+      "Intro",
+      "Well and progress hero",
+      "Milestone heading",
+      "Five milestone rows"
+    ],
+    "scroll": "Vertical; fixed header and reassurance footer. All five rows fit standard portrait at 393×852; compact and some localized layouts scroll.",
+    "hero": {
+      "columns": [
+        0.44,
+        0.56
+      ],
+      "minHeight": 128,
+      "artHeight": 120,
+      "paddingTRBL": [
+        4,
+        13,
+        4,
+        3
+      ],
+      "bottomGap": 12,
+      "progressFontSize": 32,
+      "progressTotalFontSize": 19,
+      "progressTrackHeight": 21,
+      "progressInnerPadding": 4,
+      "trackValue": "clamp(completed qualifying NEW levels / 50, 0, 1)"
+    },
+    "list": {
+      "rowMinimumHeight": 73,
+      "finalRowMinimumHeight": 78,
+      "rowGap": 8,
+      "columns": [
+        "43 units",
+        "flexible rewards",
+        "77 units"
+      ],
+      "columnGap": 9,
+      "paddingTRBL": [
+        6,
+        12,
+        8,
+        12
+      ],
+      "badgeSize": [
+        40,
+        40
+      ],
+      "badgeNumberFontSize": 21,
+      "badgeLabelFontSize": 9,
+      "rewardIconSize": [
+        40,
+        40
+      ],
+      "rocketIconSize": [
+        48,
+        40
+      ],
+      "goldenSeekerIconSize": [
+        41,
+        41
+      ],
+      "rewardGap": 18,
+      "quantityFontSize": 17
+    },
+    "claim": {
+      "touchHeightMinimum": 44,
+      "normalFontSize": 17,
+      "autoFitMinimum": 11.5,
+      "horizontalPadding": 7,
+      "width": 77,
+      "rule": "Fit localized label within padded width; never crop or put a bright green button on locked rows.",
+      "refitTriggers": [
+        "container resize",
+        "safe-area change",
+        "orientation change",
+        "locale change",
+        "font ready"
+      ]
+    },
+    "status": {
+      "iconSize": [
+        23,
+        23
+      ],
+      "fontSize": 10,
+      "locked": "Lock glyph and label; not an interactive button.",
+      "collected": "Check glyph and label; color is not the only cue."
+    }
+  },
+  "footer": {
+    "fontSize": 11,
+    "topGap": 8,
+    "textMaxWidth": 280,
+    "rule": "Wrap long copy naturally; never truncate underneath the rounded frame."
+  },
+  "breakpoints": {
+    "widthAtMost345": {
+      "sidePadding": 17,
+      "titleSize": 27,
+      "heroArtHeight": 111,
+      "rowColumns": [
+        "38 units",
+        "flexible rewards",
+        "72 units"
+      ],
+      "columnGap": 6,
+      "rowSidePadding": 9,
+      "rewardIconSize": [
+        35,
+        35
+      ],
+      "rocketIconSize": [
+        42,
+        35
+      ],
+      "seekerIconSize": [
+        36,
+        36
+      ],
+      "claimFontSize": 14,
+      "footerFontSize": 10,
+      "footerMaxWidth": 225
+    },
+    "heightAtMost650": {
+      "heroArtHeight": 102,
+      "heroMinHeight": 111,
+      "bottomPadding": 20
+    },
+    "landscapeWidthAtLeast650HeightAtMost550": {
+      "modalMaxWidth": 720,
+      "bodyColumns": [
+        0.4,
+        0.6
+      ],
+      "columnGap": 22,
+      "hero": "Compact horizontal 40/60 image/progress arrangement, sticky inside scrolling body.",
+      "heroMinHeight": 120,
+      "heroArtHeight": 96
+    }
+  },
+  "components": {
+    "AccountBody.ttf": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountBody.ttf",
+      "guid": "967693cd56095585a6ff197117bbd41d"
+    },
+    "AccountChrome.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountChrome.png",
+      "guid": "ce160dfabad851f39bd4f32eacb5c86d",
+      "spriteBorderLBRT": [
+        186,
+        170,
+        186,
+        288
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 3.891,
+      "preserveAspect": false
+    },
+    "AccountTitle.ttf": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountTitle.ttf",
+      "guid": "8b56a703a29e5f0b9dc47d5da56c73e6"
+    },
+    "Close.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Close.png",
+      "guid": "dfcb312489db58b1b40ba996134b92ff",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "DG_Card_Bonus.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Bonus.png",
+      "guid": "e251b65e614251f5a0b233bbf1d4678a",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Collected.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Collected.png",
+      "guid": "5d20f65e78ca56b4845d1e6dbff2dad5",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Today.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Today.png",
+      "guid": "a88ca46cf329552796638bd97a4f9f1d",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Upcoming.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Upcoming.png",
+      "guid": "369ad220437a5f27bfb6c6d7530c8916",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Hero_Well.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Hero_Well.png",
+      "guid": "e23ca6c6014d5827a3cd861463e36027",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Star.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Star.png",
+      "guid": "0e022ac2fb095ef3b2500dd0ee90df5b",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Home_Background.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Home_Background.png",
+      "guid": "62509c1c8f505fc18bdc5d30cf653cb3",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Primary.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Primary.png",
+      "guid": "d53cea537853598d83dc7e3aa43baba4",
+      "spriteBorderLBRT": [
+        300,
+        240,
+        300,
+        240
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 13.333333,
+      "preserveAspect": false
+    },
+    "Reward_Bomb.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Bomb.png",
+      "guid": "1ad2a056d01a59599b5bb503d5cdae83",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Coin.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/Home/Art/R3_Coin.png",
+      "guid": "7f822ff99c2e5a8ab1d0ccc7a64a7b7e",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Golden_Seeker.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/Reward_Golden_Seeker.png",
+      "guid": "481d1804277e5f78934ecd7f989dfb97",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Hammer.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Hammer.png",
+      "guid": "16cf1a1a5c99514e9858e1d94e84a163",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Orb.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Orb.png",
+      "guid": "dec76ca00b525ffbb297088a0a8fb247",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Rocket.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Rocket.png",
+      "guid": "41b62c8cfece593097fd6f7cce7688ee",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Selection_Check.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Selection_Check.png",
+      "guid": "9dd1208d0e715f349caa812100657573",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "WW_Lock.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Lock.png",
+      "guid": "c2660af70c11540c9a0e18103861d52e",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "WW_Milestone_Badge.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Milestone_Badge.png",
+      "guid": "82015c721a645793b8539a6bc5ed6dfb",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "WW_Progress_Fill.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Progress_Fill.png",
+      "guid": "7f7359cab811566bb16b2586b3444626",
+      "spriteBorderLBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 8,
+      "preserveAspect": false
+    },
+    "WW_Progress_Track.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Progress_Track.png",
+      "guid": "60269092d2d05e34b7827d07dd6305f6",
+      "spriteBorderLBRT": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "WW_Village_Well.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/WellworksDesign/Art/WW_Village_Well.png",
+      "guid": "30153f2cd1c756ab8696ffed5f2caa0b",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    }
+  },
+  "progressFillNative": "Set inner width from progress and use a sliced Image. For tiny widths, clip the full-radius minimum-width fill within a rectangular mask to avoid showing progress at zero. Keep fill hidden at zero. Do not use the track artwork as the fill.",
+  "texts": "Live localized text, not baked into sprites. English, Spanish, French, German and Russian; Japanese excluded.",
+  "clarityRevision": "UI Clarity R1: vector slice borders AND component multipliers doubled together",
+  "pageReviewRevision": "Wellworks review R2 — 2026-10-23; corrected sampling handoff and responsive Claim label fitting"
+}

@@ -1,0 +1,15 @@
+{
+  "advertising.candidate.json": "2b0222fc64cf5879e634e002b2fda0ec7382f451c9285c885e9dd1197d493e35",
+  "CheckoutProduction.template.json": "0eda5db61bef4be47714bdd2030321be7812deb51d8a317c7383aad082ce0bc6",
+  "deployment.plan.json": "e933cb330279b28ff7eb6321f25eb930a0bc083c4915a8a2ceeb5c24a8cc18da",
+  "ManagedProduction.template.json": "772edc245a4b39948dee2ed870f4810d76f6f8f43b43ee6c1b4900e7ab624cf2",
+  "payments/checkout.candidate.json": "9046f6661a3d7a65c985746b5de4b5916a7ba050b71e20718dd73e1f7339a002",
+  "payments/commerce.candidate.json": "4e4ebb605089074818709681bdd70806d1856ca0686f109514d09a73a3d6182f",
+  "payments/console-inventory.template.json": "d7e12c77e026530a12c978757b9276c3ea023254cadf5c6dad1e7238dce5e760",
+  "payments/console-products.csv": "9d24e43a18437545e447b468d1c8a9accfbefae9dde2bb424a5acf9f781bae57",
+  "production-runtime.template.json": "ccc17c7d62aa8d8ff8c75ff866459eb8d8929696342f86ae9803a401d3d6270e",
+  "providers.candidate.json": "9fa696d870dba491861948d73ce7fc0a9264b3ac5d8d483980c53d7717170f73",
+  "readiness.json": "0285d01e7c3e66245c93692f9da219e1344064f3a1e375cd24c064d3b1c7b537",
+  "release.candidate.json": "d34ac65746b545dd87f358a48cce4dcd155d0c0c4b4c9c4a01707c2eb36a2723",
+  "rewarded-policy.candidate.json": "436a865673a7d6d53d90b60feb4431276e1611656d7ee43c50de8576d318627e"
+}

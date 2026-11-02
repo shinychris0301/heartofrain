@@ -1,0 +1,54 @@
+HEART OF THE RAIN — IMPLEMENTATION COMPARISON R3
+24 October 2026
+
+INSPECTED
+User implementation screenshots image(20261024-125401).png and image(20261024-125537).png,
+and the exact saved R2 ZIP / self-contained review, version 1.
+
+OBSERVED DIFFERENCES
+1. The panel surface, Dariya portrait and shield use the supplied R2 artwork. They are not wholly different assets.
+   Their relative sizes are broadly consistent after allowing for the screenshot's physical-pixel scale.
+   Do not equate a 550-pixel screenshot with a 550-logical-unit mobile viewport.
+2. Wallet: implementation places a wide coin pill on the right. R2 has a compact wallet on the LEFT with a green plus.
+3. Main action: implementation fills nearly the entire footer with an oval, horizontally stretched Play On button.
+   R2 centers a content-sized button (57 logical units high, about 214 wide in English), keeping rounded corners
+   at a fixed density. Label, coin and cost form a single group; they do not distribute to opposite ends.
+4. The Village Purse card below the modal is absent. This also changes the vertical balance of the whole group.
+   It is optional in production if store data is genuinely unavailable; it must not show a fabricated purchase price.
+5. The second screenshot shows 700 coins, an em dash instead of +5, 'No extra moves available', and End level.
+   The first shows a +5 / 900 offer with 1,600 coins. If both are the same eligible attempt/policy, the second state
+   is incorrect: affordability must not erase the offer. A confirmed continue cap could legitimately disable an offer;
+   a screenshot alone cannot establish which branch produced this state. Inspect the actual presenter and quote service.
+6. The native title and button text lack the review's subtle depth/shadow treatment. Keep the approved fonts and
+   use live TMP glyphs rather than scaling a rasterized label.
+
+CAUSES VERIFIED IN THE DELIVERED PACKAGE
+R2 included assets, layout JSON and C# domain/presentation reference logic, but no assembled native UI or prefab generator.
+It therefore left layout reconstruction to the integrator. This handoff was insufficient to keep the native view consistent.
+Primary.png has import PPU100 and 300/240-pixel slice borders; the panel has PPU400 and different borders.
+R2 did not provide the Image.pixelsPerUnitMultiplier required to translate the Primary border into 35/28 logical units.
+A wrong image mode, multiplier, RectTransform or parent scale can distort the button. The exact native component settings
+cannot be identified from the screenshots alone.
+R2's reference GetQuote does NOT filter by coins; its PlayOn(700) routes to Shop. The screenshot's unavailable route therefore
+cannot be attributed to that supplied balance check without inspecting the integrated code.
+
+CORRECTION INCLUDED
+- R3 Editor generator builds the Continue overlay hierarchy and saves a prefab inside the project.
+- Runtime layout fixes wallet alignment, content-sized primary action, aspect-preserved art, safe area, localized text,
+  optional coin-card position, scrolling on short viewports, and explicit per-image slicing density.
+- Availability model has separate Loading, Available, RecoverableError, ConfirmedUnavailable states, with no wallet field.
+- Regression tests use 700 / 1,600 / 900 / zero coin balances and verify offer, routing, spend, board and life outcomes.
+- Same supplied panel, portrait, badge and primary pixels. No global character, palette or board redesign.
+
+LIMITS
+No current project source, integrated modal prefab, wallet implementation, or Unity Editor was available for this review.
+The generator and runtime UI were syntax-checked but NOT compiled against Unity or rendered in Unity here.
+The new prefab must be generated, wired and compared in the current project's Editor/device build.
+This is a correction package, not a claim that the installed application has been patched.
+The HTML review is a design reference and simulated flow, not a capture from Unity.
+
+API BASIS
+Unity Image API: https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Image.html
+Unity Canvas reference pixel density: https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/canvas/referencepixelsperunit
+TMP font creation: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/api/TMPro.TMP_FontAsset.html
+These establish API behavior; they do not validate this project's native rendering.

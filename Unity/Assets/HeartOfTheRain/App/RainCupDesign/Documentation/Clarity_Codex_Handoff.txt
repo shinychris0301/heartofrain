@@ -1,0 +1,64 @@
+RAIN CUP R1 — PER-ASSET CLARITY POLICY
+
+This package carries forward the corrected Daily Gift / Wellworks policy.
+The earlier blanket Bilinear + no-mipmap delivery was withdrawn. High source
+resolution and appropriate minification filtering are separate requirements.
+
+Filtered illustrations and icons: Box mipmaps, Trilinear, zero mip bias, Clamp,
+original NPOT dimensions, sRGB, alpha transparency, no streaming, and ignore
+quality mip limits. Sliced UI surfaces and the avatar alpha mask use Bilinear
+without mipmaps. The blurred backdrop is intentionally excluded from foreground
+sharpness certification. No global camera/quality/pipeline change is supplied.
+
+Default, Android, iPhone and Standalone imports have explicit RGBA32 reference
+settings and a source-preserving maximum size. This is a visual reference
+baseline; it is not a claim that uncompressed textures are the final optimal
+shipping configuration. Profile memory and use native screenshot comparisons
+before adopting compression or an atlas strategy.
+
+Do not upscale a low-resolution bitmap and describe it as a new detailed master.
+New vectors were rasterized from editable SVG sources at higher resolution.
+The trophy is a new 1354x1161 RGBA generated source, not a resampled thumbnail.
+The previously approved reward and shared painted UI bytes are unchanged.
+
+Pixel_Budgets.json includes maximum displayed box size, preserve-aspect fitting,
+peak animation scale and 1x, 2x, 3x, ~3.664x and 4x physical-pixel samples.
+Rain Cup's simple foreground sprites pass those budgets. AccountChrome's sliced
+border scale is 3.891 source texels per logical unit, so the lossless 1:1 corner
+budget is exceeded slightly at 4x. Larger presentations require an original
+higher-resolution source or revised layout; there is no unlimited-resolution
+guarantee. Use the actual framebuffer and UI scale, not the file DPI label.
+
+Sliced art uses the manifest's borders AND the page's component multiplier.
+DG cards and hero: 108px borders / 6. Compact Rain Cup track: 48 / 8.
+Rain Cup fill: Simple Image, preserveAspect=false; stored slice borders ignored.
+Tabs: LBRT [96,80,96,80] / 8. Primary: existing borders / 8.57 for this page.
+AccountChrome: existing borders / 3.891. The stretched center is intentional;
+measure corner density separately rather than dividing full panel dimensions.
+
+Included Editor tool: Tools > Heart of the Rain > UI Clarity.
+1 Audit registered imports is read-only.
+2 Apply registered import baseline is explicit, backs up previous metadata,
+  and preserves borders/pivots/PPU/GUIDs. It does not edit scenes or prefabs.
+3 Audit visible UI inspects active uGUI graphics; run in Play Mode at native
+  target resolutions and at the peak motion scale. Inspect UV-region pixels,
+  canvas scale, tint/material, render targets and TMP diagnostics.
+The existing build guard can block regressed registered imports or unreviewed
+atlas membership. The registry retains previous coverage and adds Rain Cup.
+Missing optional older-page assets do not become replacement Rain Cup assets.
+
+The baseline expects these textures standalone. If the project packs them,
+inspect master/variant scale, platform format/max size, padding/extrusion and
+effective sampling. Do not enable mipmaps globally on a mixed gameplay/UI atlas.
+Keep sliced surfaces separate from detailed illustrated art as appropriate.
+Update the gate only after the chosen production policy is reviewed and tested.
+
+Use native-resolution UI composition, with blur/dim behind the modal and white
+art tint. Do not flatten the whole modal into one low-resolution RenderTexture.
+Keep text live as TMP, and verify actual atlas glyphs/material softness. Rebuild
+affected Addressables/bundles and use existing content versioning to invalidate
+stale cached art; never delete player data as a cache workaround.
+
+Native Unity import, C# compilation, atlas behavior and Android/iOS quality are
+not verified in this delivery. The automated browser review is a layout and
+asset-budget check, not a substitute for a native framebuffer capture.

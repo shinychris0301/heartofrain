@@ -1,0 +1,98 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using HeartOfTheRain.App.Advertising;
+using UnityEditor;
+using UnityEditor.Android;
+using UnityEditor.Build;
+using UnityEditor.Build.Reporting;
+using UnityEngine;
+namespace HeartOfTheRain.Verification {
+ // Private candidate only. This never changes the main107 authority/profile.
+ public static class TeamsBuild117 {
+  public const string Package="com.heartoftherain.review117",Company="HeartRainTeams117";
+  const string Vendor="0d0a2546dd752d6b02864df5833767703ae88d5b292da0e0b8eec815d7f066c3";
+  const string Managed="Assets/HeartOfTheRain/Resources/HOTR_Server/ManagedStaging.json";
+  static readonly string[] Scenes={HeartOfTheRain.App.Launch.LaunchPage.ScenePath,HeartOfTheRain.App.Launch.LaunchPage.GameScenePath};
+  static bool active;
+  static Receipt current;
+  [Serializable] sealed class PreviewRow {public int level,columns,rows;public string levelSHA256,surfaceSHA256,maskSHA256,levelGuid,surfaceResource,maskResource;}
+  [Serializable] sealed class Preview {public string manifestSHA256,legacyGraphicsSHA256;public PreviewRow[] bindings;}
+  [Serializable] sealed class Receipt {public int version;public bool previewMode;public Preview preview;public string status,sourceRoot,project,nonce,unity,packageName,vendorSHA256;public string[] paths,sha256;}
+  [Serializable] sealed class Report {
+   public string status="FAIL_NATIVE_TEAMS117_BUILD",unity,apk,apkSHA256,packageName=Package,receiptSHA256,code;
+   public int checks,errors=-1,warnings=-1;public long bytes;
+   public bool actualBuild,development,scriptDebugging,actualSdkBranchCompiled,adsEnabled=false,managedPayload=false,productionApproved=false;
+   public string scope="Actual isolated Unity6000.3.27f1 ARM64 development build with pinned Yandex8.6.0 SDK. Ads disabled and no managed payload. No live SDK request, impression, reward or provider/backend acceptance is inferred from compilation.";
+   public List<string> passed=new List<string>(),failures=new List<string>();
+  }
+  static string Full(string p)=>Path.GetFullPath(p).TrimEnd(Path.DirectorySeparatorChar,Path.AltDirectorySeparatorChar);
+  static bool Under(string p,string root)=>Full(p).StartsWith(Full(root)+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase);
+  static void Need(bool yes,string code){if(!yes)throw new InvalidOperationException(code);}
+  static string Hash(string path){using(var sha=SHA256.Create())return string.Concat(sha.ComputeHash(File.ReadAllBytes(path)).Select(v=>v.ToString("x2")));}
+  static void Plain(string path){string p=Full(path);Need(!p.StartsWith("\\\\",StringComparison.Ordinal),"Teams117LocalOnly");for(var d=new DirectoryInfo(Path.GetDirectoryName(p));d!=null;d=d.Parent)if(d.Exists)Need((d.Attributes&FileAttributes.ReparsePoint)==0,"Teams117LinkedPath");if(File.Exists(p))Need((File.GetAttributes(p)&FileAttributes.ReparsePoint)==0,"Teams117LinkedPath");}
+  static bool Sdk=>typeof(YandexRewardedAdsProvider85).GetField("loader",BindingFlags.Instance|BindingFlags.NonPublic)!=null&&Type.GetType("YandexMobileAds.RewardedAdLoader, Assembly-CSharp")!=null;
+  static void ValidatePreview(Receipt receipt){
+   bool expected=Package=="com.heartoftherain.review117preview";
+   Need(receipt.previewMode==expected,"Teams117PreviewModeMismatch");if(!expected)return;
+   Need(receipt.preview!=null&&receipt.preview.bindings!=null&&receipt.preview.bindings.Length==50&&Regex.IsMatch(receipt.preview.manifestSHA256??"",@"\A[0-9a-f]{64}\z"),"Teams117PreviewBindingsMissing");
+   var ui=AssetDatabase.LoadAssetAtPath<HeartOfTheRain.M47.GameplayUIAssets>("Assets/HeartOfTheRain/M48/M48GameplayUIAssets.asset");
+   var boards=AssetDatabase.LoadAssetAtPath<HeartOfTheRain.M46.M46Assets>("Assets/HeartOfTheRain/M48/M48Chapter01Boards.asset");
+   Need(ui&&boards&&ui.boards==boards&&boards.levels.Length==50&&boards.surfaces.Length==50&&boards.masks.Length==50&&boards.surfaceResources.Length==50&&boards.maskResources.Length==50,"Teams117PreviewRuntimeAssetsInvalid");
+   Need(Hash("Assets/HeartOfTheRain/Resources/HOTR_LegacyLevels117/Graphics.json")==receipt.preview.legacyGraphicsSHA256,"Teams117PreviewLegacyManifestChanged");
+   for(int i=0;i<50;i++){
+    var row=receipt.preview.bindings[i];int n=i+1;string name="C01_L"+n.ToString("D3");
+    Need(row!=null&&row.level==n&&row.rows==9&&row.columns>=9&&row.columns<=11&&boards.levels[i]&&boards.surfaces[i]==null&&boards.masks[i]==null,"Teams117PreviewLevelBindingInvalid");
+    string levelPath="Assets/HeartOfTheRain/M47/Data/Levels/"+name+".json";
+    Need(AssetDatabase.GetAssetPath(boards.levels[i])==levelPath&&AssetDatabase.AssetPathToGUID(levelPath)==row.levelGuid&&Hash(levelPath)==row.levelSHA256,"Teams117PreviewLevelHashMismatch");
+    var level=JsonUtility.FromJson<HeartOfTheRain.M46.LevelData>(boards.levels[i].text);
+    Need(level!=null&&level.id==name&&level.globalLevel==n&&level.columns==row.columns&&level.rows==row.rows,"Teams117PreviewLevelGeometryMismatch");
+    string sp="Assets/HeartOfTheRain/M48/Resources/"+boards.surfaceResources[i]+".png",mp="Assets/HeartOfTheRain/M48/Resources/"+boards.maskResources[i]+".png";
+    var surface=AssetDatabase.LoadAssetAtPath<Texture2D>(sp);var mask=AssetDatabase.LoadAssetAtPath<Texture2D>(mp);
+    Need(surface&&mask&&surface.width==row.columns*64+30&&surface.height==row.rows*64+30&&mask.width==surface.width&&mask.height==surface.height&&Hash(sp)==row.surfaceSHA256&&Hash(mp)==row.maskSHA256,"Teams117PreviewArtBindingMismatch");
+    Need(boards.surfaceResources[i]==row.surfaceResource&&boards.maskResources[i]==row.maskResource,"Teams117PreviewResourceNameMismatch");
+   }
+  }
+  public static string[] VerifyBoundary(BuildTarget target,BuildOptions options,string package,bool signing,bool sdk,bool disabledAds,bool noManaged,bool owned,string channel){
+   var e=new List<string>();if(!owned)e.Add("Teams117OwnedProfileRequired");if(target!=BuildTarget.Android)e.Add("Teams117AndroidOnly");if(package!=Package)e.Add("Teams117ExactPhonePackageRequired");if(signing)e.Add("Teams117DebugSignerOnly");if(!sdk)e.Add("Teams117PinnedSdkRequired");if(!disabledAds)e.Add("Teams117AdsMustRemainDisabled");if(!noManaged)e.Add("Teams117ManagedPayloadBlocked");if((options&BuildOptions.Development)==0)e.Add("Teams117DevelopmentOnly");if((options&(BuildOptions.AllowDebugging|BuildOptions.ConnectWithProfiler|BuildOptions.EnableDeepProfilingSupport))!=0)e.Add("Teams117NoScriptDebugging");if(!string.IsNullOrEmpty(channel))e.Add("Teams117ReleaseChannelBlocked");return e.ToArray();
+  }
+  static Receipt Validate(){
+   string path=Environment.GetEnvironmentVariable("HOTR_TEAMS117_RECEIPT"),project=Full(".");Need(!string.IsNullOrEmpty(path)&&Full(path)==Full(Path.Combine(Directory.GetParent(project).FullName,"Preparation.json")),"Teams117ExactReceiptRequired");Plain(path);Need(File.Exists(path)&&new FileInfo(path).Length<8*1024*1024,"Teams117ReceiptInvalid");var r=JsonUtility.FromJson<Receipt>(File.ReadAllText(path,new UTF8Encoding(false,true)));
+   Need(r!=null&&r.version==1&&r.status=="PREPARED_TEAMS117"&&r.unity=="6000.3.27f1"&&Application.unityVersion==r.unity&&r.vendorSHA256==Vendor&&r.packageName==Package&&Regex.IsMatch(r.nonce??"",@"\A[0-9a-f]{32}\z"),"Teams117ReceiptInvalid");
+   Need(Full(r.project)==project&&Full(r.sourceRoot)==Full(Path.Combine(project,"../../../../.."))&&File.Exists(Path.Combine(r.sourceRoot,"AGENTS.md"))&&Under(project,Path.Combine(r.sourceRoot,".verification-cache","Review117","Candidates")),"Teams117CandidateNotOwned");
+   Need(r.paths!=null&&r.sha256!=null&&r.paths.Length>100&&r.paths.Length==r.sha256.Length,"Teams117SourcePinsRequired");var seen=new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+   for(int i=0;i<r.paths.Length;i++){string name=r.paths[i],p=Full(Path.Combine(project,name??""));Need(name!=null&&name.StartsWith("Assets/",StringComparison.Ordinal)&&!name.Contains("\\")&&!name.Split('/').Any(v=>v==".."||v==""||v.Contains(":"))&&Under(p,project)&&seen.Add(name)&&Regex.IsMatch(r.sha256[i]??"",@"\A[0-9a-f]{64}\z"),"Teams117SourcePinsInvalid");Plain(p);Need(File.Exists(p)&&Hash(p)==r.sha256[i],"Teams117PinnedSourceChanged");}
+   var actual=new HashSet<string>(Directory.GetFiles("Assets","*",SearchOption.AllDirectories).Where(p=>!p.EndsWith(".meta",StringComparison.OrdinalIgnoreCase)).Select(p=>p.Replace('\\','/')),StringComparer.OrdinalIgnoreCase);Need(actual.SetEquals(seen),"Teams117ForeignAssetPreservedBlocked");
+   Need(new[]{"Assets/Review117Editor/Editor/TeamsBuild117.cs","Assets/Review117Editor/Review117DeviceProbe.cs","Assets/YandexMobileAds/RewardedAdLoader.cs","Assets/Plugins/Android/yandex-ads-unity-plugin.aar","Assets/Plugins/Android/AndroidManifest.xml","Assets/Plugins/Android/mainTemplate.gradle","Assets/Plugins/Android/launcherTemplate.gradle","Assets/Plugins/Android/settingsTemplate.gradle","Assets/Plugins/Android/gradleTemplate.properties",AdvertisingConfiguration107.ResourceAssetPath,"Assets/csc.rsp"}.All(seen.Contains),"Teams117CriticalPinsRequired");
+   Need(Hash("Assets/Plugins/Android/yandex-ads-unity-plugin.aar")=="9420d5d297f6bad315f691b9083063b5f22f5c0883a02549f8c96f98b9e476ef","Teams117NativePluginPin");Need(PlayerSettings.companyName==Company&&PlayerSettings.productName=="HeartRainTest117"&&PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android)==Package&&!PlayerSettings.Android.useCustomKeystore&&PlayerSettings.Android.bundleVersionCode==117,"Teams117SettingsChanged");Need((int)PlayerSettings.Android.minSdkVersion==26&&(int)PlayerSettings.Android.targetSdkVersion==36,"Teams117Api26To36Required");Need(EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).SequenceEqual(Scenes),"Teams117ExactLaunchGameScenesRequired");Need(!File.Exists(".hotr-ads107-active.json")&&!File.Exists(".hotr-staging104-active.json"),"Teams117ForeignLeaseBlocked");ValidatePreview(r);return r;
+  }
+  static void ValidatePayload(){
+   var paths=AssetDatabase.GetAllAssetPaths();Need(paths.Count(HeartOfTheRain.App.Advertising.Editor.AdvertisingBuild107.ReservedAdsPath)==1,"Teams117AdsCollision");
+   var cfg=Resources.Load<TextAsset>(AdvertisingConfiguration107.ResourceKey);RewardedAdsConfiguration85 c;string why;Need(cfg&&RewardedAdsConfiguration85.TryParsePackaged(cfg.text,out c,out why),"Teams117ImportedAdsInvalid");RewardedAdsConfiguration85.TryParsePackaged(cfg.text,out c,out why);Need(!c.enabled&&c.rewardedUnitId==AdvertisingConfiguration107.RewardedUnitId&&c.interstitialUnitId==AdvertisingConfiguration107.InterstitialUnitId&&string.IsNullOrEmpty(c.privacyUrl),"Teams117AdsActivationBlocked");
+   Need(!paths.Any(HeartOfTheRain.App.ServerGameplay.Editor.StagingServerBuild104.ReservedResourcePath)&&!File.Exists(Managed)&&!Directory.Exists(Path.GetDirectoryName(Managed))&&!File.Exists(Path.GetDirectoryName(Managed)+".meta"),"Teams117ManagedPayloadBlocked");
+  }
+  // Called ONLY from the single recorded private-copy107 delegation. Returning
+  // false leaves the original107 guard intact outside the active117 entry.
+  public static bool Guard(BuildReport report){if(!active)return false;Need(current!=null&&report!=null,"Teams117AuthorityRequired");Validate();ValidatePayload();var e=VerifyBoundary(report.summary.platform,report.summary.options,PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android),PlayerSettings.Android.useCustomKeystore,Sdk,true,true,true,Environment.GetEnvironmentVariable("HOTR_BUILD_CHANNEL"));if(e.Length>0)throw new BuildFailedException(string.Join(",",e));return true;}
+  static void Check(Report r,bool yes,string name){r.checks++;Need(yes,name);r.passed.Add(name);}
+  static void Write(Report r,string file){string output=Environment.GetEnvironmentVariable("HOTR_REVIEW117_OUT");Need(!string.IsNullOrEmpty(output),"Teams117OutputRequired");Directory.CreateDirectory(output);using(var stream=new FileStream(Path.Combine(output,file),FileMode.CreateNew,FileAccess.Write))using(var writer=new StreamWriter(stream,new UTF8Encoding(false)))writer.Write(JsonUtility.ToJson(r,true));EditorApplication.Exit(r.failures.Count==0&&r.status.StartsWith("PASS_",StringComparison.Ordinal)?0:1);}
+  public static void RunPolicy(){var r=new Report{unity=Application.unityVersion,scope="Actual isolated SDK compile, receipt/resource validation and pure negative build-policy controls. No BuildPipeline, app launch, network or ad operation."};try{Validate();ValidatePayload();Check(r,Sdk,"ActualSdkBranchCompiled");Check(r,!active,"NoAuthorityOutsideEntry");Check(r,VerifyBoundary(BuildTarget.Android,BuildOptions.Development,Package,false,true,true,true,true,null).Length==0,"ExactOwnedProfileAllowed");foreach(string kind in new[]{"ownership","release","debugging","package","signing","ads","managed","sdk","platform","channel"})Check(r,VerifyBoundary(kind=="platform"?BuildTarget.StandaloneWindows64:BuildTarget.Android,kind=="release"?BuildOptions.None:BuildOptions.Development|(kind=="debugging"?BuildOptions.AllowDebugging:BuildOptions.None),kind=="package"?"com.other.app":Package,kind=="signing",kind!="sdk",kind!="ads",kind!="managed",kind!="ownership",kind=="channel"?"rustore":null).Length>0,"Reject_"+kind);r.actualSdkBranchCompiled=true;r.status="PASS_NATIVE_TEAMS117_BUILD_POLICY";}catch(Exception e){r.code=e.Message;r.failures.Add(e.GetType().Name);}Write(r,"BuildPolicy117.json");}
+  public static void BuildDevelopment(){var r=new Report{unity=Application.unityVersion};try{current=Validate();ValidatePayload();Check(r,Sdk,"ActualSdkBranchCompiled");
+#if UNITY_6000_0_OR_NEWER
+   string android=Path.Combine(EditorApplication.applicationContentsPath,"PlaybackEngines/AndroidPlayer");Check(r,Full(AndroidExternalToolsSettings.jdkRootPath)==Full(Path.Combine(android,"OpenJDK"))&&Full(AndroidExternalToolsSettings.sdkRootPath)==Full(Path.Combine(android,"SDK"))&&Full(AndroidExternalToolsSettings.ndkRootPath)==Full(Path.Combine(android,"NDK"))&&Full(AndroidExternalToolsSettings.Gradle.path)==Full(Path.Combine(android,"Tools/gradle")),"PinnedLtsToolchainSelected");
+#else
+   throw new InvalidOperationException("Teams117LtsOnly");
+#endif
+   Check(r,PlayerSettings.Android.targetArchitectures==AndroidArchitecture.ARM64&&PlayerSettings.GetScriptingBackend(NamedBuildTarget.Android)==ScriptingImplementation.IL2CPP,"ExactArm64Il2Cpp");string output=Environment.GetEnvironmentVariable("HOTR_REVIEW117_OUT"),apk=Path.Combine(Full("."),"Builds/Review117/HeartOfTheRain_117_Android_Test.apk");Need(!File.Exists(apk),"Teams117PreserveExistingApk");Directory.CreateDirectory(Path.GetDirectoryName(apk));r.receiptSHA256=Hash(Environment.GetEnvironmentVariable("HOTR_TEAMS117_RECEIPT"));
+   r.apk=apk;r.actualBuild=true;active=true;try{var result=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=Scenes,locationPathName=apk,target=BuildTarget.Android,options=BuildOptions.Development});r.errors=(int)result.summary.totalErrors;r.warnings=(int)result.summary.totalWarnings;Check(r,result.summary.result==BuildResult.Succeeded&&r.errors==0&&File.Exists(apk),"ActualAndroidBuildSucceeded");}finally{active=false;current=null;}
+   r.apk=apk;r.apkSHA256=Hash(apk);r.bytes=new FileInfo(apk).Length;r.development=true;r.scriptDebugging=false;r.actualSdkBranchCompiled=true;Validate();ValidatePayload();Check(r,!active,"AuthorityClosedAfterBuild");r.status="PASS_NATIVE_TEAMS117_BUILD_DEVELOPMENT";
+  }catch(Exception e){active=false;current=null;r.code=Regex.IsMatch(e.Message??"",@"\A[A-Za-z0-9]{1,100}\z")?e.Message:e.GetType().Name;r.failures.Add(e.GetType().Name);if(r.actualBuild&&!string.IsNullOrEmpty(r.apk)&&File.Exists(r.apk)){r.apkSHA256=Hash(r.apk);r.bytes=new FileInfo(r.apk).Length;}}Write(r,"BuildDevelopment117.json");}
+ }
+}
+#endif

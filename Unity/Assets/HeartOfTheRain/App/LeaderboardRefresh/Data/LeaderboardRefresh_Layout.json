@@ -1,0 +1,73 @@
+{
+  "reference": [
+    1080,
+    1920
+  ],
+  "safeArea": "Apply host safe-area root before all layout.",
+  "header": [
+    40,
+    60,
+    1000,
+    122
+  ],
+  "mainTabs": [
+    40,
+    220,
+    1000,
+    114
+  ],
+  "scopeTabs": [
+    212,
+    358,
+    656,
+    100
+  ],
+  "top3": {
+    "first": [
+      365,
+      552,
+      350,
+      450
+    ],
+    "second": [
+      40,
+      602,
+      308,
+      400
+    ],
+    "third": [
+      732,
+      602,
+      308,
+      400
+    ]
+  },
+  "remainingRanks": {
+    "viewport": "[40,1054,1000,H-1516]",
+    "rowHeight": 166,
+    "gap": 18
+  },
+  "selfRow": "[40,H-440,1000,166]",
+  "dock": "[15,H-246,1050,220]",
+  "friends": {
+    "summary": [
+      40,
+      370,
+      1000,
+      250
+    ],
+    "listStartY": 680,
+    "rowHeight": 220,
+    "gap": 24
+  },
+  "countryModal": [
+    100,
+    350,
+    880,
+    1320
+  ],
+  "responsive": "One centered list column. Tablet proof has520px column within768px viewport. Tall phones show more rows. For short/landscape windows, top3 scroll with remaining ranks; fixed header/tabs and self row/dock cannot cover content. Minimum48dp hit regions. Body scroll, not global text shrinking.",
+  "text": "Player names can visually ellipsize; full accessible name retained. UI labels wrap at assigned bounds.",
+  "portraitFrame": "TA_Button_Blue sliced. Inset portrait is Simple preserveAspect under LB2_AvatarMask. Frame and portrait remain separate.",
+  "viewOnly": "Static compositions; no host code changed."
+}

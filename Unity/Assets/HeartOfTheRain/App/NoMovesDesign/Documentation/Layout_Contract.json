@@ -1,0 +1,126 @@
+{
+  "revision": "R2",
+  "referenceViewport": [
+    393,
+    852
+  ],
+  "palette": {
+    "sapphire": "#155992",
+    "slate": "#0b2a50",
+    "ivory": "#fff9eb",
+    "gold": "#e9b94f",
+    "scrim": "#020a18bd"
+  },
+  "safeArea": "actual Screen.safeArea transformed to canvas coordinates",
+  "sequence": {
+    "after": "final resolver + goal collection settle; win check first",
+    "notificationSeconds": 0.95,
+    "tapNotification": "advance to offer",
+    "clock": "unscaled",
+    "quoteFetch": "parallel with notice; wait rather than display a guessed price",
+    "reducedMotion": "static band, no movement; same readable interval"
+  },
+  "continue": {
+    "width": "min(safeWidth-12,430)",
+    "structure": "wallet row, wide band, optional coin offer below",
+    "walletMinTouchHeight": 44,
+    "panelAsset": "NM_Continue_Band.png",
+    "panelSliceLBRT": [
+      80,
+      316,
+      80,
+      240
+    ],
+    "panelPPU": 400,
+    "panelLogicalBorderLBRT": [
+      20,
+      79,
+      20,
+      60
+    ],
+    "headerHeight": 60,
+    "titleFont": 30,
+    "heroHeight": 196,
+    "columns": [
+      "46% Dariya",
+      "54% offer"
+    ],
+    "portrait": "NM_Dariya_Continue.png; preserveAspect, fit within left column; align bottom",
+    "badgeSize": [
+      99,
+      112
+    ],
+    "badgeFont": 44,
+    "offerFont": 19,
+    "footerHeight": 79,
+    "playMinHeight": 57,
+    "playLabel": "always Play On plus exact quoted coin cost; insufficient balance opens Shop in this tap",
+    "close": "48x48 hit; 52x52 artwork; top -19 right 10; opens confirmed exit"
+  },
+  "compact": {
+    "condition": "height<680 or width<345",
+    "stageTopPadding": 0,
+    "heroHeight": 153,
+    "badgeSize": [
+      78,
+      88
+    ],
+    "badgeFont": 36,
+    "offerFont": 16,
+    "playFont": 22,
+    "optionalOffer": "same content in shorter card"
+  },
+  "landscape": {
+    "condition": "width/height>1.18",
+    "maxWidth": 740,
+    "columns": [
+      "continue 1.8fr",
+      "optional coin offer 1fr"
+    ],
+    "heroHeight": 126,
+    "badgeSize": [
+      66,
+      74
+    ],
+    "offerFont": 15,
+    "wallet": "above both columns",
+    "shortScreens": {
+      "condition": "height<380",
+      "heroHeight": 110,
+      "badgeSize": [
+        58,
+        66
+      ],
+      "offerFont": 14,
+      "badgeFont": 28,
+      "offerPadding": [
+        4,
+        12,
+        4,
+        0
+      ]
+    }
+  },
+  "shop": {
+    "mode": "existing coin catalog; entryContext=continueAttempt",
+    "maxWidth": 600,
+    "headerHeight": 76,
+    "layout": "fixed header/wallet/close; scrollable product list; fixed Back to level footer",
+    "featuredProduct": "coins-1000",
+    "coinRows": "other existing six-pack coin catalog entries",
+    "coinRowMinHeight": 82,
+    "buttonsMinHeight": 48,
+    "back": "same Continue offer; no life debit",
+    "onCredit": "verified durable receipt and refreshed wallet, then return to Continue; no automatic move spend",
+    "landscape": "max width760; 60 header; featured left/list right"
+  },
+  "text": "live localized labels + TMP, never rasterized numbers",
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "nativeValidated": false
+}

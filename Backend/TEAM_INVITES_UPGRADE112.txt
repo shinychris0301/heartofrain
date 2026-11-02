@@ -1,0 +1,28 @@
+﻿TEAM INVITATIONS - STOPPED OWNED STAGING UPGRADE 112
+
+This is not production activation and does not start a service. Invitation policy
+is provisional and disabled in config/team_invites.json pending explicit approval;
+no share-link domain or App Links are configured. Do not turn on invitations or
+use the provisional timing/limit as launch policy without product approval.
+
+With a proven owned/stopped schema13 authority and a private manifest, from Backend:
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging_upgrade112 --manifest <private-descriptor> --name <fresh-name>
+Name is at most 40 ASCII letters, digits, underscores or hyphens. This creates a
+separate immutable schema13 snapshot and bound upgrade112 receipt, then changes
+schema to14 under an owner- and file-bound UpgradePending112 marker. Retry the
+same exact operation name after an interruption; never clear the pending marker,
+replace the database, overwrite a backup, or guess a prior operation identity.
+For older schema, first use the already documented 109/110/111 upgrade sequence;
+complete and preserve each separate backup and marker receipt. Existing completed
+111 receipts may be reconciled after 112. Start only after the current schema is
+reached and normal staging preflight succeeds, then take a new current-schema
+backup under staging_ops105. Pending 112 makes ordinary staging startup reject.
+
+A code is a random public lookup identifier, not a credential or invite token;
+Find Team resolves it to the existing team details. No entry joins a team. The
+team uses its existing current capacity and join rules; no slots are reserved.
+Direct invites are recipient-owned, friend-scoped, require a current inviter team
+membership and a server-side policy, and respect block, bans, expiry and duplicate
+idempotency. Actual message/recipient counts are never fabricated. Shared external
+links remain unavailable until an approved HTTPS host, routing and Android App Links
+are configured and independently verified. Do not log credentials or tokens.

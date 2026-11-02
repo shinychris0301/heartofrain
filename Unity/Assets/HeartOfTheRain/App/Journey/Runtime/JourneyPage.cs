@@ -53,7 +53,6 @@ namespace HeartOfTheRain.App.Journey
    canvas.vertexColorAlwaysGammaSpace=true;
 #endif
    scaler=root.gameObject.AddComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ConstantPixelSize;root.gameObject.AddComponent<GraphicRaycaster>();fade=root.gameObject.AddComponent<CanvasGroup>();
-   var matte=Rect("Safe-area matte",root);matte.anchorMin=Vector2.zero;matte.anchorMax=Vector2.one;matte.sizeDelta=Vector2.zero;var bg=matte.gameObject.AddComponent<Image>();bg.color=ColorOf("#071A30");
    safe=Rect("Journey safe area",root);safe.gameObject.AddComponent<RectMask2D>();chrome=Rect("Fixed header and navigation",safe);
    viewport=Rect("Chapter viewport",safe);var target=viewport.gameObject.AddComponent<Image>();target.color=Color.clear;viewport.gameObject.AddComponent<RectMask2D>();
    scroll=viewport.gameObject.AddComponent<ScrollRect>();scroll.viewport=viewport;scroll.horizontal=false;scroll.vertical=true;scroll.movementType=ScrollRect.MovementType.Clamped;scroll.scrollSensitivity=35;
@@ -97,14 +96,14 @@ namespace HeartOfTheRain.App.Journey
      // One Text per measured line prevents engine rewrapping from clipping translated prose.
      var lines=e.text.Split('\n');float step=e.kind=="paragraph"?24:(e.id=="reader-heading"?e.fontSize+6:e.fontSize+3);
      for(int i=0;i<lines.Length;i++){var line=Rect(e.id+"-line-"+i,rt);Place(line,0,i*step,e.width,step);var t=line.gameObject.AddComponent<Text>();t.font=e.kind=="paragraph"?assets.home.regularFont:assets.home.boldFont;t.text=lines[i];t.fontSize=e.fontSize;t.color=ColorOf(e.color);t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind=="paragraph"?TextAnchor.UpperLeft:TextAnchor.MiddleCenter;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;
-      if(e.shadow){var sh=line.gameObject.AddComponent<Shadow>();sh.effectColor=new Color(0,.02f,.05f,.8f);sh.effectDistance=new Vector2(0,-1);}
+      LabelFit.Apply(t,e.width,step,e.fontSize);if(e.shadow){var sh=line.gameObject.AddComponent<Shadow>();sh.effectColor=new Color(0,.02f,.05f,.8f);sh.effectDistance=new Vector2(0,-1);}
      }
     }
     else if(e.kind=="text")
     {
      var t=rt.gameObject.AddComponent<Text>();t.font=e.kind=="paragraph"?assets.home.regularFont:assets.home.boldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;t.supportRichText=false;t.raycastTarget=false;t.alignment=e.kind=="paragraph"?TextAnchor.UpperLeft:TextAnchor.MiddleCenter;
      t.horizontalOverflow=e.kind=="paragraph"?HorizontalWrapMode.Wrap:HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;t.lineSpacing=e.kind=="paragraph"?1.10f:1;
-     if(e.kind=="text")while(t.fontSize>10&&t.preferredWidth>e.width)t.fontSize--;
+     if(e.kind=="text")LabelFit.Apply(t,e.width,e.height);
      if(e.shadow){var sh=rt.gameObject.AddComponent<Shadow>();sh.effectColor=new Color(0,.02f,.05f,.8f);sh.effectDistance=new Vector2(0,-1);}
     }
     else if(e.kind=="cover")
@@ -113,9 +112,11 @@ namespace HeartOfTheRain.App.Journey
     }
     else
     {
-     var im=rt.gameObject.AddComponent<Image>();im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.sliced?4:1;im.preserveAspect=e.preserveAspect;im.raycastTarget=false;if(e.kind=="mask"){var m=rt.gameObject.AddComponent<Mask>();m.showMaskGraphic=false;}
+     var im=rt.gameObject.AddComponent<Image>();im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=e.sliced?4:1;im.preserveAspect=e.preserveAspect;SpriteFit.Center(im);im.raycastTarget=false;if(e.kind=="mask"){var m=rt.gameObject.AddComponent<Mask>();m.showMaskGraphic=false;}
     }
    }
+   foreach(var e in frame.elements)if(e.id=="backdrop")PageBackdrop90.Fill(nodes[e.id].GetComponent<MaskableGraphic>(),canvas);
+   foreach(var e in frame.elements)if(e.id=="top-bar")PageBackdrop90.ExtendTop(nodes[e.id].GetComponent<MaskableGraphic>(),canvas);
    foreach(var e in frame.elements)if(!string.IsNullOrEmpty(e.action)&&e.action!="disabled"&&!e.id.StartsWith("nav-",StringComparison.Ordinal))
    {var graphics=new List<Graphic>();foreach(var n in nodes)if(n.Key.StartsWith(e.id+"-",StringComparison.Ordinal)){var g=n.Value.GetComponent<Graphic>();if(g)graphics.Add(g);}nodes[e.id].gameObject.AddComponent<PreLevelButtonFeedback>().Configure(graphics.ToArray(),home.State.reduceMotion);}
   }

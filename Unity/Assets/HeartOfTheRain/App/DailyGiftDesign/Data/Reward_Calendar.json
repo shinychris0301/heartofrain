@@ -1,0 +1,82 @@
+{
+  "source": "User Daily Gift screenshot; visual-design baseline, not an economy change",
+  "missedDayBehavior": "Retain next unclaimed reward",
+  "resetPolicy": "Keep existing backend policy; do not infer a rolling 24h reset or weekly restart from this preview",
+  "rewards": [
+    {
+      "day": 1,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 50,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "items": [
+        {
+          "id": "rocket",
+          "quantity": 1,
+          "art": "Reward_Rocket.png"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 75,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "items": [
+        {
+          "id": "bomb",
+          "quantity": 1,
+          "art": "Reward_Bomb.png"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "items": [
+        {
+          "id": "coins",
+          "quantity": 100,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "items": [
+        {
+          "id": "hammer",
+          "quantity": 1,
+          "art": "Reward_Hammer.png"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "items": [
+        {
+          "id": "rainbow_orb",
+          "quantity": 1,
+          "art": "Reward_Orb.png"
+        },
+        {
+          "id": "coins",
+          "quantity": 150,
+          "art": "Reward_Coin.png"
+        }
+      ]
+    }
+  ]
+}

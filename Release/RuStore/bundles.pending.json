@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "status": "FULL_GRANT_IMPLEMENTED_UNCONFIGURED_NOT_PRODUCTION_VERIFIED",
+  "currency": "RUB",
+  "checkoutEnabled": false,
+  "source": "Exact existing M63 Shop bundle rewards; no new economy or live product registration is implied.",
+  "products": [
+    {
+      "shopOfferId": "wellkeeper",
+      "displayName": "Wellkeeper Kit",
+      "section": "special",
+      "proposedStoreProductId": "hotr_bundle_wellkeeper_c",
+      "proposedPriceMinor": 9900,
+      "enabled": false,
+      "grant": {
+        "coins": 2000,
+        "tools": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "starting": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "repeatable": false
+    },
+    {
+      "shopOfferId": "rainy-day",
+      "displayName": "Rainy Day Bundle",
+      "section": "special",
+      "proposedStoreProductId": "hotr_bundle_rainy_day",
+      "proposedPriceMinor": 19900,
+      "enabled": false,
+      "grant": {
+        "coins": 3500,
+        "tools": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "starting": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "repeatable": false
+    },
+    {
+      "shopOfferId": "rainlight",
+      "displayName": "Rainlight Reserve",
+      "section": "special",
+      "proposedStoreProductId": "hotr_bundle_rainlight",
+      "proposedPriceMinor": 29900,
+      "enabled": false,
+      "grant": {
+        "coins": 6000,
+        "tools": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "starting": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "repeatable": false
+    },
+    {
+      "shopOfferId": "village",
+      "displayName": "Village Treasury",
+      "section": "mega",
+      "proposedStoreProductId": "hotr_bundle_village",
+      "proposedPriceMinor": 39900,
+      "enabled": false,
+      "grant": {
+        "coins": 5000,
+        "tools": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "starting": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "repeatable": true
+    },
+    {
+      "shopOfferId": "festival",
+      "displayName": "Festival Chest",
+      "section": "mega",
+      "proposedStoreProductId": "hotr_bundle_festival",
+      "proposedPriceMinor": 59900,
+      "enabled": false,
+      "grant": {
+        "coins": 10000,
+        "tools": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "starting": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "repeatable": true
+    },
+    {
+      "shopOfferId": "keepers",
+      "displayName": "Keeper's Collection",
+      "section": "mega",
+      "proposedStoreProductId": "hotr_bundle_keepers",
+      "proposedPriceMinor": 99900,
+      "enabled": false,
+      "grant": {
+        "coins": 25000,
+        "tools": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "starting": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "repeatable": true
+    }
+  ],
+  "activationRequirements": [
+    "Actual consumable Console product IDs and SDK amountLabel quotations.",
+    "Deploy migrated schema9 backend and verify full-Grant delivery, persistent Special eligibility, recovery and manual RefundReview handling in the configured environment.",
+    "Matching Unity checkout quote validation, ordinary Android/provider acceptance and enabled server configuration.",
+    "Verify stable account linking/recovery, notifications, acknowledgements and operator handling of paid-but-conflicting or refunded transactions before enabling production purchases."
+  ],
+  "decisionDate": "2026-10-27",
+  "priceAuthority": "Owner-approved project preview prices at checkpoint99; not actual Console registration or SDK amountLabel quotations.",
+  "eligibilityKey": [
+    "internalPlayerId",
+    "shopOfferId"
+  ],
+  "purchasePolicyEnforced": false,
+  "purchasePolicyImplemented": true,
+  "implementationScope": "SQLite transactional staging service and additive app contract. No registered production products or enabled checkout; provider/device acceptance remains required."
+}

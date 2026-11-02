@@ -1,0 +1,31 @@
+Future private credential destinations on the owned Windows VPS
+
+Directory: C:\ProgramData\HeartOfTheRain\production-secrets
+
+RuStore API private RSA key:
+  C:\ProgramData\HeartOfTheRain\production-secrets\rustore-private-key
+
+RuStore notification encryption key:
+  C:\ProgramData\HeartOfTheRain\production-secrets\rustore-notification-key
+
+The inactive installer creates only the empty restricted directory. It does not
+create either file, generate a key, write dummy credentials or activate a provider.
+Save the actual issued Console key privately to the corresponding path. Do not
+paste key contents into chat, repository files, app Resources, command lines,
+screenshots or logs. Keep an encrypted backup under the owner's separate policy.
+
+The API adapter accepts the issued private RSA key as PEM or Base64 DER and
+requires at least 2,048 bits. The notification file contains the Console's
+Base64-encoded 32-byte AES key. These are different keys and are not the Android
+release keystore. The public RuStore key identifier belongs in the future private
+manifest; it is not the key contents. See the provider's Console documentation
+when exporting or rotating credentials.
+
+LocalService receives read/execute access; Administrators and SYSTEM retain full
+control. Verify inherited permissions after saving the actual files. The service
+account must not gain write access to code, configuration or keys.
+
+VK currently uses the issued public numeric application ID and exact HTTPS
+callback with PKCE. No invented VK secret file is created by this workflow.
+Real authorization tokens are obtained by the configured flow, not supplied in
+this preparation archive.

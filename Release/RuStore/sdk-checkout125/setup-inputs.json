@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "verificationMode": "sdk_client_reported",
+  "consoleApplicationId": "2063777840",
+  "applicationIdConfirmedByOwnerOn": "2026-10-31",
+  "packageName": "com.heartoftherain.game",
+  "packageConfirmedByOwnerOn": "2026-10-30",
+  "paymentReturnScheme": "heartoftherain-pay",
+  "paymentReturnSchemeChosenForBuild": true,
+  "backendOrigin": "https://api.novamind-it.ru",
+  "privacyPolicyUrl": "https://api.novamind-it.ru/privacy",
+  "supportUrl": "https://api.novamind-it.ru/support",
+  "termsUrl": "https://api.novamind-it.ru/terms",
+  "publicPagesAreTemporaryDrafts": true,
+  "productRegistry": "../registered-products122.json",
+  "registeredProductCount": 12,
+  "productPublicationVerified": false,
+  "monetizationEnabledVerified": false,
+  "sandboxPurchasesVerified": false,
+  "productionEnabled": false,
+  "requiredOwnerIdentifierStillMissing": null,
+  "secretsRequiredByThisPaymentMode": []
+}

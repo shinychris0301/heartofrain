@@ -1,0 +1,103 @@
+{
+  "reference": [
+    1080,
+    1920
+  ],
+  "coordinates": "x,y from top,width,height; safe-area content root",
+  "panels": {
+    "body": [
+      100,
+      490,
+      880,
+      970
+    ],
+    "crest": [
+      440,
+      380,
+      200,
+      200
+    ],
+    "close": [
+      886,
+      472,
+      104,
+      104
+    ],
+    "content": [
+      152,
+      738,
+      776,
+      465
+    ],
+    "teamBadge": [
+      204,
+      778,
+      136,
+      136
+    ],
+    "cancel": [
+      152,
+      1260,
+      365,
+      144
+    ],
+    "confirm": [
+      563,
+      1260,
+      365,
+      144
+    ],
+    "singleClose": [
+      290,
+      1260,
+      500,
+      144
+    ]
+  },
+  "text": {
+    "title": {
+      "center": [
+        540,
+        660
+      ],
+      "maxWidth": 784,
+      "size": 52,
+      "maxLines": 2
+    },
+    "teamName": {
+      "origin": [
+        376,
+        827
+      ],
+      "maxWidth": 490,
+      "size": 41,
+      "maxLines": 2
+    },
+    "body": {
+      "origin": [
+        196,
+        980
+      ],
+      "maxWidth": 688,
+      "size": 42,
+      "maxLines": 4
+    }
+  },
+  "verticalOffset": "max(-80,(logicalViewportHeight-1920)/2); apply to sprites, text and hit regions together",
+  "scrim": {
+    "opacity": 0.68,
+    "blocksUnderlyingInput": true,
+    "tapDismiss": false
+  },
+  "toast": {
+    "rect": "[100,logicalViewportHeight-430,880,132]",
+    "durationMs": 2600,
+    "key": "left_toast"
+  },
+  "contentColumn": "phones fill safe width; tablet proof has 520px column in 768px screen; host use existing shared responsive root",
+  "touchTargets": "minimum 48dp at 360px content width; expand Close to144 reference px; restrict focus to modal",
+  "shortWindows": "scroll cream body; keep title/close/footer accessible; do not shrink all text below design sizes",
+  "longNames": "two visual lines, ellipsis at word/grapheme boundary only after overflow; full name in accessible label",
+  "underlay": "actual live member details, not a flattened screenshot; native proof reconstructs approved R4 layout",
+  "back": "before commit Cancel; pending or unknown Close without cancelling operation; return focus to caller"
+}

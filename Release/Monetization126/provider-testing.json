@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "ownerConfirmedOn": "2026-10-31",
+  "ruStoreSandboxProductsReadyReportedByOwner": true,
+  "yandexRewardedReadyReportedByOwner": true,
+  "actualAndroidPurchaseVerified": false,
+  "actualRewardedPlaybackVerified": false,
+  "productionEnabled": false,
+  "publicPagesAreTemporaryDrafts": true,
+  "vkApplicationId": "54867814",
+  "vkWebIntegrationReadyReportedByOwner": true,
+  "vkExactCallbackReadyReportedByOwner": true,
+  "vkCallback": "https://api.novamind-it.ru/v1/identity/vk/callback",
+  "actualVkAuthorizationVerified": false
+}

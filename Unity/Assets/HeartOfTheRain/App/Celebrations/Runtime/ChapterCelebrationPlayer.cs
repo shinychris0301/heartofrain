@@ -13,7 +13,7 @@ namespace HeartOfTheRain.App.Celebrations
         Canvas canvas;CanvasScaler scaler;RectTransform safe,stage,caption;
         RawImage well,hook;Image halo;DariaCelebrationView daria;
         Text title,chapterName,range,speaker,copy,buttonText;Button close;
-        RectTransform[] stars;AudioSource music;AudioListener ownedListener;
+        RectTransform[] stars;Image[] starImages;bool refit;AudioSource music;AudioListener ownedListener;
         Action closed;GameObject previousFocus;readonly CelebrationPlaybackSession playback=new CelebrationPlaybackSession();float elapsed=>playback.Elapsed;int locale=-1;
         bool focused=true,suspended;Vector2Int lastSize;Rect lastSafe;
         float lastScale;CelebrationGeometry geometry;
@@ -47,9 +47,9 @@ namespace HeartOfTheRain.App.Celebrations
             var block=matte.gameObject.AddComponent<Image>();block.color=new Color(.035f,.075f,.12f);block.raycastTarget=true;
             safe=Rect("Safe area",root);safe.gameObject.AddComponent<RectMask2D>();stage=Rect("Story stage",safe);stage.gameObject.AddComponent<RectMask2D>();
             well=Raw("Restored well",stage);hook=Raw("Messenger arrives",stage);
-            var dr=Rect("Animated Daria",safe);daria=dr.gameObject.AddComponent<DariaCelebrationView>();daria.Configure(assets.dariaAtlas);
-            stars=new RectTransform[12];
-            for(int i=0;i<stars.Length;i++){var s=Sprite("Celebration mote "+i,safe,assets.ui.Find("RewardStar_R2"),false);stars[i]=s.rectTransform;}
+            var dr=Rect("Animated Daria",safe);daria=dr.gameObject.AddComponent<DariaCelebrationView>();daria.Configure(assets);
+            stars=new RectTransform[12];starImages=new Image[12];
+            for(int i=0;i<stars.Length;i++){var s=Sprite("Celebration mote "+i,safe,assets.ui.Find("RewardStar_R2"),false);stars[i]=s.rectTransform;starImages[i]=s;}
             var plaque=Sprite("Chapter plaque",safe,assets.ui.Find("R4_Chapter"),false);plaque.name="Chapter plaque";
             title=Label("Chapter title",safe,24,Color.white);chapterName=Label("Chapter name",safe,16,new Color(1,.94f,.80f));range=Label("Chapter range",safe,12,new Color(1,.88f,.64f));
             caption=Rect("Story caption",safe);var panel=Sprite("Caption well",caption,assets.ui.Find("LC_RewardWell"),true);Stretch(panel.rectTransform);
@@ -79,8 +79,11 @@ namespace HeartOfTheRain.App.Celebrations
             chapterName.text=StoryLocale.Title(chapter.chapter,chapter.title);Fit(chapterName);
             title.text=CelebrationText.Format("Chapter {0} complete",chapter.chapter);Fit(title);
             range.text=CelebrationText.Format("Levels {0}–{1}",CelebrationMotion.FirstLevel(chapter.chapter),CelebrationMotion.LastLevel(chapter.chapter));
-            lastSize=new Vector2Int(Screen.width,Screen.height);lastSafe=Screen.safeArea;lastScale=home.CurrentUIScale;locale=GameLocale.Revision;
+            lastSize=new Vector2Int(Screen.width,Screen.height);lastSafe=Screen.safeArea;lastScale=home.CurrentUIScale;locale=GameLocale.Revision;refit=true;
         }
+        // Labels are regenerated only when their text or geometry changes, not
+        // every frame of the 9 s cinematic.
+        void SetText(Text t,string value){if(!refit&&t.text==value)return;t.text=value;Fit(t);}
         void Update()
         {
             if(!IsVisible)return;
@@ -93,7 +96,7 @@ namespace HeartOfTheRain.App.Celebrations
             bool back=Input.GetKeyDown(KeyCode.Escape);
 #endif
             if(back)Finish();
-            if(music){music.mute=PlayerPrefs.GetInt("HeartOfTheRain.Settings.v1.music",1)==0;music.volume=.14f*Mathf.Clamp01((CelebrationMotion.FinaleDuration-elapsed)/1.2f);}
+            if(music)music.volume=.14f*Mathf.Clamp01((CelebrationMotion.FinaleDuration-elapsed)/1.2f);
         }
         void Sample()
         {
@@ -103,15 +106,15 @@ namespace HeartOfTheRain.App.Celebrations
             float zoom=pose.wellZoom;
             well.uvRect=Cover(well.texture,g.stageW,g.stageH,zoom);hook.uvRect=Cover(hook.texture,g.stageW,g.stageH,pose.hookZoom);
             daria.Sample(Mathf.Max(0,elapsed-2.4f),0,reduced,pose.dariaAlpha);
-            speaker.text=CelebrationText.T(beat==0?"Village restored":beat==1?"Daria":"A message from the city");Fit(speaker);
-            copy.text=CelebrationText.T(chapter.captions[Mathf.Min(beat,chapter.captions.Length-1)]);copy.fontSize=17;
-            while(copy.fontSize>12&&copy.preferredHeight>copy.rectTransform.rect.height)copy.fontSize--;
-            buttonText.text=CelebrationText.T(elapsed>=CelebrationMotion.FinaleDuration?"Continue":"Skip");Fit(buttonText);
+            SetText(speaker,CelebrationText.T(beat==0?"Village restored":beat==1?"Daria":"A message from the city"));
+            string story=CelebrationText.T(chapter.captions[Mathf.Min(beat,chapter.captions.Length-1)]);
+            if(refit||copy.text!=story){copy.text=story;copy.fontSize=17;while(copy.fontSize>12&&copy.preferredHeight>copy.rectTransform.rect.height)copy.fontSize--;}
+            SetText(buttonText,CelebrationText.T(elapsed>=CelebrationMotion.FinaleDuration?"Continue":"Skip"));refit=false;
             for(int i=0;i<stars.Length;i++)
             {
                 float phase=(elapsed*.28f+i*.173f)%1;float x=g.stageW*(.08f+.84f*((i*.618f)%1));float y=g.stageH*(.25f+.53f*(1-phase));
                 float size=5+i%4;Place(stars[i],x,y,size,size);stars[i].localRotation=Quaternion.Euler(0,0,elapsed*24+i*39);
-                stars[i].GetComponent<Image>().color=new Color(1,.91f,.68f,reduced?0:Mathf.Sin(phase*Mathf.PI)*.65f*(1-mix));
+                starImages[i].color=new Color(1,.91f,.68f,reduced?0:Mathf.Sin(phase*Mathf.PI)*.65f*(1-mix));
             }
         }
         static Rect Cover(Texture t,float w,float h,float zoom)
@@ -122,7 +125,7 @@ namespace HeartOfTheRain.App.Celebrations
         void PlayMusic()
         {
             if(!assets.music)return;if(!music){music=gameObject.AddComponent<AudioSource>();music.playOnAwake=false;music.spatialBlend=0;}
-            if(FindObjectsOfType<AudioListener>().Length==0)ownedListener=gameObject.AddComponent<AudioListener>();
+            if(FindObjectsByType<AudioListener>(UnityEngine.FindObjectsSortMode.InstanceID).Length==0)ownedListener=gameObject.AddComponent<AudioListener>();
             music.clip=assets.music;music.loop=false;music.volume=.14f;music.mute=PlayerPrefs.GetInt("HeartOfTheRain.Settings.v1.music",1)==0;music.Play();
         }
         public void Finish()
@@ -139,7 +142,7 @@ namespace HeartOfTheRain.App.Celebrations
         void OnDestroy(){playback.Close();closed=null;if(music)music.Stop();if(ownedListener)Destroy(ownedListener);}
         Text Label(string name,Transform parent,int size,Color color)
         {var t=Rect(name,parent).gameObject.AddComponent<Text>();t.font=assets.ui.preLevel.home.boldFont;t.fontSize=size;t.color=color;t.alignment=TextAnchor.MiddleCenter;t.raycastTarget=false;t.supportRichText=false;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;return t;}
-        static void Fit(Text t){int start=t.name=="Chapter title"?24:t.name=="Continue text"?22:t.name=="Chapter name"?16:14;t.fontSize=start;while(t.fontSize>11&&t.preferredWidth>t.rectTransform.rect.width-12)t.fontSize--;}
+        static void Fit(Text t){int start=t.name=="Chapter title"?24:t.name=="Continue text"?22:t.name=="Chapter name"?16:14;t.fontSize=start;LabelFit.Apply(t,t.rectTransform.rect.width-12,t.rectTransform.rect.height,11);}
         static RawImage Raw(string name,Transform parent){var r=Rect(name,parent).gameObject.AddComponent<RawImage>();r.raycastTarget=false;return r;}
         static Image Sprite(string name,Transform parent,Sprite sprite,bool sliced){var im=Rect(name,parent).gameObject.AddComponent<Image>();im.sprite=sprite;im.type=sliced?Image.Type.Sliced:Image.Type.Simple;im.pixelsPerUnitMultiplier=sliced?4:1;im.raycastTarget=false;return im;}
         static RectTransform Rect(string name,Transform parent){var g=new GameObject(name,typeof(RectTransform));g.transform.SetParent(parent,false);return (RectTransform)g.transform;}

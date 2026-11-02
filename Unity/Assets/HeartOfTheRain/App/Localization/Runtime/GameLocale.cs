@@ -8,9 +8,14 @@ namespace HeartOfTheRain.App.Localization
     public static partial class GameLocale
     {
         public const string PreferenceKey="HeartOfTheRain.Settings.v2.language";
+        public const int DefaultIndex=4;
         public static readonly string[] Codes={"en","es","fr","de","ru"};
         public static readonly string[] Names={"English","Español","Français","Deutsch","Русский"};
-        public static int Current {get;private set;}
+        // Presentation order is independent of the persisted translation indices.
+        static readonly int[] DisplayOrder={4,0,1,2,3};
+        public static int DisplayIndexAt(int row){if(row<0||row>=DisplayOrder.Length)throw new ArgumentOutOfRangeException(nameof(row));return DisplayOrder[row];}
+        public static int ResolveStored(int index)=>Valid(index)?index:DefaultIndex;
+        public static int Current {get;private set;}=DefaultIndex;
         public static int Revision {get;private set;}
         public static bool Valid(int index){return index>=0&&index<Codes.Length;}
         public static bool Select(int index){if(!Valid(index))return false;if(Current!=index){Current=index;Revision++;}return true;}

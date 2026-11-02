@@ -1,0 +1,96 @@
+{
+  "version": "TeamsAccess_Assets_R4",
+  "unityBaseline": "2022.3.62f3",
+  "referenceResolution": [
+    1080,
+    1920
+  ],
+  "safeAreaRequired": true,
+  "canvas": {
+    "mode": "ScaleWithScreenSize",
+    "referencePixelsPerUnit": 100,
+    "recommendedMatch": 0,
+    "note": "Keep existing shared Canvas scaler. Convert these reference coordinates if the host uses another scale."
+  },
+  "spriteBorders": {
+    "order": [
+      "left",
+      "bottom",
+      "right",
+      "top"
+    ],
+    "unit": "source pixels",
+    "proofBorderScale": "Use each ComponentManifest entry when present; otherwise .6",
+    "uguiPixelsPerUnitMultiplier": "1 / proofBorderScale",
+    "exceptions": "Badge grid uses .35. Never stretch a whole nine-slice sprite. Badges/emblems use Simple and PreserveAspect."
+  },
+  "content": {
+    "phoneWidth": 1080,
+    "sidePadding": 40,
+    "maxTabletColumnLogicalWidth": 1080,
+    "horizontalAlignment": "center",
+    "minTouchDp": 48,
+    "minBodyTextSp": 14
+  },
+  "safeLayout": {
+    "title": "top safe-area + 80 reference units",
+    "tabs": "below title",
+    "navigation": "bottom safe-area, height 220, never covered by list",
+    "list": "ScrollRect between header and navigation",
+    "form": "ScrollRect; scroll focused input above keyboard",
+    "teamDetails": "summary and member list scroll together on short screens; close remains in safe header",
+    "badgePicker": "center; max width 796; title, close, footer fixed; grid scrolls when height is insufficient"
+  },
+  "modal": {
+    "width": 796,
+    "portraitPreferredHeight": 1330,
+    "backdropOpacity": 0.65,
+    "crestOutsidePanel": true,
+    "doNotMaskCrestOrClose": true,
+    "gridColumns": 3,
+    "selection": "outline plus checkmark; color alone is insufficient"
+  },
+  "viewportAcceptance": [
+    {
+      "size": [
+        360,
+        640
+      ],
+      "unit": "dp",
+      "check": "scrolling, 48 dp targets, no clipped footer"
+    },
+    {
+      "size": [
+        390,
+        844
+      ],
+      "unit": "dp",
+      "check": "notch and home-indicator safe areas"
+    },
+    {
+      "size": [
+        412,
+        915
+      ],
+      "unit": "dp",
+      "check": "tall layout, no stretched icons"
+    },
+    {
+      "size": [
+        768,
+        1024
+      ],
+      "unit": "dp",
+      "check": "centered capped-width column and scrolling"
+    },
+    {
+      "size": [
+        1024,
+        768
+      ],
+      "unit": "dp",
+      "check": "if landscape is enabled, capped modal and scroll body; otherwise retain app portrait lock"
+    }
+  ],
+  "validationStatus": "Static 1080x1920 screens plus 1440x2560 and 2160x3840 detail compositions reviewed. Native responsive layout, keyboard and safe-area behavior are acceptance requirements, not tested runtime behavior."
+}

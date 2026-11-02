@@ -23,7 +23,7 @@ namespace HeartOfTheRain.App.Home.Editor
                 next.currentLevel=level;next.coins=coins;next.lives=lives;next.completedLevelsInChapter=completed;home.ApplyState(next);
             }
             if(GUILayout.Button(home.EventsOpen?"Close events drawer":"Open events drawer"))home.ShowEvents(!home.EventsOpen);
-            if(GUILayout.Button("Reset 18 / 1,250 / 5 lives / 17 of 50"))home.ApplyState(new HomeState());
+            if(GUILayout.Button("Reset 18 / 1,250 / 5 lives / 17 of 50"))home.ApplyState(new HomeState{currentLevel=18,coins=1250,lives=5,completedLevelsInChapter=17,dailyStatus="Ready",cupStatus="2d 06h",wellworksStatus="12/20",teamStatus="1d 04h"});
             EditorGUILayout.HelpBox("Set UI Scale Override to 3 for a 1179 × 2556 phone Game view; 1 for a 393 × 852 logical view. Use Device Simulator for real safe insets. Native screen reader support is a separate integration.",MessageType.None);
         }
     }

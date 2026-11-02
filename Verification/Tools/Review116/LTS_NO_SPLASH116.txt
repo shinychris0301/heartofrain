@@ -1,0 +1,62 @@
+Approved user-visible internal profile: Unity 6000.3.27f1, no Unity splash.
+
+The main Unity project remains on 2022.3.62f3. Its Android artifacts are compile
+and diagnostic artifacts. launch_profile116.py rejects them for an ordinary
+user-visible launch. Diagnostic use requires an explicit flag and never gains
+ordinary launch eligibility.
+
+ApprovedLtsProfile116.json is a public-only, unpromoted SDK-free profile bundle.
+It contains approved LTS Packages/ProjectSettings, same-GUID importer metadata,
+and a technical transparent icon foreground. It contains no private signing key,
+keystore password, payment/provider token, old gameplay source or vendor SDK.
+Signing is Android internal debug signing only. This is not a store release.
+
+Reconstruct a fresh isolated candidate from a clean tested checkout, in PowerShell
+at the repository root (choose a new short candidate tag for every preparation):
+
+  Backend/.venv/Scripts/python.exe -B Verification/Tools/Review116/lts_nosplash116.py prepare --execute --source-project Unity --canonical-manifest Verification/Evidence/Review116/App/NativeSnapshotSourceCut116_Harness08.json --canonical-sha256 9cc946e8e6760a5cd3cf44bcf7ae60bd3ab432ac5a040bef23f001b13b6ca350 --candidate-tag C1
+
+  Backend/.venv/Scripts/python.exe -B Verification/Tools/Review116/lts_nosplash116.py build --execute --candidate-tag C1 --tag Build01 --gradle-cache-seed E:/PublicGradleSeed/caches/modules-2 --gradle-home E:/HR116G_C1
+
+Prerequisites: Windows, the repository's supported Python backend environment,
+and the licensed Unity 6000.3.27f1 editor at
+E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Unity.exe with its matching stock Android
+SDK/JDK/NDK/Gradle modules, including Android API36. No SDK or engine is installed
+or upgraded by these commands. The preparation verifies every source byte against
+the selected public canonical manifest before copying; newer working edits cause
+rejection. The source project remains read-only. New candidates must be directly
+under .verification-cache/Review116 and must use the LTSNoSplashCandidate prefix.
+Windows destination paths must remain below260 characters; preparation rejects
+long candidate tags before creating or copying files.
+
+The first build requires an explicitly supplied compatible, populated public
+Gradle modules-2 dependency cache. The example path is an operator-owned public
+cache seed, not a required private Review98 path. The runner copies module cache
+files, verifies their hashes, excludes locks/gc state, and does not copy or run
+the seed's init scripts. Its own short drive-root HR116G_<tag> Gradle home has an
+exact-project offline guard; the short path avoids Windows MAX_PATH without any
+global setting changes. The home must be fresh and is bound to one candidate by
+its ownership receipt. Missing dependencies fail instead of downloading/upgrading.
+Later fresh build tags for that candidate reuse its owned Gradle home and omit
+--gradle-cache-seed and --gradle-home. Gradle cache format must match Gradle9.3.1.
+Reference: https://docs.gradle.org/current/userguide/dependency_caching.html
+
+The actual build requires both PlayerSettings splash getters false before and
+after BuildPipeline, source/art byte pins, GUID equality, the approved engine,
+internal package com.heartoftherain.review116lts, ARM64 IL2CPP development, and the
+existing advertising/store/licensing boundary checks. It retains raw logs in the
+private candidate cache and public sanitized Build/Invocation/runner epoch proof.
+Earlier output tags and APKs are never overwritten. Main settings are unchanged.
+
+Qualify a successful actual artifact before static inspection, install or launch:
+
+  Backend/.venv/Scripts/python.exe -B Verification/Tools/Review116/launch_profile116.py --build Verification/Evidence/Review116/LTSNoSplash/Candidates/LTSNoSplashCandidate_C1/Build01/Build.json --invocation Verification/Evidence/Review116/LTSNoSplash/Candidates/LTSNoSplashCandidate_C1/Build01/Invocation.json --out Verification/Evidence/Review116/LTSNoSplash/Candidates/LTSNoSplashCandidate_C1/Build01/LaunchQualification.json
+
+The validator fails on missing actual proof, wrong engine/package, any true or
+missing splash flag, changed artifact hash, or missing source/GUID/profile proof.
+It does not replace process-cold device recording and decoded-frame inspection.
+Actual Build01 failure and Build02 retry are separate immutable evidence epochs;
+the original Build01 source is retained beside its failure receipt. The actual
+candidate was frozen at H05. H08 changes only five Editor fixtures relative to
+H05; shipping source/art equality is recorded separately. A fresh H08 candidate
+uses the same public profile and does not copy the older private candidate.

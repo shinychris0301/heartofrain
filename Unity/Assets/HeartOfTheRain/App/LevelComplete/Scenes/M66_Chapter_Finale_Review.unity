@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ab12dd92ff59418d782ab3febbc775, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  assets: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
+  assets: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 2}
   state:
     currentLevel: 1
     coins: 1250
@@ -138,7 +138,7 @@ Camera:
   m_Depth: -10
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 3}
-  settingsAssets: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 3}
-  endLevelAssets: {fileID: 11400000, guid: baa1dd36c22252c0b300169d68c16fad, type: 3}
+  assets: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 2}
+  settingsAssets: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 2}
+  endLevelAssets: {fileID: 11400000, guid: baa1dd36c22252c0b300169d68c16fad, type: 2}
 --- !u!114 &1004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: 7cf56974eaec559e8b4aaf9817ecb5d1, type: 3}
+  assets: {fileID: 11400000, guid: 7cf56974eaec559e8b4aaf9817ecb5d1, type: 2}
   openOnStart: 0
 --- !u!114 &1005
 MonoBehaviour:
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: 28339e57b5b1539590ece5ba42fa17dc, type: 3}
+  assets: {fileID: 11400000, guid: 28339e57b5b1539590ece5ba42fa17dc, type: 2}
   openOnStart: 0
 --- !u!114 &1006
 MonoBehaviour:
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: 362a4ad1acb6564c8e67cc45efe97c01, type: 3}
+  assets: {fileID: 11400000, guid: 362a4ad1acb6564c8e67cc45efe97c01, type: 2}
   openOnStart: 0
 --- !u!114 &1007
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: e44fd453dc0f59e79aff3a4f16f7865a, type: 3}
+  assets: {fileID: 11400000, guid: e44fd453dc0f59e79aff3a4f16f7865a, type: 2}
   openOnStart: 0
 --- !u!114 &1008
 MonoBehaviour:
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 3}
+  assets: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 2}
   openOnStart: 0
 --- !u!114 &1009
 MonoBehaviour:
@@ -254,5 +254,5 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   home: {fileID: 1002}
-  assets: {fileID: 11400000, guid: f7a33712cdeb5629bde2f1ee2e6cdef1, type: 3}
+  assets: {fileID: 11400000, guid: f7a33712cdeb5629bde2f1ee2e6cdef1, type: 2}
   initialLevel: 50

@@ -30,5 +30,10 @@ namespace HeartOfTheRain.App.LevelComplete {
    settledAttempt=attempt;IsOpen=true;return true;
   }
   public bool Close(){if(!IsOpen)return false;IsOpen=false;return true;}
+  public bool PresentReceipt(int number,HeartOfTheRain.App.Profile.AttemptRecord receipt,int available){
+   if(receipt==null||receipt.state!="Won"||receipt.level!=number||attempt<=0||settledAttempt==attempt||IsOpen||number!=level)return false;
+   int after=receipt.completedAfter;View=new LevelCompleteViewData{level=number,chapter=(number-1)/50+1,coins=receipt.awardedCoins,stars=receipt.awardedStars,completedBefore=receipt.completedBefore,completedAfter=after,total=50,nextLevel=Math.Min(available,after+1),firstClear=receipt.firstClear,chapterComplete=number%50==0&&after>=number,hasNext=after<available};
+   settledAttempt=attempt;IsOpen=true;return true;
+  }
  }
 }

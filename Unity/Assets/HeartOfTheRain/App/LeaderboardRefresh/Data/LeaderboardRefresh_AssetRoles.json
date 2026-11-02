@@ -1,0 +1,35 @@
+{
+  "palette": {
+    "blue": "existing TA_Panel_Blue pixels",
+    "cream": "existing TA_Panel_Cream pixels",
+    "gold": "existing panel rims and painted medals",
+    "text": "#073354",
+    "muted": "#537187"
+  },
+  "roles": {
+    "background": "TA_Background",
+    "tabs": "TA_Tab_Track / TA_Tab_Selected",
+    "firstPlace": "TA_Panel_Blue",
+    "otherRows": "TA_Panel_Cream",
+    "scoreBox": "TA_Stat",
+    "selfRow": "TA_Panel_Blue",
+    "rank1": "TA_Rank_Gold",
+    "rank2": "TA_Rank_Silver",
+    "rank3": "TA_Rank_Bronze",
+    "playerMetric": "TA_Stat_up",
+    "teamMetric": "TA_Stat_star",
+    "avatarFrame": "TA_Button_Blue",
+    "avatarMask": "LB2_AvatarMask",
+    "teamAvatar": "current approved team badge",
+    "friendOverflow": "TC_Icon_More"
+  },
+  "forbiddenSubstitutions": [
+    "LB2 slate/cyan controls from the prior page",
+    "TA_Icon_Star for painted TA_Stat_star",
+    "emoji medals",
+    "flat circles for rank medal sprites",
+    "flattened screenshots as runtime UI",
+    "newly generated character replacements"
+  ],
+  "imports": "Retain existing PNG bytes and GUIDs; uncompressed visual baseline, no mipmaps, sRGB, no NPOT resize, max4096; profile production compression separately."
+}

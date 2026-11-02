@@ -1,0 +1,12 @@
+{
+  "version": "rewarded-shop-v1",
+  "enabled": false,
+  "completionMode": "sdk_client_reported_capped",
+  "placement": "shop_rewarded",
+  "rewardCoins": 400,
+  "dailyLimit": 3,
+  "dayMode": "player_local",
+  "utcOffsetSeconds": 36000,
+  "cooldownSeconds": 600,
+  "opportunityTtlSeconds": 900
+}

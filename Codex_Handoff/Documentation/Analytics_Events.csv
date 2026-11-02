@@ -1,0 +1,18 @@
+﻿event,trigger,fields_in_addition_to_common_envelope,deduplication
+first_open,Install/profile initialization,install_id,Once per install
+session_start,Foreground session boundary,session_id,Once per session
+tutorial_step,Stage transition or skip,stage;action;elapsed;transition_id,Transition ID
+level_start,Start grant committed,attempt_id;level_id;config_version;selected_items;moves;goals,Attempt ID
+level_end,Outcome durably committed,attempt_id;outcome;moves_used;duration;remaining_goals;tools_used,Attempt ID
+booster_use,Accepted item debit,item_id;count;attempt_id;transaction_ref,Ledger reference
+power_activate,Model activation,kind;combo_kind;chain_depth;activation_id,Activation ID; consider aggregation
+currency_change,Wallet ledger commit,currency;delta;reason;balance;ledger_ref,Ledger reference
+offer_impression,Eligible offer visible,offer_id;version;placement;exposure_id,Visible exposure interval
+offer_click,Detail or buy intent,offer_id;placement;request_id,Request ID
+purchase_start,Store flow initiated,product_id;platform;offer_version;request_id,Request ID
+purchase_result,Verified purchase state transition,verified_state;ledger_ref;amount;currency;tax_basis,Ledger reference plus state
+ad_opportunity,Eligible reward placement shown,placement;reward;opportunity_id,Opportunity ID
+ad_result,Ad/result/grant state transition,opportunity_id;result;grant_ref,Opportunity plus state
+story_event,Scene viewed/skipped/replayed,chapter;scene;locale;completion,View instance
+event_progress,Progress increment or claim,event_id;version;progress;claim_ref,Claim/transaction ID
+error,Classified diagnostic issue,code;subsystem;diagnostic_ref,Rate-limited issue fingerprint

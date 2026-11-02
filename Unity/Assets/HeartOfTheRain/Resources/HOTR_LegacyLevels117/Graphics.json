@@ -1,0 +1,504 @@
+{
+  "entries": [
+    {
+      "level": 1,
+      "config": "0aed2bec2e6b23fdc1476a78d84a3f0d293de1e173cce9b43036eb00b98312a0",
+      "surface": "M48Textures/2acfa2621a5c587ab1372d9065e07d39",
+      "mask": "M48Textures/a2ae0b77af045d4ba96ddf5896986224",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "c389f6ce4b4f6831462afdece5f380854a2e8cd76ebc8b2b4f22db2cd933d540",
+      "maskSHA256": "3f31f52a0bcd099d1a5a8ad6b28256950ab4e2aeffd4a70cdf497a7b004897e8"
+    },
+    {
+      "level": 2,
+      "config": "a92791d607b797d12a9fec5942595f54239bc771c419f29e03a9d4b1b49be733",
+      "surface": "M48Textures/4b6c8fd0624b57258241aac1b9a726fc",
+      "mask": "M48Textures/aac06b90b76e555ab25d7f4feb1b0246",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "2cb491218f93b5b3a3178ce739fe69416a44c3557e9f1968297f4673a985c096",
+      "maskSHA256": "8fd62af423c48174b6d26e18adc8424dc3b89062af7dc1df22c70f0cea4a686d"
+    },
+    {
+      "level": 3,
+      "config": "3143d80578655b6b4093038e7c2eae012d1a4c41811f742b23321f21bbabd90c",
+      "surface": "M48Textures/f301a4570e1f5bf5bad449bdc5ffe206",
+      "mask": "M48Textures/fc88f66fb4ed5af6958e2e0b9ab5ce14",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "0e08ca7249785a29541200690a1b44f59e0fc9f0a9a75195b8b4522070d11e39",
+      "maskSHA256": "6902be3c1373f9690722948e8a7ffbb5b41e4cc76257be70b834af881f0f3e35"
+    },
+    {
+      "level": 4,
+      "config": "fa83d4ed12f2550152059453685da02621bf0a31db5cd18d53395f42881ec835",
+      "surface": "M48Textures/bf14b162719d56f89983fbb8952440dd",
+      "mask": "M48Textures/12373dfaae9956c1a47691f3c9516e03",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "6d78f21907d767cba2102d3c952db6cf8b531336c067671741c15ab8312619a3",
+      "maskSHA256": "506c69e811b6e552d47e5625a931e9f59338353c085c781413c9934a12d4b7a5"
+    },
+    {
+      "level": 5,
+      "config": "469c20807a147c468cae7fac47f7fef765225acca8a022b2121994ecf3c59b9c",
+      "surface": "M48Textures/385592f4cdd753a894328ba2fcf8f34b",
+      "mask": "M48Textures/e68dd31b337f57379053a3d79fd1afda",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "9b53c0ea074dc04b1e9bb09d0c208afa898d18c5cc67c99ddaea197f4a7eb985",
+      "maskSHA256": "fc3eca293fca11e73a87e99466780523ce5f358d62b797c24a322453982645f4"
+    },
+    {
+      "level": 6,
+      "config": "3081d5bdd0ac62e9b9d147db5f20709655e8ec998fbd3b2c48eb74c7aa16694d",
+      "surface": "M48Textures/bc69bf0865cf588a8c1ac9e973eb91d1",
+      "mask": "M48Textures/a39d0b687adc52cebab7b749b00968cf",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "c85d40dfa65b94528508e7523bee1bcd822de4d8b65ed781747f1aef230fc3eb",
+      "maskSHA256": "a35c92be5388f7e073d2b83e100ecf985236a14dedc4c60823ba7192a840738c"
+    },
+    {
+      "level": 7,
+      "config": "dff88c3775620ed176bedcd649b15d470773e5872dc8271e274ee13e2e23928a",
+      "surface": "M48Textures/48cfc1a4f188567cb9885794f5231079",
+      "mask": "M48Textures/08e6a040bfd35bdf8c7e72f04ed78128",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "8f7389f96754fde91eae6c5250140076183c36ec1d14096be28116d075d6cf71",
+      "maskSHA256": "2361c52f016542d5a47d2fdd0fdb9571e8dc378a7a3b04cdf3251b48a9105cb1"
+    },
+    {
+      "level": 8,
+      "config": "0ca9dfdead9a9fd9ed2b53938090b5437b8d40791122760cec3a9899bf476aff",
+      "surface": "M48Textures/dfb5e85923065e26a1ccf049d6f20025",
+      "mask": "M48Textures/70f7ac1e898a5a52a573a00ee825eec6",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "170b176227c671f1c93638a14551c0dd36fae7a371d93957e24d9a9d3eeea47a",
+      "maskSHA256": "83d68a6f8c6ddfc14ec91ed1e0285e1e1d4df33c77b2d0b9cda50f904aff2c55"
+    },
+    {
+      "level": 9,
+      "config": "b9710bbfb36cb1ebba9d277583ddc96367528a68e35553b99d6bffff67a81544",
+      "surface": "M48Textures/4442324f755355b6ac9539691a8ded87",
+      "mask": "M48Textures/13fbbf119e185a5fad7e104d5519d82b",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "7aace93e190aa68d78b35a876d8df9c06f052dafbd34f47c75c34fa6f72eef46",
+      "maskSHA256": "50353cf7b989497700319f0d76bdd2b219a3777888b88870bdd503c2ec057e44"
+    },
+    {
+      "level": 10,
+      "config": "fc0b086621e91ebed45b8333a306023c00651c31eabcadf15ae3bbe67c68be22",
+      "surface": "M48Textures/5c0c1eca7e935bd99926d09da07cb6c2",
+      "mask": "M48Textures/e93e95c190625b6dae53cba3a8cecfb8",
+      "width": 606,
+      "height": 606,
+      "surfaceSHA256": "e9170bf83484a0f08fe3405580bdf252e2b6b7a0c49af5bbd093c26963300455",
+      "maskSHA256": "03be98faa95c7c64954e3228bb4b9ec3bfd9ef26e9626bc47fe7cc4b40237a70"
+    },
+    {
+      "level": 11,
+      "config": "6f84e15bf2223295e15604d7c81e2fdfe7872380a9474ca6d0ce89319eb44436",
+      "surface": "M48Textures/b0b938c40bb0504195039a68ac5e34b4",
+      "mask": "M48Textures/5053ab4d6474512dbe29b1181428e000",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "ddbfc3160647d0857fb8cba0050eee3e3a8ac8cef32b92f57eddf38ca524fa9e",
+      "maskSHA256": "6f741fe5bd3b4e8eb177426ef237fdef53086015e9135d020a52b8b01a66fe78"
+    },
+    {
+      "level": 12,
+      "config": "353db4264614ace2a0a33624d8e7218aca9732b1e2d82018e95ecf946489df16",
+      "surface": "M48Textures/a46a52b61e6f579b9b56a6f3e7bcb0fe",
+      "mask": "M48Textures/b6499cad75c154bcbb50f16d383b4189",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "0e5278764fa45d6bc5d5f68371a49a643c9b411b2bcccab7c379d32de59b9225",
+      "maskSHA256": "2c52da31770cc02fd9947f8904f245e0d731dcbd938f3f19508ef6b1b2ab3290"
+    },
+    {
+      "level": 13,
+      "config": "7945cd3470fa39d9d4482c9c8475b3deaaabc451455a995ef1abecccc0b9a52f",
+      "surface": "M48Textures/613f407e264559eda92cf048da797db3",
+      "mask": "M48Textures/e66b749d8c195d8992471e1bcc4b4ecd",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "6efe2f1113c1522ed2c22e2a3cf99bb10cea4993846307a325b6d70f8bc9629e",
+      "maskSHA256": "26fdb96b5ca9915860f8b0cb900a8bdc8adbda1998a014e0a6b9bc47daa54071"
+    },
+    {
+      "level": 14,
+      "config": "235abbbf9b7cfec2ac47c245bfcb87ee668d30f2b06627baf00a4a3db5e1a872",
+      "surface": "M48Textures/6eb6580afd9f589d90046087d9008afe",
+      "mask": "M48Textures/e7d411ce0ed8517dbc93049ff560105f",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "74d85d2f78b119569c3d63d2a276d8b919d10dc6bed27836152aa5aed0cd0417",
+      "maskSHA256": "678c927ce278b8e069641814cea59eab58620a2880205bef74ae8ff5f7b2f51a"
+    },
+    {
+      "level": 15,
+      "config": "dcefcb2d122ad155050e690e383426884da0754ce0c8f405a0ed1958492d9fc4",
+      "surface": "M48Textures/8e5282fd5caa586e91edb5750adbb32f",
+      "mask": "M48Textures/afca686b16545eca9d0a5257ce0f6c56",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "042d05f1ea34664ac036d0f0c8afca2ccbc0ce0c92bfb28723290ff4c8dd1e5f",
+      "maskSHA256": "bd60984ff76f2493d5fb73b24c475b9e50178c2ff0f04968a5bed6c12f3be9dc"
+    },
+    {
+      "level": 16,
+      "config": "353d7f6dc490c10d44cbabf3559e21ffeedd25188a2e099d2d5cf536e8f00a95",
+      "surface": "M48Textures/8cb25fcd37f65b03b5b1ca97c705b475",
+      "mask": "M48Textures/9d7443ebe02e5f95afa2a6e296f4fedd",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "c420a7f8cfb73140d2718feb119e7ba151146051bdf188ec81cc1f923034d26b",
+      "maskSHA256": "1d0c445b9dad48174cc6b1feb31fef7b58a13d8b192daa9828c9ad17986026bc"
+    },
+    {
+      "level": 17,
+      "config": "9b196ae5a76366a1f9c9ba1ac2b6c7ec882ad690524471f2c07ea057f0b8323a",
+      "surface": "M48Textures/dd596a05a6de5123828e7da1afa287c7",
+      "mask": "M48Textures/f56403e04d0251479a57f541126f4837",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "99dfc9a789d5421466ab0785a9c1ae650b33ebbcddaeab83a0b2a1cc4bf5e0f7",
+      "maskSHA256": "bb3ee42b0d596279d66dbf9b260c508c71f128b41b88a3ebcf98fcd0c0eb8d25"
+    },
+    {
+      "level": 18,
+      "config": "87bf9f7c1d3f26000f8729d470ef15fe1c75478c3f9d0c99d07ccfd3325be217",
+      "surface": "M48Textures/b72af46078b8529280c8cd288a69b12e",
+      "mask": "M48Textures/db985d6d6af1566986c628ad58ce82dc",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "0c6d29adcbbe77214a5b14d06205109dfb9e2d8ba648d2c03af6372a67230e2c",
+      "maskSHA256": "fa8b2b321bee0314233ee7efdb6aa373f72a137c56f3fe7436388204808069bc"
+    },
+    {
+      "level": 19,
+      "config": "8f4bbd9e1e30e5db9e69841f93f7ff1809a1e0aaa730ead22cfbf475e3ba648d",
+      "surface": "M48Textures/b00c971a32b45d4a86d323679c61abe1",
+      "mask": "M48Textures/9e4a39cdc2a956b28c7cf8df5ef2ea1f",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "ba40ce840e8905dda15cd00752a22296410a8c367341d3bcdc9fba99966ebefb",
+      "maskSHA256": "9ac32cfbdab4c21bfcd73e89f40df40f258f2ec4cc4449680c838cdccaf49435"
+    },
+    {
+      "level": 20,
+      "config": "b156b9de2882ea23a03d111956f3765bd21ce9b2cb13fe7b1e895c29bb3d14de",
+      "surface": "M48Textures/9351814511775e2aa6912a3cae2fcc8d",
+      "mask": "M48Textures/3967a494e7fc5cd2aa6486a600daa425",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "10bfd28c2298eedc5f22e91e857499fb2f691accc2a80c1b61881489ccea921f",
+      "maskSHA256": "329278e3a19a7ec9ccc88c1703c43892a521343b5d3822d46087de0168133015"
+    },
+    {
+      "level": 21,
+      "config": "e0fa18dd3bb7c56784b86cb0f6fc07316348c8e331e93a7013947f0f958151a0",
+      "surface": "M48Textures/de3a63ca97125b6083f969745b4e86b1",
+      "mask": "M48Textures/9834718a8a2a5f53887ece4d022fcf4f",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "f5c026080728e00cc4ff9a1e2cea22bd1e5ddbf9eaddacb2c6f2ce7a8019ab1c",
+      "maskSHA256": "da720cc6422152193971644ea6e960a662ae1ba489adbc3d1680aefa769af45d"
+    },
+    {
+      "level": 22,
+      "config": "183f9d6a7c39c7ae8de0424f45a777e3f11cb601d0525ad76910df628916aaeb",
+      "surface": "M48Textures/3f77783871d152daba8bb8b7f861f48e",
+      "mask": "M48Textures/1a09751eb9435d37a5c260b0570de991",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "60c396d5168090687f2330e3be240818ed3b3c8014d1f3cc15b43b2ceea958a6",
+      "maskSHA256": "c0ed486a03268b6efd40992f8087d5946841a20f45be2d3e6189db57c95cc7cf"
+    },
+    {
+      "level": 23,
+      "config": "f6c097d72c57b4dbcdaea63858d6957d350e5d28eb90fb64a202f8fe80a1c227",
+      "surface": "M48Textures/a706784583425969a7253112464325a3",
+      "mask": "M48Textures/97043b5a00705e139be463ee0fb991a0",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "152db4da01c1de062435fc26df8cb6156204b7b92b89d322da93d3ad19ed619c",
+      "maskSHA256": "55ed8c89cb8ed20b8477b31495dbe1dc3406d5e38fd260ccbee9d4c34faffbd2"
+    },
+    {
+      "level": 24,
+      "config": "1d125a6c6aac29ede01d880984b8896b023e7c6077d80133ef322265d33eecd9",
+      "surface": "M48Textures/66666c961b0a5adbb97e71a395636ba4",
+      "mask": "M48Textures/819262daa8915a74adfbecf136a3f419",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "bcc887aa31bcff9e1b6417bb8a01d0c10e70211e587f5dadff127cd6d60e8fc2",
+      "maskSHA256": "7c4a4f0cf715620f32d64d10e10f0013ab3d2cdf1f09c0d8b301c8dc4a9f2911"
+    },
+    {
+      "level": 25,
+      "config": "c498b138361582c840fd69a625ba7c51faaab773901ce7ba66a5273b9cc4b1dd",
+      "surface": "M48Textures/1f26894f0e625bfcb1fcd0026ba907b0",
+      "mask": "M48Textures/b1f0b81f0f1c5203b2dd5651a7ddd1db",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "f99dbfb5299b16f61becbbe0ada48feba94854ee8444b49a1646037b1977750b",
+      "maskSHA256": "e8d09ec5fac5d9ee774b0f73c8e59d1723a9ccf6197e3c20d7646758071c0b3c"
+    },
+    {
+      "level": 26,
+      "config": "f6b0f98f72940750f61a21d20539a130ba5e709ac81ddac82279f49c3fb6ad2a",
+      "surface": "M48Textures/8f675c82e89d58d2839eaaf10336056c",
+      "mask": "M48Textures/f636b36624b354e7a042c1bd9984ce6b",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "a9acf890954236c2202d14cea85b641f19ebd0e34916441233791567e8e5b190",
+      "maskSHA256": "6d7e7e31276ff7d4fd7667602de8fb55d35521bc7d326c08934ad70058ca92c4"
+    },
+    {
+      "level": 27,
+      "config": "0cc659a6ff3173f79df402870fe24ab705d62c9d419e35892baa26e881777452",
+      "surface": "M48Textures/3ba7efee008a576dbfc248c5f8dae4d4",
+      "mask": "M48Textures/1b6f4dabc3d35deca23becba6645d9bb",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "0d6c4e58eac0db2e698432a2b7131d9d4e98fdd212d568621cc4221a9e640ec2",
+      "maskSHA256": "c60742f867ff7b0638c01af38cbab065b9b3ef1862057d99ad1b2a86f96d52e5"
+    },
+    {
+      "level": 28,
+      "config": "14cf0d9288f27b49292016832101beb88d9afef6c07d6cd54d402421d21730f5",
+      "surface": "M48Textures/4be6566551c2598bb2bd0865acf88805",
+      "mask": "M48Textures/e423da70d9c85e54a01a00f31554c023",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "e723a20b87f2d1cff89551e333fc7df5e182f669a7a0199e2027208e1453aad2",
+      "maskSHA256": "eba75271bce420c14156a64bd3dae3cbeb60e7d642ba6309bc45ef81f44c969e"
+    },
+    {
+      "level": 29,
+      "config": "3838293d4c1a35b8d95ef70c8d250f57423ba74da93408aa3a05435cdcbff49a",
+      "surface": "M48Textures/ffacf1faaaf5540c8081c0f8e36dc93c",
+      "mask": "M48Textures/874c4a864d225b77b81242ee4c408fa1",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "fa55129f7cd4b61165c0e4c237bb57e2b8198afc84e36c006f2576fa21cff7e3",
+      "maskSHA256": "d09009ffe3e10d934e338677d9e8d21c44a24ea6711a892eba73c64f01a54111"
+    },
+    {
+      "level": 30,
+      "config": "0f3e962d588dc34c97a2ea89a0149fce70fecfb3dcedcea1a7d80259239d0835",
+      "surface": "M48Textures/51cc4d67add756bcbea723c384d038be",
+      "mask": "M48Textures/f734e0efd6b451b2bd6cc78fbd781072",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "d9681c16c98adca66c8ea9dc0f3d7eaa8261abc8bbe6d312064c0dd5b13bd551",
+      "maskSHA256": "0cfb1fbb9952887cf6a00c4a452117800c379f6a46294a027e085bf03a6dcbd1"
+    },
+    {
+      "level": 31,
+      "config": "48dfb1c8a3ad25f1ada7cc447ae26f73e98cdefabdd43d9f5e2c0319c5f86ea9",
+      "surface": "M48Textures/428893d91b375fe0b5f46bde0767e91f",
+      "mask": "M48Textures/d6ca5ae91b4656dda34c1c72751a9e4f",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "f981fdbb65a6bf23a3119be92294d6beb387b76faaa57e07fd09fb0919d0f238",
+      "maskSHA256": "7473d82028e3519dc6f5b626e670782d914c626eb6772720e03fbe1e7cb1c033"
+    },
+    {
+      "level": 32,
+      "config": "35819bcf51fcdcf3ba5b6593578998be237aa5a71c02e234466e2199eb690471",
+      "surface": "M48Textures/0210148e5851593baf17fd93ff21f2cd",
+      "mask": "M48Textures/28214c1dbbdb507d9568467e5cdc055e",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "0a7109709530c7f3286e7410e3ba9ebf22ad5c0fcae8d6938c7ca94a86468992",
+      "maskSHA256": "ec5e4f70836aaf5a9620cb0c0e1220664c81736c98042c0bf41b325b97f3eeb3"
+    },
+    {
+      "level": 33,
+      "config": "8f561b648fbc22e758fed0d19956abbeba8103ce3fecfb0fb00ad4c8d347483e",
+      "surface": "M48Textures/6e23b9b3d51d5eadbc68b388871afcd9",
+      "mask": "M48Textures/e6a19b6caf8157fc8400c7bf5fcfbb27",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "c6511dda81ef9083f3d7976d5e7327e0511dea5661648c8080523f91dfdde898",
+      "maskSHA256": "e0ead4f5b07142a4f4b67b66537fb0eee9dd3bc3647a735aa6e963922ee3c0ad"
+    },
+    {
+      "level": 34,
+      "config": "c5e3562225c4a01c6117270ecb7177b991df9cdd85382f29181c1573372b29d5",
+      "surface": "M48Textures/e312be5d3226525aa46046a23f92d1d0",
+      "mask": "M48Textures/8f63b7f9eca85a5f8da2265ed2b5c93e",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "d04a59c78267df935cfc8ebda4957200531dcef4528ae93bad683d3eb664e570",
+      "maskSHA256": "bc5294ad215068b2b948ac584859f2f4579f730fbd75abfb2a99db1a863d0e1c"
+    },
+    {
+      "level": 35,
+      "config": "928fdc6943a088d3db7aa7dd4ac46a001341b02d7ea5908291eb1c18fe8bae9b",
+      "surface": "M48Textures/737953340fc55363adb2e35c50f86b55",
+      "mask": "M48Textures/9c96fef293815a9ba9a1e817a55e638e",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "547818e6bf2e8e89dea2332c35ef6a282c23d6bc697f41bb443d38134995a4d2",
+      "maskSHA256": "6993a3a933be002daee33760a11bb65d9fc365795b03dad9a5bcd8cfe4288552"
+    },
+    {
+      "level": 36,
+      "config": "19792b0eec55c914d5a19ab6e0246a206c4bfa0f72942cade894b21191296888",
+      "surface": "M48Textures/eda2a76158b7578ab1b21e1934b7e0b4",
+      "mask": "M48Textures/f1328ba88c425811b2ce6a6ca76d4e13",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "1257b4238973cf3bf450a0e783d89f47e39aa1959dcf5d9726e2ecea1d48556b",
+      "maskSHA256": "f4e73681930ce1ec648a3a5ec91a70ad95163bb597c15569c201da3db44c2fae"
+    },
+    {
+      "level": 37,
+      "config": "b193c998dd81e299004e9746ba29d5a99f7d12fba8f7d22262b131245c15d124",
+      "surface": "M48Textures/cd59435b57ef51c8959faa4406d575b3",
+      "mask": "M48Textures/01f1f42d545d565ba7c1fd1c3e836b76",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "c73fe253541a28d8312d578b364df7c3983447ad986176a0d5d24e2e68d98f33",
+      "maskSHA256": "c7c82af719d7426d7bae591e1f812577bc74df4ce3c3d2adda86bcb45f9c09d1"
+    },
+    {
+      "level": 38,
+      "config": "b6be3c9380ed806f12d7f42021ad3420634677255b0e12d12dd25516a143038d",
+      "surface": "M48Textures/a28350ca500e54bea95bde414637e67b",
+      "mask": "M48Textures/423ed473eead53f6a8d9ad256350a348",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "f5612b05c95bed403b1dea49d160258deb1a80f5b8e51a4251f129d9dcbfc965",
+      "maskSHA256": "14ebb840b7b49759f4e5818de2e99496d3f0f62338bfa2079646466b2d5dbbbb"
+    },
+    {
+      "level": 39,
+      "config": "3f4b6f81921fa7a274effffceb61199d22eae6be4a0f16290b3aedc5978afae1",
+      "surface": "M48Textures/064248d6842855dbbbd10789b59aad57",
+      "mask": "M48Textures/4a433784d65d558f805371e02dcf6b11",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "da144be059b427c18eb2fe01be888fb9f788d3a9bd9939081aa505ccbe61be70",
+      "maskSHA256": "a3c496b940eb9bc50289d8d7da56dd689e20bff30b7f861490517b6ae015b586"
+    },
+    {
+      "level": 40,
+      "config": "4f65c81a5a2f6df82a5958b116961c4431105bc4d0bd782f6a5a05aae2073eee",
+      "surface": "M48Textures/b23b293f2044536e93ec212e47e88376",
+      "mask": "M48Textures/cda3c302bb595f65b80a6ca719f7df0e",
+      "width": 606,
+      "height": 734,
+      "surfaceSHA256": "723d639eb0d8ebe50b656dd3d20668057759ace4636738e3ac7474657179822c",
+      "maskSHA256": "d6721b578d2b66209b2da111aec7d4fb177e213a05879a4d17590c1f5852fdfd"
+    },
+    {
+      "level": 41,
+      "config": "62372b62db1d100935ea4b22bee4d4e8da38e5d6adcfcdaccfe7ae3b4c9344db",
+      "surface": "M48Textures/a8aae9ea9dea541c938167c91bb4566e",
+      "mask": "M48Textures/92f64df30a7850f1ba3b964280cd6e2e",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "648c7160f3c91c7e933c788b626a76086f53ce784b62bc8ae71aaaa5a3709049",
+      "maskSHA256": "a27d0049cf3a56ee46f58ee6776d71fd378ef63e0d68005167052c9837bd9bf8"
+    },
+    {
+      "level": 42,
+      "config": "7fbffafcaea830522160aad751e0016e593fc67317bfefd094cd0c7df63dc5d3",
+      "surface": "M48Textures/e7c01b6a1b5b5ae9bd92b46ee2c881b2",
+      "mask": "M48Textures/ce456d38cc47582e9bffbc4d48b6937e",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "368a623ba51e08b590511544f9ec9973372bb501d98de3d2554e50e1a465e08f",
+      "maskSHA256": "de4ddaba54e9881e6a67f534f221bf7d2e18cc3ca84a0abfd640c6d8b4bc98c2"
+    },
+    {
+      "level": 43,
+      "config": "b2467fcd4036226036e17263f1320177691d4248431b7ceb1f87820d653c2a45",
+      "surface": "M48Textures/d06e2551d5ee53e78f55cd96471a069e",
+      "mask": "M48Textures/ba65cc55858556ea91ee6219332e8fab",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "e8a2cfc7b6223d97c87babb07601feaabb26bb841bfae79140c42ccd1f3017ad",
+      "maskSHA256": "26e2fc7a719c1d2fd4add41954a0d74554236faae55375e5044a3ccc74451116"
+    },
+    {
+      "level": 44,
+      "config": "436252a952fb6d163cb17f918382f220722d8c7ee56e54e0d23b0d1b0bac8181",
+      "surface": "M48Textures/50ffd3556a89556bada62c9455c5c2ce",
+      "mask": "M48Textures/f6cda5567018590588165eb70678e34f",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "f2a2d1ec643ed39f6d9945d566b3512846431b6b34e68eab7f16ad1987b2edf9",
+      "maskSHA256": "09476f87e648e5ebaa33f9d9b4d9610e3c023279097e4ce124a130c60406f668"
+    },
+    {
+      "level": 45,
+      "config": "8e3f420acc7af594f310e6ab7512efedd4bef3db8252c40ac9bdd16911c5deb2",
+      "surface": "M48Textures/a274a343407850b283f9490cacbd6221",
+      "mask": "M48Textures/bacbc60789765121a233789d77fb9cc0",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "ce2f32029fbdcf73336c9f1183328feb0214fd970bd308f981029c25a655a8ed",
+      "maskSHA256": "bfdff16fc8f5fcc200bf60c9d05342a87c755c610d86ca0a23625e4adce5f621"
+    },
+    {
+      "level": 46,
+      "config": "80251ff2219ed212a6560b8f0cb4755e7c1674d158183693362c2a3df93234cb",
+      "surface": "M48Textures/dc058af66c145731b097e2de0fbcbe2a",
+      "mask": "M48Textures/8330cd99dcb85341a353f749bf70685b",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "6eb6de66b586305bd1cc9a122fdfcf53d52fd8732bd563bc827b44c1170acdbe",
+      "maskSHA256": "0c692abdf7cb53e042b928c04249f2be5f1b45b2c464df16b5ca8b626166bafc"
+    },
+    {
+      "level": 47,
+      "config": "4034b5a37c1ec0b307e3fa83b7115095783abb43e82fd7db48be89c6748d3a31",
+      "surface": "M48Textures/9c96f8f165f85da4a5d0e7e57c3b647c",
+      "mask": "M48Textures/05f332971c44580c8ceae53addd25730",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "9008ef33a5d0cd5055ec1df7cad04178bd9caa983468988f7845363d63c667fa",
+      "maskSHA256": "45f303c7fed413e5d50a4a40681c05240f022775933999d5e0728f5f512e676f"
+    },
+    {
+      "level": 48,
+      "config": "3f34f58a87e5aa0cffb096f434961c957267a427d54ae0cef63fc26f45b7ae57",
+      "surface": "M48Textures/1d84871b18e153ecbb165fe4095f6664",
+      "mask": "M48Textures/a999c66ecfc757e897c08e3edfa537d2",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "fdffbf35bc399faf108a75afcf0d61cee8e77faa723939645cc7ae4583983e55",
+      "maskSHA256": "0f1cc8d41f40ad8224ceda98e372be3bda45656ebeea65bbd5d445bbff0a289c"
+    },
+    {
+      "level": 49,
+      "config": "fa5d291949e32fc0d5a80ec23c2500d226269e8294ab48fd91797a840784a26b",
+      "surface": "M48Textures/5070fa2293d85dacba466c62aae491dc",
+      "mask": "M48Textures/31acec01ede05eeba426f1f976381bda",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "b883e8141aa4d4d082c29b83be591ad2d75750052eadf716d96a67c5caf91901",
+      "maskSHA256": "837a79ea776907ecc7bc9db380bcd9c4f745921c882378f424a566b306f51770"
+    },
+    {
+      "level": 50,
+      "config": "b3d3d3e864f3062571849bde236a09700dfd50631c9dc2b3415acf556ffbf5f6",
+      "surface": "M48Textures/f342448b0fc450c883b62d3f847d07b4",
+      "mask": "M48Textures/088fdb883d5b5bd4b43e509a93741f50",
+      "width": 734,
+      "height": 734,
+      "surfaceSHA256": "8d52f14161735586d16327390f88b29ec0cca7ee1008f5d9dcf33a13fbf83f08",
+      "maskSHA256": "424c03d9843772cd0937d39540fda87732b406e4bedbd035ead2831489c288ed"
+    }
+  ]
+}

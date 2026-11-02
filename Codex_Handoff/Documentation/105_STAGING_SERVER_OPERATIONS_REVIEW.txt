@@ -1,0 +1,112 @@
+105 - Owned staging server startup and recovery
+
+REVIEWED_WITH_OPEN_ACCEPTANCE_GATES. The owner approved the next preparation
+step while hosting/domain remained unconfigured. This checkpoint implements
+and locally tests the Python staging startup and backup/recovery workflow.
+It does not deploy a public service or change the installed Android app.
+
+IMPLEMENTATION
+
+A strict nine-field non-secret descriptor selects staging only, an owned HTTPS
+origin, stable deployment/scope, private local data directory, loopback port and
+optional VK/replay configuration. Unknown/duplicate fields, malformed types,
+network/source-tree paths and invalid ownership are rejected. The checked-in
+empty-origin example fails before initialization, database or service creation.
+
+Initialization writes owned metadata, locks and disabled provider configuration,
+not a database. Initialized permits exactly the first database creation. Ready
+with a missing database and Initialized with an existing database/WAL/SHM are
+blocked rather than silently resetting player state. RestorePending cannot
+start. Stable ownership does not pin optional VK/replay/port settings, allowing
+later approved configuration changes without replacing the database.
+
+The launcher holds a lifetime OS runtime lock, a short control lock and an owned
+127.0.0.1 socket before creating the database. It uses a controlled environment,
+explicit managed/social services and unavailable commerce/ads/notifications,
+then restores its caller environment on exit/failure. Worker pin checks do not
+execute the worker or establish gameplay/provider acceptance. Each service run
+gets a new owned rendezvous; old interrupted-run records remain history.
+
+The ops wrapper delegates the existing SQLite backup/restore functions. Online
+backup uses the control lock while serving retains its separate runtime lock.
+Pending/Ready snapshot receipts bind origin/deployment/scope/root nonce to the
+exact immutable backup bytes, size and current schema. Restore validates that
+proof first, writes into a fresh owned RestorePending directory and marks it
+Ready only after independent validation. It never overwrites the active database,
+edits a descriptor, activates a replacement or discards failed/foreign artifacts.
+
+App configuration export writes only the six public checkpoint104 fields to a
+new external JSON file. Server paths, keys and optional provider settings never
+enter that app payload. No active endpoint is committed or imported into Unity.
+
+VERIFICATION
+
+Focused01 passes 52 distinct Python tests: 17 staging, 12 new ops, 18 existing
+operations and 5 readiness cases. An ops test-only addCleanup improvement was
+then verified in OpsFollowup01 (the same 12 cases, not 12 additional distinct
+tests). Existing backend runtime/model files remain unchanged.
+
+Flow02 passes 116 checks over 29 real loopback TCP requests using the actual
+Python launcher/ops CLI and disposable SQLite data. Two real P-256 managed
+guests create/join one team and send one message. Exact command retries and an
+unread committed chat response recover once after crash-style same-database
+restart and validated restore into a new directory. Live backup includes a
+committed WAL change. Both players retain 1,250 coins and one genesis each;
+the restored dataset contains one team, two members and one message.
+
+All three actual server handles were observed terminated, all owned ports
+closed, and no service remains running. This is crash-style termination using
+the owned Windows JobObject, not a graceful-shutdown acceptance claim.
+The synthetic HTTPS hostname is metadata only; no DNS/HTTPS request was made
+to it. Worker, VK, payments and ads were not exercised. The exported app config
+is accepted by the unchanged104 preparer without creating a candidate/APK.
+
+RETAINED FAILURES AND ENVIRONMENT GATE
+
+Flow01 reached 50 checks and live backup but asserted listener closure before
+Windows asynchronous Job termination completed. Its failure remains retained.
+A separate CleanupRecheck01 confirmed both exact PIDs and the port absent, with
+no follow-up kill. The corrected harness holds the already-owned server handle,
+waits for its termination, then polls the known port. Flow02 is a fresh run.
+
+The actual PowerShell -File probe was blocked by this PC's execution policy:
+running scripts is disabled. Python was not reached, no data changed, and no
+execution-policy override/bypass was applied. The PowerShell wrapper remains
+blocked/unverified here. The existing Python CLI is the supported tested path;
+the current guide documents it. Old guide/test/harness source snapshots and
+their original evidence remain bound to their own epochs.
+
+FILES AND HANDOFF
+
+New runtime modules:
+Backend/hotr_backend/staging105.py
+Backend/hotr_backend/staging_ops105.py
+New tests:
+Backend/tests/test_staging105.py
+Backend/tests/test_staging_ops105.py
+New optional wrapper: Backend/Start-Staging105.ps1
+New public example: Release/RuStore/staging-server.example.json
+Current operator guide: Release/RuStore/STAGING_SERVER_OPERATIONS105.txt
+Checkpoint tooling/evidence: Verification/Tools/Review105 and
+Verification/Evidence/Review105/Comparison.html.
+
+All 101 existing backend inputs and all 5,482 Unity inputs remain unchanged.
+No engine/SDK, artwork/GUID, gameplay/economy, signing, original database or
+ordinary app-profile changes occurred. Backend/.local is not adopted or reset.
+
+REMAINING WORK
+
+The owner still needs hosting and an owned domain/DNS/TLS/reverse-proxy setup,
+protected durable storage/backups and a supervised service configuration. The
+current approved full gameplay worker requires Windows. Social-only staging
+does not establish playable server levels. Real VK needs its client ID/callback;
+payments, advertising, moderation, privacy/retention and production operations
+remain separate release gates. The backend still rejects production mode.
+
+The installed101 APK is historical and was not inspected or changed. Actual
+configured Android builds, physical two-user tests, TLS/bank/provider return,
+load/capacity and production disaster recovery remain unverified. Local snapshot
+rehearsal is not proof of recovery of later payments/deletions after a backup.
+The approved isolated Unity6 startup/build workflow remains separate.
+
+fullyVetted=false; productionApproved=false. No all-feature/device certification.

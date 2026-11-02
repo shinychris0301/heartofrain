@@ -1,0 +1,38 @@
+VK ID authorization-page diagnostic request — 1 November 2026
+
+Application ID: 54867814
+Application type: Web (owner confirmed)
+Application status: Active (owner confirmed)
+Registered redirect URI (owner confirmed):
+  https://api.novamind-it.ru/v1/identity/vk/callback
+
+Observed on a physical Android phone:
+- Opening the application's VK sign-in action reaches id.vk.ru/authorize,
+  then displays VK's generic “Error loading. Please try again.” page before
+  any consent or callback.
+- The same application authorization request fails in Chrome and Yandex Browser.
+- The VK ID home page loads in Chrome.
+- A separate browser-only diagnostic with the same public application ID and
+  redirect, a valid-length state and PKCE challenge, and the current VK ID
+  Web SDK authorization fields also displayed the same generic error. No
+  account credentials were entered in that diagnostic.
+- A read-only browser network capture during a manual “Try again” saw the
+  generic error page and a navigation abort, but no visible HTTP 4xx/5xx
+  response or provider error code. This is not enough to classify the cause.
+
+Please check the provider-side authorization rejection for this application:
+whether the application and redirect are enabled for Web OAuth 2.1, whether
+any domain or publication/verification setting is incomplete, and whether
+the authorization endpoint is returning a request-specific error or incident
+identifier that the generic page does not display. Please provide the error
+code or safe diagnostic identifier and required configuration correction.
+
+For correlation, use the approximate test window 1 November 2026,
+17:40–18:20 UTC. We can supply an exact timestamp and a screenshot of the
+generic page through a private support channel if requested. Do not request
+the player's password, authorization code, state, PKCE verifier, access token,
+or a full live authorization URL.
+
+Project-side checks already passed: 71 backend VK/provider tests and 253
+Unity 2022.3.62f3 native provider checks. These use simulated provider replies
+and do not establish acceptance by VK ID.

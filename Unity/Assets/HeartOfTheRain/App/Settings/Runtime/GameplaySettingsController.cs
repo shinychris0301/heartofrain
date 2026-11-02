@@ -54,6 +54,9 @@ namespace HeartOfTheRain.App.Settings
             if(!endSession.Confirm(home.State.lives,out decision))return;
             leaving=true;game.ReviewInputBlocked=true;Hide();music.Stop();exitConfirmed?.Invoke(decision);
         }
+        // The flow found the attempt already won while the exit was confirmed:
+        // the level runs on to its completion, so the exit is withdrawn.
+        public void CancelExit(){if(!leaving)return;leaving=false;game.ReviewInputBlocked=false;if(music&&music.clip&&!music.isPlaying)music.Play();}
         void Handle(string action)
         {
             if(leaving)return;

@@ -1,0 +1,97 @@
+CODEX HANDOFF — CONTINUE MODAL R3
+
+TARGET
+Correct the existing No Moves/Continue overlay in the current app. Keep the approved R2 artwork.
+Do not replace gameplay, board models, existing shop purchases, or global UI assets.
+The current branch was not available to the package author. Inspect its actual classes before adapting the binding.
+
+1. IMPORT / GENERATE
+Import No_Moves_Assets_R3.unitypackage. Requires uGUI and TMP (target API: Unity 2022.3 / Unity 6).
+This package contains a generator, NOT a prefab claimed to have been rendered/validated by Unity already.
+Run Tools > Heart of the Rain > Build Continue R3 Prefab.
+Generated asset: Assets/HeartOfTheRain/App/NoMovesDesign/Generated/ContinueOverlay_R3.prefab
+The prefab is saved INACTIVE. It contains its own overlay Canvas; instantiate at the scene root.
+Bind callbacks and call Render with the real quote and wallet before showing it. Keep one view per active attempt.
+Remove/disable the legacy Continue UI only after routing the replacement; never display both or duplicate life listeners.
+Do not change global CanvasScaler, shared Primary.png imports, or all UI Image scales to fix this one view.
+
+The generated Canvas uses phone logical widths393 portrait /852 landscape. The app's device profile sets
+ContinueCanvasProfile.tabletLayout=true for tablet layouts (768 portrait /1024 landscape logical width).
+Avoid DPI heuristics. If the app already owns responsive Canvas scaling, remove the generated CanvasScaler/profile
+and embed the overlay under that configured full-screen root; supply the same logical dimensions as Layout_R3.json.
+Safe area is taken from Screen.safeArea. Change sortingOrder=200 to the app's existing modal layer if needed.
+Use the existing EventSystem; do not add a second one.
+If the project uses custom assembly definitions, reference HeartOfTheRain.NoMovesUI and HeartOfTheRain.ContinueReference
+from the integrating assembly. Editor assembly is editor-only.
+
+2. FIX THE OFFER BUG AT ITS SOURCE
+Search the integrated presenter and quote service for CanAffordContinue, canContinue, hasOffer, GetQuote, wallet checks,
+and the literal 'No extra moves available'. Separate offer eligibility from affordability.
+WRONG: quote = coins >= cost ? GetQuote(attempt) : null;
+WRONG: available = quote != null && wallet.Coins >= quote.CoinCost;
+RIGHT: quote comes from attempt eligibility / continue policy, independent of the wallet.
+A quote-fetch timeout, offline response, disabled/unconfigured client fixture or null while loading is not confirmed
+unavailability. Render Loading or RecoverableError; only an explicit policy/cap response renders ConfirmedUnavailable.
+Do not enable Data/Continue_Config.example.json for production merely to make this screenshot look correct.
+
+Typical binding sketch (adapt to the actual lifecycle / authority):
+  flow.SetQuote(validatedQuote); // Do not discard this because coins < quoted cost.
+  view.Render(ContinueOfferViewModel.Ready(validatedQuote), wallet.Coins, localizedLabels, locale);
+  view.PlayRequested += () => Dispatch(flow.PlayOn(wallet.Coins));
+  view.ShopRequested += () => Dispatch(flow.OpenCoinShop());
+  view.EndConfirmationRequested += () => OpenExistingExitConfirmation();
+  view.RetryQuoteRequested += () => RequestFreshQuoteForSameAttempt();
+  view.PackRequested += () => OpenExistingShopAtVerifiedProduct(productId);
+
+Dispatch OpenShop immediately through the existing shop with entryContext=continueAttempt.
+Dispatch RequestMovePurchase using the persisted idempotent operation ID and trusted transaction service from R2.
+Set view.SetTransactionPending(true) synchronously before dispatch; keep it locked through unknown outcomes.
+Do not let a wallet snapshot arrive during a pending purchase and re-enable the modal.
+Do not pass late quote callbacks from another attempt, account, or earlier request into the view.
+When the authority confirms a move purchase, reconcile wallet and the SAME board, then hide the overlay.
+Do not call Load/Retry/NextLevel or reset powers, goals, RNG, score, history, or obstacles.
+Close Shop -> refresh balance/quote and restore Continue. Verified coin credit never auto-spends on moves.
+Back/close in Continue -> existing exit confirmation, not immediate life loss. Settled abandonment charges one life once.
+Dispose/unsubscribe handlers when the view/attempt is released; do not add another subscription each time it reopens.
+The view's callbacks are deliberately not connected to a fake wallet or purchase simulator.
+
+3. MATCH THE DESIGN
+Use the generated hierarchy; do not reconstruct it with a full-width Stretch button.
+- Wallet at upper LEFT, compact width derived from live balance, 44-unit touch target.
+- Band max430 logical width, header60, hero196 (153 compact), footer79.
+- Play On centered; content width plus42 padding, 57 high. Price stays next to label with8 gap.
+- Primary Image.type=Sliced; source borders300/240 -> logical35/28.
+  multiplier = (300/35) * Canvas.referencePixelsPerUnit / Primary.sprite.pixelsPerUnit.
+  At referencePPU100 and spritePPU100 this is 8.5714286.
+- Band sourcePPU400, source-to-logical ratio4 -> multiplier1 at referencePPU100.
+- Wallet ratio80/18; pack surface ratio4. Never reuse Primary's multiplier for all assets.
+- Dariya / shield / coin / close: Simple + preserveAspect, full-resolution original alpha.
+- White Image tint, supplied sRGB colors, no additive blue overlay or inherited CanvasGroup fade.
+- TMP source fonts and generated dynamic SDF assets; no font texture downsizing or static text in panel PNGs.
+- Optional pack below on phones; beside on landscape. Fill with platform-localized price + existing productId.
+  Hide only if the product is genuinely unavailable or purchase is pending. Price is not the demo $1.99 in production.
+- Same EN/ES/FR/DE/RU strings. No Japanese.
+- Out of moves notice and in-level Shop keep the R2 flow. This new native generator covers the Continue overlay only;
+  use the existing native notification, exit confirmation and Shop bindings. Their assets/reference remain in this package.
+
+4. VERIFY IN THE REAL PROJECT
+Run Tools > Heart of the Rain > Validate Continue R3 Prefab after generation. This checks structure and sampled states,
+not store integration. Compare Game-view screenshots with Review/No_Moves_Review.html using the SAME logical viewport,
+locale, safe area and DPI scale (not just equal raw screenshot width). Do not treat a different board layout as a UI error.
+Inspect the live instantiated Image types, multipliers, transforms, materials, atlas overrides and Canvas settings.
+
+Required live cases:
+- Eligible +5 /900 quote, coins1600 -> Play On -> same board with5 moves, coins700, life unchanged, one debit.
+- Same quote, coins700 (also0 and899) -> +5 and900 remain visible -> Play On immediately opens Shop; no debit/life loss.
+- coins900 -> accepted once, balance0. Rapid taps -> one dispatch.
+- Purchase canceled / Shop close -> same offer and board, no life loss.
+- Verified top-up -> Continue; next explicit tap buys moves.
+- Quote loading/error -> loading/retry, never misleading End level because balance is low.
+- Genuine continue cap -> confirmed unavailable and existing exit confirmation.
+- Last-move win bypasses the offer; pending/unknown requests block exit until reconciled.
+- English, Spanish, French, German, Russian; short/tall phone, tablet, landscape, safe area, background/resume.
+
+VALIDATION ALREADY PERFORMED BY PACKAGE AUTHOR
+42 compiled pure-C# tests;735 browser layout/locale/DPR cases and16 interactive checks; PNG and archive integrity.
+Native scripts syntax-checked only. Unity compilation, font generation, prefab rendering and real backend/device checks
+remain for this project. Do not describe the patch as production-verified until those checks pass.

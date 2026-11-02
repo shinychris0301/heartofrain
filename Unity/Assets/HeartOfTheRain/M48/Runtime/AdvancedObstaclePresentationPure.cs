@@ -4,33 +4,34 @@ using System.Linq;
 using UnityEngine;
 namespace HeartOfTheRain.M46 {
     public sealed partial class BoardPresentation {
+        static readonly string[] CrystalPulseKeys={"crystal/Crystal_Pulse_Base","crystal/Crystal_Pulse_Middle","crystal/Crystal_Pulse_Top"};
         public readonly Dictionary<string,Vector2> goalTargets=new Dictionary<string,Vector2>();
         bool AdvancedBody(List<DrawSprite> list,Piece p,BoardStep step,float age,float time){
             if(p.family!="crystal"&&p.family!="cabinet"&&p.family!="pod")return false;
-            var hit=step==null?null:step.damage.Where(d=>d.id==p.id&&d.time<=age).OrderBy(d=>d.time).LastOrDefault();
+            var hit=ActiveDamage(step,p.id,age);
             float t=hit==null?-1:age-hit.time;
             if(p.family=="crystal"){
                 float height=hit==null?p.hp:CrystalHeight(hit.beforeHP,t);
                 float b=height>=2?1:height>=1?.34f+.66f*(height-1):.34f*height;
                 float middle=Mathf.Max(0,height-2),c=height-b-middle,bottom=p.y-.5f;
-                float[] sizes={b,middle,c};string[] names={"Base","Middle","Top"};
                 for(int i=0;i<3;i++){
-                    if(sizes[i]>.00001f){var d=Draw(list,"obstacle","crystal/Crystal_Pulse_"+names[i],t<0?.8f:t,p.x,bottom+sizes[i]/2,10);d.sy=sizes[i];d.masked=true;}
-                    bottom+=sizes[i];
+                    float size=i==0?b:i==1?middle:c;
+                    if(size>.00001f){var d=Draw(list,"obstacle",CrystalPulseKeys[i],t<0?.8f:t,p.x,bottom+size/2,10);d.sy=size;d.masked=true;}
+                    bottom+=size;
                 }
                 return true;
             }
             if(p.family=="pod"){
                 if(hit!=null&&hit.afterHP==0&&t>=.24f)return true;
-                if(hit!=null&&t<.8f){var d=Draw(list,"obstacle","pod/Pod_Hit_"+hit.beforeHP,t,p.x,p.y,10);d.masked=true;}
-                else {var d=Draw(list,"body","pod_"+(hit==null?p.hp:hit.afterHP),time,p.x,p.y,10);d.masked=true;}
+                if(hit!=null&&t<.8f){var d=Draw(list,"obstacle",HitKey("pod",hit.beforeHP),t,p.x,p.y,10);d.masked=true;}
+                else {var d=Draw(list,"body",BodyHPKey("pod",hit==null?p.hp:hit.afterHP),time,p.x,p.y,10);d.masked=true;}
                 return true;
             }
             if(hit!=null&&hit.afterHP==0&&t>=.8f)return true;
             DrawSprite body;
             if(hit!=null&&hit.beforeHP==5&&t<.9f)body=Draw(list,"obstacle","cabinet/Cabinet_Open",t,p.x+.5f,p.y+.5f,10);
             else if(hit!=null&&hit.afterHP==0)body=Draw(list,"obstacle","cabinet/Cabinet_Clear",t,p.x+.5f,p.y+.5f,10);
-            else body=Draw(list,"body","cabinet_"+(hit==null?p.hp:t<.1f?hit.beforeHP:hit.afterHP),time,p.x+.5f,p.y+.5f,10);
+            else body=Draw(list,"body",BodyHPKey("cabinet",hit==null?p.hp:t<.1f?hit.beforeHP:hit.afterHP),time,p.x+.5f,p.y+.5f,10);
             body.masked=true;return true;
         }
         static float CrystalHeight(int before,float t){

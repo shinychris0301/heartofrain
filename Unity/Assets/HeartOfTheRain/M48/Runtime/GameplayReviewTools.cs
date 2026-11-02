@@ -1,3 +1,5 @@
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+// Review and QA tooling: compiled for the Editor and development builds only.
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -114,3 +116,4 @@ namespace HeartOfTheRain.M48 {
         void OnDisable(){if(ManualPlaytestRunning)StopManualPlaytest("INTERRUPTED","Review component disabled or scene closed.");if(open)SetDrawer(false);if(Replaying)StopReplay();StopAllCoroutines();if(Showcasing&&screen!=null)screen.showLevelIntro=showcaseIntro;Showcasing=false;if(screen!=null)screen.ReviewInputBlocked=false;if(IsMeasuring)StopMeasurement("COMPONENT_DISABLED");}
     }
 }
+#endif

@@ -1,0 +1,102 @@
+Unity production configuration — additive runtime support, checkpoint122
+
+The main project stays Unity2022.3.62f3. Existing ordinary/offline and explicit
+version1 staging selection keep their prior behavior. No live public production
+resource, vendor SDK, signer or credential is added to the ordinary project.
+
+The production build profile uses the explicit HOTR_PRODUCTION122 define. A
+missing/invalid packaged production payload fails closed with that define. A
+present production resource always owns selection, including in the Editor;
+environment paths and persistent device files cannot override or repair it.
+Mixed production and staging packaged server resources are rejected.
+
+Package this exact PUBLIC server JSON schema as a single TextAsset at:
+  Assets/HeartOfTheRain/Resources/HOTR_Server/ManagedProduction.json
+Resource key: HOTR_Server/ManagedProduction
+
+  {
+    "version": 2,
+    "mode": "ManagedGuestServer",
+    "runtimeMode": "production",
+    "origin": "https://api.novamind-it.ru",
+    "identityScope": "prod-heartoftherain-1",
+    "packageName": "<REGISTERED_ANDROID_PACKAGE>",
+    "consoleAppId": "<ISSUED_NUMERIC_RUSTORE_APPLICATION_ID>",
+    "socialEnabled": true,
+    "allowDevelopmentLoopback": false
+  }
+
+The placeholders above are deliberately invalid. This is not a production
+payload to copy unchanged. The current api.novamind-it.ru deployment is staging;
+its health flag must not be treated as production because its URL is HTTPS.
+Select the operated production authority explicitly before packaging a client.
+Keep a production identityScope stable across upgrades. Its required syntax is
+prod-[a-z0-9.-]{1,50}. The Android package, HTTPS authority and numeric Console
+app ID must match the actual registration. No /api prefix, credentials, query,
+fragment or development loopback is allowed in the origin.
+
+Package the separate public checkout payload as one TextAsset at:
+  Assets/HeartOfTheRain/Resources/HOTR_RuStore/CheckoutProduction.json
+Resource key: HOTR_RuStore/CheckoutProduction
+
+  {
+    "version": 2,
+    "enabled": true,
+    "sandbox": false,
+    "consoleAppId": "<SAME_ISSUED_NUMERIC_APPLICATION_ID>",
+    "runtimeMode": "production",
+    "packageName": "<SAME_REGISTERED_ANDROID_PACKAGE>",
+    "backendOrigin": "https://api.novamind-it.ru"
+  }
+
+The checkout reader binds package/origin/app ID to the selected packaged server
+profile. A missing or invalid checkout payload cannot fall back to an external
+HOTR_SHOP_CHECKOUT86_CONFIG path or persistent checkout.json. Provider API keys,
+notification keys, bearer credentials, signing keys and payment tokens never
+belong in either resource.
+
+EXPECTED SERVER CONTRACT
+
+Only an explicitly selected production profile accepts productionEnabled:true
+for identity sessions/VK completion, wallets, commerce catalogues/orders/pending
+lists, broker operations/nested wallets and rewarded status. Staging/default
+clients require false. Live commerce requires sandbox:false; sandbox SDK
+locators/orders cannot be reconciled as live transactions. The catalogue must
+also match the configured Console app ID and fullGameplayWallet:true. The
+normalUnityProfileIntegrated/localProfileMutated flags remain false: this does
+not import the phone's offline wallet into the server account.
+
+Frozen order terms, creator-command binding, durable checkout recovery,
+terminal no-credit proof and SDK acknowledgement remain required. Pending
+orders and protected journals are checked against the selected environment.
+SDK callback code still cannot mint a local reward. The production checkout
+does not display the sandbox-only explanatory note.
+
+BUILD GUARDS AND REMAINING ACCEPTANCE
+
+The122 preprocessor requires Android, non-Development/no debugger/profiler
+options, API26-or-newer protected identity support, developer release signing,
+HOTR_PRODUCTION122 and HOTR_RUSTORE_PAY, exact singleton server/checkout resources
+and matching package/origin/app ID. Enabled advertising also requires the
+existing HOTR_YANDEX_ADS branch and valid public advertising payload. The107
+development lease is not reused as release authority. Its production branch is
+selected only through the strict122 guard.
+
+The existing RuStoreReleasePreflight evidence requirements still apply. They
+are not removed by syntax-complete JSON or by passing native configuration
+checks. No final release APK, signature, installation, real purchase, VK login,
+ad playback or provider/production acceptance is established by these changes.
+Use the approved isolated LTS SDK profile for SDK compilation/build preparation;
+do not upgrade the main engine automatically. Registered values, SDK/provider
+acceptance, release signing/certificate binding and ordinary Android recovery
+must be completed before a release artifact is approved.
+
+NATIVE VERIFICATION
+
+Verification/Tools/Review122/run_unity_client122.py runs the actual pinned2022
+Editor against the separately sealed E:\HR122U\Game source copy. Its source
+manifests, per-invocation receipts and retained failed attempts are under
+Verification/Evidence/Review122/NativeClient. A private Standalone package name
+exists only in that copy to exercise the real Resources reader; the main
+ProjectSettings and Android package are untouched. Read the final invocation
+receipts for accepted checks and source-preservation results.

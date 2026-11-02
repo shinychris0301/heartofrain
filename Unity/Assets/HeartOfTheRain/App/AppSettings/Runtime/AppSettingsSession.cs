@@ -23,10 +23,11 @@ namespace HeartOfTheRain.App.AppSettings
         public string NoticeText {get;private set;}="";
         public int ExpandedHelp {get;private set;}=0;
         public int Language {get;private set;}
+        public string SaveStatusKey {get;set;}="saveLocalStatus";
         public static readonly string[] LanguageNames=GameLocale.Names;
         public AppSettingsSession(ISettingsStore storage,AppSettingsLinks destinations)
         {store=storage??throw new ArgumentNullException(nameof(storage));links=(destinations??new AppSettingsLinks()).Copy();Refresh();}
-        void Refresh(){Preferences=new GameSettingsState(store);Language=store.Read(LanguageKey,0);if(!GameLocale.Valid(Language))Language=0;GameLocale.Select(Language);}
+        void Refresh(){Preferences=new GameSettingsState(store);Language=GameLocale.ResolveStored(store.Read(LanguageKey,GameLocale.DefaultIndex));GameLocale.Select(Language);}
         public void Open(int[] startingStock,int[] levelTools)
         {
             if(startingStock==null||startingStock.Length!=4||levelTools==null||levelTools.Length!=4)throw new ArgumentException("Four starting items and four level tools are required.");

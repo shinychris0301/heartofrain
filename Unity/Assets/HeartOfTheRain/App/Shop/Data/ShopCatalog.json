@@ -13,8 +13,8 @@
       "bombs": 1,
       "rainbowOrbs": 1,
       "goldenSeekers": 1,
-      "priceLabel": "$1.99",
-      "available": true
+      "priceLabel": "99 ₽",
+      "available": false
     },
     {
       "id": "rainy-day",
@@ -27,8 +27,8 @@
       "bombs": 2,
       "rainbowOrbs": 2,
       "goldenSeekers": 2,
-      "priceLabel": "$3.99",
-      "available": true
+      "priceLabel": "199 ₽",
+      "available": false
     },
     {
       "id": "rainlight",
@@ -41,8 +41,8 @@
       "bombs": 3,
       "rainbowOrbs": 3,
       "goldenSeekers": 3,
-      "priceLabel": "$6.99",
-      "available": true
+      "priceLabel": "299 ₽",
+      "available": false
     },
     {
       "id": "village",
@@ -55,8 +55,8 @@
       "bombs": 3,
       "rainbowOrbs": 3,
       "goldenSeekers": 3,
-      "priceLabel": "$9.99",
-      "available": true
+      "priceLabel": "399 ₽",
+      "available": false
     },
     {
       "id": "festival",
@@ -69,8 +69,8 @@
       "bombs": 6,
       "rainbowOrbs": 6,
       "goldenSeekers": 6,
-      "priceLabel": "$19.99",
-      "available": true
+      "priceLabel": "599 ₽",
+      "available": false
     },
     {
       "id": "keepers",
@@ -83,8 +83,8 @@
       "bombs": 12,
       "rainbowOrbs": 12,
       "goldenSeekers": 12,
-      "priceLabel": "$39.99",
-      "available": true
+      "priceLabel": "999 ₽",
+      "available": false
     },
     {
       "id": "coins-1000",
@@ -97,7 +97,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$1.99",
+      "priceLabel": "99 ₽",
       "available": true
     },
     {
@@ -111,7 +111,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$7.99",
+      "priceLabel": "299 ₽",
       "available": true
     },
     {
@@ -125,7 +125,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$14.99",
+      "priceLabel": "499 ₽",
       "available": true
     },
     {
@@ -139,7 +139,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$29.99",
+      "priceLabel": "899 ₽",
       "available": true
     },
     {
@@ -153,7 +153,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$59.99",
+      "priceLabel": "1599 ₽",
       "available": true
     },
     {
@@ -167,7 +167,7 @@
       "bombs": 0,
       "rainbowOrbs": 0,
       "goldenSeekers": 0,
-      "priceLabel": "$99.99",
+      "priceLabel": "2999 ₽",
       "available": true
     }
   ]

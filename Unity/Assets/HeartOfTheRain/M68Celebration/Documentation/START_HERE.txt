@@ -1,0 +1,48 @@
+DARIYA — M68 FINISHED CELEBRATION ASSETS
+Heart of the Rain | 19 October 2026
+
+The art and animation have been authored here. Codex handles runtime integration.
+No existing Unity C# scripts, shaders, scenes, prefabs, progression, or rewards
+were changed by this delivery. Importing these assets alone does not replace
+the existing celebration player.
+
+REVIEW
+Previews/Dariya_Celebration_Playback.mp4: 3.5-second, 60 fps, 1080 x 2160 review.
+This is an offline composition from the delivered animation, not a Unity capture.
+Previews/Dariya_Celebration_Review.jpg: six moments in the completed motion.
+Portrait, compact, tablet and landscape compositions are also supplied.
+
+WHAT CHANGED
+- A coherent painted character replaces separate arms laid over the clothing.
+- Shoulder, sleeve and coat connections remain continuous during the gesture.
+- Raised-hand wave, open supporting hand, head movement, blink, breathing,
+  coat follow-through and a soft settle are authored into the clip.
+- The olive cloak, brown leather, cream sleeves and natural skin tones remain.
+- Gold stars and a restrained halo sit behind the character, clear of her face.
+- A 96% black scrim hides the board during the main celebration.
+- There is no victory modal or baked text; this artwork works in every language.
+
+IMPORT
+Copy UnityAssets/Assets/HeartOfTheRain/M68Celebration into the project's Assets/
+HeartOfTheRain folder, preserving all .meta files. Alternatively import the
+separately supplied Dariya_Celebration_M68_Assets.unitypackage.
+Do not import both as separate copies. They contain the same asset identities.
+
+TWO REPRESENTATIONS OF THE SAME ANIMATION
+1. Atlases/ + Data/Dariya_Celebration.json
+   210 finished RGBA frames at 768 x 768, packed into 14 PNG pages. Character,
+   halo and star effects are baked together. These are the visual reference
+   and the most direct frame-based integration option.
+2. Mesh/ + Art/ + Data/Effects_Timeline.json
+   The same character movement as baked mesh positions with two textures,
+   blink/opacity samples and exact effect samples. This avoids the large
+   collection of character frame textures. Codex must implement the player.
+
+The ZIP contains both representations, editable source art, offline authoring
+scripts, playback, timing and import notes. It does not contain a new full
+game project. The .unitypackage contains only new M68 design assets and data.
+
+Read Codex_Integration_Contract.txt before wiring either version into gameplay.
+Validation reports distinguish completed asset checks from Unity/device checks
+that must follow integration. The exported video is 60 fps; device performance
+has not been measured.

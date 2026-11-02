@@ -1,0 +1,38 @@
+{
+  "isPreview": true,
+  "source": "RUB launch proposal, aligned with the M63 Shop catalogue; NOT live Console prices. Checkout must use RuStore GetProducts.amountLabel.",
+  "products": [
+    {
+      "id": "coins-1000",
+      "coins": 1000,
+      "priceLabel": "99 ₽"
+    },
+    {
+      "id": "coins-5000",
+      "coins": 5000,
+      "priceLabel": "299 ₽"
+    },
+    {
+      "id": "coins-10000",
+      "coins": 10000,
+      "priceLabel": "499 ₽"
+    },
+    {
+      "id": "coins-25000",
+      "coins": 25000,
+      "priceLabel": "899 ₽"
+    },
+    {
+      "id": "coins-50000",
+      "coins": 50000,
+      "priceLabel": "1599 ₽"
+    },
+    {
+      "id": "coins-100000",
+      "coins": 100000,
+      "priceLabel": "2999 ₽"
+    }
+  ],
+  "currency": "RUB",
+  "checkoutEnabled": false
+}

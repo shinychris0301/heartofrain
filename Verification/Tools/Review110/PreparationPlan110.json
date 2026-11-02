@@ -1,0 +1,46 @@
+{
+  "status": "PREPARED_NOT_EXECUTED110",
+  "baseline": "Verification/Tools/Review110/Baseline110.json",
+  "runner": "Verification/Tools/Review110/run_native110.py",
+  "engine": "2022.3.62f3",
+  "newSuite": {
+    "owner": "native verifier",
+    "entry": "HeartOfTheRain.Verification.TeamsChatHelp110Verification.Run",
+    "environment": "HOTR_REVIEW110_OUT",
+    "report": "Native/TeamsChatHelp110.json",
+    "expectedStatus": "PASS_NATIVE_TEAMS_CHAT_HELP110",
+    "sourceFreezeRequired": true,
+    "contractStatus": "Await final backend DTO/receipt and client node/animation seams before implementing exact assertions."
+  },
+  "boundaries": {
+    "importEpoch": "Only NEW App/TeamsSocial/Art/*.png.meta may normalize, with exact GUID retention and archived before/after bytes. All2958 pre-existing metas, including69 R4 sprite metas, remain exact.",
+    "ordinaryData": "Profiles, managed stores, exact saved locale, settings and existing navigation remain guarded.",
+    "scriptedTransport": "Actual Unity client/parser/session/protected-CAS journal may consume explicitly simulated bounded responses; never advance its HTTP Exchange iterator. This is not real server/network/device acceptance.",
+    "backend": "Real SQLite/ASGI transaction, concurrency, cooldown, idempotency and bank delivery tests are owned separately by backend agent.",
+    "device": "No110 APK/build/install or physical operation requested. Installed109 and its preservation evidence remain historical and unchanged."
+  },
+  "approvedProvisionalRules": {
+    "requestCapacity": 5,
+    "cooldownSeconds": 14400,
+    "helpPerDonorPerRequest": 1,
+    "donorLifeOrCoinCost": 0,
+    "partialClaim": "Credit only available life capacity; retain unclaimed remainder as owned entitlement."
+  },
+  "meaningfulCases": [
+    "Strict bounded policy/request/owned-lives parsing; invalidIDs/counts/bindings fail closed; nullable clone handling does not weaken wire validation.",
+    "Request success/rejection/cooldown/open-request reuse; no optimistic cooldown or entitlement.",
+    "Free help success/duplicate/self/full/concurrent-conflict/member-removal errors; confirmed received count only; unchanged donor balances.",
+    "Claim partial/full-capacity/no-op/unknown response/exact retry/client reconstruction; bank remainder and operationID preserved; no animation callback mutation.",
+    "Pending owner/origin scope and CAS conflicts; no replacement mutation while unresolved; old social commands remain compatible.",
+    "Actual page routing, preserved109 access/details/ranks/moderation, chat history anchor, new-message affordance, draft retention and send limits.",
+    "At least12 controlled visual states across five locales and phone/tablet/inset geometries; actual text/glyph/alpha/panel/control bounds and bottom reachability.",
+    "Actual confirmed-only request/help/claim feedback at deterministic start/peak/end; duplicate receipt suppression, reduced-motion behavior and hide/owner cancellation.",
+    "Keyboard-inset geometry and focus are explicitly simulated Editor checks; no real OS keyboard claim without a separately authorized device run.",
+    "Actual import filtering: detailed icons use mipmaps/trilinear; sliced bubbles use bilinear/no-mip/nonzero borders; no original R4 role regression."
+  ],
+  "expectedRegressions": [
+    "Preserved109 targeted actions/scroll cases or an equivalent narrow regression entry when layout-specific old assertions are superseded.",
+    "Shared Navigation108 and general native checks, plus focused messaging/journal regressions justified by final changes."
+  ],
+  "execution": "No Unity/compiler/import, backend process, SDK, APK or device operation has occurred for110. Root combined source freeze is required."
+}

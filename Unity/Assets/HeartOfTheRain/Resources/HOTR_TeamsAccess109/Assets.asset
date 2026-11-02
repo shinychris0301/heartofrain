@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a772fa81e5db54b18fd0c69f3abd3281, type: 3}
+  m_Name: Teams Access R4
+  m_EditorClassIdentifier:
+  sprites:
+  - id: TA_Background
+    sprite: {fileID: 21300000, guid: aad9493a907f5cf5aba91e7fb5831d55, type: 3}
+  - id: TA_Panel_Cream
+    sprite: {fileID: 21300000, guid: a724adc1ea22513b989c2fb2bc47dcff, type: 3}
+  - id: TA_Panel_Blue
+    sprite: {fileID: 21300000, guid: 37115ad250e55f9bb468f3d7c877c590, type: 3}
+  - id: TA_Panel_Inner
+    sprite: {fileID: 21300000, guid: d0d0476756095bc0a67b4c38199c1ee4, type: 3}
+  - id: TA_Field
+    sprite: {fileID: 21300000, guid: e4252a5439b850f2846bd370656bf7b2, type: 3}
+  - id: TA_Stat
+    sprite: {fileID: 21300000, guid: 1e3db83303fa5e99a8218f170edaf339, type: 3}
+  - id: TA_Tab_Track
+    sprite: {fileID: 21300000, guid: 68897fac3fb05f0fa254f4818fb71525, type: 3}
+  - id: TA_Tab_Selected
+    sprite: {fileID: 21300000, guid: bcaf1bee4c2354ee94007122c20c6724, type: 3}
+  - id: TA_Button_Blue
+    sprite: {fileID: 21300000, guid: 6ee27d40ee7b5f55b56e4c348299382d, type: 3}
+  - id: TA_Button_Green
+    sprite: {fileID: 21300000, guid: be3faa8ee94157e88353cf034fcd3bbe, type: 3}
+  - id: TA_Button_Red
+    sprite: {fileID: 21300000, guid: 8722a662e5d65b5baca798f698cc7f69, type: 3}
+  - id: TA_Button_Disabled
+    sprite: {fileID: 21300000, guid: d5e91c499e105fe1955476b7b990f46e, type: 3}
+  - id: TA_Badge_Cell
+    sprite: {fileID: 21300000, guid: 6582c5494891552e9c26bc860dffd5a1, type: 3}
+  - id: TA_Badge_Selected
+    sprite: {fileID: 21300000, guid: 4380b4828b1d5254ad6a47c689003f78, type: 3}
+  - id: TA_Close_Disc
+    sprite: {fileID: 21300000, guid: ae8f8a8e79a754c998e4ce310dffd9ed, type: 3}
+  - id: TA_Check_Disc
+    sprite: {fileID: 21300000, guid: 41238900074459199673b66d36426c2a, type: 3}
+  - id: TA_Icon_Close
+    sprite: {fileID: 21300000, guid: 7c3011a7a396548c9b7508a61494c9be, type: 3}
+  - id: TA_Icon_Check
+    sprite: {fileID: 21300000, guid: 56222e631a785857ba4d9e0f8efef546, type: 3}
+  - id: TA_Icon_Search
+    sprite: {fileID: 21300000, guid: 3be88d345df356d7bb591091556253e3, type: 3}
+  - id: TA_Icon_People
+    sprite: {fileID: 21300000, guid: bee4e07a750c5a0780eecd230fae3e93, type: 3}
+  - id: TA_Icon_Help
+    sprite: {fileID: 21300000, guid: 7a48d6a2dc065265a62d22a17a0bdd77, type: 3}
+  - id: TA_Icon_Invite
+    sprite: {fileID: 21300000, guid: 5628aa0c58995294b307baeec0d17908, type: 3}
+  - id: TA_Stat_star
+    sprite: {fileID: 21300000, guid: b24a9e41733a566e8d46bb51a6d09dcd, type: 3}
+  - id: TA_Stat_up
+    sprite: {fileID: 21300000, guid: 45c48e0c18ec51f48bc370b43e05d980, type: 3}
+  - id: TA_Stat_heart
+    sprite: {fileID: 21300000, guid: ceaa07efc26c5a27824fda091f6cbdcd, type: 3}
+  - id: TA_Badge_drop
+    sprite: {fileID: 21300000, guid: 51e87fdd5b5256ac807b2a0ce6328123, type: 3}
+  - id: TA_Badge_lantern
+    sprite: {fileID: 21300000, guid: 943afe6cdde85419b8ce3e92ee4f1567, type: 3}
+  - id: TA_Badge_well
+    sprite: {fileID: 21300000, guid: 20d62a7b58bc5d5880ee39513182ae1f, type: 3}
+  - id: TA_Badge_sun
+    sprite: {fileID: 21300000, guid: c59c514245fe579e9f8f52b702cf059f, type: 3}
+  - id: TA_Badge_wave
+    sprite: {fileID: 21300000, guid: 3283b56d9ac557cc825601e736c018e1, type: 3}
+  - id: TA_Badge_crystal
+    sprite: {fileID: 21300000, guid: 2d16705f40305b87bcbc537ade0bd071, type: 3}
+  - id: TA_Badge_book
+    sprite: {fileID: 21300000, guid: 560ca201eb7e5c4d91b0ea00cb7835b8, type: 3}
+  - id: TA_Badge_oak
+    sprite: {fileID: 21300000, guid: 46ca8ab217a75ec199e199fce6a408b2, type: 3}
+  - id: TA_Badge_moon
+    sprite: {fileID: 21300000, guid: c90ecc0b176356e5a88c98a6430b861a, type: 3}
+  - id: TA_Badge_cottage
+    sprite: {fileID: 21300000, guid: 3109b725ce5a5bec8007527c0a4f5a00, type: 3}
+  - id: TA_Badge_banners
+    sprite: {fileID: 21300000, guid: bab045d0dec150cea9d32afd7d36930a, type: 3}
+  - id: TA_Badge_raincloud
+    sprite: {fileID: 21300000, guid: 81823c88e0035185921b5d5c0e328755, type: 3}
+  slices:
+  - id: TA_Panel_Cream
+    proofScale: 0.5
+  - id: TA_Panel_Blue
+    proofScale: 0.47560975609756095
+  - id: TA_Panel_Inner
+    proofScale: 0.5
+  - id: TA_Field
+    proofScale: 0.5
+  - id: TA_Stat
+    proofScale: 0.28
+  - id: TA_Tab_Track
+    proofScale: 0.127208480565371
+  - id: TA_Tab_Selected
+    proofScale: 0.18631178707224336
+  - id: TA_Button_Blue
+    proofScale: 0.18631178707224336
+  - id: TA_Button_Green
+    proofScale: 0.22171945701357465
+  - id: TA_Button_Red
+    proofScale: 0.25
+  - id: TA_Button_Disabled
+    proofScale: 0.18631178707224336
+  - id: TA_Badge_Cell
+    proofScale: 0.35
+  - id: TA_Badge_Selected
+    proofScale: 0.35

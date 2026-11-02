@@ -24,6 +24,15 @@ namespace HeartOfTheRain.M46
         public int columns,rows,kind,originX,originY;public ReviewFlight flight;public ReviewFlight[] flights;public ReviewSeekerLaunch[] seekerLaunches;public float launchTime;public bool rocketVertical;public int requestedTargetX=-1,requestedTargetY=-1;public float primary,duration=4.1f;
         public ReviewTile[] tiles;public ReviewFx[] effects;public ReviewPower[] powers;public ReviewBlast[] blasts;public ReviewBeam[] beams;public int targetColor;public float activation;
         public ReviewGoldenGroup[] goldenGroups;public int convertedCount,createdSeekers,unassignedSeekers;public float settleAfter;
+        [NonSerialized] Dictionary<int,ReviewTile> tileIndex;[NonSerialized] ReviewTile[] indexedTiles;
+        // Cell lookup for the per-gem glow sample, built once per tile array
+        // instead of scanning every tile for every gem every frame.
+        public ReviewTile TileAt(int x,int y)
+        {
+            if(tiles==null)return null;
+            if(tileIndex==null||indexedTiles!=tiles){tileIndex=tileIndex??new Dictionary<int,ReviewTile>();tileIndex.Clear();foreach(var t in tiles)if(!tileIndex.ContainsKey(t.x*4096+t.y))tileIndex.Add(t.x*4096+t.y,t);indexedTiles=tiles;}
+            ReviewTile tile;return tileIndex.TryGetValue(x*4096+y,out tile)?tile:null;
+        }
         struct Hit {public float time,dx,dy;public Hit(float t,float x,float y){time=t;dx=x;dy=y;}}
         public static ReviewPlan Build(int c,int r,int kind,Vector2Int origin,bool blockers,int targetColor=5,Vector2Int? targetCell=null,bool rocketVertical=false,LiveBoardInput live=null)
         {
@@ -481,7 +490,7 @@ namespace HeartOfTheRain.M46
         }
         public float TargetGlow(ReviewTile tile,float t)
         {
-            if((kind>=11&&kind<=20)&&!((kind==15||kind==20)&&tile.convertedAt>=0)){var flight=(kind>=14&&kind<=20)?Array.Find(flights,f=>f.targetX==tile.x&&f.targetY==tile.y):this.flight;if(flight==null)return 0;float age=t-flight.start-.1f;if(tile.incoming||tile.reserved||tile.wood||tile.x!=flight.targetX||tile.y!=flight.targetY||age<0||t>=tile.hit+.035f)return 0;return .55f*Mathf.SmoothStep(0,1,age/.15f);}
+            if((kind>=11&&kind<=20)&&!((kind==15||kind==20)&&tile.convertedAt>=0)){var flight=this.flight;if(kind>=14&&kind<=20){flight=null;foreach(var candidate in flights)if(candidate.targetX==tile.x&&candidate.targetY==tile.y){flight=candidate;break;}}if(flight==null)return 0;float age=t-flight.start-.1f;if(tile.incoming||tile.reserved||tile.wood||tile.x!=flight.targetX||tile.y!=flight.targetY||age<0||t>=tile.hit+.035f)return 0;return .55f*Mathf.SmoothStep(0,1,age/.15f);}
             if(kind==10){float age=t-(primary-.22f);if(tile.incoming||tile.reserved||tile.wood||tile.hit<0||age<0||t>=tile.hit+.035f)return 0;float pulse=Mathf.Sin(age*18);return Mathf.SmoothStep(0,1,age/.22f)*(.40f+.12f*pulse*pulse);}
             if((kind!=7&&kind!=8&&kind!=9&&kind!=15&&kind!=20)||tile.incoming||tile.reserved||tile.wood||tile.hit<0)return 0;
             foreach(var b in beams)

@@ -1,3 +1,5 @@
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+// Review and QA tooling: compiled for the Editor and development builds only.
 using System;
 using System.Collections;
 using System.IO;
@@ -96,3 +98,4 @@ namespace HeartOfTheRain.M48 {
         }
     }
 }
+#endif

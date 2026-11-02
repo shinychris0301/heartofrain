@@ -13,7 +13,9 @@ namespace HeartOfTheRain.App.Celebrations
     [CreateAssetMenu(menuName="Heart of the Rain/App/Celebration assets")]
     public sealed class CelebrationAssets:ScriptableObject
     {
-        public Texture2D dariaAtlas;
+        public Texture2D dariaAtlas; // Historical atlas kept for previous review data.
+        public Texture2D dariaTorso,dariaHead,dariaLeftArm,dariaRightArm;
+        public bool HasDariaRig=>dariaTorso&&dariaHead&&dariaLeftArm&&dariaRightArm;
         public Shader dariaBlend;
         public LevelCompleteAssets ui;
         public AudioClip music;

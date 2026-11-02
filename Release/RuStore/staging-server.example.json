@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "mode": "staging",
+  "publicOrigin": "",
+  "identityScope": "review-vk-staging",
+  "deploymentId": "",
+  "dataDirectory": "",
+  "port": 8751,
+  "vk": {"enabled": false, "clientId": "", "redirectUri": ""},
+  "replay": {"enabled": false, "bundle": "", "approvalFile": "", "approvalSHA256": ""}
+}

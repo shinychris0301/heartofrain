@@ -23,7 +23,7 @@ namespace HeartOfTheRain.M46 {
     public sealed partial class BoardModel {
         // Called only on a stable board. Selection/cancel are presentation-only;
         // inventory is charged exactly once after a valid plan has been accepted.
-        public TurnResult UseBooster(BoosterKind kind,int x,int y,BoosterInventory inventory){
+        public TurnResult UseBooster(BoosterKind kind,int x,int y,BoosterInventory inventory,Func<bool> authorizeSpend=null){
             var result=new TurnResult();
             if(!Enum.IsDefined(typeof(BoosterKind),kind)||inventory==null||inventory.Count(kind)<=0){result.reason="No booster available";return result;}
             if(Status!="Playing"){result.reason="The board is not ready";return result;}
@@ -32,14 +32,23 @@ namespace HeartOfTheRain.M46 {
             if(kind!=BoosterKind.Atlas&&!plan.contacts.Any(c=>At(c.x,c.y)!=null&&At(c.x,c.y).family!="pail")){result.reason="No affected pieces";return result;}
             var step=Start("booster",plan.duration,BoosterPlan.Name(kind));step.booster=plan;
             if(kind==BoosterKind.Atlas){
+                var originals=authorizeSpend==null?null:Pieces.Values.Where(p=>p.Swappable).Select(p=>new {piece=p,x=p.x,y=p.y}).ToArray();uint beforeRandom=random;
                 if(!AtlasPermutation(step)){result.reason="No legal rearrangement found; booster retained";return result;}
+                if(!Authorize(authorizeSpend)){
+                    foreach(var old in originals)Pieces.Remove(Key(old.piece.x,old.piece.y));foreach(var old in originals){old.piece.x=old.x;old.piece.y=old.y;Pieces.Add(Key(old.x,old.y),old.piece);}random=beforeRandom;
+                    result.reason="Could not save. Please try again.";return result;
+                }
                 result.accepted=true;inventory.Spend(kind);Finish(step,result);return result;
             }
+            if(!Authorize(authorizeSpend)){result.reason="Could not save. Please try again.";return result;}
             activationSerial=0;acceptedDamage.Clear();pending.Clear();queued.Clear();mossHit=false;
             result.accepted=true;inventory.Spend(kind);string id=ActivationId("manual_"+kind);
             foreach(var c in plan.contacts)Hit(At(c.x,c.y),step,c.time,id,true,-1);
-            Finish(step,result);Settle(result,new HashSet<int>(),false);return result;
+            // A tool does not advance the overgrowth clock, but moss it damaged
+            // breaks the quiet streak exactly as a move would.
+            Finish(step,result);Settle(result,new HashSet<int>(),false);if(mossHit)QuietMoves=0;return result;
         }
+        static bool Authorize(Func<bool> authorize){try{return authorize==null||authorize();}catch(Exception){return false;}}
         bool AtlasPermutation(BoardStep step){
             // The same piece IDs, colors and power-ups move; no recoloring.
             // Crates, jars, fixed obstacles and voids never enter the permutation.

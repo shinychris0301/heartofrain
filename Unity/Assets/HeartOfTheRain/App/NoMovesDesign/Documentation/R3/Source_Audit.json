@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "name": "Heart_of_the_Rain_Account_Design_R6.zip",
+      "libraryId": "libfile_c76e3458963c819193fa85b7440a84c2",
+      "version": 5,
+      "sha256": "534f1fe6c9f32eb341df12063179f3354fe9c62a21ed6a16746ae9c505d2e8d9"
+    },
+    {
+      "name": "Heart_of_the_Rain_Gameplay_Loading_R1.zip",
+      "libraryId": "libfile_869a9687a288819183dce143c7ad4f41",
+      "version": 1,
+      "sha256": "90f4a0d3d10c77dd9bf73f9e2a5d24b0d75aeffac72b49ac4b2290d08acd1ab1"
+    },
+    {
+      "name": "Heart_of_the_Rain_M70_All_Powerups.zip",
+      "libraryId": "libfile_580a18ee3ac88191a903f745ed2b7281",
+      "version": 1,
+      "sha256": "664ea39f2908584ee5d336d32d7690d2ef289a1ded864f6713e64251cbd49f57"
+    },
+    {
+      "name": "Heart_of_the_Rain_M58_End_Level.unitypackage",
+      "libraryId": "libfile_a2cbf0d0f08081918d9818c3c98b3b80",
+      "version": null,
+      "sha256": "c379756f780a11f71f12fdea0246575b26b4eb1671f78caf6f6380ea3c2ad0f0"
+    },
+    {
+      "name": "Heart_of_the_Rain_M63_Shop_Review.zip",
+      "libraryId": "libfile_24d320d3484c8191b56be24ad1c91b0f",
+      "version": 2,
+      "sha256": "a9bad45ae44de6cf7aa76e5ddfabf1f11ca478d62f7a3f8c91a39c4dfe0b4dbf"
+    },
+    {
+      "name": "Heart_of_the_Rain_M67R4_Celebration_Review.zip",
+      "libraryId": "libfile_ebe40daaf5bc8191808cd8ff54651995",
+      "version": 3,
+      "sha256": "fd90043bd9d4135ee4e11315a613c87c0a00ab1f78b54d8cd0dab10bd9aac490"
+    }
+  ],
+  "codeInspected": [
+    "M70/CodeChanges/GameplayScreen.cs",
+    "M58/Assets/HeartOfTheRain/App/Settings/Runtime/GameplaySettingsController.cs",
+    "M58/Assets/HeartOfTheRain/App/PreLevel/Runtime/HomeLevelFlow.cs",
+    "M58/Assets/HeartOfTheRain/App/EndLevel/Runtime/EndLevelSession.cs"
+  ],
+  "finding": "M70 UpdateHUD opens the result screen directly; no coin-continue branch. ContinuePressed loads next level. Load recreates board. M58 exit settlement is separate.",
+  "productionEconomyFound": false,
+  "productionBranchInspected": false,
+  "currentUnityProjectModified": false,
+  "nativePrefabBuilderSupplied": true,
+  "nativeUnityExecuted": false,
+  "revision": "R3",
+  "referenceImages": [
+    "Screenshot 2026-10-24 042354.png",
+    "Screenshot 2026-10-24 042404.png"
+  ],
+  "shopSource": "M63 Shop Review version2; isPreview catalog",
+  "characterSource": "M67R4 approved Dariya reference; new transparent derivative"
+}

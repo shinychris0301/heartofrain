@@ -1,0 +1,207 @@
+{
+  "version": "rustore-sdk-client-reported-125",
+  "enabled": false,
+  "appId": 2063777840,
+  "sandbox": true,
+  "products": [
+    {
+      "id": "coins-1000",
+      "storeProductId": "hotr_coins_1000",
+      "enabled": false,
+      "coins": 1000,
+      "amountMinor": 9900,
+      "currency": "RUB"
+    },
+    {
+      "id": "coins-5000",
+      "storeProductId": "hotr_coins_5000",
+      "enabled": false,
+      "coins": 5000,
+      "amountMinor": 29900,
+      "currency": "RUB"
+    },
+    {
+      "id": "coins-10000",
+      "storeProductId": "hotr_coins_10000",
+      "enabled": false,
+      "coins": 10000,
+      "amountMinor": 49900,
+      "currency": "RUB"
+    },
+    {
+      "id": "coins-25000",
+      "storeProductId": "hotr_coins_25000",
+      "enabled": false,
+      "coins": 25000,
+      "amountMinor": 89900,
+      "currency": "RUB"
+    },
+    {
+      "id": "coins-50000",
+      "storeProductId": "hotr_coins_50000",
+      "enabled": false,
+      "coins": 50000,
+      "amountMinor": 159900,
+      "currency": "RUB"
+    },
+    {
+      "id": "coins-100000",
+      "storeProductId": "hotr_coins_100000",
+      "enabled": false,
+      "coins": 100000,
+      "amountMinor": 299900,
+      "currency": "RUB"
+    },
+    {
+      "id": "wellkeeper",
+      "storeProductId": "hotr_bundle_wellkeeper_c",
+      "enabled": false,
+      "coins": 2000,
+      "grant": {
+        "coins": 2000,
+        "tools": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "starting": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "amountMinor": 9900,
+      "currency": "RUB"
+    },
+    {
+      "id": "rainy-day",
+      "storeProductId": "hotr_bundle_rainy_day",
+      "enabled": false,
+      "coins": 3500,
+      "grant": {
+        "coins": 3500,
+        "tools": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "starting": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "amountMinor": 19900,
+      "currency": "RUB"
+    },
+    {
+      "id": "rainlight",
+      "storeProductId": "hotr_bundle_rainlight",
+      "enabled": false,
+      "coins": 6000,
+      "grant": {
+        "coins": 6000,
+        "tools": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "starting": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": 1,
+      "amountMinor": 29900,
+      "currency": "RUB"
+    },
+    {
+      "id": "village",
+      "storeProductId": "hotr_bundle_village",
+      "enabled": false,
+      "coins": 5000,
+      "grant": {
+        "coins": 5000,
+        "tools": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "starting": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "amountMinor": 39900,
+      "currency": "RUB"
+    },
+    {
+      "id": "festival",
+      "storeProductId": "hotr_bundle_festival",
+      "enabled": false,
+      "coins": 10000,
+      "grant": {
+        "coins": 10000,
+        "tools": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "starting": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "amountMinor": 59900,
+      "currency": "RUB"
+    },
+    {
+      "id": "keepers",
+      "storeProductId": "hotr_bundle_keepers",
+      "enabled": false,
+      "coins": 25000,
+      "grant": {
+        "coins": 25000,
+        "tools": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "starting": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "stars": 0
+      },
+      "purchaseLimitPerPlayer": null,
+      "amountMinor": 99900,
+      "currency": "RUB"
+    }
+  ],
+  "verificationMode": "sdk_client_reported"
+}

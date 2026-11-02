@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecab646303f27d34e92d76a536b3777c, type: 3}
+  m_Name: Design
+  m_EditorClassIdentifier: 
+  chrome: {fileID: 21300000, guid: ce160dfabad851f39bd4f32eacb5c86d, type: 3}
+  close: {fileID: 21300000, guid: dfcb312489db58b1b40ba996134b92ff, type: 3}
+  primary: {fileID: 21300000, guid: 14a80ba11e8f50598176afa21c9ca5c0, type: 3}
+  check: {fileID: 21300000, guid: 14096b28f3585e91995e603135abf96a, type: 3}
+  coin: {fileID: 21300000, guid: 7f822ff99c2e5a8ab1d0ccc7a64a7b7e, type: 3}
+  chest: {fileID: 21300000, guid: 68a7c30267df5eb2a12abc04fc59d247, type: 3}
+  hero: {fileID: 21300000, guid: e23ca6c6014d5827a3cd861463e36027, type: 3}
+  star: {fileID: 21300000, guid: 0e022ac2fb095ef3b2500dd0ee90df5b, type: 3}
+  upcoming: {fileID: 21300000, guid: 369ad220437a5f27bfb6c6d7530c8916, type: 3}
+  today: {fileID: 21300000, guid: a88ca46cf329552796638bd97a4f9f1d, type: 3}
+  collected: {fileID: 21300000, guid: 5d20f65e78ca56b4845d1e6dbff2dad5, type: 3}
+  bonus: {fileID: 21300000, guid: e251b65e614251f5a0b233bbf1d4678a, type: 3}
+  rocket: {fileID: 21300000, guid: 41b62c8cfece593097fd6f7cce7688ee, type: 3}
+  bomb: {fileID: 21300000, guid: 1ad2a056d01a59599b5bb503d5cdae83, type: 3}
+  hammer: {fileID: 21300000, guid: 16cf1a1a5c99514e9858e1d94e84a163, type: 3}
+  orb: {fileID: 21300000, guid: dec76ca00b525ffbb297088a0a8fb247, type: 3}
+  titleFont: {fileID: 12800000, guid: c8788ad069a35eff90dc88314e5dcc9e, type: 3}
+  bodyFont: {fileID: 12800000, guid: 4e75215013ed57a0bda4bc72d1b42945, type: 3}

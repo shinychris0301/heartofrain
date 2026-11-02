@@ -1,0 +1,41 @@
+{
+  "revision": "Home Lives R1",
+  "productionAuthority": "Existing life service; display events only.",
+  "snapshotFields": [
+    "lives",
+    "maxLives",
+    "nextRefillAtUtc (nullable)",
+    "serverNowUtc",
+    "balanceRevision"
+  ],
+  "semanticEvents": [
+    "AttemptSettled(attemptId, confirmedLifeDebit, resultingSnapshot)",
+    "LivesRefilled(eventId, resultingSnapshot)"
+  ],
+  "states": {
+    "full": "lives >= maxLives: count + Full; no countdown",
+    "refilling": "0 < lives < maxLives: count + time until NEXT life",
+    "last": "lives == 1: same timer, restrained amber count",
+    "empty": "lives == 0: red 0/max + countdown; tapping opens existing Lives flow",
+    "awaitingConfirmation": "Below cap and no valid future deadline: clock + ellipsis; request/reconcile authoritative balance",
+    "restored": "Render confirmed snapshot; play +1 once for one life; update to Full when cap is reached"
+  },
+  "rules": [
+    "Settle each failed/confirmed-abandoned attempt at most once. Canceling exit must not settle a loss.",
+    "Returning Home, opening Lives and pressing Retry do not deduct again for the settled attempt.",
+    "Starting another refill while one is already active must not restart its existing deadline.",
+    "Timer reaching zero requests a balance update; the view does not mint a life.",
+    "Use synchronized server-time anchor and elapsed monotonic/unscaled time. Refresh on resume; never tick down one second per rendered frame.",
+    "Catch-up, cap, offline rules, pricing and refill interval remain existing service configuration.",
+    "Animate only a semantic confirmed event once. Do not infer a life loss from any balance difference during page creation.",
+    "Do not cap or overwrite a real server balance in presentation code."
+  ],
+  "previewFixtures": {
+    "maxLives": 5,
+    "refillIntervalSeconds": 1800,
+    "remainingRefillingSeconds": 754,
+    "restoringDelaySeconds": 5,
+    "simulatedLatencyMs": 220,
+    "warning": "Fixture values, not approved economy settings or production service code."
+  }
+}

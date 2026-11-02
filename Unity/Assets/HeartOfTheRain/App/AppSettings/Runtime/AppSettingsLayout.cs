@@ -1,6 +1,7 @@
 using HeartOfTheRain.App.Localization;
 using System;
 using HeartOfTheRain.App.Home;
+using HeartOfTheRain.App.AccountDesign;
 namespace HeartOfTheRain.App.AppSettings
 {
     [Serializable] public sealed class AppSettingsFrame
@@ -41,6 +42,13 @@ namespace HeartOfTheRain.App.AppSettings
                 Hit(f,id,"toggle:"+keys[i],labels[i]+(values[i]?", on":", off"),bx+3,y+31,cell-6,88);
             }
         }
+        static void SaveProgress(HomeFrame f,AppSettingsSession s,float y,float w)
+        {
+            Art(f,"save-progress-face","Account_Primary",0,y,w,60,true);
+            Text(f,"save-progress-label",AccountText.T("saveProgress"),8,y,w-16,60,22,"#FFFFFF");
+            Text(f,"save-progress-status",AccountText.T(s.SaveStatusKey),0,y+64,w,24,12,Muted);
+            Hit(f,"save-progress","save-progress",AccountText.T("saveProgress"),0,y,w,60);
+        }
         static void Inventory(HomeFrame f,AppSettingsSession s,float w)
         {
             string[][] labels={new[]{"Rocket","Bomb","Rainbow\nOrb","Golden\nSeeker"},new[]{"Hammer","Axe","Ram","Atlas"}};
@@ -49,7 +57,7 @@ namespace HeartOfTheRain.App.AppSettings
             {
                 float y=row*stride;
                 Text(f,"inventory-heading-"+row,row==0?"Starting boosters":"Level tools",0,y,w,26,21);
-                Text(f,"inventory-note-"+row,row==0?"Choose before a level":"Provided at the start of each level",0,y+27,w,20,11,Muted);
+                Text(f,"inventory-note-"+row,row==0?"Choose before a level":"Use during a level",0,y+27,w,20,11,Muted);
                 for(int i=0;i<4;i++)
                 {
                     float x=i*(cell+8),size=Math.Min(cell-10,64);string id="inventory-"+row+"-"+i;
@@ -80,17 +88,19 @@ namespace HeartOfTheRain.App.AppSettings
                 float col=wide?(bw-20)/2:bw;Toggles(body,s,0,0,col);
                 if(wide)
                 {
-                    Card(body,"inventory","Inventory","Boosters & tools","SP_Treasury","inventory",0,133,col,56);
+                    SaveProgress(body,s,133,col);
+                    Card(body,"inventory","Inventory","Boosters & tools","SP_Treasury","inventory",0,225,col,56);
                     Card(body,"language","Language",AppSettingsSession.LanguageNames[s.Language],"AS_Globe","language",col+20,0,col,56);
                     Card(body,"help","Help & Support","Tips and answers","AS_Support","help",col+20,64,col,56);
-                    Card(body,"follow","Follow Us","News from the village","AS_Follow","follow",col+20,128,col,56);body.height=190;
+                    Card(body,"follow","Follow Us","News from the village","AS_Follow","follow",col+20,128,col,56);body.height=287;
                 }
                 else
                 {
-                    Card(body,"inventory","Inventory","Boosters & tools","SP_Treasury","inventory",0,139,bw,66);
-                    Card(body,"language","Language",AppSettingsSession.LanguageNames[s.Language],"AS_Globe","language",0,215,bw);
-                    Card(body,"help","Help & Support","Tips and answers","AS_Support","help",0,285,bw);
-                    Card(body,"follow","Follow Us","News from the village","AS_Follow","follow",0,355,bw);body.height=421;
+                    SaveProgress(body,s,139,bw);
+                    Card(body,"inventory","Inventory","Boosters & tools","SP_Treasury","inventory",0,231,bw,66);
+                    Card(body,"language","Language",AppSettingsSession.LanguageNames[s.Language],"AS_Globe","language",0,307,bw);
+                    Card(body,"help","Help & Support","Tips and answers","AS_Support","help",0,377,bw);
+                    Card(body,"follow","Follow Us","News from the village","AS_Follow","follow",0,447,bw);body.height=513;
                 }
                 float fy=py+ph-56,half=(pw-48)/2;
                 Text(c,"terms-label","Terms of Service",px+24,fy,half,44,12,"#FFF2D4");Hit(c,"terms","link:terms","Terms of Service",px+24,fy,half,44);
@@ -102,9 +112,9 @@ namespace HeartOfTheRain.App.AppSettings
                 else if(s.Page=="language")
                 {
                     Text(body,"language-intro","Choose your game language",0,0,bw,28,15);
-                    for(int i=0;i<AppSettingsSession.LanguageNames.Length;i++)
+                    for(int row=0;row<AppSettingsSession.LanguageNames.Length;row++)
                     {
-                        float y=40+i*61;string id="language-"+i;Art(body,id+"-face","AS_Row",0,y,bw,53,true);
+                        int i=GameLocale.DisplayIndexAt(row);float y=40+row*61;string id="language-"+i;Art(body,id+"-face","AS_Row",0,y,bw,53,true);
                         // Native names remain legible regardless of the current interface language.
                         string label=AppSettingsSession.LanguageNames[i];Text(body,id+"-label",label,16,y+4,bw-76,44,17,Ink,true);
                         if(i==s.Language)Art(body,id+"-check","SelectionTick_R2",bw-47,y+12,27,27);

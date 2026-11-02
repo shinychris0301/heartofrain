@@ -1,0 +1,1442 @@
+{
+  "version": "approved-chapter1-m50-r1-profile81",
+  "scope": "Server-owned attempt metadata copied from approved Unity M47 levels; this is not a board replay verifier. No client seed/config/reward overrides.",
+  "rewardSource": "Unity/Assets/HeartOfTheRain/App/PreLevel/PreLevelAssets.asset",
+  "levels": [
+    {
+      "level": 1,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L001.json",
+      "sourceSHA256": "0aed2bec2e6b23fdc1476a78d84a3f0d293de1e173cce9b43036eb00b98312a0",
+      "configHash": "0aed2bec2e6b23fdc1476a78d84a3f0d293de1e173cce9b43036eb00b98312a0",
+      "moves": 26,
+      "tileSeed": 36001,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 22
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 2,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L002.json",
+      "sourceSHA256": "a92791d607b797d12a9fec5942595f54239bc771c419f29e03a9d4b1b49be733",
+      "configHash": "a92791d607b797d12a9fec5942595f54239bc771c419f29e03a9d4b1b49be733",
+      "moves": 24,
+      "tileSeed": 36002,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 3,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L003.json",
+      "sourceSHA256": "3143d80578655b6b4093038e7c2eae012d1a4c41811f742b23321f21bbabd90c",
+      "configHash": "3143d80578655b6b4093038e7c2eae012d1a4c41811f742b23321f21bbabd90c",
+      "moves": 23,
+      "tileSeed": 36003,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 4,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L004.json",
+      "sourceSHA256": "fa83d4ed12f2550152059453685da02621bf0a31db5cd18d53395f42881ec835",
+      "configHash": "fa83d4ed12f2550152059453685da02621bf0a31db5cd18d53395f42881ec835",
+      "moves": 22,
+      "tileSeed": 36004,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 14
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 14
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 5,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L005.json",
+      "sourceSHA256": "469c20807a147c468cae7fac47f7fef765225acca8a022b2121994ecf3c59b9c",
+      "configHash": "469c20807a147c468cae7fac47f7fef765225acca8a022b2121994ecf3c59b9c",
+      "moves": 22,
+      "tileSeed": 36005,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 6,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L006.json",
+      "sourceSHA256": "3081d5bdd0ac62e9b9d147db5f20709655e8ec998fbd3b2c48eb74c7aa16694d",
+      "configHash": "3081d5bdd0ac62e9b9d147db5f20709655e8ec998fbd3b2c48eb74c7aa16694d",
+      "moves": 24,
+      "tileSeed": 36006,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 20
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 13
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 7,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L007.json",
+      "sourceSHA256": "dff88c3775620ed176bedcd649b15d470773e5872dc8271e274ee13e2e23928a",
+      "configHash": "dff88c3775620ed176bedcd649b15d470773e5872dc8271e274ee13e2e23928a",
+      "moves": 24,
+      "tileSeed": 36007,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 8,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L008.json",
+      "sourceSHA256": "0ca9dfdead9a9fd9ed2b53938090b5437b8d40791122760cec3a9899bf476aff",
+      "configHash": "0ca9dfdead9a9fd9ed2b53938090b5437b8d40791122760cec3a9899bf476aff",
+      "moves": 25,
+      "tileSeed": 36008,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 11
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 9,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L009.json",
+      "sourceSHA256": "b9710bbfb36cb1ebba9d277583ddc96367528a68e35553b99d6bffff67a81544",
+      "configHash": "b9710bbfb36cb1ebba9d277583ddc96367528a68e35553b99d6bffff67a81544",
+      "moves": 23,
+      "tileSeed": 36009,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 13
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 13
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 10,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L010.json",
+      "sourceSHA256": "fc0b086621e91ebed45b8333a306023c00651c31eabcadf15ae3bbe67c68be22",
+      "configHash": "fc0b086621e91ebed45b8333a306023c00651c31eabcadf15ae3bbe67c68be22",
+      "moves": 24,
+      "tileSeed": 36010,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 11,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L011.json",
+      "sourceSHA256": "6f84e15bf2223295e15604d7c81e2fdfe7872380a9474ca6d0ce89319eb44436",
+      "configHash": "6f84e15bf2223295e15604d7c81e2fdfe7872380a9474ca6d0ce89319eb44436",
+      "moves": 33,
+      "tileSeed": 36011,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 37
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 15
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 12,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L012.json",
+      "sourceSHA256": "353db4264614ace2a0a33624d8e7218aca9732b1e2d82018e95ecf946489df16",
+      "configHash": "353db4264614ace2a0a33624d8e7218aca9732b1e2d82018e95ecf946489df16",
+      "moves": 26,
+      "tileSeed": 36012,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 38
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 13,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L013.json",
+      "sourceSHA256": "7945cd3470fa39d9d4482c9c8475b3deaaabc451455a995ef1abecccc0b9a52f",
+      "configHash": "7945cd3470fa39d9d4482c9c8475b3deaaabc451455a995ef1abecccc0b9a52f",
+      "moves": 33,
+      "tileSeed": 36013,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 33
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 13
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 14,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L014.json",
+      "sourceSHA256": "235abbbf9b7cfec2ac47c245bfcb87ee668d30f2b06627baf00a4a3db5e1a872",
+      "configHash": "235abbbf9b7cfec2ac47c245bfcb87ee668d30f2b06627baf00a4a3db5e1a872",
+      "moves": 26,
+      "tileSeed": 36014,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 15,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L015.json",
+      "sourceSHA256": "dcefcb2d122ad155050e690e383426884da0754ce0c8f405a0ed1958492d9fc4",
+      "configHash": "dcefcb2d122ad155050e690e383426884da0754ce0c8f405a0ed1958492d9fc4",
+      "moves": 27,
+      "tileSeed": 36015,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 23
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 11
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 16,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L016.json",
+      "sourceSHA256": "353d7f6dc490c10d44cbabf3559e21ffeedd25188a2e099d2d5cf536e8f00a95",
+      "configHash": "353d7f6dc490c10d44cbabf3559e21ffeedd25188a2e099d2d5cf536e8f00a95",
+      "moves": 30,
+      "tileSeed": 36016,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 31
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 17,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L017.json",
+      "sourceSHA256": "72033a91ff820de7577d52222d627b90fd89d13054d0a2125d019040dd58c1e6",
+      "configHash": "72033a91ff820de7577d52222d627b90fd89d13054d0a2125d019040dd58c1e6",
+      "moves": 32,
+      "tileSeed": 36017,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 18,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L018.json",
+      "sourceSHA256": "87bf9f7c1d3f26000f8729d470ef15fe1c75478c3f9d0c99d07ccfd3325be217",
+      "configHash": "87bf9f7c1d3f26000f8729d470ef15fe1c75478c3f9d0c99d07ccfd3325be217",
+      "moves": 26,
+      "tileSeed": 36018,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 19,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L019.json",
+      "sourceSHA256": "8f4bbd9e1e30e5db9e69841f93f7ff1809a1e0aaa730ead22cfbf475e3ba648d",
+      "configHash": "8f4bbd9e1e30e5db9e69841f93f7ff1809a1e0aaa730ead22cfbf475e3ba648d",
+      "moves": 32,
+      "tileSeed": 36019,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 20,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L020.json",
+      "sourceSHA256": "b156b9de2882ea23a03d111956f3765bd21ce9b2cb13fe7b1e895c29bb3d14de",
+      "configHash": "b156b9de2882ea23a03d111956f3765bd21ce9b2cb13fe7b1e895c29bb3d14de",
+      "moves": 30,
+      "tileSeed": 36020,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 11
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 20
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 17
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 21,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L021.json",
+      "sourceSHA256": "e0fa18dd3bb7c56784b86cb0f6fc07316348c8e331e93a7013947f0f958151a0",
+      "configHash": "e0fa18dd3bb7c56784b86cb0f6fc07316348c8e331e93a7013947f0f958151a0",
+      "moves": 30,
+      "tileSeed": 511000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 28
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 22,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L022.json",
+      "sourceSHA256": "183f9d6a7c39c7ae8de0424f45a777e3f11cb601d0525ad76910df628916aaeb",
+      "configHash": "183f9d6a7c39c7ae8de0424f45a777e3f11cb601d0525ad76910df628916aaeb",
+      "moves": 36,
+      "tileSeed": 512000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 29
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 9
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 23,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L023.json",
+      "sourceSHA256": "f6c097d72c57b4dbcdaea63858d6957d350e5d28eb90fb64a202f8fe80a1c227",
+      "configHash": "f6c097d72c57b4dbcdaea63858d6957d350e5d28eb90fb64a202f8fe80a1c227",
+      "moves": 40,
+      "tileSeed": 36023,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 38
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 24,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L024.json",
+      "sourceSHA256": "1d125a6c6aac29ede01d880984b8896b023e7c6077d80133ef322265d33eecd9",
+      "configHash": "1d125a6c6aac29ede01d880984b8896b023e7c6077d80133ef322265d33eecd9",
+      "moves": 34,
+      "tileSeed": 514000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 9
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 25,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L025.json",
+      "sourceSHA256": "c498b138361582c840fd69a625ba7c51faaab773901ce7ba66a5273b9cc4b1dd",
+      "configHash": "c498b138361582c840fd69a625ba7c51faaab773901ce7ba66a5273b9cc4b1dd",
+      "moves": 39,
+      "tileSeed": 36025,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 10
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 26,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L026.json",
+      "sourceSHA256": "f6b0f98f72940750f61a21d20539a130ba5e709ac81ddac82279f49c3fb6ad2a",
+      "configHash": "f6b0f98f72940750f61a21d20539a130ba5e709ac81ddac82279f49c3fb6ad2a",
+      "moves": 28,
+      "tileSeed": 36026,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 45
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 2
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 27,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L027.json",
+      "sourceSHA256": "0cc659a6ff3173f79df402870fe24ab705d62c9d419e35892baa26e881777452",
+      "configHash": "0cc659a6ff3173f79df402870fe24ab705d62c9d419e35892baa26e881777452",
+      "moves": 36,
+      "tileSeed": 36027,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 28,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L028.json",
+      "sourceSHA256": "14cf0d9288f27b49292016832101beb88d9afef6c07d6cd54d402421d21730f5",
+      "configHash": "14cf0d9288f27b49292016832101beb88d9afef6c07d6cd54d402421d21730f5",
+      "moves": 32,
+      "tileSeed": 518000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 29,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L029.json",
+      "sourceSHA256": "3838293d4c1a35b8d95ef70c8d250f57423ba74da93408aa3a05435cdcbff49a",
+      "configHash": "3838293d4c1a35b8d95ef70c8d250f57423ba74da93408aa3a05435cdcbff49a",
+      "moves": 40,
+      "tileSeed": 519027,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 14
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 30,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L030.json",
+      "sourceSHA256": "0f3e962d588dc34c97a2ea89a0149fce70fecfb3dcedcea1a7d80259239d0835",
+      "configHash": "0f3e962d588dc34c97a2ea89a0149fce70fecfb3dcedcea1a7d80259239d0835",
+      "moves": 44,
+      "tileSeed": 520000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 31,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L031.json",
+      "sourceSHA256": "48dfb1c8a3ad25f1ada7cc447ae26f73e98cdefabdd43d9f5e2c0319c5f86ea9",
+      "configHash": "48dfb1c8a3ad25f1ada7cc447ae26f73e98cdefabdd43d9f5e2c0319c5f86ea9",
+      "moves": 36,
+      "tileSeed": 36031,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 19
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 32,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L032.json",
+      "sourceSHA256": "35819bcf51fcdcf3ba5b6593578998be237aa5a71c02e234466e2199eb690471",
+      "configHash": "35819bcf51fcdcf3ba5b6593578998be237aa5a71c02e234466e2199eb690471",
+      "moves": 34,
+      "tileSeed": 522011,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 9
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 33,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L033.json",
+      "sourceSHA256": "8f561b648fbc22e758fed0d19956abbeba8103ce3fecfb0fb00ad4c8d347483e",
+      "configHash": "8f561b648fbc22e758fed0d19956abbeba8103ce3fecfb0fb00ad4c8d347483e",
+      "moves": 38,
+      "tileSeed": 36033,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 34,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L034.json",
+      "sourceSHA256": "c5e3562225c4a01c6117270ecb7177b991df9cdd85382f29181c1573372b29d5",
+      "configHash": "c5e3562225c4a01c6117270ecb7177b991df9cdd85382f29181c1573372b29d5",
+      "moves": 34,
+      "tileSeed": 524004,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 35,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L035.json",
+      "sourceSHA256": "928fdc6943a088d3db7aa7dd4ac46a001341b02d7ea5908291eb1c18fe8bae9b",
+      "configHash": "928fdc6943a088d3db7aa7dd4ac46a001341b02d7ea5908291eb1c18fe8bae9b",
+      "moves": 40,
+      "tileSeed": 36035,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 36,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L036.json",
+      "sourceSHA256": "19792b0eec55c914d5a19ab6e0246a206c4bfa0f72942cade894b21191296888",
+      "configHash": "19792b0eec55c914d5a19ab6e0246a206c4bfa0f72942cade894b21191296888",
+      "moves": 30,
+      "tileSeed": 526003,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 37,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L037.json",
+      "sourceSHA256": "b193c998dd81e299004e9746ba29d5a99f7d12fba8f7d22262b131245c15d124",
+      "configHash": "b193c998dd81e299004e9746ba29d5a99f7d12fba8f7d22262b131245c15d124",
+      "moves": 36,
+      "tileSeed": 527002,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 26
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 1
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 38,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L038.json",
+      "sourceSHA256": "b6be3c9380ed806f12d7f42021ad3420634677255b0e12d12dd25516a143038d",
+      "configHash": "b6be3c9380ed806f12d7f42021ad3420634677255b0e12d12dd25516a143038d",
+      "moves": 42,
+      "tileSeed": 36038,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 23
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 39,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L039.json",
+      "sourceSHA256": "3f4b6f81921fa7a274effffceb61199d22eae6be4a0f16290b3aedc5978afae1",
+      "configHash": "3f4b6f81921fa7a274effffceb61199d22eae6be4a0f16290b3aedc5978afae1",
+      "moves": 38,
+      "tileSeed": 529014,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "case",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 40,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L040.json",
+      "sourceSHA256": "4f65c81a5a2f6df82a5958b116961c4431105bc4d0bd782f6a5a05aae2073eee",
+      "configHash": "4f65c81a5a2f6df82a5958b116961c4431105bc4d0bd782f6a5a05aae2073eee",
+      "moves": 40,
+      "tileSeed": 530023,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 8
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "stone",
+          "count": 14
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 41,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L041.json",
+      "sourceSHA256": "62372b62db1d100935ea4b22bee4d4e8da38e5d6adcfcdaccfe7ae3b4c9344db",
+      "configHash": "62372b62db1d100935ea4b22bee4d4e8da38e5d6adcfcdaccfe7ae3b4c9344db",
+      "moves": 40,
+      "tileSeed": 36041,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 30
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 3
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 42,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L042.json",
+      "sourceSHA256": "7fbffafcaea830522160aad751e0016e593fc67317bfefd094cd0c7df63dc5d3",
+      "configHash": "7fbffafcaea830522160aad751e0016e593fc67317bfefd094cd0c7df63dc5d3",
+      "moves": 42,
+      "tileSeed": 36042,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 48
+        },
+        {
+          "type": "deliver",
+          "family": "pail",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 43,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L043.json",
+      "sourceSHA256": "b2467fcd4036226036e17263f1320177691d4248431b7ceb1f87820d653c2a45",
+      "configHash": "b2467fcd4036226036e17263f1320177691d4248431b7ceb1f87820d653c2a45",
+      "moves": 44,
+      "tileSeed": 533008,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 12
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 10
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 44,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L044.json",
+      "sourceSHA256": "436252a952fb6d163cb17f918382f220722d8c7ee56e54e0d23b0d1b0bac8181",
+      "configHash": "436252a952fb6d163cb17f918382f220722d8c7ee56e54e0d23b0d1b0bac8181",
+      "moves": 38,
+      "tileSeed": 534000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 27
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 12
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 45,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L045.json",
+      "sourceSHA256": "8e3f420acc7af594f310e6ab7512efedd4bef3db8252c40ac9bdd16911c5deb2",
+      "configHash": "8e3f420acc7af594f310e6ab7512efedd4bef3db8252c40ac9bdd16911c5deb2",
+      "moves": 44,
+      "tileSeed": 535080,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 25
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 21
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 46,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L046.json",
+      "sourceSHA256": "80251ff2219ed212a6560b8f0cb4755e7c1674d158183693362c2a3df93234cb",
+      "configHash": "80251ff2219ed212a6560b8f0cb4755e7c1674d158183693362c2a3df93234cb",
+      "moves": 30,
+      "tileSeed": 536000,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 6
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 47,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L047.json",
+      "sourceSHA256": "4034b5a37c1ec0b307e3fa83b7115095783abb43e82fd7db48be89c6748d3a31",
+      "configHash": "4034b5a37c1ec0b307e3fa83b7115095783abb43e82fd7db48be89c6748d3a31",
+      "moves": 36,
+      "tileSeed": 537001,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 21
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 8
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 9
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 48,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L048.json",
+      "sourceSHA256": "3f34f58a87e5aa0cffb096f434961c957267a427d54ae0cef63fc26f45b7ae57",
+      "configHash": "3f34f58a87e5aa0cffb096f434961c957267a427d54ae0cef63fc26f45b7ae57",
+      "moves": 44,
+      "tileSeed": 36048,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 32
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "moss",
+          "count": 16
+        },
+        {
+          "type": "clear_obstacle",
+          "family": "gate",
+          "count": 8
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 49,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L049.json",
+      "sourceSHA256": "fa5d291949e32fc0d5a80ec23c2500d226269e8294ab48fd91797a840784a26b",
+      "configHash": "fa5d291949e32fc0d5a80ec23c2500d226269e8294ab48fd91797a840784a26b",
+      "moves": 44,
+      "tileSeed": 539060,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 32
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 8
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    },
+    {
+      "level": 50,
+      "source": "Unity/Assets/HeartOfTheRain/M47/Data/Levels/C01_L050.json",
+      "sourceSHA256": "b3d3d3e864f3062571849bde236a09700dfd50631c9dc2b3415acf556ffbf5f6",
+      "configHash": "b3d3d3e864f3062571849bde236a09700dfd50631c9dc2b3415acf556ffbf5f6",
+      "moves": 44,
+      "tileSeed": 485003,
+      "goals": [
+        {
+          "type": "clear_obstacle",
+          "family": "crate",
+          "count": 18
+        },
+        {
+          "type": "clear_column",
+          "family": "crystal",
+          "count": 2
+        },
+        {
+          "type": "release_spirit",
+          "family": "pod",
+          "count": 8
+        },
+        {
+          "type": "collect_rainlight",
+          "family": "rainlight",
+          "count": 4
+        }
+      ],
+      "reward": {
+        "coins": 50,
+        "stars": 1
+      }
+    }
+  ]
+}

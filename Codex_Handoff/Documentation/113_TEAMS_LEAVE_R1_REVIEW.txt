@@ -1,0 +1,23 @@
+HEART OF THE RAIN - TEAMS LEAVE R1 REVIEW 113
+29 October 2026
+
+Status: implemented with scoped Unity Editor, local backend and HTTP tests passed. No Review113 APK, Android device or hosted/production service was tested.
+
+Package review
+The standalone and embedded Unity packages match; all 402 manifest entries and 127 Unity package groups verified. The package provides six new TeamsLifecycle data contracts and no new raster art or host runtime. Eight new GUIDs are unique and all package data match. All existing artwork and 3,042 previous metadata files/GUIDs remain unchanged; 3,059 final GUIDs are unique. Some inherited metadata differs from the host's normalized baseline and was not overwritten. Five pre-edit Unity source copies are retained and hash-verified. See Verification/Evidence/Review113/PackageReview113.json and SourceDelta113_03.json.
+
+Behavior
+Member Team Info opens an overlay whose Cancel, Close and Back actions do not send a leave request. Explicit confirmation sends a version-bound request through the protected durable operation journal. Pending can be closed without cancelling or resubmitting. Unknown outcomes require checking the same operation; no success is inferred from timeouts. Deterministic guarded rejections are recorded atomically as recoverable receipts and are shown as failure only after current membership is confirmed. On confirmed exit the app refreshes membership, invalidates only former team-scoped data, routes to the appropriate current team or Find Team, and shows the short success toast when applicable. A hidden-page success toast is deferred in memory until a fresh no-team result; it can be lost on process restart. Life-help and mail rewards already earned remain owner-recoverable and progress/inventory/wallet are not reset.
+
+The existing backend rule is preserved: a leader with other members must transfer ownership before leaving; a sole owner leaving closes that team. The server supplies the restriction and the solo closure consequence is explicitly presented in the confirmation. The new server token binds membership history, owner and member count so a delayed request cannot silently leave a rejoined membership or acquire a changed team-close consequence. Historic legacy command-only requests remain compatible but do not gain this guard. No schema upgrade, new fee or new cooldown was introduced.
+
+Verification
+136 focused backend tests pass across nine modules with no failures/errors/skips, including same-second rejoin, owner/count changes, durable success/rejection recovery, historical legacy digest compatibility and VACUUM. Existing Starlette TestClient/httpx deprecation persists. Pinned Unity2022.3.62f3 import passed 23 checks. The final feature suite passed 12,099 checks, 12 scripted cases, 160 localized layouts and four motion cases. It checks cancel/unknown/retry, hidden-result reconciliation, old/new-version caches, solo-owner text, reduced motion, semantic labels, long-name glyph bounds and two-line Unicode-safe ellipsis. Actual local Unity-to-backend HTTP passed 33 checks over 21 requests using two disposable managed guests, deliberately suppressing committed Left and Rejected responses and recovering the same operations; the independent SQLite/wallet audit and owned service/port closure passed. Existing Invite, Mail, Chat, Navigation and General suites passed 28,598/400 layouts, 72,888/300, 76,001/285, 6,451/70 and 535 checks respectively. No C# compile warnings/errors were seen in the recorded Unity invocations; allocator teardown messages and previous failed/diagnostic epochs are retained in NativeSummary113.json.
+
+Visual capture limitations
+Package images and Unity screenshots use synthetic teams and are not physical device evidence. The long-name capture intentionally uses a disabled synthetic state solely for name rendering; the standard confirmation capture shows the enabled Leave control. HomeControlLabel semantic labels are not proof of Android TalkBack announcements. The supplied 60 fps motion preview is not a measured game frame rate. The new confirmation toast is presentation only and is not durably persisted across process termination.
+
+Open acceptance
+Configure/deploy the public backend, then test the actual Android build, safe areas, focus/Back, screen reader announcements, background/relaunch and device performance. Direct invitations remain disabled under the user's explicit decision. Production activation and actual device acceptance remain open; the previously installed phone APK is Review109.
+
+Comparison: Verification/Evidence/Review113/Comparison.html

@@ -1,0 +1,45 @@
+# Review 128 candidate for C:\ProgramData\HeartOfTheRain\services\Caddyfile.
+# Merge these two changes into the live file; keep its existing draft-page handlers.
+#
+# 1. Request log: method, path, status and duration for diagnosing the phone.
+#    The whole query string is removed, because the VK callback carries OAuth
+#    `code` and `state` values that must never reach a log. Caddy already redacts
+#    the Authorization header by default. Request bodies are never logged.
+# 2. Verified client address: each player gets their own identity rate bucket
+#    instead of all players sharing 127.0.0.1.
+#
+# Deploy this BEFORE the backend that reads X-Hotr-Verified-Client-IP, so that no
+# client can set that header itself. Validate first, then reload:
+#   C:\Tools\Caddy\caddy.exe validate --config <file>
+api.novamind-it.ru {
+    log {
+        output file C:/ProgramData/HeartOfTheRain/services/logs/caddy-access.log {
+            roll_size 10MiB
+            roll_keep 5
+            roll_keep_for 168h
+        }
+        format filter {
+            fields {
+                request>uri regexp "\?.*$" ""
+                request>headers delete
+                resp_headers delete
+            }
+            wrap json
+        }
+    }
+
+    # Operator-only routes stay available through a local management tunnel.
+    @private path /internal /internal/* /docs* /redoc* /openapi.json*
+    handle @private {
+        respond 404
+    }
+    handle {
+        reverse_proxy 127.0.0.1:8751 {
+            # Overwrite, never append or copy an incoming identity header.
+            header_up X-Hotr-Verified-Client-IP {remote_host}
+            header_up -Forwarded
+            header_up -X-Forwarded-For
+            header_up -X-Real-IP
+        }
+    }
+}

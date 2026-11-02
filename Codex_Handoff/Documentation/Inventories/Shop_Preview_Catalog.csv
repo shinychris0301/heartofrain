@@ -1,0 +1,13 @@
+﻿id,title,section,art,coins,boostersEach,rockets,bombs,rainbowOrbs,goldenSeekers,priceLabel,available,status
+wellkeeper,Wellkeeper Kit,special,SP_CoinPouch,2000,1,1,1,1,1,$1.99,True,PREVIEW ONLY — not store products or approved live prices
+rainy-day,Rainy Day Bundle,special,SP_CoinPouch,3500,2,2,2,2,2,$3.99,True,PREVIEW ONLY — not store products or approved live prices
+rainlight,Rainlight Reserve,special,SP_Treasury,6000,3,3,3,3,3,$6.99,True,PREVIEW ONLY — not store products or approved live prices
+village,Village Treasury,mega,SP_Treasury,5000,2,3,3,3,3,$9.99,True,PREVIEW ONLY — not store products or approved live prices
+festival,Festival Chest,mega,SP_Treasury,10000,4,6,6,6,6,$19.99,True,PREVIEW ONLY — not store products or approved live prices
+keepers,Keeper's Collection,mega,SP_Treasury,25000,8,12,12,12,12,$39.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-1000,"1,000 Coins",coins,RewardCoin,1000,0,0,0,0,0,$1.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-5000,"5,000 Coins",coins,RewardCoin,5000,0,0,0,0,0,$7.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-10000,"10,000 Coins",coins,RewardCoin,10000,0,0,0,0,0,$14.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-25000,"25,000 Coins",coins,RewardCoin,25000,0,0,0,0,0,$29.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-50000,"50,000 Coins",coins,RewardCoin,50000,0,0,0,0,0,$59.99,True,PREVIEW ONLY — not store products or approved live prices
+coins-100000,"100,000 Coins",coins,RewardCoin,100000,0,0,0,0,0,$99.99,True,PREVIEW ONLY — not store products or approved live prices

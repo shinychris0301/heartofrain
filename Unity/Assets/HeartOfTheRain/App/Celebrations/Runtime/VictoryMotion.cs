@@ -7,15 +7,15 @@ namespace HeartOfTheRain.App.Celebrations
         public static VictoryGeometry Build(float width,float height)
         {
             var g=new VictoryGeometry{width=Math.Max(1,width),height=Math.Max(1,height)};
-            g.size=Math.Min(620,Math.Min(g.width*.86f,g.height*.58f));
-            g.x=(g.width-g.size)/2;g.y=(g.height-g.size)*.43f;return g;
+            g.size=Math.Min(g.width*1.06f,g.height*.84f);
+            g.x=(g.width-g.size)/2;g.y=g.height*.49f-g.size/2;return g;
         }
     }
     [Serializable] public struct VictoryPose {public float alpha,dim,scale,lift,haloAlpha,haloScale,haloAngle;}
     [Serializable] public struct VictoryParticle {public float x,y,width,height,angle,alpha;public int color;public bool star;}
     public static class VictoryMotion
     {
-        public const float Duration=3.5f,ReducedDuration=1.6f,SkipAfter=.65f;
+        public const float Duration=3.5f,ReducedDuration=1.88f,SkipAfter=.65f;
         public const int ParticleCount=52;
         public static float Clamp(float v){return Math.Max(0,Math.Min(1,v));}
         public static float Smooth(float v){v=Clamp(v);return v*v*(3-2*v);}
@@ -23,9 +23,9 @@ namespace HeartOfTheRain.App.Celebrations
         {
             float duration=reduced?ReducedDuration:Duration;
             float alpha=Smooth(time/.18f)*(1-Smooth((time-duration+.35f)/.35f));
-            if(reduced)return new VictoryPose{alpha=alpha,dim=.22f*alpha,scale=1,haloScale=1,haloAlpha=.22f*alpha};
+            if(reduced)return new VictoryPose{alpha=alpha,dim=.80f*alpha,scale=1,haloScale=1,haloAlpha=.22f*alpha};
             float u=Clamp((time-.08f)/.58f),back=1+2.70158f*(float)Math.Pow(u-1,3)+1.70158f*(float)Math.Pow(u-1,2);
-            return new VictoryPose{alpha=alpha,dim=.24f*alpha,scale=.83f+.17f*back,
+            return new VictoryPose{alpha=alpha,dim=.80f*alpha,scale=.83f+.17f*back,
                 lift=24*(1-Smooth(time/.6f)),haloAlpha=.31f*alpha*(.93f+.07f*(float)Math.Sin(time*3)),
                 haloScale=1.05f+.035f*(float)Math.Sin(time*2),haloAngle=time*12};
         }

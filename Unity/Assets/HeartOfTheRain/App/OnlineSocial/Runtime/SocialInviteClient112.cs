@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+namespace HeartOfTheRain.App.OnlineSocial {
+ public sealed partial class SocialBackendClient82 {
+  void InviteRow112(Dictionary<string,object> row,bool sequence) {
+   Need(Id(Text(row,"inviteId",32)));string state=Text(row,"state",24);Need(new[]{"Ready","TeamFull","AlreadyMember","Expired","Unavailable"}.Contains(state));string team=Text(row,"teamId",32,true),name=Text(row,"teamName",128,true),sender=Text(row,"senderName",512,true),badge=Text(row,"badgeId",16,true);long capacity=Number(row,"capacity",0,100),members=Number(row,"memberCount",0,capacity);if(state=="Unavailable")Need(team==""&&name==""&&sender==""&&badge==""&&capacity==0&&members==0);else{Need(Id(team)&&capacity>0&&HeartOfTheRain.App.TeamsAccess.TeamsAccessBadges109.Valid(badge));UserText(name,32);UserText(sender,64);}Number(row,"expiresAtUtc",1);if(sequence)Number(row,"sequence",1);
+  }
+  public void GetInvitableFriends112(string team,string after,string query,Action<SocialReply82<SocialInviteFriends112>> done){
+   if(!Input(done,()=>{Segment(team);Need(after==""||Id(after));UserText(query??"",64,true);} ))return;
+   Send("GET","/v1/teams/"+team+"/invitations?limit=8&after="+Uri.EscapeDataString(after??"")+"&query="+Uri.EscapeDataString(query??""),null,json=>Read<SocialInviteFriends112>(json,row=>{
+    Need(Text(row,"teamId",32)==team);Number(row,"serverUtc",1);UserText(Text(row,"teamName",128),32);Need(HeartOfTheRain.App.TeamsAccess.TeamsAccessBadges109.Valid(Text(row,"badgeId",16)));long capacity=Number(row,"capacity",1,100);Number(row,"memberCount",0,capacity);Need(Regex.IsMatch(Text(row,"publicTeamCode",12),"\\A[0-9A-F]{12}\\z"));Flag(row,"canInvite");string cursor=Text(row,"nextCursor",32,true);bool more=Flag(row,"hasMore");var seen=new HashSet<string>(StringComparer.Ordinal);string previous=after??"",last=previous;foreach(var item in Array(row,"friends",8)){var f=Obj(item);string id=Text(f,"friendId",32);Need(Id(id)&&id!=player&&seen.Add(id)&&StringComparer.Ordinal.Compare(id,previous)>0);previous=last=id;UserText(Text(f,"displayName",512),64);Number(f,"completedLevels",0,100000);string state=Text(f,"inviteState",16),invite=Text(f,"inviteId",32,true);long expiry=Number(f,"expiresAtUtc");Need(new[]{"Ready","Invited","Member"}.Contains(state));Need(state=="Invited"?Id(invite)&&expiry>0:invite==""&&expiry==0);}Need(cursor==last);Need(!more||cursor!=""&&StringComparer.Ordinal.Compare(cursor,after??"")>0);
+   }),done);
+  }
+  public void GetReceivedInvitations112(long before,Action<SocialReply82<SocialInvitations112>> done){if(!Input(done,()=>Need(before>=0)))return;Send("GET","/v1/invitations/received?before="+before.ToString(CultureInfo.InvariantCulture)+"&limit=8",null,json=>Read<SocialInvitations112>(json,row=>{Number(row,"serverUtc",1);long cursor=Number(row,"nextCursor"),previous=before>0?before:long.MaxValue,last=0;bool more=Flag(row,"hasMore");var ids=new HashSet<string>(StringComparer.Ordinal);var entries=Array(row,"invitations",8);foreach(var item in entries){var value=Obj(item);InviteRow112(value,true);long n=Number(value,"sequence",1);Need(n<previous&&ids.Add(Text(value,"inviteId",32)));previous=last=n;}Need(cursor==(entries.Count==0?0:last));Need(!more||entries.Count>0);}),done);}
+  public void GetInvitation112(string id,Action<SocialReply82<SocialInvitationDetail112>> done){if(!Input(done,()=>Segment(id)))return;Send("GET","/v1/invitations/"+id,null,json=>Read<SocialInvitationDetail112>(json,row=>{Number(row,"serverUtc",1);var value=Obj(SocialJson82.Field(row,"invitation"));InviteRow112(value,false);Need(Text(value,"inviteId",32)==id);}),done);}
+  public void SendInvitation112(string command,string team,string friend,Action<SocialReply82<SocialMutation82>> done)=>Mutate("invite.send","/v1/teams/"+team+"/invitations/"+friend,new Command{commandId=command},command,done);
+  void InviteReceipt112(Dictionary<string,object> row,SocialPendingCommand82 pending){var parts=pending.path.Split('/');Need(Text(row,"operation",24)=="invite.send"&&Id(Text(row,"receiptId",32))&&Text(row,"teamId",32)==parts[3]&&Text(row,"friendId",32)==parts[5]&&Id(Text(row,"inviteId",32))&&Text(row,"state",16)=="Invited");long created=Number(row,"createdAtUtc",1);Need(Number(row,"expiresAtUtc",created)>created);Number(row,"serverUtc",1);}
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "revision": "2026-11-01",
+  "language": "ru",
+  "operatorName": "ИП Евсягин Алексей Валерьевич",
+  "country": "Россия",
+  "website": "https://novamind.ru/",
+  "supportEmail": "info@novamind.ru",
+  "operatorIdentityConfirmed": true,
+  "supportContactConfirmed": true,
+  "finalPublicationReady": true,
+  "publicOrigin": "https://api.novamind-it.ru",
+  "routes": ["/privacy", "/terms", "/support"],
+  "productionEnabled": false,
+  "note": "Owner approved the interstitial disclosure for static-page publication on 1 November 2026. This flag does not authorize backend production activation or declare legal compliance."
+}

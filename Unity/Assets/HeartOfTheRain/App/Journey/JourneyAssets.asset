@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c649c3ecb25b8dbc1a9d3096d5dcfd, type: 3}
   m_Name: M60 Journey Assets
   m_EditorClassIdentifier:
-  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
-  preLevel: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 3}
+  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 2}
+  preLevel: {fileID: 11400000, guid: 84c5dbb2a9485613b5887742448dbe32, type: 2}
   catalog: {fileID: 4900000, guid: 74a9f46863ef5f1e8e8bb432412f9f38, type: 3}
   sprites:
   - id: ArchiveBackdrop

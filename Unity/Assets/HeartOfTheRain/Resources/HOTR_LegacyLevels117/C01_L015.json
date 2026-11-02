@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": 4,
+  "revision": "M36 R2",
+  "id": "C01_L015",
+  "chapter": 1,
+  "levelInChapter": 15,
+  "globalLevel": 15,
+  "name": "Stone Steps",
+  "storyBeat": "Remove broken masonry",
+  "columns": 9,
+  "rows": 11,
+  "coordinateSystem": "bottom_left_y_up",
+  "activeCells": [
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "x": 1,
+      "y": 3
+    },
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 1,
+      "y": 5
+    },
+    {
+      "x": 1,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 7
+    },
+    {
+      "x": 1,
+      "y": 8
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 1
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 3
+    },
+    {
+      "x": 2,
+      "y": 4
+    },
+    {
+      "x": 2,
+      "y": 5
+    },
+    {
+      "x": 2,
+      "y": 6
+    },
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 2,
+      "y": 8
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 1
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 5
+    },
+    {
+      "x": 3,
+      "y": 6
+    },
+    {
+      "x": 3,
+      "y": 7
+    },
+    {
+      "x": 3,
+      "y": 8
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 1
+    },
+    {
+      "x": 4,
+      "y": 2
+    },
+    {
+      "x": 4,
+      "y": 3
+    },
+    {
+      "x": 4,
+      "y": 4
+    },
+    {
+      "x": 4,
+      "y": 5
+    },
+    {
+      "x": 4,
+      "y": 6
+    },
+    {
+      "x": 4,
+      "y": 7
+    },
+    {
+      "x": 4,
+      "y": 8
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 1
+    },
+    {
+      "x": 5,
+      "y": 2
+    },
+    {
+      "x": 5,
+      "y": 3
+    },
+    {
+      "x": 5,
+      "y": 4
+    },
+    {
+      "x": 5,
+      "y": 5
+    },
+    {
+      "x": 5,
+      "y": 6
+    },
+    {
+      "x": 5,
+      "y": 7
+    },
+    {
+      "x": 5,
+      "y": 8
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 1
+    },
+    {
+      "x": 6,
+      "y": 2
+    },
+    {
+      "x": 6,
+      "y": 3
+    },
+    {
+      "x": 6,
+      "y": 4
+    },
+    {
+      "x": 6,
+      "y": 5
+    },
+    {
+      "x": 6,
+      "y": 6
+    },
+    {
+      "x": 6,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 9
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 2
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 4
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 7,
+      "y": 7
+    },
+    {
+      "x": 7,
+      "y": 8
+    },
+    {
+      "x": 8,
+      "y": 4
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 8,
+      "y": 6
+    }
+  ],
+  "initialTiles": [
+    {
+      "x": 0,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": 2
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": 1
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "color": 2
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": 5
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": 2
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "color": 3
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "color": 2
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "color": 4
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": 2
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": 5
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "color": 3
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "color": 4
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "color": 1
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": 2
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": 2
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "color": 5
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "color": 3
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "color": 5
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": 5
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "color": 2
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": 1
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "color": 5
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": 3
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": 4
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "color": 2
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "color": 1
+    }
+  ],
+  "obstacles": [
+    {
+      "instanceId": "C01_L015_pail_1_5",
+      "family": "pail",
+      "layer": "body",
+      "hp": 0,
+      "x": 1,
+      "y": 5,
+      "art": "OB_PAIL_FULL",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_pail_2_5",
+      "family": "pail",
+      "layer": "body",
+      "hp": 0,
+      "x": 2,
+      "y": 5,
+      "art": "OB_PAIL_FULL",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_case_5_5",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 5,
+      "y": 5,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_case_6_5",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 6,
+      "y": 5,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_case_7_4",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 4,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_case_7_5",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 7,
+      "y": 5,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_case_8_4",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 8,
+      "y": 4,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_case_8_5",
+      "family": "case",
+      "layer": "body",
+      "hp": 1,
+      "x": 8,
+      "y": 5,
+      "art": "OB_CASE_HP1",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_2_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 0,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_2_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 1,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_3_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 0,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_3_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 1,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_3_2",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 2,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_4_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 0,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_4_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 1,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_4_2",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 2,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_5_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 0,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_5_1",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 1,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_stone_6_0",
+      "family": "stone",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 0,
+      "art": "OB_STONE_HP2",
+      "motion": "anchored"
+    },
+    {
+      "instanceId": "C01_L015_crate_0_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 0,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_0_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 0,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_1_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_1_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_1_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 1,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_2_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_2_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_2_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 2,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_3_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_3_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 3,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_3_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 3,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_4_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_4_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 4,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_4_5",
+      "family": "crate",
+      "layer": "body",
+      "hp": 1,
+      "x": 4,
+      "y": 5,
+      "art": "OB_CRATE_HP1",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_5_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_5_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_5_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 5,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_6_1",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 1,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_6_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_6_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_6_4",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 6,
+      "y": 4,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_7_2",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 2,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    },
+    {
+      "instanceId": "C01_L015_crate_7_3",
+      "family": "crate",
+      "layer": "body",
+      "hp": 2,
+      "x": 7,
+      "y": 3,
+      "art": "OB_CRATE_HP2",
+      "motion": "falls"
+    }
+  ],
+  "initialPowerUps": [],
+  "activeColors": [
+    5,
+    2,
+    1,
+    4,
+    3
+  ],
+  "tileSeed": 36015,
+  "spawnPoints": [
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 1,
+      "y": 8
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 3,
+      "y": 10
+    },
+    {
+      "x": 4,
+      "y": 10
+    },
+    {
+      "x": 5,
+      "y": 10
+    },
+    {
+      "x": 6,
+      "y": 10
+    },
+    {
+      "x": 7,
+      "y": 8
+    },
+    {
+      "x": 8,
+      "y": 6
+    }
+  ],
+  "gravity": "down_per_vertical_active_segment; fixed bodies block fall",
+  "obstaclePlacement": "authored_connected_patches_and_banks",
+  "cellOccupancy": "exactly one gem OR one standalone obstacle/target; no overlays or underlays",
+  "deliveryExits": [
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 0
+    }
+  ],
+  "deliveryRoutes": [
+    {
+      "start": {
+        "x": 1,
+        "y": 5
+      },
+      "exit": {
+        "x": 1,
+        "y": 2
+      },
+      "cells": [
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "start": {
+        "x": 2,
+        "y": 5
+      },
+      "exit": {
+        "x": 2,
+        "y": 0
+      },
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "introducesVariant": null,
+  "mossRegrowth": {
+    "enabled": false,
+    "startLevel": 27,
+    "afterConsecutiveMovesWithoutMossDamage": 2,
+    "maxNewCellsTotal": 3,
+    "spawnPerTrigger": 1,
+    "target": "replace one orthogonally adjacent ordinary gem with standalone HP1 moss; never share its cell",
+    "selection": "nearest existing moss, then bottom-left coordinate",
+    "exclude": "power-ups, obstacles, delivery targets and exit cells",
+    "goal": "remaining moss counter increases by one; all moss must be cleared"
+  },
+  "movesProposal": 27,
+  "difficultyIntent": "Hard",
+  "introduces": null,
+  "introducedFamilies": [],
+  "familiesPresent": [
+    "crate",
+    "stone",
+    "pail",
+    "case"
+  ],
+  "targetTypeCount": 4,
+  "targetTypeLimit": 4,
+  "objectivePolicy": "2 introductory/easy/relief; 3 standard; 4 hard/super-hard/finale. Obstacle and delivery goals only; no extra color goal.",
+  "lesson": "Create power-ups in the open space before attacking the sealed cases.",
+  "goals": [
+    {
+      "type": "clear_obstacle",
+      "family": "crate",
+      "count": 23
+    },
+    {
+      "type": "clear_obstacle",
+      "family": "stone",
+      "count": 11
+    },
+    {
+      "type": "deliver",
+      "family": "pail",
+      "count": 2
+    },
+    {
+      "type": "clear_obstacle",
+      "family": "case",
+      "count": 6
+    }
+  ],
+  "formations": [
+    {
+      "layer": "body",
+      "cells": [
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "activeCells": 75,
+    "bodyCells": 42,
+    "underlayCells": 0,
+    "overlayCells": 0,
+    "occupiedObstacleCells": 42,
+    "coveragePercent": 56.0,
+    "coverageCapPercent": 64,
+    "targetTypes": 4,
+    "damageUnits": 71,
+    "minimumDamageUnitsPerMove": 2.63,
+    "counts": {
+      "pail": 2,
+      "case": 6,
+      "stone": 11,
+      "crate": 23
+    }
+  },
+  "validation": {
+    "noInitialMatches": true,
+    "legalOpeningSwaps": 14,
+    "frontierSwaps": 3,
+    "waterGateOpeningSwaps": 0,
+    "powerUpCreationOpeningSwaps": 2,
+    "exampleFrontierSwap": [
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "exampleWaterSwap": null,
+    "examplePowerUpSwap": [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    "seedAttempts": 3,
+    "fullSolvability": "NOT_TESTED",
+    "difficultyParity": "NOT_VERIFIED"
+  }
+}

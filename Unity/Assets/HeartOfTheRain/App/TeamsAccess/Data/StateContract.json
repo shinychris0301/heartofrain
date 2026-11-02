@@ -1,0 +1,46 @@
+{
+  "note": "Presentation contract only. Server owns membership, capacity, fees and eligibility. All numeric samples are review fixtures.",
+  "find": {
+    "loading": "spinner within content; keep navigation stable",
+    "ready": "team cards and search",
+    "empty": "no_results + retry/search",
+    "offline": "no_connection + connection_help + retry"
+  },
+  "create": {
+    "valid": "name, selected badge, description, required level, team type, configured fee",
+    "invalid": "inline text error by invalid input; preserve draft",
+    "pending": "disable repeat create; keep button size; spinner",
+    "insufficientCoins": "localized shortfall; explicit shop action, no automatic charge"
+  },
+  "join": {
+    "eligible": "green Join",
+    "full": "disabled + team_full",
+    "levelLocked": "disabled + level_required",
+    "pending": "disable repeats",
+    "success": "switch to member state only on confirmed response",
+    "failure": "refresh state and show error"
+  },
+  "badgePicker": {
+    "open": "copy current selection into draft",
+    "select": "outline + check + localized name",
+    "confirm": "apply draft to create form",
+    "close": "discard unconfirmed choice"
+  },
+  "member": {
+    "actions": [
+      "Invite",
+      "Leave team"
+    ],
+    "invite": "open existing share/invite flow only on tap",
+    "leave": "confirmation with Cancel / Leave; no charge",
+    "leaveFailure": "remain member until server confirms"
+  },
+  "reviewConfiguration": {
+    "capacity": 50,
+    "createFeeCoins": 100,
+    "nameMaxLength": 24,
+    "requiredLevel": 20,
+    "teamType": "Open",
+    "productionValuesFrom": "existing configuration / server; this package does not set economy values"
+  }
+}

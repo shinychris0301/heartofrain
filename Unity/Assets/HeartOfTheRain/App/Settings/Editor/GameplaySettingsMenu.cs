@@ -8,7 +8,7 @@ namespace HeartOfTheRain.App.Settings.Editor
   [MenuItem("Heart of the Rain/App/M57/Open Settings Review")]
   public static void Open(){if(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())EditorSceneManager.OpenScene(Root+"/Scenes/M57_Settings_Review.unity");}
   [MenuItem("Heart of the Rain/App/M57/Open Settings in Play Mode")]
-  public static void Show(){var c=Object.FindObjectOfType<GameplaySettingsController>();if(c)c.Show();else Debug.LogWarning("Start a level from the M57 review scene first.");}
+  public static void Show(){var c=Object.FindFirstObjectByType<GameplaySettingsController>();if(c)c.Show();else Debug.LogWarning("Start a level from the M57 review scene first.");}
   [MenuItem("Heart of the Rain/App/M57/Validate Settings Assets")]
   public static void Validate()
   {
@@ -21,7 +21,7 @@ namespace HeartOfTheRain.App.Settings.Editor
   [MenuItem("Heart of the Rain/App/M57/Capture Actual Settings Game View")]
   public static void Capture()
   {
-   var c=Object.FindObjectOfType<GameplaySettingsController>();if(!Application.isPlaying||!c||!c.IsSettingsVisible){Debug.LogWarning("Open the M57 settings modal in Play mode first.");return;}
+   var c=Object.FindFirstObjectByType<GameplaySettingsController>();if(!Application.isPlaying||!c||!c.IsSettingsVisible){Debug.LogWarning("Open the M57 settings modal in Play mode first.");return;}
    string dir=Path.GetFullPath("../ReviewCaptures");Directory.CreateDirectory(dir);string path=Path.Combine(dir,"M57_Settings_"+System.DateTime.Now.ToString("yyyyMMdd_HHmmss")+".png");ScreenCapture.CaptureScreenshot(path);Debug.Log("Queued actual Game view capture: "+path);
   }
  }

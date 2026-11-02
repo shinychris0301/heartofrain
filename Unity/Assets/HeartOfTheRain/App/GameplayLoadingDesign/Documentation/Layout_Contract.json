@@ -1,0 +1,73 @@
+{
+  "revision": "R2",
+  "safeArea": "runtime safe area converted into logical Canvas coordinates",
+  "referenceLogicalViewport": [
+    393,
+    852
+  ],
+  "portraitThreshold": "screenWidth/screenHeight < 1.18",
+  "background": "screen stretch; smooth gradient",
+  "pattern": {
+    "asset": "LT_RainPattern.png",
+    "tileReferenceSize": [
+      96,
+      96
+    ],
+    "tint": "white",
+    "alpha": "baked into PNG",
+    "mode": "Tiled; preserve full rect"
+  },
+  "portrait": {
+    "titleX": "safeLeft+18",
+    "titleY": "safeTop+safeHeight*.19",
+    "titleWidth": "safeWidth-36",
+    "titleHeight": 84,
+    "titleMaxFont": "min(40,safeWidth*.104)",
+    "titleMinFont": 24,
+    "diagramWidth": "min(360,safeWidth-28)",
+    "diagramHeight": "diagramWidth*2/3",
+    "diagramY": "max(safeTop+safeHeight*.5-diagramHeight/2,titleY+100)",
+    "footerX": "safeLeft+18",
+    "footerWidth": "safeWidth-36",
+    "footerHeight": 52,
+    "footerY": "min(safeTop+safeHeight*.87,safeTop+safeHeight-footerHeight-14)",
+    "errorFooterHeight": 202,
+    "errorFooterY": "safeTop+safeHeight-202-20",
+    "compactError": "shrink diagram to available gap below title; hide it if height<120"
+  },
+  "landscape": {
+    "diagramWidth": "min(300,safeWidth*.44,(safeHeight-30)*1.5)",
+    "diagramHeight": "diagramWidth*2/3",
+    "rightWidth": "min(360,safeWidth-diagramWidth-54)",
+    "columnGap": 24,
+    "groupAlignment": "center in safe area",
+    "titleHeight": 76,
+    "titleMaxFont": 34,
+    "titleMinFont": 22,
+    "titleFooterGap": 20
+  },
+  "font": {
+    "family": "existing HomeRounded",
+    "titleFill": "#fff3d9",
+    "titleOutline": "#0b2e5b",
+    "titleShadowOffset": [
+      0,
+      4
+    ],
+    "loadingFontMax": 26,
+    "errorLoadingFontMax": 22,
+    "loadingFontMin": 16,
+    "loadingLineHeight": 1.2,
+    "buttonFont": 16
+  },
+  "footer": {
+    "dotContainerWidth": 26,
+    "dotCount": 3,
+    "dotSpacing": "fixed",
+    "buttonTouchHeightMin": 48,
+    "buttonGap": 9,
+    "buttonWidthMax": 280
+  },
+  "tips": "live labels and separate original PNG sprites; no baked text",
+  "nativeValidated": false
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "TI_Icon_Copy",
+    "file": "Art/TI_Icon_Copy.png",
+    "width": 256,
+    "height": 256,
+    "kind": "utility_glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "editable native SVG",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TI_Icon_Share",
+    "file": "Art/TI_Icon_Share.png",
+    "width": 256,
+    "height": 256,
+    "kind": "utility_glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "editable native SVG",
+    "textBaked": false,
+    "tint": "role-defined"
+  }
+]

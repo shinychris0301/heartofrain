@@ -1,0 +1,95 @@
+{
+  "scope": "design and host integration contract; no runtime service implemented",
+  "entry": "Member Team Info > Leave team",
+  "serverOwns": [
+    "membership and version",
+    "role restrictions",
+    "leave authorization",
+    "idempotency result",
+    "team lifecycle",
+    "new team data"
+  ],
+  "states": {
+    "confirm": {
+      "left": "Cancel",
+      "right": "Leave (red)",
+      "commitOn": "explicit Leave tap only"
+    },
+    "pending": {
+      "left": "Close",
+      "right": "Leaving (disabled)",
+      "close": "dismiss view only; retain operation; no Cancel label"
+    },
+    "failed": {
+      "left": "Close",
+      "right": "Retry (red)",
+      "requires": "definitive rejection AND authoritative membership still in original team"
+    },
+    "unknown": {
+      "left": "Close",
+      "right": "Check status (blue)",
+      "requires": "timeout, lost response or process interruption; block new leave request until reconciled"
+    },
+    "offline": {
+      "left": "Cancel",
+      "right": "Leave (disabled)",
+      "behavior": "no offline queue or optimistic removal"
+    },
+    "leader_transfer_required": {
+      "action": "Close",
+      "requires": "explicit server reason; do not infer from visible leader badge"
+    },
+    "left": {
+      "route": "existing Find Team",
+      "feedback": "left_toast once per confirmed operation",
+      "newModal": false
+    },
+    "already_left": {
+      "route": "existing Find Team if authoritative no-team membership",
+      "feedback": "no duplicate success toast"
+    },
+    "different_team": {
+      "route": "current authoritative member view",
+      "behavior": "do not clear the newer team or automatically leave it"
+    }
+  },
+  "suggestedAdapter": {
+    "snapshot": [
+      "teamId",
+      "membershipVersion",
+      "role",
+      "canLeave",
+      "leaveRestrictionReason"
+    ],
+    "leaveTeam": [
+      "teamId",
+      "expectedMembershipVersion",
+      "idempotencyKey"
+    ],
+    "resolveLeave": [
+      "operationId or idempotencyKey"
+    ],
+    "refreshMembership": []
+  },
+  "requestPolicy": [
+    "Capture teamId and expected membership version on confirmation.",
+    "Prevent duplicate taps while pending. Persist pending operation identity across suspend/relaunch.",
+    "On timeout query the same operation and refresh membership; never generate another request solely because a timer elapsed.",
+    "Definitive retry uses server idempotency semantics; never blindly reuse a cached failed result or duplicate an unknown operation.",
+    "Keep pending state outside view lifetime. Closing the modal does not cancel an accepted server operation.",
+    "Guard against stale responses using account ID, team ID, membership version and operation ID.",
+    "Confirmed departure invalidates only old team-scoped chat/help/mail caches, not global inbox, player progress, coins or inventory.",
+    "If caller is dismissed while request is pending, reconcile foreground membership and route appropriately on confirmation."
+  ],
+  "forbiddenAssumptions": [
+    "leave fee",
+    "refund",
+    "reward forfeiture",
+    "cooldown",
+    "automatic team deletion",
+    "automatic leader transfer",
+    "automatic join",
+    "post a message on exit"
+  ],
+  "previewData": "Names, counts and response delays are fixtures. No real team or account mutation."
+}

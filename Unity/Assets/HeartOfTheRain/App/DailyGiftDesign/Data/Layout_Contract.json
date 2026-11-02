@@ -1,0 +1,368 @@
+{
+  "revision": "Daily Gift R1",
+  "referenceLogicalViewport": [
+    393,
+    852
+  ],
+  "safeArea": "Use device safe area. All coordinates below are logical UI units, not raw device pixels.",
+  "canvas": {
+    "suggestedReferenceResolution": [
+      393,
+      852
+    ],
+    "referencePixelsPerUnit": 100,
+    "scaleMode": "ScaleWithScreenSize",
+    "matchWidthOrHeight": 0,
+    "tabletRule": "Do not stretch the modal across a tablet; clamp width to 440 logical units."
+  },
+  "modal": {
+    "outerHorizontalMargin": 12,
+    "maxWidth": 440,
+    "paddingLTRBottom": [
+      20,
+      20,
+      18
+    ],
+    "topClearanceBeyondSafeArea": 44,
+    "bottomClearanceBeyondSafeArea": 14,
+    "headerHeight": 67,
+    "titleSize": 30,
+    "multilineTitleSize": 24,
+    "titleColor": "#FFF4D7",
+    "bodyColor": "#15365E",
+    "backdropColor": "#071228",
+    "backdropAlpha": 0.439,
+    "backdropBlurReviewPx": 7,
+    "mask": "Only the scroll viewport. Never mask the frame or close decoration."
+  },
+  "close": {
+    "touchSize": [
+      46,
+      46
+    ],
+    "visibleSize": [
+      50.6,
+      50.6
+    ],
+    "top": -32,
+    "right": -14,
+    "scale": 1.1
+  },
+  "body": {
+    "structure": [
+      "Intro",
+      "Today hero",
+      "Calendar heading",
+      "3 columns × 2 rows",
+      "Day 7 full-width bonus"
+    ],
+    "scroll": "Vertical, fixed header and fixed footer. Small devices may scroll; all rewards remain accessible.",
+    "heroColumns": [
+      0.46,
+      0.54
+    ],
+    "heroArtHeight": 136,
+    "heroPaddingTRBL": [
+      6,
+      12,
+      6,
+      3
+    ],
+    "heroMinimumHeight": 146,
+    "heroBottomGap": 16,
+    "gridColumns": 3,
+    "gridGap": 9,
+    "cardMinHeight": 91,
+    "cardPaddingTRBL": [
+      12,
+      6,
+      7,
+      6
+    ],
+    "collectedCheck": {
+      "size": [
+        18,
+        18
+      ],
+      "top": -7,
+      "right": 4,
+      "note": "Badge floats above card, away from day label; reserve 7 units above it."
+    },
+    "rewardIconBox": [
+      43,
+      43
+    ],
+    "rocketIconBox": [
+      51,
+      43
+    ],
+    "hammerIconBox": [
+      44,
+      44
+    ],
+    "rewardQuantityFontSize": 17,
+    "bonusCardMinimumHeight": 79,
+    "bonusRewardCount": 2
+  },
+  "footer": {
+    "topGap": 11,
+    "buttonMinHeight": 61,
+    "buttonTextSize": 25,
+    "reassuranceTextSize": 11,
+    "reassuranceTopGap": 9,
+    "rule": "Do not put Claim in the scroll content."
+  },
+  "breakpoints": {
+    "widthAtMost345": {
+      "sidePadding": 17,
+      "gridGap": 7,
+      "heroArtHeight": 120,
+      "titleSize": 27,
+      "multilineTitleSize": 22,
+      "claimTextSize": 23
+    },
+    "heightAtMost650": {
+      "heroArtHeight": 107,
+      "heroMinimumHeight": 112
+    },
+    "landscapeWidthAtLeast650HeightAtMost550": {
+      "modalMaxWidth": 720,
+      "body": "Intro above a two-column hero + calendar arrangement; scroll body when required.",
+      "footerWidth": 330
+    }
+  },
+  "components": {
+    "AccountBody.ttf": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountBody.ttf",
+      "guid": "967693cd56095585a6ff197117bbd41d"
+    },
+    "AccountChrome.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountChrome.png",
+      "guid": "ce160dfabad851f39bd4f32eacb5c86d",
+      "spriteBorderLBRT": [
+        186,
+        170,
+        186,
+        288
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 3.891,
+      "preserveAspect": false
+    },
+    "AccountTitle.ttf": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountTitle.ttf",
+      "guid": "8b56a703a29e5f0b9dc47d5da56c73e6"
+    },
+    "Close.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Close.png",
+      "guid": "dfcb312489db58b1b40ba996134b92ff",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "DG_Card_Bonus.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Bonus.png",
+      "guid": "e251b65e614251f5a0b233bbf1d4678a",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Collected.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Collected.png",
+      "guid": "5d20f65e78ca56b4845d1e6dbff2dad5",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Today.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Today.png",
+      "guid": "a88ca46cf329552796638bd97a4f9f1d",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Card_Upcoming.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Card_Upcoming.png",
+      "guid": "369ad220437a5f27bfb6c6d7530c8916",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Gift_Chest.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Gift_Chest.png",
+      "guid": "68a7c30267df5eb2a12abc04fc59d247",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "DG_Hero_Well.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Hero_Well.png",
+      "guid": "e23ca6c6014d5827a3cd861463e36027",
+      "spriteBorderLBRT": [
+        108,
+        108,
+        108,
+        108
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 6,
+      "preserveAspect": false
+    },
+    "DG_Star.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/DG_Star.png",
+      "guid": "0e022ac2fb095ef3b2500dd0ee90df5b",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Home_Background.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Home_Background.png",
+      "guid": "62509c1c8f505fc18bdc5d30cf653cb3",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Primary.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Primary.png",
+      "guid": "d53cea537853598d83dc7e3aa43baba4",
+      "spriteBorderLBRT": [
+        300,
+        240,
+        300,
+        240
+      ],
+      "imageType": "Sliced",
+      "pixelsPerUnitMultiplier": 8.57,
+      "preserveAspect": false
+    },
+    "Reward_Bomb.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Bomb.png",
+      "guid": "1ad2a056d01a59599b5bb503d5cdae83",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Coin.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/Home/Art/R3_Coin.png",
+      "guid": "7f822ff99c2e5a8ab1d0ccc7a64a7b7e",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Hammer.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Hammer.png",
+      "guid": "16cf1a1a5c99514e9858e1d94e84a163",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Orb.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Orb.png",
+      "guid": "dec76ca00b525ffbb297088a0a8fb247",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Reward_Rocket.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/DailyGiftDesign/Art/Reward_Rocket.png",
+      "guid": "41b62c8cfece593097fd6f7cce7688ee",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    },
+    "Selection_Check.png": {
+      "unityPath": "Assets/HeartOfTheRain/App/AccountDesign/Art/Selection_Check.png",
+      "guid": "9dd1208d0e715f349caa812100657573",
+      "spriteBorderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "imageType": "Simple",
+      "pixelsPerUnitMultiplier": 1,
+      "preserveAspect": true
+    }
+  },
+  "text": "All text is live/localized. Use supplied fonts; create project TMP font assets with Latin Extended and Cyrillic coverage. No Japanese.",
+  "productionStatus": "Design contract and browser review, not a native Unity prefab or verified app integration.",
+  "clarityRevision": "UI Clarity R1: vector slice borders AND component multipliers doubled together"
+}

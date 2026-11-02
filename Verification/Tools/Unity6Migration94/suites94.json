@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 94,
+  "candidateUnity": "6000.6.6f1",
+  "project": ".verification-cache/Unity6Migration94/Project",
+  "scope": "Proposed focused actual native suites in the approved isolated Unity6 copy. This is a plan, never execution evidence or a pass. Existing assertions and raw report schemas remain intact except the three recorded exact candidate-only engine literals. Process/editor and candidate source bindings must independently establish the version for reports whose legacy schema has no unity field.",
+  "requiredPinAdaptations": [
+    "Assets/HeartOfTheRain/Verification/Editor/NativeVerification.cs",
+    "Assets/HeartOfTheRain/Verification/Editor/Display88Verification.cs",
+    "Assets/HeartOfTheRain/Verification/Editor/Progress92Verification.cs"
+  ],
+  "cases": [
+    {
+      "name": "General",
+      "entry": "HeartOfTheRain.Verification.NativeVerification.Run",
+      "report": "Native_Checks.json",
+      "expected": "PASS_NATIVE_EDITOR_CHECKS",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 600,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "array",
+      "scope": "534 historical baseline checks: actual visible sprite/glow pixels, approved bindings, portrait settings/layouts, native campaign rules and all50 authored boards. Current executed count remains authoritative.",
+      "auxiliaryOutput": ".verification-cache/Unity6Migration94/Verification/Evidence/Regression is written by NativeRenderProbe with original shader PNGs; archive separately and never mislabel as old main Regression evidence."
+    },
+    {
+      "name": "ProfileTransactions",
+      "entry": "HeartOfTheRain.Verification.ProfileTransactionVerification.Run",
+      "report": "Native_Profile_Checks.json",
+      "expected": "PASS_NATIVE_PROFILE_TRANSACTIONS",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 600,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "integer",
+      "scope": "Actual file repository, transactions/fault injection, rollback, durable inventory/attempt/reward/claim and gift adapter contracts. No ordinary player save."
+    },
+    {
+      "name": "Display",
+      "entry": "HeartOfTheRain.Verification.Display88Verification.Run",
+      "report": "Report.json",
+      "expected": "PASS_NATIVE_DISPLAY88",
+      "environment": "HOTR_DISPLAY88_OUT",
+      "timeoutSeconds": 600,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Actual camera projection/inverse, Home hierarchy and native RenderTexture composition across eight explicit framebuffer/safe-area geometries. No physical safe-area injection or device acceptance."
+    },
+    {
+      "name": "Progress",
+      "entry": "HeartOfTheRain.Verification.Progress92Verification.Run",
+      "report": "Report.json",
+      "expected": "PASS_NATIVE_PROGRESS92",
+      "environment": "HOTR_PROGRESS92_OUT",
+      "timeoutSeconds": 480,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Actual production UGUI meshes/GPU alpha for six bar families, five fractions and four GameView sizes:120cases, with real imports. Its legacy scope/label strings still mention2022; actual unity field and the recorded version-only adaptation identify the candidate."
+    },
+    {
+      "name": "Tutorial",
+      "entry": "HeartOfTheRain.Verification.TutorialGesture88Verification.Run",
+      "report": "Report.json",
+      "expected": "PASS_NATIVE_TUTORIAL_GESTURE88",
+      "environment": "HOTR_TUTORIAL88_OUTPUT",
+      "timeoutSeconds": 780,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Actual FirstStart practice view, explicit UGUI pointer dispatch, solved lessons, queued falls and ordinary preference preservation. Physical Android input remains separate."
+    },
+    {
+      "name": "LaunchLoadingBar",
+      "entry": "HeartOfTheRain.Verification.LaunchReview.LoadingBar",
+      "report": "Native_Review.json",
+      "expected": "PASS_NATIVE_LAUNCH_INTEGRATION",
+      "environment": "HOTR_LAUNCH80_OUTPUT",
+      "timeoutSeconds": 420,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Approved Russian wordmark/icon/portrait bindings, actual five-size loading bar skin/camera captures and four real async scene routes with isolated memory profiles/tutorial settings. No startup timing or absence-of-splash device proof."
+    },
+    {
+      "name": "ResourceFault",
+      "entry": "HeartOfTheRain.Verification.ResourcePreparation93Verification.Run",
+      "report": "Native/ResourcePreparation93.json",
+      "expected": "PASS_NATIVE_RESOURCE_PREPARATION93",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 480,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Actual Resources.LoadAsync missing-texture negative controls, exact-once no-life-charge fault settlement/refund and stale-board fencing. Expected controlled errors remain in raw logs; require the report's exact passing cases rather than globally error-free logs."
+    },
+    {
+      "name": "MixedPowerSwap",
+      "entry": "HeartOfTheRain.Verification.MixedPowerSwapVerification.Run",
+      "report": "Mixed_Swap_Checks.json",
+      "expected": "PASS_NATIVE_MIXED_POWER_SWAP",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 600,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "integer",
+      "scope": "Protected power births, original source activation, swap axis/location and existing-chain controls; Golden+Golden remains undefined and mutation-free."
+    },
+    {
+      "name": "LocalCascade",
+      "entry": "HeartOfTheRain.Verification.LocalCascadeVerification.Run",
+      "report": "LocalCascade.json",
+      "expected": "PASS_NATIVE_LOCAL_CASCADE73",
+      "environment": "HOTR_LOCAL_CASCADE73_OUTPUT",
+      "timeoutSeconds": 900,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "integer",
+      "scope": "Self-contained350 deterministic model commands (50boards times match/sixpowers), mixed cases, local continuation guards and actual BoardPresentation finite pose/clock samples. Native warm timing is diagnostic, never Android smoothness."
+    }
+  ],
+  "optionalCases": [
+    {
+      "name": "GameplayLoading",
+      "entry": "HeartOfTheRain.Verification.GameplayLoadingR1Review.Run",
+      "report": "Native_Review.json",
+      "expected": "PASS_NATIVE_GAMEPLAY_LOADING_R2",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 480,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "integer"
+    },
+    {
+      "name": "LoadingLifetime",
+      "entry": "HeartOfTheRain.Verification.IndependentPageCorrectionsReview.Run",
+      "report": "Loading_Art_Lifetime.json",
+      "expected": "PASS_NATIVE_LOADING_ART_LIFETIME",
+      "environment": "HOTR_REVIEW93_OUT",
+      "timeoutSeconds": 480,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "absent; inspect cycles and four explicit lifetime/focus/resource booleans"
+    },
+    {
+      "name": "EffectBatch",
+      "entry": "HeartOfTheRain.Verification.EffectBatchVerification.Run",
+      "report": "Report.json",
+      "expected": "PASS_NATIVE_EFFECT_BATCH",
+      "environment": "HOTR_UNITY6_94_OUT",
+      "timeoutSeconds": 900,
+      "quit": false,
+      "reportHasUnity": false,
+      "checksShape": "integer",
+      "scope": "Raw-SHA-bound archived74/75 reference controls with explicit exact Unity6 EntityId API normalization, unchanged complete-body comparisons,65 transform upload states and native pixel controls. This proves same6000engine equivalence after the recorded API port, not original2022 compilation or cross-engine pixels/performance.",
+      "requiresRawArchiveStage": ["Gameplay75", "Gameplay76"]
+    },
+    {
+      "name": "DenseSubmission",
+      "entry": "HeartOfTheRain.Verification.DenseSubmissionVerification.Run",
+      "report": "Native/DenseSubmission.json",
+      "expected": "PASS_NATIVE_DENSE_SUBMISSION78",
+      "environment": "HOTR_GAMEPLAY78_OUTPUT",
+      "timeoutSeconds": 900,
+      "quit": false,
+      "reportHasUnity": true,
+      "checksShape": "integer",
+      "scope": "Raw-SHA-bound archived77 reference with explicit exact EntityId API normalization, nine poses/135 upload states, strict pixels, geometry negative control and all timing samples. Same6000engine equivalence only; no cross-engine or whole-game smoothness claim.",
+      "requiresRawArchiveStage": ["Gameplay78"]
+    }
+  ],
+  "excludedForCause": [
+    {
+      "name": "PinnedReplayBuild/PinnedReplayVerification",
+      "reason": "Trusted server verifier is intentionally pinned2022 and must remain unchanged; client engine migration does not approve re-pinning it."
+    },
+    {
+      "name": "RussianLaunch80Configuration",
+      "reason": "Legacy license policy only disables splash withPro; use the new94 supported Unity6 configuration template, never modify or misreport the old license proof."
+    },
+    {
+      "name": "ModelWork78/GameModelPerformance",
+      "reason": "Read historical relative external evidence/baselines and previous source/control artifacts. These are not portable self-contained regression suites. LocalCascade already supplies350 self-contained commands; separately bind/copy historical controls before any optional cross-engine parity comparison."
+    }
+  ],
+  "completionRequirements": [
+    "Each native invocation must record actual exact Editor/version/project/source hashes, bounded owned process lifetime and unchanged5407 main inputs.",
+    "Raw reports and assertion counts must be preserved; missing unity fields are schema limitations and must not be fabricated.",
+    "No weakened substantive assertions, discarded native failures, blanket log suppression or historical collector edits.",
+    "Original native captures require manual inspection; actual Android cold-start video and50-board regression remain independent acceptance layers.",
+    "Known Account clipboard failures, provider/hosting/release and whole-game smoothness gates remain open."
+  ]
+}

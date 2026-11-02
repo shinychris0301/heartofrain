@@ -16,7 +16,8 @@ namespace HeartOfTheRain.M07
         [HideInInspector] public bool externallyDriven;
         public Texture2D[] atlases;public TextAsset[] manifests;public Material spriteMaterial,tileGlowMaterial;public Sprite[] referenceTiles;
         public TextAsset[] validationFixtures;
-        readonly MaterialPropertyBlock tileLight = new MaterialPropertyBlock();
+        MaterialPropertyBlock tileLight;
+        void Awake(){tileLight=new MaterialPropertyBlock();}
         ReviewPlan plan;Transform content;Camera previewCamera;Texture2D whiteTexture;Sprite white;SpriteRenderer[] tiles;Player[] crates,fx,powers;Player[][] beamSegments;Player[] beamHeads;
         int oldC,oldR,oldTargetColor;Vector2Int oldOrigin,oldRainSeekerTarget;ReviewKind oldKind;float oldPitch,time;bool oldBlockers,oldRocketVertical;
         Vector3 Position(float x,float y)=>new Vector3((x-(columns-1)*.5f)*cellPitch,(y-(rows-1)*.5f)*cellPitch,0);
@@ -100,7 +101,10 @@ namespace HeartOfTheRain.M07
             for(int i=0;i<powers.Length;i++)
             {
                 var p=plan.powers[i];float charge=p.charge>0?Mathf.Clamp01((t-(p.end-p.charge))/p.charge):0;
-                powers[i].Sample(charge>0?"Charge":"Idle",charge*.4f);float appear=p.begin>0?Mathf.SmoothStep(0,1,(t-p.begin)/.12f):1;powers[i].Renderer.enabled=t>=p.begin&&t<p.end;powers[i].Renderer.color=new Color(1,1,1,appear);powers[i].transform.localPosition=Position(p.x,p.y);powers[i].transform.localScale=Vector3.one*cellPitch*(1+.13f*charge)*(.15f+.85f*appear);
+                string bodyKey=charge>0?"Charge":"Idle";float bodyAge=charge>0?charge*.4f:t-p.begin;
+                float window=p.end-Mathf.Max(0,p.charge)-p.begin;bool forming=p.begin>0&&charge<=0&&window>0;
+                if(forming)HeartOfTheRain.M46.BoardPresentation.GeneratedBodyPhase(p.atlas,t-p.begin,window,out bodyKey,out bodyAge);
+                powers[i].Sample(bodyKey,bodyAge);float appear=forming?1:p.begin>0?Mathf.SmoothStep(0,1,(t-p.begin)/.12f):1;powers[i].Renderer.enabled=t>=p.begin&&t<p.end;powers[i].Renderer.color=new Color(1,1,1,appear);powers[i].transform.localPosition=Position(p.x,p.y);powers[i].transform.localScale=Vector3.one*cellPitch*HeartOfTheRain.M46.BoardPresentation.PowerDisplayScale(p.atlas)*(1+.13f*charge)*(.15f+.85f*appear);
             }
             float recoil=0;
             if(enableRecoil)

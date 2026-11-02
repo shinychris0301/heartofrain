@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b53b9571005c91b00a4e8a00dc8089, type: 3}
   m_Name: M56 PreLevel Assets
   m_EditorClassIdentifier:
-  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
-  gameplay: {fileID: 11400000, guid: 3221c74ca04855078656bacf716fc140, type: 3}
+  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 2}
+  gameplay: {fileID: 11400000, guid: 3221c74ca04855078656bacf716fc140, type: 2}
   initialStock: 05000000050000000300000002000000
   rewardCoins: 50
   rewardStars: 1

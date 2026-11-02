@@ -1,0 +1,126 @@
+HOME LIVES — DESIGN TO CODEX HANDOFF
+
+Confirmed scope of the inspection
+The supplied approved Home header R2 snapshot has lives/maxLives fields and a
+single centered life-count label. It has no refill timestamp/status in its
+HomeState or a timer in HomeLayoutEngine.Header. This is a confirmed gap in that
+design snapshot, not proof that the user's current app has no life service.
+The current Unity project and player build were not supplied here.
+
+Preserve the approved header geometry
+Use R4_Header source bytes unchanged, retaining its GUID and original size of
+2121x360. Keep HomeHeaderSprites' R2 default-avatar / wallet / connector slices.
+Do not draw the complete atlas behind a user-selected portrait. Every avatar
+frame remains square, with edge = headerWidth * 0.17, not the extraction width
+of 400/2121. Profile, Coins, Lives and Settings targets remain independent.
+No character image, coin icon, gear, plus button or wallet border is redesigned.
+
+Add presentation fields to the current Home UI
+Use the existing life-count node, repositioned as in Layout_Contract.json.
+Add life-refill-status as a separate live text row with HL_Clock.png. At 393px
+portrait, the header is about 362 logical units wide; the life count is about
+15.6 units and the timer about 10.1. Both occupy the current ivory life field.
+Use the existing HomeRounded-Black font / appropriate native TMP atlas. Do not
+rasterize count or countdown text and do not shrink the whole header to fit.
+The clock disappears at full capacity; show localized Full. When the duration
+is at least an hour, use H:MM:SS without the clock to retain readable digits.
+At zero lives, keep the countdown visible and use the specified red count.
+If the authoritative deadline/balance is pending, show an ellipsis instead of
+an invented time, a negative counter, or a misleading permanent 00:00.
+
+The life hotspot remains the existing 'lives' action across the whole heart /
+life field. Count, timer and effect graphics must not block raycasts. Tapping
+opens the existing Lives / refill flow; this package creates no purchase,
+pricing, spending, replenishment offer or replacement modal.
+
+Settled-attempt semantics
+A completed failure or confirmed abandonment can produce a life-loss event,
+settled once by the existing service for its unique attempt ID. Canceling an
+exit does not settle a loss. Retry, a repeated result notification, reopening
+Home, changing language and recreating the header do not debit another life
+for the settled attempt. The header reads the resulting balance; it is not a
+second economy implementation and must never decrement the real balance itself.
+If a newer project already reserves or settles lives differently, preserve
+that service and map its confirmed resulting balance/event to this view.
+
+A queued loss animation may play once on return to Home. Persist or reconcile
+presentation event identity as appropriate; do not replay the debit animation
+on every OnEnable. A smaller balance during initial page load is not enough to
+infer a failure: another device, synchronization or other service events may
+have changed it. Use semantic confirmed events, not arbitrary count diffs.
+
+Refill counter behavior
+Bind lives, maxLives, nextRefillAtUtc, serverNowUtc and balance revision from the
+existing service. Show time to the NEXT life, not time to fill the entire cap.
+Use an authoritative clock anchor plus elapsed monotonic/unscaled time between
+refreshes; format with ceil(seconds remaining). Never count down one second per
+rendered frame, restart on Home navigation or use gameplay timescale.
+When the displayed time reaches zero, request/reconcile the balance. Granting
+lives, catch-up for long absence, cap behavior, offline authority, interval and
+prices remain service responsibilities. Refresh on app resume and after a
+successful refill transaction. A loss while a timer is already running must
+not restart the ongoing refill deadline. At the cap, clear the countdown view.
+No client-local wall-clock change should manufacture additional lives.
+
+Motion and response
+Use Data/Home_Lives_Motion.json. On acknowledged loss, update the count, play a
+short restrained count motion and a red-heart / minus-one float downward. The
+main heart is baked into the wallet: do not put a second full-size moving heart
+on top of it. The separate approved R3_Lives sprite is only a feedback particle.
+On a single confirmed refill, show +1 floating upward and four small gold stars.
+For multi-life background catch-up, update directly; do not falsely show +1 for
+a larger grant. Reduced motion updates text and announces the result without
+moving/scaling effects. Pool/reuse a small number of UI Images and stop their
+presentation when the page closes. Do not create a loss modal or block Home.
+
+Import rule conflict — apply before reimporting
+The supplied HomeArtImportPolicy.cs has a blanket Home/Art rule that forces
+Bilinear + no mipmaps and clears platform overrides. That would undo this
+package's reviewed metadata. CodeIntegration/HomeArtImportPolicy.patch exempts
+ONLY R4_Header.png and R3_Lives.png so their explicit per-asset baseline can be
+retained. Check the current branch first; merge the equivalent condition if
+this rule has already changed. Do not replace newer Home scripts with an old
+snapshot. The patch was checked against the supplied source, not compiled in
+the current project. New HL_Clock art lives outside that older importer's scope.
+
+Asset policy
+R4_Header, R3_Lives, DG_Star and HL_Clock: Box mipmaps, Trilinear, Clamp, zero
+bias, sRGB, original NPOT size, no streaming, ignore mip limits, RGBA32 reference
+on Default/Android/iPhone/Standalone. Maximum import sizes preserve all source
+pixels. The original atlas regions remain rectangular and unrotated.
+The included registry extends the previous 32 entries to 35. Merge by GUID if
+your registry has newer additions. Keep newer approved art instead of downgrading.
+Run Tools > Heart of the Rain > UI Clarity > 1 Audit registered imports, then
+2 Apply registered import baseline only if needed, and 3 Audit visible UI in
+Play Mode at native framebuffer resolution. The existing build guard reports
+unreviewed packing or import regressions; it does not silently rewrite prefabs.
+
+Do not pack these sprites into an unreviewed downscaled atlas. If the shipping
+project uses atlases, verify effective UV pixels, master/variant scale, filtering,
+padding/extrusion and compression on target devices before updating the guard.
+Keep UI outside low-resolution world render textures and put any dim/blur behind
+it. Live TMP glyph quality must be checked in the actual atlas and material.
+Rebuild affected bundles/Addressables and use the existing content versioning
+for stale assets; do not delete player progress to clear art caches.
+
+Source and pixel budgets
+Header and heart bytes are identical to approved sources. HL_Clock is a fresh
+256x256 raster from the included native SVG, not an enlarged thumbnail.
+Font coverage is checked for English, Spanish, French, German and Russian.
+The original fallback avatar has sufficient source pixels in the tested layouts.
+The small 197x193 Dariya reference is not shipped as a new user-avatar master;
+use the current profile provider and an appropriately sized original portrait.
+Pixel_Budgets.json records the tested range. Large tablets at higher physical
+scales require their own measured budget; responsive layout is not a promise
+of unlimited raster resolution. Do not change avatar frame geometry to hide
+an inadequate portrait source.
+
+Production validation still required
+Compile/import in the actual Unity version. Capture the Home header at native
+resolution after loss, at zero lives, before/after one refill, on resume, and at
+full capacity. Check repeated/late attempt messages, failure then exit, canceled
+exit, retry, no double deduction, unchanged active deadline, cap, offline/rejoin,
+and synchronization. Verify all locales, safe areas, orientation, custom and
+fallback avatars, native font clarity and effect clipping. Compare against this
+review at equal physical dimensions. No live app or real account was changed by
+this design delivery.

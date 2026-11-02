@@ -1,0 +1,72 @@
+{
+  "en": {
+    "rain": "Rain Seeker",
+    "orb": "Rainbow Orb",
+    "loading": "Loading",
+    "slow": "Still loading",
+    "error": "Unable to load",
+    "detail": "Please try again.",
+    "retry": "Try again",
+    "back": "Back to level",
+    "ready": "Gameplay ready",
+    "returned": "Returned to pre-level",
+    "rainAlt": "A Rain Seeker flies to a highlighted target tile.",
+    "orbAlt": "A Rainbow Orb selects all three purple tiles in this example."
+  },
+  "es": {
+    "rain": "Buscador de lluvia",
+    "orb": "Orbe arcoíris",
+    "loading": "Cargando",
+    "slow": "Cargando todavía",
+    "error": "No se pudo cargar",
+    "detail": "Vuelve a intentarlo.",
+    "retry": "Reintentar",
+    "back": "Volver al nivel",
+    "ready": "Partida lista",
+    "returned": "De vuelta a la pantalla previa",
+    "rainAlt": "Un buscador de lluvia vuela hacia una ficha objetivo resaltada.",
+    "orbAlt": "Un orbe arcoíris selecciona las tres fichas moradas de este ejemplo."
+  },
+  "fr": {
+    "rain": "Chercheur de pluie",
+    "orb": "Orbe arc-en-ciel",
+    "loading": "Chargement",
+    "slow": "Chargement en cours",
+    "error": "Chargement impossible",
+    "detail": "Veuillez réessayer.",
+    "retry": "Réessayer",
+    "back": "Retour au niveau",
+    "ready": "Partie prête",
+    "returned": "Retour à la préparation du niveau",
+    "rainAlt": "Un chercheur de pluie vole vers une tuile cible en surbrillance.",
+    "orbAlt": "Un orbe arc-en-ciel sélectionne les trois tuiles violettes de cet exemple."
+  },
+  "de": {
+    "rain": "Regensucher",
+    "orb": "Regenbogenkugel",
+    "loading": "Wird geladen",
+    "slow": "Wird noch geladen",
+    "error": "Laden fehlgeschlagen",
+    "detail": "Bitte versuche es erneut.",
+    "retry": "Erneut versuchen",
+    "back": "Zurück zum Level",
+    "ready": "Spiel bereit",
+    "returned": "Zurück zur Levelvorbereitung",
+    "rainAlt": "Ein Regensucher fliegt zu einem markierten Zielfeld.",
+    "orbAlt": "Eine Regenbogenkugel wählt alle drei violetten Steine in diesem Beispiel aus."
+  },
+  "ru": {
+    "rain": "Искатель дождя",
+    "orb": "Радужная сфера",
+    "loading": "Загрузка",
+    "slow": "Всё ещё загружается",
+    "error": "Не удалось загрузить",
+    "detail": "Попробуйте ещё раз.",
+    "retry": "Повторить",
+    "back": "К выбору уровня",
+    "ready": "Игра готова",
+    "returned": "Возврат к подготовке уровня",
+    "rainAlt": "Искатель дождя летит к выделенной целевой фишке.",
+    "orbAlt": "Радужная сфера выбирает все три фиолетовые фишки в этом примере."
+  }
+}

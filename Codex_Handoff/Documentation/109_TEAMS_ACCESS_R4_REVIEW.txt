@@ -1,0 +1,133 @@
+109 - Teams Access R4 integration
+
+IMPLEMENTED, BUILT AND INSTALLED ON THE OWNER PHONE; live-service and broader
+release acceptance remain open.
+
+PACKAGE AND SCOPE
+
+The standalone Unity package and ZIP-embedded Unity package are byte-identical.
+All 151 Unity payloads match the ZIP's Unity tree. The 484 declared manifest
+entries match their sizes and SHA256 hashes; all 69 runtime PNGs pass PNG chunk
+CRC and complete IDAT/row validation. All 77 delivered Unity GUIDs are unique
+and do not collide with the frozen pre109 project. Package proofs are static
+illustrations, not Unity/device captures.
+
+The five R4 designs cover Find, Create, badge selection, team details before
+joining and details for members. The live Teams component now uses the supplied
+painted artwork and existing shared navigation. It retains actual member chat,
+global/regional rankings, reporting, leadership transfer and pending-command
+recovery. The package's sample teams, values and fabricated profiles are not
+used as live data. The earlier approved108 navigation and106 objective icons
+are unchanged.
+
+The current service creates teams for free, accepts names of 2 to 32 Unicode
+scalars, supports open membership and returns its configured capacity. Example
+100-coin fees, 24-character limits, minimum levels and restricted team types
+are not introduced. Scores, weekly help and online presence that are absent
+from the service are not fabricated. A nonmember cannot see the private member
+roster. The member invite action offers an explicit copy of team name and ID;
+it does not automatically send a message.
+
+Twelve R4 emblems are durable team metadata. The picker applies a draft only
+on Choose and Close discards the unconfirmed selection. Existing teams default
+to the raindrop. Search is bounded, Unicode-normalized and filtered on the
+server before cursor paging, with exact team-ID lookup. A confirmed server
+response remains authoritative for membership; failed and unknown mutations
+retain protected recovery and visible feedback.
+
+The new sprite container is loaded when the Teams page first uses R4 art,
+not by the Home startup asset. It references the actual rendered roles and
+the 12 composed badges; duplicate authoring masters and unused emblem variants
+are not referenced. Minified detailed art uses mipmaps/trilinear filtering;
+bordered slices use their role-specific settings and documented sprite borders.
+The package's 149,621,808-byte all-PNG RGBA estimate excludes mipmaps and is an
+upper-bound arithmetic figure, not an actual device memory measurement. First
+open and resident texture/GPU cost still require device profiling.
+
+BACKEND
+
+An additive schema10-to11 migration stores the optional validated badge ID.
+Requests from older clients omit the field and retain their exact original
+command digest, allowing existing protected journals and receipts to replay.
+No coin charge, membership rule or public-roster permission was added.
+
+The explicit stopped owned-staging upgrade seals a bound schema10 backup,
+blocks normal startup while UpgradePending109 is present, applies the schema
+transaction, then restores the original Ready marker/nonce only after the
+receipt completes. Retry handles a lost acknowledgement without reapplying
+reward or membership decisions. Use Backend/TEAM_BADGE_UPGRADE109.txt for the
+exact procedure; never manually reset the marker or replace a running database.
+The old start gate remains closed to an unupgraded schema10 root. Fresh roots
+use the current schema. No real authority was migrated or hosted here.
+
+Focused03 passed 141 tests with zero failures, errors or skips. It uses actual
+temporary SQLite and in-process ASGI fixtures, not public hosting or providers.
+The earlier fixture failure and corrected runs are separately retained under
+Verification/Evidence/Review109/Backend. Existing production-mode restrictions
+and the need for a real HTTPS backend remain in force.
+
+NATIVE / ANDROID
+
+ImportMain01 passed 376 checks in main Unity 2022.3.62f3. All 69 PNG import
+roles and 37 live bindings resolved. Unity normalized the 69 new PNG metas;
+all original 2,874 metas and all 2,958 current GUIDs remained unchanged. The
+before/after importer epoch is retained separately. No real HTTP occurred.
+
+TeamsMain06 passes 22,456 checks/36 functional cases and 135 layouts across
+five locales and phone/tablet/inset sizes; 41 responses are scripted and no
+HTTP is performed. It checks actual UI components, import roles, controls,
+focus, create/join/leave, protected pending actions and honest offline states.
+ScrollMain01 separately passes 723 checks/20 cases for actual top/middle/bottom
+scrolling: the Create action and all 12 badges are reachable, with footer and
+navigation fixed. The earlier 135-layout fixture differs only by this later
+test-only scroll entry; its tested runtime and art are unchanged. General535,
+server configuration149/4 and navigation6,451/70 pass in their recorded epochs.
+
+Five earlier Teams epochs are retained, along with their exact fixture/runtime
+source bytes and actual failure screenshots where available. Two were test
+setup/line-wrapping mismatches. The remaining checks found and corrected a
+null-to-empty membership issue after leaving, French small-screen title/action
+clipping, and a German pending-recovery caption overflow. None were waived.
+Root visually reviewed ten unaltered Unity Editor originals and the five R4
+package reference compositions. Find/Create/Details/Member values in those
+Editor captures are controlled examples, not live backend results. Evidence:
+Verification/Evidence/Review109/Comparison.html and SourceDelta109.json.
+
+One private Unity 6000.3.27f1 candidate passes SDK compilation and 13
+build-policy checks for the exact review98 development identity, pinned Yandex
+8.6.0, disabled ads and no managed-backend payload. Main remains Unity2022.
+Its one-line build-guard delegation exists only inside that owned candidate;
+main107 build policy and prior candidates are unchanged. The ARM64 IL2CPP
+Development APK built with zero errors and four warnings. The finished APK
+passes 22 static manifest/DEX/ELF/signature checks; the debug signer matches
+the installed phone app. Its published path and SHA256 are:
+Unity/Builds/Review109/HeartOfTheRain_109_Android_Test.apk
+ a1144346b9c9f20c796c1ddf8f16117a8e0d932ec8f1dba6730dcce83cffada9
+It is an internal debug-signed Development build, not a RuStore release.
+
+The owner's realme RMX3938 (Android16, 720x1600) received the exact APK as a
+same-package, same-signer replacement; no uninstall, clear or save restoration
+occurred. Two locked-screen attempts stopped before mutation. A later guard
+observed the owner had continued playing and had a Started attempt; that
+attempt was not interrupted. After the owner finished it, the fresh authority
+was revision150, level22, 21 clears, 550 coins, two lives and no active attempt.
+All profile files and preferences were byte-identical around the replacement;
+the installed APK hash matches the published file. Historical revision116/141
+snapshots were not restored or imposed.
+
+Root reviewed five actual OS originals: cold Home, Teams Find, Create at top,
+Create after scrolling to the bottom, and final Home. The phone's existing
+English preference was retained. The unconfigured Teams state honestly reports
+that create/join are unavailable, and the Create form scrolls to its disabled
+action. Home and Teams fill the display; no black band or visible clipping was
+observed in these scoped views. The app returned to Home with the same profile.
+These are not a live team mutation, ad impression, complete campaign test or
+whole-device performance certification.
+
+The four BuildReport warnings are three unchanged Yandex Dummy-loader unused
+events and one redundant INTERNET manifest notice; separate compiler/licensing
+notices are recorded. No broad suppression or vendor change was applied.
+
+No real backend, provider or ad impression has been verified in this review.
+Public backend and privacy URLs remain unconfigured; ads remain disabled in the
+development build. These UI changes do not constitute production approval.

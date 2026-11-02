@@ -1,0 +1,139 @@
+104 - Managed staging build configuration
+
+REVIEWED_WITH_OPEN_ACCEPTANCE_GATES: build support is implemented and the
+selected native/host verification has passed in its recorded source epochs.
+The owner confirmed that hosting is not configured and requested build support.
+No real hostname, provider credential, deployment, APK, installation or live
+team/VK acceptance is supplied by this checkpoint.
+
+IMPLEMENTATION
+
+ServerGameplayConfiguration now supports a packaged non-secret staging resource
+in addition to the existing explicit Editor/developer and persistent inputs.
+One bounded strict parser rejects unknown/duplicate fields, malformed types,
+unsafe origins, unsupported mode/version and invalid identity scopes. Packaged
+settings require an HTTPS DNS origin and no development-loopback permission.
+
+The active build route remains Launch -> M65_First_Start, whose reviewAlways
+flag is false. Existing PlayerProfileHost/ServerGameSession wiring is unchanged;
+packaged selection therefore uses that existing managed projection path.
+
+The dedicated package is com.heartoftherain.stagingreview. Outside the Editor,
+its packaged configuration is authoritative: external/persistent files cannot
+redirect it. A missing payload, wrong package, nondevelopment player, ambiguous
+resource or invalid selected input stays managed-unavailable. It never falls
+back to an ordinary offline wallet. An ordinary app without any configuration
+continues using its existing local profile.
+
+An explicit missing configuration path now fails closed, rather than behaving
+as if no server was selected. The existing 83 assertion was deliberately updated
+for this case. Legacy UTF8-BOM files remain readable; the packaged asset is
+canonical UTF8 without a BOM. No profile, reward, inventory, account or backend
+mutation is introduced by parsing/selection.
+
+The Editor staging builder validates a separate project receipt and injects
+only canonical public fields at Resources/HOTR_Server/ManagedStaging. It requires
+Android Development mode, a separate package and debug signing. Active Android
+target is required before real build injection to avoid a target-switch reload.
+An early build guard rejects unowned/stale/duplicate/shadow resources, release
+or wrong-package builds and an unconfigured staging package. The existing
+RuStore release and backend production guards remain in effect.
+
+The preparation tool copies into a fresh owned Unity2022 candidate, changes
+only its company/product, Android/Standalone identifiers and custom-keystore
+flag before first import, then records exact file hashes. Main Resources,
+settings, original GUIDs and offline saves remain separate. No engine/SDK
+upgrade is performed.
+
+Temporary resource/meta/folder ownership is checked by exact hashes and a
+process-local lease. Cleanup runs on success and failure; foreign bytes are
+preserved and block reuse. A persistent marker alone never authorizes a build.
+Explicit recovery checks the reviewed marker hash, receipt/nonce, exact owned
+bytes and stopped owner process before removing only the owned fixed files.
+Build failure reports distinguish attempted work, actual BuildReport counts,
+partial output and cleanup/settings restoration; a failed build is not reported
+as an unattempted preflight.
+
+VERIFICATION STATUS
+
+Main configuration validation passes 149 checks/4 cases. PolicyMain02 passes
+41 checks, the existing 83 managed-gameplay core passes 55 checks/14 cases, and
+Teams regression passes 268 checks/15 layouts. These are actual Unity2022
+Editor invocations; pure policy/model checks and synthetic build callbacks are
+not labelled actual APK or live backend tests.
+
+Host02 passes all six Python preparation/recovery tests. The untouched empty-
+origin example reports MISSING_OR_PLACEHOLDER_STAGING_ORIGIN before creating
+a candidate, generated asset or APK. Exactly one separate full Unity2022 copy
+was then prepared with the documented private identity/settings differences.
+Its synthetic DNS literal is not an assigned/owned host and was never contacted.
+
+ConfigurationIsolated01 passes 158 checks/5 cases, including actual selected-
+invalid PlayerProfileHost initialization. No identity, wallet or attempt is
+created; Profiles, ServerReview and saved preference state remain preserved.
+PackagingIsolated01 passes 36 checks: actual AssetDatabase import, Resources
+lookup AND the runtime TryRead adapter, plus success/failure cleanup and changed
+settings restoration. Valid metadata is parsed only; Select/Bootstrap and HTTP
+are not invoked for the synthetic origin.
+
+Two earlier failures remain retained. PolicyMain01 caught mixed Windows
+separators being treated as foreign files during cleanup; the fix normalizes
+owned/enumerated paths and adds a mixed-separator/case regression. Host01
+passed five tests but its recovery fixture lacked a parent directory; the
+test-only fix creates that owned parent. These are distinct failed attempts,
+not overwritten or counted as successful runs.
+
+Main configuration predates the two-Editor-file cleanup fix. Main policy/core/
+Teams runs precede the later packaging-test-only TryRead assertion and host
+fixture fix. Their called runtime/policy code matches final. Source metadata
+records the differences rather than claiming that the earlier suites reran.
+Both final main/private input manifests remain unchanged by verification.
+Main resources, settings, ordinary profiles and existing backend code are
+preserved; no backend service or replay-worker suite was rerun.
+
+Evidence: Verification/Evidence/Review104/Comparison.html, Summary.json,
+SourceDelta104.json and CompilerWarnings104.json. Compiler, Editor/import and
+historical Android notices are reported separately; this is not a new Android
+BuildReport or all-warning/physical-device certification. Seven selected Editor
+logs contain zero C# warnings/errors. Editor shutdown allocator diagnostics and
+historical IL2CPP/dependency notices remain retained rather than declared fixed.
+
+OPERATOR WORKFLOW
+
+Release/RuStore/STAGING_BUILD_CONFIGURATION104.txt is the build-support guide.
+Release/RuStore/staging-build.example.json intentionally contains an empty
+origin and must block before candidate/resource/APK creation. The Python
+preparer intentionally requires all six documented fields; legacy C# inputs
+may omit the two optional boolean fields.
+
+The existing VK_BACKEND_AND_CALLBACK_CONFIGURATION.txt remains the reference
+for server environment, Windows verifier, DNS/TLS, callback registration and
+provider acceptance. Its manual runtime-file route remains a legacy option;
+use the new 104 guide for the dedicated packaged staging build.
+
+CHANGED CODE
+
+App/ServerGameplay/Runtime/ServerGameplayConfiguration.cs
+App/ServerGameplay/Runtime/ServerGameplaySelection104.cs (new, with stable meta)
+App/ServerGameplay/Editor/ServerGameplay83Verification.cs (one expectation)
+App/ServerGameplay/Editor/ServerConfiguration104Verification.cs (new with meta)
+App/ServerGameplay/Editor/StagingServerBuild104.cs (new with meta)
+App/ServerGameplay/Editor/StagingServerPackagingVerification104.cs (new/meta)
+All paths above are under Unity/Assets/HeartOfTheRain/.
+
+New host tooling is under Verification/Tools/Review104/. Existing artwork,
+gameplay, economy, original metadata and working startup implementation are
+outside this change. Existing 103 evidence remains sealed and historical.
+
+REMAINING ACCEPTANCE
+
+An owned HTTPS authority, durable storage/backups, managed/social service
+configuration and actual Android two-user testing are still required. VK also
+needs its issued client ID and registered callback. Full managed gameplay
+requires the approved Windows worker. The backend still rejects production
+activation; the isolated Unity6 project is not promoted. Actual Android/IL2CPP
+packaging, network/provider and physical-device operations are not claimed by
+Editor resource-import tests or synthetic build delegates.
+This 104 workflow is pinned to Unity2022. The existing approved isolated Unity6
+phone-build/startup workflow still needs its own source synchronization and
+verification before choosing the next physical candidate; it was not rebuilt.

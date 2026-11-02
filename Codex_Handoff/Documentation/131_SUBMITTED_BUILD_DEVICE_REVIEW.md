@@ -1,0 +1,43 @@
+# Submitted build: first physical-device checks during RuStore moderation
+
+1 November 2026. This review is for the exact first-moderation APK already submitted according to the owner. No source change below is present in that APK.
+
+## Identity and scope
+
+- Device: connected realme RMX3938, Android portrait display 720×1600. The installed package reports `com.heartoftherain.game`, versionCode 130, versionName 0.9.130, minSdk 26 and targetSdk 36.
+- A byte stream read from the device's installed `base.apk` has SHA-256 `c91a32458b6feba3a50bd1f3cfd180efe2c2408d4b023486c227b5672c9068d3`. This exactly matches `Release/RuStore/Builds/HeartOfTheRain_FirstModeration130.apk`. This establishes which build the visual checks used; it does not prove the RuStore Console receipt or moderation status.
+- The device account was an existing managed guest at level 3, with five lives and 450 coins before the rewarded-ad check. No level attempt was active when the app was force-stopped for the startup and persistence checks.
+
+## Native observations
+
+| Check | Result | Evidence and limit |
+| --- | --- | --- |
+| Cold launch | Home Play first detected at approximately 14.74 seconds after `am start -W` was initiated. The first screenshot at 4.92 seconds still showed the black icon screen. | [Startup sample](../../Verification/Evidence/Review131/Startup131.json), [first sample](../../Verification/Evidence/Review131/FirstSample.png), [first Home](../../Verification/Evidence/Review131/FirstHome.png). Screenshot capture and decoding add seconds, so this is an approximate user-visible baseline, not a precise frame trace or isolated Unity initialization time. |
+| Rewarded video | The Shop's 400-coin consent opened a video, and closing its end card credited 400 coins. Wallet changed from 450 to 850 once. | [Video](../../Verification/Evidence/Review131/AdPlaying.png), [Shop after ad](../../Verification/Evidence/Review131/ShopAfterAd.png). The visual result does not establish the ad network's server-side completion record or fraud resistance. |
+| Restart after ad | Wallet still showed 850 on Home and in Shop after force-stop/restart. Tapping the Shop's cooldown/check button did not award another 400 coins. | [Shop after restart](../../Verification/Evidence/Review131/ShopAfterRestart.png). A server ledger receipt and all three daily slots remain to be verified. |
+| Paid offer in moderation build | Opening a Special offer showed its contents and RUB preview price, plus “Purchases unavailable in this preview.” No checkout opened. | [Disabled offer](../../Verification/Evidence/Review131/SpecialPurchaseDisabled.png). This is the intended first-moderation profile, not a test of RuStore payment. |
+| Privacy link | Settings → Privacy opened the published Russian privacy page in the device browser without a certificate warning. | [Privacy page](../../Verification/Evidence/Review131/PrivacyLink.png). Terms and Support links need separate navigation checks. |
+| VK sign-in entry | Settings → Save Progress showed the managed guest status and VK button. Tapping it opened the device browser on `id.vk.ru`, which displayed “Error loading” and a Retry button. Back returned to the game; level 3, five lives and 850 coins were unchanged. | [VK error](../../Verification/Evidence/Review131/VkEntry.png). No VK authorization, callback, link or recovery was completed. The screenshot alone does not distinguish provider/network failure from authorization URL or VK Console configuration. Do not mark VK sign-in accepted. |
+
+The PC's direct HTTPS request to the staging API timed out during this pass, while the phone loaded the privacy page and showed the persisted wallet. Thus this PC result is a route observation, not proof of a backend outage or a successful fresh API request. The ad test did not exercise no-fill, interruption, duplicate callbacks or long-session stability. Interstitials, gameplay, Teams and the 50-level campaign were not covered by this pass.
+
+## Source review and release gates
+
+`Backend/hotr_backend/commerce.py` still permits `sdk_client_reported` order settlement from a client-supplied SDK status. It matches frozen order fields and deduplicates credit, but does not independently query RuStore before making a `CONFIRMED` reward spendable. `provider_api` has a server lookup and binding check, yet the selected SDK mode expressly excludes that provider. This is a **payment trust gap**, not a duplicate-credit finding. Keep live purchases disabled until the selected delivery architecture, refund policy and sandbox Android transaction tests are complete. No production commerce configuration or service was changed during this review.
+
+The client already has a `provider_api` branch: `RuStoreBackendClient.ReconcileSuffix125` sends the invoice ID to `/reconcile`, whose server implementation queries the configured RuStore provider before credit. The owner subsequently chose a direct-SDK transaction design instead. That existing branch remains a source-review finding, not the selected next purchase path; see [design 132](../../Release/RuStore/DIRECT_PAY_DESIGN132.md).
+
+Source successor change in this review: `RuStoreReleasePreflight.Validate` now emits `client_reported_backend_credit_disallowed` for a **production** release configuration that selects the current `sdk_client_reported` backend-credit mode. The existing signed first-moderation artifact is unchanged. Explicit sandbox configurations can still run tests; `provider_api` production remains selectable but has separate integration and native acceptance gates. This is a build guard for the current server-credit path, not a requirement that all future payments use a backend. The owner's later direct-SDK request is designed in [Direct Pay design 132](../../Release/RuStore/DIRECT_PAY_DESIGN132.md).
+
+The VK authorization URL is generated by `Backend/hotr_backend/vk_provider.py` for `https://id.vk.com/authorize`, and the client validates that origin. The browser's later `id.vk.ru` page may be a provider redirect. VK's own [web SDK](https://github.com/VKCOM/vkid-web-sdk/blob/master/src/auth/auth.ts) uses OAuth PKCE and additional URL parameters; that is a comparison point, not evidence that any one missing parameter caused the observed error. Investigate with redacted redirect-chain/status evidence and VK Console registration; never record authorization `code`, `state`, verifier, token, or full URL in a log.
+
+Targeted backend regression runs on 1 November: `test_sdk_commerce125.py` passed 26 tests, `test_vk_signin102.py` passed 27, `test_commerce.py` passed 33, and `test_commerce_grants100.py` passed 27 (113 total). They emitted the existing Starlette `TestClient` / `httpx` deprecation warning from installed dependencies. These mocked tests establish local contract behavior, not a successful RuStore purchase or VK account link on Android. An isolated Unity 6000.3.27f1 Editor probe compiled and passed the release guard for all three branches: current live client-reported backend credit blocked, sandbox allowed, and provider-backed mode selectable ([result](../../Verification/Evidence/Review131/GuardProbe.json)). That probe was not an Android build or a direct-SDK purchase test.
+
+## Next checks, in order
+
+1. Reproduce the VK browser error with the device on an independent network and a current authorized test account. Capture only host, path, HTTP status and an error code. Confirm registered client ID and exact HTTPS callback in VK Console. Recheck guest progress after cancel and successful link.
+2. Capture a startup video or low-overhead frame trace on this phone and LDPlayer. Split native icon, Unity logo, scene activation, Home first paint, and wallet/event-badge readiness. Profile construction and celebration warmup are candidates for measurement, not yet established causes.
+3. Complete rewarded ad no-fill, cancel, background/restore and three-claims-per-local-day checks. Test interstitial close and return during a safe level transition. Compare sanitized backend reward receipts to the device wallet.
+4. After first moderation, use RuStore sandbox on a later versionCode signed with the same certificate. Test the owner's selected direct-SDK/device-wallet design, including restoration and refund limits, before enabling production purchase buttons. Preserve the already submitted APK.
+
+The local diagnostic script is `Verification/Tools/Review131/MeasureStartup131.py`. It gates on the exact device resolution and installed versionCode, and warns that screenshot sampling changes timing. It does not modify gameplay state except stopping an idle app and launching it again.

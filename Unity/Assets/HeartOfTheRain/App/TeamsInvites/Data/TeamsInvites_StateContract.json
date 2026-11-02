@@ -1,0 +1,102 @@
+{
+  "version": "R1",
+  "scope": "Design and asset handoff only; no messages or invitations sent by this package.",
+  "entry": "Existing member Team Info > Invite. Preserve caller beneath modal and restore focus on close.",
+  "tabs": [
+    "friends",
+    "share"
+  ],
+  "states": [
+    "friends",
+    "invite_pending",
+    "invite_sent",
+    "invite_error",
+    "empty_friends",
+    "no_results",
+    "loading",
+    "load_error",
+    "offline",
+    "team_full",
+    "permission_denied",
+    "rate_limited",
+    "share",
+    "code_copied",
+    "copy_error",
+    "share_error",
+    "share_offline",
+    "code_unavailable",
+    "received",
+    "expired",
+    "recipient_team_full",
+    "team_unavailable",
+    "already_member"
+  ],
+  "friendInvite": [
+    "Load only the player’s existing in-game friend graph, not phone contacts.",
+    "Use authenticated team membership and server canInvite/eligibility/limits. The fixture is not a policy that every team member may invite.",
+    "Send only after the player taps Invite on a particular friend row. Never on tab open or scroll.",
+    "Disable that row while pending. Refresh row state from confirmed response. Invited means invitation delivered/recorded, not team membership changed.",
+    "Use idempotency and reconcile unknown timeout outcomes before resending; no local fabricated success.",
+    "Already invited and same-team friends have text/check status rather than another active Invite action.",
+    "An invitation does not reserve a slot or bypass a required level, membership rule, approval policy, blocking or capacity."
+  ],
+  "sharing": [
+    "Team code is public lookup information, separate from an expiring invitation token. Never display account IDs or auth tokens.",
+    "Copy code only after explicit tap; show Copied only if clipboard write succeeds. Keep text selectable as fallback.",
+    "Share only on explicit tap; invoke the actual OS share sheet. Do not imitate OS recipients in app UI.",
+    "Use server-configured approved invite URL and localized team name/code text. No hard-coded example URL, no automatic recipient selection.",
+    "Opening/dismissing a share sheet is not proof of a sent invitation. Return to Share without a false Sent status.",
+    "Offline may copy a previously verified stable public team code; disable URL generation and sending when freshness cannot be confirmed.",
+    "Code lookup is an extension to existing Find Team search; backend resolves code to teamId. A copied code cannot directly grant membership."
+  ],
+  "recipient": [
+    "Resolve the invitation and refresh current team details before enabling View Team. Show sender/team identity from server.",
+    "View Team opens the existing approved Team Details/Join flow. It does not join immediately.",
+    "If already in this team, Open Chat is the correct action.",
+    "If in another team, existing join flow handles that state; never leave automatically.",
+    "Expired, revoked, deleted-team and full-team states have no implied successful join.",
+    "An incoming invite is shown through the host’s existing global inbox or invite-link entry, not a mailbox that only existing members can access.",
+    "Expiry countdown uses authoritative server time and is not hard-coded from the fixture."
+  ],
+  "methods": [
+    "ListInvitableFriends(teamId,cursor,query)",
+    "InviteFriend(teamId,friendId,idempotencyKey)",
+    "GetInviteStatus(inviteId)",
+    "GetPublicTeamCode(teamId)",
+    "CreateShareInvitation(teamId)",
+    "ResolveTeamInvitation(tokenOrCode)",
+    "GetTeamDetails(teamId)"
+  ],
+  "payloadFields": [
+    "teamId",
+    "teamName",
+    "badgeId",
+    "capacity",
+    "membersCount",
+    "minimumLevel",
+    "canInvite",
+    "publicTeamCode",
+    "friendId",
+    "displayName",
+    "avatarId",
+    "frameId",
+    "friendLevel",
+    "inviteState",
+    "inviteId",
+    "expiresAtUtc",
+    "serverRevision"
+  ],
+  "privacyAndModeration": [
+    "Respect existing blocked-user, report, age and social-privacy controls. Do not request contacts permission.",
+    "Allow only verified host-configured routes; never execute URL content or silently route to arbitrary external hosts.",
+    "Sanitize server-provided names and descriptions. UI uses live plain text."
+  ],
+  "excluded": [
+    "Backend implementation",
+    "Native share plugin implementation",
+    "Real invitations",
+    "Bulk invite/select-all",
+    "Referral rewards or invitation coin charges",
+    "Team administration or leave-team redesign"
+  ]
+}

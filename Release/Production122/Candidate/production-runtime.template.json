@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "mode": "production",
+  "publicOrigin": "https://api.novamind-it.ru",
+  "identityScope": "prod-heartoftherain",
+  "deploymentId": "heartoftherain-production122",
+  "dataDirectory": "C:\\ProgramData\\HeartOfTheRain\\production-authority",
+  "port": 8752,
+  "configDirectory": "C:\\Apps\\HeartOfTheRain\\Backend\\config",
+  "commerceConfig": "C:\\ProgramData\\HeartOfTheRain\\production-services\\commerce.json",
+  "commerceSHA256": "",
+  "provider": {
+    "keyId": "",
+    "privateKeyFile": "C:\\ProgramData\\HeartOfTheRain\\production-secrets\\rustore-private-key",
+    "notificationKeyFile": "C:\\ProgramData\\HeartOfTheRain\\production-secrets\\rustore-notification-key",
+    "allowedNetworks": [
+      "95.163.133.0/30",
+      "85.198.107.0/24",
+      "79.137.140.128/26",
+      "85.142.251.128/26"
+    ]
+  },
+  "replay": {
+    "bundle": "C:\\Apps\\HeartOfTheRain\\ReplayWorker",
+    "approvalFile": "C:\\ProgramData\\HeartOfTheRain\\production-services\\worker-approval.json",
+    "approvalSHA256": ""
+  },
+  "vk": {
+    "enabled": false,
+    "clientId": "",
+    "redirectUri": ""
+  },
+  "ads": {
+    "enabled": false,
+    "configFile": "",
+    "configSHA256": "",
+    "acceptClientReportedCompletion": false
+  },
+  "ingress": {
+    "trustedProxyPeer": "127.0.0.1",
+    "clientAddressHeader": "X-Hotr-Verified-Client-IP"
+  }
+}

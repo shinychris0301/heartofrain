@@ -1,0 +1,119 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEditor.Android;
+using UnityEditor.Build;
+using UnityEditor.Build.Reporting;
+using UnityEngine;
+
+namespace HeartOfTheRain.Verification {
+ public static class LtsNoSplashBuild116 {
+  const string Package="com.heartoftherain.review116lts",Company="HeartRainReview116LTS";
+  static bool active;
+  static Receipt current;
+  [Serializable] sealed class Receipt {
+   public string status,project,sourceRoot,nonce,unity,packageName;
+   public string[] paths,sha256,metaPaths,metaGuids;
+  }
+  [Serializable] sealed class Report {
+   public string status="FAIL_LTS_NOSPLASH116_BUILD",unity,packageName,apk,apkSHA256,code,receiptSHA256;
+   public int checks,errors=-1,warnings=-1; public long bytes;
+   public bool actualBuild,development,showSplashBefore,showLogoBefore,showSplashAfter,showLogoAfter,
+    sourcePinsPreserved,metaGuidsPreserved,sdkFree,productionApproved=false;
+   public List<string> passed=new List<string>();
+   public string scope="Actual isolated approved Unity6.3 SDK-free Development build from canonical116 assets. No main promotion, source/art change, device or provider acceptance.";
+  }
+  static string Full(string p)=>Path.GetFullPath(p).TrimEnd(Path.DirectorySeparatorChar,Path.AltDirectorySeparatorChar);
+  static string Project=>Full(Path.Combine(Application.dataPath,".."));
+  static string Hash(string path){using(var s=File.OpenRead(path))using(var h=SHA256.Create())return string.Concat(h.ComputeHash(s).Select(v=>v.ToString("x2")));}
+  static void Need(bool ok,string code){if(!ok)throw new InvalidOperationException(code);}
+  static void Check(Report r,bool ok,string code){r.checks++;Need(ok,code);r.passed.Add(code);}
+  static Receipt Validate(){
+   string path=Environment.GetEnvironmentVariable("HOTR_LTS116_RECEIPT");
+   Need(!string.IsNullOrEmpty(path)&&Full(Path.GetDirectoryName(path))==Full(Directory.GetParent(Project).FullName),"OwnedLts116ReceiptRequired");
+   Need(File.Exists(path)&&new FileInfo(path).Length<12*1024*1024,"BoundedLts116ReceiptRequired");
+   var receipt=JsonUtility.FromJson<Receipt>(File.ReadAllText(path,new UTF8Encoding(false,true)));
+   Need(receipt!=null&&receipt.status=="PREPARED_LTS_NOSPLASH116"&&receipt.unity=="6000.3.27f1"&&receipt.packageName==Package,"ApprovedLts116PreparationRequired");
+   Need(Full(receipt.project)==Project&&Project.StartsWith(Full(Path.Combine(receipt.sourceRoot,".verification-cache","Review116","LTSNoSplashCandidate")),StringComparison.OrdinalIgnoreCase),"OwnedLts116ProjectRequired");
+   Need(File.Exists(Path.Combine(receipt.sourceRoot,"AGENTS.md"))&&Regex.IsMatch(receipt.nonce??"",@"\A[0-9a-f]{32}\z"),"OwnedLts116SourceRootRequired");
+   Need(receipt.paths!=null&&receipt.sha256!=null&&receipt.paths.Length>2000&&receipt.paths.Length==receipt.sha256.Length,"CanonicalLts116PinsRequired");
+   var seen=new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+   for(int i=0;i<receipt.paths.Length;i++){
+    string relative=receipt.paths[i];Need(relative.StartsWith("Assets/",StringComparison.Ordinal)&&!relative.Contains("..")&&!relative.EndsWith(".meta",StringComparison.Ordinal)&&seen.Add(relative),"ContainedUniqueLts116AssetPinRequired");
+    Need(File.Exists(relative)&&Hash(relative)==receipt.sha256[i],"CanonicalLts116AssetPinChanged");
+   }
+   var actual=Directory.GetFiles(Application.dataPath,"*",SearchOption.AllDirectories).Where(p=>!p.EndsWith(".meta",StringComparison.Ordinal)).Select(p=>"Assets/"+p.Substring(Application.dataPath.Length+1).Replace('\\','/')).ToArray();
+   Need(actual.Length==seen.Count&&actual.All(seen.Contains),"ExactLts116AssetSetRequired");
+   Need(receipt.metaPaths!=null&&receipt.metaGuids!=null&&receipt.metaPaths.Length==receipt.metaGuids.Length,"Lts116GuidPinsRequired");
+   for(int i=0;i<receipt.metaPaths.Length;i++){
+    string relative=receipt.metaPaths[i];Need(relative.StartsWith("Assets/",StringComparison.Ordinal)&&relative.EndsWith(".meta",StringComparison.Ordinal)&&!relative.Contains(".."),"ContainedLts116MetaPinRequired");
+    var matches=Regex.Matches(File.ReadAllText(relative),@"(?m)^guid:\s*([0-9a-fA-F]{32})\s*$");
+    Need(matches.Count==1&&matches[0].Groups[1].Value.Equals(receipt.metaGuids[i],StringComparison.OrdinalIgnoreCase),"CanonicalLts116GuidChanged");
+   }
+   return receipt;
+  }
+  static void Boundary(){
+   Need(Application.unityVersion=="6000.3.27f1"&&EditorUserBuildSettings.activeBuildTarget==BuildTarget.Android,"ApprovedLts116AndroidEditorRequired");
+   Need(PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android)==Package&&PlayerSettings.companyName==Company,"DistinctLts116IdentityRequired");
+   Need(PlayerSettings.bundleVersion=="116"&&PlayerSettings.Android.bundleVersionCode==116&&!PlayerSettings.Android.useCustomKeystore,"Lts116VersionAndDebugSignerRequired");
+   Need(!PlayerSettings.SplashScreen.show&&!PlayerSettings.SplashScreen.showUnityLogo,"ApprovedNoSplashGettersRequired");
+   Need(PlayerSettings.GetScriptingBackend(NamedBuildTarget.Android)==ScriptingImplementation.IL2CPP&&PlayerSettings.Android.targetArchitectures==AndroidArchitecture.ARM64,"Lts116Arm64Il2cppRequired");
+   Need((int)PlayerSettings.Android.minSdkVersion==26&&(int)PlayerSettings.Android.targetSdkVersion==36,"ApprovedLts116ApiBaselineRequired");
+   Need(HeartOfTheRain.App.Editor.PortraitBuildPolicy.IsPortraitOnly,"PortraitLts116Required");
+   string[] defines=PlayerSettings.GetScriptingDefineSymbols(NamedBuildTarget.Android).Split(';');
+   Need(!defines.Contains("HOTR_RUSTORE_PAY")&&!defines.Contains("HOTR_YANDEX_ADS")&&!Directory.Exists("Assets/YandexMobileAds")&&!File.Exists("Assets/Plugins/Android/yandex-ads-unity-plugin.aar"),"Lts116SdkFreeRequired");
+   Need(!File.Exists("Assets/HeartOfTheRain/Resources/HOTR_Server/ManagedStaging.json")&&string.IsNullOrEmpty(Environment.GetEnvironmentVariable("HOTR_BUILD_CHANNEL")),"Lts116NoManagedOrReleaseActivation");
+   Need(HeartOfTheRain.App.Advertising.Editor.AdvertisingBuild107.VerifyActiveBoundary(BuildTarget.Android,BuildOptions.Development).Length==0,"UnchangedAdvertisingGuardAcceptsDisabledSdkFree");
+  }
+  public static void Guard(BuildReport report){
+   if(PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android)!=Package)return;
+   Need(active&&current!=null&&report!=null&&report.summary.platform==BuildTarget.Android&&report.summary.options==BuildOptions.Development,"ExplicitOwnedLts116BuildEntryRequired");
+   Boundary();Validate();
+  }
+  public static void BuildDevelopment(){
+   var r=new Report{unity=Application.unityVersion,packageName=Package};
+   string output=Environment.GetEnvironmentVariable("HOTR_LTS116_OUT");
+   try{
+    Need(!string.IsNullOrEmpty(output)&&Path.IsPathRooted(output),"ExplicitLts116OutputRequired");
+    current=Validate();Boundary();
+    r.showSplashBefore=PlayerSettings.SplashScreen.show;r.showLogoBefore=PlayerSettings.SplashScreen.showUnityLogo;
+    Check(r,!r.showSplashBefore&&!r.showLogoBefore,"BothSplashGettersFalseBeforeActualBuild");
+    string stock=Full(Path.Combine(EditorApplication.applicationContentsPath,"PlaybackEngines/AndroidPlayer"))+Path.DirectorySeparatorChar;
+    Check(r,new[]{AndroidExternalToolsSettings.sdkRootPath,AndroidExternalToolsSettings.jdkRootPath,AndroidExternalToolsSettings.ndkRootPath,AndroidExternalToolsSettings.Gradle.path}.All(p=>Full(p).StartsWith(stock,StringComparison.OrdinalIgnoreCase)),"StockMatchingLtsAndroidToolchain");
+    Check(r,PlayerSettings.stripEngineCode&&UnityEditor.PackageManager.PackageInfo.GetAllRegisteredPackages().Any(p=>p.name=="com.unity.modules.tilemap"&&p.version=="1.0.0"),"ApprovedSpriteMaskDependencyRetained");
+    var scenes=EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).ToArray();
+    Check(r,scenes.SequenceEqual(new[]{HeartOfTheRain.App.Launch.LaunchPage.ScenePath,HeartOfTheRain.App.Launch.LaunchPage.GameScenePath}),"ApprovedSceneOrderRetained");
+    string apk=Environment.GetEnvironmentVariable("HOTR_LTS116_APK");r.apk=Full(apk??"");
+    Check(r,r.apk.StartsWith(Project+Path.DirectorySeparatorChar+"Builds"+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase)&&r.apk.EndsWith(".apk",StringComparison.Ordinal)&&!File.Exists(r.apk),"FreshContainedLts116ApkRequired");
+    Directory.CreateDirectory(Path.GetDirectoryName(r.apk));EditorUserBuildSettings.buildAppBundle=false;
+    r.receiptSHA256=Hash(Environment.GetEnvironmentVariable("HOTR_LTS116_RECEIPT"));
+    active=true;r.actualBuild=true;BuildReport built;
+    try{built=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=scenes,locationPathName=r.apk,target=BuildTarget.Android,options=BuildOptions.Development});}
+    finally{active=false;}
+    r.errors=(int)built.summary.totalErrors;r.warnings=(int)built.summary.totalWarnings;
+    r.development=(built.summary.options&BuildOptions.Development)!=0;
+    Check(r,built.summary.result==BuildResult.Succeeded&&r.errors==0&&r.development&&File.Exists(r.apk),"ActualSdkFreeDevelopmentApkBuilt");
+    Boundary();Validate();r.sourcePinsPreserved=r.metaGuidsPreserved=r.sdkFree=true;
+    r.showSplashAfter=PlayerSettings.SplashScreen.show;r.showLogoAfter=PlayerSettings.SplashScreen.showUnityLogo;
+    Check(r,!r.showSplashAfter&&!r.showLogoAfter,"BothSplashGettersFalseAfterActualBuild");
+    string registration=Path.Combine(Project,"Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp");
+    Check(r,File.Exists(registration)&&File.ReadAllLines(registration).Any(line=>line.TrimStart().StartsWith("RegisterUnityClass<SpriteMask>(\"",StringComparison.Ordinal)),"ActualNativeSpriteMaskRegistrationRetained");
+    r.bytes=new FileInfo(r.apk).Length;r.apkSHA256=Hash(r.apk);r.status="PASS_LTS_NOSPLASH116_BUILD";
+   }catch(Exception e){r.code=Regex.IsMatch(e.Message??"",@"\A[A-Za-z0-9_]{1,120}\z")?e.Message:e.GetType().Name;}
+   finally{active=false;current=null;}
+   if(!string.IsNullOrEmpty(output)){Directory.CreateDirectory(output);using(var file=new FileStream(Path.Combine(output,"Build.json"),FileMode.CreateNew,FileAccess.Write))using(var writer=new StreamWriter(file,new UTF8Encoding(false)))writer.Write(JsonUtility.ToJson(r,true));}
+   EditorApplication.Exit(r.status.StartsWith("PASS_",StringComparison.Ordinal)?0:1);
+  }
+ }
+ public sealed class LtsNoSplashGuard116:IPreprocessBuildWithReport {
+  public int callbackOrder=>-30000;
+  public void OnPreprocessBuild(BuildReport report)=>LtsNoSplashBuild116.Guard(report);
+ }
+}
+#endif

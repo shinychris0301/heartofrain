@@ -1,0 +1,33 @@
+Team Mail111: explicit owned staging upgrade to schema13
+
+No production mail producer, user-accessible issuance route, production
+authority migration, live mailbox data or server activation is included.
+The internal issuer requires a separately authorized trusted source. Its
+source and recipient key are idempotent; conflicting payloads are rejected.
+
+For an existing owned schema10 or11 authority, first complete the stopped,
+owner-bound schema12 upgrade in TEAM_HELP_UPGRADE110.txt. A schema12 authority
+then needs this separate stopped operation with a fresh name, from Backend:
+
+  .\.venv\Scripts\python.exe -B -m hotr_backend.staging_upgrade111 --manifest C:\HOTR-Private\staging-server.json --name before-team-mail111
+
+It seals a separately bound schema12 snapshot before adding the schema13
+recipient mailbox. A pending marker prevents normal startup; retry the exact
+same command/name after interruption. Do not remove markers, change ownership,
+adopt an unrelated database or overwrite the authority. An unsealed partial
+backup requires a new reviewed name; changed snapshots and source identity fail
+closed. Old 109/110 backups and receipts remain separate. Once complete, run
+normal staging preflight/start and take a current-schema backup. Fresh empty
+owned roots initialize the current schema directly; do not run old-root upgrades on them.
+
+Inbox reads and claims require the authenticated current member and recipient.
+Leaving/removal preserves unexpired, unclaimed rewards through an owner-only
+minimal entitlement listing/claim; it does not expose the former team's text or
+roster. Coins and lives are an indivisible bundle: insufficient life capacity
+defers both. The server clock controls expiry. Claim and wallet ledger commit
+atomically, independently of the read operation, with stable recovery keys.
+The sample 300 coins/two lives are test fixtures, not approved production grants.
+
+The service is gated by existing social configuration. Tests use disposable
+databases and fixture issuance; they do not prove real hosting, moderation,
+producer integration, Android behavior or actual device frame performance.

@@ -1,1153 +1,874 @@
 {
-  "milestone": "M50 R1",
-  "scope": "Recorded public Swap/Tap actions. No boosters, injected power-ups or extra moves. Agent clear evidence, not human balance certification.",
-  "runs": [
-    {
-      "level": 21,
-      "seed": 511000,
-      "budget": 30,
-      "expectedStatus": "Won",
-      "actions": [
+    "milestone": "M67R4 + approved obstacle gravity and mixed-swap match creation repairs",
+    "scope": "Deterministic native model clears using legal actions and unchanged authored budgets after mixed-swap match repair. Not human balance approval.",
+    "runs": [
         {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 5,
-          "bx": 10,
-          "by": 5,
-          "before": "2d16126bc2f9ad5d",
-          "after": "36e687a1fa36ac99"
+            "level": 21,
+            "seed": 511000,
+            "budget": 30,
+            "expectedStatus": "Won",
+            "actions": [
+                {
+                    "kind": "swap",
+                    "before": "2d16126bc2f9ad5d",
+                    "after": "36e687a1fa36ac99",
+                    "ax": 9,
+                    "ay": 5,
+                    "bx": 10,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "36e687a1fa36ac99",
+                    "after": "730739d390d74312",
+                    "ax": 6,
+                    "ay": 1,
+                    "bx": 7,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "730739d390d74312",
+                    "after": "ff8010940921f4e5",
+                    "ax": 5,
+                    "ay": 0,
+                    "bx": 5,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "ff8010940921f4e5",
+                    "after": "9835a6d3ed0d75b5",
+                    "ax": 4,
+                    "ay": 1,
+                    "bx": 5,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "9835a6d3ed0d75b5",
+                    "after": "eb7466b22d0a0eff",
+                    "ax": 6,
+                    "ay": 7,
+                    "bx": 6,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "eb7466b22d0a0eff",
+                    "after": "54ff45e79e13383b",
+                    "ax": 6,
+                    "ay": 5,
+                    "bx": 7,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "54ff45e79e13383b",
+                    "after": "1ed0efbca349a07c",
+                    "ax": 7,
+                    "ay": 3,
+                    "bx": 8,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "1ed0efbca349a07c",
+                    "after": "e28626bfe9f28b2f",
+                    "ax": 7,
+                    "ay": 5,
+                    "bx": 8,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "e28626bfe9f28b2f",
+                    "after": "9c12dc4300649dd4",
+                    "ax": 3,
+                    "ay": 3,
+                    "bx": 4,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "9c12dc4300649dd4",
+                    "after": "2663e838353abae2",
+                    "ax": 9,
+                    "ay": 2,
+                    "bx": 9,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "2663e838353abae2",
+                    "after": "8423e04f022131c6",
+                    "ax": 6,
+                    "ay": 0,
+                    "bx": 7,
+                    "by": 0
+                },
+                {
+                    "kind": "swap",
+                    "before": "8423e04f022131c6",
+                    "after": "721a73599530ed9d",
+                    "ax": 4,
+                    "ay": 2,
+                    "bx": 4,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "721a73599530ed9d",
+                    "after": "5d77939d01a37b4d",
+                    "ax": 3,
+                    "ay": 2,
+                    "bx": 3,
+                    "by": 3
+                }
+            ]
         },
         {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 1,
-          "bx": 7,
-          "by": 1,
-          "before": "36e687a1fa36ac99",
-          "after": "730739d390d74312"
+            "level": 28,
+            "seed": 518000,
+            "budget": 32,
+            "expectedStatus": "Won",
+            "actions": [
+                {
+                    "kind": "swap",
+                    "before": "abbcb57725e320f4",
+                    "after": "512c6b3ceb6a2122",
+                    "ax": 9,
+                    "ay": 4,
+                    "bx": 9,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "512c6b3ceb6a2122",
+                    "after": "726d38ce0c82927c",
+                    "ax": 3,
+                    "ay": 10,
+                    "bx": 4,
+                    "by": 10
+                },
+                {
+                    "kind": "swap",
+                    "before": "726d38ce0c82927c",
+                    "after": "95aeb5d60dca9efa",
+                    "ax": 5,
+                    "ay": 8,
+                    "bx": 6,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "95aeb5d60dca9efa",
+                    "after": "0d7e216ff6b02bc8",
+                    "ax": 3,
+                    "ay": 2,
+                    "bx": 3,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "0d7e216ff6b02bc8",
+                    "after": "3d3d88a78c966330",
+                    "ax": 5,
+                    "ay": 0,
+                    "bx": 5,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "3d3d88a78c966330",
+                    "after": "17fa28a40b1c0aae",
+                    "ax": 6,
+                    "ay": 2,
+                    "bx": 7,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "17fa28a40b1c0aae",
+                    "after": "a528e6bbee90f78d",
+                    "ax": 6,
+                    "ay": 2,
+                    "bx": 7,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "a528e6bbee90f78d",
+                    "after": "161fc6a0854712cb",
+                    "ax": 7,
+                    "ay": 5,
+                    "bx": 8,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "161fc6a0854712cb",
+                    "after": "85316f9273f49af5",
+                    "ax": 5,
+                    "ay": 6,
+                    "bx": 6,
+                    "by": 6
+                },
+                {
+                    "kind": "tap",
+                    "before": "85316f9273f49af5",
+                    "after": "1be7aa4877b5f76e",
+                    "ax": 5,
+                    "ay": 5,
+                    "bx": 0,
+                    "by": 0
+                },
+                {
+                    "kind": "swap",
+                    "before": "1be7aa4877b5f76e",
+                    "after": "9459638083d0a7d8",
+                    "ax": 4,
+                    "ay": 0,
+                    "bx": 4,
+                    "by": 1
+                }
+            ]
         },
         {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 0,
-          "bx": 5,
-          "by": 1,
-          "before": "730739d390d74312",
-          "after": "b31c8946f5e6e7fe"
+            "level": 36,
+            "seed": 526003,
+            "budget": 30,
+            "expectedStatus": "Won",
+            "actions": [
+                {
+                    "kind": "swap",
+                    "before": "a3ee95df0649a76c",
+                    "after": "ea88ee7151c63afd",
+                    "ax": 6,
+                    "ay": 1,
+                    "bx": 7,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "ea88ee7151c63afd",
+                    "after": "2471591f98408b16",
+                    "ax": 5,
+                    "ay": 3,
+                    "bx": 5,
+                    "by": 4
+                },
+                {
+                    "kind": "swap",
+                    "before": "2471591f98408b16",
+                    "after": "ddb436765bdd8d86",
+                    "ax": 2,
+                    "ay": 7,
+                    "bx": 3,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "ddb436765bdd8d86",
+                    "after": "d485bd6751fe87f3",
+                    "ax": 5,
+                    "ay": 4,
+                    "bx": 6,
+                    "by": 4
+                },
+                {
+                    "kind": "swap",
+                    "before": "d485bd6751fe87f3",
+                    "after": "05266da84714102c",
+                    "ax": 3,
+                    "ay": 1,
+                    "bx": 4,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "05266da84714102c",
+                    "after": "67e7336a87620ffb",
+                    "ax": 2,
+                    "ay": 7,
+                    "bx": 3,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "67e7336a87620ffb",
+                    "after": "e05d170dd90085eb",
+                    "ax": 2,
+                    "ay": 1,
+                    "bx": 2,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "e05d170dd90085eb",
+                    "after": "9df6b83bb7722ff8",
+                    "ax": 3,
+                    "ay": 3,
+                    "bx": 4,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "9df6b83bb7722ff8",
+                    "after": "5042acd97bbfe678",
+                    "ax": 2,
+                    "ay": 4,
+                    "bx": 3,
+                    "by": 4
+                },
+                {
+                    "kind": "swap",
+                    "before": "5042acd97bbfe678",
+                    "after": "c246ac40542c6bdc",
+                    "ax": 2,
+                    "ay": 2,
+                    "bx": 3,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "c246ac40542c6bdc",
+                    "after": "af6bb550b4ff2c1c",
+                    "ax": 4,
+                    "ay": 0,
+                    "bx": 5,
+                    "by": 0
+                }
+            ]
         },
         {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 9,
-          "bx": 6,
-          "by": 9,
-          "before": "b31c8946f5e6e7fe",
-          "after": "07fda34d79e36ce4"
+            "level": 49,
+            "seed": 539060,
+            "budget": 44,
+            "expectedStatus": "Won",
+            "actions": [
+                {
+                    "kind": "swap",
+                    "before": "7887808eb0afea13",
+                    "after": "1b5922c3e49f34ff",
+                    "ax": 8,
+                    "ay": 6,
+                    "bx": 8,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "1b5922c3e49f34ff",
+                    "after": "03d1eb0453f35807",
+                    "ax": 3,
+                    "ay": 7,
+                    "bx": 4,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "03d1eb0453f35807",
+                    "after": "7778a4d9a851e1ee",
+                    "ax": 7,
+                    "ay": 1,
+                    "bx": 8,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "7778a4d9a851e1ee",
+                    "after": "422d42c4ecf3631f",
+                    "ax": 1,
+                    "ay": 6,
+                    "bx": 2,
+                    "by": 6
+                },
+                {
+                    "kind": "tap",
+                    "before": "422d42c4ecf3631f",
+                    "after": "602071818a94eaaf",
+                    "ax": 3,
+                    "ay": 6,
+                    "bx": 0,
+                    "by": 0
+                },
+                {
+                    "kind": "tap",
+                    "before": "602071818a94eaaf",
+                    "after": "3bc6003287b444dc",
+                    "ax": 8,
+                    "ay": 0,
+                    "bx": 0,
+                    "by": 0
+                },
+                {
+                    "kind": "swap",
+                    "before": "3bc6003287b444dc",
+                    "after": "4b9ae45d8cd30bae",
+                    "ax": 9,
+                    "ay": 3,
+                    "bx": 10,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "4b9ae45d8cd30bae",
+                    "after": "36d6d1d79ace2b91",
+                    "ax": 8,
+                    "ay": 6,
+                    "bx": 9,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "36d6d1d79ace2b91",
+                    "after": "f5954d3c33a63037",
+                    "ax": 8,
+                    "ay": 3,
+                    "bx": 8,
+                    "by": 4
+                },
+                {
+                    "kind": "swap",
+                    "before": "f5954d3c33a63037",
+                    "after": "63e1df1160dc33db",
+                    "ax": 9,
+                    "ay": 7,
+                    "bx": 10,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "63e1df1160dc33db",
+                    "after": "a3b1fcaae327e4aa",
+                    "ax": 7,
+                    "ay": 6,
+                    "bx": 7,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "a3b1fcaae327e4aa",
+                    "after": "170ceeb112b3f5ca",
+                    "ax": 8,
+                    "ay": 3,
+                    "bx": 9,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "170ceeb112b3f5ca",
+                    "after": "fceb981ee4b2d3de",
+                    "ax": 9,
+                    "ay": 6,
+                    "bx": 9,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "fceb981ee4b2d3de",
+                    "after": "18a1613500469399",
+                    "ax": 6,
+                    "ay": 7,
+                    "bx": 6,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "18a1613500469399",
+                    "after": "43dcfa2894a4ba6f",
+                    "ax": 6,
+                    "ay": 6,
+                    "bx": 6,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "43dcfa2894a4ba6f",
+                    "after": "9762a8e017b51536",
+                    "ax": 0,
+                    "ay": 7,
+                    "bx": 1,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "9762a8e017b51536",
+                    "after": "21821c0b34c4ed85",
+                    "ax": 6,
+                    "ay": 8,
+                    "bx": 7,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "21821c0b34c4ed85",
+                    "after": "78f2b7f418515583",
+                    "ax": 8,
+                    "ay": 8,
+                    "bx": 9,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "78f2b7f418515583",
+                    "after": "bebcb9bc3300daf9",
+                    "ax": 6,
+                    "ay": 6,
+                    "bx": 6,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "bebcb9bc3300daf9",
+                    "after": "04c094cf3546ba56",
+                    "ax": 0,
+                    "ay": 7,
+                    "bx": 1,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "04c094cf3546ba56",
+                    "after": "9cc8e3ee57c1e340",
+                    "ax": 7,
+                    "ay": 5,
+                    "bx": 7,
+                    "by": 6
+                },
+                {
+                    "kind": "tap",
+                    "before": "9cc8e3ee57c1e340",
+                    "after": "6a12f5dfee20f628",
+                    "ax": 7,
+                    "ay": 2,
+                    "bx": 0,
+                    "by": 0
+                },
+                {
+                    "kind": "swap",
+                    "before": "6a12f5dfee20f628",
+                    "after": "282efcd43151a8a5",
+                    "ax": 5,
+                    "ay": 6,
+                    "bx": 6,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "282efcd43151a8a5",
+                    "after": "4f8bf9cf21c25992",
+                    "ax": 4,
+                    "ay": 4,
+                    "bx": 5,
+                    "by": 4
+                },
+                {
+                    "kind": "swap",
+                    "before": "4f8bf9cf21c25992",
+                    "after": "80cae4e9f3d824c3",
+                    "ax": 4,
+                    "ay": 5,
+                    "bx": 5,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "80cae4e9f3d824c3",
+                    "after": "7c623eb9917e0a62",
+                    "ax": 1,
+                    "ay": 6,
+                    "bx": 1,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "7c623eb9917e0a62",
+                    "after": "d1554cca7434d391",
+                    "ax": 2,
+                    "ay": 5,
+                    "bx": 3,
+                    "by": 5
+                },
+                {
+                    "kind": "swap",
+                    "before": "d1554cca7434d391",
+                    "after": "9c456e12839716bc",
+                    "ax": 9,
+                    "ay": 1,
+                    "bx": 10,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "9c456e12839716bc",
+                    "after": "65f17509ce71575b",
+                    "ax": 7,
+                    "ay": 8,
+                    "bx": 8,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "65f17509ce71575b",
+                    "after": "a56c70b447011d1d",
+                    "ax": 1,
+                    "ay": 1,
+                    "bx": 2,
+                    "by": 1
+                }
+            ]
         },
         {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 8,
-          "bx": 8,
-          "by": 9,
-          "before": "07fda34d79e36ce4",
-          "after": "10c391fa60f96caf"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 10,
-          "bx": 4,
-          "by": 10,
-          "before": "10c391fa60f96caf",
-          "after": "921570f78d22e7da"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 7,
-          "bx": 8,
-          "by": 8,
-          "before": "921570f78d22e7da",
-          "after": "83a385c0286074b2"
-        },
-        {
-          "kind": "tap",
-          "ax": 6,
-          "ay": 9,
-          "bx": 0,
-          "by": 0,
-          "before": "83a385c0286074b2",
-          "after": "552e4127f30b4e74"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 6,
-          "bx": 1,
-          "by": 6,
-          "before": "552e4127f30b4e74",
-          "after": "7c893a3462222e28"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 4,
-          "bx": 2,
-          "by": 5,
-          "before": "7c893a3462222e28",
-          "after": "fb292f635dd71c7c"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 4,
-          "bx": 2,
-          "by": 5,
-          "before": "fb292f635dd71c7c",
-          "after": "b715f782be0ffe49"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 0,
-          "bx": 6,
-          "by": 0,
-          "before": "b715f782be0ffe49",
-          "after": "1918f6fa0e076325"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 3,
-          "bx": 5,
-          "by": 4,
-          "before": "1918f6fa0e076325",
-          "after": "83d9571a56604d14"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 3,
-          "bx": 5,
-          "by": 4,
-          "before": "83d9571a56604d14",
-          "after": "f873f93b18c96780"
+            "level": 50,
+            "seed": 597651,
+            "budget": 44,
+            "expectedStatus": "Won",
+            "actions": [
+                {
+                    "kind": "swap",
+                    "before": "99185bc57a6d1f68",
+                    "after": "d956f4b4f33226eb",
+                    "ax": 7,
+                    "ay": 3,
+                    "bx": 8,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "d956f4b4f33226eb",
+                    "after": "ac3e531e3dc73931",
+                    "ax": 8,
+                    "ay": 1,
+                    "bx": 9,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "ac3e531e3dc73931",
+                    "after": "c35a01e6c94b6ab4",
+                    "ax": 8,
+                    "ay": 7,
+                    "bx": 9,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "c35a01e6c94b6ab4",
+                    "after": "e13fe701990b628d",
+                    "ax": 8,
+                    "ay": 7,
+                    "bx": 9,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "e13fe701990b628d",
+                    "after": "2f6c996398d7bc73",
+                    "ax": 3,
+                    "ay": 1,
+                    "bx": 3,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "2f6c996398d7bc73",
+                    "after": "bb057ffb84f97c6b",
+                    "ax": 9,
+                    "ay": 7,
+                    "bx": 10,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "bb057ffb84f97c6b",
+                    "after": "9614ff43e3f801d2",
+                    "ax": 3,
+                    "ay": 3,
+                    "bx": 4,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "9614ff43e3f801d2",
+                    "after": "61984a7cdea3cd90",
+                    "ax": 2,
+                    "ay": 0,
+                    "bx": 2,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "61984a7cdea3cd90",
+                    "after": "872cc31afb0d1560",
+                    "ax": 1,
+                    "ay": 7,
+                    "bx": 2,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "872cc31afb0d1560",
+                    "after": "f73b1c4b24dd0f9f",
+                    "ax": 1,
+                    "ay": 6,
+                    "bx": 1,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "f73b1c4b24dd0f9f",
+                    "after": "307324ea5f345fce",
+                    "ax": 0,
+                    "ay": 7,
+                    "bx": 1,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "307324ea5f345fce",
+                    "after": "30e8da1d14c6fc33",
+                    "ax": 4,
+                    "ay": 9,
+                    "bx": 5,
+                    "by": 9
+                },
+                {
+                    "kind": "swap",
+                    "before": "30e8da1d14c6fc33",
+                    "after": "947abcee0cfa4258",
+                    "ax": 6,
+                    "ay": 1,
+                    "bx": 6,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "947abcee0cfa4258",
+                    "after": "72ae9e56dfa39076",
+                    "ax": 1,
+                    "ay": 5,
+                    "bx": 1,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "72ae9e56dfa39076",
+                    "after": "2075294e6bd26288",
+                    "ax": 3,
+                    "ay": 1,
+                    "bx": 4,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "2075294e6bd26288",
+                    "after": "2d592374e595ec8a",
+                    "ax": 5,
+                    "ay": 0,
+                    "bx": 6,
+                    "by": 0
+                },
+                {
+                    "kind": "swap",
+                    "before": "2d592374e595ec8a",
+                    "after": "f6e8ffa022ce1ad5",
+                    "ax": 1,
+                    "ay": 8,
+                    "bx": 2,
+                    "by": 8
+                },
+                {
+                    "kind": "swap",
+                    "before": "f6e8ffa022ce1ad5",
+                    "after": "a6cfb10260308461",
+                    "ax": 4,
+                    "ay": 2,
+                    "bx": 4,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "a6cfb10260308461",
+                    "after": "4edba418549ef9df",
+                    "ax": 2,
+                    "ay": 9,
+                    "bx": 3,
+                    "by": 9
+                },
+                {
+                    "kind": "swap",
+                    "before": "4edba418549ef9df",
+                    "after": "8bb904a5302573dd",
+                    "ax": 4,
+                    "ay": 6,
+                    "bx": 5,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "8bb904a5302573dd",
+                    "after": "f69f5f587f301eaf",
+                    "ax": 3,
+                    "ay": 1,
+                    "bx": 3,
+                    "by": 2
+                },
+                {
+                    "kind": "swap",
+                    "before": "f69f5f587f301eaf",
+                    "after": "2e427e99bcd9d963",
+                    "ax": 4,
+                    "ay": 3,
+                    "bx": 5,
+                    "by": 3
+                },
+                {
+                    "kind": "swap",
+                    "before": "2e427e99bcd9d963",
+                    "after": "77756e166353e351",
+                    "ax": 6,
+                    "ay": 6,
+                    "bx": 6,
+                    "by": 7
+                },
+                {
+                    "kind": "swap",
+                    "before": "77756e166353e351",
+                    "after": "10de2676ad14f47f",
+                    "ax": 6,
+                    "ay": 6,
+                    "bx": 7,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "10de2676ad14f47f",
+                    "after": "545009bdf726f240",
+                    "ax": 8,
+                    "ay": 6,
+                    "bx": 9,
+                    "by": 6
+                },
+                {
+                    "kind": "swap",
+                    "before": "545009bdf726f240",
+                    "after": "c594c668c7818352",
+                    "ax": 5,
+                    "ay": 0,
+                    "bx": 5,
+                    "by": 1
+                },
+                {
+                    "kind": "swap",
+                    "before": "c594c668c7818352",
+                    "after": "ef62e52667acca8c",
+                    "ax": 3,
+                    "ay": 2,
+                    "bx": 3,
+                    "by": 3
+                }
+            ]
         }
-      ]
-    },
-    {
-      "level": 28,
-      "seed": 518000,
-      "budget": 32,
-      "expectedStatus": "Won",
-      "actions": [
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 4,
-          "bx": 9,
-          "by": 5,
-          "before": "abbcb57725e320f4",
-          "after": "512c6b3ceb6a2122"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 10,
-          "bx": 4,
-          "by": 10,
-          "before": "512c6b3ceb6a2122",
-          "after": "726d38ce0c82927c"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 8,
-          "bx": 6,
-          "by": 8,
-          "before": "726d38ce0c82927c",
-          "after": "95aeb5d60dca9efa"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 2,
-          "bx": 3,
-          "by": 3,
-          "before": "95aeb5d60dca9efa",
-          "after": "e30d64374523a6aa"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 3,
-          "bx": 8,
-          "by": 4,
-          "before": "e30d64374523a6aa",
-          "after": "7088babaf0ae427b"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 2,
-          "bx": 1,
-          "by": 3,
-          "before": "7088babaf0ae427b",
-          "after": "ffb439cd91824d97"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 5,
-          "bx": 3,
-          "by": 5,
-          "before": "ffb439cd91824d97",
-          "after": "5d4c08622c283c2b"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 6,
-          "bx": 4,
-          "by": 7,
-          "before": "5d4c08622c283c2b",
-          "after": "0a8b6bf88c3f7609"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 5,
-          "bx": 7,
-          "by": 6,
-          "before": "0a8b6bf88c3f7609",
-          "after": "c442038fbf295c31"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 6,
-          "bx": 5,
-          "by": 7,
-          "before": "c442038fbf295c31",
-          "after": "16bc8091e1d841dc"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 5,
-          "bx": 8,
-          "by": 6,
-          "before": "16bc8091e1d841dc",
-          "after": "76c1b0db4bb9e8ad"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 4,
-          "bx": 9,
-          "by": 4,
-          "before": "76c1b0db4bb9e8ad",
-          "after": "27044faf36418b8a"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 2,
-          "bx": 8,
-          "by": 2,
-          "before": "27044faf36418b8a",
-          "after": "9574c95eac2088a8"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 9,
-          "bx": 7,
-          "by": 9,
-          "before": "9574c95eac2088a8",
-          "after": "008222ee89b9dfff"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 5,
-          "bx": 2,
-          "by": 6,
-          "before": "008222ee89b9dfff",
-          "after": "d3533e40aaa6fafb"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 7,
-          "bx": 3,
-          "by": 8,
-          "before": "d3533e40aaa6fafb",
-          "after": "97c2679ab58b6858"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 5,
-          "bx": 1,
-          "by": 5,
-          "before": "97c2679ab58b6858",
-          "after": "d1adce3fdfab1024"
-        }
-      ]
-    },
-    {
-      "level": 36,
-      "seed": 526003,
-      "budget": 30,
-      "expectedStatus": "Won",
-      "actions": [
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 1,
-          "bx": 7,
-          "by": 1,
-          "before": "a3ee95df0649a76c",
-          "after": "7fa72e5adbae5553"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 3,
-          "bx": 6,
-          "by": 3,
-          "before": "7fa72e5adbae5553",
-          "after": "6e20d7a8bc0d8ab4"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 2,
-          "bx": 6,
-          "by": 2,
-          "before": "6e20d7a8bc0d8ab4",
-          "after": "1d4506ba259e9e74"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 6,
-          "bx": 3,
-          "by": 7,
-          "before": "1d4506ba259e9e74",
-          "after": "928f1c0721cacd4b"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 7,
-          "bx": 8,
-          "by": 7,
-          "before": "928f1c0721cacd4b",
-          "after": "5238e0498e6169ce"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 9,
-          "bx": 5,
-          "by": 10,
-          "before": "5238e0498e6169ce",
-          "after": "a204dec2d03842fb"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 0,
-          "bx": 8,
-          "by": 1,
-          "before": "a204dec2d03842fb",
-          "after": "76ae33003083b277"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 5,
-          "bx": 7,
-          "by": 6,
-          "before": "76ae33003083b277",
-          "after": "a37448fb98a64add"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 5,
-          "bx": 7,
-          "by": 6,
-          "before": "a37448fb98a64add",
-          "after": "d7e9a8484dc816bb"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 2,
-          "bx": 7,
-          "by": 3,
-          "before": "d7e9a8484dc816bb",
-          "after": "539ecf6238245a96"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 0,
-          "bx": 7,
-          "by": 1,
-          "before": "539ecf6238245a96",
-          "after": "7308c3f6949486b4"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 6,
-          "bx": 4,
-          "by": 6,
-          "before": "7308c3f6949486b4",
-          "after": "c8fbe0010a293c12"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 7,
-          "bx": 4,
-          "by": 8,
-          "before": "c8fbe0010a293c12",
-          "after": "82b9bf2e1763f0de"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 0,
-          "bx": 6,
-          "by": 1,
-          "before": "82b9bf2e1763f0de",
-          "after": "e574d9045cd0351b"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 5,
-          "bx": 5,
-          "by": 5,
-          "before": "e574d9045cd0351b",
-          "after": "7fc823f1f8da85e6"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 4,
-          "bx": 3,
-          "by": 5,
-          "before": "7fc823f1f8da85e6",
-          "after": "3e51c635b580f222"
-        }
-      ]
-    },
-    {
-      "level": 49,
-      "seed": 539060,
-      "budget": 44,
-      "expectedStatus": "Won",
-      "actions": [
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 6,
-          "bx": 8,
-          "by": 7,
-          "before": "7887808eb0afea13",
-          "after": "1b5922c3e49f34ff"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 7,
-          "bx": 4,
-          "by": 7,
-          "before": "1b5922c3e49f34ff",
-          "after": "03d1eb0453f35807"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 1,
-          "bx": 8,
-          "by": 1,
-          "before": "03d1eb0453f35807",
-          "after": "13096d8409e50db3"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 6,
-          "bx": 2,
-          "by": 6,
-          "before": "13096d8409e50db3",
-          "after": "8771cbeda77ee3b4"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 6,
-          "bx": 10,
-          "by": 6,
-          "before": "8771cbeda77ee3b4",
-          "after": "fceb56c8b32c3552"
-        },
-        {
-          "kind": "tap",
-          "ax": 3,
-          "ay": 6,
-          "bx": 0,
-          "by": 0,
-          "before": "fceb56c8b32c3552",
-          "after": "e3cb3979f01f9113"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 7,
-          "bx": 4,
-          "by": 8,
-          "before": "e3cb3979f01f9113",
-          "after": "1b06bd746e74ac46"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 8,
-          "bx": 3,
-          "by": 9,
-          "before": "1b06bd746e74ac46",
-          "after": "589cbc27cbd00ef9"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 7,
-          "bx": 3,
-          "by": 8,
-          "before": "589cbc27cbd00ef9",
-          "after": "d34e9f4a01d2be3a"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 7,
-          "bx": 1,
-          "by": 8,
-          "before": "d34e9f4a01d2be3a",
-          "after": "c691dff1dec51134"
-        },
-        {
-          "kind": "tap",
-          "ax": 10,
-          "ay": 2,
-          "bx": 0,
-          "by": 0,
-          "before": "c691dff1dec51134",
-          "after": "29210a570f20d4fd"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 0,
-          "bx": 9,
-          "by": 0,
-          "before": "29210a570f20d4fd",
-          "after": "99ca1c4e25daf30d"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 7,
-          "bx": 1,
-          "by": 8,
-          "before": "99ca1c4e25daf30d",
-          "after": "c9003803b3c862dd"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 6,
-          "bx": 1,
-          "by": 6,
-          "before": "c9003803b3c862dd",
-          "after": "24d2638d6839539a"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 4,
-          "bx": 2,
-          "by": 4,
-          "before": "24d2638d6839539a",
-          "after": "576410ace5b87233"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 10,
-          "bx": 10,
-          "by": 10,
-          "before": "576410ace5b87233",
-          "after": "134773e46bbd4438"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 6,
-          "bx": 2,
-          "by": 7,
-          "before": "134773e46bbd4438",
-          "after": "b733b29f92e6e9a2"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 7,
-          "bx": 3,
-          "by": 7,
-          "before": "b733b29f92e6e9a2",
-          "after": "cc4c6bec0dcee382"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 4,
-          "bx": 9,
-          "by": 5,
-          "before": "cc4c6bec0dcee382",
-          "after": "49de1f268aa144a3"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 4,
-          "bx": 9,
-          "by": 5,
-          "before": "49de1f268aa144a3",
-          "after": "e3ef730cd98d8993"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 5,
-          "bx": 9,
-          "by": 6,
-          "before": "e3ef730cd98d8993",
-          "after": "6d43ff749a482bbe"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 1,
-          "bx": 9,
-          "by": 1,
-          "before": "6d43ff749a482bbe",
-          "after": "5cb5677d7f48f8e6"
-        },
-        {
-          "kind": "swap",
-          "ax": 10,
-          "ay": 4,
-          "bx": 10,
-          "by": 5,
-          "before": "5cb5677d7f48f8e6",
-          "after": "f9410dda07256afc"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 7,
-          "bx": 8,
-          "by": 7,
-          "before": "f9410dda07256afc",
-          "after": "69a084e1bca7e68c"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 3,
-          "bx": 10,
-          "by": 3,
-          "before": "69a084e1bca7e68c",
-          "after": "366c5313dd917020"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 2,
-          "bx": 9,
-          "by": 3,
-          "before": "366c5313dd917020",
-          "after": "d7208e0f66066d1a"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 3,
-          "bx": 8,
-          "by": 4,
-          "before": "d7208e0f66066d1a",
-          "after": "fc57482eecd8422b"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 3,
-          "bx": 6,
-          "by": 4,
-          "before": "fc57482eecd8422b",
-          "after": "061ac48c60875333"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 2,
-          "bx": 6,
-          "by": 3,
-          "before": "061ac48c60875333",
-          "after": "3be41e65568bb05c"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 9,
-          "bx": 7,
-          "by": 9,
-          "before": "3be41e65568bb05c",
-          "after": "329837e4a3013325"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 7,
-          "bx": 7,
-          "by": 8,
-          "before": "329837e4a3013325",
-          "after": "7fdf74ee6f8f1a08"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 2,
-          "bx": 0,
-          "by": 3,
-          "before": "7fdf74ee6f8f1a08",
-          "after": "6b4518b6c5caa851"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 4,
-          "bx": 1,
-          "by": 5,
-          "before": "6b4518b6c5caa851",
-          "after": "f26559e6cd4a8027"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 3,
-          "bx": 6,
-          "by": 3,
-          "before": "f26559e6cd4a8027",
-          "after": "20b42ff81d1c9bec"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 3,
-          "bx": 10,
-          "by": 3,
-          "before": "20b42ff81d1c9bec",
-          "after": "98278c324cd8de0a"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 3,
-          "bx": 7,
-          "by": 4,
-          "before": "98278c324cd8de0a",
-          "after": "f94d2e72ed0d7508"
-        },
-        {
-          "kind": "tap",
-          "ax": 7,
-          "ay": 5,
-          "bx": 0,
-          "by": 0,
-          "before": "f94d2e72ed0d7508",
-          "after": "5540b164cc0d8d92"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 1,
-          "bx": 2,
-          "by": 2,
-          "before": "5540b164cc0d8d92",
-          "after": "db58f84e9c8061bf"
-        }
-      ]
-    },
-    {
-      "level": 50,
-      "seed": 589732,
-      "budget": 44,
-      "expectedStatus": "Won",
-      "actions": [
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 3,
-          "bx": 8,
-          "by": 3,
-          "before": "99185bc57a6d1f68",
-          "after": "aa3aec3840bf645f"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 0,
-          "bx": 9,
-          "by": 0,
-          "before": "aa3aec3840bf645f",
-          "after": "f1238a4db8e10b46"
-        },
-        {
-          "kind": "swap",
-          "ax": 3,
-          "ay": 1,
-          "bx": 3,
-          "by": 2,
-          "before": "f1238a4db8e10b46",
-          "after": "0984d97069465ff9"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 6,
-          "bx": 9,
-          "by": 7,
-          "before": "0984d97069465ff9",
-          "after": "02f5110f34bca695"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 9,
-          "bx": 9,
-          "by": 10,
-          "before": "02f5110f34bca695",
-          "after": "a887bc2ccae2f3bc"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 1,
-          "bx": 9,
-          "by": 1,
-          "before": "a887bc2ccae2f3bc",
-          "after": "13834c889d67fb8e"
-        },
-        {
-          "kind": "swap",
-          "ax": 10,
-          "ay": 8,
-          "bx": 10,
-          "by": 9,
-          "before": "13834c889d67fb8e",
-          "after": "61c1b594a71ee3f8"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 7,
-          "bx": 9,
-          "by": 8,
-          "before": "61c1b594a71ee3f8",
-          "after": "7785c65be2a92dce"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 7,
-          "bx": 8,
-          "by": 7,
-          "before": "7785c65be2a92dce",
-          "after": "e8fa98392da63f01"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 7,
-          "bx": 9,
-          "by": 7,
-          "before": "e8fa98392da63f01",
-          "after": "78b8b4100d332b38"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 7,
-          "bx": 6,
-          "by": 8,
-          "before": "78b8b4100d332b38",
-          "after": "56f72ab1b4c08fd8"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 9,
-          "bx": 8,
-          "by": 9,
-          "before": "56f72ab1b4c08fd8",
-          "after": "2094e0253bcdaace"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 8,
-          "bx": 10,
-          "by": 8,
-          "before": "2094e0253bcdaace",
-          "after": "1c10f88ea858b5fd"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 1,
-          "bx": 7,
-          "by": 1,
-          "before": "1c10f88ea858b5fd",
-          "after": "75d0ae8a5ef5fdda"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 1,
-          "bx": 7,
-          "by": 1,
-          "before": "75d0ae8a5ef5fdda",
-          "after": "7330ee0b6797a935"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 9,
-          "bx": 10,
-          "by": 9,
-          "before": "7330ee0b6797a935",
-          "after": "db732990f482ab8f"
-        },
-        {
-          "kind": "swap",
-          "ax": 7,
-          "ay": 8,
-          "bx": 8,
-          "by": 8,
-          "before": "db732990f482ab8f",
-          "after": "9595766e54304fe9"
-        },
-        {
-          "kind": "swap",
-          "ax": 8,
-          "ay": 8,
-          "bx": 9,
-          "by": 8,
-          "before": "9595766e54304fe9",
-          "after": "2a6f3814d165d0d5"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 7,
-          "bx": 10,
-          "by": 7,
-          "before": "2a6f3814d165d0d5",
-          "after": "33efc41b54192eec"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 5,
-          "bx": 1,
-          "by": 5,
-          "before": "33efc41b54192eec",
-          "after": "0d35cc6a03604c30"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 9,
-          "bx": 4,
-          "by": 10,
-          "before": "0d35cc6a03604c30",
-          "after": "8cc1705ba01b9b94"
-        },
-        {
-          "kind": "swap",
-          "ax": 5,
-          "ay": 1,
-          "bx": 5,
-          "by": 2,
-          "before": "8cc1705ba01b9b94",
-          "after": "598138617ec67aa3"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 9,
-          "bx": 4,
-          "by": 10,
-          "before": "598138617ec67aa3",
-          "after": "a2e24100702fa97d"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 6,
-          "bx": 6,
-          "by": 7,
-          "before": "a2e24100702fa97d",
-          "after": "ec38a2a518103e60"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 9,
-          "bx": 2,
-          "by": 9,
-          "before": "ec38a2a518103e60",
-          "after": "0f07f8453dbf2655"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 7,
-          "bx": 1,
-          "by": 8,
-          "before": "0f07f8453dbf2655",
-          "after": "04a2b74ca04ddaae"
-        },
-        {
-          "kind": "swap",
-          "ax": 4,
-          "ay": 8,
-          "bx": 5,
-          "by": 8,
-          "before": "04a2b74ca04ddaae",
-          "after": "4c822d3d41afa8ae"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 6,
-          "bx": 1,
-          "by": 6,
-          "before": "4c822d3d41afa8ae",
-          "after": "856bf9c762e55ee2"
-        },
-        {
-          "kind": "swap",
-          "ax": 10,
-          "ay": 4,
-          "bx": 10,
-          "by": 5,
-          "before": "856bf9c762e55ee2",
-          "after": "2ae218e1d7df539d"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 4,
-          "bx": 1,
-          "by": 4,
-          "before": "2ae218e1d7df539d",
-          "after": "b14435652b003f5a"
-        },
-        {
-          "kind": "swap",
-          "ax": 0,
-          "ay": 4,
-          "bx": 0,
-          "by": 5,
-          "before": "b14435652b003f5a",
-          "after": "d738dfc8e0895983"
-        },
-        {
-          "kind": "swap",
-          "ax": 6,
-          "ay": 1,
-          "bx": 6,
-          "by": 2,
-          "before": "d738dfc8e0895983",
-          "after": "5412935f41d08858"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 7,
-          "bx": 2,
-          "by": 8,
-          "before": "5412935f41d08858",
-          "after": "31577924f8389277"
-        },
-        {
-          "kind": "swap",
-          "ax": 9,
-          "ay": 4,
-          "bx": 9,
-          "by": 5,
-          "before": "31577924f8389277",
-          "after": "1b081168c95f29bb"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 4,
-          "bx": 1,
-          "by": 5,
-          "before": "1b081168c95f29bb",
-          "after": "fd788f8098c21cb9"
-        },
-        {
-          "kind": "swap",
-          "ax": 1,
-          "ay": 1,
-          "bx": 2,
-          "by": 1,
-          "before": "fd788f8098c21cb9",
-          "after": "75d728e9e1bd8b6c"
-        },
-        {
-          "kind": "swap",
-          "ax": 2,
-          "ay": 5,
-          "bx": 2,
-          "by": 6,
-          "before": "75d728e9e1bd8b6c",
-          "after": "fde68a93ce71b721"
-        },
-        {
-          "kind": "tap",
-          "ax": 7,
-          "ay": 6,
-          "bx": 0,
-          "by": 0,
-          "before": "fde68a93ce71b721",
-          "after": "f0dbf0a98ed129be"
-        }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,0 +1,64 @@
+HEART OF THE RAIN — SIMPLE GAMEPLAY LOADING, REVISION 2
+
+DESIGN DECISION
+Replace the earlier illustrated launch-style composition with the user-approved simple loading screen: sapphire gradient, faint raindrops, one power-up heading, one static illustrated tip, Loading with animated dots. No logo, character scene, level number, progress bar, percentage or decorative outer panel during ordinary loading.
+The initial app launch screen is a separate surface and remains unchanged.
+
+DELIVERY SCOPE
+This package contains 14 separate PNG assets, editable vector UI sources, the existing font, two tip compositions, localization, a browser review and the Unity asset import package. It does not replace production runtime scripts or install a scene/prefab. Wire the view into the current project in Codex. The included UIClarity Editor guard is retained from the earlier package, not newly native-compiled here.
+The ZIP/standalone HTML keep their existing filenames so previous download identities remain valid. Their internal revision is R2.
+
+REFERENCE AND ORIGINAL ART
+The uploaded Match Villains screenshot guided the layout hierarchy and simplicity. No screenshot pixels, logo, purple background, bat motif or Snitch artwork are included.
+Rain_Seeker_Original.png is byte-identical to the original painting in M25 Rain Seeker R3, which the M70 source audit identifies as the Rain Seeker master source. It has open wings because the tip depicts flight. The folded in-cell gameplay sprite is not changed.
+Rainbow_Orb_Original.png is byte-identical to the original painting in M70 All Powerups R2.
+The water, leaf, rune and heart tile PNGs are byte-identical to Tiles V4. TILE_Ribbon_V2.png is the legacy filename for the approved red heart; it is not the obsolete ribbon design.
+UI-only copies use new loading-specific GUIDs/paths, so importing this package cannot overwrite gameplay atlases or their importer settings. Art is never repainted, sharpened, tinted or enlarged past its source pixel budget.
+
+TIP MEANING
+Rain Seeker: flies to a target. The diagram shows one remote target hit. This is an abbreviated ability tip, not a complete launch-cross explanation and not a matching recipe. M25 documentation specifies source-cross hits plus one separate target; do not alter those mechanics to match the simplified illustration.
+Rainbow Orb: clears tiles of one color. The diagram selects every purple tile in its example and leaves other colors unselected. The inspected ReviewPlan kind 7 targets the chosen color, excludes the origin and wood, and applies beams to eligible targets. This diagram does not specify how a current production input selects that color.
+These tips do not claim that a 2x2 pattern creates either item. No new creation recipe, target priority or reward rule is introduced.
+
+TIP SELECTION
+See Data/Loading_Tips.json. Select once when a new accepted level launch begins, from tips whose actual power-up has been unlocked. If two are eligible, avoid repeating the last tip where possible. Keep the chosen tip unchanged throughout loading and on a retry of the same launch. Change only between new level starts.
+Bind eligibility to current progression data; no unlock level is hardcoded here. Respect the existing hint preference when applicable. If hints are disabled or no tip is eligible, use the supplied loading-only state: same sapphire background and Loading dots, with heading/diagram hidden. Do not expose a locked power-up merely to fill the screen.
+The review dropdown can force either tip for visual inspection. Next level tip alternates the two for demonstration. Neither behavior is production progression logic.
+
+ENTRY AND HANDOFF
+1. Preload this small UI while Home is visible. Keep a native text/background fallback available if decorative textures fail. Loading its own art must not block the loading overlay.
+2. The existing Play eligibility/reservation operation remains authoritative. Rejects stay in pre-level. An accepted request shows the opaque full-screen overlay immediately and locks repeated Play taps. Keep the Play label as Play; remove the Starting… busy-label presentation in the current UI.
+3. Render the overlay before heavy work. Use the current asynchronous/chunked initialization; a blocked main thread will also freeze the loading dots. Loader timing uses unscaled time, independent of paused gameplay.
+4. Keep gameplay hidden/input-blocked underneath. Wait for real board/resource/UI/model readiness and successful starting-power grants. Commit existing inventory transactions exactly once. Do not add a loader-owned life, booster or reward debit.
+5. Begin a short 160ms fade as soon as the game can be shown. Reduced motion uses immediate reveal. No minimum dwell, fake percentage, automatic timed success or extra Start tap. A fast warm load may show the overlay only briefly.
+6. Keep starting-power creation animation clocks held until gameplay is visible. M70 R2 specifically fixed creation playback finishing behind pre-level UI; do not reintroduce it behind this loader. Readiness means the model/resources are ready, not that hidden creation clips have already completed. Enable gameplay input at the final handoff according to the current creation/intro policy.
+7. A failed initialization first destroys/releases partial state and resolves its reservation. Then show the recovery footer: Unable to load / Try again / Back to level. The same selected tip may remain visible when space allows. On compact screens it is hidden to prioritize recovery buttons.
+8. Retry preserves level/selected boosters and creates a new operation token. Ignore late callbacks from failed/older operations. Failed initialization does not represent a played-and-lost attempt. Preserve the current economy policy; do not consume twice or lose a life for a load failure.
+9. Back returns to the same pre-level modal after cleanup. No close/back button appears during an active operation unless the current service explicitly supports safe cancellation. Keep existing audio playing; no additional loading sound is supplied.
+10. Use the existing timeout/background/resume policy. A longer-load status label may appear while work is still pending; it is not itself a failure deadline. The review's 3-second Play simulation and handoff placeholder must not ship.
+
+OLD SOURCE AUDIT
+M56 R2 was inspected in the preceding revision: PreLevelLayout.cs contains the Starting… branch; HomeLevelFlow.Launch validates InitializationComplete, HasStartedWithPowers and StartingPowerError before completing the reserved ticket. That is a historical integration reference, not evidence that the latest Codex branch uses identical class names or schemas. Adapt responsibilities, not entire old files. In particular, do not restore its obsolete booster grouping or review-only Home flow.
+
+LAYOUT AND RENDERING
+See Layout_Contract.json and Data/Loading_Tips.json for exact layer rectangles in a 360x240 diagram coordinate system. All dimensions are reference units, then adapted to actual Canvas scale and physical screen size.
+Background: LT_Background, Simple, stretches to screen. It is a smooth gradient, not a detail image.
+Pattern: LT_RainPattern repeats in 96x96 reference-unit tiles, no stretching to screen aspect. The supplied sprite contains its own low alpha. Use Image.Type.Tiled, PPU400, Canvas referencePixelsPerUnit100, multiplier1; tint white. Ensure tiling preserves full 384px sprite rather than atlas-trimming it. No runtime blur or special mask shader is needed.
+Tip art: Simple sprites, preserve aspect, white tint, no shadow/scale animation. Heading and status are separate live text. Keep the original English names as the canonical IDs; bind translated visible names to the project's glossary. Included translations are review defaults, not new gameplay identifiers.
+Mini-board: 46x46 cells, pitch49; tile images 40x40 with3-unit inset. Cell and target sprites use Sliced with border48 on all sides, PPU400/multiplier1. Target rectangles are50x50. The miniature cells are instructional graphics, not a replacement design for the live board.
+Rain arrow: LT_Flight_Arrow at x132,y96,w72,h29 in the diagram. Orb lines: LT_Orb_Links at0,0,360,240. These static gold paths communicate targeting; do not substitute them for the existing gameplay VFX beams.
+Recovery buttons reuse GL_Primary/Secondary from loading R1, with their original GUIDs. Sliced LBRT64,80,64,80; PPU400/multiplier1; minimum touch height48. Recovery is secondary to the ordinary simple loading composition.
+Use runtime Screen.safeArea converted to Canvas coordinates. Portrait places heading near19% safe height, illustration at the middle, and Loading near87%. Compact screens enforce a16-unit title/diagram separation. Landscape places the diagram left and heading/status right. Text may shrink within documented bounds for long translations; do not clip it.
+
+MOTION AND ACCESSIBILITY
+Only the three dots animate: 1.2-second opacity cycle, delays0/.16/.32 seconds, alpha .3 to1. Their positions and total width stay fixed, so text does not shift. No tip carousel during a load. Reduced motion leaves all three dots fully visible and removes the handoff fade. Loading status is a polite accessibility announcement; the changing decorative dots are excluded. Each tip includes a localized screen-reader description. Never announce invented percentage progress.
+
+CLARITY / IMPORT
+Native sizes: both power-up originals1254x1254; tile sprites512x512; cells/targets256x256; pattern384x384; arrow400x160; orb links1440x960. The maximum146-unit hero at4 physical pixels/unit uses584 pixels, safely below1254. Each40-unit tile at4 uses160, below512. No visible icon is derived from the much smaller in-game atlas frames.
+Detailed art uses Box mipmaps and Trilinear. Sliced/flat UI uses Bilinear and no mipmaps. Native source sizes, sRGB, Full Rect sprites, RGBA32 reference imports and explicit Android/iPhone/Standalone overrides are included. This is a clarity baseline; optimize compression only after native device comparison. Do not apply a blanket no-mipmap rule or let an atlas silently reduce resolution.
+Registry retains all45 earlier entries and adds12 new paths (57 total); the two recovery buttons already existed. If the current project has later registry/guard changes, merge by GUID/path rather than replacing newer work. Missing optional registry assets do not require importing old launch art.
+The existing HomeRounded font and its shared GUID are retained. Coverage of EN/ES/FR/DE/RU strings is checked. Use the current TMP SDF font/fallback assets with adequate atlas resolution; native TMP atlas rendering is not validated here. Japanese is excluded.
+
+VALIDATION
+Browser layout/source-pixel checks cover seven viewport sizes, three densities, five languages, two tips plus the loading-only fallback, and loading/slow/error states. Flow checks cover duplicate clicks, tip retention, retry, stale callbacks, readiness, reduced motion and offline review dependencies. See Review_QA.json for actual results.
+PNG/source hashes, Unitypackage assets/meta/GUIDs and ZIP CRC are checked. Unity compilation, real service state, device image quality, GPU behavior and actual app integration remain pending. No current game project build is included or claimed to be updated.

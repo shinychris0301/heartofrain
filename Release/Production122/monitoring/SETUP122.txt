@@ -1,0 +1,147 @@
+Heart of the Rain: Windows checks and local incident logs (review122)
+
+Scope
+
+This monitor observes availability; it does not activate payments, VK, ads,
+gameplay replay, provider credentials, migrations, or a production authority.
+The currently documented VPS is the owned staging deployment at
+https://api.novamind-it.ru, with the API bound to 127.0.0.1:8751.
+
+Backend/hotr_backend/monitoring122.py uses only Python's standard library. It can
+be copied to a fresh private directory and executed by absolute path without
+changing the installed backend bundle, its Python environment, authority,
+service definitions or Caddy configuration. It accepts no provider credentials.
+
+Checks and evidence
+
+The public HTTPS checks require normal certificate/hostname verification and
+refuse redirects. Ambient proxies, .netrc credentials, arbitrary paths and
+caller-supplied authentication headers are not used. Only fixed health,
+readiness and protected-route URLs are requested. Responses are limited to
+4 KiB and JSON validation rejects duplicate keys, compressed bodies and HTML.
+Network timeouts and a response-read deadline are bounded; the scheduled task
+also has a 45-second process execution limit, covering a stuck host resolver.
+
+/healthz must have status:ok, the expected mode and its matching
+productionEnabled flag. /readyz must have status:ready. Public /docs,
+/openapi.json and /internal/v1/test must return 404. The latter are route probes,
+not exhaustive authorization testing. Optional loopback checks use only
+http://127.0.0.1:<explicit-port> and distinguish API failure from proxy/TLS failure.
+Successful checks that exceed the configured latency budget also fail.
+
+The optional private --backup-manifest check verifies the owned Ready marker,
+receipt ownership, Ready state, matching snapshot size, absence of sidecars,
+and filesystem modification-age. The default freshness limit is 24 hours;
+the default free-space floor is 1,024 MiB. At most 1,024 backup-directory
+entries are scanned. Pending/foreign/malformed receipts fail the inventory
+check even when another recent backup exists; investigate them privately.
+
+Backup freshness is a filesystem-age heuristic, not a trusted creation clock.
+The monitor does not hash/open SQLite, verify every database page, migrate,
+restore, prove an encrypted off-host copy, or contact provider consoles.
+The existing staging_ops105 backup/restore workflow supplies those separate
+integrity/ownership drills. Set a real backup schedule and encrypted off-host
+retention; a green availability report cannot substitute for either.
+
+One-shot use on the VPS, without installing a task:
+
+  <python.exe> -I -B <absolute-monitoring122.py> check --origin https://api.novamind-it.ru --expected-mode staging --loopback-port 8751
+
+Optional local outputs and backup metadata:
+
+  --report-file <existing-private-status-directory>/latest.json
+  --events-file <existing-private-status-directory>/events.jsonl
+  --backup-manifest <existing-private-staging-manifest.json>
+  --max-backup-age-hours 24 --min-free-mib 1024
+
+Exit codes are 0 for all requested checks passing, 1 for failed checks, and 2
+for invalid configuration/output failure. Raw responses, exception strings,
+private paths, tokens, payment bodies and account data are never logged.
+latest.json is an atomic status replacement; an unknown existing file is
+preserved. events.jsonl records the initial state, every failed run and recovery,
+and skips repeated healthy states. It rotates at 256 KiB with three archives
+(four files total, at most 1 MiB). Only recognized monitor files are rotated;
+unknown archives are preserved and cause exit2. Failed output replacements
+preserve their partial temporary file for private diagnosis.
+
+Install a fresh LocalService scheduled task
+
+Use an administrator PowerShell session whose approved local script policy
+permits the installer; do not bypass policy. Transfer the reviewed standalone
+monitor and installer to an administrator-controlled directory and compare
+both SHA-256 values with the reviewed transfer manifest before execution.
+The installer requires the SHA-256 of the existing python.exe and monitor:
+
+  .\Install-Monitor122.ps1 -PythonExe <existing-python.exe> -PythonSHA256 <verified-executable-sha256> -MonitorSource <transferred-monitoring122.py> -MonitorSHA256 <reviewed-monitor-sha256> -BackupManifest <existing-private-staging-manifest.json>
+
+The default new root is C:\ProgramData\HeartOfTheRain\monitor122 and the task
+is HOTRMonitor122. Existing roots/tasks are rejected before mutation. Code is
+read/execute-only to LocalService; only status/ grants it Modify. Administrators
+and SYSTEM retain full control. The exact installed Python must already be
+executable by LocalService. No password is stored. The task starts immediately,
+then repeats each minute, ignores overlapping instances, and has a 45-second
+execution limit. The installer does not modify HOTRStaging or HOTRCaddy, change
+the proxy, open a firewall port, initialize a database, or enable a provider.
+
+Validate the task on the actual VPS:
+
+  Get-ScheduledTask -TaskName HOTRMonitor122 | Select-Object TaskName,State
+  Get-ScheduledTaskInfo -TaskName HOTRMonitor122 | Select-Object LastRunTime,LastTaskResult,NextRunTime
+  Get-Content C:\ProgramData\HeartOfTheRain\monitor122\status\latest.json
+  Get-Content C:\ProgramData\HeartOfTheRain\monitor122\status\events.jsonl -Tail 5
+
+Confirm LocalService as principal, the transferred source hash, restricted ACLs,
+expected origin/port and fresh UTC heartbeat. LastTaskResult0 means the last
+requested checks passed; 1 means investigate failed static codes; 2 means
+configuration/output failure. A task stuck Running or a heartbeat older than
+three minutes is an incident even when the old report says healthy.
+
+Before acceptance, observe a fresh repetition, perform a disposable isolated
+failure/recovery control, and separately verify reboot persistence. Do not stop
+the live authority or alter its database solely to demonstrate an alert.
+The actual reviewed installation/control receipts, when performed, belong in
+Verification/Evidence/Review122; this guide alone does not claim installation.
+
+The owner selected Windows checks/local logs. External notifications are not
+configured by this workflow. A monitor on the same VPS cannot report total
+machine/network failure while it is down. Later, run the public-only one-shot
+from an independent host and configure the owner's chosen alert destination.
+Public health TLS checks from the VPS also do not certify PC/emulator egress.
+
+Trusted proxy prerequisite for RuStore notification ingress
+
+The current staging launcher uses proxy_headers=False and source(request)
+reads the ASGI socket peer. Behind Caddy that peer is 127.0.0.1. Therefore
+adding loopback to RuStore notification allowed CIDRs would admit every public
+sender through that proxy. Do not do this or trust a raw client X-Forwarded-For.
+
+The separate production_runtime122 implementation uses an explicit single
+X-Hotr-Verified-Client-IP header accepted only from its owned 127.0.0.1 Caddy
+hop. Uvicorn proxy_headers remains false. The concrete candidate is now
+Release/Production122/operations/Caddyfile.production122.example: it overwrites
+that header with {remote_host}, strips other forwarding headers and permits
+notification ingress only from the four official RuStore sender ranges before
+the backend's independent network/cryptographic checks and REST reconciliation.
+
+This replaces the earlier generic trusted-forwarding proposal; it is not a
+drop-in edit for the running staging launcher. The isolated Caddy tests exercise
+header spoofing rejection and protected/static routing on loopback. They do not
+prove actual RuStore delivery. If a CDN or other proxy is introduced, reassess
+the entire trusted-hop chain; blindly trusting private ranges or '*' is
+inappropriate. Keep request bodies and VK callback queries out of access logs.
+Public health/latency JSON contains no provider acceptance claim;
+productionAcceptanceVerified always remains false.
+
+Primary references checked on 30 October2026:
+https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtaskprincipal
+https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtasktrigger
+https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#defaults
+
+Validation boundaries
+
+The module's host tests include an actual disposable loopback HTTP server and
+mocked network/failure controls, file preservation, bounded logs, backup
+metadata and TLS-policy checks. They are not Unity/Android/provider tests.
+The installer must additionally pass actual Windows task/ACL execution before
+an installed-monitor claim. Existing off-VPS backup, release-provider, worker,
+physical-device and production gates remain separate.

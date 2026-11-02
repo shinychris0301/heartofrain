@@ -1,0 +1,69 @@
+Explicit owned staging upgrade for Teams badge metadata (schema10 to11)
+
+This is a stopped staging operation, not a deployment or production switch.
+The owned start/factory gate deliberately remains closed while an upgrade is
+unfinished. It never resets a marker, adopts an unrelated database, charges
+coins, imports an offline wallet or changes membership/reward decisions.
+
+NEW EMPTY OWNED ROOT
+
+Use the existing reviewed staging descriptor and initialize/start workflow.
+The first current-code factory creates schema11. Do not run the old-root upgrade
+against a new Initialized root or an already current database with no upgrade
+receipt. The normal production guard, public HTTPS and worker/provider setup
+requirements are unchanged.
+
+EXISTING OWNED READY SCHEMA10 ROOT
+
+1. Stop the exact supervised staging process. Preserve the existing descriptor,
+   durable directory, ownership marker and any verified backups. Keep the same
+   deploymentId, publicOrigin and identityScope. Do not edit marker/database rows.
+2. From Backend, run the existing virtual environment with a fresh backup name:
+
+   .\.venv\Scripts\python.exe -B -m hotr_backend.staging_upgrade109 --manifest C:\HOTR-Private\staging-server.json --name before-team-badges109
+
+3. Wait for status=completed. Run the ordinary preflight command, then the
+   reviewed start workflow. A service is not started by the upgrade command:
+
+   .\.venv\Scripts\python.exe -B -m hotr_backend.staging105 preflight --manifest C:\HOTR-Private\staging-server.json
+
+4. After completion take a new current-schema backup through staging_ops105
+   using another fresh name. Ordinary staging_ops105 restore still requires a
+   current-schema receipt; it does not silently migrate historical snapshots.
+
+The operation holds the runtime and control locks, opens the existing authority
+in mode=rw and validates the exact known schema10. It creates an immutable,
+owner-bound schema10 snapshot with the existing SQLite backup API before any
+DDL. Both snapshot and its .upgrade109.json receipt remain in owned backups/.
+The receipt is distinct from a normal current-schema .receipt.json backup.
+
+After the backup is sealed the marker becomes UpgradePending109, preserving
+its nonce/identity. Ordinary preflight/start/factory/backup/restore reject that
+state. Only the bound upgrade command can resume. The shared additive badge
+DDL and schema version update run in one SQLite transaction. Every old row and
+sequence is fingerprinted before/after; legacy teams receive badgeId=drop.
+The receipt becomes Complete before the exact original Ready marker returns.
+
+RECOVERY
+
+Retry the SAME command/name after a reported interruption once the process has
+stopped. A precommit failure rolls back SQLite but keeps startup blocked. A lost
+reply after commit reconciles the same schema11 data/receipt without repeating
+creation, wallet grants or migration. A completed exact retry reports
+alreadyCompleted=true. Do not manually clear UpgradePending109.
+
+If interruption happened before a verified backup receipt existed, the database
+has not been migrated. Any partial/unbound snapshot is preserved and cannot be
+adopted by a retry. Review that fixed error and use a NEW explicit backup name;
+never delete/overwrite an unknown artifact to make the command pass.
+
+A missing/replaced/empty database, modified ownership, changed snapshot/receipt,
+unknown schema or changed pending source data blocks recovery. Preserve the
+artifacts and obtain operator review. The schema10 snapshot is a recovery
+artifact for an explicit offline restore/migration plan, not permission to copy
+it over the running authority or silently activate a new root.
+
+Verification uses temporary exact-schema SQLite/ASGI fixtures and injected
+in-process failures, including postcommit/pre-ready recovery. It is not an
+actual power-loss, hosted-operation, SDK or physical-device test. No real
+authority, credentials, provider or public network is involved in those tests.

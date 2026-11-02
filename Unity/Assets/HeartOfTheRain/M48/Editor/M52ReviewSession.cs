@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.IO.Compression;
+using CompressionLevel = System.IO.Compression.CompressionLevel;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -26,7 +27,7 @@ namespace HeartOfTheRain.M48 {
         public static void Begin(bool capture){
             if(Active)throw new InvalidOperationException("A review session is already running.");
             if(!EditorApplication.isPlaying||EditorApplication.isPaused)throw new InvalidOperationException("Enter Play Mode and resume the Editor first.");
-            tools=UnityEngine.Object.FindObjectOfType<GameplayReviewTools>();screen=UnityEngine.Object.FindObjectOfType<GameplayScreen>();
+            tools=UnityEngine.Object.FindFirstObjectByType<GameplayReviewTools>();screen=UnityEngine.Object.FindFirstObjectByType<GameplayScreen>();
             if(tools==null||screen==null||!screen.Ready||screen.gameObject.scene.path!=M48ReviewMenu.Scene||screen.Busy||tools.ManualPlaytestRunning||tools.Replaying||tools.Showcasing||tools.IsMeasuring||M48Recording.IsRecording)
                 throw new InvalidOperationException("Open the review scene, wait for the current action and end manual logging and stop performance measurement/recording.");
             if(capture&&Application.platform==RuntimePlatform.LinuxEditor)throw new NotSupportedException("Use playback-only on Linux. This MP4 configuration requires Windows/macOS.");

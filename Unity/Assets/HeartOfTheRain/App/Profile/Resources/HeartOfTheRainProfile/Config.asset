@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0c2a51a67959f089334139fb07e933, type: 3}
+  m_Name: Profile M71 Assets
+  m_EditorClassIdentifier: 
+  home: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 2}
+  profileFont: {fileID: 12800000, guid: 3436adfe8ce255d290a61d402218e8c5, type: 3}
+  sprites:
+  - id: Avatar_Compass
+    sprite: {fileID: 21300000, guid: f3081d8df2305583b6e6c5dc0676ecc7, type: 3}
+  - id: Avatar_Dariya
+    sprite: {fileID: 21300000, guid: 56fd19fdefef57fe8c1e72615443fb9a, type: 3}
+  - id: Avatar_Heart
+    sprite: {fileID: 21300000, guid: fcece6fc4a495dc788dc1e0a3500fc4e, type: 3}
+  - id: Avatar_Ivan
+    sprite: {fileID: 21300000, guid: 726ddbe2f2f3529691d63f47c3d6fa00, type: 3}
+  - id: Avatar_Lantern
+    sprite: {fileID: 21300000, guid: ddf304d4207953f2a2d33b8dbb643f47, type: 3}
+  - id: Avatar_Raindrop
+    sprite: {fileID: 21300000, guid: e8346e7f8a565be692919da8ed3cb94f, type: 3}
+  - id: Banner_Lantern
+    sprite: {fileID: 21300000, guid: e17278db213440a481872290d18147e6, type: 3}
+  - id: Banner_Twilight
+    sprite: {fileID: 21300000, guid: 36fb16a8a82b401ea7601a8f47df358c, type: 3}
+  - id: Banner_Village
+    sprite: {fileID: 21300000, guid: 55b8f35884e7476a84ea71db982c8552, type: 3}
+  - id: Check
+    sprite: {fileID: 21300000, guid: 6e66243d5ecb5cbb9d4b123737585d75, type: 3}
+  - id: CheckSource
+    sprite: {fileID: 21300000, guid: 14096b28f3585e91995e603135abf96a, type: 3}
+  - id: Close
+    sprite: {fileID: 21300000, guid: 0e11c1f030be53c4aa3f262857901db6, type: 3}
+  - id: CloseSource
+    sprite: {fileID: 21300000, guid: 41f94bfc297058f1a1ad29c7858042dc, type: 3}
+  - id: FrameGold
+    sprite: {fileID: 21300000, guid: 31d252ce24875bc380401c868c3fb391, type: 3}
+  - id: FrameIvory
+    sprite: {fileID: 21300000, guid: bae2a22aac31566992ca852ca605fa87, type: 3}
+  - id: FrameSapphire
+    sprite: {fileID: 21300000, guid: 2fdb8d20c12a5768b9282b20aa7e0cde, type: 3}
+  - id: Input
+    sprite: {fileID: 21300000, guid: a84fe15f23b0535e8e6c68daac75344c, type: 3}
+  - id: Ivory
+    sprite: {fileID: 21300000, guid: 429ac6a83d58591fb24b83205b87e078, type: 3}
+  - id: Pencil
+    sprite: {fileID: 21300000, guid: 7dee1246268f544c800e8fb64f30870f, type: 3}
+  - id: PencilSource
+    sprite: {fileID: 21300000, guid: a018b4fe28d35c47b6c396a38e2322e7, type: 3}
+  - id: Primary
+    sprite: {fileID: 21300000, guid: 14a80ba11e8f50598176afa21c9ca5c0, type: 3}
+  - id: ProfileChrome
+    sprite: {fileID: 21300000, guid: 9e2fa5868d745a528c536760e8199c64, type: 3}
+  - id: RenameChrome
+    sprite: {fileID: 21300000, guid: 5bbc7e8b33f656b9bd54f1fd859881a4, type: 3}
+  - id: RoundMask
+    sprite: {fileID: 21300000, guid: a9a7c702cbf8541fb56c40d42736fcc3, type: 3}
+  - id: Shell
+    sprite: {fileID: 21300000, guid: 32ae4b318f195dc2b0ed30b6834fea6e, type: 3}
+  - id: TabActive
+    sprite: {fileID: 21300000, guid: 9580142648815c05accf062b693a7b04, type: 3}
+  - id: TabInactive
+    sprite: {fileID: 21300000, guid: 053783b5d0945bca9604e47ed7d14830, type: 3}
+  - id: Team
+    sprite: {fileID: 21300000, guid: cc828a25bb8952fea89e2bce4409e4d9, type: 3}
+  - id: Banner_Village_M71
+    sprite: {fileID: 21300000, guid: 115b32adbe5555dabb4f7072720a41f8, type: 3}
+  - id: Banner_Lantern_M71
+    sprite: {fileID: 21300000, guid: 3b42922f80335c3fbdc7b83edb1fd3af, type: 3}
+  - id: Banner_Twilight_M71
+    sprite: {fileID: 21300000, guid: 8d0a35319ce45397bb2ad7078461755d, type: 3}
+  - id: Stat_Level
+    sprite: {fileID: 21300000, guid: e28fe10ec7a448e98ae70d9fa27d7a95, type: 3}
+  - id: Stat_Chapter
+    sprite: {fileID: 21300000, guid: 71097b326f324a94a58c50e5bdda74b5, type: 3}
+  - id: Stat_Progress
+    sprite: {fileID: 21300000, guid: 70a96ca620db4bb09b12404581d52f1d, type: 3}
+  - id: Stat_Stars
+    sprite: {fileID: 21300000, guid: ec69db361bcd4b4abbc92eef068d81a1, type: 3}
+  - id: FrameRainkeeperGold
+    sprite: {fileID: 21300000, guid: aad66517a27f42198cf9c7683f910f1a, type: 3}
+  - id: FrameLanternSapphire
+    sprite: {fileID: 21300000, guid: 9e8de85b4dde4853922a383bbbd5452f, type: 3}
+  - id: FrameGardenIvory
+    sprite: {fileID: 21300000, guid: 9bc3baf108074518aa23e1e3438d03c6, type: 3}
+  - id: Progress_Track
+    sprite: {fileID: 21300000, guid: 6aeb9f6dd96740998c84543c30f75698, type: 3}
+  - id: Progress_Fill
+    sprite: {fileID: 21300000, guid: e22aafd994a6481892fd6e6544d0f08a, type: 3}

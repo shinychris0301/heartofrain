@@ -1,0 +1,53 @@
+[
+  {
+    "id": "TM_Letter_Closed",
+    "file": "Art/TM_Letter_Closed.png",
+    "width": 1024,
+    "height": 1024,
+    "kind": "mail_illustration",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "imagegen-native-downsampled",
+    "textBaked": false,
+    "tint": "white",
+    "maxReferenceEdge": 340
+  },
+  {
+    "id": "TM_Letter_Open",
+    "file": "Art/TM_Letter_Open.png",
+    "width": 1024,
+    "height": 1024,
+    "kind": "mail_illustration",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "imagegen-native-downsampled",
+    "textBaked": false,
+    "tint": "white",
+    "maxReferenceEdge": 340
+  },
+  {
+    "id": "TM_Coin",
+    "file": "Art/TM_Coin.png",
+    "width": 256,
+    "height": 256,
+    "kind": "approved_coin_copy",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "SharedNavigation/Icon_Coin.png exact bytes",
+    "textBaked": false,
+    "tint": "white",
+    "maxReferenceEdge": 112
+  }
+]

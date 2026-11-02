@@ -1,0 +1,98 @@
+107 - Yandex rewarded-ad configuration and development build
+
+IMPLEMENTED_WITH_OPEN_PROVIDER_AND_DEVICE_ACCEPTANCE_GATES.
+
+The supplied public IDs are configured: Rewarded R-M-20291714-1 and
+Interstitial R-M-20291714-2. Only the existing optional Shop rewarded flow is
+integrated. No interstitial placement or automatic interruption is introduced.
+The reward remains 400 coins, three successful claims per player-local day,
+with a 600-second cooldown. Mutations remain in backend/model services.
+
+The owner confirmed that public backend and privacy URLs are not ready.
+The checked-in packaged configuration is therefore disabled, with an empty
+privacy URL. It is authoritative: a device file cannot override a packaged
+disabled, invalid or ambiguous resource. Strict, bounded v2 parsing covers all
+six public fields; older unbundled configurations remain supported where no
+packaged resource exists. No credentials or fabricated public endpoint is used.
+
+Backend staging support adds an explicit rewardedAdsEnabled descriptor flag,
+default false, and a stopped, owned configure-rewarded-ads transition. It keeps
+the database, wallets, pending claims and backup identity intact and rejects
+unknown policies or descriptor/policy mismatches. Disabling new admissions
+does not discard durable unfinished claims. There is no production activation.
+
+NATIVE AND BACKEND VERIFICATION
+
+Main Unity 2022.3.62f3 passes advertising configuration 85 checks, build policy
+20, parser 140, journal 96, flow 191, Shop UI 736, general 535 and existing
+server configuration 149. Navigation108 passes 6,451 checks over 70 cases;
+the matched actual 720x1600 Home/HUD Editor capture passes 15. Some fixtures
+use injected profile/provider state; these are not real authentication or ads.
+Each invocation retains its exact called source epoch and preservation guards.
+
+The focused backend suite passes 86 tests, zero failures/errors/skips, with
+actual temporary SQLite and in-process FastAPI TestClient. Coverage includes
+opt-in transitions, crash/retry recovery, caps, duplicate claims and backup/
+restore of pending rewards. It does not establish a hosted service or SDK view.
+
+Exactly one fresh isolated Unity 6000.3.27f1 candidate includes the pinned
+official Yandex Unity lite 8.6.0 Android subset and its required AppMetrica
+dependency. The main project stays on 2022.3.62f3. Actual enabled synthetic
+resource packaging/runtime-reader and success/exception cleanup pass 12
+checks, without SDK initialization, hostname lookup, HTTP or ad requests.
+
+The actual ARM64 IL2CPP Development APK build passes eight checks, with zero
+BuildReport errors and four warnings. Audit02 passes 19 checks against the
+finished bytes: signature/alignment/ZIP, portrait/package/API, permissions,
+SDK auto-initialization disabled, pinned dependency locks, expected SDK DEX
+definitions, actual public static JNI (Z)V target and 16 KiB ELF alignment.
+The delivered APK is:
+Unity/Builds/Review107/HeartOfTheRain_107_108_Android_Test.apk
+308031545 bytes
+SHA256 1e77c50cff0cf47fe55e7ae73b1507c457772a1bd3ca284acf0b4c6d93f59ecb
+It includes navigation108. It uses debug signing, disabled ads and no managed
+backend payload. It is not a release artifact and has not been installed here.
+
+The four BuildReport warnings are three vendor Dummy-loader CS0414 unused
+events and one redundant INTERNET manifest notice. Separate compiler logs
+include two clang option notices and three existing IL2CPP compile-cost
+notices. Main final C# compilation has zero warnings/errors. The focused
+Python run retains one upstream Starlette TestClient deprecation warning.
+No broad suppression, vendor modification or dependency upgrade was applied.
+
+RETAINED FAILURES AND LIMITS
+
+The prelaunch invalid new-meta GUIDs, one Unity2022-incompatible Editor API,
+an incorrectly constructed resource-shadow fixture and the first static
+audit's historical SDK-free DEX rule are retained as separate failed epochs.
+Their targeted fixes passed subsequent checks. The historical audit tool,
+original reports and APK are not rewritten; Audit02 audits intended SDK
+definitions explicitly. See FailuresAndEpochs107.json for exact provenance.
+
+Yandex documents no server-side rewarded-view verification. Client completion
+is therefore not authoritative impression proof. Server ownership, fixed
+rewards, caps, cooldowns and idempotency limit duplication but do not prevent
+a modified authenticated client from fabricating up to 1,200 coins per day.
+No SSV webhook or fully trusted grant is claimed. AppMetrica remains a required
+dependency; privacy controls do not certify zero provider collection.
+
+No app launch, installation, physical-phone/LDPlayer test, SDK Load/Show,
+real impression/reward, public deployment or real privacy/provider acceptance
+occurred. Previous installed phone APKs are historical. Production-mode,
+hosting, legal, identity/payment, broader device and performance gates remain.
+fullyVetted=false; productionApproved=false.
+
+OWNER SETUP AND EVIDENCE
+
+Read Release/Advertising/SETUP107.txt for the exact public inputs, owned stopped
+backend transition and separate combined development-build workflow. Real
+activation requires genuine HTTPS API/privacy URLs, publisher configuration
+and consent/privacy review, followed by actual Android sandbox/provider tests.
+The replay-disabled staging profile leaves gameplay unavailable until an
+approved gameplay worker is supplied; it does not fall back to a local wallet.
+
+Evidence: Verification/Evidence/Review107/Comparison.html and Summary.json.
+NativeVerification107.json, SDKVerification107.json, CompilerWarnings107.json,
+Diagnostics107.json, APKDelivery107.json and SourceDelta107_108.json retain
+their separate scopes. Review108/Comparison.html contains unchanged reviewed
+Editor originals for the requested navigation adjustment.

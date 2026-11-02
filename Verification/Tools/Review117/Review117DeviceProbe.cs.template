@@ -1,0 +1,127 @@
+#if UNITY_ANDROID && DEVELOPMENT_BUILD && !UNITY_EDITOR
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using HeartOfTheRain.App.FirstStart;
+using HeartOfTheRain.App.Home;
+using HeartOfTheRain.App.NoMoves;
+using HeartOfTheRain.App.PreLevel;
+using HeartOfTheRain.App.Profile;
+using HeartOfTheRain.M46;
+using HeartOfTheRain.M47;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace HeartOfTheRain.Verification {
+ // Private test-package-only diagnostic. It is not included in main Unity
+ // source and is inert without the explicit adb intent extra on a debug build.
+ public sealed class Review117DeviceProbe : MonoBehaviour {
+  const string Package="com.heartoftherain.review117",Extra="hotr.review117.fixture";
+  static string requested,requestedNonce; static int requestedLevel; string mode,nonce; int fixtureLevel; double deadline; bool finished;
+  GameplayScreen game; PlayerProfileHost host;
+  [Serializable] sealed class Report {
+   public string status="RUNNING",scenario,runNonce,unity,scope="Explicit test-package fixture and in-memory profile. Shuffle is forced, not a naturally exhausted board. Screenshots can affect timing; no FPS, production, backend or other device claim.";
+   public int width,height,level,shuffleCount,noticeCount;public float[] shuffleSampleAges=new float[3];
+   public string[] screenshots,noticeScreens;public string error;
+  }
+  Report report; readonly List<string> images=new List<string>(); readonly List<string> screens=new List<string>();
+  string Folder=>Path.Combine(Application.persistentDataPath,"Review117Probe",nonce);
+  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)] static void Boot(){
+   if(Application.identifier!=Package||!Debug.isDebugBuild)return;
+   try{
+    using(var unity=new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+    using(var activity=unity.GetStatic<AndroidJavaObject>("currentActivity"))
+    using(var intent=activity.Call<AndroidJavaObject>("getIntent")){requested=intent.Call<string>("getStringExtra",Extra);requestedNonce=intent.Call<string>("getStringExtra","hotr.review117.nonce");requestedLevel=intent.Call<int>("getIntExtra","hotr.review117.level",1);}
+    if((requested!="shuffle"&&requested!="notice"&&requested!="all")||requestedLevel<1||requestedLevel>50||!System.Text.RegularExpressions.Regex.IsMatch(requestedNonce??"",@"\A[0-9a-f]{32}\z"))return;
+    SceneManager.sceneLoaded+=Attach;
+   }catch(Exception){requested=null;}
+  }
+  static void Attach(Scene scene,LoadSceneMode mode){
+   var first=FindFirstObjectByType<FirstStartPage>();if(!first||!first.home)return;
+   SceneManager.sceneLoaded-=Attach;first.reviewAlways=true;
+   var host=first.home.GetComponent<PlayerProfileHost>();if(!host)host=first.home.gameObject.AddComponent<PlayerProfileHost>();
+   var profile=PlayerProfile.New(new[]{5,5,3,2});profile.completed=requestedLevel-1;profile.currentLevel=requestedLevel;
+   host.VerificationRepository=new MemoryProfileRepository(profile);
+   host.VerificationAuthorityFactory=_=>new UnavailableGiftAuthority();host.VerificationLivesClock=()=>1000;
+   var node=new GameObject("Review117 isolated device probe");DontDestroyOnLoad(node);
+   var probe=node.AddComponent<Review117DeviceProbe>();probe.mode=requested;probe.nonce=requestedNonce;probe.fixtureLevel=requestedLevel;requested=requestedNonce=null;
+  }
+  void Start(){
+   report=new Report{scenario=mode,runNonce=nonce,level=fixtureLevel,unity=Application.unityVersion,width=Screen.width,height=Screen.height};
+   deadline=Time.realtimeSinceStartupAsDouble+150;Directory.CreateDirectory(Folder);Save();
+   Application.logMessageReceived+=Log;StartCoroutine(Guarded(Run()));
+  }
+  void Log(string message,string trace,LogType type){if(type==LogType.Error||type==LogType.Exception||type==LogType.Assert)Fail("UnityError");}
+  void Update(){if(!finished&&Time.realtimeSinceStartupAsDouble>deadline)Fail("ProbeTimeout");}
+  void OnDestroy(){Application.logMessageReceived-=Log;}
+  IEnumerator Guarded(IEnumerator routine){
+   while(!finished){object yielded=null;bool next=false;
+    try{next=routine.MoveNext();if(next)yielded=routine.Current;}
+    catch(Exception e){Fail(e is TargetInvocationException?"ReflectionFailure":e.GetType().Name);yield break;}
+    if(!next)yield break;yield return yielded;
+   }
+  }
+  static void Need(bool ok,string code){if(!ok)throw new InvalidOperationException(code);}
+  void Save(){report.screenshots=images.ToArray();report.noticeScreens=screens.ToArray();File.WriteAllText(Path.Combine(Folder,"Report.json"),JsonUtility.ToJson(report,true));}
+  void Fail(string code){if(finished)return;finished=true;report.status="FAIL_DEVICE_FIXTURE";report.error=code;Save();}
+  void Pass(){if(finished)return;finished=true;report.status="PASS_DEVICE_FIXTURE";Save();}
+  IEnumerator Run(){
+   FirstStartPage first;while(!(first=FindFirstObjectByType<FirstStartPage>())||!first.Initialized)yield return null;
+   first.Request("skip");first.Request("skip");yield return null;
+   host=first.home.GetComponent<PlayerProfileHost>();var flow=first.home.GetComponent<HomeLevelFlow>();
+   while(!flow||flow.Preview==null||!host||!host.Ready)yield return null;
+   flow.Open(fixtureLevel);var modal=flow.GetComponent<PreLevelModal>();
+   while(!modal||!modal.IsVisible)yield return null;
+   Need(modal.Requested!=null,"MissingPlayHandler");modal.Requested("play");
+   while(!(game=FindFirstObjectByType<GameplayScreen>())||!game.CanAct)yield return null;
+   Need(game.Model!=null&&game.Model.Status=="Playing","BoardNotPlaying");
+   if(mode=="shuffle"||mode=="all"){
+    var shuffle=typeof(BoardModel).GetMethod("Shuffle",BindingFlags.NonPublic|BindingFlags.Instance);
+    var enqueue=typeof(GameplayScreen).GetMethod("Enqueue",BindingFlags.NonPublic|BindingFlags.Instance);
+    Need(shuffle!=null&&enqueue!=null,"MissingPlaybackHook");
+    float[] targets={.08f,.20f,.32f};
+    for(int i=0;i<targets.Length;i++){
+     while(game.Busy)yield return null;
+     var result=new TurnResult();shuffle.Invoke(game.Model,new object[]{result});
+     Need(result.steps.Count==1&&result.steps[0].kind=="shuffle","ForcedShuffleUnavailable");
+     game.ReviewInputBlocked=true;enqueue.Invoke(game,new object[]{result.steps});
+     while(game.VerificationPlaybackKind!="shuffle")yield return null;
+     while(game.VerificationPlaybackKind=="shuffle"&&game.VerificationPlaybackAge<targets[i])yield return null;
+     Need(game.VerificationPlaybackKind=="shuffle","ShuffleSampleMissed");
+     yield return new WaitForEndOfFrame();
+     Need(game.VerificationPlaybackKind=="shuffle","ShuffleSampleMissed");
+     report.shuffleSampleAges[i]=game.VerificationPlaybackAge;Capture("Shuffle_"+i+".png");report.shuffleCount++;
+     while(game.Busy)yield return null;
+    }
+    game.ReviewInputBlocked=false;if(mode=="shuffle"){Pass();yield break;}
+   }
+   var controller=game.GetComponent<NoMovesController>();Need(controller&&controller.Page,"MissingContinueController");
+   var moves=typeof(BoardModel).GetProperty("Moves",BindingFlags.Public|BindingFlags.Instance);
+   Need(moves!=null&&moves.GetSetMethod(true)!=null,"MissingMovesSetter");moves.GetSetMethod(true).Invoke(game.Model,new object[]{0});
+   game.Model.VerificationForceStatus("Out of moves");
+   // This forced fixture bypasses normal playback, which ordinarily publishes
+   // the zero-move snapshot. Publish it explicitly so the HUD is truthful.
+   var idle=typeof(GameplayScreen).GetField("idle",BindingFlags.NonPublic|BindingFlags.Instance);
+   Need(idle!=null,"MissingIdleSnapshot");idle.SetValue(game,game.Model.Snapshot());yield return null;
+   controller.Open();
+   Need(controller.Active&&controller.Page.Screen=="notice","NoticeDidNotAppear");
+   screens.Add("notice");report.noticeCount++;yield return new WaitForEndOfFrame();Capture("OutOfMovesNotice.png");
+   string prior="notice";
+   while(controller.Active&&controller.Page.Screen!="offer"&&controller.Page.Screen!="error"){
+    var now=controller.Page.Screen;if(now!=prior){screens.Add(now);if(now=="notice")report.noticeCount++;prior=now;}yield return null;
+   }
+   Need(controller.Active&&controller.Page.Screen=="offer","ContinueOfferUnavailable");
+   if(prior!="offer")screens.Add("offer");Need(report.noticeCount==1,"NoticeRepeated");
+   yield return new WaitForEndOfFrame();Capture("ContinueOffer.png");Pass();
+  }
+  void Capture(string name){
+   var texture=ScreenCapture.CaptureScreenshotAsTexture();Need(texture,"ScreenCaptureUnavailable");
+   try{File.WriteAllBytes(Path.Combine(Folder,name),texture.EncodeToPNG());images.Add(name);Save();}
+   finally{Destroy(texture);}
+  }
+ }
+}
+#endif

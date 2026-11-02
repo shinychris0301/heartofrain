@@ -1,0 +1,9 @@
+{
+  "milestones": [
+    { "level": 10, "grant": { "coins": 100, "stars": 0, "starting": [0,0,0,0], "tools": [0,0,0,0] } },
+    { "level": 20, "grant": { "coins": 0, "stars": 0, "starting": [1,1,0,0], "tools": [0,0,0,0] } },
+    { "level": 30, "grant": { "coins": 150, "stars": 0, "starting": [0,0,0,0], "tools": [1,0,0,0] } },
+    { "level": 40, "grant": { "coins": 0, "stars": 0, "starting": [0,0,1,0], "tools": [0,0,0,0] } },
+    { "level": 50, "grant": { "coins": 250, "stars": 0, "starting": [0,0,0,1], "tools": [0,0,0,0] } }
+  ]
+}

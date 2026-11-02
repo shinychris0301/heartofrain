@@ -1,0 +1,23 @@
+{
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "excluded": [
+    "ja"
+  ],
+  "fonts": {
+    "AccountTitle.ttf": {
+      "missingCodepoints": [],
+      "sourceSha256": "43ee8e316bdcd7f359da84dd17ebc7f96415366e807dac9e39919db00ff7a29e"
+    },
+    "AccountBody.ttf": {
+      "missingCodepoints": [],
+      "sourceSha256": "975a5aecfb1dc59ee33336928ba1c66008587ed1da888f6d39cbf17912ff0d56"
+    }
+  },
+  "nativeTMPAtlasValidated": false
+}

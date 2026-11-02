@@ -37,8 +37,8 @@ namespace HeartOfTheRain.M48 {
         public static void CaptureReplay(int level,bool sessionOwned=false,string outputBase=null){
             if(recorder!=null)throw new InvalidOperationException("Stop the current recording first.");
             if(Application.platform==RuntimePlatform.LinuxEditor)throw new NotSupportedException("MP4 capture is configured for Windows/macOS; use playback-only on Linux.");
-            var tools=UnityEngine.Object.FindObjectOfType<GameplayReviewTools>();
-            var screen=UnityEngine.Object.FindObjectOfType<HeartOfTheRain.M47.GameplayScreen>();
+            var tools=UnityEngine.Object.FindFirstObjectByType<GameplayReviewTools>();
+            var screen=UnityEngine.Object.FindFirstObjectByType<HeartOfTheRain.M47.GameplayScreen>();
             if(!EditorApplication.isPlaying||tools==null||screen==null||!screen.Ready||screen.Busy||tools.ManualPlaytestRunning||tools.Replaying||tools.Showcasing||(tools.SessionRunning&&!sessionOwned))
                 throw new InvalidOperationException("Enter Play Mode in the review scene and wait for the current action/review to finish.");
             // Load the recorded board before capture begins; avoid a frame of the previous level.
@@ -52,7 +52,7 @@ namespace HeartOfTheRain.M48 {
         static void StartCore(bool sessionOwned,string outputBase){
             if(!EditorApplication.isPlaying)throw new InvalidOperationException("Enter Play Mode first");
             if(Application.platform==RuntimePlatform.LinuxEditor)throw new NotSupportedException("Use Unity Recorder on Windows or macOS for this MP4 capture configuration.");
-            if(recorder!=null)return;review=UnityEngine.Object.FindObjectOfType<GameplayReviewTools>();
+            if(recorder!=null)return;review=UnityEngine.Object.FindFirstObjectByType<GameplayReviewTools>();
             if(review==null||(review.SessionRunning&&!sessionOwned))throw new InvalidOperationException("Open the review scene and finish the current guided session first.");
             LastRecordingPath="";LastCaptureError="";LastCaptureStatus="PREPARING";
             try {
@@ -69,7 +69,7 @@ namespace HeartOfTheRain.M48 {
             }catch(Exception ex){StopCore(false);LastCaptureStatus="FAILED";LastCaptureError=ex.Message;throw;}
         }
         [MenuItem("Heart of the Rain/M48/Recording/Start MP4 and Staged Showcase")]
-        public static void Showcase(){var tools=UnityEngine.Object.FindObjectOfType<GameplayReviewTools>();if(tools==null||tools.SessionRunning||tools.ManualPlaytestRunning||tools.Replaying||tools.Showcasing)throw new InvalidOperationException("Finish the current review first.");Start();review.StartCoroutine(CaptureShowcase());}
+        public static void Showcase(){var tools=UnityEngine.Object.FindFirstObjectByType<GameplayReviewTools>();if(tools==null||tools.SessionRunning||tools.ManualPlaytestRunning||tools.Replaying||tools.Showcasing)throw new InvalidOperationException("Finish the current review first.");Start();review.StartCoroutine(CaptureShowcase());}
         static IEnumerator CaptureShowcase(){try{yield return review.RunShowcase();}finally{Stop();}}
         [MenuItem("Heart of the Rain/M48/Recording/Stop MP4")]
         public static void Stop(){StopCore(false);}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e030d78299a54eb831dbdbdc18c8258, type: 3}
   m_Name: M64 Main Settings Assets
   m_EditorClassIdentifier:
-  shop: {fileID: 11400000, guid: e44fd453dc0f59e79aff3a4f16f7865a, type: 3}
-  gameplaySettings: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 3}
+  shop: {fileID: 11400000, guid: e44fd453dc0f59e79aff3a4f16f7865a, type: 2}
+  gameplaySettings: {fileID: 11400000, guid: f16892ab5bb454789b84f9f0c6106d14, type: 2}
   destinations: {fileID: 4900000, guid: a77b2408014757b2b2aa0a34eaab5bb7, type: 3}
   sprites:
   - id: AS_Back

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "preserveBaseAssets": true,
+  "roles": {
+    "mailClosed": "TM_Letter_Closed",
+    "mailOpened": "TM_Letter_Open",
+    "mailCoins": "TM_Coin",
+    "mailLives": "TA_Stat_heart",
+    "rewardStar": "TA_Stat_star",
+    "help": "TA_Icon_Help",
+    "teamBadge": "TA_Badge_drop",
+    "mailTab": "TC_Icon_Mail",
+    "chatTab": "TC_Icon_Chat",
+    "unreadBadge": "TC_Notification_Disc",
+    "clock": "TC_Icon_Clock",
+    "check": "TA_Icon_Check",
+    "leaderAvatar": "TA_Emblem_lantern",
+    "contentCard": "TA_Panel_Cream",
+    "modal": "TA_Panel_Blue",
+    "rewardCell": "TA_Field",
+    "primary": "TA_Button_Green",
+    "secondary": "TA_Button_Blue",
+    "inactive": "TA_Button_Disabled"
+  },
+  "forbiddenSubstitutions": [
+    "No emoji or platform font glyphs for painted reward icons",
+    "No icon redrawing at runtime",
+    "No old outlined Help or flat heart variants",
+    "Do not tint painted coin, heart, star, seal or badge",
+    "No baked page screenshots as runtime UI"
+  ],
+  "coinProvenance": "TM_Coin pixels exactly copied from approved SharedNavigation/Icon_Coin.png. New local identity avoids replacing the existing Home asset."
+}

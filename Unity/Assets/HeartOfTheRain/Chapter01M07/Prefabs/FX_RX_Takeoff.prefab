@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   atlas: {fileID: 2800000, guid: 853d0903869c5d2daca552f7f30ebaa6, type: 3}
   manifest: {fileID: 4900000, guid: 46bfe0c2b86a59ba8efaad404f3081e2, type: 3}
-  unlitMaterial: {fileID: 2100000, guid: aef43b58c56b5a6d9c93eb85b9a32aa5, type: 3}
+  unlitMaterial: {fileID: 2100000, guid: aef43b58c56b5a6d9c93eb85b9a32aa5, type: 2}
   initialClip: RX_Takeoff
   playOnEnable: 1
   returnToIdle: 0

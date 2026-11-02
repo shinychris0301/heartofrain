@@ -1,0 +1,56 @@
+108 - Restore the original navigation scale with a small placement adjustment
+
+IMPLEMENTED_AND_EDITOR_VERIFIED; actual Android/device acceptance remains open.
+The owner explicitly requested the original Home navigation size/style rather
+than the smaller inset presentation from review106. This supersedes only review106 navigation
+geometry. Its enlarged uniform objective artwork remains unchanged.
+
+BEHAVIOR
+
+For supported normal layouts (dock width at least 320 logical units), the icon,
+selection plate, label boxes and selected-tab vertical relationship match the
+exact pre106/105 source. The outer dock dimensions and reserved height remain
+unchanged. Artwork/GUIDs/palette and navigation actions are preserved.
+
+The centered group uses the original icon footprint S and column width cw:
+original gap G = cw - S; new gap = 0.95 G; new pitch = S + 0.95 G.
+Each visual center is dockCenter + (index-2)*pitch. This reduces the gap by 5%
+without scaling icons or reducing touch columns. Touch targets retain their
+original full-size equal columns. The whole dock/art/target group moves down
+by up to 4 logical units, clamped to the available bottom margin.
+
+The original taller/protruding selected-tab style is restored intentionally.
+It is no longer subject to review106's smaller-frame blue-interior criterion. The
+106 stationary selection-frame/tint and centered icon press feedback remain;
+pressing does not alter hit bounds. Labels return their original 18-unit boxes.
+
+When an extreme UI override produces a dock narrower than 320 logical units,
+the bounded review106 compact fallback is retained. This prevents negative icon sizes
+from the original cw-22 formula. Full-page extreme-zoom scrolling/content
+separation remains outside this navigation-only correction.
+
+VERIFICATION AND SOURCE
+
+Actual main Unity 2022.3.62f3 Nav108Main01 passes 6,451 assertions/70 cases,
+including supported phone/tablet sizes, all five locales and selections,
+insets, downward-offset clamps at 0/1/3/4/20 units, routes, stable press bounds,
+re-binding and bounded compact cases. Root individually viewed and accepted
+both Russian 393x852 and 768x1024 navigation-only native originals. These are
+controlled UGUI fixtures, not screenshots from a physical phone.
+
+Original reference bytes are verified against checkpoint105 hashes; exact checkpoint106 pre108
+layout/feedback/old-nav-test bytes are retained under Review108/RetainedSources.
+The historical Navigation106 fixture/proofs are not rewritten or re-labelled.
+No game rules, goal counts, obstacle images, board behavior or economy changed.
+
+Runtime changes are limited to MainNavigationLayout in HomeLayoutEngine.cs and
+the frame dimensions passed by MainNavigationFeedback's one-time safe refit.
+A new Navigation108Verification Editor fixture/meta supplies focused evidence.
+The separate checkpoint107 SDK-enabled Android Development APK includes this
+108 source and passed its build and final static audit. No app installation
+or physical navigation acceptance has occurred in this review.
+
+Evidence is under Verification/Evidence/Review107/Native/Nav108Main01.
+The matched actual 720x1600 Home/HUD capture passes 15 checks. The combined
+107/108 handoff binds that capture, the SDK build and source audit. The APK is
+Unity/Builds/Review107/HeartOfTheRain_107_108_Android_Test.apk.

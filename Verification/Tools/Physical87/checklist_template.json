@@ -1,0 +1,1281 @@
+{
+  "schema_version": 1,
+  "checkpoint": 87,
+  "kind": "UNEXECUTED_PHYSICAL_DEVICE_CHECKLIST_TEMPLATE",
+  "source_matrix": {
+    "path": "Verification/Device_Test_Matrix.csv",
+    "sha256": "0317a7037d87d0705419d49249e242243219938653a55bc28f87e899898722c6",
+    "row_count": 20,
+    "policy": "The original20 acceptance/scenario/evidence strings are copied verbatim. Historical ENG_* labels are preserved as source metadata and are not current test results."
+  },
+  "result_policy": {
+    "allowed_statuses": [
+      "NOT_RUN",
+      "PASS",
+      "FAIL",
+      "PARTIAL",
+      "BLOCKED_EXTERNAL",
+      "BLOCKED_SAFETY",
+      "BLOCKED_ENVIRONMENT"
+    ],
+    "initial_status": "NOT_RUN",
+    "policy": [
+      "No row is prefilled as passing or as having executed.",
+      "An aggregate row is PASS only when all stated acceptance variants have actual bound evidence; otherwise record precise subresults and PARTIAL/NOT_RUN/blocked status.",
+      "A source/backend/Editor/accelerated-fixture check must retain that scope and cannot be relabelled ordinary physical touch, human campaign, live provider or all-device acceptance.",
+      "Do not waive failures or count attempted checks in failed runs as passing.",
+      "No credentials, payment tokens, personal clipboard content, recovery codes or unrelated phone data belong in evidence."
+    ]
+  },
+  "selected_device": null,
+  "apk": null,
+  "execution_started_utc": null,
+  "execution_finished_utc": null,
+  "rows": [
+    {
+      "id": "DEV-01",
+      "priority": "P0",
+      "area": "Install",
+      "scenario": "Install development APK on authorized ARM64 Android phone",
+      "acceptance": "App starts without crash and version is recorded",
+      "evidence_required": "APK hash and device OS model and logcat",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "static_apk"
+      ],
+      "planned_scope": "Authorized physical ARM64 phone, accepted checkpoint86 APK, package/version/signer and app-scoped startup only.",
+      "prerequisites": [
+        "Explicit selected physical-device serial",
+        "Existing package/save/attempt inventory before installation"
+      ],
+      "safeguards": [
+        "Use replacement installation only when compatible; never uninstall or clear data as fallback",
+        "Do not inspect unrelated installed apps or private phone files"
+      ],
+      "excluded_claims": [
+        "Launch does not establish all-checklist acceptance"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-02",
+      "priority": "P0",
+      "area": "Boot",
+      "scenario": "Fresh install with no prior profile",
+      "acceptance": "Approved first-start appears and Home does not bootstrap demo progression",
+      "evidence_required": "Video and initial state",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "manual_observation"
+      ],
+      "planned_scope": "Fresh first-start and returning-player launch routes are separate cases.",
+      "prerequisites": [
+        "Naturally absent profile or separately authorized isolated fresh profile"
+      ],
+      "safeguards": [
+        "Preserve any existing onboarding/progression state"
+      ],
+      "excluded_claims": [
+        "Do not manufacture fresh state by clearing an owner save"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-03",
+      "priority": "P0",
+      "area": "Persistence",
+      "scenario": "Win then force quit and restart before during and after celebration",
+      "acceptance": "Progress wallet and all eight stock fields retained exactly once",
+      "evidence_required": "State and attempt receipt",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING_BLOCKED_BY_ENG_02_03_05"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "lifecycle"
+      ],
+      "planned_scope": "Before/during/after celebration process-death cases with exact durable reward and inventory receipts.",
+      "prerequisites": [
+        "Isolated test profile for induced termination",
+        "Known expected attempt and all eight inventory fields"
+      ],
+      "safeguards": [
+        "Do not terminate a pre-existing owner attempt",
+        "Retain failed recovery evidence"
+      ],
+      "excluded_claims": [
+        "One successful relaunch does not cover every settlement boundary"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-04",
+      "priority": "P0",
+      "area": "Retry",
+      "scenario": "Out of moves then Try Again",
+      "acceptance": "One attempt outcome and approved life policy through unified retry",
+      "evidence_required": "Video and before after stock",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING_BLOCKED_BY_ENG_03_04"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "lifecycle"
+      ],
+      "planned_scope": "Loss acknowledgement, retry and one-life settlement; repeated paid continuations have a separate row.",
+      "prerequisites": [
+        "Known test attempt and starting lives/inventory"
+      ],
+      "safeguards": [
+        "Only knowingly initiated test attempts may be abandoned"
+      ],
+      "excluded_claims": [
+        "Programmatic failure injection is separate from ordinary touch coverage"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-05",
+      "priority": "P0",
+      "area": "Exit",
+      "scenario": "Cancel exit then confirm exit then retry",
+      "acceptance": "Cancel changes nothing and confirm costs one life once",
+      "evidence_required": "Video and before after state",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Exit cancel, confirmed exit, retry and restart deduplication.",
+      "prerequisites": [
+        "Known test attempt and before/after life state"
+      ],
+      "safeguards": [
+        "Cancel must leave attempt, wallet and stock unchanged"
+      ],
+      "excluded_claims": [
+        "Do not consume owner progress or lives merely to reach this case"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-06",
+      "priority": "P0",
+      "area": "Input",
+      "scenario": "Cancel drag and multitouch during effect pause focus loss or resize",
+      "acceptance": "No stale swap or tool use and no duplicate input",
+      "evidence_required": "Video and input trace",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "touch",
+        "manual_observation",
+        "lifecycle"
+      ],
+      "planned_scope": "Drag cancellation, rapid actions, focus loss/resume, rotation and genuine multitouch.",
+      "prerequisites": [
+        "Known test board",
+        "Genuine multi-contact input for the multitouch subcase"
+      ],
+      "safeguards": [
+        "Restore any changed app/device settings",
+        "Keep captures restricted to the app"
+      ],
+      "excluded_claims": [
+        "Single adb swipes do not establish multitouch coverage"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-07",
+      "priority": "P0",
+      "area": "Inventory",
+      "scenario": "Select cancel use tools and reload level",
+      "acceptance": "Only accepted tools debit persistent stock and reload does not grant free stock",
+      "evidence_required": "Before after stock",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING_BLOCKED_BY_ENG_05"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "touch",
+        "isolated_scripted_fixture",
+        "lifecycle"
+      ],
+      "planned_scope": "Starting-item selection/cancel and accepted/refused tools with exact stock and restart state.",
+      "prerequisites": [
+        "Isolated stock for exhaustive and fault-injected cases"
+      ],
+      "safeguards": [
+        "Do not seed or corrupt the owner profile",
+        "Model/service receipts own debits"
+      ],
+      "excluded_claims": [
+        "UI button feedback alone does not prove inventory durability"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-08",
+      "priority": "P0",
+      "area": "Victory",
+      "scenario": "Win first clear replay and last-move win",
+      "acceptance": "Exactly one reward and animation-only celebration",
+      "evidence_required": "Attempt receipt and native video",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "lifecycle",
+        "manual_observation"
+      ],
+      "planned_scope": "First clear, replay and last-move win; celebration returns Home and reveals confirmed rewards.",
+      "prerequisites": [
+        "Known test attempts and reward expectations"
+      ],
+      "safeguards": [
+        "Compare exact pre/post receipt and wallet/progression state"
+      ],
+      "excluded_claims": [
+        "Fixture wins are not human campaign wins"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-09",
+      "priority": "P0",
+      "area": "Finale",
+      "scenario": "First clear L50 then replay L50",
+      "acceptance": "Finale route correct with no duplicate reward and no L51",
+      "evidence_required": "Video and state",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "isolated_scripted_fixture",
+        "ordinary_phone",
+        "manual_observation"
+      ],
+      "planned_scope": "First-clear and replay finale routes on level50 with no level51 or duplicate reward.",
+      "prerequisites": [
+        "Natural late-campaign access or isolated late-campaign fixture"
+      ],
+      "safeguards": [
+        "Never overwrite an owner campaign to unlock level50"
+      ],
+      "excluded_claims": [
+        "Early-level play does not cover finale acceptance"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-10",
+      "priority": "P0",
+      "area": "Rendering",
+      "scenario": "Daria regular reduced-motion and skip in overlay and finale",
+      "acceptance": "No sleeve seam or alpha draw-order artifacts and skip preserves settlement",
+      "evidence_required": "Identical-size reference and native frames",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "isolated_scripted_fixture",
+        "manual_observation"
+      ],
+      "planned_scope": "Daria overlay/finale, regular/reduced-motion and skip with frame and settlement checks.",
+      "prerequisites": [
+        "All stated animation variants reachable in an isolated fixture"
+      ],
+      "safeguards": [
+        "Restore changed accessibility/preferences",
+        "Inspect actual recorded device frames"
+      ],
+      "excluded_claims": [
+        "Automated frame production is not visual approval"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-11",
+      "priority": "P1",
+      "area": "Campaign",
+      "scenario": "Human play all 50 levels without purchases",
+      "acceptance": "All goals reachable with complete attempts cohort and sample counts",
+      "evidence_required": "Campaign_Playtest.csv and session files",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "human_campaign"
+      ],
+      "planned_scope": "Human play of all50 levels without purchases, recorded attempts/cohort/outcomes/duration.",
+      "prerequisites": [
+        "Human tester and complete session records for each level"
+      ],
+      "safeguards": [
+        "Record unsuccessful attempts and quits as well as wins"
+      ],
+      "excluded_claims": [
+        "Accelerated all50-board regression does not satisfy human play or balance acceptance"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-12",
+      "priority": "P1",
+      "area": "Powers",
+      "scenario": "All 14 pairs both orders orientations edges holes and chains",
+      "acceptance": "Approved contacts child counts timing and unique damage",
+      "evidence_required": "Replay seed trace and video",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "touch",
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "manual_observation"
+      ],
+      "planned_scope": "All14 approved power pairs, both orders/orientations, edges, holes and chains; creation and falling observations.",
+      "prerequisites": [
+        "Approved pair fixture map and exact seed/action trace"
+      ],
+      "safeguards": [
+        "Preserve gameplay rules and original art",
+        "No Golden+Golden rule is approved"
+      ],
+      "excluded_claims": [
+        "Sampled early-level chains do not cover all approved combinations"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-13",
+      "priority": "P1",
+      "area": "Obstacles",
+      "scenario": "All nine families HP states crystals 5 to 9 cabinet 2x2 pod and jar",
+      "acceptance": "Logical goal units and footprint occupancy preserved",
+      "evidence_required": "Replay seed trace and video",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "manual_observation"
+      ],
+      "planned_scope": "Allnine matrix obstacle families, HP/goal/footprint states, refill paths and debris.",
+      "prerequisites": [
+        "Isolated cases for every family and special footprint"
+      ],
+      "safeguards": [
+        "Preserve authored level masks and obstacle semantics"
+      ],
+      "excluded_claims": [
+        "Crate-only testing does not cover the complete obstacle matrix"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-14",
+      "priority": "P1",
+      "area": "Locales",
+      "scenario": "English Spanish French German Russian at all pages and modals",
+      "acceptance": "No missing glyphs clipped labels or untranslated errors",
+      "evidence_required": "Five locale screenshot sets and native review",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "manual_observation",
+        "isolated_scripted_fixture"
+      ],
+      "planned_scope": "English, Spanish, French, German and Russian on every relevant page/modal, including errors.",
+      "prerequisites": [
+        "Five locale capture sets and reviewed state inventory"
+      ],
+      "safeguards": [
+        "Restore original selected language after tests"
+      ],
+      "excluded_claims": [
+        "Russian-only samples do not close five-language acceptance",
+        "Japanese is excluded"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-15",
+      "priority": "P1",
+      "area": "Layout",
+      "scenario": "Tall narrow cutout phone and tablet plus 2 3 4 goals and large wallet",
+      "acceptance": "Safe-area touch targets readable without overlap",
+      "evidence_required": "Viewport and safe-area screenshots",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "manual_observation",
+        "isolated_scripted_fixture"
+      ],
+      "planned_scope": "Actual phone viewport/cutout/keyboard/touch/scroll and2/3/4-goal or large-wallet states.",
+      "prerequisites": [
+        "Actual viewport/safe-area metadata",
+        "Isolated large-wallet and goal-count states"
+      ],
+      "safeguards": [
+        "Do not change global resolution/density unless separately authorized and exactly restored"
+      ],
+      "excluded_claims": [
+        "One physical phone cannot certify tablet and all-aspect-ratio coverage"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-16",
+      "priority": "P1",
+      "area": "Performance",
+      "scenario": "Cold boot repeated level load worst power chains Orb and Daria",
+      "acceptance": "Measured frame-time distribution memory GC draw calls and thermals recorded",
+      "evidence_required": "Profiler trace and device identifiers",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "performance",
+        "long_session",
+        "isolated_scripted_fixture"
+      ],
+      "planned_scope": "Cold boot, repeated level load, natural turns and dense power/obstacle effects, timing/memory/thermal sampling.",
+      "prerequisites": [
+        "Unrecorded performance runs separate from visual recording",
+        "Device/build identifiers, sample counts and trace provenance"
+      ],
+      "safeguards": [
+        "Retain all slow outliers",
+        "Do not claim unsupported GC/GPU/draw-call counters were measured"
+      ],
+      "excluded_claims": [
+        "Development APK overhead and capture overhead must be disclosed",
+        "One device or short session does not certify sustained smoothness or the whole device range"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-17",
+      "priority": "P1",
+      "area": "Audio",
+      "scenario": "Toggle music sound then pause resume and relaunch",
+      "acceptance": "Preferences persist and no duplicated sources or unintended playback",
+      "evidence_required": "Video and source counts",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "manual_listening",
+        "lifecycle"
+      ],
+      "planned_scope": "Music/sound on/off, pause/resume/relaunch and preference persistence.",
+      "prerequisites": [
+        "Actual listening observation for audible behavior"
+      ],
+      "safeguards": [
+        "Restore original app and phone volume/preferences"
+      ],
+      "excluded_claims": [
+        "Source counts or silent video alone do not prove audible behavior"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-18",
+      "priority": "P1",
+      "area": "Recovery",
+      "scenario": "Corrupt truncated save interrupted commit and schema migration",
+      "acceptance": "Recover last valid profile without duplicate grants or silent reset",
+      "evidence_required": "Fault-injection report",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING_BLOCKED_BY_ENG_02_03"
+      },
+      "planned_modes": [
+        "isolated_scripted_fixture",
+        "lifecycle",
+        "fault_injection"
+      ],
+      "planned_scope": "Corrupt/truncated save, interrupted commit and schema migration using isolated storage.",
+      "prerequisites": [
+        "Disposable test profile and verified recoverable baseline"
+      ],
+      "safeguards": [
+        "Never corrupt or replace owner saves",
+        "Do not manufacture a pass with silent reset"
+      ],
+      "excluded_claims": [
+        "Ordinary restart is only a subset of fault/migration acceptance"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-19",
+      "priority": "P1",
+      "area": "Services",
+      "scenario": "Offline Shop Teams Leaderboard and event timers",
+      "acceptance": "Demo state identified and unavailable actions do not imply live services",
+      "evidence_required": "Video and service status",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "connected_test_backend",
+        "manual_observation"
+      ],
+      "planned_scope": "SDK-free unavailable/demo routes versus explicitly configured test services and offline/retry states.",
+      "prerequisites": [
+        "Separate test backend/account for connected routes"
+      ],
+      "safeguards": [
+        "Do not send messages or friend requests to real users",
+        "Do not disable unrelated phone networking to simulate an app fault"
+      ],
+      "excluded_claims": [
+        "Rendered pages do not establish live services, purchases or competition"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "DEV-20",
+      "priority": "P1",
+      "area": "Release",
+      "scenario": "Support privacy terms app identity and store configuration",
+      "acceptance": "Real destinations and release-account configuration reviewed",
+      "evidence_required": "Release checklist",
+      "source": {
+        "path": "Verification/Device_Test_Matrix.csv",
+        "historical_status": "PENDING"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "release_configuration_review"
+      ],
+      "planned_scope": "Russian identity/portrait/API baseline, configured support/privacy/terms and release/account state.",
+      "prerequisites": [
+        "Actual owner-controlled Console/signing/legal/hosting inputs for final release acceptance"
+      ],
+      "safeguards": [
+        "Never archive credentials or payment tokens",
+        "Do not mark configuration booleans as test evidence"
+      ],
+      "excluded_claims": [
+        "Internal verification APK and default unavailable pages are not a store release approval"
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-ACCOUNT-01",
+      "priority": "P0",
+      "area": "Managed account",
+      "scenario": "Protected managed guest identity and session across restart",
+      "acceptance": "The same internal test player remains selected after restart; protected credentials are not logged or copied to local gameplay balances.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "lifecycle"
+      ],
+      "planned_scope": "Protected managed guest identity and session across restart",
+      "prerequisites": [
+        "Explicit test backend/origin and synthetic managed player"
+      ],
+      "safeguards": [
+        "Do not migrate owner local data or archive protected storage contents"
+      ],
+      "excluded_claims": [
+        "No provider linking or production account claim."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-ACCOUNT-02",
+      "priority": "P0",
+      "area": "Managed account",
+      "scenario": "Explicit recovery-code Copy, clipboard readback and recovery",
+      "acceptance": "Explicit Copy runs once; intended code is readable by the app clipboard route; a separate test session recovers the same player and does not duplicate balance or progression.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Explicit recovery-code Copy, clipboard readback and recovery",
+      "prerequisites": [
+        "Synthetic account and controlled clipboard-only test data"
+      ],
+      "safeguards": [
+        "Do not serialize recovery code, clipboard content, digest, credentials or screenshots containing secrets",
+        "Preserve or restore pre-test clipboard in memory when permitted"
+      ],
+      "excluded_claims": [
+        "Review86 Windows clipboard failures do not imply Android failure or Android success."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-ACCOUNT-03",
+      "priority": "P0",
+      "area": "Managed account",
+      "scenario": "Logout, account deletion, expiry and transition fencing",
+      "acceptance": "Logout/deletion/expiry prevents old callbacks from mutating a new account; deletion is acknowledged accurately, and a fresh guest receives a distinct identity.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Logout, account deletion, expiry and transition fencing",
+      "prerequisites": [
+        "Disposable managed accounts and expected retention behavior"
+      ],
+      "safeguards": [
+        "Never delete an owner account or contact external identity providers"
+      ],
+      "excluded_claims": [
+        "Backend fixtures alone do not close ordinary Android account acceptance."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-SOCIAL-01",
+      "priority": "P1",
+      "area": "Friends",
+      "scenario": "Friend search, add, accept, remove and permissions",
+      "acceptance": "Synthetic players can complete the approved friendship flow; duplicate or unauthorized operations do not create duplicate or cross-player state.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch"
+      ],
+      "planned_scope": "Friend search, add, accept, remove and permissions",
+      "prerequisites": [
+        "At least two explicitly isolated synthetic accounts"
+      ],
+      "safeguards": [
+        "Never search for, contact or modify real players"
+      ],
+      "excluded_claims": [
+        "Demo friend lists do not establish backend integration."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-SOCIAL-02",
+      "priority": "P1",
+      "area": "Messaging",
+      "scenario": "Direct and team messages, paging and reconnection",
+      "acceptance": "Only authorized synthetic participants can send/read messages; bounded paging and reconnect preserve order without duplicate sends.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Direct and team messages, paging and reconnection",
+      "prerequisites": [
+        "Synthetic direct/team participants and test server"
+      ],
+      "safeguards": [
+        "No personal information in message bodies or captures"
+      ],
+      "excluded_claims": [
+        "Push delivery and real-player load require separate acceptance."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-SOCIAL-03",
+      "priority": "P0",
+      "area": "Safety and moderation",
+      "scenario": "Block, report, revocation and moderation enforcement",
+      "acceptance": "Blocking and reporting affect permitted synthetic interactions; permission-checked moderation and revoked/deleted actors remain restricted after reconnect.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch"
+      ],
+      "planned_scope": "Block, report, revocation and moderation enforcement",
+      "prerequisites": [
+        "Synthetic moderator/test identities and isolated report queue"
+      ],
+      "safeguards": [
+        "No real-user reports or public moderation actions"
+      ],
+      "excluded_claims": [
+        "Local acceptance does not provide staffed public moderation operations."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-SOCIAL-04",
+      "priority": "P1",
+      "area": "Records and rankings",
+      "scenario": "Private records, ranking consent and friend/global views",
+      "acceptance": "Personal records obey ownership permissions, public ranking requires explicit opt-in, and private or revoked records are not exposed through stale pages.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "connected_test_backend",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Private records, ranking consent and friend/global views",
+      "prerequisites": [
+        "Synthetic accounts with distinct records and ranking consent"
+      ],
+      "safeguards": [
+        "No real records or unintended ranking enrollment"
+      ],
+      "excluded_claims": [
+        "Simulated rivals and rendered ranking pages do not prove real competition."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-PAY-01",
+      "priority": "P0",
+      "area": "Payments",
+      "scenario": "Configured catalog, product mapping and native RUB quotes",
+      "acceptance": "Authenticated catalog and SDK products match the actual environment/application/SKU/reward mapping; visible prices use SDK amountLabel and fit Shop/Continue controls.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_sdk_android",
+        "connected_test_backend",
+        "touch",
+        "manual_observation"
+      ],
+      "planned_scope": "Configured catalog, product mapping and native RUB quotes",
+      "prerequisites": [
+        "Real sandbox Console products/application/deep link",
+        "Current compatible configured SDK Android build"
+      ],
+      "safeguards": [
+        "Keep production checkout disabled",
+        "No payment secrets in files or screenshots"
+      ],
+      "excluded_claims": [
+        "BLOCKED until SDK/provider configuration exists; current ordinary86 SDK-free APK cannot obtain real SDK quotes."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-PAY-02",
+      "priority": "P0",
+      "area": "Payments",
+      "scenario": "Success, cancellation, failure, duplicate and unknown outcomes",
+      "acceptance": "Only fully verified final purchases grant currency atomically once; cancelled/failed/unknown outcomes preserve level/life/wallet and expose truthful recovery.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_sdk_android",
+        "connected_test_backend",
+        "touch"
+      ],
+      "planned_scope": "Success, cancellation, failure, duplicate and unknown outcomes",
+      "prerequisites": [
+        "Configured sandbox backend/Console and synthetic account"
+      ],
+      "safeguards": [
+        "No real-money spend without explicit separate budget authorization"
+      ],
+      "excluded_claims": [
+        "Scripted SDK callbacks and loopback invoices are not provider payment acceptance."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-PAY-03",
+      "priority": "P0",
+      "area": "Payments",
+      "scenario": "Process death and external-bank deep-link return",
+      "acceptance": "Restart and external-bank return recover the original durable order without another SDK dispatch or duplicate grant; credited coins return to Continue and require a fresh explicit Play On tap.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_sdk_android",
+        "connected_test_backend",
+        "lifecycle",
+        "touch"
+      ],
+      "planned_scope": "Process death and external-bank deep-link return",
+      "prerequisites": [
+        "Configured sandbox payment app or supported simulator",
+        "Exact bound payment-return deep link"
+      ],
+      "safeguards": [
+        "Never reuse unrelated personal banking sessions",
+        "Do not archive bank/payment credentials"
+      ],
+      "excluded_claims": [
+        "BLOCKED without configured SDK/deep-link/provider route; a fabricated callback is not bank-return evidence."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-PAY-04",
+      "priority": "P0",
+      "area": "Payments",
+      "scenario": "Missed notifications, late refund and acknowledgement recovery",
+      "acceptance": "Durable delivery is recorded before SDK acknowledgement; notification/reconciliation retries do not double grant, and verified refund initiation enters sticky review without automatic new credit.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_sdk_android",
+        "deployed_test_backend",
+        "lifecycle"
+      ],
+      "planned_scope": "Missed notifications, late refund and acknowledgement recovery",
+      "prerequisites": [
+        "Real sandbox notification ingress, scheduled worker and test invoice lifecycle"
+      ],
+      "safeguards": [
+        "No production notification changes or refund actions on real purchases"
+      ],
+      "excluded_claims": [
+        "Local synthetic listings/notifications do not establish actual Console/deployed recovery."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-ADS-01",
+      "priority": "P1",
+      "area": "Rewarded advertising",
+      "scenario": "Optional Shop video, disclosure, SDK start, complete, dismiss and no-fill",
+      "acceptance": "Shop does not initialize/load ads automatically; an explicit explained opt-in starts the configured video; no-fill/cancellation/incomplete viewing grants nothing and does not alter an attempt.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_ads_android",
+        "connected_test_backend",
+        "touch",
+        "manual_observation"
+      ],
+      "planned_scope": "Optional Shop video, disclosure, SDK start, complete, dismiss and no-fill",
+      "prerequisites": [
+        "Fresh configured SDK Android profile",
+        "Registered demo/test unit and real privacy setup"
+      ],
+      "safeguards": [
+        "Do not click live ads or enter real publisher credentials",
+        "Use only the voluntary Shop placement outside an active level"
+      ],
+      "excluded_claims": [
+        "BLOCKED for actual video in the current SDK-free build; unavailable UI is only unavailable-state coverage."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-ADS-02",
+      "priority": "P0",
+      "area": "Rewarded advertising",
+      "scenario": "Reward durability, fixed UTC+10 day, quota, cooldown and account fencing",
+      "acceptance": "A credited completion grants400 coins once, at most three per fixed UTC+10 day, with600 seconds after credit; incomplete/no-fill/cancel reserves consume no quota or cooldown; account transitions cannot misdeliver.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "configured_ads_android",
+        "connected_test_backend",
+        "lifecycle",
+        "isolated_scripted_fixture"
+      ],
+      "planned_scope": "Reward durability, fixed UTC+10 day, quota, cooldown and account fencing",
+      "prerequisites": [
+        "Synthetic player with enabled test ad policy",
+        "Controlled server time for boundary fixtures"
+      ],
+      "safeguards": [
+        "Do not change the phone clock to fabricate trusted-time acceptance"
+      ],
+      "excluded_claims": [
+        "Yandex completion is SDK-client-reported and capped; it is not server-verified impression proof."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-UPGRADE-01",
+      "priority": "P0",
+      "area": "Upgrade",
+      "scenario": "Compatible signed update preserves existing state",
+      "acceptance": "Update installation preserves progression, wallet, all stock, settings, managed identity, and unfinished Continue/Shop/purchase recovery without duplicate settlement.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "lifecycle"
+      ],
+      "planned_scope": "Compatible signed update preserves existing state",
+      "prerequisites": [
+        "Compatible signed predecessor/current pair",
+        "Known isolated pre-upgrade state and receipts"
+      ],
+      "safeguards": [
+        "Never uninstall or clear data on signature/version failure",
+        "Preserve owner active attempts and stop if incompatible"
+      ],
+      "excluded_claims": [
+        "Fresh installation does not establish upgrade acceptance or production signer compatibility."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-CONTINUE-01",
+      "priority": "P0",
+      "area": "Continuation",
+      "scenario": "Repeated +5-move purchases, insufficient funds, Shop and restore",
+      "acceptance": "Each explicit affordable Continue deducts900 coins and adds5 moves once; later exhaustion permits another purchase; insufficient funds opens Shop immediately, preserving board/life; reopening restores Continue/Shop and committed purchases.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "touch",
+        "isolated_scripted_fixture",
+        "lifecycle"
+      ],
+      "planned_scope": "Repeated +5-move purchases, insufficient funds, Shop and restore",
+      "prerequisites": [
+        "Known isolated balances including700,899,900 and repeated-purchase cases"
+      ],
+      "safeguards": [
+        "Do not seed owner wallet or auto-continue after coin purchase"
+      ],
+      "excluded_claims": [
+        "Real coin-store delivery remains separately blocked until configured SDK/provider acceptance."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-REWARDS-01",
+      "priority": "P1",
+      "area": "Daily Gift",
+      "scenario": "Claim states, collection animation, duplicate/restart and offline recovery",
+      "acceptance": "The approved configurable seven-day reward is claimed at most once per trusted day; only confirmed reward state drives wallet/inventory feedback and restart/offline recovery remains truthful.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "connected_test_backend",
+        "isolated_scripted_fixture",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Claim states, collection animation, duplicate/restart and offline recovery",
+      "prerequisites": [
+        "Isolated configurable clock/claim service for boundary cases"
+      ],
+      "safeguards": [
+        "No global phone-clock changes or owner-claim resets"
+      ],
+      "excluded_claims": [
+        "Local development authority is not deployed trusted-time service acceptance."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-REWARDS-02",
+      "priority": "P1",
+      "area": "Wellworks and Rain Cup",
+      "scenario": "Milestones, practice joining, scoring, finish, claim and restart",
+      "acceptance": "Permanent Wellworks first-clear milestones exclude replays; practice Cup unlock/join48-hour duration/one point per new clear/tied rank/once-only finishing claims follow approved rules and label simulated rivals.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "connected_test_backend",
+        "isolated_scripted_fixture",
+        "touch",
+        "lifecycle"
+      ],
+      "planned_scope": "Milestones, practice joining, scoring, finish, claim and restart",
+      "prerequisites": [
+        "Synthetic first-clear history and controlled local/test authority"
+      ],
+      "safeguards": [
+        "Do not replace owner campaign history",
+        "Keep simulated competition explicitly labelled"
+      ],
+      "excluded_claims": [
+        "Practice fixtures do not certify real PvP, real rivals or deployed event scheduling."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-LIVES-01",
+      "priority": "P0",
+      "area": "Lives",
+      "scenario": "Loss feedback, countdown, zero/full and900-coin refill",
+      "acceptance": "Confirmed loss animates minus one heart once, countdown reflects the retained next life, full/zero/refill states stay within header bounds, and a full refill at zero costs900 coins once.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "isolated_scripted_fixture",
+        "touch",
+        "lifecycle",
+        "manual_observation"
+      ],
+      "planned_scope": "Loss feedback, countdown, zero/full and900-coin refill",
+      "prerequisites": [
+        "Known test lives/wallet/time states, including899 and900 coins"
+      ],
+      "safeguards": [
+        "Do not advance phone time or spend owner currency for boundary cases"
+      ],
+      "excluded_claims": [
+        "A visible counter alone does not prove durable life regeneration or debit."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    },
+    {
+      "id": "PHY-LOADING-01",
+      "priority": "P1",
+      "area": "Loading and navigation",
+      "scenario": "Gameplay loading, initial bar and stable navigation",
+      "acceptance": "Gameplay loading appears immediately after explicit Play, uses approved simpler R2 design, and disappears at actual readiness without an artificial delay; initial bar has no unwanted black plate and navigation remains fixed with interaction feedback.",
+      "evidence_required": "Exact build/source/device and test account/config metadata; app-scoped observed state, receipts or trace; reviewed captures where relevant.",
+      "source": {
+        "path": "Codex_Handoff/Documentation/86_COMPREHENSIVE_APP_BACKEND_REVIEW.md",
+        "historical_status": "ADDITIONAL_CURRENT_ACCEPTANCE"
+      },
+      "planned_modes": [
+        "ordinary_phone",
+        "touch",
+        "manual_observation",
+        "performance"
+      ],
+      "planned_scope": "Gameplay loading, initial bar and stable navigation",
+      "prerequisites": [
+        "Actual cold/warm Play samples and viewed captures"
+      ],
+      "safeguards": [
+        "Preserve approved artwork/layout policy",
+        "Measure unrecorded timing separately from videos"
+      ],
+      "excluded_claims": [
+        "Sampled device states do not certify every aspect ratio, loading failure or whole-game smoothness."
+      ],
+      "status": "NOT_RUN",
+      "observations": [],
+      "evidence": [],
+      "subresults": []
+    }
+  ]
+}

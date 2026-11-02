@@ -1,0 +1,89 @@
+{
+  "revision": "M70_R1",
+  "entries": [
+    {
+      "name": "Rocket_Horizontal",
+      "atlasIndex": 9,
+      "texture": "Assets/HeartOfTheRain/Chapter01M04/Sprites/Rocket_Horizontal_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M04/Data/Rocket_Horizontal.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/9089da0404f4518e8e5821eb7bdbc776.png",
+      "resourceKey": "M48Textures/9089da0404f4518e8e5821eb7bdbc776",
+      "textureSHA256": "9bd96cdc25b37f79105d792b266dd0ae8fed4ccff28f2e89dd99453f3fc8f1d8",
+      "manifestSHA256": "511084b75158b219e030450a497ef99b2eb0dad1a0a8f2505fee9db5e6584564",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Rocket_Vertical",
+      "atlasIndex": 10,
+      "texture": "Assets/HeartOfTheRain/Chapter01M04/Sprites/Rocket_Vertical_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M04/Data/Rocket_Vertical.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/52f8e7ab97045ba2aeb0f90bf4f7d0d3.png",
+      "resourceKey": "M48Textures/52f8e7ab97045ba2aeb0f90bf4f7d0d3",
+      "textureSHA256": "35b20f3ee7f1a8662bc0789573c2d5c059463e474f43554e4f763d4a6e0395ee",
+      "manifestSHA256": "73cb2159ce4ef0328442155f6d32788238c3d9cc85f3d64a7e5e14a54190def7",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Bomb",
+      "atlasIndex": 6,
+      "texture": "Assets/HeartOfTheRain/Chapter01M05/Sprites/Bomb_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M05/Data/Bomb.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/d12ae954dcc25f4c8479f650080d7efe.png",
+      "resourceKey": "M48Textures/d12ae954dcc25f4c8479f650080d7efe",
+      "textureSHA256": "529dd32bcee517375d083f172e34d5b32d76002bad5aea51e947bcffc890a872",
+      "manifestSHA256": "3b2226e64fd9ad40f9dc35e7fe06b808f946e3c6403be12c9b8f184f4b864480",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "RainSeekerBody",
+      "atlasIndex": 29,
+      "texture": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainSeekerBody_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M07/Data/RainSeekerBody.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/12e0128d50b15437ae6eafe7c82414c1.png",
+      "resourceKey": "M48Textures/12e0128d50b15437ae6eafe7c82414c1",
+      "textureSHA256": "331bf5e228fd7491daa7380f910b6c0c1ec896eab18a9eb7b124c62d5a057c90",
+      "manifestSHA256": "60ffa1b149796eb42b7aafaa3b23fdf0b4e971cfa8c4b9141e8258de6576b5fd",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "GoldenSeekerBody",
+      "atlasIndex": 40,
+      "texture": "Assets/HeartOfTheRain/Chapter01M07/Sprites/GoldenSeekerBody_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M07/Data/GoldenSeekerBody.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/3dac8f35a8b5585a92c98bee1b615c69.png",
+      "resourceKey": "M48Textures/3dac8f35a8b5585a92c98bee1b615c69",
+      "textureSHA256": "cb6ee311f27ceb165ce673b3d6eadf5397faa8fef585de2a72bbe365601af90f",
+      "manifestSHA256": "c0feea09cf01315ccc6980b7408e413c474782bafaa7201125d002e988cd7d6c",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "RainbowOrbBody",
+      "atlasIndex": 19,
+      "texture": "Assets/HeartOfTheRain/Chapter01M07/Sprites/RainbowOrbBody_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M07/Data/RainbowOrbBody.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5eef2a176c035fd0baeca7a5401859b7.png",
+      "resourceKey": "M48Textures/5eef2a176c035fd0baeca7a5401859b7",
+      "textureSHA256": "210206e79d111b37865c920cbe0e4b716a635c8866643e8f2dea083025e2b01d",
+      "manifestSHA256": "3822546d9677b3c3f4807399393d02762b0c0e1fc86255c3f968bc21b73901b4",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "DoubleOrbBody",
+      "atlasIndex": 26,
+      "texture": "Assets/HeartOfTheRain/Chapter01M07/Sprites/DoubleOrbBody_Atlas.png",
+      "manifest": "Assets/HeartOfTheRain/Chapter01M07/Data/DoubleOrbBody.json",
+      "resourceTexture": "Assets/HeartOfTheRain/M48/Resources/M48Textures/5b0fdb43a56f5ef7ad7d0429147349b1.png",
+      "resourceKey": "M48Textures/5b0fdb43a56f5ef7ad7d0429147349b1",
+      "textureSHA256": "c5192513c4579e6b9989b15d73bdf69296e31b12b921a84c8ead27692e6d12fb",
+      "manifestSHA256": "3e694788763409e1f0296fc0221b9c0cf29654d39ed1454fa530fbd37ef852c7",
+      "width": 2048,
+      "height": 2048
+    }
+  ]
+}

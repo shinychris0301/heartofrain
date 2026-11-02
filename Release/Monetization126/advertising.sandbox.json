@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "enabled": true,
+  "rewardedUnitId": "R-M-20291714-1",
+  "interstitialUnitId": "R-M-20291714-2",
+  "privacyUrl": "https://api.novamind-it.ru/privacy",
+  "privacyVersion": "draft-2026-10-30"
+}

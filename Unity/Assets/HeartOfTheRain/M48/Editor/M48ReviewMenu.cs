@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -21,8 +22,8 @@ namespace HeartOfTheRain.M48 {
             PlayerSettings.companyName="Heart of the Rain";PlayerSettings.productName="Heart of the Rain - M48 Review";
             PlayerSettings.colorSpace=ColorSpace.Gamma;PlayerSettings.defaultInterfaceOrientation=UIOrientation.Portrait;
             PlayerSettings.defaultScreenWidth=720;PlayerSettings.defaultScreenHeight=1280;PlayerSettings.runInBackground=false;
-            PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android,"com.heartoftherain.m48review");
-            PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android,ScriptingImplementation.IL2CPP);
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android,"com.heartoftherain.m48review");
+            PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android,ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures=AndroidArchitecture.ARM64;
             PlayerSettings.Android.minSdkVersion=AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion=AndroidSdkVersions.AndroidApiLevelAuto;

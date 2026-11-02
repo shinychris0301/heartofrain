@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "mode": "ManagedGuestServer",
+  "origin": "",
+  "identityScope": "review-vk-staging",
+  "allowDevelopmentLoopback": false,
+  "socialEnabled": true
+}

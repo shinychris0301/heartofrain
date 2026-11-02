@@ -9,6 +9,8 @@ namespace HeartOfTheRain.App.Leaderboard
  {
   public LeaderboardSnapshot Data {get;private set;}
   public LeaderboardTab Tab {get;private set;}=LeaderboardTab.Players;
+  public string RegionQuery {get;private set;}="";public int RegionPage {get;private set;}
+  public bool RegionOpen {get;private set;}public string RegionError {get;private set;}="";
   public bool Local {get;private set;} public bool Finding {get;private set;}
   public string Query {get;private set;}=""; public string ConfirmRemoveId {get;private set;}="";
   public string Notice {get;private set;}="";
@@ -25,11 +27,17 @@ namespace HeartOfTheRain.App.Leaderboard
   public RankedPlayer Player(string id)=>Data.players.FirstOrDefault(p=>p.id==id);
   public bool IsFriend(string id)=>friends.Contains(id);public bool IsPending(string id)=>pending.Contains(id);
   public void Select(LeaderboardTab tab){Tab=tab;ConfirmRemoveId="";Notice="";}
-  public void SetLocal(bool value){Local=value;Notice="";}
+  public void SetLocal(bool value){Local=value&&!string.IsNullOrEmpty(Data.localRegion);Notice="";}
+  public void SetRegion(string value){Data.localRegion=HeartOfTheRain.App.OnlineSocial.CountryRegion89.Normalize(value);if(Data.isDemo&&Data.localRegion.Length>0){var self=Data.players.FirstOrDefault(p=>p.isSelf);if(self!=null)self.region=Data.localRegion;}if(string.IsNullOrEmpty(Data.localRegion))Local=false;RegionOpen=false;RegionError="";}
+  public void OpenRegion(){RegionOpen=true;RegionError=RegionQuery="";RegionPage=0;}
+  public void SearchRegion(string text){RegionQuery=(text??"").Trim();if(RegionQuery.Length>80)RegionQuery=RegionQuery.Substring(0,80);RegionPage=0;RegionError="";}
+  public void RegionNext(int delta){RegionPage=Math.Max(0,Math.Min(RegionPage+delta,Math.Max(0,(HeartOfTheRain.App.OnlineSocial.CountryRegion89.Countries(RegionQuery).Length-1)/4)));}
+  public void CloseRegion(){RegionOpen=false;RegionError="";}
+  public void InvalidRegion(){RegionError=HeartOfTheRain.App.OnlineSocial.CountryRegion89.T("InvalidCountry");}
   public void SetFinding(bool value){Finding=value;Query="";Notice="";ConfirmRemoveId="";}
   public void Search(string text){Query=(text??"").Trim();if(Query.Length>32)Query=Query.Substring(0,32);Notice="";}
-  public RankedPlayer[] Players()=>Data.players.Where(p=>!Local||p.region==Data.localRegion).OrderByDescending(p=>p.level).ThenBy(p=>p.id,StringComparer.Ordinal).ToArray();
-  public RankedTeam[] Teams()=>Data.teams.Where(t=>!Local||t.region==Data.localRegion).OrderByDescending(t=>t.score).ThenBy(t=>t.id,StringComparer.Ordinal).ToArray();
+  public RankedPlayer[] Players()=>Data.players.Where(p=>!Local||!string.IsNullOrEmpty(Data.localRegion)&&p.region==Data.localRegion).OrderByDescending(p=>p.level).ThenBy(p=>p.id,StringComparer.Ordinal).ToArray();
+  public RankedTeam[] Teams()=>Data.teams.Where(t=>!Local||!string.IsNullOrEmpty(Data.localRegion)&&t.region==Data.localRegion).OrderByDescending(t=>t.score).ThenBy(t=>t.id,StringComparer.Ordinal).ToArray();
   public RankedPlayer[] Friends()=>Data.players.Where(p=>!p.isSelf&&(Finding?!friends.Contains(p.id):friends.Contains(p.id))&&(Query.Length==0||p.name.IndexOf(Query,StringComparison.OrdinalIgnoreCase)>=0||p.id.IndexOf(Query.TrimStart('#'),StringComparison.OrdinalIgnoreCase)>=0)).OrderBy(p=>p.name,StringComparer.OrdinalIgnoreCase).ThenBy(p=>p.id,StringComparer.Ordinal).ToArray();
   public int Rank(string id){return Array.FindIndex(Players(),p=>p.id==id)+1;}
   public bool Add(string id)

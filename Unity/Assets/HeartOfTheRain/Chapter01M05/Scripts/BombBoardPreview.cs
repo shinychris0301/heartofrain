@@ -134,7 +134,7 @@ namespace HeartOfTheRain.M05
             bool combination=effect!=BlastKind.Bomb;
             Vector3 center=Cell(ox,oy);float e=time-Detonation;
             string normal=time<.6f?"Create":time<Detonation-.2f?"Idle":time<Detonation?"Charge":"Detonate";
-            float normalTime=time<.6f?time:time<Detonation-.2f?0:time<Detonation?time-(Detonation-.2f):e;
+            float normalTime=time<.6f?time:time<Detonation-.2f?time-.6f:time<Detonation?time-(Detonation-.2f):e;
             float anticipation=!combination && time<Detonation?Mathf.SmoothStep(0,1,(time-(Detonation-.2f))/.2f):0;
             bomb.transform.localScale=Vector3.one*cellPitch*(1+.12f*anticipation);
             bomb.Sample(normal,normalTime);secondBomb.Sample(normal,normalTime);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No provider credentials appear in service arguments, environment or logs. -->
+<service>
+  <id>HOTRReconciliation122</id>
+  <name>Heart of the Rain Production Reconciliation</name>
+  <description>One owned operations lease, bounded durable invoice batches, no SDK acknowledgement.</description>
+  <executable>C:\Apps\HeartOfTheRain\Backend\.venv-service\Scripts\python.exe</executable>
+  <arguments>-B -m hotr_backend.production_ops122 supervise-reconciliation --manifest "C:\ProgramData\HeartOfTheRain\production-services\production-manifest.json" --max-jobs 5 --seed-limit 20 --poll-seconds 300 --interval-seconds 30</arguments>
+  <workingdirectory>C:\Apps\HeartOfTheRain\Backend</workingdirectory>
+  <logpath>C:\ProgramData\HeartOfTheRain\production-services\logs</logpath>
+  <startmode>Automatic</startmode>
+  <stoptimeout>90sec</stoptimeout>
+  <serviceaccount><domain>NT AUTHORITY</domain><user>LocalService</user></serviceaccount>
+  <log mode="roll-by-size"><sizeThreshold>1024</sizeThreshold><keepFiles>4</keepFiles></log>
+  <onfailure action="restart" delay="30 sec" />
+</service>

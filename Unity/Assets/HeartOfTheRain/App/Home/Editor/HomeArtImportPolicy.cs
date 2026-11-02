@@ -9,6 +9,9 @@ namespace HeartOfTheRain.App.Home.Editor
         private void OnPreprocessTexture()
         {
             if(!assetPath.StartsWith("Assets/HeartOfTheRain/App/Home/Art/",System.StringComparison.Ordinal))return;
+            // Shared reward artwork has a registered clarity baseline and build guard.
+            // Do not overwrite its mip/filter/platform settings on every reimport.
+            if(assetPath=="Assets/HeartOfTheRain/App/Home/Art/R3_Coin.png"||assetPath=="Assets/HeartOfTheRain/App/Home/Art/R4_Header.png"||assetPath=="Assets/HeartOfTheRain/App/Home/Art/R3_Lives.png")return;
             var t=(TextureImporter)assetImporter;
             t.textureType=TextureImporterType.Sprite;t.spriteImportMode=SpriteImportMode.Single;
             t.sRGBTexture=true;t.mipmapEnabled=false;t.alphaIsTransparency=true;

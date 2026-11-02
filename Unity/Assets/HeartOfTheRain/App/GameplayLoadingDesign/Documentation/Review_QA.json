@@ -1,0 +1,55 @@
+{
+  "revision": "R2",
+  "scope": "Browser prototype only; native Unity and gameplay economy not executed",
+  "cases": 945,
+  "passed": 945,
+  "failed": [],
+  "flows": [
+    {
+      "name": "Repeated Play produces one request",
+      "passed": true
+    },
+    {
+      "name": "Tip remains fixed while loading",
+      "passed": true
+    },
+    {
+      "name": "Late success from failed request ignored",
+      "passed": true
+    },
+    {
+      "name": "Retry preserves the current tip",
+      "passed": true
+    },
+    {
+      "name": "Readiness reveals gameplay without minimum dwell",
+      "passed": true
+    },
+    {
+      "name": "New level selects the other eligible tip",
+      "passed": true
+    },
+    {
+      "name": "Back exits the failed loading state",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion shows static dots",
+      "passed": true
+    },
+    {
+      "name": "Standard loading dots animate",
+      "passed": true
+    },
+    {
+      "name": "Tip artwork remains still",
+      "passed": true
+    },
+    {
+      "name": "Standalone review has no external dependencies",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "nativeUnityValidated": false
+}

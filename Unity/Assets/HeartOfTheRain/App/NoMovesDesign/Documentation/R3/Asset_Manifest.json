@@ -1,0 +1,324 @@
+{
+  "revision": "R3",
+  "assets": [
+    {
+      "guid": "ce160dfabad851f39bd4f32eacb5c86d",
+      "name": "AccountChrome.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/AccountChrome.png",
+      "width": 1392,
+      "height": 1130,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 100,
+      "borderLBRT": [
+        186,
+        170,
+        186,
+        288
+      ],
+      "maxSize": 2048,
+      "sha256": "d4b068e2f9c2675fa18045dfc5c7746f4357c578b253edeb66c7acf634818393",
+      "provenance": "Account Design R6; source pixels and GUID unchanged",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "dfcb312489db58b1b40ba996134b92ff",
+      "name": "Close.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/Close.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 2048,
+      "sha256": "68d87f8bb810089f299b446c4dbce926095722238bdf28ae2362558e981dca03",
+      "provenance": "Account Design R6; source pixels and GUID unchanged",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "db4cc2fd686c582183ef2e3c8461bc1e",
+      "name": "LifeLostHeart.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/LifeLostHeart.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 2048,
+      "sha256": "3ac2f81bc539098fdfa19913207bc8701a647a125da82e044d53ba1d07ce3636",
+      "provenance": "M58 LifeLostHeart; original pixels, isolated copy to avoid obsolete importer",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "ddc3b24940f45c63849314b575d95ba3",
+      "name": "NM_Coin_Glyph.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Coin_Glyph.png",
+      "width": 256,
+      "height": 256,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 256,
+      "sha256": "de772fc281e9a07b67f050991b1c9f2603170d174983e7aae9de321245437f26",
+      "provenance": "Editable native SVG export",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "bc8167dd7ec35aa780f0a5fbd2749cd4",
+      "name": "NM_Continue_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Continue_Band.png",
+      "width": 1600,
+      "height": 1280,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 400,
+      "borderLBRT": [
+        80,
+        316,
+        80,
+        240
+      ],
+      "maxSize": 2048,
+      "sha256": "18fe99eee238c1f8ee42a2f5d7f1783540b5a338fd09e9e1c7179c51f48dfe9d",
+      "provenance": "Editable native SVG export",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "d44062016c7f5caca12af0288ec9ce64",
+      "name": "NM_Dariya_Continue.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Dariya_Continue.png",
+      "width": 1195,
+      "height": 1316,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 2048,
+      "sha256": "dea739070dd28871689f853c0744854f2c24a8c2b82080b07beb34c758798db1",
+      "provenance": "Approved Dariya reference derivative; built-in image generation",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "2ef9072c6f4659a48fa09f59dd0583b5",
+      "name": "NM_Moves_Badge.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Moves_Badge.png",
+      "width": 512,
+      "height": 576,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 1024,
+      "sha256": "417cfc266653e81bbf68cb5525503ee3a5e0293e015126650b8430d5bb97a779",
+      "provenance": "Editable native SVG export",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "9346654dd05d5c91bfba5aac2202d127",
+      "name": "NM_Notice_Band.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Notice_Band.png",
+      "width": 1600,
+      "height": 400,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 400,
+      "borderLBRT": [
+        64,
+        32,
+        64,
+        32
+      ],
+      "maxSize": 2048,
+      "sha256": "ee1fa572cf63599b14a00629867bb7472926e4f07431b935653c48bc871acba4",
+      "provenance": "Editable native SVG export",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "a0c712e095555467827aabe46019dd70",
+      "name": "NM_Offer_Halo.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Offer_Halo.png",
+      "width": 1024,
+      "height": 922,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 1024,
+      "sha256": "93be482ec6ce0e071253f9e81b11febabe7456753c2440d88a78018b5e4b8030",
+      "provenance": "Editable native SVG export",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "a2ec93401534508c9397c6b835301bcf",
+      "name": "NM_Secondary.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Secondary.png",
+      "width": 768,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 400,
+      "borderLBRT": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "maxSize": 1024,
+      "sha256": "fdb61c579ec05d34c09b10c7dee4164c240301e9a3b85c0e849b3194c228a959",
+      "provenance": "Editable native SVG export",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "610e9fde7676584a8ab7387a96bcc515",
+      "name": "NM_Wallet_Pill.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Wallet_Pill.png",
+      "width": 512,
+      "height": 192,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 400,
+      "borderLBRT": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "maxSize": 512,
+      "sha256": "eddf47c445ca61fa5979eb95f29c4996025c3be3c627fe3ee0244ab12177da63",
+      "provenance": "Editable native SVG export",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "d6c3c7093684533f92960082e5b694f3",
+      "name": "NM_Wallet_Plus.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/NM_Wallet_Plus.png",
+      "width": 128,
+      "height": 128,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 128,
+      "sha256": "8aed3ac0ec8b81d63a1a95d8889694014008c749e13771c8f968bf0c0e760dc7",
+      "provenance": "Editable native SVG export",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "d53cea537853598d83dc7e3aa43baba4",
+      "name": "Primary.png",
+      "path": "Assets/HeartOfTheRain/App/AccountDesign/Art/Primary.png",
+      "width": 1821,
+      "height": 503,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 100,
+      "borderLBRT": [
+        300,
+        240,
+        300,
+        240
+      ],
+      "maxSize": 2048,
+      "sha256": "6454afb7c5ccb98424ecf4f09c8979b7993925d51aed6e9a22dabc65c47c331e",
+      "provenance": "Account Design R6; source pixels and GUID unchanged",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "05319d4e12a8549bae03996414a96e79",
+      "name": "SP_CoinPouch.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_CoinPouch.png",
+      "width": 1254,
+      "height": 1254,
+      "mipmaps": true,
+      "policy": "Filtered artwork",
+      "PPU": 100,
+      "borderLBRT": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxSize": 2048,
+      "sha256": "0761a91beccae4fce1df33a06121a330f9fa295eee5fa7c786f01e84ab33878f",
+      "provenance": "M63 original pixels; isolated review/use copy",
+      "sampling": "Trilinear/Box mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    },
+    {
+      "guid": "6836a7ca0b00575ab0857a335e4be42a",
+      "name": "SP_Mega.png",
+      "path": "Assets/HeartOfTheRain/App/NoMovesDesign/Art/SP_Mega.png",
+      "width": 400,
+      "height": 320,
+      "mipmaps": false,
+      "policy": "Sliced surface",
+      "PPU": 400,
+      "borderLBRT": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "maxSize": 512,
+      "sha256": "7024f3f101da3e1d42664674fa65db87bf27e03549f780b2dac23253c63007fa",
+      "provenance": "M63 original pixels; isolated review/use copy",
+      "sampling": "Bilinear/no mipmaps",
+      "compression": "Explicit RGBA32 reference baseline on Android/iPhone/Standalone"
+    }
+  ],
+  "priorRegistryEntries": 62,
+  "candidateEntries": 70,
+  "candidateNotAutoImported": true,
+  "nativeValidated": false
+}

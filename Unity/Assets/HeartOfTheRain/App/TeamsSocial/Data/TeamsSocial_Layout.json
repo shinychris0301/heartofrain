@@ -1,0 +1,151 @@
+{
+  "revision": "TeamsSocial_R1",
+  "unityBaseline": "2022.3.62f3",
+  "status": "design and asset handoff; host UI not implemented",
+  "referenceResolution": [
+    1080,
+    1920
+  ],
+  "smallPhoneReview": [
+    360,
+    640
+  ],
+  "safeArea": "Apply the existing app safe-area rect before this layout; proof images omit OS bars.",
+  "sharedCanvas": "Use existing CanvasScaler and convert reference units. Do not introduce a competing root canvas.",
+  "regions": {
+    "title": [
+      40,
+      72,
+      1000,
+      108
+    ],
+    "summary": [
+      40,
+      214,
+      1000,
+      210
+    ],
+    "tabs": [
+      40,
+      448,
+      1000,
+      106
+    ],
+    "feed": {
+      "left": 16,
+      "top": 564,
+      "right": 1064,
+      "bottom": "safeHeight-462",
+      "mode": "vertical ScrollRect; dynamic message heights"
+    },
+    "actions": {
+      "x": 40,
+      "y": "safeHeight-436",
+      "height": 156,
+      "gap": 40
+    },
+    "navigation": {
+      "x": 15,
+      "y": "safeHeight-246",
+      "width": 1050,
+      "height": 220
+    }
+  },
+  "chat": {
+    "incomingBubble": "TC_Bubble_Incoming",
+    "outgoingBubble": "TC_Bubble_Outgoing",
+    "avatar": "reuse approved avatarId/frameId assets; sample symbols are fixture data",
+    "textBaked": false,
+    "messageBodyFont": "HomeRounded ExtraBold / existing TMP font",
+    "bodySizeReference": 42,
+    "nameSizeReference": 42,
+    "timestampSizeReference": 31,
+    "bodyColor": "#3b5d77",
+    "nameColor": "#073354",
+    "incomingBoxX": 216,
+    "outgoingBoxX": 40,
+    "bubbleMaxWidth": 824,
+    "avatarSize": 142,
+    "minMessageHeight": 184,
+    "heightFormula": "paddingTop + name line + measured body line count * lineHeight + separate timestamp row + paddingBottom; never overlay timestamp with last body line",
+    "longWords": "wrap long tokens, URLs and unbroken CJK strings if introduced; do not scale the whole bubble",
+    "emoji": "use existing supported emoji/fallback system; never assume the rounded text font covers emoji",
+    "compactTeamName": "Fit 44 to42 reference units, then ellipsize for display only; full unchanged server name in details"
+  },
+  "requestCard": {
+    "width": 824,
+    "height": 300,
+    "heartSlots": 5,
+    "heartSprite": "TA_Stat_heart",
+    "emptyHeartTint": "#a9c0cf",
+    "filledHeartTint": "white",
+    "countLive": true,
+    "ownRequestHasHelpButton": false,
+    "pendingOwnRequestShows": "waiting label",
+    "recipientCTA": "Collect only after authoritative claimable amount exists",
+    "actionRectRelative": [
+      500,
+      154,
+      280,
+      126
+    ],
+    "heartSlotsLayout": {
+      "first": [
+        44,
+        159
+      ],
+      "size": 56,
+      "step": 64
+    }
+  },
+  "tabs": {
+    "chat": "this milestone",
+    "mail": "route to existing team mailbox; its redesign is not included in this milestone",
+    "teamInfo": "existing R4 Team Details member page",
+    "unread": "server-provided count; hide zero; use 99+ cap only if localization supports it"
+  },
+  "navigation": "Reuse R4/Home dock and selection assets. Selection appears on click/tap and remains selected; no hover-only variant.",
+  "input": {
+    "nativeKeyboard": true,
+    "composer": "anchored above keyboard/safe-area; preserve draft while navigating or reconnecting",
+    "navigationWhileKeyboardOpen": "hide dock and two-button action row",
+    "feedResizes": true,
+    "sendControlTouchMinDp": 48,
+    "draftMaxLength": "server/config; sample 250; count grapheme clusters",
+    "emptyOrWhitespace": "Send disabled",
+    "keyboardReturn": "respect multiline policy; no accidental submission"
+  },
+  "responsive": {
+    "phone": "fill safe width; fixed header/actions, scrollable feed; no font shrinking for dense content",
+    "shortScreens": "allow compact summary or scrollable summary; preserve input and action touch size",
+    "tablet": "center a capped content column; sample proof uses 520 dp on a 768 dp canvas",
+    "keyboard": "09_Composer_Keyboard_Viewport_RU is only the game viewport above the OS keyboard; keyboard art is not included",
+    "textScaling": "remeasure body and controls when accessibility text scale changes; scroll instead of truncating"
+  },
+  "touchTargets": {
+    "minDp": 48,
+    "referenceMinimumAt360Dp": 144,
+    "visualButtonCanBeSmaller": true,
+    "hitRect": "expand to at least 144 reference units without covering neighboring controls"
+  },
+  "sampling": "Preview uses alpha-aware minification at each output size; renderer is not a Unity GPU implementation.",
+  "nineSlice": {
+    "borderOrder": [
+      "left",
+      "bottom",
+      "right",
+      "top"
+    ],
+    "ppu": 100,
+    "referencePPU": 100,
+    "imagePixelsPerUnitMultiplier": "1 / proofBorderScale",
+    "source": "SocialComponentManifest and TeamsAccess_ComponentManifest; do not use whole-image stretching"
+  },
+  "nativeProofs": [
+    "Phone_360x640",
+    "Phone_390x844",
+    "Tablet_768x1024",
+    "Native_2160x3840"
+  ],
+  "runtimeValidation": "pending: Unity import, Android captures, font/text scaling, safe area, keyboard, scroll and backend"
+}

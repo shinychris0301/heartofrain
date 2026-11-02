@@ -1,0 +1,111 @@
+{
+  "revision": "Rain Cup R1",
+  "timingUnit": "seconds",
+  "clock": "Unscaled UI time",
+  "entry": {
+    "duration": 0.25,
+    "from": {
+      "alpha": 0,
+      "y": 10,
+      "scale": 0.98
+    },
+    "to": {
+      "alpha": 1,
+      "y": 0,
+      "scale": 1
+    },
+    "curve": "EaseOut"
+  },
+  "claim": {
+    "trigger": "Only after authoritative successful grant acknowledgment; never optimistic inventory mutation.",
+    "trophy": {
+      "duration": 0.65,
+      "keys": [
+        {
+          "time": 0,
+          "scale": 1,
+          "zDegrees": 0
+        },
+        {
+          "time": 0.2275,
+          "scale": 1.08,
+          "zDegrees": -3
+        },
+        {
+          "time": 0.455,
+          "scale": 1.01,
+          "zDegrees": 2
+        },
+        {
+          "time": 0.65,
+          "scale": 1,
+          "zDegrees": 0
+        }
+      ]
+    },
+    "rewardIcons": {
+      "duration": 0.6,
+      "keys": [
+        {
+          "time": 0,
+          "scale": 0.9
+        },
+        {
+          "time": 0.24,
+          "scale": 1.13
+        },
+        {
+          "time": 0.6,
+          "scale": 1
+        }
+      ]
+    },
+    "stars": {
+      "art": "DG_Star.png",
+      "count": 14,
+      "duration": 0.85,
+      "delay": "(index % 3) * 0.02",
+      "size": [
+        20,
+        20
+      ],
+      "origin": "Hero rect: x=0.42, y=0.48 measured from top-left. Overlay outside ScrollRect mask.",
+      "deltaX": "cos(index / 14 * 2 * PI) * (56 + (index % 3) * 12)",
+      "deltaYDown": "sin(index / 14 * 2 * PI) * 49 - 19",
+      "endRotation": "index * 37 degrees",
+      "alphaKeys": [
+        [
+          0,
+          0
+        ],
+        [
+          0.15,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "scaleKeys": [
+        [
+          0,
+          0.2
+        ],
+        [
+          0.15,
+          1
+        ],
+        [
+          1,
+          0.4
+        ]
+      ],
+      "pool": "Reuse 14 Image objects; disable after final key. No persistent particle trails."
+    },
+    "viewport": "Scroll body to top after acknowledged claim so trophy origin is visible before playing the celebration."
+  },
+  "reducedMotion": "No entry movement, scale bursts or star particles; update state and collected check immediately.",
+  "cancellation": "Stop presentation tweens on dismissal; reconcile transaction separately. Closing UI does not cancel an accepted real claim.",
+  "nativeClipsIncluded": false
+}

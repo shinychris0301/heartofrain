@@ -1,0 +1,131 @@
+{
+  "revision": "R4",
+  "referenceResolution": [
+    1080,
+    1920
+  ],
+  "scope": "Presentation contract for Codex; no host scene/prefab or runtime code modified",
+  "sourceArtChanged": true,
+  "assignments": {
+    "teamScore": "TA_Stat_star",
+    "requiredLevel": "TA_Stat_up",
+    "weeklyHelp": "TA_Icon_Help",
+    "helpCount": "TA_Stat_heart",
+    "inviteAction": "TA_Icon_Invite",
+    "teamType": "TA_Icon_People",
+    "memberCrystal": "TA_Avatar_crystal",
+    "memberLeaf": "TA_Avatar_leaf"
+  },
+  "displayBoxesReferenceUnits": {
+    "rankMedal": [
+      118,
+      118
+    ],
+    "scoreStar": [
+      72,
+      72
+    ],
+    "requiredLevelArrow": [
+      64,
+      64
+    ],
+    "helpHeart": [
+      72,
+      72
+    ],
+    "weeklyHelpGlyph": [
+      64,
+      64
+    ],
+    "teamTypeGlyph": [
+      64,
+      64
+    ],
+    "headerPeople": [
+      50,
+      50
+    ],
+    "inviteGlyph": [
+      66,
+      66
+    ]
+  },
+  "rankNumeral": {
+    "font": "existing HomeRounded Black / TMP equivalent",
+    "referenceFontSize": 51,
+    "goldFill": "#fff3b2",
+    "silverFill": "#f5fbff",
+    "bronzeFill": "#fff2cf",
+    "goldOutline": "#7b3507",
+    "silverOutline": "#273e55",
+    "bronzeOutline": "#652604",
+    "referenceOutlineWidth": 4,
+    "centerYWithinRow": 66,
+    "note": "TMP outline units differ from Canvas stroke pixels; compare visually, do not copy the raw width as a TMP material parameter."
+  },
+  "previewRenderer": {
+    "prefilter": "Lanczos3 alpha-aware downsample to exact physical dimensions",
+    "placement": "whole physical pixels; unscaled composite",
+    "outputWidths": [
+      360,
+      540,
+      1080,
+      1440,
+      2160
+    ],
+    "thumbnail": "render directly from sources, not resize the assembled page"
+  },
+  "unityFollowup": {
+    "retainUnchangedSourcesAndGUIDs": true,
+    "acceptance": "compare native screenshot at actual output resolution, not an enlarged overview",
+    "samplingOptions": [
+      "OptionalIconSizes: choose smallest source >= actual physical display box",
+      "For strongly minified painted icons, test a dedicated mipmapped/trilinear icon atlas against a native screenshot; keep sliced chrome separate"
+    ],
+    "doNot": [
+      "Set Point filtering on painted artwork",
+      "Assume TextureImporter settings override SpriteAtlas settings",
+      "Apply a global tint or heavy sharpening",
+      "Call static previews a tested Unity/device result"
+    ],
+    "reimportChangedSources": true
+  },
+  "helpCountLayout": {
+    "heartX": 860,
+    "heartYWithinRow": 46,
+    "heartBox": 72,
+    "countRightAlignedX": 988,
+    "countReferenceFontSize": 42
+  },
+  "approvedMeaning": {
+    "weeklyHelp": "solid clasped hands; no outlined diamond motif",
+    "teamType": "two solid people",
+    "inviteAction": "white solid person-plus with dark blue outline",
+    "teamScore": "painted golden five-point star",
+    "requiredLevel": "painted green up arrow",
+    "helpCount": "painted pink heart"
+  },
+  "forbiddenSubstitutions": {
+    "weeklyHelp": [
+      "old outlined TA_Icon_Help art",
+      "generic link/chain/diamond icon"
+    ],
+    "teamScore": [
+      "TA_Icon_Star"
+    ],
+    "requiredLevel": [
+      "TA_Icon_Up"
+    ],
+    "helpCount": [
+      "TA_Icon_Heart",
+      "Icon_Lives"
+    ]
+  },
+  "tints": {
+    "TA_Icon_Help": "#064873",
+    "TA_Icon_People": "#05426b in statistics; #073354 in header",
+    "TA_Icon_Invite": "white; source contains dark outline",
+    "paintedArt": "white"
+  },
+  "tintEvidence": "Dark core median of approved Help/People crops, rounded to RGB hex"
+}

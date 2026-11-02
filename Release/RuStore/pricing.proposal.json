@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "CONFIGURABLE_LAUNCH_PROPOSAL_NOT_CONSOLE_PRICES",
+  "currency": "RUB",
+  "checkoutEnabled": false,
+  "decisionDate": "2026-10-27",
+  "basis": "Owner-approved prices on 2026-10-27: 99 / 299 / 499 / 899 / 1599 / 2999 RUB for the six existing coin quantities. The four larger packs replace the 26 October prices; the two smaller packs retain their approved amounts. These are requested project prices, not a verified market standard or live Console quotation.",
+  "sources": [
+    "https://www.rustore.ru/help/developers/monetization/create-paid-product-in-application"
+  ],
+  "products": [
+    { "shopOfferId": "coins-1000", "proposedStoreProductId": "hotr_coins_1000", "coins": 1000, "proposedPriceMinor": 9900 },
+    { "shopOfferId": "coins-5000", "proposedStoreProductId": "hotr_coins_5000", "coins": 5000, "proposedPriceMinor": 29900 },
+    { "shopOfferId": "coins-10000", "proposedStoreProductId": "hotr_coins_10000", "coins": 10000, "proposedPriceMinor": 49900 },
+    { "shopOfferId": "coins-25000", "proposedStoreProductId": "hotr_coins_25000", "coins": 25000, "proposedPriceMinor": 89900 },
+    { "shopOfferId": "coins-50000", "proposedStoreProductId": "hotr_coins_50000", "coins": 50000, "proposedPriceMinor": 159900 },
+    { "shopOfferId": "coins-100000", "proposedStoreProductId": "hotr_coins_100000", "coins": 100000, "proposedPriceMinor": 299900 }
+  ],
+  "integrationRule": "This planning file is outside Unity Assets and is not runtime checkout configuration. Actual configured RuStore GetProducts amountLabel is the only checkout display price. Backend verifies actual product, environment, amount and currency against its configured catalog; no client-provided price authorizes credit. Product publication and real payment tests remain required."
+}

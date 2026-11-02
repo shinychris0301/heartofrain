@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_AWAITING_ROOT_SOURCE_FREEZE",
+  "utc": "2026-10-28T15:27:17.408470Z",
+  "scope": "Read-only baseline and plan preparation. No test, listener, worker, Unity, engine, APK, ADB or device operation started.",
+  "mainBaseline104": {
+    "path": "Verification/Evidence/Review104/Native/PackagingIsolated01/MainSources_after.json",
+    "sha256": "9eee6c27ea56cca4105c29435b4a33ebbef65821a0518d8965e6ac72795c3304",
+    "bytes": 1057298
+  },
+  "baselineMainSnapshot": {
+    "path": "Verification/Tools/Review105/BaselineMain105.json",
+    "sha256": "f432f9ced9a67330fcad2153cb1fd07be4b0e063a67dbcdb83dfd0adf03b92cb",
+    "bytes": 1079233
+  },
+  "mainInputCount": 5482,
+  "mainMatches104": true,
+  "backendBaselineProof": {
+    "path": "Verification/Evidence/Review103/Backend/Messaging01/Report.json",
+    "sha256": "d7d407d627be92f1e6a40bf3c068c528e00f02ec8242f343712d9583028ce77d",
+    "bytes": 26995
+  },
+  "baselineBackendSnapshot": {
+    "path": "Verification/Tools/Review105/BaselineBackend105.json",
+    "sha256": "c90b770fb346a892b1a4ade052d9d223fdb5b7ceee3bde94bb5bf5ef46f8722c",
+    "bytes": 11402
+  },
+  "backendBaselineFileCount": 101,
+  "sourceEditsPlannedByVerifier": false,
+  "proposedFocusedTests": [
+    "tests.test_staging105",
+    "tests.test_staging_ops105 (12 new tests)",
+    "tests.test_operations (18)",
+    "tests.test_readiness86 (5)"
+  ],
+  "proposedTcpDrill": [
+    "Start actual new staging launcher under owned suspended/assigned Windows job with retained127.0.0.1:0 socket and a private rendezvous proof, using a fresh owned database.",
+    "Enroll two real P-256 managed guests over actual TCP; independently bind challenge signing bytes and assert exactly one genesis per player.",
+    "Create a team, join second player, send member chat and exact retry without duplicate membership/message/wallet effects.",
+    "Stop only the owned process, verify listener closed, restart sameDB and read preserved identity/wallet/team/chat state.",
+    "Use real SQLite backup API against live WAL; restore only to a different newDB, restart restored DB and recheck integrity plus financial/social state.",
+    "Close exact owned job/listener and retain failure/source snapshots; no ordinary profiles/database or credential exports."
+  ],
+  "reuse": "Backend/tools/review_operational93.py canonical/P-256 auth/owned-process/backup patterns; its obsolete schema8/full drill is not rerun.",
+  "worker": "Not proposed unless actual staging readiness requires the existing approved worker; no gameplay/fullbackend expansion by default.",
+  "privateRoot": ".verification-cache/Review105",
+  "publicRoot": "Verification/Evidence/Review105",
+  "credentialPolicy": "Only static labels, counts, timings, source hashes and redacted status codes leave private storage. Request/response bodies, public-key payloads, private keys, access/refresh/recovery data and DBs remain private/inmemory.",
+  "nonClaims": [
+    "No hosted HTTPS/TLS acceptance",
+    "No actual VK/payment/ad provider",
+    "No Android or physical device",
+    "No production mode, deployment or capacity certification"
+  ],
+  "approvedContract": {
+    "bindHost": "127.0.0.1",
+    "rehearsalPort": 0,
+    "examplePort": 8751,
+    "socketReservedBeforeDatabase": true,
+    "privateRendezvous": true,
+    "replayEnabledForDrill": false,
+    "gameplayUnavailableMustBeExplicit": true,
+    "syntheticPublicOrigin": "https://staging.hotr-native-fixture.net",
+    "syntheticOriginAssignedOrOwned": false,
+    "resolveOrConnectToSyntheticOrigin": false,
+    "ownershipStates": [
+      "Initialized",
+      "PendingRestore",
+      "Ready"
+    ],
+    "restoreTarget": "New owned root/restores/<tag>, no in-place overwrite or automatic activation"
+  },
+  "retryBoundary": "For chat, intentionally do not consume a successful response body, terminate the owned service, then retry the exact command after restart; label as controlled client-body discard, not an unobserved network loss.",
+  "preparedHarnesses": [
+    {
+      "path": "Verification/Tools/Review105/run_focused105.py",
+      "sha256": "2ef0fa90f5be7ba6542f257620b817a095438fcc10165c3fbee89ddce35b5ce7",
+      "bytes": 7564
+    },
+    {
+      "path": "Verification/Tools/Review105/run_staging_tcp105.py",
+      "sha256": "e5963bc8aff894502439498876f4a788c6be03cdfe090749d271b82d5d1905ba",
+      "bytes": 22779
+    }
+  ],
+  "implementationContractKnown": true,
+  "executionStarted": false,
+  "harnessPreparationFrozen": true,
+  "actualHttpFlow": "Actual staging CLI and retained loopback socket; two signed guest enrollments; create/join/chat receipts retried before and after crash-style owned restart and new-root restore; wrapper live-WAL backup; no provider/worker/device."
+}

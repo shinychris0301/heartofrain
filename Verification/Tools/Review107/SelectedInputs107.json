@@ -1,0 +1,89 @@
+﻿{
+    "schemaVersion":  1,
+    "status":  "READ_ONLY_SELECTED_SDK_AND_TOOLCHAIN_INPUTS107",
+    "utc":  "2026-10-28T18:58:26.9191696Z",
+    "sourceBaseline":  "Verification/Tools/Review107/BaselineMain107.json",
+    "baselineInputs":  5490,
+    "vendorVersion":  "8.6.0",
+    "sdkUpgraded":  false,
+    "mainEngine":  "2022.3.62f3",
+    "isolatedEngine":  "6000.3.27f1",
+    "files":  [
+                  {
+                      "path":  ".verification-cache/Ads85/Vendor/yandex-mobileads-lite-8.6.0.unitypackage",
+                      "sha256":  "0d0a2546dd752d6b02864df5833767703ae88d5b292da0e0b8eec815d7f066c3",
+                      "bytes":  148504
+                  },
+                  {
+                      "path":  ".verification-cache/Ads85/SdkProject2/Assets/Plugins/Android/yandex-ads-unity-plugin.aar",
+                      "sha256":  "9420d5d297f6bad315f691b9083063b5f22f5c0883a02549f8c96f98b9e476ef",
+                      "bytes":  28690
+                  },
+                  {
+                      "path":  "Verification/Evidence/ShopAds85/SDK/FullGameBuild/Inputs/Gradle/launcher/gradle.lockfile",
+                      "sha256":  "73767fd5f223ec8adeffbca663182e7dae46d9bc16530437c3b67c4fd13ec9e9",
+                      "bytes":  7504
+                  },
+                  {
+                      "path":  ".verification-cache/Review98/Game/ProjectSettings/ProjectSettings.asset",
+                      "sha256":  "554e2a6ad650762253efb4ad43bf76f5c87d0f9439f6f80d9885d2f2d6730d6c",
+                      "bytes":  23249
+                  },
+                  {
+                      "path":  ".verification-cache/Review98/Game/ProjectSettings/ProjectVersion.txt",
+                      "sha256":  "9bc0c19d30c1de091cd94a457364d64873d21601b7c0605644b7f21997546b22",
+                      "bytes":  87
+                  },
+                  {
+                      "path":  ".verification-cache/Review98/Game/Packages/manifest.json",
+                      "sha256":  "2ad2d5190325576f803068ee96259582bbce04cdb14a04a7b91d11438357db38",
+                      "bytes":  750
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Unity.exe",
+                      "sha256":  "cfaf4794df5b7ad0ae3afe43edcb6ccb1e08b422a2d6a768e52ce485e0bba673",
+                      "bytes":  282544
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/OpenJDK/release",
+                      "sha256":  "666094d10d8d978e4b72e7a492c07fde713cc15db2d8d02be802e0170ec878d6",
+                      "bytes":  1662
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/source.properties",
+                      "sha256":  "70f1c5165e6d997b18782a49cff71da7a3caacd0c4cd811da24c43359fb83cf6",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/gradle/lib/gradle-launcher-9.3.1.jar",
+                      "sha256":  "85f3ae7e3fd8f2095b0512975e763c62663dd648213e4279c40b75a888edb07a",
+                      "bytes":  339501
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle",
+                      "sha256":  "6e3e556a91b8bcd707b48e87a9fef133a12fad22f1a22e5f2a772cca5f0aab88",
+                      "bytes":  1153
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle",
+                      "sha256":  "d319fef211b57f1531222045c7f1d0f0946aa77e9d13d7a1c857b25e0725fef2",
+                      "bytes":  1880
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle",
+                      "sha256":  "d20991942b673c460c68de0209afbcb11fd67d4a41510f3256c0fbf88e51f3e7",
+                      "bytes":  485
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties",
+                      "sha256":  "a9387a17da9d5bfdc5601b30337d2cfc53a163d77ee65d618a46afdc8fbd04b0",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/UnityManifest.xml",
+                      "sha256":  "382ccffeb091e59c05b2ee9f9da8d31d9461fa59ce78ac5525b5663d32892d95",
+                      "bytes":  1400
+                  }
+              ],
+    "scope":  "Selected actual archive/AAR, prior dependency lock, preserved private settings and stock toolchain files only. No SDK import, compiler, process management, build, host, ad or device operation. Fresh107candidate will copy the final107+108 source only after combinedfreeze."
+}

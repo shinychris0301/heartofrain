@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ab12dd92ff59418d782ab3febbc775, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  assets: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 3}
+  assets: {fileID: 11400000, guid: e03fbdc53112593da2607e0f399c185d, type: 2}
   state:
     currentLevel: 18
     coins: 1250

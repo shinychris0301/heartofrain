@@ -14,6 +14,14 @@ namespace HeartOfTheRain.App.PreLevel
         [Tooltip("First-clear reward values shared with M66. Balances remain local review state until a production save service is connected.")]
         public int rewardCoins=50,rewardStars=1;
         public Sprite Find(string key)
-        {if(key=="RetryLife")return retryLifeIcon;var own=Array.Find(sprites,s=>s.id==key);return own!=null?own.sprite:home.Find(key)?home.Find(key):gameplay.Get(key);}
+        {
+            if(key=="LivesHeart"||key=="LivesClock"){var lives=HomeLivesAssets.Load();return !lives?null:key=="LivesHeart"?lives.heart:lives.clock;}
+            if(key=="RetryLife")return retryLifeIcon;
+            var own=sprites==null?null:Array.Find(sprites,s=>s.id==key);
+            if(own!=null)return own.sprite;
+            var shared=home==null||home.sprites==null?null:Array.Find(home.sprites,s=>s.id==key);
+            if(shared!=null)return shared.sprite;
+            return gameplay==null?null:gameplay.Get(key);
+        }
     }
 }

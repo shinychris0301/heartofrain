@@ -1,0 +1,124 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using HeartOfTheRain.App.Advertising;
+using HeartOfTheRain.App.Advertising.Editor;
+using HeartOfTheRain.App.RuStore;
+using HeartOfTheRain.App.RuStore.Editor;
+using HeartOfTheRain.App.ServerGameplay;
+using HeartOfTheRain.App.ServerGameplay.Editor;
+using HeartOfTheRain.App.ShopCheckout86;
+using UnityEditor;
+using UnityEditor.Android;
+using UnityEditor.Build.Reporting;
+using UnityEngine;
+
+namespace HeartOfTheRain.Verification {
+ public static class MonetizationBuild126 {
+  [Serializable] sealed class Receipt {
+   public string status,project,sourceRoot,nonce,unity,packageName;
+   public string[] paths,sha256,metaPaths,metaGuids;
+  }
+  [Serializable] sealed class Report {
+   public string status="FAIL_MONETIZATION126",operation,unity,packageName,apk,apkSHA256,code,receiptSHA256,consoleAppId,signingCertificateSha256;
+   public int checks,errors=-1,warnings=-1;public long bytes;
+   public string[] toolchainErrors,toolchainPaths;
+   public bool actualBuild,development,sourcePinsPreserved,metaGuidsPreserved,customSigning,sdkEnabled,adsEnabled,showSplash,showLogo,productionApproved=false;
+   public List<string> passed=new List<string>();
+   public string scope="Actual isolated approved LTS combined RuStore/Yandex sandbox packaging or Android build. No provider request, payment, ad view, device or production acceptance is implied.";
+  }
+  static string Full(string p)=>Path.GetFullPath(p).TrimEnd('\\','/');
+  static string Project=>Full(Path.Combine(Application.dataPath,".."));
+  static string Hash(string p){using(var sha=SHA256.Create())using(var stream=File.OpenRead(p))return string.Concat(sha.ComputeHash(stream).Select(b=>b.ToString("x2")));}
+  static void Need(bool ok,string code){if(!ok)throw new InvalidOperationException(code);}
+  static void Check(Report r,bool ok,string code){r.checks++;Need(ok,code);r.passed.Add(code);}
+  static Receipt Validate(){
+   string path=Environment.GetEnvironmentVariable("HOTR_MONETIZATION126_RECEIPT");
+   Need(!string.IsNullOrEmpty(path)&&Full(Path.GetDirectoryName(path))==Full(Directory.GetParent(Project).FullName),"Owned126ReceiptRequired");
+   var receipt=JsonUtility.FromJson<Receipt>(File.ReadAllText(path,new UTF8Encoding(false,true)));
+   Need(receipt!=null&&receipt.status=="PREPARED_MONETIZATION126"&&receipt.unity=="6000.3.27f1"&&receipt.packageName=="com.heartoftherain.game","Prepared126ReceiptRequired");
+   Need(receipt.project!=null&&Full(receipt.project)==Project&&Project.StartsWith(Full("E:/.verification-cache/HOTR126")+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase),"Owned126ProjectRequired");
+   Need(File.Exists(Path.Combine(receipt.sourceRoot,"AGENTS.md"))&&Regex.IsMatch(receipt.nonce??"",@"\A[0-9a-f]{32}\z"),"Bound126SourceRootRequired");
+   Need(receipt.paths!=null&&receipt.sha256!=null&&receipt.paths.Length>2000&&receipt.paths.Length==receipt.sha256.Length,"Complete126AssetPinsRequired");
+   var seen=new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+   for(int i=0;i<receipt.paths.Length;i++){
+    string p=receipt.paths[i];Need(p.StartsWith("Assets/",StringComparison.Ordinal)&&!p.Split('/').Any(v=>v==".."||v==""||v.Contains(":"))&&seen.Add(p),"Contained126SourceRequired");
+    Need(File.Exists(p)&&Hash(p)==receipt.sha256[i],"Pinned126SourceChanged");
+   }
+   Need(receipt.metaPaths!=null&&receipt.metaGuids!=null&&receipt.metaPaths.Length==receipt.metaGuids.Length,"126GuidPinsRequired");
+   for(int i=0;i<receipt.metaPaths.Length;i++){
+    string p=receipt.metaPaths[i];Need(p.StartsWith("Assets/",StringComparison.Ordinal)&&p.EndsWith(".meta",StringComparison.Ordinal)&&!p.Contains(".."),"Contained126MetaRequired");
+    var match=Regex.Matches(File.ReadAllText(p),@"(?m)^guid:\s*([0-9a-fA-F]{32})\s*$");
+    Need(match.Count==1&&match[0].Groups[1].Value.Equals(receipt.metaGuids[i],StringComparison.OrdinalIgnoreCase),"126OriginalGuidChanged");
+   }
+   return receipt;
+  }
+  static void PrepareAndCheck(Report r){
+   Validate();
+   Check(r,Application.unityVersion=="6000.3.27f1"&&EditorUserBuildSettings.activeBuildTarget==BuildTarget.Android,"ApprovedIsolatedAndroidLts");
+   Check(r,PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.Android)=="com.heartoftherain.game","RegisteredAndroidPackage");
+   Check(r,(int)PlayerSettings.Android.minSdkVersion==26&&(int)PlayerSettings.Android.targetSdkVersion==36&&PlayerSettings.Android.bundleVersionCode==126,"ExplicitSandboxVersionAndApi");
+   r.toolchainErrors=SdkCheckoutBuild125.ActualToolchainErrors();
+   r.toolchainPaths=new[]{EditorApplication.applicationContentsPath,AndroidExternalToolsSettings.sdkRootPath,AndroidExternalToolsSettings.ndkRootPath,AndroidExternalToolsSettings.jdkRootPath,AndroidExternalToolsSettings.Gradle.path};
+   Check(r,r.toolchainErrors.Length==0,"ApprovedStockAndroidTools");
+   Check(r,SdkVendorBindings125.ActualPackageErrors().Length==0,"ExactOfficialRuStorePackageContents");
+   CheckoutConfiguration86 checkout;Check(r,CheckoutConfiguration86.TryRead(out checkout)&&checkout!=null&&checkout.enabled&&checkout.sandbox&&!checkout.productionEnabled&&checkout.consoleAppId=="2063777840"&&checkout.Verification==CommerceVerificationMode125.SdkClientReported,"ActualEnabledSdkSandboxProfile");
+   RewardedAdsConfiguration85 ads;string error;
+   var asset=Resources.Load<TextAsset>(AdvertisingConfiguration107.ResourceKey);
+   Check(r,asset&&RewardedAdsConfiguration85.TryParsePackaged(asset.text,out ads,out error),"ActualAdvertisingResourceParses");
+   RewardedAdsConfiguration85.TryParsePackaged(asset.text,out ads,out error);
+   Check(r,ads.enabled&&ads.rewardedUnitId=="R-M-20291714-1"&&ads.interstitialUnitId=="R-M-20291714-2"&&ads.privacyUrl=="https://api.novamind-it.ru/privacy","OwnerApprovedAdPlacementsAndPrivacyOrigin");
+   var release=JsonUtility.FromJson<RuStoreReleaseConfiguration>(File.ReadAllText(Environment.GetEnvironmentVariable(RuStoreReleasePreflight.ConfigVariable)));
+   Check(r,release.consoleApplicationId==checkout.consoleAppId&&release.packageName==checkout.packageName&&release.environment=="sandbox"&&release.verificationMode==CommerceVerification125.SdkClientReported&&release.targetApiLevel==36,"PublicReleaseMetadataMatchesSandbox");
+   SdkVendorBindings125.ConfigureIsolated(checkout.consoleAppId,release.paymentReturnScheme);
+   Check(r,SdkVendorBindings125.ActualBindingErrors(checkout.consoleAppId,release.paymentReturnScheme).Length==0,"ActualVendorIdAndPaymentReturnManifest");
+   Check(r,AdvertisingBuild107.CombinedErrors126().Length==0,"PinnedYandexRuntimeDependenciesAndPrivacyManifest");
+   Check(r,!PlayerSettings.SplashScreen.show&&!PlayerSettings.SplashScreen.showUnityLogo,"ApprovedSplashRemovalRetained");
+   Check(r,PlayerSettings.GetScriptingBackend(BuildTargetGroup.Android)==ScriptingImplementation.IL2CPP&&PlayerSettings.Android.targetArchitectures==AndroidArchitecture.ARM64,"Arm64Il2Cpp");
+   var scenes=EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).ToArray();
+   Check(r,scenes.SequenceEqual(new[]{HeartOfTheRain.App.Launch.LaunchPage.ScenePath,HeartOfTheRain.App.Launch.LaunchPage.GameScenePath}),"ApprovedLaunchAndGameScenes");
+   r.packageName=release.packageName;r.consoleAppId=release.consoleApplicationId;r.signingCertificateSha256=release.signingCertificateSha256;r.sdkEnabled=r.adsEnabled=true;
+  }
+  public static void RunPackaging(){Run(false);}
+  public static void BuildSandbox(){Run(true);}
+  static void Run(bool build){
+   var r=new Report{unity=Application.unityVersion,operation=build?"BuildSandbox":"RunPackaging"};
+   string output=Environment.GetEnvironmentVariable("HOTR_MONETIZATION126_OUT");
+   string originalStore=PlayerSettings.Android.keystoreName,originalAlias=PlayerSettings.Android.keyaliasName;
+   bool originalCustom=PlayerSettings.Android.useCustomKeystore;
+   try{
+    Need(!string.IsNullOrEmpty(output)&&Path.IsPathRooted(output),"Explicit126OutputRequired");PrepareAndCheck(r);
+    r.receiptSHA256=Hash(Environment.GetEnvironmentVariable("HOTR_MONETIZATION126_RECEIPT"));
+    if(build){
+     string password=Environment.GetEnvironmentVariable("HOTR_RELEASE_SIGNING_PASSWORD"),store=Environment.GetEnvironmentVariable("HOTR_RELEASE_KEYSTORE");
+     Need(!string.IsNullOrWhiteSpace(password)&&!string.IsNullOrEmpty(store)&&File.Exists(store),"Private126SigningCustodyRequired");
+     Need(!Full(store).StartsWith(Project+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase),"External126KeystoreRequired");
+     PlayerSettings.Android.keystoreName=store;PlayerSettings.Android.keyaliasName="heartoftherain-release";PlayerSettings.Android.useCustomKeystore=true;
+     PlayerSettings.Android.keystorePass=password;PlayerSettings.Android.keyaliasPass=password;r.customSigning=true;
+     string apk=Environment.GetEnvironmentVariable("HOTR_MONETIZATION126_APK");r.apk=Full(apk??"");
+     Need(r.apk.StartsWith(Project+Path.DirectorySeparatorChar+"Builds"+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase)&&r.apk.EndsWith(".apk",StringComparison.Ordinal)&&!File.Exists(r.apk),"FreshContained126ApkRequired");
+     Directory.CreateDirectory(Path.GetDirectoryName(r.apk));EditorUserBuildSettings.buildAppBundle=false;r.actualBuild=true;
+     var result=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).ToArray(),locationPathName=r.apk,target=BuildTarget.Android,options=BuildOptions.Development});
+     r.errors=(int)result.summary.totalErrors;r.warnings=(int)result.summary.totalWarnings;r.development=(result.summary.options&BuildOptions.Development)!=0;
+     Check(r,result.summary.result==BuildResult.Succeeded&&r.errors==0&&r.development&&File.Exists(r.apk),"ActualCombinedSignedSandboxApkBuilt");
+     r.bytes=new FileInfo(r.apk).Length;r.apkSHA256=Hash(r.apk);
+    }
+    Validate();r.sourcePinsPreserved=r.metaGuidsPreserved=true;r.showSplash=PlayerSettings.SplashScreen.show;r.showLogo=PlayerSettings.SplashScreen.showUnityLogo;
+    Check(r,!r.showSplash&&!r.showLogo,"NoSplashAfterPackaging");r.status=build?"PASS_COMBINED_MONETIZATION126_ANDROID_BUILD":"PASS_COMBINED_MONETIZATION126_PACKAGING";
+   }catch(Exception e){r.code=Regex.IsMatch(e.Message??"",@"\A[A-Za-z0-9_]{1,120}\z")?e.Message:e.GetType().Name;}
+   finally{
+    PlayerSettings.Android.keystorePass="";PlayerSettings.Android.keyaliasPass="";
+    PlayerSettings.Android.keystoreName=originalStore;PlayerSettings.Android.keyaliasName=originalAlias;PlayerSettings.Android.useCustomKeystore=originalCustom;
+   }
+   Need(!string.IsNullOrEmpty(output),"Explicit126OutputRequired");Directory.CreateDirectory(output);
+   using(var file=new FileStream(Path.Combine(output,"Native.json"),FileMode.CreateNew,FileAccess.Write))using(var writer=new StreamWriter(file,new UTF8Encoding(false)))writer.Write(JsonUtility.ToJson(r,true));
+   EditorApplication.Exit(r.status.StartsWith("PASS_",StringComparison.Ordinal)?0:1);
+  }
+ }
+}
+#endif

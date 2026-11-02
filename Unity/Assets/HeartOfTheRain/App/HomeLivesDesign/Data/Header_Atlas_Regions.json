@@ -1,0 +1,40 @@
+{
+  "source": "Approved_Header_Atlas.png",
+  "size": [
+    2121,
+    360
+  ],
+  "origin": "bottom-left",
+  "sprites": [
+    {
+      "name": "HomeHeaderDefaultAvatar",
+      "rect": [
+        0,
+        0,
+        386,
+        360
+      ]
+    },
+    {
+      "name": "HomeHeaderPanel",
+      "rect": [
+        400,
+        0,
+        1721,
+        360
+      ]
+    },
+    {
+      "name": "HomeHeaderConnector",
+      "rect": [
+        400,
+        0,
+        16,
+        360
+      ]
+    }
+  ],
+  "frameDisplay": "All frames use the original square: header width x 0.17. Connector fills the gap independently.",
+  "revision": "R2",
+  "notes": "Separate runtime Sprite objects share unchanged approved texture pixels. The full atlas must never be drawn as a header behind a selected avatar."
+}

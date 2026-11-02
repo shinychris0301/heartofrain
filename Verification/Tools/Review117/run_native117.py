@@ -1,0 +1,130 @@
+"""Serial mainUnity2022 verification for Leaderboard115. No import/build/device mode."""
+import argparse
+import importlib.util
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import time
+
+ROOT=Path(__file__).resolve().parents[3]
+PROJECT=ROOT/'Unity'
+sys.path.insert(0,str(ROOT/'Verification/Tools/Ads85'))
+import run_ads85_native as api
+sys.path.insert(0,str(ROOT/'Verification/Tools/PageBackdrop90'))
+from process90 import unity_pids
+sys.path.insert(0,str(ROOT/'Verification/Tools/Review93'))
+from run_connected import resume_owned_primary
+# Reuse only the process-membership/retained-handle closure primitive. This
+# imports no old source/build/config pins and starts no process at import time.
+HELPER=ROOT/'Verification/Tools/Review107/run_native107.py'
+spec=importlib.util.spec_from_file_location('native115_owned_process_primitives',HELPER)
+shared=importlib.util.module_from_spec(spec);spec.loader.exec_module(shared)
+
+def guids():
+    values={}
+    for path in (PROJECT/'Assets').rglob('*.meta'):
+        found=re.findall(rb'(?m)^guid:\s*([0-9a-fA-F]{32})\s*$',path.read_bytes())
+        if len(found)!=1:raise ValueError('UniqueAssetGuidRequired113')
+        values[path.relative_to(PROJECT).as_posix()]=found[0].decode('ascii').lower()
+    if len(set(values.values()))!=len(values):raise ValueError('AssetGuidCollision113')
+    return values
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--execute',action='store_true');p.add_argument('--tag',required=True)
+    p.add_argument('--entry',required=True);p.add_argument('--report',required=True);p.add_argument('--expected',required=True)
+    p.add_argument('--output-env',required=True);p.add_argument('--timeout',type=int,default=600)
+    p.add_argument('--quit',action='store_true')
+    p.add_argument('--import-epoch',action='store_true',help='Rejected: no new raster art or import metadata normalization is permitted.')
+    args=p.parse_args()
+    if not args.execute or args.import_epoch or os.name!='nt' or not 30<=args.timeout<=1800:p.error('ExplicitBoundedMain115Required')
+    bindings={'FirstLevels117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','SafeGrowth117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','CampaignGrowth117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','CampaignGap117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','CandidateBoardRender117Verification.Run':'HOTR_CANDIDATE_RENDER117_OUTPUT','LegacyGraphicsBuildGuard117Verification.Run':'HOTR_GRAPHICS_GUARD117_OUTPUT','CellFit117Verification.Run':'HOTR_CELL_FIT117_OUTPUT','CampaignVaried117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','CampaignHazard117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','ReshuffleVisual117Verification.Run':'HOTR_RESHUFFLE_VISUAL117_OUTPUT','CampaignSolver117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','CampaignDraft117Verification.Run':'HOTR_CAMPAIGN117_OUTPUT','VersionedLevel117Verification.Run':'HOTR_VERSIONED_LEVEL_OUTPUT','Reshuffle117Verification.Run':'HOTR_RESHUFFLE117_OUTPUT','NoMovesPlayReview.Run':'HOTR_NO_MOVES_OUTPUT','FriendsAction115Verification.Run':'HOTR_REVIEW115_OUT','TeamsVisual115Verification.Run':'HOTR_REVIEW115_OUT','LeaderboardRefresh115Verification.Run':'HOTR_REVIEW115_OUT','LeaderboardRefresh115ProtocolVerification.Run':'HOTR_REVIEW115_OUT','LeaderboardRefresh115HttpVerification.Run':'HOTR_REVIEW115_HTTP_OUT','LeaderboardRefresh115ImportVerification.Run':'HOTR_REVIEW115_OUT','Regional89Verification.Run':'HOTR_REGION89_OUTPUT','TeamsLifecycle113Verification.Run':'HOTR_REVIEW113_OUT','TeamsLifecycle113FunctionalVerification.Run':'HOTR_REVIEW113_OUT','TeamsLifecycle113HttpVerification.Run':'HOTR_REVIEW113_HTTP_OUT','TeamsInvites112FunctionalVerification.Run':'HOTR_REVIEW112_OUT','TeamsMail111FunctionalVerification.Run':'HOTR_REVIEW111_OUT','TeamsChatHelp110Verification.Run':'HOTR_REVIEW110_OUT','Navigation108Verification.Run':'HOTR_REVIEW108_OUT','NativeVerification.Run':'HOTR_REVIEW93_OUT'}
+    short='.'.join(args.entry.split('.')[-2:])
+    if bindings.get(short)!=args.output_env:p.error('SuiteOutputBindingMismatch115')
+    if not re.fullmatch('[A-Za-z0-9_]{1,40}',args.tag) or not re.fullmatch(r'HeartOfTheRain\.[A-Za-z0-9_.]+',args.entry) or not re.fullmatch('HOTR_[A-Z0-9_]+',args.output_env):p.error('SafeNative115ContractRequired')
+    if unity_pids():p.error('ConcurrentEditorRejected113')
+    out=ROOT/'Verification/Evidence/Review117/Native'/args.tag
+    private=ROOT/'.verification-cache/Review117/RawNative'/args.tag
+    report=(out/args.report).resolve()
+    if not report.is_relative_to(out.resolve()) or report.suffix!='.json':p.error('Contained115ReportRequired')
+    out.mkdir(parents=True,exist_ok=False);private.mkdir(parents=True,exist_ok=False)
+    manifests=[ROOT/'Verification/Evidence/Review115/OnlineClientFreeze115_10.json',ROOT/'Verification/Evidence/Review115/DemoFreeze115_02.json']
+    for manifest in manifests:
+        data=json.loads(manifest.read_text('utf-8-sig'))
+        for row in data['files']:
+            path=ROOT/row['path']
+            if not path.is_file() or api.sha(path).lower()!=row['sha256'].lower():raise ValueError('Frozen115SourceDrift')
+    before=api.freeze();api.write(out/'MainSources_before.json',before)
+    guid_before=guids();api.write(out/'AssetGuids_before.json',guid_before)
+    baseline_path=ROOT/'Verification/Evidence/Review113/MainSourcesFinal113_03.json'
+    if api.sha(baseline_path)!='9c6d652b945483cf03aac9bb353e752ccb081ecfb5460d6393c5ce53432fa460':raise ValueError('Pinned111BaselineDigestMismatch115')
+    baseline=json.loads(baseline_path.read_text('utf-8-sig'))
+    original_metas={k:v for k,v in baseline['files'].items() if k.endswith('.meta')}
+    if any(before['files'].get(k)!=v for k,v in original_metas.items()):raise ValueError('OriginalAssetMetadataChanged115')
+    import_candidates={k:v for k,v in before['files'].items() if k not in baseline['files'] and k.startswith('Unity/Assets/HeartOfTheRain/App/TeamsInvites/Art/') and k.endswith('.png.meta')}
+    if args.import_epoch:raise ValueError('NoImporterNormalizationAllowed115')
+    if args.import_epoch:
+        retained=out/'ImportMetaBefore';retained.mkdir()
+        for k in import_candidates:(retained/Path(k).name).write_bytes((ROOT/k).read_bytes())
+    env=dict(os.environ);env['HOTR_REVIEW115_OUT']=str(out);env[args.output_env]=str(out)
+    log=private/'Unity.log';console=private/'Console.log'
+    command=[str(api.PINNED_UNITY),'-batchmode','-projectPath',str(PROJECT),'-executeMethod',args.entry,'-logFile',str(log)]
+    if args.quit:command+=['-quit']
+    state=dict(schemaVersion=1,status='RUNNING_NATIVE115',startedUtc=api.utc(),entry=args.entry,expectedNativeStatus=args.expected,
+        expectedEngine='2022.3.62f3',runnerSHA256=api.sha(Path(__file__)),processHelperSHA256=api.sha(HELPER),
+        editorSHA256=api.sha(api.PINNED_UNITY),mainInputCount=before['inputCount'],assetGuidCount=len(guid_before),
+        importEpoch=args.import_epoch,importCandidateCount=len(import_candidates),
+        scope='Actual pinned Unity2022 Editor execution; no metadata normalization, APK/build, device, external provider or production operation. Suite-specific output environment required.')
+    api.write(out/'Authorization.json',state);started=time.monotonic();job=None;process=None
+    try:
+        job=api.OwnedJob();startup=subprocess.STARTUPINFO();startup.dwFlags|=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
+        with console.open('x',encoding='utf-8') as stream:
+            process=subprocess.Popen(command,cwd=PROJECT,env=env,stdout=stream,stderr=subprocess.STDOUT,
+                creationflags=subprocess.CREATE_NO_WINDOW|0x4,startupinfo=startup)
+            state['pid']=process.pid;job.assign(process.pid);resume_owned_primary(process);state['ownedJobAssignedBeforeResume']=True
+            print(json.dumps(dict(status='STARTED_NATIVE115',tag=args.tag,entry=args.entry)),flush=True)
+            try:process.wait(timeout=args.timeout)
+            except subprocess.TimeoutExpired:state['timedOut']=True;job.close();process.wait(timeout=30)
+        native=json.loads(report.read_text('utf-8-sig')) if report.is_file() else {}
+        text=log.read_text('utf-8-sig',errors='replace') if log.is_file() else '';engine=re.search(r'Initialize engine version:\s*(\S+)',text)
+        checks=native.get('checks',native.get('passed',0));checks=checks if isinstance(checks,int) else native.get('passed',0)
+        state.update(exitCode=process.returncode,nativeStatus=native.get('status','MISSING'),actualEngine=engine.group(1) if engine else None,
+            checks=checks,nativeReport=args.report,nativeReportSHA256=api.sha(report) if report.exists() else None)
+        passed=process.returncode==0 and not state.get('timedOut') and state['actualEngine']=='2022.3.62f3' and native.get('status')==args.expected and not any(native.get(k) for k in ('error','errors','failed','failures'))
+        state['status']='PASS_NATIVE115_INVOCATION' if passed else 'FAIL_NATIVE115_INVOCATION'
+    except Exception as error:state.update(status='FAIL_NATIVE115_RUNNER',errorType=type(error).__name__)
+    finally:
+        state['ownedChildClosure']=shared.owned_shutdown(job)
+        if process and process.poll() is None:process.kill();process.wait(timeout=30)
+        after=api.freeze();guid_after=guids();api.write(out/'MainSources_after.json',after);api.write(out/'AssetGuids_after.json',guid_after)
+        change=api.delta(before,after)
+        import_ok=args.import_epoch and not change['added'] and not change['removed'] and set(change['changed'])<=set(import_candidates) and guid_before==guid_after
+        if args.import_epoch:
+            api.write(out/'ImportNormalization113.json',dict(status='ACCEPTED_NEW_META_IMPORT113' if import_ok else 'REJECTED_IMPORT_DELTA113',
+                originalMetaCount=len(original_metas),originalMetasPreserved=all(after['files'].get(k)==v for k,v in original_metas.items()),
+                newImporterMetaCount=len(import_candidates),guidPreserved=guid_before==guid_after,sourceDelta=change,
+                changed=[dict(path=k,before=before['files'][k],after=after['files'][k]) for k in change['changed']],
+                note='Import epoch only. Acceptance suites must bind the final post-import manifest without permitted mutations.'))
+        state.update(mainInputsUnchanged=before==after,importNormalizationAccepted=import_ok,assetGuidsUnchanged=guid_before==guid_after,sourceDelta=change,
+            unityPidsAfter=unity_pids(),finishedUtc=api.utc(),elapsedSeconds=round(time.monotonic()-started,3),
+            privateLogs=[dict(path=p.relative_to(ROOT).as_posix(),sha256=api.sha(p),bytes=p.stat().st_size) for p in (log,console) if p.is_file()])
+        if (before!=after and not import_ok) or guid_before!=guid_after or state['unityPidsAfter'] or not state['ownedChildClosure'].get('observed') or not state['ownedChildClosure'].get('allObservedHandlesSignaled'):state['status']='FAIL_NATIVE115_INPUTS_OR_PROCESS'
+        api.write(out/'Invocation.json',state)
+    print(json.dumps(dict(status=state['status'],report=(out/'Invocation.json').relative_to(ROOT).as_posix())),flush=True)
+    return 0 if state['status'].startswith('PASS_') else 1
+
+if __name__=='__main__':
+    try:raise SystemExit(main())
+    except Exception as error:
+        tag=sys.argv[sys.argv.index('--tag')+1] if '--tag' in sys.argv and sys.argv.index('--tag')+1<len(sys.argv) else ''
+        out=ROOT/'Verification/Evidence/Review115/Native'/tag
+        if re.fullmatch('[A-Za-z0-9_]{1,40}',tag) and out.is_dir() and not (out/'Authorization.json').exists() and not (out/'Invocation.json').exists():
+            api.write(out/'PrelaunchFailure113.json',dict(schemaVersion=1,status='PRELAUNCH_METADATA_REJECTED',utc=api.utc(),
+                errorType=type(error).__name__,code=str(error) if re.fullmatch('[A-Za-z0-9]{1,100}',str(error)) else 'PrelaunchInputRejected113',
+                runnerSHA256=api.sha(Path(__file__)),actualEditorStarted=False,compilerInvoked=False))
+            print(json.dumps(dict(status='PRELAUNCH_METADATA_REJECTED',report=(out/'PrelaunchFailure113.json').relative_to(ROOT).as_posix())),flush=True)
+            raise SystemExit(1)
+        raise

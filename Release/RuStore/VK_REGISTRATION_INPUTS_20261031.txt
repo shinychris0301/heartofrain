@@ -1,0 +1,48 @@
+VK registration inputs - 31 October 2026
+
+Current implemented flow: backend-owned browser OAuth/PKCE; native VK Android
+SDK is not implemented. Configure the Web/browser platform for this integration.
+Website/domain: https://api.novamind-it.ru
+Exact HTTPS callback: https://api.novamind-it.ru/v1/identity/vk/callback
+VK numeric application/client ID: 54867814, supplied by the owner.
+Owner confirmed Web/browser integration and the exact HTTPS redirect above on
+31 October 2026. Public staging fragment: Release/Monetization126/vk.staging.json.
+Actual provider authorization and device acceptance remain pending.
+
+Future release Android package: com.heartoftherain.game
+Production signing certificate prepared on 31 October 2026:
+SHA-1: A3:92:5B:6F:BB:1F:AA:D2:0B:D5:6A:6A:7C:59:21:47:E7:F7:F7:B6
+Alias: heartoftherain-release
+Public metadata and recovery guide: Release/Signing/README.md
+The future release APK has not been built/signed with this certificate yet.
+Its private keystore stays outside the repository, with a verified encrypted
+local backup. Off-device copy and independent password retention remain pending.
+The main verification project keeps its original debug settings.
+
+Verified existing QA certificate - TEST ONLY
+SHA-1: E4:42:06:CD:EA:0C:D9:79:A6:4D:FF:38:E5:2E:FA:40:15:7F:84:08
+SHA-256: 2F:26:EC:88:31:0E:C9:ED:FD:A3:33:5F:B2:2F:58:43:A9:BB:A4:54:41:F5:37:8C:14:EA:2E:F0:C0:4F:6D:CA
+Subject: CN=Android Debug
+Actual artifact package: com.heartoftherain.review98
+Artifact: Unity/Builds/Review120/HeartOfTheRain_Review120_Android_Test.apk
+Artifact SHA256: c1337572f60d25456db38235fd6714ae281b541dd4de9f33cfbe99016dacecee
+
+The QA fingerprint is not a confirmed production signing identity for
+com.heartoftherain.game. It can identify QA builds signed with that certificate;
+production Android registration needs the certificate chosen for distribution.
+The HTTPS callback above remains required by the implemented backend login flow.
+An Android-only registration or native custom redirect does not replace it.
+
+RuStore Console application ID (a separate provider): 2063777840
+Recorded in sdk-checkout125 disabled examples; checkout is not activated.
+
+Scope: public configuration, existing QA APK inspection and newly prepared
+release signing custody. The new private key and local backup passed real
+signing challenges; no APK build, device operation, provider Console change or
+server deployment occurred. Actual release APK signing, live VK consent and
+device acceptance remain pending.
+
+Project integration guide:
+Release/RuStore/VK_BACKEND_AND_CALLBACK_CONFIGURATION.txt
+Official VK web OAuth example:
+https://github.com/VKCOM/vkid-web-sdk

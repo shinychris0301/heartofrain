@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e31feb87c59f04dba3fc5cb6fdcaef, type: 3}
+  m_Name: M68_RuntimeAssets
+  m_EditorClassIdentifier: 
+  master: {fileID: 2800000, guid: 0bad2d171db25f34ab6e052755bad394, type: 3}
+  blink: {fileID: 2800000, guid: 6e8a9e903226502c821bb2982cf2b242, type: 3}
+  reduced: {fileID: 2800000, guid: fe784759b4fb54068ec2a57387b74146, type: 3}
+  halo: {fileID: 2800000, guid: ee971ded73c85e89bec68ec422f0a170, type: 3}
+  star: {fileID: 2800000, guid: 9dba5b3c28935a8caa31e8bdfdbc4fa8, type: 3}
+  clipJson: {fileID: 4900000, guid: d04d05647108555dadf4430536e43328, type: 3}
+  effectsJson: {fileID: 4900000, guid: 542e6e857eed5b758cac9ea8af95a505, type: 3}
+  designJson: {fileID: 4900000, guid: c5e44572fe185fc3a4002feb7b1bb109, type: 3}
+  positions: {fileID: 4900000, guid: ed3ee70c17e75cff82f9390441c4aaff, type: 3}
+  uv: {fileID: 4900000, guid: 44bb5727df1b5ca99e6c23b6147e9d9a, type: 3}
+  indices: {fileID: 4900000, guid: e6540c3e94265c0882932f40fe5f6433, type: 3}
+  sound: {fileID: 8300000, guid: f7bbe93fb0545e6887c40240f52b00f2, type: 3}
+  blendShader: {fileID: 4800000, guid: 5afe6e03e24d7c441b39b3ea15dd0800, type: 3}

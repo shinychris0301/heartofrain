@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "SANDBOX_INTEGRATION126_NOT_PRODUCTION_ACCEPTANCE",
+  "packageName": "com.heartoftherain.game",
+  "consoleApplicationId": "2063777840",
+  "paymentReturnScheme": "heartoftherain-pay",
+  "backendOrigin": "https://api.novamind-it.ru",
+  "privacyPolicyUrl": "https://api.novamind-it.ru/privacy",
+  "supportUrl": "https://api.novamind-it.ru/support",
+  "termsUrl": "https://api.novamind-it.ru/terms",
+  "minimumApiLevel": 26,
+  "targetApiLevel": 36,
+  "versionCode": 126,
+  "signingCertificateSha256": "7257537a5b329cc5b018d93299d748404432c1b49f1b2388444ab843a4ba170d",
+  "environment": "sandbox",
+  "candidateIdentifiers": {
+    "packageName": "com.heartoftherain.game",
+    "paymentReturnScheme": "heartoftherain-pay",
+    "note": "Package com.heartoftherain.game and Console application ID 2063777840 are owner-confirmed. Return scheme heartoftherain-pay is selected for the build; native binding with the actual ID and release acceptance remain pending."
+  },
+  "candidateProducts": [
+    {
+      "shopOfferId": "coins-1000",
+      "proposedStoreProductId": "hotr_coins_1000",
+      "coins": 1000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "coins-5000",
+      "proposedStoreProductId": "hotr_coins_5000",
+      "coins": 5000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "coins-10000",
+      "proposedStoreProductId": "hotr_coins_10000",
+      "coins": 10000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "coins-25000",
+      "proposedStoreProductId": "hotr_coins_25000",
+      "coins": 25000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "coins-50000",
+      "proposedStoreProductId": "hotr_coins_50000",
+      "coins": 50000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "coins-100000",
+      "proposedStoreProductId": "hotr_coins_100000",
+      "coins": 100000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "wellkeeper",
+      "proposedStoreProductId": "hotr_bundle_wellkeeper_c",
+      "coins": 2000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "rainy-day",
+      "proposedStoreProductId": "hotr_bundle_rainy_day",
+      "coins": 3500,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "rainlight",
+      "proposedStoreProductId": "hotr_bundle_rainlight",
+      "coins": 6000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "village",
+      "proposedStoreProductId": "hotr_bundle_village",
+      "coins": 5000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "festival",
+      "proposedStoreProductId": "hotr_bundle_festival",
+      "coins": 10000,
+      "enabled": false
+    },
+    {
+      "shopOfferId": "keepers",
+      "proposedStoreProductId": "hotr_bundle_keepers",
+      "coins": 25000,
+      "enabled": false
+    }
+  ],
+  "note": "Signed sandbox integration candidate for owner-reported provider testing readiness. Public legal pages remain temporary drafts. Production, actual payment/ad acceptance and off-device signing recovery remain separate gates.",
+  "verificationMode": "sdk_client_reported"
+}

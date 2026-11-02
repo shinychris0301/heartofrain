@@ -1,0 +1,162 @@
+[
+  {
+    "id": "TC_Bubble_Incoming",
+    "file": "Art/TC_Bubble_Incoming.png",
+    "width": 2087,
+    "height": 481,
+    "kind": "chat_bubble",
+    "border": [
+      290,
+      190,
+      140,
+      140
+    ],
+    "proofBorderScale": 0.32,
+    "source": "imagegen-native-cropped",
+    "textBaked": false
+  },
+  {
+    "id": "TC_Bubble_Outgoing",
+    "file": "Art/TC_Bubble_Outgoing.png",
+    "width": 2082,
+    "height": 549,
+    "kind": "chat_bubble",
+    "border": [
+      140,
+      190,
+      290,
+      140
+    ],
+    "proofBorderScale": 0.32,
+    "source": "imagegen-native-cropped",
+    "textBaked": false
+  },
+  {
+    "id": "TC_Icon_ArrowDown",
+    "file": "Art/TC_Icon_ArrowDown.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_Chat",
+    "file": "Art/TC_Icon_Chat.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_Clock",
+    "file": "Art/TC_Icon_Clock.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_Mail",
+    "file": "Art/TC_Icon_Mail.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_More",
+    "file": "Art/TC_Icon_More.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_Refresh",
+    "file": "Art/TC_Icon_Refresh.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Icon_Send",
+    "file": "Art/TC_Icon_Send.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined"
+  },
+  {
+    "id": "TC_Notification_Disc",
+    "file": "Art/TC_Notification_Disc.png",
+    "width": 256,
+    "height": 256,
+    "kind": "notification_disc",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "white"
+  }
+]

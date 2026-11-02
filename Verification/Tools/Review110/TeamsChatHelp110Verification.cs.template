@@ -1,0 +1,66 @@
+#if UNITY_EDITOR
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography;
+using System.Text;
+using HeartOfTheRain.App.Home;
+using HeartOfTheRain.App.Localization;
+using HeartOfTheRain.App.OnlineIdentity;
+using HeartOfTheRain.App.OnlineSocial;
+using HeartOfTheRain.App.Teams;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+namespace HeartOfTheRain.Verification {
+ // Staged verifier foundation only. It has no executable acceptance entry until
+ // the final110 DTO/controller contract is received and reviewed by root.
+ public static class TeamsChatHelp110Verification {
+  const BindingFlags Private=BindingFlags.Instance|BindingFlags.NonPublic;
+  const string Player="11111111111111111111111111111111",Other="33333333333333333333333333333333",Team="22222222222222222222222222222222";
+  const string Origin="https://staging.hotr-native-fixture.net";
+  [Serializable] sealed class Row {public string state;public int locale,width,height;public bool inset,passed;}
+  [Serializable] sealed class Report {
+   public string status="RUNNING",utc,unity;
+   public string scope="Actual Unity Editor client/parser/session/outbox/controller and UGUI under explicit in-memory scripted responses; visual snapshots separate. No real server, HTTP/DNS, APK/device, provider or production acceptance.";
+   public int checks,cases,layoutsAttempted,layouts,scriptedExchanges,actualHttpRequests,animationCases;
+   public bool ordinaryProfilesPreserved,serverReviewPreserved,settingsPreserved,languagePreferencePreserved;
+   public List<Row> rows=new List<Row>();public List<string> errors=new List<string>(),captures=new List<string>();
+  }
+  // Deliberately ephemeral CAS: exercises the real protected-journal contract,
+  // without pretending a memory store is device encryption or a process restart.
+  sealed class MemoryStore:IProtectedSessionStore82 {
+   byte[] data;public int writes;public bool failNext;
+   public byte[] Read()=>data==null?null:(byte[])data.Clone();
+   public void CompareExchange(string expected,byte[] replacement){if(failNext){failNext=false;throw new InvalidOperationException("SyntheticCASFailure110");}if((data==null||data.Length==0?"":IdentityProtocol82.Sha(data))!=expected)throw new InvalidOperationException("SyntheticCASConflict110");data=(byte[])replacement.Clone();writes++;}
+   public void Dispose(){if(data!=null)Array.Clear(data,0,data.Length);data=null;}
+  }
+  static Report report;static string output;static TeamsAssets assets;
+  static void Check(bool yes,string label){report.checks++;if(!yes)throw new InvalidOperationException(label);}
+  static T Field<T>(object value,string name)=>(T)value.GetType().GetField(name,Private).GetValue(value);
+  static void Set(object value,string name,object replacement)=>value.GetType().GetField(name,Private).SetValue(value,replacement);
+  static string Words(string text)=>string.Join(" ",(text??"").Split((char[])null,StringSplitOptions.RemoveEmptyEntries));
+  static string Digest(string path){if(!Directory.Exists(path))return "Absent";using(var sha=SHA256.Create()){string rows=string.Join("\n",Directory.GetFiles(path,"*",SearchOption.AllDirectories).OrderBy(v=>v,StringComparer.Ordinal).Select(p=>p.Substring(path.Length)+":"+BitConverter.ToString(sha.ComputeHash(File.ReadAllBytes(p)))));return IdentityProtocol82.Sha(Encoding.UTF8.GetBytes(rows));}}
+  static Rect Bounds(RectTransform child,RectTransform root){var p=new Vector3[4];child.GetWorldCorners(p);var v=p.Select(root.InverseTransformPoint).ToArray();return Rect.MinMaxRect(v.Min(x=>x.x),v.Min(x=>x.y),v.Max(x=>x.x),v.Max(x=>x.y));}
+  static bool Contains(Rect a,Rect b,float tolerance=.5f)=>b.xMin>=a.xMin-tolerance&&b.xMax<=a.xMax+tolerance&&b.yMin>=a.yMin-tolerance&&b.yMax<=a.yMax+tolerance;
+  static void ScrollTo(ScrollRect scroll,float position){Canvas.ForceUpdateCanvases();scroll.Rebuild(CanvasUpdate.Prelayout);scroll.Rebuild(CanvasUpdate.PostLayout);scroll.verticalNormalizedPosition=position;Canvas.ForceUpdateCanvases();}
+  static bool Painted(Color32 p)=>!(p.r>245&&p.g<10&&p.b>245);
+  static void ImportRoles(){
+   string[] files=Directory.GetFiles("Assets/HeartOfTheRain/App/TeamsSocial/Art","TC_*.png");Check(files.Length==10,"Exactly ten new approved TC PNGs are present");
+   foreach(string path in files){var importer=AssetImporter.GetAtPath(path) as TextureImporter;var sprite=AssetDatabase.LoadAssetAtPath<Sprite>(path);Check(importer&&sprite&&importer.textureType==TextureImporterType.Sprite&&!importer.isReadable&&importer.alphaIsTransparency,"Imported TC role is a non-readable alpha sprite "+path);bool bubble=Path.GetFileName(path).StartsWith("TC_Bubble_",StringComparison.Ordinal);Check(bubble?!importer.mipmapEnabled&&importer.filterMode==FilterMode.Bilinear&&sprite.border.sqrMagnitude>0:importer.mipmapEnabled&&importer.filterMode==FilterMode.Trilinear,"TC role keeps appropriate sliced/detailed filtering "+path);Check(importer.textureCompression==TextureImporterCompression.Uncompressed,"TC artwork keeps its source pixel clarity "+path);byte[] png=File.ReadAllBytes(path);int w=png[16]<<24|png[17]<<16|png[18]<<8|png[19],h=png[20]<<24|png[21]<<16|png[22]<<8|png[23];Check(importer.maxTextureSize>=Math.Max(w,h),"TC source pixel budget is retained "+path);Check(assets.Find(Path.GetFileNameWithoutExtension(path))==sprite,"Actual Teams lookup resolves the exact TC sprite "+path);}
+   foreach(string id in new[]{"TA_Stat_heart","TA_Stat_star","TA_Icon_Help"}){var sprite=assets.Find(id);var importer=AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(sprite)) as TextureImporter;Check(sprite&&importer&&importer.mipmapEnabled&&importer.filterMode==FilterMode.Trilinear,"Original detailed R4 feedback role remains intact "+id);}
+  }
+  // Complete only the private captured client request; never MoveNext Exchange.
+  // Its method/path/body and pending token are read from the compiler-generated
+  // iterator so actual strict parsing and journal acknowledgement still run.
+  static void CompleteScripted(SocialBackendClient82 client,IEnumerator exchange,string json,string error=null,bool unknown=false){
+   Check(exchange.GetType().Name.StartsWith("<Exchange>",StringComparison.Ordinal),"Only explicit scripted HTTP iterator boundary is intercepted");var pending=typeof(SocialBackendClient82).GetField("active",Private).GetValue(client);Check(pending!=null,"Actual social client owns the scripted pending request");typeof(SocialBackendClient82).GetMethod("Complete",Private).Invoke(client,new[]{pending,json,error,(object)unknown});pending.GetType().GetMethod("Release",BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic).Invoke(pending,null);(exchange as IDisposable)?.Dispose();report.scriptedExchanges++;
+  }
+ }
+}
+#endif

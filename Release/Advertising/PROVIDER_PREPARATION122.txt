@@ -1,0 +1,132 @@
+Advertising and VK deployment preparation — 30 October 2026
+
+CURRENT HOST AND LIMIT
+
+The deployment record is Release/RuStore/WindowsVps/DEPLOY.md. Its configured
+origin is https://api.novamind-it.ru and its service is HOTRStaging. That record
+does not make payments, VK or ads live: its deployed manifest disables them.
+Do not initialize a new authority, change identityScope/deploymentId, copy a
+local wallet, or replace the existing database to enable a provider.
+
+The public ad IDs already approved in source remain:
+  Rewarded video: R-M-20291714-1
+  Interstitial: R-M-20291714-2
+There is no interstitial display placement. The only approved offer is the
+voluntary Shop video: 400 coins, three credited claims per player-local day,
+600 seconds after each credit. No fill/cancel/incomplete video spends quota.
+
+INPUTS STILL NEEDED
+
+1. The issued numeric VK ID application/client ID. Register the exact HTTPS
+   browser callback https://api.novamind-it.ru/v1/identity/vk/callback in that
+   application's console. The current backend uses PKCE; it has no VK client
+   secret setting, native VK Android SDK callback or automatic app-return link.
+2. The actual published Russian privacy-policy URL and reviewed version,
+   covering the installed Yandex SDK/AppMetrica and backend processing. Keep the
+   six public V2 fields in advertising.example.json; no passwords or tokens.
+3. Confirmation in the Yandex publisher console that both supplied ad units
+   belong to the intended release Android package/listing, publisher/payment
+   details and moderation are complete, and the rewarded unit describes the
+   same 400-coin offer.
+4. An SDK-enabled, configured Android candidate and provider acceptance records.
+   The current managed staging build alone does not contain/activate every SDK.
+
+VERIFY CONFIGURATION BEFORE CHANGING THE HOST
+
+Backend/hotr_backend/provider_readiness122.py provides the offline function
+assess_ads_and_vk(public_origin=..., vk=..., advertising=..., backend_ads=...).
+The combined production-preparation command consumes its sanitized report.
+It checks exact VK callback/origin matching, strict enabled booleans, the six
+public advertising fields, approved unit IDs, HTTPS privacy URL, client/server
+enablement parity and the existing fixed backend reward policy. It reflects no
+input values and performs no network, file or account operation.
+
+Disabled configurations can be syntactically valid and still blocked. A report
+readyForProviderTest=true means those public values are consistent; it does not
+prove published policy, VK app ownership, SDK playback, publisher approval or
+production activation. productionEnabled and providerAcceptanceVerified remain
+false. Do not use a green configuration report as permission to enable money.
+
+CONTROLLED HOST TRANSITION AFTER THE INPUTS ARE AVAILABLE
+
+Use the existing protected service descriptor:
+  C:\ProgramData\HeartOfTheRain\services\staging-manifest.json
+and service interpreter:
+  C:\Apps\HeartOfTheRain\Backend\.venv-service\Scripts\python.exe
+Work in the deployed Backend directory. Keep a protected exact copy of the
+current descriptor and take/verify an online backup before stopping HOTRStaging.
+Use the existing backup command documented in WindowsVps/DEPLOY.md. Confirm
+the existing authority, deployment ID, identity scope and database are retained.
+
+For VK, set only the manifest's vk object to enabled:true, the issued numeric
+clientId and the exact callback above. A pending authorization is bound to its
+configuration fingerprint, so finish/cancel pending authorizations before
+changing an already active VK registration. Run staging105 preflight against
+the same descriptor before restarting the same owned service. This remains
+the supported staging path; HOTR_BACKEND_MODE=production is not implemented.
+
+For ads, set rewardedAdsEnabled:true in that same descriptor while stopped,
+then use the existing owned policy transition (from the deployed Backend):
+
+  .\.venv-service\Scripts\python.exe -B -m hotr_backend.staging105 configure-rewarded-ads --manifest C:\ProgramData\HeartOfTheRain\services\staging-manifest.json
+  .\.venv-service\Scripts\python.exe -B -m hotr_backend.staging105 preflight --manifest C:\ProgramData\HeartOfTheRain\services\staging-manifest.json
+
+Do not edit Backend/config/ads.json or the owned private policy by hand to
+bypass that transition. It retains existing opportunities, receipts and wallet
+history. To disable new reservations, repeat the stopped transition with the
+flag false; retain recovery of existing reports/claims.
+
+Export a fresh managed-app payload with staging105 export-app-config to a NEW
+private output file. Build the advertising and managed public payloads together
+using the reviewed SDK8.6.0 isolated builder in SETUP107.txt. Use the approved
+engine/toolchain profile and a fresh candidate; do not upgrade the main engine,
+reuse an old SDK-free APK, or put server secrets in Unity Resources. The older
+107 builder is a development/staging build workflow, not a signed release.
+
+Keep callback code/state/device parameters out of Caddy/CDN/WAF/access/error
+and tracing logs. Keep body logging disabled. Preserve callback no-store,
+no-referrer and CSP headers. Existing Caddy without an access-log directive does
+not automatically establish the behavior of every upstream layer.
+
+ACCEPTANCE BEFORE RELEASING THESE FEATURES
+
+VK: test actual registration of a new managed guest, explicitly confirmed
+sign-in to an existing linked player, browser cancel, manual app return,
+duplicate/expired callbacks, interrupted exchange/completion, network loss,
+account switch/logout and deletion. Confirm the stable player and wallet are
+unchanged after registration, with no extra genesis or automatic wallet merge.
+Use two actual accounts and the intended Android build on real HTTPS hosting.
+
+Ads: use the official demo-unit harness for playback testing. The full-game
+profile locks the supplied real units; do not insert demo units into that
+profile or click live ads while developing. Cover complete/incomplete/cancel,
+no fill/load/show failure, duplicate callbacks, background, token renewal,
+termination after completion before network reply, interrupted durable-journal
+write, reconnect, account change and disable-with-pending-claim recovery. Check
+one server credit and authoritative wallet refresh, the three-claim cap, current
+server-time cooldown, local midnight, travel and 23/25-hour DST days. Resolve
+the retained Review116 Windows journal replacement fault before claiming its
+recovery path is qualified. A passing ASGI fixture is not an Android SDK test.
+
+Yandex does not provide server-side rewarded-view verification. This existing
+integration is sdk_client_reported_capped. The backend owns the amount, quota,
+ownership, atomic credit and durable receipt; an authenticated modified client
+can forge up to the capped 1,200 coins/day. Do not invent a provider signature,
+shared client secret or public trusted-reward webhook. The configured SDK also
+requires AppMetrica; verify the actual privacy/consent behavior on device.
+
+Monitor quota anomalies, interrupted/pending claims and provider failures using
+bounded aggregates. Do not use user IDs, tokens, OAuth query strings, ad payloads
+or purchase bodies as metric labels. Backend health/readiness alone cannot
+prove a completed video or successful VK exchange.
+
+CURRENT PRIMARY REFERENCES CHECKED ON 30 OCTOBER 2026
+
+https://ads.yandex.com/helpcenter/en/dev/unity/quick-start
+https://ads.yandex.com/helpcenter/en/dev/unity/rewarded
+https://ads.yandex.com/helpcenter/en/support/faq/sdk-integration
+https://github.com/VKCOM/vkid-web-sdk
+https://github.com/VKCOM/vkid-web-sdk/blob/master/src/auth/auth.ts
+
+This preparation does not deploy files, alter the VPS, register applications,
+enable features, request ads, authorize VK or establish production acceptance.

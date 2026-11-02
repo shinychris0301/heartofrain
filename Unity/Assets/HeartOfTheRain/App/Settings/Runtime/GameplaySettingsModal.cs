@@ -72,13 +72,13 @@ namespace HeartOfTheRain.App.Settings
                 {
                     var t=rt.gameObject.AddComponent<Text>();t.font=assets.approvedUI.home.boldFont;t.text=e.text;t.color=ColorOf(e.color);t.fontSize=e.fontSize;
                     t.alignment=TextAnchor.MiddleCenter;t.raycastTarget=false;t.supportRichText=false;t.horizontalOverflow=HorizontalWrapMode.Overflow;t.verticalOverflow=VerticalWrapMode.Truncate;
-                    while(t.fontSize>10&&t.preferredWidth>e.width)t.fontSize--;
+                    LabelFit.Apply(t,e.width,e.height);
                     if(e.shadow){var shadow=rt.gameObject.AddComponent<Shadow>();shadow.effectColor=new Color(0,.025f,.06f,.9f);shadow.effectDistance=new Vector2(0,-1);}
                 }
                 else
                 {
                     var im=rt.gameObject.AddComponent<Image>();im.sprite=assets.Find(e.asset);im.color=ColorOf(e.color);im.raycastTarget=false;
-                    im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.preserveAspect=e.preserveAspect;im.pixelsPerUnitMultiplier=e.sliced?4:1;
+                    im.type=e.sliced?Image.Type.Sliced:Image.Type.Simple;im.preserveAspect=e.preserveAspect;SpriteFit.Center(im);im.pixelsPerUnitMultiplier=e.sliced?4:1;
                 }
             }
             // Art and labels deliberately stay siblings so they can share exported geometry.

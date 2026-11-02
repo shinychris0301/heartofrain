@@ -1,0 +1,128 @@
+HEART OF THE RAIN — NO MOVES / COIN CONTINUE R2
+
+DELIVERY STATUS
+This is a design asset patch, interactive review, and compiled/tested pure C# reference domain.
+It does not claim to update or validate the current Codex branch. No current full project or Unity Editor was available.
+The .unitypackage installs source sprites, fonts, documentation and the reference domain. It contains no replacement
+GameplayScreen, BoardModel, HomeLevelFlow, prefab, or fabricated scene. Wire the current project as described below.
+The browser review is not a playable match-3 board. Its saved Gameplay Direction A R11 image is visual context only.
+
+CONFIRMED GAP IN SAVED SOURCE
+M70 CodeChanges/GameplayScreen.cs, UpdateHUD(): after !Busy and !resultShown, every board.Status != "Playing"
+calls hud.ShowResult(board.Status == "Won", ...). There is no coin-continue offer in that branch.
+Next() emits TurnSettled after the presentation queue is empty; this is the appropriate presentation boundary.
+M70 Start(): hud.ContinuePressed loads the NEXT level. It is NOT an extra-moves action. Never reuse that callback.
+M70 Load(): recreates BoardModel, RNG/presentation/starting inventory. Calling Load() to buy moves would restart the board.
+M58 GameplaySettingsController / EndLevelSession provide voluntary exit confirmation, not a coin purchase flow.
+M58 HomeLevelFlow.ConfirmExit directly copies LivesAfter to Home. Do not combine that write with another life debit.
+The current production branch may differ: inspect its corresponding methods and upstream failure listeners before merging.
+
+REQUIRED FLOW
+1. Finish the accepted turn completely: swaps, cascade resolution, deliveries, target collection, power-up effects and goals.
+2. Check success FIRST. A win on the final move must take the victory route, with no continue offer or life debit.
+3. If goals remain and moves == 0, enter AwaitingContinue, persist the exact attempt snapshot and block board input.
+   Show the short Out of moves notification, then the character-led Continue? panel. Fetch its quote concurrently.
+   Keep the same attempt ID. Do not settle failure, delete the board, charge a life, grant rewards or restart a level.
+4. Obtain a trusted quote: quote ID, attempt ID/revision, extra move count, coin cost, expiry and policy version.
+   Show wallet balance, +N moves and the exact price. Do not bake strings or numbers into sprites.
+5. The single Play On button always displays the move price. If the latest balance is insufficient, open the
+   existing shop immediately with entryContext=continueAttempt; dispatch NO move-purchase request. Otherwise,
+   on the explicit tap persist one operation ID before sending; disable purchase/exit/settings/gestures.
+   Use an authenticated durable transaction to validate the quote, debit coins, add moves to the same attempt,
+   increment continue count/revisions, and record the receipt as ONE commit. The board snapshot must be unchanged.
+6. Apply/reconcile the authoritative attempt and wallet, then resume the existing BoardModel. Close the modal,
+   refresh the HUD snapshot and reset the result latch. Unlock input only after both model and presentation are ready.
+7. If the player declines, open the existing end-level confirmation. Cancel goes BACK TO THE OFFER, not to a zero-move board.
+   Confirm settles this attempt once, applies the existing life policy, then opens the established Try Again pre-level flow.
+   Retrying creates a new attempt. It must not debit this failed attempt a second time.
+
+CURRENT-SOURCE INTEGRATION POINTS (adapt, do not replace whole historical files)
+- Change the terminal branch in GameplayScreen.UpdateHUD to dispatch victory or a latched NoMovesRequested event.
+  Resolve the failed-zero-move case without invoking the old ShowResult(false) or any automatic failure settlement.
+  Subscribe before input is enabled; the no-moves route must not silently fall back to the old failure screen.
+- Reuse TurnSettled as a signal, but gate on !Busy and final goals. Latch by attempt revision to prevent duplicate modals.
+- Add a BoardModel entry point that can resume an awaiting-continue attempt from an authoritative receipt/snapshot.
+  It must permit the zero-move terminal state to become Playing; keep all pieces, obstacle state, powers, score,
+  goals, RNG, move history, board shape and in-level booster inventory. Do not call Load()/Retry()/starting-power grants.
+- After reconciliation in GameplayScreen: idle = board.Snapshot(); resultShown = false; previousMoves = board.Moves;
+  clear stale uiHint; invalidate any pending pointer gesture; refresh Render()/UpdateHUD(); resume clocks and input.
+  These are the observed M70 names, not a guaranteed patch against the current branch.
+- Make the new modal participate in HUD blocking and settings visibility. Existing OnApplicationFocus/OnApplicationPause
+  must not open a second pause panel over it or resume the board behind it. UI animation uses unscaled time.
+- Keep underlying Home coin/life counters synchronized from the same authoritative store, using monotonic revisions.
+  Do not apply an older receipt's wallet balance over a newer wallet update. Refresh authority state if necessary.
+- Replace/route the old direct life mutation in ConfirmExit; there must be ONE settlement owner per attempt.
+  Keep existing refill start/end times, cap, unlimited-life entitlement and offline reconciliation behavior.
+
+PURCHASE RECOVERY AND PERSISTENCE
+- ReferenceLogic/ContinueService.cs supplies the domain rules, quote binding, atomic debit/grant contract,
+  idempotent receipt replay, final-attempt settlement and client pending-request gate. It is independent of Unity.
+- IAtomicStore MUST provide an authenticated, durable, serializable transaction scoped to a player. All coin writers,
+  including shop grants, spend/reward paths and refunds, must share the authority and wallet revision.
+- The Tests/MemoryStore is explicitly in-memory TEST code. Do not ship it as the production economy store.
+- IPendingPurchaseJournal must save before network dispatch. Persist pending ID, quote ID and attempt ID securely
+  with the attempt snapshot. On process restart recover that journal, query the receipt, and reconcile before playing.
+- A timeout or lost reply is UNKNOWN, not failure. Do not declare coins unspent or allow a new operation ID/exit.
+  Lookup the original command; if lookup returns no receipt, a request can still be in flight. Resend the SAME ID
+  or use an authority operation that serializes cancellation against commit. Never infer cancellation from a timeout.
+- Clear pending only after durable local application of the authoritative state. A crash before clearing should
+  replay/reconcile the same receipt and set the absolute move state; never blindly add N on every callback.
+- Known InsufficientCoins or StaleQuote replies complete the old operation. Refresh balance/quote. Require a new tap
+  for a changed price, and a new operation ID for a genuinely new purchase. Honor a quote until its stated expiry.
+- Receipts must outlive any retry/recovery window and survive server restarts. Retention/compaction is an authority concern.
+- Refill and unlimited-life logic must run inside the existing settlement authority. The reference covers finite lives
+  and an unlimited-until timestamp, but does not implement the existing refill timer service or award settlement.
+
+INSUFFICIENT COINS / SHOP — R2
+There is no Get coins intermediate screen. Play On is the same control for all balances. If insufficient, open the
+coin-focused shop immediately in that action. If a concurrent wallet change causes the server to reject an apparently
+affordable purchase, route its known InsufficientCoins reply to Shop as well. Preserve this attempt, board and life.
+Back/Close in Shop restores Continue, not Home or a new level. After an authoritative store receipt credits coins,
+refresh the quote and wallet and restore Continue. A NEW explicit Play On tap purchases the moves.
+The optional Village Purse price below the modal selects coins-1000 and opens the native store confirmation.
+Store cancellation/failure stays in Shop with no new credit; a timeout is unknown and requires reconciliation of the
+existing store transaction, not a new purchase or a claim that no charge occurred. Prevent duplicate callbacks/credits.
+Use the existing IAP receipt validator and wallet transaction authority. Do not ship the browser's simulated timers.
+The shop product data was read from M63, which is marked isPreview. Real prices and availability must come from the
+platform store. Preserve the main Shop page's carousel, special offers and separate Rocket/Bomb inventory.
+ContinuePresentationFlow.cs supplies this routing without mutating currency or lives. Bind it to the domain service,
+persisted attempt ID, quote revision and current UI lifecycle; ignore stale callbacks from another attempt/account.
+
+ECONOMY CONFIGURATION
+No approved continue price or move quantity was found in the inspected artifacts. Review fixture = 900 coins / +5 moves.
+Data/Continue_Config.example.json is disabled and marked DEMO_ONLY. Configure real values through the existing economy
+system; do not import the fixture as a production default. Subsequent offers and maximum continues are also policy-driven.
+No automatic escalation, countdown urgency, reward grant, booster grant or chapter-progression change is introduced.
+If no valid quote exists or the continue limit is reached, show an unavailable state and the confirmed-exit route.
+
+VIEW / ASSETS — R2
+See Reference_Review_R2.txt and Layout_Contract.json. Reuse the original Primary/Close pixels and GUIDs; AccountChrome
+remains for exit confirmation. The new wide band, move badge, notification band and soft halo are editable SVG/PNG UI
+surfaces in the approved sapphire, ivory and gold palette. The character portrait is an identity-preserving adaptation
+of the approved M67R4 Dariya reference, isolated to this modal. The original character image and generation prompt are
+included for identity review. The main game character assets and animations are untouched.
+SP_CoinPouch and SP_Mega retain M63 pixels in isolated NoMovesDesign paths to avoid legacy import policies. Numbers,
+move quantities, wallet, localized copy and prices are live. The body is a two-column character/offer composition.
+Phones stack the optional coin offer below; landscape places it beside the continue panel. The shop list scrolls.
+Five locales: EN, ES, FR, DE, RU. No Japanese. Use the current app localization service and TMP with the supplied fonts.
+For unlimited lives, use the existing no-life-loss exit copy rather than claiming that a life will be lost.
+
+ANTI-BLUR INSTALLATION
+Art source PNGs are unchanged copies or native vector exports, not upscaled thumbnails.
+Panel borders: Image.type=Sliced, white tint, full-rect sprite; do not use a screen-sized flattened modal texture.
+Detailed icons: Box mipmaps + Trilinear. Sliced UI: no mipmaps + Bilinear. PNG source dimensions are preserved.
+Android/iPhone/Standalone have explicit RGBA32 reference settings. Optimize only after side-by-side on-device comparison.
+Shared UIClarityRegistry is a GUID-based MERGE, not a blind replacement. Merge Data/UIClarity_Entries.json into the
+current registry and retain every existing entry. OptionalTools contains a 69-entry candidate based on the saved
+62-entry No Moves R1 registry; use it only if the current registry is still that baseline. It is NOT in the import package.
+Do not let old import postprocessors clear overrides; run the current UIClarityGuard after import and inspect atlas
+packing/variant scales, CanvasScaler, dynamic resolution, render targets, quality mip limits and live physical pixels.
+Use a true Screen.safeArea wrapper and keep the ornamental title/close button outside the scrolling mask.
+
+VALIDATION REQUIRED IN THE CURRENT PROJECT
+Browser responsive/localization tests and pure C# tests are included. Neither proves native project integration.
+Run Unity compilation, current board tests, Play Mode and device builds. Verify final-move victory, chained explosions,
+goal-collection completion, no duplicate offer, same-board/RNG continue, repeat purchases and limits, exact/insufficient
+balance, simultaneous wallet changes, timeout before/after commit, offline resume, app kill/relaunch, late callbacks,
+shop cancellation, quote expiry, account switch, settings/back behavior, life refill/unlimited lives, and a single
+settlement owner. Verify canvas/text/atlas clarity on 1x/3x/4x display budgets and tall/short phones/tablets.

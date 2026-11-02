@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_AWAITING_ROOT_SOURCE_FREEZE",
+  "utc": "2026-10-28T14:26:34.598556Z",
+  "mainEngine": "2022.3.62f3",
+  "baseline103": {
+    "path": "Verification/Evidence/Review103/Native/TeamsMain02/MainSources_after.json",
+    "sha256": "da4f827de588d0201a3ff595c6fe2091e6ee7515fdd291aaa79f2fb7d57ea0fe",
+    "bytes": 1055617
+  },
+  "readOnlyCurrentMainBaseline": {
+    "path": "Verification/Tools/Review104/BaselineMain104.json",
+    "sha256": "8a5912bea6ae3a178bf708c95f8a5fc8240f6825d784c19bbc873a33f25b7801",
+    "bytes": 1077520
+  },
+  "mainInputsMatch103": true,
+  "runner": {
+    "path": "Verification/Tools/Review104/run_native104.py",
+    "sha256": "cd4541fe67b19c74a81a15c42bcceeb168d35a40cf800dad60f47db2c545b513",
+    "bytes": 14658
+  },
+  "nativeInvocationsRun": false,
+  "apkOrAdbDeviceActionsRun": false,
+  "proposedSuites": [
+    {
+      "entry": "HeartOfTheRain.Verification.ServerConfiguration104Verification.Run",
+      "report": "Native/ServerConfiguration104.json",
+      "env": "HOTR_REVIEW104_OUT",
+      "expected": "PASS_NATIVE_SERVER_CONFIGURATION104",
+      "scope": "Main-safe parser/resolver/temp file IO; no host initialization."
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.ServerGameplay83Verification.Run",
+      "report": "Native/ServerGameplay.json",
+      "env": "HOTR_SERVER_GAMEPLAY_OUTPUT",
+      "expected": "PASS_NATIVE_SERVER_GAMEPLAY83_CORE",
+      "quit": true
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.TeamsDiscovery103Verification.Run",
+      "report": "Native/TeamsDiscovery103.json",
+      "env": "HOTR_REVIEW103_OUT",
+      "expected": "PASS_NATIVE_TEAMS_DISCOVERY103"
+    },
+    {
+      "entry": "HeartOfTheRain.App.ServerGameplay.Editor.StagingServerPackagingVerification104.Run",
+      "report": "StagingPackaging104.json",
+      "env": "HOTR_STAGING104_NATIVE_OUT",
+      "expected": "PASS_NATIVE_STAGING_PACKAGING104",
+      "projectScope": "staging104",
+      "scope": "Actual imported Resources+owned success/failure cleanup; delegate only, no BuildPipeline."
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.ServerConfiguration104Verification.RunIsolated",
+      "report": "Native/ServerConfiguration104_Isolated.json",
+      "env": "HOTR_REVIEW104_OUT",
+      "expected": "PASS_NATIVE_SERVER_CONFIGURATION104_ISOLATED",
+      "projectScope": "staging104",
+      "scope": "Adds actual ProfileHost selected-invalid isolation; no valid gateway bootstrap."
+    }
+  ],
+  "androidPackaging": "No LTS, BuildPipeline, APK or ADB/device operation in104; root explicitly narrowed to actual Unity2022 resource-delivery fixture.",
+  "safetyCases": [
+    "No payload keeps ordinary local mode and its existing profile.",
+    "Selected invalid/missing config never silently falls back to a different wallet.",
+    "Exact precedence of explicit review override, packaged staging and persistent input matches approved policy.",
+    "Nonsecret bounded resource only; reject insecure/invalid origin, scope, version and staging mode.",
+    "Ordinary Profiles, managed stores and preference presence/value remain preserved.",
+    "Build pre-existing Resource/meta and stale payload are rejected or restored under explicit ownership.",
+    "Successful and failed build paths clean generated payload without altering source assets.",
+    "Production/RuStore guards cannot be bypassed by a staging config."
+  ],
+  "scope": "Read-only source inspection and checkpoint-local tool preparation. No Unity/compiler/backend test, live HTTP/provider, SDK, APK, ADB or device action run.",
+  "isolatedProjectPreparation": {
+    "owner": "Editor builder agent",
+    "tool": "Verification/Tools/Review104/prepare_staging104.py",
+    "candidatePattern": ".verification-cache/Review104/Candidates/<tag>/Game",
+    "receipt": "Sibling Preparation.json",
+    "scope": "One fresh Unity2022 clone only after source freeze; actual Editor import/Resources.Load/guard/failure cleanup. No BuildPipeline/APK/HTTP/device."
+  },
+  "fixtureOrigin": {
+    "value": "https://staging.hotr-native-fixture.net",
+    "rootApproved": true,
+    "assignedOrOwnedBackend": false,
+    "dnsOrHttpAllowed": false,
+    "scope": "Only parsed/imported, never contacted."
+  },
+  "hostPreparationTests": "Verification/Tools/Review104/test_prepare_staging104.py (builder-owned; execution after root freeze only).",
+  "runnerPreparationFrozen": true
+}

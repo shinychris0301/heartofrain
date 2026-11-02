@@ -1,0 +1,22 @@
+{
+  "status": "PREPARED_NATIVE_HTTP_TEST_ASSET102_NO_EXECUTION",
+  "source": {
+    "path": "Verification/Tools/Review102/VkSignin102HttpVerification.cs",
+    "sha256": "90e70b7cfb5b4f7707b285466cbd0852c5ce905922a7500efc0fa9ec367ccc04"
+  },
+  "asset": {
+    "path": "Unity/Assets/HeartOfTheRain/Verification/Editor/VkSignin102HttpVerification.cs",
+    "sha256": "90e70b7cfb5b4f7707b285466cbd0852c5ce905922a7500efc0fa9ec367ccc04"
+  },
+  "meta": {
+    "path": "Unity/Assets/HeartOfTheRain/Verification/Editor/VkSignin102HttpVerification.cs.meta",
+    "guid": "c416dd1ff2df4f959f50c69166c37089",
+    "sha256": "10ecaeb4373be89345832c1dc6f9dd9ff3afae90586dc0b37675db1e03f291e9"
+  },
+  "newGuidCheckedUnique": true,
+  "existingMetaFilesWritten": false,
+  "pythonPreparationSyntaxParsedOnly": true,
+  "scope": "Authorized exact test-source copy plus one new stable MonoImporter GUID before combined freeze. No Unity/compiler/native/worker/backend/service/device execution.",
+  "confirmedExpiryCaseAdded": true,
+  "existingMetaPreservedOnTemplateUpdate": true
+}

@@ -1,0 +1,40 @@
+{
+  "revision": "TeamsSocial_R1",
+  "purpose": "UI feedback only; no idle pulsing or gameplay-sized explosions",
+  "helpSent": {
+    "trigger": "successful server donation",
+    "durationMs": 600,
+    "heart": "TA_Stat_heart",
+    "path": "quadratic arc from Help button to the new filled slot",
+    "scale": [
+      1,
+      1.25,
+      1
+    ],
+    "arrival": "3 tiny TA_Stat_star sprites, 120-220 ms outward motion and fade",
+    "counter": "use authoritative response; never predict success",
+    "samplePreview": "Review/10_Help_Feedback.mp4"
+  },
+  "requestPosted": {
+    "trigger": "server request creation succeeds",
+    "durationMs": 180,
+    "effect": "new card fades and rises 12 reference units into feed"
+  },
+  "collect": {
+    "trigger": "server claim transaction succeeds",
+    "durationMs": 600,
+    "effect": "small heart lift and settle at existing lives/bank widget; use actual visible destination or local check if header hidden",
+    "amount": "server-granted count only; no visual credit before confirmation"
+  },
+  "buttonPress": {
+    "durationMs": 80,
+    "scale": 0.97,
+    "retainTouchRect": true
+  },
+  "reducedMotion": {
+    "durationMs": 100,
+    "effect": "crossfade/check only; no travel, scale bounce, particles or vibration"
+  },
+  "sound": "reuse approved UI success sound if available; honor existing sound setting; no audio supplied",
+  "runtimeImplemented": false
+}

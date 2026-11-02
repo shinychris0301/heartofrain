@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_NO_NATIVE_EXECUTION",
+  "scope": "Read-only toolchain inspection and checkpoint-local serial runner preparation. No Unity, compiler, replay worker, ADB, device, backend service or test has run.",
+  "sourceRunner": {
+    "path": "Verification/Tools/Review101/run_native101.py",
+    "sha256": "0ef4642d94281d0dbe50068356b138411d0808a8c9eaefbc13c341d45c62c7d1"
+  },
+  "newRunner": {
+    "path": "Verification/Tools/Review102/run_native102.py",
+    "sha256": "e11070cc85c9cffa86dc8618360c34a0a74b8204ceb821b60b2fc7f45591491b"
+  },
+  "mainEditor": {
+    "path": "C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Unity.exe",
+    "version": "2022.3.62f3"
+  },
+  "approvedIsolatedEditor": {
+    "path": "E:/HeartRainUnity6LTS95/6000.3.27f1/Editor/Unity.exe",
+    "version": "6000.3.27f1",
+    "project": ".verification-cache/Review98/Game",
+    "promoted": false,
+    "plannedExecution": false
+  },
+  "worker": {
+    "path": ".verification-cache/PinnedReplay83/Worker",
+    "approval": "Verification/Evidence/ServerGameplay83/Backend/Verified324/Local_Approval.json",
+    "expectedApprovalSHA256": "cffc33acb67c7e8d3c7c77b5d9f52bcaeb37920a44975143c7cfa638021d8c43",
+    "fileCount": 176,
+    "willExecuteBeforeFreeze": false
+  },
+  "nativeCases": [
+    {
+      "entry": "HeartOfTheRain.Verification.VkSignin102Verification.Run",
+      "report": "Native/VkSignin102.json",
+      "env": "HOTR_REVIEW102_OUT",
+      "expected": "PASS_NATIVE_VK_SIGNIN102",
+      "scope": "Actual new protocol/journal/account UI fixture; synthetic service controls must stay explicit."
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.Identity82Verification.Run",
+      "report": "Native/Identity82.json",
+      "env": "HOTR_IDENTITY82_OUTPUT",
+      "expected": "PASS_NATIVE_IDENTITY82"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.ServerAccount83Verification.Run",
+      "report": "Native/AccountContracts.json",
+      "env": "HOTR_SERVER_GAMEPLAY_OUTPUT",
+      "expected": "PASS_NATIVE_SERVER_ACCOUNT83_CONTRACTS"
+    },
+    {
+      "entry": "HeartOfTheRain.Verification.ProviderIdentity89Verification.Run",
+      "report": "Report.json",
+      "env": "HOTR_PROVIDER89_OUT",
+      "expected": "PASS_NATIVE_PROVIDER_IDENTITY89"
+    }
+  ],
+  "sequence": [
+    "Wait for root explicit combined source freeze",
+    "Main native compile/new VK cases then relevant identity/account/provider regressions",
+    "Current full backend tests with approved actual replay worker, zero skips required",
+    "Actual loopback managed HTTP VK registration/signin/completion with explicitly synthetic provider responses and independent SQLite audit",
+    "Root review source epochs/selected actual Editor UGUI captures and material open gates"
+  ],
+  "phonePolicy": "No APK build, replacement install or device mutation planned. Preserve checkpoint101 b74 and its ordinary saved profile; no live VK acceptance without actual registration/hosted backend/test account."
+}

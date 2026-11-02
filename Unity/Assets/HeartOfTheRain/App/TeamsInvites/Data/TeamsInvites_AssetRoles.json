@@ -1,0 +1,34 @@
+{
+  "version": "R1",
+  "roles": {
+    "teamBadge": "TA_Badge_drop",
+    "crest": "TA_Badge_banners",
+    "inviteAction": "TA_Icon_Invite",
+    "copyCode": "TI_Icon_Copy",
+    "share": "TI_Icon_Share",
+    "search": "TA_Icon_Search",
+    "sentCheck": "TA_Icon_Check",
+    "successDisc": "TA_Check_Disc",
+    "close": "TA_Icon_Close",
+    "people": "TA_Icon_People",
+    "receivedLetter": "TM_Letter_Open",
+    "level": "TA_Stat_up",
+    "score": "TA_Stat_star",
+    "lives": "TA_Stat_heart",
+    "help": "TA_Icon_Help",
+    "panel": "TA_Panel_Blue",
+    "card": "TA_Panel_Cream",
+    "input": "TA_Field",
+    "primary": "TA_Button_Green",
+    "secondary": "TA_Button_Blue"
+  },
+  "preserveAllBaseSpritesAndGUIDs": true,
+  "tints": {
+    "paintedArt": "white",
+    "TA_Icon_Invite": "white, source contains navy outline",
+    "copyShare": "white",
+    "search": "#537187",
+    "people": "#05426b"
+  },
+  "newAssetType": "Two editable vector utility glyphs; no painted artwork regenerated."
+}

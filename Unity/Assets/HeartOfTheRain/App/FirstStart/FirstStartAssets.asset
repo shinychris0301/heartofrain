@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a322e79e9c522082f895be373fbd37, type: 3}
   m_Name: M65 First Start Assets
   m_EditorClassIdentifier:
-  shared: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 3}
+  shared: {fileID: 11400000, guid: 08f246a350c059b686a563fac2ddf9b6, type: 2}
   lessons:
   - {fileID: 4900000, guid: a46d46ea677e5d0abd4577c63e123178, type: 3}
   - {fileID: 4900000, guid: ad77f988d2cc59a7b2c5ebd70e698400, type: 3}

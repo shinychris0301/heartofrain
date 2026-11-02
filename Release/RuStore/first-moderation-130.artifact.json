@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "built_and_phone_smoke_passed_not_submitted",
+  "artifact": "Release/RuStore/Builds/HeartOfTheRain_FirstModeration130.apk",
+  "sha256": "c91a32458b6feba3a50bd1f3cfd180efe2c2408d4b023486c227b5672c9068d3",
+  "bytes": 302091130,
+  "packageName": "com.heartoftherain.game",
+  "versionCode": 130,
+  "versionName": "0.9.130",
+  "signingCertificateSha256": "7257537a5b329cc5b018d93299d748404432c1b49f1b2388444ab843a4ba170d",
+  "minimumApi": 26,
+  "targetApi": 36,
+  "development": false,
+  "portrait": true,
+  "checkoutCompiledDisabled": true,
+  "backendMode": "staging",
+  "productionEnabled": false,
+  "approvedPrivacyVersion": "2026-11-01",
+  "unityBuildErrors": 0,
+  "unityBuildWarnings": 3,
+  "consoleSubmission": "pending",
+  "manualPublicationRequired": true
+}

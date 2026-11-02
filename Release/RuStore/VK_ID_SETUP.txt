@@ -1,0 +1,96 @@
+VK ID registration and sign-in — checkpoint 102
+
+The current app supports guest play and recovery codes. Google sign-in remains
+unconfigured and disabled. VK is also disabled until the operator configures
+the provider and hosted service. The current implementation extends the earlier
+link-only flow with registration and explicitly confirmed sign-in to an existing
+VK-linked managed account. New VK registration preserves the managed guest's
+internal player ID, wallet, progress and purchase ownership. Existing local saves
+are not silently uploaded or migrated into a managed account. Implementation and
+test acceptance are tracked in
+Codex_Handoff/Documentation/102_VK_REGISTRATION_AND_SIGNIN_REVIEW.md.
+
+Required operator setup
+
+1. Register the app in the VK ID business console, following the official
+   registration link at https://github.com/VKCOM/vkid-web-sdk.
+   Choose the supported browser/web OAuth integration for the backend-owned
+   flow. No Android SDK or engine upgrade is introduced by this implementation.
+   Configure the exact HTTPS redirect URL:
+       https://YOUR-BACKEND-ORIGIN/v1/identity/vk/callback
+   Domain ownership/allowed redirect validation and VK registration remain
+   operator tasks. Do not invent a client ID or use a sample app registration.
+2. Host the existing managed identity/app backend over HTTPS and enable it
+   explicitly. In the server environment set these non-secret values:
+       HOTR_MANAGED_IDENTITY_ENABLED=1
+       HOTR_VK_ID_ENABLED=1
+       HOTR_VK_ID_CLIENT_ID=<issued numeric VK application ID>
+       HOTR_VK_ID_REDIRECT_URI=https://YOUR-BACKEND-ORIGIN/v1/identity/vk/callback
+   Keep backend credentials, TLS keys and any future VK application secret in
+   the server's secret manager, outside Unity, source, screenshots and logs.
+3. Configure the app's existing explicit managed-server origin/account selection.
+   The ordinary local build keeps provider registration disabled. The client
+   learns VK availability from the authenticated backend, not a client toggle.
+4. Suppress/redact OAuth callback query strings in reverse-proxy, WAF, CDN,
+   access and tracing logs. Do not log authorization URLs, codes, state, PKCE
+   verifiers, VK tokens or raw provider HTTP payloads. The callback serves only
+   fixed Russian text, with no scripts, remote resources or referrer leakage.
+5. Review the privacy policy/storage location and explain optional VK linking.
+   Only a one-way VK subject digest, player association and link timestamp are
+   retained. Provider tokens, name, avatar, email and phone are discarded.
+   Account deletion removes the provider association and the pending sign-in
+   flows associated with the source or selected target in the existing deletion
+   transaction. The project's
+   separate restricted financial/security retention policy still applies.
+
+App behavior
+
+In Settings → Save Progress, the configured managed-account flow opens the
+system browser for VK. The server creates a ten-minute PKCE/state-bound flow,
+exchanges the returned code at VK, and checks the authenticated user_info subject
+against the token response. The player returns to the app and checks the status;
+the protected flow journal permits recovery after an app restart.
+
+The browser callback prepares a target; it does not issue game credentials:
+- A previously unlinked VK identity registers the current managed guest.
+- A VK identity already associated with a managed player selects that existing
+  journey for explicit app confirmation. Its wallet and progress remain intact;
+  the source account is not merged, deleted or credited again.
+- The signed completion binds the exact displayed target, a fresh device key,
+  and the protected flow proof. Changing the selected target invalidates it.
+- Existing recovery codes are not rotated or disclosed. A new device that signs
+  in through VK has no copy of another device's recovery code; its status must
+  explain VK-based recovery rather than promise an unavailable backup code.
+- Active gameplay and pending financial operations block an account switch.
+  An existing remote attempt uses the established explicit recovery decision.
+
+Cancellation, expiry, provider failures and account conflicts preserve the
+current journey. The earlier link-only API remains compatible and still reports
+conflicts instead of silently switching an old client. Google authorization is
+not delivered by this work and remains unavailable.
+
+The ordinary local build retains its local save and unavailable provider button
+until explicitly configured for a managed service. No client-reported wallet or
+offline progress import is authorized by VK authentication.
+
+Acceptance still required after registration
+
+Use the configured Android build and a VK test app/account to verify successful
+consent, cancellation, browser return, no installed VK app, expired code, network
+failure, app termination/restart, repeated callbacks, conflicting account,
+logout and deletion. Verify stable player/wallet/progress, server availability
+and Russian text on the physical phone. Synthetic provider HTTP tests and
+native UI/parser fixtures do not constitute real VK/provider acceptance.
+
+Primary implementation references (reviewed 26 October 2026)
+
+https://github.com/VKCOM/vkid-web-sdk
+https://github.com/VKCOM/vkid-web-sdk/blob/master/src/auth/auth.ts
+https://github.com/VKCOM/vkid-web-sdk/blob/master/src/auth/types.ts
+https://github.com/VKCOM/vkid-android-sdk
+
+The official VK web implementation supplies response_type=code, S256 PKCE,
+state and device_id, exchanges at https://id.vk.com/oauth2/auth, and obtains
+the authenticated subject at https://id.vk.com/oauth2/user_info. The backend
+does not trust a client-supplied VK user ID, an unverified id_token, a rendered
+provider button, or an arbitrary client-reported completion callback.

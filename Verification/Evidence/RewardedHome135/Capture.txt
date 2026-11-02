@@ -1,0 +1,4 @@
+status=PASS
+unity=2022.3.62f3
+scope=Native Unity Play Mode Home UGUI, isolated scene; no Android or live-ad assertion.
+

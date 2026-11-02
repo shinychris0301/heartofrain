@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Candidate only. Keep the current staging service and authority untouched. -->
+<service>
+  <id>HOTRProduction122</id>
+  <name>Heart of the Rain Production API</name>
+  <description>Explicit fresh production authority; release/provider acceptance is separate.</description>
+  <executable>C:\Apps\HeartOfTheRain\Backend\.venv-service\Scripts\python.exe</executable>
+  <arguments>-B -m hotr_backend.production_runtime122 start --manifest "C:\ProgramData\HeartOfTheRain\production-services\production-manifest.json"</arguments>
+  <workingdirectory>C:\Apps\HeartOfTheRain\Backend</workingdirectory>
+  <logpath>C:\ProgramData\HeartOfTheRain\production-services\logs</logpath>
+  <startmode>Automatic</startmode>
+  <stoptimeout>90sec</stoptimeout>
+  <serviceaccount><domain>NT AUTHORITY</domain><user>LocalService</user></serviceaccount>
+  <log mode="roll-by-size"><sizeThreshold>1024</sizeThreshold><keepFiles>4</keepFiles></log>
+  <onfailure action="restart" delay="30 sec" />
+</service>

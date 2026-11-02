@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "status": "READ_ONLY_PROCESS_INVENTORY106",
+  "utc": "2026-10-28T16:33:08.962703Z",
+  "privateRaw": {
+    "path": ".verification-cache/Review106/ProcessInventory01/RawProcesses.json",
+    "sha256": "b12c20ee47f27e2871777ef3a71918f1d3506c28e860db8f7568a0106fb2de0b",
+    "bytes": 6019
+  },
+  "processes": [
+    {
+      "pid": 39036,
+      "parentPid": 19416,
+      "name": "python.exe",
+      "exe": "E:\\Projects\\Heart_of_the_Rain\\Backend\\.venv\\Scripts\\python.exe",
+      "commandSHA256": "d2ab390c678a0250c2fecae6e00fe3a909495b92e3c034c93bb0ed700d26cc7e",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_server_gameplay83_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 34456,
+      "parentPid": 39036,
+      "name": "python.exe",
+      "exe": "C:\\Users\\shiny\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "commandSHA256": "bf61962406b702db42ece4e96524b92dc21cb6cdfefddca199fc086407a3a496",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_server_gameplay83_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 17560,
+      "parentPid": 19012,
+      "name": "python.exe",
+      "exe": "E:\\Projects\\Heart_of_the_Rain\\Backend\\.venv\\Scripts\\python.exe",
+      "commandSHA256": "822fb86bea7746de18b2c2d0550710ca1022b3b88cb4f9af23f8177ce3c05f44",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_identity82_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 4592,
+      "parentPid": 17560,
+      "name": "python.exe",
+      "exe": "C:\\Users\\shiny\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "commandSHA256": "a2391e8636a409222957ecc62bfe629370104c89b9a32be1b524223cdd2b7d97",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_identity82_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 5420,
+      "parentPid": 20992,
+      "name": "python.exe",
+      "exe": "E:\\Projects\\Heart_of_the_Rain\\Backend\\.venv\\Scripts\\python.exe",
+      "commandSHA256": "e1094c78f6e8e557748ea7c09b663c6063818c2c18784603a85c75aa2a6a3431",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_server_gameplay83_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 18080,
+      "parentPid": 5420,
+      "name": "python.exe",
+      "exe": "C:\\Users\\shiny\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "commandSHA256": "da77a649ac4904b5c8aa87656fddcbffc555444dd7ada74ba2787212b1c1c945",
+      "script": "E:\\Projects\\Heart_of_the_Rain\\Verification\\Tools\\serve_server_gameplay83_fixture.py",
+      "review106Tagged": false,
+      "classification": "Existing helper, no106 ownership established",
+      "action": "Read-only; not stopped or adopted"
+    },
+    {
+      "pid": 4068,
+      "parentPid": 39100,
+      "name": "unity.exe",
+      "exe": "C:\\Program Files\\Unity Hub\\resources\\unity.exe",
+      "commandSHA256": "8a535369aa5c098afd5d7b93472b252cb61216d2e5b2a945706604c928913d0d",
+      "script": null,
+      "review106Tagged": false,
+      "classification": "Known existing Hub image; no Editor project/entry",
+      "action": "Read-only; not stopped or adopted"
+    }
+  ],
+  "blockingUnityPidsFromExistingGuard": [],
+  "actualEditorFound": false,
+  "pid4068IsKnownHubImage": true,
+  "processesStoppedOrAdopted": false
+}

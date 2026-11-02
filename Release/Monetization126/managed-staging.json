@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "mode": "ManagedGuestServer",
+  "origin": "https://api.novamind-it.ru",
+  "identityScope": "review-novamind-vps-1",
+  "allowDevelopmentLoopback": false,
+  "socialEnabled": true
+}

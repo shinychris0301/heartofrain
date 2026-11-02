@@ -1,0 +1,102 @@
+{
+  "revision": "Wellworks R1",
+  "units": "milliseconds",
+  "trigger": "Only after the production service confirms a successful milestone claim.",
+  "open": {
+    "duration": 250,
+    "opacity": [
+      0,
+      1
+    ],
+    "translateY": [
+      10,
+      0
+    ],
+    "scale": [
+      0.98,
+      1
+    ],
+    "ease": "ease-out"
+  },
+  "claim": {
+    "previewResponseDelay": 380,
+    "productionDelay": "Wait for confirmed reward grant; do not use a timer as eligibility or success.",
+    "rewardPop": {
+      "duration": 550,
+      "keyframes": [
+        [
+          0,
+          0.88
+        ],
+        [
+          0.45,
+          1.13
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "stars": {
+      "asset": "DG_Star.png",
+      "count": 10,
+      "finalAllCollectedCount": 14,
+      "size": 20,
+      "duration": 800,
+      "origin": "Claimed row at 54% width, 50% height; convert to modal local coordinates after scroll/scale.",
+      "delay": "(index % 3) × 20 ms",
+      "trajectory": "angle = index / count × 2π; dx = cos(angle) × (49 + (index % 3) × 11); dy = sin(angle) × 41 - 18; rotation = index × 37°",
+      "opacityKeys": [
+        [
+          0,
+          0
+        ],
+        [
+          0.15,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "scaleKeys": [
+        [
+          0,
+          0.2
+        ],
+        [
+          1,
+          0.4
+        ]
+      ],
+      "blend": "Normal alpha"
+    }
+  },
+  "allCollected": {
+    "wellPopDuration": 650,
+    "wellScaleKeys": [
+      [
+        0,
+        1
+      ],
+      [
+        0.35,
+        1.06
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "noAutomaticCycleReset": true
+  },
+  "progressFill": {
+    "duration": 400,
+    "ease": "ease-out",
+    "trigger": "Updated authoritative qualifying completion count, not reward claim."
+  },
+  "reducedMotion": "Instant settled state; no scale bounce, glints or animated fill.",
+  "cleanup": "Cancel particles and visual callbacks on close; retain service reconciliation independently."
+}

@@ -1,0 +1,733 @@
+[
+  {
+    "id": "TA_Panel_Cream",
+    "file": "Art/TA_Panel_Cream.png",
+    "width": 2079,
+    "height": 449,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5,
+    "nativeMaster": "panel_cream",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Cream.png"
+  },
+  {
+    "id": "TA_Panel_Blue",
+    "file": "Art/TA_Panel_Blue.png",
+    "width": 952,
+    "height": 1403,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      164,
+      164,
+      164,
+      164
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.47560975609756095,
+    "nativeMaster": "panel_blue",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Blue.png"
+  },
+  {
+    "id": "TA_Field",
+    "file": "Art/TA_Field.png",
+    "width": 1847,
+    "height": 313,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      80,
+      80,
+      80,
+      80
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5,
+    "nativeMaster": "field",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Field.png"
+  },
+  {
+    "id": "TA_Stat",
+    "file": "Art/TA_Stat.png",
+    "width": 2080,
+    "height": 524,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.28,
+    "nativeMaster": "stat",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat.png"
+  },
+  {
+    "id": "TA_Button_Blue",
+    "file": "Art/TA_Button_Blue.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Blue.png"
+  },
+  {
+    "id": "TA_Button_Green",
+    "file": "Art/TA_Button_Green.png",
+    "width": 1942,
+    "height": 504,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      221,
+      221,
+      221,
+      221
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.22171945701357465,
+    "nativeMaster": "button_green",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Green.png"
+  },
+  {
+    "id": "TA_Button_Red",
+    "file": "Art/TA_Button_Red.png",
+    "width": 2064,
+    "height": 420,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      184,
+      184,
+      184,
+      184
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.25,
+    "nativeMaster": "button_red",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Red.png"
+  },
+  {
+    "id": "TA_Button_Disabled",
+    "file": "Art/TA_Button_Disabled.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Button_Disabled.png"
+  },
+  {
+    "id": "TA_Tab_Track",
+    "file": "Art/TA_Tab_Track.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.127208480565371,
+    "nativeMaster": "dock",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Track.png"
+  },
+  {
+    "id": "TA_Tab_Selected",
+    "file": "Art/TA_Tab_Selected.png",
+    "width": 1821,
+    "height": 598,
+    "kind": "chrome",
+    "source": "derived-r2",
+    "border": [
+      263,
+      263,
+      263,
+      263
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.18631178707224336,
+    "nativeMaster": "button_blue",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Tab_Selected.png"
+  },
+  {
+    "id": "TA_Icon_Search",
+    "file": "Art/TA_Icon_Search.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Search.png"
+  },
+  {
+    "id": "TA_Icon_Close",
+    "file": "Art/TA_Icon_Close.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Close.png"
+  },
+  {
+    "id": "TA_Icon_Check",
+    "file": "Art/TA_Icon_Check.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Check.png"
+  },
+  {
+    "id": "TA_Icon_Chevron",
+    "file": "Art/TA_Icon_Chevron.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Chevron.png"
+  },
+  {
+    "id": "TA_Icon_People",
+    "file": "Art/TA_Icon_People.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/people.png",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_People.png"
+  },
+  {
+    "id": "TA_Icon_Invite",
+    "file": "Art/TA_Icon_Invite.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/invite.png",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Invite.png"
+  },
+  {
+    "id": "TA_Icon_Help",
+    "file": "Art/TA_Icon_Help.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "tintable_icon",
+    "source": "approved-reference-vector-r4",
+    "textBaked": false,
+    "ppu": 100,
+    "approvedReference": "Source/ApprovedCrops/help.png",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Icon_Help.png"
+  },
+  {
+    "id": "TA_Close_Disc",
+    "file": "Art/TA_Close_Disc.png",
+    "width": 256,
+    "height": 256,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "disc",
+    "source": "vector",
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Close_Disc.png"
+  },
+  {
+    "id": "TA_Rank_Gold",
+    "file": "Art/TA_Rank_Gold.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Gold.png"
+  },
+  {
+    "id": "TA_Rank_Silver",
+    "file": "Art/TA_Rank_Silver.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Silver.png"
+  },
+  {
+    "id": "TA_Rank_Bronze",
+    "file": "Art/TA_Rank_Bronze.png",
+    "width": 512,
+    "height": 512,
+    "kind": "rank_frame",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Rank_Bronze.png"
+  },
+  {
+    "id": "TA_Background",
+    "file": "Art/TA_Background.png",
+    "width": 2160,
+    "height": 3840,
+    "kind": "background",
+    "source": "native-layer-composite",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "layerNativeWidths": [
+      2156,
+      1254,
+      1254
+    ],
+    "note": "2160x3840 composite; detailed layers downsampled, not a resized 941px screenshot",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Background.png"
+  },
+  {
+    "id": "TA_Badge_drop",
+    "file": "Art/TA_Badge_drop.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame_Drop",
+    "emblemBox": [
+      108,
+      94,
+      297,
+      297
+    ],
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_drop.png"
+  },
+  {
+    "id": "TA_Badge_lantern",
+    "file": "Art/TA_Badge_lantern.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      85,
+      95,
+      342,
+      342
+    ],
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_lantern.png"
+  },
+  {
+    "id": "TA_Badge_well",
+    "file": "Art/TA_Badge_well.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      95,
+      105,
+      322,
+      322
+    ],
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_well.png"
+  },
+  {
+    "id": "TA_Badge_sun",
+    "file": "Art/TA_Badge_sun.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      85,
+      95,
+      342,
+      342
+    ],
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_sun.png"
+  },
+  {
+    "id": "TA_Badge_wave",
+    "file": "Art/TA_Badge_wave.png",
+    "width": 512,
+    "height": 512,
+    "kind": "badge_composite",
+    "source": "composite-r4",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "frame": "TA_Badge_Frame",
+    "emblemBox": [
+      88,
+      98,
+      336,
+      336
+    ],
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Badge_wave.png"
+  },
+  {
+    "id": "TA_Nav_Dock_HQ",
+    "file": "Art/TA_Nav_Dock_HQ.png",
+    "width": 2044,
+    "height": 645,
+    "kind": "chrome",
+    "source": "generated-r2",
+    "border": [
+      283,
+      283,
+      283,
+      283
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.26148409893992935,
+    "nativeMaster": "dock",
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Nav_Dock_HQ.png"
+  },
+  {
+    "id": "TA_Stat_star",
+    "file": "Art/TA_Stat_star.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_star.png"
+  },
+  {
+    "id": "TA_Stat_up",
+    "file": "Art/TA_Stat_up.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_up.png"
+  },
+  {
+    "id": "TA_Stat_heart",
+    "file": "Art/TA_Stat_heart.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Stat_heart.png"
+  },
+  {
+    "id": "TA_Avatar_crystal",
+    "file": "Art/TA_Avatar_crystal.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_crystal.png"
+  },
+  {
+    "id": "TA_Avatar_leaf",
+    "file": "Art/TA_Avatar_leaf.png",
+    "width": 512,
+    "height": 512,
+    "kind": "illustrated_icon",
+    "source": "generated-r2",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Avatar_leaf.png"
+  },
+  {
+    "id": "TA_Panel_Inner",
+    "file": "Art/TA_Panel_Inner.png",
+    "width": 640,
+    "height": 640,
+    "kind": "chrome",
+    "source": "vector-r2",
+    "border": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "textBaked": false,
+    "ppu": 100,
+    "proofBorderScale": 0.5,
+    "path": "Assets/HeartOfTheRain/App/TeamsAccess/Art/TA_Panel_Inner.png"
+  },
+  {
+    "id": "TC_Icon_More",
+    "file": "Art/TC_Icon_More.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined",
+    "path": "Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_More.png"
+  },
+  {
+    "id": "TC_Icon_Clock",
+    "file": "Art/TC_Icon_Clock.png",
+    "width": 256,
+    "height": 256,
+    "kind": "glyph",
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "native-vector",
+    "textBaked": false,
+    "tint": "role-defined",
+    "path": "Assets/HeartOfTheRain/App/TeamsSocial/Art/TC_Icon_Clock.png"
+  },
+  {
+    "id": "Portrait_Ivan_R2",
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Ivan_R2.png",
+    "width": 1254,
+    "height": 1254,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "portrait"
+  },
+  {
+    "id": "Portrait_Weaver_R2",
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Weaver_R2.png",
+    "width": 1254,
+    "height": 1254,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "portrait"
+  },
+  {
+    "id": "Portrait_Scholar_R2",
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/Portrait_Scholar_R2.png",
+    "width": 1254,
+    "height": 1254,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "portrait"
+  },
+  {
+    "id": "LB2_AvatarMask",
+    "path": "Assets/HeartOfTheRain/App/Leaderboard/Art/LB2_AvatarMask.png",
+    "width": 400,
+    "height": 400,
+    "border": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kind": "mask"
+  }
+]

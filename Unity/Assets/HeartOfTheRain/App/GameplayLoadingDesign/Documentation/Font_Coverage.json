@@ -1,0 +1,12 @@
+{
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "missingCodepoints": [],
+  "nativeTmpAtlasValidated": false,
+  "glossary": "bind current project keys; included display translations are review defaults"
+}

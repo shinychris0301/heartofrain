@@ -1,0 +1,67 @@
+﻿{
+    "schemaVersion":  1,
+    "profile":  "segregated_sdk_compatibility_fixture_only",
+    "officialNpmRegistry":  "https://nexus-external.vkteam.ru/repository/npm-unity-rustore-exposed/",
+    "officialMavenRepository":  "https://nexus-external.vkteam.ru/repository/maven-rustore-exposed",
+    "packages":  [
+                     {
+                         "name":  "ru.rustore.pay",
+                         "version":  "11.1.0",
+                         "tarballUrl":  "https://nexus-external.vkteam.ru/repository/npm-unity-rustore-exposed/ru.rustore.pay/-/ru.rustore.pay-11.1.0.tgz",
+                         "sha256":  "ddeedfdd32f614b03bf2e7fbef242b9054f1974ebf11c2c4f0e2056229395820",
+                         "npmIntegrity":  "sha512-jBKt7MA4iEFNBfSdeXTyYpplpRGWJboGc4Kjtd2iOgOJuh7P5ZcRBLrb6Yh5b8fLO/qs0Qchj2oxKNvy5yqbiw==",
+                         "npmShasum":  "268ab2fb33b68595db5bc2d8a1af792e191fe7b8",
+                         "packageManifestSHA256":  "afbaabf48f1c57f77432775121ac21923c16e51839c29288ee205a5b4aec3ff3",
+                         "vendorUnityMinimum":  "6000.0",
+                         "vendorMetadataModified":  false
+                     },
+                     {
+                         "name":  "ru.rustore.core",
+                         "version":  "10.5.0",
+                         "tarballUrl":  "https://nexus-external.vkteam.ru/repository/npm-unity-rustore-exposed/ru.rustore.core/-/ru.rustore.core-10.5.0.tgz",
+                         "sha256":  "0159e0268fe11be7497949bd3db6c30fca2729c9c72d5df334d6d3faf1126120",
+                         "npmIntegrity":  "sha512-d6YwHsQk8nF8ab3d2EE9ZBWPnT5RTRDv3p5ZphyuVvtT7X/+KbQm5nqSnr82rL0bHrtnJIJPvCPLUUN9tQPSJw==",
+                         "npmShasum":  "985c393e8d98b181445205858b678e25cc4dd178",
+                         "packageManifestSHA256":  "b820d53463b52b64d530c47ce6c0d3c570eabc6166fed81b63e28b71800dd54b",
+                         "vendorUnityMinimum":  "6000.0",
+                         "vendorMetadataModified":  false
+                     }
+                 ],
+    "nativeMavenCoordinates":  [
+                                   "ru.rustore.sdk:pay:11.1.0",
+                                   "ru.rustore.sdk:core:10.5.0"
+                               ],
+    "pinnedGameEditor":  "2022.3.62f3",
+    "metadataConflict":  "Both official unmodified npm package manifests declare unity6000.0. They resolved and compiled in the isolated pinned2022.3.62f3 Editor. This is measured compile/API compatibility, not vendor support certification. Direct Unity JDK17 assignment was rejected; official embedded-Java11 Gradle export plus standalone Java17 assembly is a separate compatibility experiment.",
+    "toolchain":  {
+                      "unityExportJdk":  "embedded Temurin11.0.14.1",
+                      "standaloneJdk":  "Temurin17.0.20.1+1",
+                      "gradle":  "7.5.1",
+                      "agp":  "7.4.2",
+                      "minApi":  26,
+                      "fixtureTargetApi":  34,
+                      "engineUpgrade":  false,
+                      "versionCheckBypass":  false
+                  },
+    "ordinaryGame":  {
+                         "sdkIncluded":  false,
+                         "sdkDefineEnabled":  false,
+                         "automaticCheckout":  false,
+                         "reason":  "Native RuStorePayContentProvider is enabled in the official Pay AAR. The CSharp define alone cannot isolate native automatic initialization; SDK packaging remains outside ordinary unconfigured game profiles."
+                     },
+    "alternateOfficialAssetsArchive":  {
+                                           "name":  "RuStoreUnityPaySDK-11.1.0.unitypackage",
+                                           "releaseUrl":  "https://gitflic.ru/project/rustore/unity-rustore-pay-sdk/release/edc663c7-39f9-40c4-bcc2-0c4c5ac6169f",
+                                           "downloadUrl":  "https://gitflic.ru/project/rustore/unity-rustore-pay-sdk/release/edc663c7-39f9-40c4-bcc2-0c4c5ac6169f/0ed27d4e-9353-43ef-a065-7fd966a1d506/download",
+                                           "sha256":  "347d9e755b3d11263d71ebfbf1de58904632a60c8536e5b22aecbf5d79d91ad8",
+                                           "imported":  false
+                                       },
+    "requiredBeforeCommerce":  [
+                                   "Registered Console app, product IDs and return scheme",
+                                   "Production identity and secure session recovery",
+                                   "Authoritative unified wallet and durable delivery",
+                                   "Provider API credentials/notifications only for provider_api mode; sdk_client_reported mode requires neither",
+                                   "Successful sandbox checkout/recovery/external-bank return tests",
+                                   "Production signing and legal release review"
+                               ]
+}

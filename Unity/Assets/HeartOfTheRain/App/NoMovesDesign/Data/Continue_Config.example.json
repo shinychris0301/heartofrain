@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "environment": "DEMO_ONLY",
+  "reviewFixture": {
+    "coinCost": 900,
+    "extraMoves": 5,
+    "balance": 710,
+    "enoughCoinsFixture": 2500,
+    "lives": 5
+  },
+  "production": "Bind existing trusted economy policy; no shipping fallback",
+  "maximumContinues": "configure in policy; test fixture uses 3 only",
+  "subsequentOffers": "configure in policy; no automatic escalation introduced",
+  "quoteExpiry": "authority-issued; test fixture 5 minutes",
+  "grants": [
+    "extraMovesOnly"
+  ],
+  "lifePolicy": "existing attempt settlement / refill / unlimited-lives authority"
+}
